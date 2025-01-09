@@ -1,0 +1,30 @@
+{
+    "AS_UWI_c1ad2071a4054317963b508f617935a3": {
+        "id": "AS_UWI_c1ad2071a4054317963b508f617935a3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "loginSuccessObj",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "name": "frmLoginUniken",
+            "type": "forms",
+            "platform": null,
+            "KUID": "h1bb693875af42ba9d4edc2bae28fae9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onLoginSuccess_aa5cfbd9e72844029b4fe45c217d498e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "loginSuccessNavigate",
+            "display": "loginSuccessNavigate",
+            "inputparams": [{
+                "name": "data",
+                "value": " loginSuccessObj"
+            }],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

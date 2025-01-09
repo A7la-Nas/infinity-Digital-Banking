@@ -1,0 +1,29 @@
+{
+    "AS_TextField_a1a469fd811a4a1f8a0e6d4d9e88f7ad": {
+        "id": "AS_TextField_a1a469fd811a4a1f8a0e6d4d9e88f7ad",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segACHTemplateRecordDetails",
+            "type": "templates",
+            "platform": null,
+            "KUID": "h0fb20996190442aa4543ebad7cd8875"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_fcdf24f2a665441a961e149e59f17238",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n  self.executeOnParent('updateTotal', eventobject);\n} catch(e){\n  kony.print(e);\n}",
+            "parentId": null
+        }]
+    }
+}

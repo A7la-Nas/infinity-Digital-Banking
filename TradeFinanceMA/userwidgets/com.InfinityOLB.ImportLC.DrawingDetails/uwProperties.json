@@ -1,0 +1,151 @@
+{
+    "classname": "DrawingDetails",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "j8bad83f88ca40b9995f09b6886af3e1",
+                    "paramList": [
+                        {
+                            "name": "context"
+                        },
+                        {
+                            "name": "frmType"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j3bb8dc935214aef8533650b19c87f2f",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "d20948ff75a1472d82474b894a271c99",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "j3bb8dc935214aef8533650b19c87f2f",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"BP1\": \"640\",\n  \"BP2\": \"1024\",\n  \"BP3\": \"1366\",\n  \"BP4\": \"1380\"\n}",
+                    "group": "General",
+                    "kuid": "ce9e71061c594a0494206f9475b0fc90",
+                    "originalPropertyKey": "breakpoints",
+                    "propertyIndex": 4,
+                    "propertyKey": "breakpoints",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Breakpoints",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "j3bb8dc935214aef8533650b19c87f2f",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"flxDrawingsHeader\":{\n\t\"drawingDetailsVerifySubmit\":{\n      \"BP1\": \"${i18n{i18n.TradeFinance.ImportLC-DrawingDetails-Verify&Submit}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ImportLC-DrawingDetails-Verify&Submit}}\"\n    },\n    \"lcSummary\":{\n      \"BP1\": \"${i18n{i18n.TradeFinance.LCSummary}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.LCSummary}}\"\n    },\n    \"drawingDetails\":{\n      \"BP1\": \"${i18n{i18n.ImportLC.DrawingDetails}}\",\n      \"default\": \"${i18n{i18n.ImportLC.DrawingDetails}}\"\n    },\n    \"paymentDetails\":{\n      \"BP1\": \"${i18n{i18n.TransfersEur.PaymentDetails}}\",\n      \"default\": \"${i18n{i18n.TransfersEur.PaymentDetails}}\"\n    }\n  },\n  \"flxLCSummary\":{\n    \"beneficiary\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.Beneficiary}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.Beneficiary}}\"\n    },\n    \"referenceNumber\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ReferenceNumber}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ReferenceNumber}}\"\n    },\n    \"creditAmount\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.CreditAmount}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.CreditAmount}}\"  \n    },\n    \"issueDate\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.IssueDate}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.IssueDate}}\"\n    },\n    \"expiryDate\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ExpiryDate}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ExpiryDate}}\"\n    },\n    \"paymentTerms\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.PaymentTerms}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.PaymentTerms}}\"\n    }\n  },\n\"flxViewDetails\": {\n    \"ImportLC-DrawingDetails\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ImportLC-DrawingDetails}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ImportLC-DrawingDetails}}\"\n    }, \n     \"DrawingDetails\": {\n      \"BP1\": \"${i18n{i18n.ImportLC.DrawingDetails}}\",\n      \"default\": \"${i18n{i18n.ImportLC.DrawingDetails}}\"\n    }, \n    \"PaymentStatus\" : { \n      \"BP1\": \"${i18n{i18n.kony.BulkPayments.PaymentsStatus}}\",\n      \"default\": \"${i18n{i18n.kony.BulkPayments.PaymentsStatus}}\"\n    },\n    \"RejectedDate\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.RejectedDate}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.RejectedDate}}\"\n    },  \n    \"PaymentDate\" : { \n       \"BP1\": \"${i18n{i18n.TradeFinance.PaymentDate}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.PaymentDate}}\"\n    },\n     \"SwiftMessages&Advices\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.SwiftMessages&Advices}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.SwiftMessages&Advices}}\"\n    }, \n    \"Beneficiary\" : { \n      \"BP1\": \"${i18n{i18n.TradeFinance.Beneficiary}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.Beneficiary}}\"\n    },\n    \"MessageCategory\": {\n      \"BP1\": \"${i18n{i18n.ExportLC.MessageCategory}}\",\n      \"default\": \"${i18n{i18n.ExportLC.MessageCategory}}\"\n    },\n    \"MessageType\": {\n      \"BP1\": \"${i18n{i18n.ExportLC.MessageType}}\",\n      \"default\": \"${i18n{i18n.ExportLC.MessageType}}\"\n    },\n    \"Date\": {\n      \"BP1\": \"${i18n{i18n.ChequeManagement.Date}}\",\n      \"default\": \"${i18n{i18n.ChequeManagement.Date}}\"\n    },\n    \"Actions\" : { \n      \"BP1\": \"${i18n{i18n.TradeFinance.Actions}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.Actions}}\"\n    },\n     \"View\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.View}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.View}}\"\n    }   \n},\n  \"flxDrawingDetails\":{\n    \"drawingAmount\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.DrawingAmount}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.DrawingAmount}}\"\n    },\n    \"creationDate\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.CreationDate}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.CreationDate}}\"\n    },\n    \"documentReceived\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.DocumentReceived}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.DocumentReceived}}\"\n    },\n    \"presenter\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.Presenter}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.Presenter}}\"\n    },\n    \"presenterReference\": {\n      \"BP1\": \"${i18n{i18n.ImportDrawings.PresenterReference}}\",\n      \"default\": \"${i18n{i18n.ImportDrawings.PresenterReference}}\"\n    },\n    \"farwordContract\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.FarwordContract}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.FarwordContract}}\"\n    },\n    \"shippingGuaranteeReference\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ShippingGuaranteeReference}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ShippingGuaranteeReference}}\"\n    },\n    \"messageFromBank\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.MessagefromBank}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.MessagefromBank}}\"\n    }\n  },\n  \"flxDocumentStatus\":{\n    \"totalDocuments\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.TotalDocuments}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.TotalDocuments}}\"\n    },\n    \"documents\": {\n      \"BP1\": \"${i18n{i18n.wealth.Documents}}\",\n      \"default\": \"${i18n{i18n.wealth.Documents}}\"\n    },\n    \"documentStatus\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.DocumentStatus}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.DocumentStatus}}\"\n    },\n    \"discrepancies\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.Discrepancies}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.Discrepancies}}\"\n    },\n    \"DiscrepanciesAcceptance\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.DiscrepanciesAcceptance}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.DiscrepanciesAcceptance}}\"\n    },\n    \"acceptOrRejectDiscrepancies\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.WouldyouliketoapproveorrejectDocument?}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.WouldyouliketoapproveorrejectDocument?}}\"\n    }\n  },\n  \"flxPaymentDetails\":{\n    \"totalAmountToBePaid\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.TotalAmounttobePaid}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.TotalAmounttobePaid}}\"\n    },\n    \"amountToBeDebitedFrom\": {\n      \"BP1\": \"${i18n{i18n.ImportDrawings.AmountToBeDebitedfrom}}\",\n      \"default\": \"${i18n{i18n.ImportDrawings.AmountToBeDebitedfrom}}\"\n    },\n    \"yourMessageToBank\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.Yourmessagetobank}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.Yourmessagetobank}}\"\n    }\n  },\n  \"flxButtons\":{\n    \"accept\":{\n      \"BP1\": \"${i18n{i18n.TradeFinance.Accept}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.Accept}}\"\n    },\n    \"reject\":{\n      \"BP1\": \"${i18n{kony.mb.ApprovalRequests.Reject}}\",\n      \"default\": \"${i18n{kony.mb.ApprovalRequests.Reject}}\"\n    },\n\t\"back\":{\n      \"BP1\": \"${i18n{i18n.CardManagement.Back}}\",\n      \"default\": \"${i18n{i18n.CardManagement.Back}}\"\n    },\n    \"submit\":{\n      \"BP1\": \"${i18n{i18n.CustomerFeedback.Submit}}\",\n      \"default\": \"${i18n{i18n.CustomerFeedback.Submit}}\"\n    },\n\t\"viewLCDetails\":{\n      \"BP1\": \"${i18n{i18n.TradeFinance.ViewLCDetails}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ViewLCDetails}}\"\n    },\n\t\"dashboardLCReferenceNo\": \"${Collection.dashboard.Drawing[0].LCReferenceNo}\",\n\t\"dashboardLCType\": \"${Collection.dashboard.Drawing[0].lcType}\",\n\t\"dashboardDrawingReferenceNo\": \"${Collection.dashboard.Drawing[0].drawingReferenceNo}\",\n\t\"dashboardBeneficiaryName\": \"${Collection.dashboard.Drawing[0].beneficiaryName}\",\n\t\"dashboardDocumentStatus\": \"${Collection.dashboard.Drawing[0].documentStatus}\",\n\t\"dashboardDrawingCreationDate\": \"${Collection.dashboard.Drawing[0].drawingCreationDate}\",\n\t\"dashboardDrawingCurrency\": \"${Collection.dashboard.Drawing[0].drawingCurrency}\",\n\t\"dashboardDrawingAmount\": \"${Collection.dashboard.Drawing[0].drawingAmount}\",\n\t\"dashboardDrawingStatus\": \"${Collection.dashboard.Drawing[0].drawingStatus}\",\n\t\"dashboardLCAmount\": \"${Collection.dashboard.Drawing[0].lcAmount}\",\n\t\"dashboardLCCurrency\": \"${Collection.dashboard.Drawing[0].lcCurrency}\",\n\t\"dashboardLCIssueDate\": \"${Collection.dashboard.Drawing[0].lcIssueDate}\",\n\t\"dashboardLCExpiryDate\": \"${Collection.dashboard.Drawing[0].lcExpiryDate}\",\n\t\"dashboardPresentorReference\": \"${Collection.dashboard.Drawing[0].presentorReference}\",\n\t\"dashboardpresentorName\": \"${Collection.dashboard.Drawing[0].presentorName}\",\n\t\"dashboardDocumentsReceived\": \"${Collection.dashboard.Drawing[0].documentsReceived}\",\n\t\"dashboardForwardContact\": \"${Collection.dashboard.Drawing[0].forwardContact}\",\n\t\"dashboardShippingGuaranteeReference\": \"${Collection.dashboard.Drawing[0].shippingGuaranteeReference}\",\n\t\"dashboardTotalDocuments\": \"${Collection.dashboard.Drawing[0].totalDocuments}\",\n\t\"dashboardDocumentName\": \"${Collection.dashboard.Drawing[0].documentName}\",\n\t\"dashboardMessageFromBank\": \"${Collection.dashboard.Drawing[0].messageFromBank}\",\n\t\"dashboardTotalPaidAmount\": \"${Collection.dashboard.Drawing[0].totalPaidAmount}\",\n\t\"dashboardTotalAmountToBePaid\": \"${Collection.dashboard.Drawing[0].totalAmountToBePaid}\",\n\t\"dashboardDiscrepancies\": \"${Collection.dashboard.Drawing[0].discrepancies}\",\n\t\"dashboardStatus\": \"${Collection.dashboard.Drawing[0].status}\",\n\t\"dashboardLCSrmsReqOrderID\": \"${Collection.dashboard.Drawing[0].lcSrmsReqOrderID}\",\n\t\"dashboardDrawingsSrmsReqOrderID\": \"${Collection.dashboard.Drawing[0].drawingsSrmsReqOrderID}\"\n  }\n}",
+                    "group": "General",
+                    "kuid": "d73fe14ea8a4451a9d5bc58dabc6570e",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 5,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "j3bb8dc935214aef8533650b19c87f2f",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"getImportLCDrawingById\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LCImportDrawing\",\n    \"Verb\": \"getImportLCDrawingById\",\n    \"Criteria\":\n    {\n      \"sortByParam\": \"swiftDate\",\n      \"sortOrder\": \"DESC\",\n      \"drawingsSrmsReqOrderID\": \"\"\n    }\n  },\n  \"getLetterOfCreditsById\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LetterOfCredit\",\n    \"Verb\": \"getLetterOfCreditsById\",\n    \"Criteria\": {\n      \"srmsReqOrderID\": \"\"\n    }\n  },\n  \"submitImportLCDrawing\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LCImportDrawing\",\n    \"Verb\": \"submitImportLCDrawing\",\n    \"Criteria\": {\n      \"acceptance\":\"\",\n      \"accountToBeDebited\": \"\",\n      \"messageToBank\": \"\",\n      \"drawingsSRMSID\": \"\"\n    }\n  },\n  \"Download\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LCImportDrawingSummary\",\n    \"Verb\": \"generate\",\n    \"Criteria\": {\n      \"drawingsSrmsReqOrderID\": \"\"\n    }\n  }\n}\t",
+                    "group": "General",
+                    "kuid": "j0b7905b078f4531a79fa495db1fd2a8",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 6,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "displayName": "Service Parameter",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "j3bb8dc935214aef8533650b19c87f2f",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.ImportLC",
+    "version": "1.0.0"
+}

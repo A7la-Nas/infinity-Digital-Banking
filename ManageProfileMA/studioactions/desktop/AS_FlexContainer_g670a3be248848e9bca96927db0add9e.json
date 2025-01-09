@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_g670a3be248848e9bca96927db0add9e": {
+        "id": "AS_FlexContainer_g670a3be248848e9bca96927db0add9e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAddressSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bc599c45fcd94d0c8c49bd3b400d279e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_e9aaa734a2894114bfc7aa62bdefaae5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " this.view.flxCloseIcon.onclick = this.view.flxInfo.setVisibility(false);\nthis.view.flxInfoIcon.accessibilityConfig = {\n  a11yARIA: {\n    role: \"button\",\n    \"aria-haspopup\": \"dialog\",\n    \"aria-expanded\": false\n  },\n  \"a11yLabel\": kony.i18n.getLocalizedString(\"i18n.settings.knowMoreAboutAddress\")\n};\nthis.view.flxInfoIcon.setActive(true);",
+            "parentId": null
+        }]
+    }
+}

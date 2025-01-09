@@ -1,0 +1,24 @@
+{
+    "AS_Form_h2d15769d3444974a6afecfe1223b127": {
+        "id": "AS_Form_h2d15769d3444974a6afecfe1223b127",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDummyLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "i52b5b16cf764e9cb1af923953b99cc7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ab8ad813fc87451d8a58090b6a33aede",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\nvar authParams = {\n \"UserName\": \"9861936207\",\n  \"Password\": \"Kony@1234\",\n  \"loginOptions\": {\n    \"isOfflineEnabled\": false\n  }\n};\nauthClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\nauthClient.login(authParams,successCallback,errorCallback);\n\n//var ntf = new kony.mvc.Navigation(\"frmLogin2\");\n//  ntf.navigate();\n\n//new kony.mvc.Navigation({\n//                \"appName\": \"ServiceRequestsModule\",\n////                \"friendlyName\": \"frmServiceRequests\"\n//            }).navigate();\n\n\nfunction successCallback(resSuccess){\n  kony.application.dismissLoadingScreen();\n  kony.print(resSuccess);\n // var ntf = new kony.mvc.Navigation(\"frmServiceRequests\");\n //   var ntf = new kony.mvc.Navigation(\"frmLogin2\");\n//  ntf.navigate();\n  alert(\"Login OK!\");\n// new kony.mvc.Navigation({\n//                \"appName\": \"ConsentMgmtMA\",\n//                \"friendlyName\": \"SettingsNew/frmConsentManagement\"\n//            }).navigate();\n}\nfunction errorCallback(resError){\n  kony.application.dismissLoadingScreen();\n  kony.print(resError);\n  alert(\"login is not working...\");\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

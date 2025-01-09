@@ -1,0 +1,123 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+@media only screen and (max-width: 589px) {
+    .visualizationCashflowPrediction {
+        height: 270px;
+        min-width: 520px;
+    }
+}
+
+@media only screen and (min-width: 590px) {
+    .visualizationCashflowPrediction {
+        height: 300px;
+        min-width: 520px;
+    }
+}
+
+.divider {
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.tooltipContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+    width: 280px;
+    font-size: 13px;
+    line-height: 16px;
+    background-color: #fff;
+    font-family: 'CircularStd-Book';
+    box-shadow: 0px 2px 10px rgba(70, 69, 69, 0.2);
+    padding-bottom: 5px;
+}
+
+.tooltipContainer p {
+    margin: 0;
+}
+
+.tooltipTitlePrediction {
+    padding: 0 10px 0 17px;
+    font-size: 15px;
+    line-height: 34px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.closeBtn {
+    width: 13px;
+    height: 13px;
+    color: #008392;
+    background-color: transparent;
+    border: none;
+    align-self: center;
+    padding: 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.closeBtn:focus {
+    outline: none;
+}
+
+.tooltipInfoContainer {
+    padding: 0 10px;
+}
+
+.tooltipMoneyFlowListCashlow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7px 0;
+}
+
+.tooltipMoneyFlowListItemRight {
+    font-weight: bold;
+}
+
+.tooltipBalances {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.colorCircle::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 50%;
+    background-color: #34CC57;
+    margin-right: 8px;
+}
+
+.orange::before {
+    background-color: #F06E18;
+}
+
+.teal::before {
+    background-color: #008392;
+}
+
+.blue::before {
+	background-color: #65C8CE;
+}
+
+.green {
+    color: #00A36C;
+}
+
+.red {
+    color: #FF0000;
+}

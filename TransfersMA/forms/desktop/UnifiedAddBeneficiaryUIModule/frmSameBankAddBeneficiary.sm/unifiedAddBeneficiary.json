@@ -1,0 +1,156 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sfa77fa8edbe48c0b2a353776df1cb24",
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "IBANSwiftObjectName": "BankDetails",
+        "IBANSwiftObjectServiceName": "PayeeManagement",
+        "accValidationObject": "Payee_Name",
+        "accValidationOperation": "getPayeeName",
+        "accValidationService": "PayeeManagement",
+        "addressObjectService": "Utility",
+        "adfTextBox1": "{\n  \"mapping\": \"{$.c.countryCode}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.Code}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.Code}\"\n  }\n}",
+        "adfTextBox2": "{\n  \"mapping\": \"{$.c.displayPhoneNumber}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterPhoneNumber}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterPhoneNumber}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterPhoneNumber}\",\n  \"inputMode\": \"NUMERIC\",\n  \"formatType\":\"PHONE\"\n}",
+        "adfTextBox2Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.konybb.manageUser.PhoneNo}:\",\n  \"default\": \"{i.i18n.konybb.manageUser.PhoneNo}:\"\n},\n\"helpTooltip\" : \"{i.i18n.konybb.manageUser.PhoneNo}\"\n}",
+        "adfTextBox3": "{\n  \"mapping\": \"{$.c.emailID}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterEmailId}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterEmailId}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterEmailId}\",\n  \"inputMode\": \"EMAIL\",\n  \"formatType\":\"EMAIL\"\n}",
+        "adfTextBox3Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.konybb.manageUser.EmailID}\",\n  \"default\": \"{i.i18n.konybb.manageUser.EmailID}\"\n},\n\"helpTooltip\" : \"{i.i18n.konybb.manageUser.EmailID}\"\n}",
+        "adfTextBox4": "{\n  \"mapping\": \"{$.c.addressLine1}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterAddressLine01}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterAddressLine01}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterAddressLine01}\",\n  \"inputMode\": \"Any\"\n}",
+        "adfTextBox4Label": "{\n\"text\":\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.AddressLine01}:\",\n  \"default\": \"{i.i18n.TransfersEur.AddressLine01}:\"\n},\n\"helpTooltip\" : \"{i.i18n.TransfersEur.AddressLine01}\"\n}",
+        "adfTextBox5": "{\n  \"mapping\": \"{$.c.addressLine2}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterAddressLine02}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterAddressLine02}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterAddressLine02}\",\n  \"inputMode\": \"Any\"\n}",
+        "adfTextBox5Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.AddressLine02}:\",\n  \"default\": \"{i.i18n.TransfersEur.AddressLine02}:\"\n},\n\"helpTooltip\" : \"{i.i18n.TransfersEur.AddressLine02}\"\n}",
+        "adfTextBox6": "{\n  \"mapping\": \"{$.c.city}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterCity}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterCity}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterCity}\",\n  \"inputMode\": \"ALPHABET\"\n}",
+        "adfTextBox6Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.City}:\",\n  \"default\": \"{i.i18n.TransfersEur.City}:\"\n},\n\"helpTooltip\" : \"{i.i18n.TransfersEur.City}\"\n}",
+        "adfTextBox7": "{\n  \"mapping\": \"{$.c.zipCode}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterZipCode}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterZipCode}\"\n  },\n  \"tooltip\": \"{i.i18n.common.zipcode}\",\n  \"inputMode\": \"ALPHANUMERIC\"\n}",
+        "adfTextBox7Label": "{\n\"text\" : \n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.common.zipcode}:\",\n  \"default\": \"{i.i18n.common.zipcode}:\"\n},\n\"helpTooltip\" : \"{i.i18n.common.zipcode}\"\n}",
+        "contractObject": "ExternalUsers_1",
+        "contractObjectService": "ExternalUserManagement",
+        "countryLabel": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.Country}:\",\n  \"default\": \"{i.i18n.TransfersEur.Country}:\"\n},\n\"helpTooltip\" : \"{i.i18n.TransfersEur.Country}\"\n}",
+        "countryValue": "{\n  \"mapping\": \"{$.c.country}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterCountry}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterCountry}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterCountry}\"\n}",
+        "ctLabel1": "{}",
+        "ctLabel2": "{}",
+        "ctLabel3": "{}",
+        "ctOption1": "{}",
+        "ctOption2": "{}",
+        "ctOption3": "{}",
+        "ctTextBox1": "{}",
+        "ctTextBox2": "{}",
+        "ctTextBox3": "{}",
+        "ctTextBox4": "{}",
+        "ctlblContactType": "{}",
+        "dvfConfig": "{\n  \"Recipients\": {\n    \"if_txtValue1\": \"MANDATORY\",\n    \"if_txtValue2\": \"MANDATORY\",\n    \"if_txtValue3\": \"MANDATORY\"\n  }\n}",
+        "getCountriesOperation": "getAllCountries",
+        "getStatesOperation": "getAllRegions",
+        "ifReenterTextBox2Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.WireTransfers.ReEnterAccountNumber}:\",\n  \"default\":\"{i.i18n.WireTransfers.ReEnterAccountNumber}:\"\n},\n\"helpTooltip\" : \"Re Enter Account Number\"\n}\n",
+        "ifTextBox1": "{\n  \"mapping\":\"{$.c.payeeName}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.EnterPayeeName}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.EnterPayeeName}\"\n  },\n  \"inputMode\":\"ALPHACHAR\"\n}",
+        "ifTextBox2": "{\n  \"mapping\":\"{$.c.accountNumber}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.AccountNumber}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.AccountNumber}\"\n  },\n  \"isMaskingEnabled\":true,\n  \"inputMode\":\"ALPHANUMERIC\"\n}",
+        "ifTextBox3": "{\n  \"mapping\":\"{$.c.nickName}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.NickName}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.NickName}\"\n  },\n  \"inputMode\":\"ALPHACHAR\"\n}",
+        "ifTextBox4": "{}",
+        "ifTextBox4Label": "{}",
+        "ifTextBox5": "{}",
+        "ifTextBox5Label": "{}",
+        "ifTextBox6": "{}",
+        "ifTextBox6Label": "{}",
+        "ifTextBox7": "{}",
+        "ifTextBox7Label": "{}",
+        "ifsubHeaderTxt": "{}",
+        "lookupObjectName": "BankDetails",
+        "lookupServiceName": "PayeeManagement",
+        "maxFillMapping": "{\n  \"Recipients\": {\n    \"if_txtValue1\": \"20\",\n    \"if_txtValue2\": \"40\",\n    \"if_txtValue3\": \"40\"\n  }\n}",
+        "minFillMapping": "{\n  \"Recipients\": {\n    \"if_txtValue1\": \"1\",\n    \"if_txtValue2\": \"3\",\n    \"if_txtValue3\": \"3\"\n  }\n}",
+        "sknPrimaryBtn": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnEnabed003e7513px\",\n  \"default\": \"ICSknbtnEnabed003e7536px\"\n}",
+        "sknPrimaryBtnDisabled": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnDisablede2e9f036px\",\n  \"default\": \"ICSknbtnDisablede2e9f036px\"\n}",
+        "sknPrimaryBtnHover": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnEnabed003e7513px\",\n  \"default\": \"ICSknbtnEnabed003e7536px\"\n}",
+        "sknSecondaryBtn": "{\n  \"$.BREAKPTS.BP1\": \"ICSknBtnSSPRegular003E7515Px\",\n  \"default\": \"ICSknBtnSSPRegular003E7515Px\"\n}",
+        "sknSecondaryBtnFocus": "{\n  \"$.BREAKPTS.BP1\": \"ICSknBtnSSPRegular003E7515Px\",\n  \"default\": \"ICSknBtnSSPRegular003E7515Px\"\n}",
+        "sknSecondaryBtnHover": "{\n  \"$.BREAKPTS.BP1\": \"ICSknBtnSSPRegular003E7515Px\",\n  \"default\": \"ICSknBtnSSPRegular003E7515Px\"\n}",
+        "stateObjectService": "Utility",
+        "utfCTAbutton1": "{\n  \"text\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.btnCancel}\",\n    \"default\": \"{i.i18n.TransfersEur.btnCancel}\"\n  },\n  \"action\": {\n    \"callBack\": \"showCancelPopup\",\n    \"level\": \"component\"   \n  }\n}",
+        "utfCTAbutton2": "{\n  \"text\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.btnContinue}\",\n    \"default\": \"{i.i18n.TransfersEur.btnContinue}\"\n  },\n  \"action\": {\n    \"callBack\": \"continueAddBeneficiary\",\n    \"level\": \"form\"   \n  }\n}"
+    },
+    "id": "unifiedAddBeneficiary",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f2e23db37fc34e2a839c8b0cc4874695",
+    "layouttype": 4,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxLeft",
+    "pf": "frmSameBankAddBeneficiary",
+    "responsiveData": {
+        "b1": {
+            "layoutType": 2,
+            "width": {
+                "type": "string",
+                "value": "97%"
+            }
+        },
+        "b2": {
+            "layoutType": 2,
+            "left": {
+                "type": "string",
+                "value": "3%"
+            },
+            "width": {
+                "type": "string",
+                "value": "94%"
+            }
+        },
+        "b3": {
+            "layoutType": 2,
+            "left": {
+                "type": "string",
+                "value": "3%"
+            },
+            "width": {
+                "type": "string",
+                "value": "94%"
+            }
+        },
+        "b4": {
+            "layoutType": 2,
+            "width": {
+                "type": "string",
+                "value": "97%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "b8816461498444aaa7083b874b4ed0af",
+    "wType": "UserWidgetInstance"
+}

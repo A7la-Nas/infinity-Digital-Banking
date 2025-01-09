@@ -1,0 +1,23 @@
+{
+    "AS_TextField_h8eb3d5782684f68a8fd259e816c42be": {
+        "id": "AS_TextField_h8eb3d5782684f68a8fd259e816c42be",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDashboard",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f008b8b804aa46ac8e1e56fddb197964"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onKeyUp_a60b1b052f1249108af280bb8cba6a4e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.enableOrDisableExternalLogin(this.view.AddExternalAccounts.LoginUsingSelectedBank.tbxNewUsername.text, this.view.AddExternalAccounts.LoginUsingSelectedBank.tbxEnterpassword.text);",
+            "callbackType": null
+        }]
+    }
+}

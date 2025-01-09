@@ -1,0 +1,84 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": ""
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 0,
+    "data": {
+        "conditionalMapping": "{\"segServiceRequest\":\n {\n   \"Cancel Dispute Transaction\": {\n     \"lblColumn4\":\"Requested Initiated\"\n   }\n }\n}",
+        "conditionalMappingKey": "${Collection.ServiceRequest.subType_description}",
+        "dataMapping": "{\n  \"segments\": {\n    \"segServiceRequest\": {\n      \"segmentMasterData\": \"${Collection.ServiceRequest}\",\n      \"segmentUI\": {\n        \"lblColumn1\": \"${segmentMasterData.requestDate}\",\n        \"valueField1\": \"${segmentMasterData.serviceReqProcessedTime}\",\n        \"lblColumn2\": \"${segmentMasterData.subType_description}\",\n        \"valueField2\": \"${segmentMasterData.type_description}\",\n        \"lblColumn3\": \"${segmentMasterData.serviceReqId}\",\n        \"valueField3\": \"${segmentMasterData.accountName}\",\n        \"lblColumn4\" : \"${segmentMasterData.serviceReqStatus}\",\n        \"valueField4\" : \"${segmentMasterData.signatoryApprovalRequired}\",\n        \"lblField1\":\"Last Update Date\", \n        \"lblField2\":\"Request Category\",\n        \"lblField3\":\"Account ID\",\n        \"lblField4\":\"Signatory Approval:\"\n      }\n    }\n  },\n  \"columnProps\" : {\n    \"default\": {\n      \"column1\": {\n        \"text\": \"${i18n{i18n.serviceRequests.RequestedDate}}\", \n        \"isSortable\": true,\n        \"sortField\": \"requestDate\"\n      },\n      \"column2\": {\n        \"text\": \"${i18n{i18n.serviceRequests.ServiceRequest}}\", \n        \"isSortable\": true,\n        \"sortField\": \"subType_description\"\n      },\n      \"column3\": {\n        \"text\": \"${i18n{i18n.serviceRequests.ReferenceN}}\", \n        \"isSortable\": true,\n        \"sortField\": \"serviceReqId\"\n      },\n      \"column4\": {\n        \"text\": \"${i18n{i18n.serviceRequests.Status}}\", \n        \"isSortable\": true,\n        \"sortField\": \"serviceReqStatus\"\n      }\n    }\n  },\n  \"filterFields\":{\n    \"field1\":\"serviceReqStatus\", \n    \"field2\":\"subtype\"\n  }, \n    \"advancedSearch\":{\n    \"default\":{\n      \"advance1\":{\n        \"fieldKey\":\"type\",\n        \"fieldValue\":\"type_description\",\n        \"defaultValue\":\"All Request Categories\",\n        \"defaultKey\":\"all\"\n      },\n      \"advance4\":{\n        \"fieldKey\":\"subType\",\n        \"fieldValue\":\"subType_description\",\n        \"defaultValue\":\"All Service Requests\",\n        \"defaultKey\":\"all\"\n      },\n      \"advance2\":{\n        \"fieldKey\":\"serviceReqStatus\",\n        \"fieldValue\":\"serviceReqStatus\",\n        \"defaultValue\":\"All Status\",\n        \"defaultKey\":\"all\"\n      }\n    }\n  },\n  \"simpleSearch\":{\n    \"fieldKey\":\"subType\",\n    \"fieldValue\":\"subType_description\",\n    \"defaultValue\":\"All Subtypes\",\n    \"defaultKey\":\"all\"\n  },\n  \"keywordSearch\":[\n      {\n      \"field\": \"serviceReqStatus\"\n      },\n      {\n        \"field\": \"subType_description\"\n      },\n      {\n        \"field\": \"serviceReqId\"\n      },\n      {\n        \"field\": \"accountId\"\n      }\n  ]   \n}",
+        "ide_onError": "AS_UWI_be3271a8fc56401c9440a74f6971022e",
+        "ide_showErrorMessage": "AS_UWI_b4d27738c04140cea11ae11ecf7e2d92",
+        "serviceParameters": "{\n   \"ServiceOrder\": {\n    \"Service\": \"ServiceRequestManagement\",\n    \"Object\": \"ServiceRequest\",\n    \"Verb\": \"getDetails\"\n   }\n}"
+    },
+    "id": "viewRequests",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f1d3b6c0dc204b698005ecc89a88d6ca",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxMain",
+    "pf": "frmServiceRequests",
+    "responsiveData": {
+        "b1": {},
+        "b2": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "0.70%"
+            },
+            "width": {
+                "type": "string",
+                "value": "97.50%"
+            }
+        },
+        "b3": {},
+        "b4": {}
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "jda0df0146f84abfbef89051219ec2a3",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

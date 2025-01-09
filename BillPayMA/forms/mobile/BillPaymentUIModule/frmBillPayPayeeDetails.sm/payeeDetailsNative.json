@@ -1,0 +1,64 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s966eaf1ea1441148b4828270a782f8b",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "data": {
+        "actionButton": "{\"Condition1\":{\"condition\":{\"{$.c.eBillStatus}\":\"1\"},\"action\":{\"level\":\"Form\",\"method\":\"payBill\"},\"text\":\"Kony.mb.EBill.PayBillSmall\",\"entitlement\":[\"BILL_PAY_CREATE\"]},\"Condition2\":{\"condition\":{\"{$.c.eBillStatus}\":\"0\"},\"action\":{\"level\":\"Form\",\"method\":\"activateEBill\"},\"text\":\"i18n.WireTransfer.ACTIVATE\",\"entitlement\":[\"BILL_PAY_ACTIVATE_OR_DEACTIVATE_EBILL\"]}}",
+        "field4Value": "{   \"mapping\": \"{$.c.addressLine1}, {$.c.addressLine2}, {$.c.cityName}, {$.c.state},{$.c.country},{$.c.zipCode}\",   \"type\": \"Label\",   \"widgetProps\": {     \"height\": \"120dp\",     \"width\": \"100%\"   },   \"widgetPropLabel\": {     \"width\": \"100%\"   } }",
+        "field7Key": "{\"text\":\"i18n.payments.linkedWithColon\"}",
+        "field7Value": "{\"mapping\":\"{$.c.noOfCustomersLinked}\",\"type\":\"Label\",\"widgetProps\":{\"height\":\"19dp\",\"width\":\"100%\"},\"widgetPropLabel\":{\"width\":\"100%\"}}"
+    },
+    "enablescrolling": true,
+    "id": "payeeDetailsNative",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "j1ea3ed91a374125a4e5979dad54a2a8",
+    "layouttype": 2,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxScrollMain",
+    "pf": "frmBillPayPayeeDetails",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+    "wType": "UserWidgetInstance"
+}

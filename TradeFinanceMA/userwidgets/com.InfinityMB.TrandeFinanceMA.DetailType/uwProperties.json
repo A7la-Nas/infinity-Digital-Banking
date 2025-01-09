@@ -1,0 +1,228 @@
+{
+    "classname": "DetailType",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ife78988111048f3877dafebfa3dd9ff",
+                    "paramList": [
+                        {
+                            "name": "context"
+                        },
+                        {
+                            "name": "frmType"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud42965e64a54f42b76904bbfb8b6e02",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "daea6186e1824361a1d829716fac4b52",
+                    "paramList": [],
+                    "propertyKey": "goBack",
+                    "pw": {
+                        "displayName": "goBack",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud42965e64a54f42b76904bbfb8b6e02",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ibab7125e36547db9ccd142c2b2a069d",
+                    "paramList": [],
+                    "propertyKey": "checkCurrentFlx",
+                    "pw": {
+                        "displayName": "checkCurrentFlx",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud42965e64a54f42b76904bbfb8b6e02",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c75cd99b78d5416a88a9cff73a7bcc17",
+                    "paramList": [],
+                    "propertyKey": "onDownloadAction",
+                    "pw": {
+                        "displayName": "onDownloadAction",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud42965e64a54f42b76904bbfb8b6e02",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d5d2b51c6450417795ce6de8de04aaea",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "showDownloadBtn",
+                    "pw": {
+                        "displayName": "showDownloadBtn",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud42965e64a54f42b76904bbfb8b6e02",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j87ebbb047db4facb34fc4d7747e23d9",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "hideDownloadBtn",
+                    "pw": {
+                        "displayName": "hideDownloadBtn",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud42965e64a54f42b76904bbfb8b6e02",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "be331f96f2514390877f5c1a3d0d0dc2",
+                    "paramList": [
+                        {
+                            "name": "headerText"
+                        }
+                    ],
+                    "propertyIndex": 3,
+                    "propertyKey": "changeHeaderText",
+                    "pw": {
+                        "displayName": "changeHeaderText",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud42965e64a54f42b76904bbfb8b6e02",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "efa73c24a478469a98c5d5d911aef433",
+                    "paramList": [
+                        {
+                            "name": "screensName"
+                        }
+                    ],
+                    "propertyIndex": 4,
+                    "propertyKey": "formNavigation",
+                    "pw": {
+                        "displayName": "formNavigation",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud42965e64a54f42b76904bbfb8b6e02",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a46b101db07041dcaad9f9500583e83b",
+                    "paramList": [
+                        {
+                            "name": "value"
+                        }
+                    ],
+                    "propertyIndex": 5,
+                    "propertyKey": "flxIOSFooterVisibility",
+                    "pw": {
+                        "displayName": "flxIOSFooterVisibility",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud42965e64a54f42b76904bbfb8b6e02",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a7eaee1838f5453583a689eccb432915",
+                    "paramList": [],
+                    "propertyIndex": 6,
+                    "propertyKey": "turnOffFlexVisibility",
+                    "pw": {
+                        "displayName": "turnOffFlexVisibility",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud42965e64a54f42b76904bbfb8b6e02",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"flxLCDetailsHeader\": {\n    \"creditDetails\": \"${i18n{i18n.TradeFinance.CreditDetails}}\",\n    \"beneficiaryDetails\": \"${i18n{kony.mb.TranfersEurope.BeneficiaryDetails}}\",\n    \"shipmentDetails\": \"${i18n{i18n.ImportLC.ShipmentDetails}}\",\n    \"documentsTerms\": \"${i18n{i18n.TradeFinance.DocumentsTerms}}\",\n    \"importLCDetails\": \"${i18n{i18n.ImportLC.ImportLCDetails}}\",\n    \"selectDetailType\": \"${i18n{i18n.ImportLC.SelectDetailType}}\",\n    \"lcReference\": \"${i18n{i18n.ImportLC.LCReference}}\",\n    \"lblStatus\": \"${Collection.objName.status}\",\n    \"lblReferenceNum\": \"${Collection.objName.lcReferenceNo}\",\n    \"goodAndShipmentDetails\": \"${i18n{i18n.ExportLC.GoodShipmenDetails}}\",\n    \"documentsAndTerms\": \"${i18n{i18n.ImportLC.DocumentsandTerms}}\",\n    \"swiftMessageAndAdvisesDetails\": \"${i18n{i18n.ExportLC.SwiftMessagesAndAdvisesDetails}}\"\n  },\n    \"drawingKeys\":{\n    \"drawingreference\":\"${i18n{i18n.TradeFinance.DrawingReference}}\",\n    \"lcsummary\" : \"${i18n{i18n.TradeFinance.LCSummary}}\",\n    \"documenttype\":\"${i18n{i18n.TradeFinance.DocumentType}}\",\n    \"drawingamount\":\"${i18n{i18n.TradeFinance.DrawingAmount}}\",\n    \"creationdate\":\"${i18n{i18n.TradeFinance.CreationDate}}\",\n    \"documentstatus\":\"${i18n{i18n.TradeFinance.DocumentStatus}}\",\n    \"presenter\":\"${i18n{i18n.TradeFinance.Presenter}}\",\n    \"presenterreference\":\"${i18n{i18n.TradeFinance.PresenterReference}}\",\n    \"forwardcontract\":\"${i18n{i18n.ImportDrawings.ForwardContract}}\",\n    \"shippingguaranteereference\":\"${i18n{i18n.TradeFinance.ShippingGuaranteeReference}}\",\n    \"messagefrombank\":\"${i18n{i18n.ImportDrawings.MessageFromBank}}\",\n    \"paymentdetails\":\"${i18n{i18n.TransfersEur.PaymentDetails}}\",\n    \"totalamountotbepaid\":\"${i18n{i18n.TradeFinance.TotalAmounttobePaid}}\",\n    \"amounttobedebitedfrom\":\"${i18n{i18n.TradeFinance.Amounttobedebitedfrom}}\",\n    \"yourmessagetobank\":\"${i18n{i18n.TradeFinance.Yourmessagetobank}}\",\n    \"paymentstatus\":\"${i18n{i18n.ImportDrawings.PaymentStatus}}\",\n    \"rejecteddate\":\"${i18n{i18n.TradeFinance.RejectedDate}}\",\n    \"importDrawing\":\"${i18n{i18n.ImportDrawings.ImportDrawing}}\",\n    \"swiftmsgandadvice\":\"${i18n{i18n.ImportDrawings.SwiftMessageAdvice}}\",\n    \"beneficiary\":\"${i18n{i18n.TradeFinance.Beneficiary}}\",\n    \"messageType\":\"${i18n{i18n.ExportLC.MessageType}}\",\n    \"messagecategory\":\"${i18n{i18n.ExportLC.MessageCategory}}\",\n    \"date\":\"${i18n{i18n.konybb.Common.Date}}\",\n    \"totaldocuments\":\"${i18n{i18n.TradeFinance.TotalDocuments}}\",\n    \"documents\":\"${i18n{i18n.wealth.Documents}}\",\n    \"discrepancies\":\"${i18n{i18n.TradeFinance.Discrepancies}}\",\n    \"documentacceptance\":\"${i18n{i18n.TradeFinance.DocumentAcceptance}}\",\n    \"paymentdate\":\"${i18n{i18n.billPay.PaymentDate}}\",\n    \"documentreceived\":\"${i18n{i18n.TradeFinance.DocumentReceived}}\",\n\n    \"drawingreferenecenumber\": \"${Collection.drawings.drawingReferenceNo}\",\n    \"drawingbeneficiaryname\": \"${Collection.drawings.beneficiaryName}\",\n    \"drawinglcreferencenumber\": \"${Collection.drawings.lcReferenceNo}\",\n    \"drawingcreditamount\": \"${Collection.drawings.lcAmount}\",\n    \"drawingissuedate\":\"${Collection.drawings.lcIssueDate}\",\n    \"drawingexpirydate\":\"${Collection.drawings.lcExpiryDate}\",\n    \"drawingpaymentterms\":\"${Collection.drawings.lcType}\",\n    \"drawingsamount\":\"${Collection.drawings.drawingAmount}\",\n    \"drawingscreationdate\":\"${Collection.drawings.drawingCreationDate}\",\n    \"drawingsdocumentreceived\":\"${Collection.drawings.documentsReceived}\",\n    \"drawingspresenter\":\"${Collection.drawings.presentorName}\",\n    \"drawingspresenterreference\":\"${Collection.drawings.presentorReference}\",\n    \"drawingsforwardcontract\":\"${Collection.drawings.forwardContact}\",\n    \"drawingsshippingguaranteereference\":\"${Collection.drawings.shippingGuaranteeReference}\",\n    \"drawingsmessagefrombank\":\"${Collection.drawings.messageFromBank}\",\n    \"DStotalcount\":\"${Collection.drawings.totalDocuments}\",\n    \"DSName\":\"${Collection.drawings.documentName}\",\n    \"DSdiscrepancies\":\"${Collection.drawings.discrepancies}\",\n    \"DSAcceptance\":\"${Collection.drawings.discrepancies}\",\n    \"DSdocumentstatus\":\"${Collection.drawings.documentStatus}\",\n    \"DSdocumentacceptance\":\"${Collection.drawings.acceptance}\",\n    \"PDpaymentstatus\":\"${Collection.drawings.paymentStatus}\",\n    \"PDpaymentdate\":\"${Collection.drawings.paymentDate}\",\n    \"PDrejecteddate\":\"${Collection.drawings.rejectedDate}\",\n    \"PDtotalamounttobepaid\":\"${Collection.drawings.totalAmountToBePaid}\",\n    \"PDamounttobedebitedfrom\":\"${Collection.drawings.accountToBeDebited}\",\n    \"PDyourmessagetobank\":\"${Collection.drawings.messageToBank}\",\n    \"drawingsStatus\":\"${Collection.drawings.status}\",\n\n    \"lcSrmsReqOrderID\": \"${Collection.drawings.lcSrmsReqOrderID}\"\n  },\n  \"flxDetailType1\": {\n    \"lcDetails\": \"${i18n{i18n.ImportLC.LCDetails}}\",\n    \"drawingDetails\": \"${i18n{i18n.ImportLC.DrawingDetails}}\",\n    \"swiftsAndAdvices\": \"${i18n{i18n.ImportLC.SwiftsAdvices}}\",\n    \"amendments\": \"${i18n{i18n.ImportLC.Amendments}}\"\n  },\n  \"flxDetailType2LCType\": {\n    \"lcReferenceNumber\": \"${i18n{i18n.ExportLC.LCReferenceNumber}}\",\n    \"lcType\": \"${i18n{i18n.ImportLC.LCType}}\",\n    \"applicant\": \"${i18n{i18n.ExportLC.Applicant}}\",\n    \"applicantAddress\": \"${i18n{i18n.ExportLC.ApplicantAddress}}\",\n    \"issuingBank\": \"${i18n{kony.mb.cardManage.issuingBank}}\",\n    \"issuingBankAddress\": \"${i18n{i18n.ExportLC.IssuingBankAddress}}\",\n    \"LCAmount\": \"${i18n{i18n.ExportLC.LCAmount}}\",\n    \"valueLCReferenceNum\": \"${Collection.objName.lcReferenceNo}\",\n    \"valueLCtype\": \"${Collection.objName.lcType}\",\n    \"valueApplicantDetails\": \"${Collection.objName.applicantDetails}\",\n    \"valueApplicantAddress\": \"${Collection.objName.applicantAddress}\",\n    \"valueIssuingbankName\": \"${Collection.objName.issuingbankName}\",\n    \"valueIssuingBankAddress\": \"${Collection.objName.issuingBankAddress}\",\n    \"valueLCAmount\": \"${Collection.objName.lcAmount}\"\n  },\n  \"flxDetailType2GoodAndShipmentDetails\": {\n    \"goodsDescription\": \"${i18n{i18n.ExportLC.GoodsDescription}}\",\n    \"additionalConditions\": \"${i18n{i18n.ExportLC.AdditionalConditions}}\",\n    \"confirmInstructions\": \"${i18n{i18n.ExportLC.ConfirmInstructions}}\",\n    \"latestShipmentDate\": \"${i18n{i18n.ExportLC.LatestShipmentDate}}\",\n    \"valueDescriptionOfGoods\": \"${Collection.objName.descriptionOfGoods}\",\n    \"valueAdditionalConditions\": \"${Collection.objName.additionalConditions}\",\n    \"valueConfirmationInstruction\": \"${Collection.objName.confirmationInstruction}\",\n    \"valueLatestShippingDate\": \"${Collection.objName.latestShippingDate}\"\n  },\n  \"flxDetailType2DocumentandTerms\": {\n    \"documentName\": \"${i18n{i18n.ExportLC.DocumentName}}\",\n    \"valueDocumentName\": \"${Collection.objName.documentName}\"\n  },\n  \"flxDetailType2SwiftMessageAndAdvisesDetails\": {\n    \"messageType\": \"${i18n{i18n.ExportLC.MessageType}}\",\n    \"deliveredToFrom\": \"${i18n{i18n.ExportLC.DeliveredToFrom}}\",\n    \"date\": \"${i18n{i18n.ChequeManagement.Date}}\",\n    \"messageCategory\": \"${i18n{i18n.ExportLC.MessageCategory}}\",\n    \"valueMessageType\": \"${Collection.objName.messageType}\",\n    \"valueDeliveredToFrom\": \"${Collection.objName.deliveredToFrom}\",\n    \"valueDeliveredDate\": \"${Collection.objName.deliveredDate}\",\n    \"valueMessageCategory\": \"${Collection.objName.messageCategory}\"\n  },\n  \"flxDetailType2CreditDetails\": {\n    \"referenceNumber\": \"${i18n{i18n.transfers.RefrenceNumber}}\",\n    \"creditAmount\": \"${i18n{i18n.TradeFinance.CreditAmount}}\",\n    \"tolerencePercentage\": \"${i18n{i18n.TradeFinance.TolerancePercentage}}\",\n    \"maximumCreditAmount\": \"${i18n{i18n.TradeFinance.MaxCreditAmount}}\",\n    \"additionalPayableAmount\": \"${i18n{i18n.TradeFinance.AdditionalPayableAmount}}\",\n    \"paymentTerms\": \"${i18n{i18n.TradeFinance.PaymentTerms}}\",\n    \"availableWith\": \"${i18n{i18n.TradeFinance.AvailableWith}}\",\n    \"issueDate\": \"${i18n{i18n.TradeFinance.IssueDate}}\",\n    \"expiryDate\": \"${i18n{i18n.TradeFinance.ExpiryDate}}\",\n    \"chargesAccount\": \"${i18n{i18n.TradeFinance.ChargesAccountOptional}}\",\n    \"marginAccount\": \"${i18n{i18n.TradeFinance.MarginAccountOptional}}\",\n    \"commissionAccount\": \"${i18n{i18n.TradeFinance.CommissionAccountOptional}}\",\n    \"messageToBank\": \"${i18n{i18n.TradeFinance.MessageToBank}}\",\n    \"valueReferenceNumber\": \"${Collection.objName.lcReferenceNo}\",\n    \"valueAmount\": \"${Collection.objName.lcAmount}\",\n    \"valueCurrency\": \"${Collection.objName.lcCurrency}\",\n    \"valueTolerencePercentage\": \"${Collection.objName.tolerancePercentage}\",\n    \"valueMaximumCreditAmount\": \"${Collection.objName.maximumCreditAmount}\",\n    \"valuePayableCurrency\": \"${Collection.objName.additionalPayableCurrency}\",\n    \"valuePayableAmount\": \"${Collection.objName.additionalAmountPayable}\",\n    \"valueAvailable1\": \"${Collection.objName.availableWith1}\",\n    \"valueAvailable2\": \"${Collection.objName.availableWith2}\",\n    \"valueAvailable3\": \"${Collection.objName.availableWith3}\",\n    \"valueAvailable4\": \"${Collection.objName.availableWith4}\",\n    \"valueIssueDate\": \"${Collection.objName.issueDate}\",\n    \"valueExpiryDate\": \"${Collection.objName.expiryDate}\",\n    \"valueExpiryPlace\": \"${Collection.objName.expiryPlace}\",\n    \"valueformattedAmount\": \"${Collection.objName.formattedAmount}\",\n    \"valueformattedAmountWithCurrency\": \"${Collection.objName.formattedAmountWithCurreny}\",\n    \"valueformattedPayableAmountWithCurrency\": \"${Collection.objName.formattedPayableAmountWithCurrency}\",\n    \"valueSelectedChargeValue\": \"${Collection.objName.chargesAccount}\",\n    \"valueCommissionAccount\": \"${Collection.objName.commisionAccount}\",\n    \"valueMarginAccount\": \"${Collection.objName.marginAccount}\",\n    \"valueMessage\": \"${Collection.objName.messageToBank}\"\n  },\n  \"flxDetailType2BeneficiaryDetails\": {\n    \"beneficiaryName\": \"${i18n{kony.i18n.common.beneficiary}}\",\n    \"beneficiaryAddress\": \"${i18n{i18n.TradeFinance.BeneficiaryAddress}}\",\n    \"bankName\": \"${i18n{i18n.TradeFinance.BankNameOptional}}\",\n    \"bankAddress\": \"${i18n{i18n.TradeFinance.BankAddressOptional}}\",\n    \"name\": \"${i18n{i18n.P2PActivation.Name}}\",\n    \"address\": \"${i18n{i18n.NAO.Address}}\",\n    \"valueBeneficiaryName\": \"${Collection.objName.beneficiaryName}\",\n    \"valueBeneficiaryAddress\": \"${Collection.objName.beneficiaryAddress}\",\n    \"valueBeneficiaryAddress1\": \"${Collection.objName.beneficiaryAddressLine1}\",\n    \"valueBeneficiaryAddress2\": \"${Collection.objName.beneficiaryAddressLine2}\",\n    \"valueCity\": \"${Collection.objName.beneficiaryCity}\",\n    \"valueBeneficiaryZipCode\": \"${Collection.objName.beneficiaryPostCode}\",\n    \"valueBankName\": \"${Collection.objName.beneficiaryBank}\",\n    \"valueBankAddress1\": \"${Collection.objName.beneficiaryBankAdressLine1}\",\n    \"valueBankAddress2\": \"${Collection.objName.beneficiaryBankAdressLine2}\",\n    \"valueBankCity\": \"${Collection.objName.beneficiaryBankCity}\",\n    \"valueBankZipCode\": \"${Collection.objName.beneficiaryBankPostCode}\"\n  },\n  \"flxDetailType2ShipmentDetails\": {\n    \"placeOfCharge\": \"${i18n{i18n.TradeFinance.ChargeTakingPlace}}\",\n    \"portLoading\": \"${i18n{i18n.TradeFinance.PortOfLoading}}\",\n    \"portCharge\": \"${i18n{i18n.TradeFinance.PortOfDischarge}}\",\n    \"finalDeliveryPlace\": \"${i18n{i18n.TradeFinance.PlaceOfFinalDelivery}}\",\n    \"shipmentDate\": \"${i18n{i18n.TradeFinance.LatestShipmentDate}}\",\n    \"transhipment\": \"${i18n{i18n.TradeFinance.Transhipment}}\",\n    \"partialShipment\": \"${i18n{i18n.TradeFinance.PartialShipment}}\",\n    \"incoTerms\": \"${i18n{i18n.TradeFinance.IncoTerms}}\",\n    \"shipmentMode\": \"${i18n{i18n.TradeFinance.ModeOfShipment}}\",\n    \"valuePlaceOfCharge\": \"${Collection.objName.placeOfTakingIncharge}\",\n    \"valuePortLoading\": \"${Collection.objName.portOfLoading}\",\n    \"valuePortCharge\": \"${Collection.objName.portOfDischarge}\",\n    \"valueFinalDeliveryPlace\": \"${Collection.objName.placeOfFinalDelivery}\",\n    \"valueshipmentDate\": \"${Collection.objName.latestShippingDate}\"\n  },\n  \"flxDetailType2DocumentDetails\": {\n    \"description\": \"${i18n{i18n.TradeFinance.DescriptionOfGoods}}\",\n    \"requiredDocuments\": \"${i18n{i18n.TradeFinance.DocumentsRequired}}\",\n    \"additionalCondition\": \"${i18n{i18n.TradeFinance.AdditionalConditionsCode}}\",\n    \"otherCondition\": \"${i18n{i18n.TradeFinance.OtherAdditionalConditions}}\",\n    \"charges\": \"${i18n{i18n.accounts.charges}}\",\n    \"confirmationInstruction\": \"${i18n{i18n.TradeFinance.ConfirmationInstructions}}\",\n    \"transferable\": \"${i18n{i18n.TradeFinance.Transferable}}\",\n    \"standByLC\": \"${i18n{i18n.TradeFinance.StandByLC}}\",\n    \"uploadDocs\": \"${i18n{i18n.TradeFinance.UploadDocuments}}\",\n    \"valueDescription\": \"${Collection.objName.descriptionOfGoods}\",\n    \"valueRequiredDocuments\": \"${Collection.objName.documentsRequired}\",\n    \"valueAdditionalCondition\": \"${Collection.objName.additionalConditionsCode}\",\n    \"valueOtherCondition\": \"${Collection.objName.otherAdditionalConditions}\",\n    \"valueCharges\": \"${Collection.objName.documentCharges}\"\n  },\n  \"flxButtons\": {\n    \"copyAndCreateNewLC\": \"${i18n{i18n.ImportLC.Copy&CreateNewLC}}\",\n    \"viewAllImportLC\": \"${i18n{i18n.TradeFinance.ViewAllImportLC}}\"\n  },\n  \"PaymentTermsDropdown\": {\n    \"lblValuePaymentTerms\": \"${Collection.objName.paymentTerms}\",\n    \"DropdownValues\": {\n      \"Sight\": \"Sight\",\n      \"Deferred\": \"Deferred\",\n      \"Acceptance\": \"Acceptance\",\n      \"Negotiation Sight\": \"Negotiation Sight\",\n      \"Negotiation Acceptance\": \"Negotiation Acceptance\"\n    }\n  },\n  \"TranshipmentDropdown\": {\n    \"lblSelectedTranshipment\": \"${Collection.objName.transshipment}\",\n    \"DropdownValues\": {\n      \"Allowed\": \"Allowed\",\n      \"Not Allowed\": \"Not Allowed\"\n    }\n  },\n  \"PartialShipmentsDropdown\": {\n    \"lblSelectedPartialShipment\": \"${Collection.objName.partialShipments}\",\n    \"DropdownValues\": {\n      \"Allowed\": \"Allowed\",\n      \"Not Allowed\": \"Not Allowed\",\n      \"Conditional\": \"Conditional\"\n    }\n  },\n  \"IncoTermsDropdown\": {\n    \"lblSelectedIncoTerms\": \"${Collection.objName.incoTerms}\",\n    \"DropdownValues\": {\n      \"CIF\": \"COST,INSURANCE AND FREIGHT\",\n      \"CFR\": \"COST AND FREIGHT\",\n      \"FOB\": \"FREE ON BOARD\",\n      \"FCA\": \"FREE CARRIER\",\n      \"FAS\": \"FREE ALONGSIDE SHIP\",\n      \"CPT\": \"CARRIAGE PAID TO\",\n      \"CIP\": \"CARRIAGE AND INSURANCE PAID TO\",\n      \"DAP\": \"DELEIVERED AT FRONTIER\",\n      \"DDP\": \"DELIEVERED DUTY PAID\",\n      \"DDU\": \"DELIVERED DUTY UNPAID\",\n      \"DES\": \"DELIVERED EX SHIP\",\n      \"DEQ\": \"DELIVERED EX QUAY\",\n      \"EXW\": \"EX WORKS\"\n    }\n  },\n  \"ModeOfShipmentDropdown\": {\n    \"lblSelectedShipmentMode\": \"${Collection.objName.modeOfShipment}\",\n    \"DropdownValues\": {\n      \"Air\": \"Air\",\n      \"Sea\": \"Sea\",\n      \"Road\": \"Road\",\n      \"Rail\": \"Rail\",\n      \"Multi modal\": \"Multi modal\",\n      \"Other\": \"Other\"\n    }\n  },\n  \"ConfirmationInstructionsDropdown\": {\n    \"lblSelectedInstruction\": \"${Collection.objName.confirmationInstruction}\",\n    \"DropdownValues\": {\n      \"Confirm\": \"Confirm\",\n      \"May Add\": \"May Add\",\n      \"Without\": \"Without\"\n    }\n  },\n  \"TransferableDropdown\": {\n    \"lblSelectedTransferable\": \"${Collection.objName.transferable}\",\n    \"DropdownValues\": {\n      \"Yes\": \"Yes\",\n      \"No\": \"No\"\n    }\n  },\n  \"StandByLCDropdown\": {\n    \"lblSelectedStandByLC\": \"${Collection.objName.standByLC}\",\n    \"DropdownValues\": {\n      \"Yes\": \"Yes\",\n      \"No\": \"No\"\n    }\n  },\n  \"CurrencyDropdown\": {\n    \"lblSelectedValueCurrency\": \"${Collection.objName.lcCurrency}\",\n    \"lblSelectedValuePayableCurrency\": \"${Collection.objName.additionalPayableCurrency}\",\n    \"DropdownValues\": {\n      \"GBP\": \"£-GBP\",\n      \"EUR\": \"€-EUR\",\n      \"INR\": \"₹-INR\",\n      \"USD\": \"$-USD\"\n    }\n  }\n}",
+                    "group": "General",
+                    "kuid": "a03c684919254139b9b8fad177d6a2c3",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 1,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "ud42965e64a54f42b76904bbfb8b6e02",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"generateLCSummary\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LCSummary\",\n    \"Verb\": \"generate\",\n    \"Criteria\": {\n      \"srmsReqOrderID\": \"\"\n    }\n  },\n\n  \"generateLCImportDrawingSummary\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LCImportDrawingSummary\",\n    \"Verb\": \"generate\",\n    \"Criteria\": {\n      \"drawingsSrmsReqOrderID\": \"\"\n    }\n  },\n\n  \"getLetterOfCreditsById\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LetterOfCredit\",\n    \"Verb\": \"getLetterOfCreditsById\",\n    \"Criteria\":\n    {\n      \"srmsReqOrderID\": \"\"\n    }\n  },\n\n  \"getImportLCDrawings\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LCImportDrawing\",\n    \"Verb\": \"getImportLCDrawings\",\n    \"Criteria\": \n    {\n      \"searchString\":\"\",\n      \"pageSize\":\"\",\n      \"pageOffset\":\"\",\n      \"sortByParam\":\"\",\n      \"sortOrder\":\"\",\n      \"timeParam\":\"\",\n      \"timeValue\":\"\",\n      \"filterByValue\":\"\",\n      \"filterByParam\":\"\",\n      \"fromDateFilter\":\"\",\n      \"toDateFilter\":\"\"\n    }\n  },\n\n  \"getImportLCDrawingById\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LCImportDrawing\",\n    \"Verb\": \"getImportLCDrawingById\",\n    \"Criteria\": \n    {\n      \"drawingsSrmsReqOrderID\": \"\"\n    }\n  }\n}",
+                    "group": "General",
+                    "kuid": "a6c360fa75ac4afa8588fe38516984a4",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 2,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "ud42965e64a54f42b76904bbfb8b6e02",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.TrandeFinanceMA",
+    "version": "1.0.0"
+}

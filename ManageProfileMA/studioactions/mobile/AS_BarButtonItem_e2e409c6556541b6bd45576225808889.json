@@ -1,0 +1,17 @@
+{
+    "AS_BarButtonItem_e2e409c6556541b6bd45576225808889": {
+        "id": "AS_BarButtonItem_e2e409c6556541b6bd45576225808889",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b68d382ddc934c03aae9fe4845a96afc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var settingsMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"SettingsModule\");\nsettingsMod.presentationController.commonFunctionForNavigation(\"frmSettings\");",
+            "callbackType": null
+        }]
+    }
+}

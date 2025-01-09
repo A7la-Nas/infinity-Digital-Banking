@@ -1,0 +1,396 @@
+{
+    "classname": "loginPopups",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "jcbc7f02d3884022a5cd90e11058e992",
+                    "paramList": [
+                        {
+                            "name": "loginType"
+                        }
+                    ],
+                    "propertyKey": "setVisibilityForSpecificLoginType",
+                    "pw": {
+                        "displayName": "setVisibilityForSpecificLoginType",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e814d076d6bd4bb49afdfb0f466e3091",
+                    "paramList": [
+                        {
+                            "name": "loginType"
+                        }
+                    ],
+                    "propertyKey": "initiateLoginFlow",
+                    "pw": {
+                        "displayName": "initiateLoginFlow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "g0c2b7023dae4207b599eb653b5ae2a3",
+                    "paramList": [
+                        {
+                            "name": "loginSuccessObj"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onLoginSuccess",
+                    "pw": {
+                        "displayName": "onLoginSuccess",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i4c7751e53654cc1a6ec0ad60da1d1ef",
+                    "paramList": [
+                        {
+                            "name": "isPopupVisible"
+                        }
+                    ],
+                    "propertyIndex": 2,
+                    "propertyKey": "onPopupVisible",
+                    "pw": {
+                        "displayName": "onPopupVisible",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h39a8fb9b69840ab96f5fb6602b17b82",
+                    "paramList": [
+                        {
+                            "name": "loginFailureObj"
+                        }
+                    ],
+                    "propertyIndex": 3,
+                    "propertyKey": "onLoginFailure",
+                    "pw": {
+                        "displayName": "onLoginFailure",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Login Service",
+                "Skins",
+                "Images",
+                "Text"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "DbxUserLogin",
+                    "group": "Login Service",
+                    "kuid": "cdfff81034d24623841841f0ab9891f7",
+                    "originalPropertyKey": "identityServiceName",
+                    "propertyIndex": 1,
+                    "propertyKey": "identityServiceName",
+                    "pw": {
+                        "dependencyConditions": {
+                            "conditions": []
+                        },
+                        "displayName": "Identity Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnffffff004b95SSPReg107pr",
+                    "group": "Skins",
+                    "kuid": "b737c0d082954065b8a51090a315c01d",
+                    "originalPropertyKey": "btnTouchPinFaceIdSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnTouchPinFaceIdSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Touch Pin Face Login Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "faceid.png",
+                    "group": "Images",
+                    "kuid": "d07c8903ef154c21829a7baf37000d86",
+                    "originalPropertyKey": "faceIDPopupImage",
+                    "propertyIndex": 1,
+                    "propertyKey": "faceIDPopupImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "FaceID Popup Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.devReg.TouchId",
+                    "group": "Text",
+                    "kuid": "a3b745a5de3a4414b54617cedb4333d9",
+                    "originalPropertyKey": "touchIDBtnText",
+                    "propertyIndex": 1,
+                    "propertyKey": "touchIDBtnText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "TouchID Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl3e4f56SSPReg32px",
+                    "group": "Skins",
+                    "kuid": "bc82bef307a44a8e971b8fd6dea0058e",
+                    "originalPropertyKey": "pinPopupTitleSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "pinPopupTitleSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pin Popup Title Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.login.pinId",
+                    "group": "Text",
+                    "kuid": "f818577ef34245b796d86240c38d4d59",
+                    "originalPropertyKey": "pinIDBtnText",
+                    "propertyIndex": 2,
+                    "propertyKey": "pinIDBtnText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "PinID Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "btnNumbere3e3e3B",
+                    "group": "Skins",
+                    "kuid": "fb898a09dea942cf8a86b01fc896453b",
+                    "originalPropertyKey": "pinPopupNumbersSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "pinPopupNumbersSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pin Popup Numbers Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.FaceCaps",
+                    "group": "Text",
+                    "kuid": "a8e4e5eab2fb471ab411fb94357efc16",
+                    "originalPropertyKey": "faceIDBtnText",
+                    "propertyIndex": 3,
+                    "propertyKey": "faceIDBtnText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "FaceID Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxImgCancel",
+                    "group": "Skins",
+                    "kuid": "bc1d0e762473414a884649ce29eb7615",
+                    "originalPropertyKey": "pinPopupClearButtonSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "pinPopupClearButtonSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pin Popup Clear Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.login.enterLoginPin",
+                    "group": "Text",
+                    "kuid": "i087f1e0073441e8be821fac5145eb3a",
+                    "originalPropertyKey": "pinPopupTitleText",
+                    "propertyIndex": 4,
+                    "propertyKey": "pinPopupTitleText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pin Popup Title Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl0095e4SSPReg30px",
+                    "group": "Skins",
+                    "kuid": "e6aeae92189d437fb66199f9eef560a0",
+                    "originalPropertyKey": "popupCancelButtonSkin",
+                    "propertyIndex": 5,
+                    "propertyKey": "popupCancelButtonSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Popup Cancel Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.Cancel",
+                    "group": "Text",
+                    "kuid": "f9837c5ae9da465397f532ff9f7abce4",
+                    "originalPropertyKey": "popupCancelBtnText",
+                    "propertyIndex": 5,
+                    "propertyKey": "popupCancelBtnText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Popup Cancel Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl3e4f56SSPReg30px",
+                    "group": "Skins",
+                    "kuid": "c0294495b49d466cac00cd6fb2d9760f",
+                    "originalPropertyKey": "faceIDPopupTitleSkin",
+                    "propertyIndex": 6,
+                    "propertyKey": "faceIDPopupTitleSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "FaceID Popup Title Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.login.faceIdTitle",
+                    "group": "Text",
+                    "kuid": "ae61330970004bbe956840fc196c4647",
+                    "originalPropertyKey": "faceIDPopupTitleText",
+                    "propertyIndex": 6,
+                    "propertyKey": "faceIDPopupTitleText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "FaceID Popup Ttile Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl3e4f56op50SSPReg30px",
+                    "group": "Skins",
+                    "kuid": "cfc7cab2d06043acb480784fc0339ece",
+                    "originalPropertyKey": "faceIDPopupDescSkin",
+                    "propertyIndex": 7,
+                    "propertyKey": "faceIDPopupDescSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "FaceID Popup Description Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.login.authenticationMsg",
+                    "group": "Text",
+                    "kuid": "e7a09c9e338a4fde999739ab22cfdd4e",
+                    "originalPropertyKey": "faceIDPopupDescText",
+                    "propertyIndex": 7,
+                    "propertyKey": "faceIDPopupDescText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "FaceID Popup Description Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e5bca5a6a2f04c2fa843c464f8a79a29",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.AuthenticationMA",
+    "version": "1.0.0"
+}

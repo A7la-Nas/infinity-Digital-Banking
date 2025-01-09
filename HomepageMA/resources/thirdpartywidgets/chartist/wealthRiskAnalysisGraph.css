@@ -1,0 +1,37 @@
+#WealthRiskAnalysisGraph .ct-series .ct-bar {
+	stroke-width: 30;
+	stroke:#3645A7;
+}
+
+#WealthRiskAnalysisGraph .ct-chart-bar {
+	overflow: visible;
+	margin : 0 0 30px 0;
+}
+
+#WealthRiskAnalysisGraph .ct-grid{ 
+	stroke: grey;
+}
+
+#WealthRiskAnalysisGraph svg {
+	width: 90% !important;
+	left:40px;
+	position:absolute;
+}
+
+#WealthRiskAnalysisGraph .ct-vertical {
+    stroke-dasharray: 2px; !important;
+}
+        
+		#WealthRiskAnalysisGraph .ct-vertical~.ct-vertical{
+			display: none;
+		}
+		
+		#WealthRiskAnalysisGraph .ct-horizontal {
+			stroke-dasharray : 2px;
+		}
+
+#WealthRiskAnalysisGraph .ct-label{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #424242;
+    font-size: 13px;
+}

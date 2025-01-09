@@ -1,0 +1,173 @@
+{
+    "classname": "totalAssets",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "i58547adf9a446e19146ad0c0d9e291e",
+                    "paramList": [
+                        {
+                            "name": "dataobj"
+                        }
+                    ],
+                    "propertyKey": "createDonutChart",
+                    "pw": {
+                        "displayName": "createDonutChart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "dd361a6dcf144deb8d7fa82891081136",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b244b9c7994f477ea3571e5ffdef07f9",
+                    "paramList": [
+                        {
+                            "name": "width"
+                        }
+                    ],
+                    "propertyKey": "onBreakpointChangeComponent",
+                    "pw": {
+                        "displayName": "onBreakpointChangeComponent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "dd361a6dcf144deb8d7fa82891081136",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": {
+                        "data": [
+                            {
+                                "Colors": "#0475C4"
+                            },
+                            {
+                                "Colors": "#43A2CA"
+                            },
+                            {
+                                "Colors": "#7BCCC4"
+                            },
+                            {
+                                "Colors": "#BAE4BC"
+                            },
+                            {
+                                "Colors": "#E9FED4"
+                            },
+                            {
+                                "Colors": "#E55845"
+                            },
+                            {
+                                "Colors": "#E48444"
+                            },
+                            {
+                                "Colors": "#E8DD46"
+                            },
+                            {
+                                "Colors": "#54D75D"
+                            },
+                            {
+                                "Colors": "#04C477"
+                            }
+                        ],
+                        "schema": [
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "Colors",
+                                "columnHeaderType": "text",
+                                "columnID": "Colors",
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "ff9f31d8746f437c8dd204be1c17e71b"
+                            }
+                        ]
+                    },
+                    "group": "General",
+                    "kuid": "ef65e53283424680a817ca9b0ab0f966",
+                    "originalPropertyKey": "StrokeColors",
+                    "propertyIndex": 6,
+                    "propertyKey": "StrokeColors",
+                    "pw": {
+                        "displayName": "StrokeColors",
+                        "uiRepresentation": "Label-DataGrid"
+                    },
+                    "srcWgtKUID": "dd361a6dcf144deb8d7fa82891081136",
+                    "type": "data grid",
+                    "value": 1
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "assetClass, percentage, marketValue",
+                    "group": "General",
+                    "kuid": "b6407a6673bf40d5882c9101dd46278c",
+                    "originalPropertyKey": "TooltipValues",
+                    "propertyIndex": 7,
+                    "propertyKey": "TooltipValues",
+                    "pw": {
+                        "displayName": "TooltipValues",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "dd361a6dcf144deb8d7fa82891081136",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "vertical",
+                    "group": "General",
+                    "kuid": "cd551a9935e74249a7ee79bc5d966698",
+                    "originalPropertyKey": "LayoutType",
+                    "propertyIndex": 8,
+                    "propertyKey": "LayoutType",
+                    "pw": {
+                        "displayName": "LayoutType",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "dd361a6dcf144deb8d7fa82891081136",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.wealth.totalAssets",
+                    "group": "General",
+                    "kuid": "cb29ad42fe81438d8d5e356464be3af7",
+                    "originalPropertyKey": "Title",
+                    "propertyIndex": 9,
+                    "propertyKey": "Title",
+                    "pw": {
+                        "displayName": "Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "dd361a6dcf144deb8d7fa82891081136",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.HomepageMA",
+    "version": "1.0.0"
+}

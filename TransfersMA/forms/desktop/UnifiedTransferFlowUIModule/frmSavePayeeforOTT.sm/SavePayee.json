@@ -1,0 +1,130 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 0,
+    "data": {
+        "ackField2Value": "{\"text\":\"{$.c.payeeName}\",\"fieldType\":\"Label\"}",
+        "ackField6Value": "{\"text\":\"{$.c.phone}\",\"fieldType\":\"Label\"}",
+        "ackField7Value": "{\"text\":\"{$.c.email}\",\"fieldType\":\"Label\"}",
+        "acknowledgementButton1": "{\"text\": {\"$.BREAKPTS.BP1\": \"{i.i18n.FastTransfers.NewTransfer}\",\"default\": \"{i.i18n.FastTransfers.NewTransfer}\"},\"action\": {\"level\": \"form\",\"method\": \"newTransfer\"}}",
+        "acknowledgementButton2": "{\"text\": {\"$.BREAKPTS.BP1\": \"{i.i18n.topmenu.accounts}\",\"default\": \"{i.i18n.topmenu.accounts}\"},\"action\": {\"level\": \"form\",\"method\": \"listAccounts\"}}",
+        "acknowledgementMessage": "{\"$.BREAKPTS.BP1\":\"{i.i18n.payments.savePayeeSuccessMessage}\",\"default\":\"{i.i18n.payments.savePayeeSuccessMessage}\"}",
+        "acknowlegmentApprovalMessage": "{\"$.BREAKPTS.BP1\":\"{i.i18n.transfers.addNewAccountApprovalTitle}\",\"default\":\"{i.i18n.transfers.addNewAccountApprovalTitle}\"}",
+        "buttonNo": "{\"$.BREAKPTS.BP1\":\"{i.i18n.common.no}\",\"default\":\"{i.i18n.common.no}\"}",
+        "buttonYes": "{\"text\":{\"$.BREAKPTS.BP1\":\"{i.i18n.common.yes}\",\"default\":\"{i.i18n.common.yes}\"},\"action\":{\"level\":\"form\",\"method\":\"cancelSaveYes\"}}",
+        "conField1Value": "{\"text\":\"{$.c.payeeName}\",\"fieldType\":\"Label\"}",
+        "conField5Value": "{\"text\":\"{$.c.phone}\",\"fieldType\":\"Label\"}",
+        "conField6Label": "{\"$.BREAKPTS.BP1\":\"{i.i18n.konybb.manageUser.EmailID}:\",\"default\":\"{i.i18n.konybb.manageUser.EmailID}\"}",
+        "conField6Value": "{\"text\":\"{$.c.email}\",\"fieldType\":\"Label\"}",
+        "confirmationButton1": "{\"text\": {\"$.BREAKPTS.BP1\": \"{i.i18n.transfers.Confirm}\",\"default\": \"{i.i18n.transfers.Confirm}\"},\"action\": {\"level\": \"Component\",\"method\": \"saveThisPayee\"}}",
+        "confirmationButton2": "{\"text\": {\"$.BREAKPTS.BP1\": \"{i.i18n.transfers.Cancel}\",\"default\": \"{i.i18n.transfers.Cancel}\"},\"action\": {\"level\": \"Component\",\"method\": \"showCancelPopup\"}}",
+        "criteria1P2P": "{\"name\":\"{$.c.payeeName}\",\"nickName\":\"{$.c.nickName}\",\"phone\":\"{$.c.phone}\",\"email\":\"{$.c.email}\",\"primaryContactForSending\":\"{$.c.phone}\",\"isTrustedPayee\":\"{$.c.trustedPayee}\"}",
+        "criteria2P2P": "{\"name\":\"{$.c.payeeName}\",\"nickName\":\"{$.c.nickName}\",\"phone\":\"{$.c.phone}\",\"email\":\"{$.c.email}\",\"primaryContactForSending\":\"{$.c.email}\",\"isTrustedPayee\":\"{$.c.trustedPayee}\"}",
+        "domesticTransferCriteria": "{     \"accountNumber\": \"{$.c.accountNumber}\",     \"IBAN\": \"{$.c.accountNumber}\",     \"beneficiaryName\": \"{$.c.payeeName}\",     \"bankName\": \"{$.c.bankName}\",     \"nickName\": \"{$.c.nickName}\",     \"addressLine1\": \"{$.c.addressLine1}\",     \"addressLine2\": \"{$.c.addressLine2}\",     \"city\": \"{$.c.city}\",     \"state\": \"{$.c.state}\",     \"country\": \"{$.c.country}\",     \"zipcode\": \"{$.c.zipCode}\",     \"phone\": \"{$.c.phone}\",     \"email\": \"{$.c.email}\",     \"swiftCode\": \"{$.c.swiftCode}\",     \"notes\": \"{$.c.note}\",     \"isSameBankAccount\": false,     \"isInternationalAccount\": false,     \"clearingCode\": \"{$.c.clearingCode1}\",     \"clearingIdentifierCode\": \"{$.c.clearingIdentifierCode}\",     \"isTrustedPayee\": \"{$.c.trustedPayee}\" }",
+        "internationalTransferCriteria": "{     \"accountNumber\": \"{$.c.accountNumber}\",     \"IBAN\": \"{$.c.accountNumber}\",     \"beneficiaryName\": \"{$.c.payeeName}\",     \"bankName\": \"{$.c.bankName}\",     \"nickName\": \"{$.c.nickName}\",     \"addressLine1\": \"{$.c.addressLine1}\",     \"addressLine2\": \"{$.c.addressLine2}\",     \"city\": \"{$.c.city}\",     \"state\": \"{$.c.state}\",     \"country\": \"{$.c.country}\",     \"zipcode\": \"{$.c.zipCode}\",     \"phone\": \"{$.c.phone}\",     \"email\": \"{$.c.email}\",     \"swiftCode\": \"{$.c.swiftCode}\",     \"notes\": \"{$.c.note}\",     \"isSameBankAccount\": false,     \"isInternationalAccount\": true,     \"isTrustedPayee\": \"{$.c.trustedPayee}\",     \"clearingCode\": \"{$.c.clearingCode1}\",     \"clearingIdentifierCode\": \"{$.c.clearingIdentifierCode}\",     \"streetName\": \"{$.c.payeeBankStreet}\",     \"townName\": \"{$.c.payeeBankTown}\",     \"bankCountryName\": \"{$.c.payeeBankCountry}\",     \"intermediaryBIC\": \"{$.c.intermediaryBicCode}\" }",
+        "objectName": "Payees",
+        "objectServiceName": "PayeeManagement",
+        "operationName": "createPayee",
+        "sameBankTransferCriteria": "{\"accountNumber\":\"{$.c.accountNumber}\",\"IBAN\":\"\",\"beneficiaryName\":\"{$.c.payeeName}\",\"bankName\":\"{$.c.bankName}\",\"nickName\":\"{$.c.nickName}\",\"addressLine1\":\"{$.c.addressLine1}\",\"addressLine2\":\"{$.c.addressLine2}\",\"city\":\"{$.c.city}\",\"country\":\"{$.c.country}\",\"state\":\"{$.c.state}\",\"zipcode\":\"{$.c.zipCode}\",\"phone\":\"{$.c.phone}\",\"email\":\"{$.c.email}\",\"swiftCode\":\"\",\"notes\":\"{$.c.note}\",\"isSameBankAccount\":true,\"isInternationalAccount\":false,\"isTrustedPayee\":\"{$.c.trustedPayee}\"}",
+        "sknConfirmationButton1": "{\"$.BREAKPTS.BP1\":\"ICSknUTFBtnSSPffffff15pxBg0273e3\",\"default\":\"ICSknUTFBtnSSPffffff15pxBg0273e3\"}",
+        "sknConfirmationButton2": "{\"$.BREAKPTS.BP1\":\"ICSknBtnSSPRegular003E7515Px\",\"default\":\"ICSknBtnSSPRegular003E7515Px\"}",
+        "sknConfirmationHeader2": "{\"$.BREAKPTS.BP1\":\"ICSknlbl424242SSP13pxSemibold\",\"default\":\"ICSknlbl424242SSP15pxSemibold\"}",
+        "sknFieldValue": "{\"$.BREAKPTS.BP1\":\"sknSSPregular42424213Px\",\"default\":\"ICSknTextBoxSSPRegular42424215px\"}",
+        "sknHoverConfirmationButton1": "{\"$.BREAKPTS.BP1\":\"ICSknUTFBtnSSPffffff15pxBg0273e3\",\"default\":\"ICSknUTFBtnSSPffffff15pxBg0273e3\"}",
+        "sknHoverConfirmationButton2": "{\"$.BREAKPTS.BP1\":\"ICSknBtnSSPRegular003E7515Px\",\"default\":\"ICSknBtnSSPRegular003E7515Px\"}",
+        "sknPlaceholder": "{\"$.BREAKPTS.BP1\":\"ICSknTxtBoxPlaceholderSSP94949415px\",\"default\":\"ICSknTxtBoxPlaceholderSSP94949415px\"}",
+        "transferFlow": "{\"T1\":\"Same Bank\",\"T2\":\"Domestic Transfer\",\"T3\":\"International Transfer\",\"T4\":\"Pay a Person\"}"
+    },
+    "id": "SavePayee",
+    "info": null,
+    "iscustomlayout": false,
+    "issegmentchild": false,
+    "isvisible": true,
+    "kuid": "fa1880aa834f438cba075b3b2679b714",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxContent",
+    "pf": "frmSavePayeeforOTT",
+    "responsiveData": {
+        "b1": {
+            "top": {
+                "type": "string",
+                "value": "10dp"
+            }
+        },
+        "b2": {
+            "isVisible": true,
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "97%"
+            }
+        },
+        "b3": {
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            }
+        },
+        "b4": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "1366dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "jd2ffa571e6c4e77a37eecb373cd8ba5",
+    "wType": "UserWidgetInstance"
+}

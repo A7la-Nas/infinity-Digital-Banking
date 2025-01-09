@@ -1,0 +1,32 @@
+{
+    "AS_FlexContainer_ab2ecf857c784b87afe11a88640d7294": {
+        "id": "AS_FlexContainer_ab2ecf857c784b87afe11a88640d7294",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segSelectProvider",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b13ef23b67554cf0906a1ab3137600fc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_af0ecda2a3ac44dda47d2e0f8039e424",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//this.executeOnParent(\"accountingSoftwareSelection\", context);\nvar controller = _kony.mvc.GetController('frmConnectYourAccountingDataSBA', true);\ncontroller.accountingSoftwareSelection(context);",
+            "parentId": null
+        }]
+    }
+}

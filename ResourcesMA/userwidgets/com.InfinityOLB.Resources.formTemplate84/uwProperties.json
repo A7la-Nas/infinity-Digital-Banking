@@ -1,0 +1,910 @@
+{
+    "classname": "formTemplate84",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "cc309190e48b4338b1b8655f6ce0b915",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                },
+                {
+                    "group": "Life Cycle",
+                    "kuid": "be3066a40ae54fb0951fd22cd4e3efa2",
+                    "paramList": [],
+                    "propertyKey": "postShow",
+                    "pw": {
+                        "displayName": "postShow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                },
+                {
+                    "group": "Life Cycle",
+                    "kuid": "c31706ee037c404eb1ef14c0bb33d9ce",
+                    "paramList": [],
+                    "propertyKey": "preShow",
+                    "pw": {
+                        "displayName": "preShow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                },
+                {
+                    "group": "Dialogs",
+                    "kuid": "ac635a62fe964f7180c904361d44e37a",
+                    "paramList": [],
+                    "propertyKey": "showLoading",
+                    "pw": {
+                        "displayName": "showLoading",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                },
+                {
+                    "group": "Dialogs",
+                    "kuid": "aa36d4afe5b74bf6b6953cbf855ee71a",
+                    "paramList": [],
+                    "propertyKey": "hideLoading",
+                    "pw": {
+                        "displayName": "hideLoading",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                },
+                {
+                    "group": "Header",
+                    "kuid": "b08c8f61d7584a51b6ad84f7968e88c1",
+                    "paramList": [],
+                    "propertyKey": "activateMenu",
+                    "pw": {
+                        "displayName": "activateMenu",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                },
+                {
+                    "group": "Banner",
+                    "kuid": "h5e0df2eb18e474d8ba253a342e37af1",
+                    "paramList": [],
+                    "propertyKey": "showBannerError",
+                    "pw": {
+                        "displayName": "showBannerError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                },
+                {
+                    "group": "Banner",
+                    "kuid": "a5cba25e4c5342e791f555d2d2955413",
+                    "paramList": [],
+                    "propertyKey": "hideBannerError",
+                    "pw": {
+                        "displayName": "hideBannerError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f4b2d2cdd92241ff88fb8c11fe1a84f6",
+                    "paramList": [],
+                    "propertyKey": "updateContext",
+                    "pw": {
+                        "displayName": "updateContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g38e2a82d5364fc2b55f34dcb61af56a",
+                    "paramList": [],
+                    "propertyKey": "setPopup",
+                    "pw": {
+                        "displayName": "setPopup",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bd833b3e529e4e368acc158d4896b307",
+                    "paramList": [],
+                    "propertyKey": "hidePopup",
+                    "pw": {
+                        "displayName": "hidePopup",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g0b704d1a689462798755dc55dc59859",
+                    "paramList": [],
+                    "propertyKey": "setBannerFocus",
+                    "pw": {
+                        "displayName": "setBannerFocus",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "Form Template",
+                    "kuid": "e3e7a80eb31a4566a36924e413c7558c",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General",
+                "Life Cycle",
+                "Dialogs",
+                "Header",
+                "Banner"
+            ],
+            "events": [
+                "BreadCrumb",
+                "Form Template"
+            ],
+            "properties": [
+                "Header",
+                "BreadCrumb",
+                "Generic",
+                "Custom",
+                "Session",
+                "Footer",
+                "Custom Popup"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "j1006461c10c46298789a35059880e51",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n        \"lblPopupMessage\": \"${i18n{i18n.common.LogoutMsg}}\",\n        \"lblHeading\": \"${i18n{i18n.login.signOut}}\",\n        \"btnNo\": \"${i18n{i18n.common.no}}\",\n        \"btnYes\": {\n            \"btnYesValue\": \"$${i18n{i18n.common.yes}}\",\n            \"callToAction\": {\n                \"appName\": \"AuthenticationMA\",\n                \"form\": \"\",\n                \"module\": \"AuthUIModule\",\n                \"presentationControllerMethod\": \"doLogout\",\n                \"params\": {\n                  \"action\":\"Logout\"\n                }\n            }\n        }\n    }",
+                    "group": "Custom Popup",
+                    "kuid": "fba165fb07b24c139b101897106269cb",
+                    "originalPropertyKey": "customPopupData",
+                    "propertyIndex": 1,
+                    "propertyKey": "customPopupData",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Custom Popup Data",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "j31153623f8e4dbda2e737a9814a1873",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "be210cf5bd5a41d59eb96d6aed5dede2",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "g46b9b38d70345abad51bf222b0a4114",
+                    "originalPropertyKey": "conditionalMappingKey",
+                    "propertyIndex": 4,
+                    "propertyKey": "conditionalMappingKey",
+                    "pw": {
+                        "dependencyConditions": {
+                            "conditions": [
+                                {
+                                    "hideProps": [
+                                        "e07e6bd677e04a33a26751f577bd4afe"
+                                    ],
+                                    "value": ""
+                                }
+                            ],
+                            "properties": [
+                                "e07e6bd677e04a33a26751f577bd4afe"
+                            ]
+                        },
+                        "displayName": "Conditional Mapping Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "e07e6bd677e04a33a26751f577bd4afe",
+                    "originalPropertyKey": "conditionalMapping",
+                    "propertyIndex": 5,
+                    "propertyKey": "conditionalMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Conditional Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "g53b80dd924f4c84a616e51944be1e71",
+                    "originalPropertyKey": "pageTitle",
+                    "propertyIndex": 6,
+                    "propertyKey": "pageTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Page Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "fba7a452ab4145b09446b2efa3b8216a",
+                    "originalPropertyKey": "pageTitlei18n",
+                    "propertyIndex": 7,
+                    "propertyKey": "pageTitlei18n",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Page Titlei18n",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[\n  {\n    \"title\": \"${i18n{i18n.topmenu.accounts}}\",\n    \"toolTip\": \"${i18n{i18n.topmenu.accounts}}\",\n    \"accessibilityConfig\": {\n      \"a11yLabel\": \"${i18n{i18n.topmenu.accounts}}\"\n    },\n    \"callToAction\": {\n      \"microApp\": \"HomepageMA\",\n      \"presentationControllerMethod\": \"showAccountsDashboard\",\n      \"moduleName\": \"AccountsUIModule\"\n    }\n  }, {\n    \"id\": \"TRANSFERS\",\n    \"fontIcon\": \"t\",\n    \"title\": \"${i18n{i18n.hamburger.transfers}}\",\n    \"toolTip\": \"${i18n{i18n.hamburger.transfers}}\",\n    \"accessibilityConfig\": {\n      \"a11yLabel\": \"${i18n{i18n.hamburger.transfers}}\"\n    },\n    \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n    \"featureAndPermissions\": [{\n      \"atLeastOneFeature\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER\", \"INTRA_BANK_FUND_TRANSFER\", \"TRANSFER_BETWEEN_OWN_ACCOUNT\"]\n    }],\n    \"subMenu\": [{\n      \"id\": \"Transfer Money\",\n      \"title\": \"${i18n{i18n.billPay.BillPayMakeTransfer}}\",\n      \"tooltip\": \"${i18n{i18n.billPay.BillPayMakeTransfer}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.billPay.BillPayMakeTransfer}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTRA_BANK_FUND_TRANSFER_CREATE\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\"\n      }\n    }, {\n      \"id\": \"Transfer history\",\n      \"title\": \"${i18n{i18n.hamburger.transferHistory}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.transferHistory}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.transferHistory}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTRA_BANK_FUND_TRANSFER_VIEW\", \"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"initialView\": \"recent\"\n        }\n      }\n    }, {\n      \"id\": \"External Accounts\",\n      \"title\": \"${i18n{i18n.hamburger.externalAccounts}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.externalAccounts}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.externalAccounts}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW_RECEPIENT\", \"INTRA_BANK_FUND_TRANSFER_VIEW_RECEPIENT\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"initialView\": \"externalAccounts\"\n        }\n      }\n    }, {\n      \"id\": \"Add Infinity Accounts\",\n      \"title\": \"${i18n{i18n.hamburger.addKonyAccount}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.addKonyAccount}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.addKonyAccount}}\"\n      },\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTRA_BANK_FUND_TRANSFER_CREATE_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"initialView\": \"addInternalAccounts\"\n        }\n      }\n    }, {\n      \"id\": \"Add Non Kony Accounts\",\n      \"title\": \"${i18n{i18n.hamburger.addNonKonyAccount}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.addNonKonyAccount}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.addNonKonyAccount}}\"\n      },\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"initialView\": \"addExternalAccounts\"\n        }\n      }\n    }]\n  }, {\n    \"id\": \"FASTTRANSFERS\",\n    \"fontIcon\": \"t\",\n    \"title\": \"${i18n{i18n.hamburger.transfers}}\",\n    \"toolTip\": \"${i18n{i18n.hamburger.transfers}}\",\n    \"accessibilityConfig\": {\n      \"a11yLabel\": \"${i18n{i18n.hamburger.transfers}}\"\n    },\n    \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n    \"featureAndPermissions\": [{\n      \"atLeastOneFeature\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER\", \"INTRA_BANK_FUND_TRANSFER\", \"P2P\", \"TRANSFER_BETWEEN_OWN_ACCOUNT\"]\n    }],\n    \"subMenu\": [{\n      \"id\": \"Transfer Money\",\n      \"title\": \"${i18n{i18n.hamburger.transfer}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.transfer}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.transfer}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTRA_BANK_FUND_TRANSFER_CREATE\", \"P2P_CREATE\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferFastUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\"\n      }\n    }, {\n      \"id\": \"Transfer history\",\n      \"title\": \"${i18n{i18n.Transfers.TRANSFERACTIVITIES}}\",\n      \"tooltip\": \"${i18n{i18n.Transfers.TRANSFERACTIVITIES}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.Transfers.TRANSFERACTIVITIES}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\", \"INTRA_BANK_FUND_TRANSFER_VIEW\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\", \"P2P_VIEW\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferFastUIModule\",\n        \"presentationControllerMethod\": \"getPastPayments\"\n      }\n    }, {\n      \"id\": \"External Accounts\",\n      \"title\": \"${i18n{i18n.PayAPerson.ManageRecipient}}\",\n      \"tooltip\": \"${i18n{i18n.PayAPerson.ManageRecipient}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.PayAPerson.ManageRecipient}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\", \"INTRA_BANK_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\", \"P2P_VIEW_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferFastUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"showManageRecipients\": true\n        }\n      }\n    }, {\n      \"id\": \"Add Infinity Accounts\",\n      \"title\": \"${i18n{i18n.PayAPerson.AddRecipient}}\",\n      \"tooltip\": \"${i18n{i18n.PayAPerson.AddRecipient}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.PayAPerson.AddRecipient}}\"\n      },\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\", \"INTRA_BANK_FUND_TRANSFER_CREATE_RECEPIENT\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\", \"P2P_CREATE_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferFastUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"showRecipientGateway\": true\n        }\n      }\n    }]\n  }, {\n    \"id\": \"EUROTRANSFERS\",\n    \"fontIcon\": \"t\",\n    \"title\": \"${i18n{i18n.TransfersEur.PaymentsAndTransfers}}\",\n    \"toolTip\": \"${i18n{i18n.TransfersEur.PaymentsAndTransfers}}\",\n    \"accessibilityConfig\": {\n      \"a11yHidden\": true,\n      \"a11yARIA\": {\n        \"tabindex\": -1\n      }\n    },\n    \"visibleInMAs\": [\"REGIONALTRANSFER\", \"UNIFIEDTRANSFER\"],\n    \"featureAndPermissions\": [{\n      \"atLeastOneFeature\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER\", \"INTRA_BANK_FUND_TRANSFER\", \"TRANSFER_BETWEEN_OWN_ACCOUNT\"]\n    }],\n    \"subMenu\": [{\n      \"id\": \"Make a Payment\",\n      \"title\": \"${i18n{i18n.TransfersEur.MakePayment}}\",\n      \"tooltip\": \"${i18n{i18n.TransfersEur.MakePayment}}\",\n      \"accessibilityConfig\": {\n        \"a11yARIA\": {\n          \"tabindex\": -1\n        }\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTRA_BANK_FUND_TRANSFER_CREATE\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferEurUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"context\": \"MakePayment\"\n        }\n      }\n    }, {\n      \"id\": \"Transfer Between Accounts\",\n      \"title\": \"${i18n{i18n.TransfersEur.TransferBetweenAccounts}}\",\n      \"tooltip\": \"${i18n{i18n.TransfersEur.TransferBetweenAccounts}}\",\n      \"accessibilityConfig\": {\n        \"a11yARIA\": {\n          \"tabindex\": -1\n        }\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferEurUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"context\": \"MakePaymentOwnAccounts\"\n        }\n      }\n    }, {\n      \"id\": \"Manage Beneficiaries\",\n      \"title\": \"${i18n{i18n.TransfersEur.ManageBeneficiaries}}\",\n      \"tooltip\": \"${i18n{i18n.TransfersEur.ManageBeneficiaries}}\",\n      \"accessibilityConfig\": {\n        \"a11yARIA\": {\n          \"tabindex\": -1\n        }\n      },\n      \"visibleInMAs\": [\"UNIFIEDTRANSFER\"],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"ManageActivitiesUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"context\": \"ManageBeneficiaries\"\n        }\n      }\n    }, {\n      \"id\": \"Manage Payments\",\n      \"title\": \"${i18n{i18n.TransfersEur.ManageTransactions}}\",\n      \"tooltip\": \"${i18n{i18n.TransfersEur.ManageTransactions}}\",\n      \"accessibilityConfig\": {\n        \"a11yARIA\": {\n          \"tabindex\": -1\n        }\n      },\n      \"visibleInMAs\": [\"UNIFIEDTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTRA_BANK_FUND_TRANSFER_VIEW\", \"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"ManageActivitiesUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"context\": \"PastPayments\"\n        }\n      }\n    },\n                {\n                  \"id\": \"Pay Multiple Beneficiaries\",\n                  \"title\": \"${i18n{i18n.Transfers.PayMultipleBeneficiaries}}\",\n                  \"tooltip\": \"${i18n{i18n.Transfers.PayMultipleBeneficiaries}}\",\n                  \"accessibilityConfig\": {\n                    \"a11yARIA\": {\n                      \"tabindex\": -1\n                    }\n                  },\n                  \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n                  \"callToAction\": {\n                    \"microApp\": \"TransfersMA\",\n                    \"moduleName\": \"PayMultipleBeneficiariesUIModule\",\n                    \"presentationControllerMethod\": \"showPayMultipleBeneficiaries\",\n                    \"params\": {\n                      \"showManageBeneficiaries\": true\n                    }\n                  }\n                }\n               ]\n  }\n]",
+                    "group": "Header",
+                    "kuid": "i32703a69c08492c99666b93be7608b6",
+                    "originalPropertyKey": "primaryLinks",
+                    "propertyIndex": 8,
+                    "propertyKey": "primaryLinks",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Links",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 2,
+                    "group": "General",
+                    "kuid": "db46b604518342adb5f1b824824ba8f8",
+                    "originalPropertyKey": "flxMainWrapperzIndex",
+                    "propertyIndex": 8,
+                    "propertyKey": "flxMainWrapperzIndex",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Flex Main Wrapper Z- Index",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[\n    {\n      \"fontIcon\" : \")\",\n      \"title\": \"${i18n{i18n.Alerts.Notifications}}\",\n      \"toolTip\": \"${i18n{i18n.Alerts.Notifications}}\",\n      \"notificationCount\": 1,\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.Alerts.Notifications}}\"\n      },\n      \"callToAction\": {\n        \"microApp\": \"SecureMessageMA\",\n        \"presentationControllerMethod\" : \"showAlertsPage\",\n        \"moduleName\" : \"AlertsMsgsUIModule\",\n        \"param\" : {\n          \"show\" : \"Messages\"\n        }\n      }\n    },\n    {\n      \"fontIcon\" : \"m\",\n      \"title\": \"${i18n{i18n.AlertsAndMessages.Message}}\",\n      \"toolTip\": \"${i18n{i18n.AlertsAndMessages.Message}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.AlertsAndMessages.Message}}\"\n      },\n      \"callToAction\": {\n        \"microApp\": \"SecureMessageMA\",\n        \"presentationControllerMethod\" : \"showAlertsPage\",\n        \"moduleName\" : \"AlertsMsgsUIModule\"\n      }\n    }\n  ]",
+                    "group": "Header",
+                    "kuid": "c496614ce3ee485299cdef1a18d2bd96",
+                    "originalPropertyKey": "secondaryLinks",
+                    "propertyIndex": 9,
+                    "propertyKey": "secondaryLinks",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Secondary Links",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "Header",
+                    "kuid": "a8e5e1b6ead249cabba9959457c94f12",
+                    "originalPropertyKey": "supplementaryLinks",
+                    "propertyIndex": 10,
+                    "propertyKey": "supplementaryLinks",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Supplementary Links",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "i7e44b2d2f394942a39382711e532879",
+                    "originalPropertyKey": "pageTitleVisibility",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "pageTitleVisibility",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Page Title Visibility",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n        \"loggedIn\": {\n            \"toolTip\": \"${i18n{kony.mb.MM.Dashboard}}\",\n            \"accessibilityConfig\": {\n                \"a11yLabel\": \"${i18n{kony.mb.MM.Dashboard}}\"\n            },\n            \"callToAction\": {\n                \"microApp\": \"HomepageMA\",\n                \"presentationControllerMethod\": \"showAccountsDashboard\",\n                \"moduleName\": \"AccountsUIModule\"\n            }\n        },\n        \"loggedOut\": {\n            \"toolTip\": \"${i18n{i18n.common.login}}\",\n            \"accessibilityConfig\": {\n                \"a11yLabel\": \"${i18n{i18n.common.login}}\"\n            },\n            \"callToAction\": {\n                \"microApp\": \"AuthenticationMA\",\n                \"presentationControllerMethod\": \"showLoginScreen\",\n                \"moduleName\": \"AuthUIModule\"\n            }\n        }\n    }",
+                    "group": "Header",
+                    "kuid": "c26e0073f4754cb89bd20d04045550a4",
+                    "originalPropertyKey": "logoConfig",
+                    "propertyIndex": 11,
+                    "propertyKey": "logoConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Logo Config",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "j9208d35695049f68d6e17489ac0a803",
+                    "originalPropertyKey": "accountText",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "accountText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Accounts text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "HamburgerConfigWCAG.js",
+                    "group": "Header",
+                    "kuid": "hf837d6259e14449ab05fe36c384d3fe",
+                    "originalPropertyKey": "hamburgerConfig",
+                    "propertyIndex": 12,
+                    "propertyKey": "hamburgerConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Hamburger Config",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n    \"title\": \"l\",\n    \"toolTip\": \"${i18n{i18n.common.logout}}\",\n    \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.common.logout}}\"\n    },\n  \"callToAction\": {\n        \"microApp\": \"AuthenticationMA\",\n        \"presentationControllerMethod\" : \"doLogout\",\n      \t\"moduleName\" : \"AuthUIModule\",\n        \"param\" : {\n             \"action\": \"Logout\"\n    }\n    }\n}\n",
+                    "group": "Header",
+                    "kuid": "c825066f85d4426c8cfec1fa67cbe04b",
+                    "originalPropertyKey": "logoutConfig",
+                    "propertyIndex": 13,
+                    "propertyKey": "logoutConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Logout Config",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n   \"image\": \"profile_header.png\",\n  \t\"profileImage\":\"\",\n  \t\"profileUsername\":\"\",\n  \t\"profileEmail\":\"\",\n    \"toolTip\": \"profilePic\",\n    \"accessibilityConfig\": {\n        \"a11yLabel\": \"profile\",\n        \"a11yARIA\": {\n            \"aria-expanded\":false,\n            \"tabindex\" : 0,\n            \"role\" : \"button\"\n        }\n    },\n    \"subMenu\": [\n        {\n            \"id\": \"Profile Settings\",\n            \"title\": \"${i18n{i18n.ProfileManagement.profilesettings}}\",\n            \"tooltip\": \"${i18n{i18n.ProfileManagement.profilesettings}}\",\n            \"visibleInMAs\": [\"MANAGEPROFILE\"],\n            \"featureAndPermissions\": [{\n                \"atLeastOneReqPermissions\": [\"PROFILE_SETTINGS_VIEW\"]\n            }],\n            \"callToAction\": {\n                \"microApp\": \"ManageProfileMA\",\n                \"moduleName\": \"SettingsNewUIModule\",\n                \"presentationControllerMethod\": \"enterProfileSettings\",\n                \"params\": \"profileSettings\"\n            }\n        }, \n        {\n            \"id\": \"Security Settings\",\n            \"title\": \"${i18n{i18n.ProfileManagement.SecuritySettings}}\",\n            \"tooltip\": \"${i18n{i18n.ProfileManagement.SecuritySettings}}\",\n            \"visibleInMAs\": [\"MANAGEPROFILE\"],\n            \"callToAction\": {\n                \"microApp\": \"ManageProfileMA\",\n                \"moduleName\": \"SettingsNewUIModule\",\n                \"presentationControllerMethod\": \"enterProfileSettings\",\n                \"params\": \"securityQuestions\"\n            }\n        }, \n        {\n            \"id\": \"Account Settings\",\n            \"title\": \"${i18n{i18n.Accounts.ContextualActions.updateSettingAndPreferences}}\",\n            \"tooltip\": \"${i18n{i18n.Accounts.ContextualActions.updateSettingAndPreferences}}\",\n            \"featureAndPermissions\": [{\n                \"atLeastOneReqPermissions\": [\"ACCOUNT_SETTINGS_VIEW\"]\n            }],\n            \"callToAction\": {\n                \"microApp\": \"ManageArrangementsMA\",\n                \"moduleName\": \"ManageArrangementsUIModule\",\n                \"presentationControllerMethod\": \"enterProfileSettings\",\n                \"params\": \"accountSettings\"\n            }\n        },\n        {\n            \"id\": \"Approval Matrix\",\n            \"title\": \"${i18n{i18n.Settings.ApprovalMatrix.approvalMatrix}}\",\n            \"tooltip\": \"${i18n{i18n.Settings.ApprovalMatrix.approvalMatrix}}\",\n            \"breakpoints\": [\n                1024,\n                1366,\n                1380\n            ],\n            \"visibleInMAs\": [\"APPROVALMATRIX\"],\n            \"featureAndPermissions\": [{\n                \"atLeastOneReqPermissions\": [\"APPROVAL_MATRIX_VIEW\"]\n            }],\n            \"callToAction\": {\n                \"microApp\": \"ApprovalMatrixMA\",\n                \"moduleName\": \"SettingsNewApprovalUIModule\",\n                \"presentationControllerMethod\": \"enterProfileSettings\",\n                \"params\": \"approvalMatrix\"\n            }\n        },\n        {\n            \"id\": \"Alert Settings\",\n            \"title\": \"${i18n{i18n.ProfileManagement.Alerts}}\",\n            \"tooltip\": \"${i18n{i18n.ProfileManagement.Alerts}}\",\n            \"breakpoints\": [\n                1024,\n                1366,\n                1380\n            ],\n            \"visibleInMAs\": [\"ALERTSETTINGS\"],\n            \"featureAndPermissions\": [{\n                \"atLeastOneReqPermissions\": [\"ALERT_MANAGEMENT\"]\n            }],\n            \"callToAction\": {\n                \"microApp\": \"AlertSettingsMA\",\n                \"moduleName\": \"SettingsNewAlertsUIModule\",\n                \"presentationControllerMethod\": \"enterProfileSettings\",\n                \"params\": \"alertSettings\"\n            }\n        },\n        {\n            \"id\": \"Consent Management\",\n            \"title\": \"${i18n{i18n.ProfileManagement.Consent}}\",\n            \"tooltip\": \"${i18n{i18n.ProfileManagement.Consent}}\",\n            \"breakpoints\": [\n                1024,\n                1366,\n                1380\n            ],\n            \"visibleInMAs\": [\"CONSENTMANAGEMENT\"],\n            \"featureAndPermissions\": [{\n                \"atLeastOneReqPermissions\": [\"CDP_CONSENT_VIEW\"]\n            }],\n            \"callToAction\": {\n                \"microApp\": \"ConsentMgmtMA\",\n                \"moduleName\": \"CDPConsentUIModule\",\n                \"presentationControllerMethod\": \"showConsentManagement\"\n            }\n        },\n        {\n            \"id\": \"Manage Account Access\",\n            \"title\": \"${i18n{i18n.ProfileManagement.ManageAccountAccess}}\",\n            \"tooltip\": \"${i18n{i18n.ProfileManagement.ManageAccountAccess}}\",\n            \"breakpoints\": [\n                1024,\n                1366,\n                1380\n            ],\n            \"visibleInMAs\": [\"CONSENTMANAGEMENT\"],\n            \"featureAndPermissions\": [{\n                \"atLeastOneReqPermissions\": [\"PSD2_TPP_CONSENT_VIEW\"]\n            }],\n            \"callToAction\": {\n                \"microApp\": \"ConsentMgmtMA\",\n                \"moduleName\": \"PSD2ConsentUIModule\",\n                \"presentationControllerMethod\": \"showManageAccountAccess\"\n            }\n        }\n    ]\n}",
+                    "group": "Header",
+                    "kuid": "c34c9ef56b964a3b9d634c208405fd06",
+                    "originalPropertyKey": "profileConfig",
+                    "propertyIndex": 14,
+                    "propertyKey": "profileConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Profile Config",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Header",
+                    "kuid": "g7db98678c344db09f71fa4e13ed87d2",
+                    "originalPropertyKey": "activeMenuID",
+                    "propertyIndex": 15,
+                    "propertyKey": "activeMenuID",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Active Menu ID",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Header",
+                    "kuid": "jfc58d25492145749982845b5cab5ebb",
+                    "originalPropertyKey": "activeSubMenuID",
+                    "propertyIndex": 16,
+                    "propertyKey": "activeSubMenuID",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Active Sub-Menu ID",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": false,
+                    "group": "BreadCrumb",
+                    "kuid": "ee8b71632996420a8e59acd2ea1a53ab",
+                    "originalPropertyKey": "backFlag",
+                    "propertyIndex": 17,
+                    "propertyKey": "backFlag",
+                    "pw": {
+                        "dependencyConditions": {
+                            "conditions": [
+                                {
+                                    "hideProps": [
+                                        "hce3bd2510844421b80de96d74dc3377"
+                                    ],
+                                    "value": true
+                                },
+                                {
+                                    "hideProps": [
+                                        "ae3fca0c7c7a406184c5fc6241bd8450"
+                                    ],
+                                    "value": false
+                                }
+                            ],
+                            "properties": [
+                                "ae3fca0c7c7a406184c5fc6241bd8450",
+                                "hce3bd2510844421b80de96d74dc3377"
+                            ]
+                        },
+                        "displayName": "Back Flag",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[\n   {\n    \"btnBack\": \"${i18n{i18n.CardManagement.Back}}\",\n    \"callToAction\": {\n      \"appName\": \"ResourcesMA\",\n      \"form\": \"frmStyleGuide\",\n      \"module\": \"\",\n      \"presentationControllerMethod\": \"\",\n      \"params\": []\n    }\n  }\n]",
+                    "group": "BreadCrumb",
+                    "kuid": "ae3fca0c7c7a406184c5fc6241bd8450",
+                    "originalPropertyKey": "backProperties",
+                    "propertyIndex": 18,
+                    "propertyKey": "backProperties",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Back Properties",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[\n    {\n        \"btnFirstLevel\": \"${CNTX.btnFirstLevel}\",\n        \"btnFirstLevela11yLabel\": \"${CNTX.btnFirstLevela11yLabel}\",\n        \"callToAction\": {\n            \"appName\": \"ArrangementsMA\",\n            \"form\": \"frmAccountsDetails\",\n            \"module\": \"AccountsUIModule\",\n            \"presentationControllerMethod\": \"\",\n            \"params\": []\n        }\n    },\n    {\n        \"btnSecondLevel\": \"${CNTX.btnSecondLevel}\",\n        \"btnSecondLevela11yLabel\": \"${CNTX.btnSecondLevela11yLabel}\",\n        \"callToAction\": {\n            \"appName\": \"ArrangementsMA\",\n            \"form\": \"frmAccountsDetails\",\n            \"module\": \"AccountsUIModule\",\n            \"presentationControllerMethod\": \"\",\n            \"params\": []\n        }\n    },\n    {\n        \"btnThirdLevel\": \"${CNTX.btnThirdLevel}\",\n        \"btnThirdLevela11yLabel\": \"${CNTX.btnThirdLevela11yLabel}\",\n        \"callToAction\": {\n            \"appName\": \"ArrangementsMA\",\n            \"form\": \"frmAccountsDetails\",\n            \"module\": \"AccountsUIModule\",\n            \"presentationControllerMethod\": \"\",\n            \"params\": []\n        }\n    }\n]",
+                    "group": "BreadCrumb",
+                    "kuid": "hce3bd2510844421b80de96d74dc3377",
+                    "originalPropertyKey": "breadCrumbProperties",
+                    "propertyIndex": 19,
+                    "propertyKey": "breadCrumbProperties",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Breadcrumb Properties",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "Generic",
+                    "kuid": "b3d99917728741c7a9f7e141538a37df",
+                    "originalPropertyKey": "genricMessage",
+                    "propertyIndex": 20,
+                    "propertyKey": "genricMessage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Genric Message",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n    \"lblPopupMessage\": \"${i18n{i18n.login.idleWarning}}\",\n    \"lblPopupMessagea11yLabel\":\"${i18n{i18n.login.idleWarning}}\",\n    \"lblPopupMessage2\": \"${i18n{i18n.login.signOutMin}}\",\n    \"lblPopupMessage2a11yLabel\": \"${i18n{i18n.login.signOutMin}}\",\n    \"lblHeading\": \"${i18n{i18n.login.idleSession}}\",\n    \"lblHeadinga11yLabel\": \"${i18n{i18n.login.idleSession}}\",\n    \"btnYes\": \"${i18n{i18n.login.idleExtend}}\",\n    \"btnYesa11yLabel\": \"${i18n{i18n.login.idleExtend}}\",\n    \"btnNo\": {\n        \"btnNoValue\": \"${i18n{i18n.login.signOut}}\",\n        \"btnNoa11yLabel\": \"${i18n{i18n.login.signOut}}\",\n        \"callToAction\": {\n        \t\"appName\": \"AuthenticationMA\",\n      \t\t\"form\": \"\",\n      \t\t\"module\": \"AuthUIModule\",\n      \t\t\"presentationControllerMethod\": \"doLogout\",\n      \t\t\"params\": {\"action\":\"Logout\"}\n    \t}\n    },\n  \"timer\": \"${CNTX.timer}\"\n}",
+                    "group": "Session",
+                    "kuid": "g81e9607277547b198d4f8a2fde6fa36",
+                    "originalPropertyKey": "sessionTimeOutData",
+                    "propertyIndex": 22,
+                    "propertyKey": "sessionTimeOutData",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Session Timeout Data",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[\n    {\n        \"title\": \"${i18n{i18n.footer.locateUs}}\",\n        \"a11yLabel\":\"${i18n{i18n.footer.locateUs}}\",\n        \"callToAction\": {\n            \"appName\": \"AboutUsMA\",\n            \"form\": \"\",\n            \"module\": \"LocateUsUIModule\",\n            \"presentationControllerMethod\": \"showLocateUsPage\",\n            \"params\":[]\n        }\n    },\n    {\n        \"title\": \"${i18n{i18n.footer.contactUs}}\",\n        \"a11yLabel\":\"${i18n{i18n.footer.contactUs}}\",\n        \"callToAction\": {\n            \"appName\": \"AboutUsMA\",\n            \"form\": \"\",\n            \"module\": \"InformationContentUIModule\",\n            \"presentationControllerMethod\": \"showContactUsPage\",\n            \"params\": []\n        }\n    },\n    {\n        \"title\": \"${i18n{i18n.footer.privacy}}\",\n        \"a11yLabel\":\"${i18n{i18n.footer.privacy}}\",\n        \"callToAction\": {\n            \"appName\": \"AboutUsMA\",\n            \"form\": \"\",\n            \"module\": \"InformationContentUIModule\",\n            \"presentationControllerMethod\": \"showPrivacyPolicyPage\",\n            \"params\": []\n        }\n    },\n    {\n        \"title\": \"${i18n{i18n.ProfileManagement.TermsAndConditions}}\",\n        \"a11yLabel\":\"${i18n{i18n.ProfileManagement.TermsAndConditions}}\",\n        \"callToAction\": {\n            \"appName\": \"AboutUsMA\",\n            \"form\": \"\",\n            \"module\": \"InformationContentUIModule\",\n            \"presentationControllerMethod\": \"showPrivacyPolicyPage\",\n            \"params\": []\n        }\n    },\n    {\n        \"title\": \"${i18n{i18n.footer.faqs}}\",\n        \"a11yLabel\":\"${i18n{i18n.footer.faqs}}\",\n        \"callToAction\": {\n            \"appName\": \"AboutUsMA\",\n            \"form\": \"\",\n            \"module\": \"InformationContentUIModule\",\n            \"presentationControllerMethod\": \"showFAQs\",\n            \"params\": []\n        }\n    }\n]",
+                    "group": "Footer",
+                    "kuid": "beaf00428f87422aa78fa09b29ca86d1",
+                    "originalPropertyKey": "footerProperties",
+                    "propertyIndex": 23,
+                    "propertyKey": "footerProperties",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Footer Properties",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n    \"title\": \"${i18n{i18n.footer.copyright}}\"\n}",
+                    "group": "Footer",
+                    "kuid": "d1489b3c1bc2428ea5fffda08eaddd6c",
+                    "originalPropertyKey": "copyRight",
+                    "propertyIndex": 24,
+                    "propertyKey": "copyRight",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Copy Right",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u620ccaad7b0449bb0910123faa4846c",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ce405906cfe6437ebb21eedd60665055",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 9,
+                    "propertyKey": "contentPopupVisiblility",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Content Popup Visiblility",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxContentPopup",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "u913f69a5edb41b7859e32e25cab1463"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "b955657bd056409a9191a0524d6ccd06",
+                    "propertyKey": "flxContentTCLeft",
+                    "srcWgtKUID": "u953b36cb08d49fcb19b13a4ea811785"
+                },
+                {
+                    "kuid": "hdbb5f390feb4aafa8533d881ee86d92",
+                    "propertyKey": "flxContentTCRight",
+                    "srcWgtKUID": "u1c8ad0c143b4c6f87276c057986e770"
+                },
+                {
+                    "kuid": "cd0f55d9893e4c81a6fc6a825e538d19",
+                    "propertyKey": "flxPageFooter",
+                    "srcWgtKUID": "u807dbafbbc54ab2b0886ecea390c2f8"
+                },
+                {
+                    "kuid": "i5a23b3e7b91497e9d81f971f16ba800",
+                    "propertyKey": "flxContentPopup",
+                    "srcWgtKUID": "u913f69a5edb41b7859e32e25cab1463"
+                },
+                {
+                    "kuid": "i30e6eff8f744f9eae5fe95a2df5bedb",
+                    "propertyKey": "flxTCButtons",
+                    "srcWgtKUID": "fca98884c5c541f185485069c9b51ab6"
+                }
+            ],
+            "passthrough": [
+                {
+                    "kuid": "f7d6618456f044d2a8844489c057bf35",
+                    "propertyKey": "flxContentTCLeft",
+                    "srcWgtKUID": "u953b36cb08d49fcb19b13a4ea811785"
+                },
+                {
+                    "kuid": "bf5a031402ab4254b3baf241fa79dbc4",
+                    "propertyKey": "flxContentTCRight",
+                    "srcWgtKUID": "u1c8ad0c143b4c6f87276c057986e770"
+                },
+                {
+                    "kuid": "bda7d24bfd884edba183667f010ceb6b",
+                    "propertyKey": "flxPageFooter",
+                    "srcWgtKUID": "u807dbafbbc54ab2b0886ecea390c2f8"
+                },
+                {
+                    "kuid": "dde26a6959eb46acb228eb942b09ecd4",
+                    "propertyKey": "flxContentPopup",
+                    "srcWgtKUID": "u913f69a5edb41b7859e32e25cab1463"
+                },
+                {
+                    "kuid": "b8bfe7ea0a044a4fa68b986604ab61c7",
+                    "propertyKey": "flxTCButtons",
+                    "srcWgtKUID": "fca98884c5c541f185485069c9b51ab6"
+                }
+            ]
+        }
+    },
+    "namespace": "com.InfinityOLB.Resources",
+    "version": "1.0.0"
+}

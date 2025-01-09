@@ -1,0 +1,30 @@
+{
+    "AS_Label_debd1d7e24444de09fb663bc1019df80": {
+        "id": "AS_Label_debd1d7e24444de09fb663bc1019df80",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmFastTransfers",
+            "type": "forms",
+            "platform": "",
+            "KUID": "dafe58294c114b15bb1f0099cc24b9a8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f56dd2fbac1f404285a6b50fc68c2dc4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var nuoModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"NAOModule\");\nnuoModule.presentationController.showNewAccountOpening();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

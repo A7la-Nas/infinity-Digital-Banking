@@ -1,0 +1,1 @@
+{"table":"PotCategories","db":"SavingsPot","verbs":"true"},{"table":"Pot","db":"SavingsPot","verbs":"true"},{"table":"PotBalance","db":"SavingsPot","verbs":"true"}

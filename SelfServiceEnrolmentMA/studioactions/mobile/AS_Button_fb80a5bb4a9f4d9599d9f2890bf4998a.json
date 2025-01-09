@@ -1,0 +1,40 @@
+{
+    "AS_Button_fb80a5bb4a9f4d9599d9f2890bf4998a": {
+        "id": "AS_Button_fb80a5bb4a9f4d9599d9f2890bf4998a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollSignUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b3d04af02f2c45c0b387560724fd98f5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___b4db6f6519a44274835e2b5f55657482",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmLogin",
+            "friendlyName": "frmLogin",
+            "formKUID": "h65c10a2cabc493c8ac9ef9c703d1486",
+            "projectName": "AuthenticationMA",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true,
+            "package": "AuthUIModule",
+            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"h32d252d409041d9bad950facdcbe5db\"\n    }\n}",
+            "isCustomInput": false
+        }, {
+            "id": "ADD_SNIPPET__d23efc7cb9154e13926bbc07744fd7dc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onClickCancel();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

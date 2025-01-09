@@ -1,0 +1,23 @@
+{
+    "AS_Image_a6d8f076520d49378cb8a8110684ca26": {
+        "id": "AS_Image_a6d8f076520d49378cb8a8110684ca26",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "imagesrc"
+        }, {
+            "datatype": "boolean",
+            "name": "issuccess"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onDownloadComplete_i5a8c0c71467430ba33b1f1e01255172",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onAdDownloadComplete(issuccess,3);",
+            "callbackType": null
+        }]
+    }
+}

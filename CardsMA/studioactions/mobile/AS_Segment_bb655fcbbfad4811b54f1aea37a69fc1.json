@@ -1,0 +1,30 @@
+{
+    "AS_Segment_bb655fcbbfad4811b54f1aea37a69fc1": {
+        "id": "AS_Segment_bb655fcbbfad4811b54f1aea37a69fc1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmCardMngReasons",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e2b0689f93734d90be88ba6530758f40"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e1aacddd972f4f2c9f5b337e01282fb5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.segReasonsStolenCardOnRowClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

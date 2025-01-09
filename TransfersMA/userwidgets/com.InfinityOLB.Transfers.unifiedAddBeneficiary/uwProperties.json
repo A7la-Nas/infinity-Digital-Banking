@@ -1,0 +1,3694 @@
+{
+    "classname": "unifiedAddBeneficiary",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e7a0a1a81fd34e5281a3571c00aea531",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fdf25178cc974feab9d7ef9dad5c0ffd",
+                    "paramList": [
+                        {
+                            "name": "selectedSwiftData"
+                        }
+                    ],
+                    "propertyKey": "setLookupData",
+                    "pw": {
+                        "displayName": "setLookupData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d85b8101f6af4f81992baa7c6dcc8421",
+                    "paramList": [],
+                    "propertyKey": "setLookupFocus",
+                    "pw": {
+                        "displayName": "setLookupFocus",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d0a234210dc44c4cbe36843deb5c419b",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Data Validation",
+                "Get Countries Service",
+                "Get States Service",
+                "Account Number Validation Service",
+                "Contract Service",
+                "Get Swift Code From IBAN Service",
+                "Bank Details from BIC Service",
+                "SWIFT Search Service",
+                "Clearing Code Lookup",
+                "Input Fields (if)",
+                "Contact Type",
+                "Swift Lookup",
+                "Address Fields",
+                "Buttons",
+                "Skins",
+                "Icons",
+                "Clearing Identifier Code"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"BP1\": \"640\",\n  \"BP2\": \"1024\",\n  \"BP3\": \"1366\",\n  \"BP4\": \"1380\"\n}\n",
+                    "group": "General",
+                    "kuid": "h16948725ad2431e835770e23c55c460",
+                    "originalPropertyKey": "BREAKPTS",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "BREAKPTS",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Breakpoints",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "RBObjects",
+                    "group": "Account Number Validation Service",
+                    "kuid": "gcd5338d095f4429a12fe58ca3a7ff49",
+                    "originalPropertyKey": "accValidationService",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "accValidationService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"text\":\n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.ContactType}:\",\n    \"default\": \"{i.i18n.UnifiedAddBeneficiary.ContactType}:\"\n  },\n  \"helpTooltip\" : \"Contact Type\"\n}",
+                    "group": "Contact Type",
+                    "kuid": "ge62baea48174f45acf350f22a9847eb",
+                    "originalPropertyKey": "ctlblContactType",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "ctlblContactType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contact Type Radio Input Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"{i18n.TransfersEur.SWIFTBICSearch}\", \n  \"default\": \"{i18n.TransfersEur.SWIFTBICSearch}\" \n}",
+                    "group": "Swift Lookup",
+                    "kuid": "id8ed903cba94a93ab9f9969ca3713d7",
+                    "originalPropertyKey": "sluHeader",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "sluHeader",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.countryCode}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.Code}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.Code}\"\n  }\n}",
+                    "group": "Address Fields",
+                    "kuid": "ffcc69ab168e4cc89d8bd4a75e1a9571",
+                    "originalPropertyKey": "adfTextBox1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "adfTextBox1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 1",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"text\": \"{i.i18n.TransfersEur.btnCancel}\",\n  \"toolTip\": \"{i.i18n.TransfersEur.btnCancel}\",\n  \"callBack\": \"cancelTransfer\"\n}",
+                    "group": "Buttons",
+                    "kuid": "c08f2d0968754b8db5c4a986112153d0",
+                    "originalPropertyKey": "utfCTAbutton1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "utfCTAbutton1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "CTA Button1",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknLabelSSPRegular72727215px\",\n  \"default\": \"ICSknLabelSSPRegular72727215px\"\n}",
+                    "group": "Skins",
+                    "kuid": "b36b135046e74e6fb16deb7489d315f6",
+                    "originalPropertyKey": "sknFieldLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknFieldLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field Label Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"img\": \"arrow_down.png\"\n}",
+                    "group": "Icons",
+                    "kuid": "h0b7f4faa87c4f26bac6eadc3cf815bf",
+                    "originalPropertyKey": "dropdownExpandIcon",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "dropdownExpandIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Dropdown Expand Icon",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"Recipients\": {\n    \"if_txtValue1\": \"MANDATORY\",\n    \"if_txtValue2\": \"MANDATORY\",\n    \"if_txtValue3\": \"MANDATORY\"\n  }\n}",
+                    "group": "Data Validation",
+                    "kuid": "d82c61950aa0461f8d4fe74a3adbceaa",
+                    "originalPropertyKey": "dvfConfig",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "dvfConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Validation Config",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " RBObjects",
+                    "group": "SWIFT Search Service",
+                    "kuid": "d302d9ded748405d895a536dbaab226a",
+                    "originalPropertyKey": "lookupServiceName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "lookupServiceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "RBObjects",
+                    "group": "Get Countries Service",
+                    "kuid": "a6109fafe771493d8e3c94312df21fb4",
+                    "originalPropertyKey": "addressObjectService",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "addressObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Country Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "RBObjects",
+                    "group": "Get States Service",
+                    "kuid": "hb604fb885674209aad193b7e0422c3a",
+                    "originalPropertyKey": "stateObjectService",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "stateObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "State Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "RBObjects",
+                    "group": "Contract Service",
+                    "kuid": "f133b692e9284f2cbd80ffcf87b9f710",
+                    "originalPropertyKey": "contractObjectService",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "contractObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contract Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.ChequeManagement.PayeeName}:\",\n  \"default\":\"{i.i18n.ChequeManagement.PayeeName}:\"\n},\n\"helpTooltip\" : \"{i.i18n.verifyDetails.payeeName}\"\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "d92560c5fb4b4a88bcba691451570fd7",
+                    "originalPropertyKey": "ifTextBox1Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "ifTextBox1Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 1 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "RBObjects",
+                    "group": "Get Swift Code From IBAN Service",
+                    "kuid": "g3b7b841e16c4eb49bec4da9ffa7b0d3",
+                    "originalPropertyKey": "IBANSwiftObjectServiceName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "IBANSwiftObjectServiceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": false,
+                    "group": "SWIFT Search Service",
+                    "kuid": "ga600aff62de4905a1a4d013efd67112",
+                    "originalPropertyKey": "cacheEnabled",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "cacheEnabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Cache Enabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PayeeManagement",
+                    "group": "Bank Details from BIC Service",
+                    "kuid": "ee39e05587ad4a6494f19efdb8d53f1d",
+                    "originalPropertyKey": "bankDetailsServiceName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "bankDetailsServiceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\r\n\"mapping\":\"{$.c.clearingIdentifierCode}\",\r\n  \"placeHolder\":{\r\n    \"$.BREAKPTS.BP1\":\"{i.i18n.payments.enterBankClearingCode}\",\r\n    \"default\":\"{i.i18n.payments.enterBankClearingCode}\"\r\n  }\r\n}",
+                    "group": "Clearing Identifier Code",
+                    "kuid": "g2c4ba9b1fd14176abf82f765e18f29c",
+                    "originalPropertyKey": "clearingIDCode",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "clearingIDCode",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Clearing ID Code",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "TransactionObjects",
+                    "group": "Clearing Code Lookup",
+                    "kuid": "d055ea2bb7fe474c828e9b492fe4ef4d",
+                    "originalPropertyKey": "lookUpBCCService",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "lookUpBCCService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ExternalAccounts",
+                    "group": "Account Number Validation Service",
+                    "kuid": "h4546fd8fc16422f8f100adc2ca09a9f",
+                    "originalPropertyKey": "accValidationObject",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "accValidationObject",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"optionValue\": \n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.ProfileManagement.PhoneNumbers}\",\n    \"default\": \"{i.i18n.ProfileManagement.PhoneNumbers}\"\n  },\n  \"optionSelected\": false,\n  \"optionBackendValue\" : \"PhoneNumber\"\n}",
+                    "group": "Contact Type",
+                    "kuid": "c164b62e56044dfe98ed8dd2dde65865",
+                    "originalPropertyKey": "ctOption1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "ctOption1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contact Type Option 1",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"{i18n.TransfersEur.TofindyourSWIFTcodepleaseenterbankdetailsthenhitSearch}\", \n  \"default\": \"{i18n.TransfersEur.TofindyourSWIFTcodepleaseenterbankdetailsthenhitSearch}\"\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "e9850f9500e54d5c9d7a78b62d1706bf",
+                    "originalPropertyKey": "sluDescription",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "sluDescription",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Description",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.konybb.manageUser.PhoneNo}:\",\n  \"default\": \"{i.i18n.konybb.manageUser.PhoneNo}:\"\n},\n\"helpTooltip\" : \"{i.i18n.konybb.manageUser.PhoneNo}\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "cdf17832945a43609453dd6fe1457bea",
+                    "originalPropertyKey": "adfTextBox2Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "adfTextBox2Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 2 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"text\": \"{i.i18n.TransfersEur.btnContinue}\",\n  \"toolTip\": \"{i.i18n.TransfersEur.btnContinue}\",\n  \"callBack\": \"continueTransfer\"\n}",
+                    "group": "Buttons",
+                    "kuid": "acb947c4d402478bb9b42a2a5794ed97",
+                    "originalPropertyKey": "utfCTAbutton2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "utfCTAbutton2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "CTA Button2",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknTextBoxEE0005\",\n  \"default\": \"ICSknTextBoxEE0005\"\n}",
+                    "group": "Skins",
+                    "kuid": "cc41baaad8514e2db95147d861110cc5",
+                    "originalPropertyKey": "sknErrorTextInput",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknErrorTextInput",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Error Text Input Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"img\": \"chevron_up.png\"\n}",
+                    "group": "Icons",
+                    "kuid": "gfe32215cc2c41729b632f2adaf7d57a",
+                    "originalPropertyKey": "dropdownCollapseIcon",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "dropdownCollapseIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Dropdown Collapse Icon",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SameBank",
+                    "group": "General",
+                    "kuid": "d348585ff6fc465a861d73494ec2364f",
+                    "originalPropertyKey": "recipientFlow",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "recipientFlow",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Flow Type",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "list selector",
+                    "value": [
+                        "SameBank",
+                        "Domestic",
+                        "International",
+                        "PayAPerson"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"Recipients\": {\n    \"if_txtValue1\": \"20\",\n    \"if_txtValue2\": \"40\",\n    \"if_txtValue3\": \"40\"\n  }\n}",
+                    "group": "Data Validation",
+                    "kuid": "f6bce707efa84afd8a0f249d9f498a45",
+                    "originalPropertyKey": "maxFillMapping",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "maxFillMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Maximum Fill mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getBICFromBankDetails",
+                    "group": "SWIFT Search Service",
+                    "kuid": "ed497dd1c9354e908d186b6fde0a28bf",
+                    "originalPropertyKey": "lookupOperationName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "lookupOperationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Country",
+                    "group": "Get Countries Service",
+                    "kuid": "h74ef60785a74cc495a3ca5518c69038",
+                    "originalPropertyKey": "countryObject",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "countryObject",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Country Object Name Country Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "States",
+                    "group": "Get States Service",
+                    "kuid": "e14bbddd289a4301b74d0f38c86f892b",
+                    "originalPropertyKey": "statesObject",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "statesObject",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "State Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "InfinityUser",
+                    "group": "Contract Service",
+                    "kuid": "d40b11510c7d4f7a956d4e0922ed0e09",
+                    "originalPropertyKey": "contractObject",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "contractObject",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contract Object",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\":\"{$.c.payeeName}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.EnterPayeeName}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.EnterPayeeName}\"\n  },\n  \"inputMode\":\"ALPHACHAR\"\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "b89a0826381045209d2148febbdb9800",
+                    "originalPropertyKey": "ifTextBox1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "ifTextBox1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 1",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SwiftCode",
+                    "group": "Get Swift Code From IBAN Service",
+                    "kuid": "h684480e67a6425f98db2d6d710a9918",
+                    "originalPropertyKey": "IBANSwiftObjectName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "IBANSwiftObjectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "BankDetails",
+                    "group": "Bank Details from BIC Service",
+                    "kuid": "i4f1ce50050246daad8ec1df037950df",
+                    "originalPropertyKey": "bankDetailsObjectName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "bankDetailsObjectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ExternalCodes",
+                    "group": "Clearing Code Lookup",
+                    "kuid": "a8ab887704814e8c937cfc0009459a03",
+                    "originalPropertyKey": "lookUpBCCObject",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "lookUpBCCObject",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getBeneficiaryName",
+                    "group": "Account Number Validation Service",
+                    "kuid": "a2ae92f7526344bfad31baedfffdb825",
+                    "originalPropertyKey": "accValidationOperation",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "accValidationOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"optionValue\": \n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.ProfileManagement.EmailId}\",\n    \"default\": \"{i.i18n.ProfileManagement.EmailId}\"\n  },\n  \"optionSelected\": false,\n  \"optionBackendValue\" : \"EmailId\"\n}",
+                    "group": "Contact Type",
+                    "kuid": "cfdff643bd4b471e8ce2dd6c6d52b479",
+                    "originalPropertyKey": "ctOption2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "ctOption2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contact Type Option 2",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.payee.bankname}\",\n  \"default\": \"{i.i18n.payee.bankname}\"\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "ab7adb405b58425d8c01f80adac6af40",
+                    "originalPropertyKey": "sluTextBox1Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "sluTextBox1Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 1 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.displayPhoneNumber}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterPhoneNumber}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterPhoneNumber}\"\n  },\n  \"tooltip\": \"{i.i18n.konybb.manageUser.PhoneNo}\",\n  \"inputMode\": \"NUMERIC\",\n  \"formatType\":\"PHONE\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "ba282dc89f124c43b2d620be8b0c9d1f",
+                    "originalPropertyKey": "adfTextBox2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "adfTextBox2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 2",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknTextBoxSSPR42424215px\",\n  \"default\": \"ICSknTextBoxSSPR42424215px\"\n}",
+                    "group": "Skins",
+                    "kuid": "idb6916f53f243c7a1cca1c1bbea1ef6",
+                    "originalPropertyKey": "sknFieldValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknFieldValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text box  Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"img\": \"BlueAlert.png\"\n}",
+                    "group": "Icons",
+                    "kuid": "d5f77601fbce491583efe409b154a483",
+                    "originalPropertyKey": "payeeInfoIcon",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "payeeInfoIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Payee Info Icon",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"Recipients\": {\n    \"if_txtValue1\": \"1\",\n    \"if_txtValue2\": \"3\",\n    \"if_txtValue3\": \"3\"\n  }\n}",
+                    "group": "Data Validation",
+                    "kuid": "dd37a006241945b498ba966f6b98cda8",
+                    "originalPropertyKey": "minFillMapping",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "minFillMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Minimum Fill Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SwiftCode",
+                    "group": "SWIFT Search Service",
+                    "kuid": "fcdc22fc31ab41088f6996f29bd75f5a",
+                    "originalPropertyKey": "lookupObjectName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "lookupObjectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getAllCountries",
+                    "group": "Get Countries Service",
+                    "kuid": "f21c86ac043143969042855ca835d2d1",
+                    "originalPropertyKey": "getCountriesOperation",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "getCountriesOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Country Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getAllRegions",
+                    "group": "Get States Service",
+                    "kuid": "i36171ea31bc48d989370712877f3c64",
+                    "originalPropertyKey": "getStatesOperation",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "getStatesOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "State Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getInfinityUserContractCustomers",
+                    "group": "Contract Service",
+                    "kuid": "eaa57186654544f387520ac8806ee7bb",
+                    "originalPropertyKey": "contractOperation",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "contractOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contract Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.ProfileManagement.AccountNumber}\",\n  \"default\":\"{i.i18n.ProfileManagement.AccountNumber}\"\n},\n\"helpTooltip\" : \"{i.i18n.common.accountNumber}\"\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "d137e9ad712345af8b8661f1fd145d17",
+                    "originalPropertyKey": "ifTextBox2Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "ifTextBox2Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 2 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getSwiftCode",
+                    "group": "Get Swift Code From IBAN Service",
+                    "kuid": "b9924dc960004f73a7f2ea914fc22473",
+                    "originalPropertyKey": "IBANSwiftOperationName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "IBANSwiftOperationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"action\": {\n    \"callBack\": \"confirmCancel\",\n    \"level\": \"form\"   \n  }\n}",
+                    "group": "Buttons",
+                    "kuid": "a8c6701e3fd14cbbbeff7fab3b3903aa",
+                    "originalPropertyKey": "utfButtonYes",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "utfButtonYes",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Popup Button Yes",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getBankDetailsFromBicCode",
+                    "group": "Bank Details from BIC Service",
+                    "kuid": "i3255be0456c4969aae84a28468a66a9",
+                    "originalPropertyKey": "bankDetailsOperationName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "bankDetailsOperationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getPurposeCodes",
+                    "group": "Clearing Code Lookup",
+                    "kuid": "b660af42dcc044709a429f2777abd2d3",
+                    "originalPropertyKey": "lookUpBCCOperation",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "lookUpBCCOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"accountNumber\": \"{$.c.accountNumber}\"\n}",
+                    "group": "Account Number Validation Service",
+                    "kuid": "d46895b6f9cb4478aad724ff62778e24",
+                    "originalPropertyKey": "accValidationCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "accValidationCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"optionValue\": \n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.NationalId}\",\n    \"default\": \"{i.i18n.UnifiedAddBeneficiary.NationalId}\"\n  },\n  \"optionSelected\": false,\n  \"optionBackendValue\" : \"NationalId\"\n}",
+                    "group": "Contact Type",
+                    "kuid": "g74cfe4a11714c3cb5a0d7897cee98f9",
+                    "originalPropertyKey": "ctOption3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "ctOption3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contact Type Option 3",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.bankName}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.enterBankName}\",\n    \"default\": \"{i.i18n.UnifiedAddBeneficiary.enterBankName}\"\n  },\n  \"Mandatory\": true\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "i19b605b0d6849429bf0dd9c3bbb4a67",
+                    "originalPropertyKey": "sluTextBox1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "sluTextBox1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 1 ",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.konybb.manageUser.EmailID}\",\n  \"default\": \"{i.i18n.konybb.manageUser.EmailID}\"\n},\n\"helpTooltip\" : \"{i.i18n.payments.emailId}\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "bd3de9200d424afa9a294e2577770c3f",
+                    "originalPropertyKey": "adfTextBox3Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "adfTextBox3Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 3 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknTxtBoxPlaceholderSSP94949415px\",\n  \"default\": \"ICSknTxtBoxPlaceholderSSP94949415px\"\n}",
+                    "group": "Skins",
+                    "kuid": "de5a5c3c53354a96a839e35da54c01bc",
+                    "originalPropertyKey": "sknTextBoxPlaceholder",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknTextBoxPlaceholder",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box Placeholder Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Recipients",
+                    "group": "Data Validation",
+                    "kuid": "f355769b204d47ddbab14848873bca19",
+                    "originalPropertyKey": "jsonObjName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "jsonObjName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S1",
+                    "group": "SWIFT Search Service",
+                    "kuid": "d0408bfce2f640e8a0b73148f5c75d37",
+                    "originalPropertyKey": "lookupServiceResponse",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "lookupServiceResponse",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Response",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}\n",
+                    "group": "Get Countries Service",
+                    "kuid": "e8e05154916f44089cefd02e72c95d84",
+                    "originalPropertyKey": "getCountriesCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "getCountriesCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Country Criteria",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "Get States Service",
+                    "kuid": "if30d2d0cced462c827f436f1328e895",
+                    "originalPropertyKey": "getStatesCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "getStatesCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "State Criteria",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\":\"{$.c.accountNumber}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.AccountNumber}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.AccountNumber}\"\n  },\n  \"isMaskingEnabled\":true,\n  \"inputMode\":\"ALPHANUMERIC\"\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "aba54f5817234d15988eb1d19c8055c5",
+                    "originalPropertyKey": "ifTextBox2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "ifTextBox2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 2",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"iban\":\"{$.c.accountNumber}\"}",
+                    "group": "Get Swift Code From IBAN Service",
+                    "kuid": "e3bb6473dfcf4986938db27080096eaa",
+                    "originalPropertyKey": "IBANSwiftCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "IBANSwiftCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "Contract Service",
+                    "kuid": "a0b1347c938f43cd9f916e7b4cf6a1d1",
+                    "originalPropertyKey": "contractCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "contractCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contract Criteria",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"swiftCode\":\"{$.c.BICCode}\"}",
+                    "group": "Bank Details from BIC Service",
+                    "kuid": "c4575e8d1e3249869e87bec44201182e",
+                    "originalPropertyKey": "bankDetailsCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "bankDetailsCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\r\n    \"id\": \"ClearingSysId\"\r\n}",
+                    "group": "Clearing Code Lookup",
+                    "kuid": "bcce8e8c86f74f968b561b1ced9ffff4",
+                    "originalPropertyKey": "lookUpBCCCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "lookUpBCCCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "contracts",
+                    "group": "Contract Service",
+                    "kuid": "aab14e6c30474e9e896b1624e0c5ccbc",
+                    "originalPropertyKey": "contractResponse",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "contractResponse",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Response",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.WireTransfer.Country}:\",\n  \"default\": \"{i.i18n.WireTransfer.Country}:\"\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "abe6a523a0774bfa8614358caf8a0b30",
+                    "originalPropertyKey": "sluTextBox2Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "sluTextBox2Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 2 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.emailID}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterEmailId}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterEmailId}\"\n  },\n  \"tooltip\": \"{i.i18n.login.CantSignIn.EmailAddress}\",\n  \"inputMode\": \"EMAIL\",\n  \"formatType\":\"EMAIL\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "c394ab3d38e44b0c8d30ab2a7d243abf",
+                    "originalPropertyKey": "adfTextBox3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "adfTextBox3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 3",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknLabelSSPRegular42424215px\",\n  \"default\": \"ICSknLabelSSPRegular42424215px\"\n}",
+                    "group": "Skins",
+                    "kuid": "j0b3cf0b6fd84b9eab8a118f25a96e75",
+                    "originalPropertyKey": "sknFieldReadOnlyValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknFieldReadOnlyValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Input Field Read only skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "countriesList",
+                    "group": "Get Countries Service",
+                    "kuid": "ffe3588cffc049f8912996201d513712",
+                    "originalPropertyKey": "getCountriesIdentifier",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "getCountriesIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Country Response",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "statesList",
+                    "group": "Get States Service",
+                    "kuid": "idad26a3f80e4076955b3c34b20524d2",
+                    "originalPropertyKey": "getStatesIdentifier",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "getStatesIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "State Response",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.WireTransfers.ReEnterAccountNumber}:\",\n  \"default\":\"{i.i18n.WireTransfers.ReEnterAccountNumber}:\"\n},\n\"helpTooltip\" : \"{i.i18n.payments.reEnterAccountNumber}\"\n}\n",
+                    "group": "Input Fields (if)",
+                    "kuid": "e3ae999e73ef43df806c881fe9415561",
+                    "originalPropertyKey": "ifReenterTextBox2Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "ifReenterTextBox2Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Re Enter Text Box 2 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "bankName",
+                    "group": "Get Swift Code From IBAN Service",
+                    "kuid": "c08bae2273d94cffbc2fbfb996d70987",
+                    "originalPropertyKey": "IBANBankNameId",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "IBANBankNameId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Bank Name Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"text\":\n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.ProfileManagement.PhoneNumbers}:\",\n    \"default\": \"{i.i18n.ProfileManagement.PhoneNumbers}:\"\n  },\n  \"helpTooltip\" : \"{i.i18n.konybb.manageUser.PhoneNo}\"\n}",
+                    "group": "Contact Type",
+                    "kuid": "de89424ff80042888976f5d499da015f",
+                    "originalPropertyKey": "ctLabel1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "ctLabel1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contact Label 1",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.country}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.enterCountry}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.enterCountry}\"\n  },\n  \"Mandatory\": true\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "gd52f62abc844c20aff9acd342167f5e",
+                    "originalPropertyKey": "sluTextBox2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "sluTextBox2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 2",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\":\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.AddressLine01}:\",\n  \"default\": \"{i.i18n.TransfersEur.AddressLine01}:\"\n},\n\"helpTooltip\" : \"{i.i18n.WireTransfer.AddressLine1}\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "c9bde4f54b9649318408eb7bd60bbdcd",
+                    "originalPropertyKey": "adfTextBox4Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "adfTextBox4Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 4 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknsknTbxBorder0036751px\",\n  \"default\": \"ICSknsknTbxBorder0036751px\"\n}",
+                    "group": "Skins",
+                    "kuid": "b018984baa694b5bb7952daf1885fbc1",
+                    "originalPropertyKey": "sknTxtBoxFocus",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknTxtBoxFocus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box Focus",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\":\"{$.c.newPayeeAccountNumberReenter}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.ReenterAccountNumber}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.ReenterAccountNumber}\"\n  },\n  \"isMaskingEnabled\":false,\n  \"inputMode\":\"ALPHANUMERIC\"\n}\n",
+                    "group": "Input Fields (if)",
+                    "kuid": "h748ec46ce2f4580ba4621c6e759e518",
+                    "originalPropertyKey": "ifReenterTextBox2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "ifReenterTextBox2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Re Enter Text Box 2",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "bic",
+                    "group": "Get Swift Code From IBAN Service",
+                    "kuid": "dfe57eb710b84b588a38a6886896086b",
+                    "originalPropertyKey": "IBANBICId",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "IBANBICId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "BIC Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"text\":\n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.ProfileManagement.EmailId}:\",\n    \"default\": \"{i.i18n.ProfileManagement.EmailId}:\"\n  },\n  \"helpTooltip\" : \"{i.i18n.ProfileManagement.EmailId}\"\n}",
+                    "group": "Contact Type",
+                    "kuid": "g739465a9a934896992ac36e6e92f9d9",
+                    "originalPropertyKey": "ctLabel2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "ctLabel2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contact Label 2",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.common.city}:\",\n  \"default\": \"{i.i18n.common.city}:\"\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "d6e5060d441940008a4d14eaabf0f1c9",
+                    "originalPropertyKey": "sluTextBox3Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "sluTextBox3Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 3 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.addressLine1}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterAddressLine01}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterAddressLine01}\"\n  },\n  \"tooltip\": \"{i.i18n.ProfileManagement.Address}\",\n  \"inputMode\": \"Any\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "j6ec5fa85c5d4f00975a9c8f81d0ccc5",
+                    "originalPropertyKey": "adfTextBox4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "adfTextBox4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 4",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknLabelSSPRegular4176A413px\",\n  \"default\": \"ICSknLabelSSPRegular4176A415px\"\n}",
+                    "group": "Skins",
+                    "kuid": "cbebe3c2094f4550b1f4f056fac9f42b",
+                    "originalPropertyKey": "sknLookupLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknLookupLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Lookup Label Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.AccountNickNameOptional}\",\n  \"default\":\"{i.i18n.UnifiedAddBeneficiary.AccountNickNameOptional}\"\n},\n\"helpTooltip\" : \"{i.i18n.transfers.accountNickName}\"\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "jd6df45e206847a6b777bc794f77983c",
+                    "originalPropertyKey": "ifTextBox3Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "ifTextBox3Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 3 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"text\":\n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.NationalId}:\",\n    \"default\": \"{i.i18n.UnifiedAddBeneficiary.NationalId}:\"\n  },\n  \"helpTooltip\" : \"{i.i18n.Enroll.SSN}\"\n}",
+                    "group": "Contact Type",
+                    "kuid": "d5caafc1c37842d99b62857adcfb213b",
+                    "originalPropertyKey": "ctLabel3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "ctLabel3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contact Label 3",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.countryCode}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.login.EnterOTPMsg}\",\n    \"default\": \"{i.i18n.login.EnterOTPMsg}\"\n  },\n  \"inputMode\":\"ALPHANUMERIC\"\n}",
+                    "group": "Contact Type",
+                    "kuid": "ia43b300b1f648358f5bb44c8d347307",
+                    "originalPropertyKey": "ctTextBox1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "ctTextBox1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contact Text Box 1",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.displayPhoneNumber}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.PayAPerson.EnterPhoneNumber}\",\n    \"default\": \"{i.i18n.PayAPerson.EnterPhoneNumber}\"\n  },\n  \"inputMode\":\"NUMERIC\",\n  \"formatType\":\"PHONE\"\n}",
+                    "group": "Contact Type",
+                    "kuid": "c70077306bc34073982b147656edf979",
+                    "originalPropertyKey": "ctTextBox2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "ctTextBox2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contact Text Box 2",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.city}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.kony.address.EnterCity}\",\n    \"default\": \"{i.kony.address.EnterCity}\"\n  },\n  \"Mandatory\": true\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "b02b7aabadca40888f0f9d13ec1a6e6b",
+                    "originalPropertyKey": "sluTextBox3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "sluTextBox3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 3",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.AddressLine02}:\",\n  \"default\": \"{i.i18n.TransfersEur.AddressLine02}:\"\n},\n\"helpTooltip\" : \"{i.i18n.WireTransfer.AddressLine2}\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "f488090cf2e94ed49cc33ac3329e730f",
+                    "originalPropertyKey": "adfTextBox5Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "adfTextBox5Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 5 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknLabelSSPRegular42424215px\",\n  \"default\": \"ICSknLabelSSPRegular42424215px\"\n}",
+                    "group": "Skins",
+                    "kuid": "bc7039d5a4ea4cc9916685204fa3547f",
+                    "originalPropertyKey": "sknDropdownText",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "sknDropdownText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Dropdown Text Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\":\"{$.c.nickName}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.NickName}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.NickName}\"\n  },\n  \"inputMode\":\"ALPHACHAR\"\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "c104bd4fe13d4f2594daaf49c5e36d5e",
+                    "originalPropertyKey": "ifTextBox3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "ifTextBox3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 3",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.LocateUs.BranchName}:\",\n  \"default\": \"{i.i18n.LocateUs.BranchName}:\"\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "f43f00de84ea4b83ba13a08e60115a2e",
+                    "originalPropertyKey": "sluTextBox4Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "sluTextBox4Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 4 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.addressLine2}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterAddressLine02}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterAddressLine02}\"\n  },\n  \"tooltip\": \"{i.i18n.WireTransfer.AddressLine2}\",\n  \"inputMode\": \"Any\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "b8a28197e3a7459ba7c220ccef0e10cb",
+                    "originalPropertyKey": "adfTextBox5",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "adfTextBox5",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 5",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknBtnSSPRegular003E7513Px\",\n  \"default\": \"ICSknBtnSSPRegular003E7515Px\"\n}",
+                    "group": "Skins",
+                    "kuid": "c573b6b9a6874ad48ba89196ccdf40bf",
+                    "originalPropertyKey": "sknSecondaryBtn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "sknSecondaryBtn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Secondary Button Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" : \"{i18n.UnifiedTransfers.addnewpayeedetailinfo}\",\n\"helpTooltip\" : \"{i18n.UnifiedTransfers.addnewpayeedetailinfo}\"\n}\n",
+                    "group": "Input Fields (if)",
+                    "kuid": "f48c8ac510784020aa497354e0f8671b",
+                    "originalPropertyKey": "ifsubHeaderTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "ifsubHeaderTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Info Text",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.emailID}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.EnterEmailAddress}\",\n    \"default\": \"{i.i18n.TransfersEur.EnterEmailAddress}\"\n  },\n  \"inputMode\":\"EMAIL\",\n  \"formatType\":\"EMAIL\"\n}",
+                    "group": "Contact Type",
+                    "kuid": "dd981f7e0b684adf85af841ed6920f52",
+                    "originalPropertyKey": "ctTextBox3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "ctTextBox3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contact Text Box 3",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.branch}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.unifiedBeneficiary.enterBranchName}\",\n    \"default\": \"{i.i18n.unifiedBeneficiary.enterBranchName}\"\n  },\n  \"Mandatory\": false\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "c6692c5e9d984b86865f4f60e19d90f8",
+                    "originalPropertyKey": "sluTextBox4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "sluTextBox4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 4",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.Country}:\",\n  \"default\": \"{i.i18n.TransfersEur.Country}:\"\n},\n\"helpTooltip\" : \"{i.i18n.WireTransfer.Country}\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "b25a9fdb8ead4f4a9196a075722a477d",
+                    "originalPropertyKey": "countryLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "countryLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Country Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknBtnSSPRegular003E7513Px\",\n  \"default\": \"ICSknBtnSSPRegular003E7515Px\"\n}",
+                    "group": "Skins",
+                    "kuid": "e9b950e7d52c4a4facfdb59a14214aa0",
+                    "originalPropertyKey": "sknSecondaryBtnHover",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "sknSecondaryBtnHover",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Secondary Button Hover  Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"text\": {\n  \"$.BREAKPTS.BP1\": \"{i18n.TransfersEur.LookUp}\", \n  \"default\": \"{i18n.TransfersEur.LookUp}\"\n  }, \n  \"action\": { \n    \"level\": \"form\", \n    \"callBack\": \"showLookupPopup\" \n  },\n  \"toolTip\": \"{i18n.TransfersEur.LookUp}\",\n  \"helpTooltip\" : \"{i.i18n.TransfersEur.LookUp}\"\n}\n",
+                    "group": "Input Fields (if)",
+                    "kuid": "hc031255cada42ed93f4893e780a414d",
+                    "originalPropertyKey": "iflblLookup",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "iflblLookup",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Lookup Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.displayNationalId}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.EnterNationalId}\",\n    \"default\": \"{i.i18n.UnifiedAddBeneficiary.EnterNationalId}\"\n  },\n  \"inputMode\":\"NUMERIC\",\n  \"formatType\":\"NATIONALID\"\n}",
+                    "group": "Contact Type",
+                    "kuid": "de33418ea24c445397bd986e57ca55a5",
+                    "originalPropertyKey": "ctTextBox4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "ctTextBox4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contact Text Box 4",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"{i.kony.i18n.verifyDetails.bicSwift}\",\n  \"default\": \"{i.kony.i18n.verifyDetails.bicSwift}\"\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "a54b1ef9b262490a8f64e4d27dff645b",
+                    "originalPropertyKey": "sluResultItemLabel1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "sluResultItemLabel1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Result Item Label 1",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.country}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterCountry}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterCountry}\"\n  },\n  \"tooltip\": \"{i.i18n.WireTransfer.Country}\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "b559182796824691ae25a8a3c93698c6",
+                    "originalPropertyKey": "countryValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "countryValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Country Value",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknBtnSSPRegular003E7513Px\",\n  \"default\": \"ICSknBtnSSPRegular003E7515Px\"\n}",
+                    "group": "Skins",
+                    "kuid": "bdd401c44e704d73b980b7c55f4da3e9",
+                    "originalPropertyKey": "sknSecondaryBtnFocus",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "sknSecondaryBtnFocus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Secondary Button Focus  Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i18n.TransfersEur.BICSWIFT}:\",\n  \"default\":\"{i18n.TransfersEur.BICSWIFT}:\"\n},\n\"helpTooltip\" : \"{i.i18n.payments.bicSlashSwift}\"\n}\n",
+                    "group": "Input Fields (if)",
+                    "kuid": "j8c8bb08793c4d7290caf0aa16ed7f99",
+                    "originalPropertyKey": "ifTextBox4Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "ifTextBox4Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 4 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"{i18n.payee.bankname}\",\n  \"default\": \"{i18n.payee.bankname}\"\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "cae20eb7c74543b493e920ec931dc4d9",
+                    "originalPropertyKey": "sluResultItemLabel2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 12,
+                    "propertyKey": "sluResultItemLabel2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Result Item Label 2",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.common.state}:\",\n  \"default\": \"{i.i18n.common.state}:\"\n},\n\"helpTooltip\" : \"{i.i18n.common.state}\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "f40d2e49ea344f5e979a37a8b2187d64",
+                    "originalPropertyKey": "stateLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 12,
+                    "propertyKey": "stateLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "State Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnDisablede2e9f013px\",\n  \"default\": \"ICSknbtnDisablede2e9f036px\"\n}",
+                    "group": "Skins",
+                    "kuid": "b1600cf5dcd8408d94ef0754aaf8629b",
+                    "originalPropertyKey": "sknSecondaryBtnDisabled",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 12,
+                    "propertyKey": "sknSecondaryBtnDisabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Secondary Button Disabled Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\":\"{$.c.BICCode}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.SwiftCode}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.SwiftCode}\"\n  },\n    \"formatType\":\"SWIFT\",\n    \"backendMapping\": \"swiftCode\"\n}\n",
+                    "group": "Input Fields (if)",
+                    "kuid": "hc1a0d2873134f519a6242db2db93b8d",
+                    "originalPropertyKey": "ifTextBox4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 12,
+                    "propertyKey": "ifTextBox4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 4 ",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"{$.S1.bic}\",\n  \"default\": \"{$.S1.bic}\"\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "a7d80e7eae464b3d86691537dd5b498d",
+                    "originalPropertyKey": "sluResultItem1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 13,
+                    "propertyKey": "sluResultItem1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Result Item 1",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.state}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterState}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterState}\"\n  },\n  \"tooltip\": \"{i.i18n.common.state}\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "ad95e4d0980c4236b521e6719c72023a",
+                    "originalPropertyKey": "stateValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 13,
+                    "propertyKey": "stateValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "State Value",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i18n.payments.bankClearingCode}:\",\n  \"default\":\"{i18n.payments.bankClearingCode}:\"\n},\n\"helpTooltip\" : \"{i.i18n.payments.bankClearingCode}\"\n}\n",
+                    "group": "Input Fields (if)",
+                    "kuid": "e5025c77f15a45119c8a1ee6cd9e847f",
+                    "originalPropertyKey": "ifTextBox5Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 13,
+                    "propertyKey": "ifTextBox5Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 5 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnEnabed003e7513px\",\n  \"default\": \"ICSknbtnEnabed003e7536px\"\n}",
+                    "group": "Skins",
+                    "kuid": "e2b80cb9fd6d46a7a272f3e564de002c",
+                    "originalPropertyKey": "sknPrimaryBtn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 13,
+                    "propertyKey": "sknPrimaryBtn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Button  Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"{$.S1.bankAddress}\",\n  \"default\": \"{$.S1.bankAddress}\"\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "dd66c18f99394ed8badac993deb1a0b2",
+                    "originalPropertyKey": "sluResultItem2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 14,
+                    "propertyKey": "sluResultItem2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Result Item 2",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.City}:\",\n  \"default\": \"{i.i18n.TransfersEur.City}:\"\n},\n\"helpTooltip\" : \"{i.i18n.common.city}\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "g61d4be7b3fe461e9daa2ee34db2de89",
+                    "originalPropertyKey": "adfTextBox6Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 14,
+                    "propertyKey": "adfTextBox6Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 6 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\":\"{$.c.clearingCode1}\",\n  \"placeHolder\":{\n    \"$.BREAKPTS.BP1\":\"{i.i18n.payments.enterBankClearingCode}\",\n    \"default\":\"{i.i18n.payments.enterBankClearingCode}\"\n  }\n}\n",
+                    "group": "Input Fields (if)",
+                    "kuid": "c5be42520fb54ad6857617adcf3d0814",
+                    "originalPropertyKey": "ifTextBox5",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 14,
+                    "propertyKey": "ifTextBox5",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 5",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnEnabed003e7513px\",\n  \"default\": \"ICSknbtnEnabed003e7536px\"\n}",
+                    "group": "Skins",
+                    "kuid": "e686a6b9e5304d42b4a0df3684f6dffe",
+                    "originalPropertyKey": "sknPrimaryBtnHover",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 14,
+                    "propertyKey": "sknPrimaryBtnHover",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Button Hover  Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.selectSwift}\",\n  \"default\": \"{i.i18n.TransfersEur.selectSwift}\"\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "c949ab08b819430cacfc44cb7030718e",
+                    "originalPropertyKey": "sluResultItem3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 15,
+                    "propertyKey": "sluResultItem3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Result Item 3",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.city}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterCity}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterCity}\"\n  },\n  \"tooltip\": \"{i.i18n.common.city}\",\n  \"inputMode\": \"ALPHABET\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "f47b1530390d4d9ebd1175f09734a05a",
+                    "originalPropertyKey": "adfTextBox6",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 15,
+                    "propertyKey": "adfTextBox6",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 6",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i18n.UnifiedTransfer.ClearingCode2}:\",\n  \"default\":\"{i18n.UnifiedTransfer.ClearingCode2}:\"\n},\n\"helpTooltip\" : \"{i.i18n.UnifiedTransfer.ClearingCode2}\"\n}\n",
+                    "group": "Input Fields (if)",
+                    "kuid": "j389d48313584bc9aa45b2473f3cbeb8",
+                    "originalPropertyKey": "ifTextBox6Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 15,
+                    "propertyKey": "ifTextBox6Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 6 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnEnabed003e7513px\",\n  \"default\": \"ICSknbtnEnabed003e7536px\"\n}",
+                    "group": "Skins",
+                    "kuid": "c204b1730f1f442aa0d65d22a66fb356",
+                    "originalPropertyKey": "sknPrimaryBtnFocus",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 15,
+                    "propertyKey": "sknPrimaryBtnFocus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Button Focus  Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnDisablede2e9f013px\",\n  \"default\": \"ICSknbtnDisablede2e9f036px\"\n}",
+                    "group": "Skins",
+                    "kuid": "h21293ca3bc84d9ab01d727733ef8368",
+                    "originalPropertyKey": "sknPrimaryBtnDisabled",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 16,
+                    "propertyKey": "sknPrimaryBtnDisabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Button Disabled Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"text\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.billPay.Search}\",\n    \"default\": \"{i.i18n.billPay.Search}\"\n  }\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "dd4123ad33654e0e846d27669af528f8",
+                    "originalPropertyKey": "sluCTAButton",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 16,
+                    "propertyKey": "sluCTAButton",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "CTA Button",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" : \n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.common.zipcode}:\",\n  \"default\": \"{i.i18n.common.zipcode}:\"\n},\n\"helpTooltip\" : \"{i.i18n.common.zipcode}\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "fc27ee6b5c354d5daf2f6f30c1af1e62",
+                    "originalPropertyKey": "adfTextBox7Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 16,
+                    "propertyKey": "adfTextBox7Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 7 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\":\"{$.c.clearingCode2}\",\n  \"placeHolder\":{\n    \"$.BREAKPTS.BP1\":\"{i.i18n.unified.clearingCode2}\",\n    \"default\":\"{i.i18n.unified.clearingCode2}\"\n  }\n}\n",
+                    "group": "Input Fields (if)",
+                    "kuid": "g8d0c18fe3c3405695161fb9176afb2e",
+                    "originalPropertyKey": "ifTextBox6",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 16,
+                    "propertyKey": "ifTextBox6",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 6",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.Transfers.NoSearchResultFound}\",\n  \"default\": \"{i.i18n.Transfers.NoSearchResultFound}\"\n}",
+                    "group": "Swift Lookup",
+                    "kuid": "j645e1799b8d4f179261827fbe69cd67",
+                    "originalPropertyKey": "sluEmptySearchResult",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 17,
+                    "propertyKey": "sluEmptySearchResult",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "No Search Result Message",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\": \"{$.c.zipCode}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterZipCode}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterZipCode}\"\n  },\n  \"tooltip\": \"{i.i18n.common.zipcode}\",\n  \"inputMode\": \"ALPHANUMERIC\"\n}",
+                    "group": "Address Fields",
+                    "kuid": "c0342706d1584014a4d8884957be7ec9",
+                    "originalPropertyKey": "adfTextBox7",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 17,
+                    "propertyKey": "adfTextBox7",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 7",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknLabelSSPRegular4176A413px\",\n  \"default\": \"ICSknLabelSSPRegular4176A415px\"\n}",
+                    "group": "Skins",
+                    "kuid": "ia1bc5e20ed84b1bb007af3bbd77ee8e",
+                    "originalPropertyKey": "sknSelectLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 17,
+                    "propertyKey": "sknSelectLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Swift Lookup Select Label Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.payee.bankname}\",\n  \"default\":\"{i.i18n.payee.bankname}\"\n},\n\"helpTooltip\" : \"{i.i18n.transfers.bankName}\"\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "de15a5f90f5b4ad6a434a7bc7621f004",
+                    "originalPropertyKey": "ifTextBox7Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 17,
+                    "propertyKey": "ifTextBox7Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 7 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknLabelSSPRegular42424211px\",\n  \"default\": \"ICSknSSPRegular42424213Px\"\n}",
+                    "group": "Skins",
+                    "kuid": "b820113b4d3947fb8fc06ec96b98cb21",
+                    "originalPropertyKey": "sknPayeeDetailInfoText",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 18,
+                    "propertyKey": "sknPayeeDetailInfoText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Payee Detail Info Text Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"mapping\":\"{$.c.bankName}\",\n  \"placeHolder\":{\n    \"$.BREAKPTS.BP1\":\"{i.i18n.unifiedBeneficiary.enterBankName}\",\n    \"default\":\"{i.i18n.unifiedBeneficiary.enterBankName}\"\n  },\n  \"backendMapping\":\"bankName\"\n}\n",
+                    "group": "Input Fields (if)",
+                    "kuid": "b82b94f6ebd64748b056acb0dccd80d7",
+                    "originalPropertyKey": "ifTextBox7",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 18,
+                    "propertyKey": "ifTextBox7",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 7",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\": \"ICSknFlxfbfbfb\"}",
+                    "group": "Skins",
+                    "kuid": "e40d82219758446c94c647ceb3211410",
+                    "originalPropertyKey": "sknMandatoryTextBox",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 19,
+                    "propertyKey": "sknMandatoryTextBox",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "SWIFT BIC flex Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnEnabed003e7513px\",\n  \"default\": \"ICSknbtnEnabed003e7536px\"\n}",
+                    "group": "Skins",
+                    "kuid": "a354f79fd72b42ae8df08b3d8d5ca640",
+                    "originalPropertyKey": "sknBtnSecondaryEnabled",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 19,
+                    "propertyKey": "sknBtnSecondaryEnabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Secondary Button Enabled Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\r\n\"text\" :\r\n{\r\n  \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedTransfers.StreetName}:\",\r\n  \"default\":\"{i.i18n.UnifiedTransfers.StreetName}:\"\r\n},\r\n\"helpTooltip\" : \"{i.i18n.UnifiedTransfers.StreetName}\"\r\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "had66eda39a044ee85189d74e584d5d8",
+                    "originalPropertyKey": "ifTextBox8Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 19,
+                    "propertyKey": "ifTextBox8Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 8 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnEnabed003e7513px\",\n  \"default\": \"ICSknbtnEnabed003e7536px\"\n}",
+                    "group": "Skins",
+                    "kuid": "eb1e7697f54341928415ed4f0b3b091e",
+                    "originalPropertyKey": "sknPrimaryBtnEnabled",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 20,
+                    "propertyKey": "sknPrimaryBtnEnabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Button Enabled Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\r\n\"text\" :\r\n{\r\n  \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedTransfers.TownName}:\",\r\n  \"default\":\"{i.i18n.UnifiedTransfers.TownName}:\"\r\n},\r\n\"helpTooltip\" : \"{i.i18n.UnifiedTransfers.TownName}\"\r\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "ab835253e12b4b1d80cb43112f371f08",
+                    "originalPropertyKey": "ifTextBox9Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 20,
+                    "propertyKey": "ifTextBox9Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 9 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknLabelSSPBold42424215px\",\n  \"default\": \"ICSknLabelSSPBold42424215px\"\n}",
+                    "group": "Skins",
+                    "kuid": "be4a0c4545284c068da1e320a1aec11b",
+                    "originalPropertyKey": "sknBoldFieldLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 21,
+                    "propertyKey": "sknBoldFieldLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Bold Field Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\r\n  \"mapping\":\"{$.c.streetName}\",\r\n  \"placeHolder\":\r\n  {\r\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedTransfers.enterStreetName}\",\r\n    \"default\":\"{i.i18n.UnifiedTransfers.enterStreetName}\"\r\n  }\r\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "f90f66c46e0f437c87c1bd35a6b29b7a",
+                    "originalPropertyKey": "ifTextBox8",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 21,
+                    "propertyKey": "ifTextBox8",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 8",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\r\n  \"mapping\":\"{$.c.townName}\",\r\n  \"placeHolder\":\r\n  {\r\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedTransfers.enterTownName}\",\r\n    \"default\":\"{i.i18n.UnifiedTransfers.enterTownName}\"\r\n  }\r\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "c3b13dfb5029434e9b3679d8254e484e",
+                    "originalPropertyKey": "ifTextBox9",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 22,
+                    "propertyKey": "ifTextBox9",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 9",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"skin\": {\n    \"$.BREAKPTS.BP1\": \"ICSknRBSelectedICon003e75\",\n    \"default\": \"ICSknRBSelectedICon003e75\"\n  },\n  \"text\": \"M\"\n}",
+                    "group": "Skins",
+                    "kuid": "f6a28045d02c4769b5880df5953ac795",
+                    "originalPropertyKey": "sknRadioSelected",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 22,
+                    "propertyKey": "sknRadioSelected",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Radio Button Selected Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\r\n  \"mapping\": \"{$.c.countryName}\",\r\n  \"placeHolder\": {\r\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterCountry}\",\r\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterCountry}\"\r\n  },\r\n  \"tooltip\": \"{i.i18n.WireTransfer.Country}\"\r\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "c8c33fa5fc7d443fac9017be5f8e2f5e",
+                    "originalPropertyKey": "bankCountryValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 23,
+                    "propertyKey": "bankCountryValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Bank Country Value",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"skin\": {\n    \"$.BREAKPTS.BP1\": \"ICSknRB424242Icon\",\n    \"default\": \"ICSknRB424242Icon\"\n  },\n  \"text\": \"L\"\n}",
+                    "group": "Skins",
+                    "kuid": "i13d59c0e19a4882bbcfc7451dbf0c8c",
+                    "originalPropertyKey": "sknRadioUnselected",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 23,
+                    "propertyKey": "sknRadioUnselected",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Radio Button Unselected Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknSSP42424215Px\",\n  \"default\": \"ICSknSSP42424215Px\"\n}",
+                    "group": "Skins",
+                    "kuid": "d8c7f055997249be88f7afc7a4562d8f",
+                    "originalPropertyKey": "sknRadioButtonText",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 24,
+                    "propertyKey": "sknRadioButtonText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Radio Button Text Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\r\n\"text\" :\r\n{\r\n  \"$.BREAKPTS.BP1\":\"{i.i18n.payments.intermediaryBICOptional}:\",\r\n  \"default\":\"{i.i18n.payments.intermediaryBICOptional}:\"\r\n},\r\n\"helpTooltip\" : \"{i.i18n.payments.intermediaryBICOptional}\"\r\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "i9b141130f32481c8c0b50c9f600ef2e",
+                    "originalPropertyKey": "ifTextBox10Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 24,
+                    "propertyKey": "ifTextBox10Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 10 Label",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknTextBoxSSPRegular42424215px\",\n  \"default\": \"ICSknTextBoxSSPRegular42424215px\"\n}",
+                    "group": "Skins",
+                    "kuid": "baae50ec6108443681aadd3cc2365515",
+                    "originalPropertyKey": "sknFieldValueLookUp",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 25,
+                    "propertyKey": "sknFieldValueLookUp",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field Value Skin for Look Up",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\r\n  \"mapping\":\"{$.c.intermediaryBIC}\",\r\n  \"placeHolder\":\r\n  {\r\n    \"$.BREAKPTS.BP1\":\"{i.i18n.unified.intermediaryBIC}\",\r\n    \"default\":\"{i.i18n.unified.intermediaryBIC}\"\r\n  }\r\n}",
+                    "group": "Input Fields (if)",
+                    "kuid": "e28a1e2067e24a22a90fb35db721c634",
+                    "originalPropertyKey": "ifTextBox10",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 25,
+                    "propertyKey": "ifTextBox10",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box 10",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"$.BREAKPTS.BP1\": \"ICSknTbxDisabledSSPreg42424215pxBorder1px\",\n  \"default\": \"ICSknTbxDisabledSSPreg42424215pxBorder1px\"\n}",
+                    "group": "Skins",
+                    "kuid": "d49ea0f13c624d90b3e633f8d8d344c0",
+                    "originalPropertyKey": "sknTextBoxDisabled",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 26,
+                    "propertyKey": "sknTextBoxDisabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Box Disabled Skin",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b8816461498444aaa7083b874b4ed0af",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Transfers",
+    "version": "1.0.0"
+}

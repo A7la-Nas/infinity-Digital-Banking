@@ -1,0 +1,202 @@
+{
+    "classname": "LCIssuance",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bb423268293646128e0640391c112eb1",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2d3cbdb72d84750a57b0b9fb4d3b6a2",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "LCIssuance",
+                    "kuid": "a2577cf6942842cf9e700821b9cba8bc",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "updateProgressBar",
+                    "pw": {
+                        "displayName": "updateProgressBar",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2d3cbdb72d84750a57b0b9fb4d3b6a2",
+                    "type": "event"
+                },
+                {
+                    "group": "LCIssuance",
+                    "kuid": "d773d004ff0148da925febc3bb07d9d8",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "showServiceMessage",
+                    "pw": {
+                        "displayName": "showServiceMessage",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2d3cbdb72d84750a57b0b9fb4d3b6a2",
+                    "type": "event"
+                },
+                {
+                    "group": "LCIssuance",
+                    "kuid": "e650dbf06cbf43269ff08be65cf57f00",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "handleNavigation",
+                    "pw": {
+                        "displayName": "handleNavigation",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2d3cbdb72d84750a57b0b9fb4d3b6a2",
+                    "type": "event"
+                },
+                {
+                    "group": "LCIssuance",
+                    "kuid": "c7726a234c274bae8cbaaf014f2e954e",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "setHeaderText",
+                    "pw": {
+                        "displayName": "setHeaderText",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2d3cbdb72d84750a57b0b9fb4d3b6a2",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [
+                "LCIssuance"
+            ],
+            "properties": [
+                "Create LC"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"CreateLC\": {\n    \"Service\": \"serviceName\",\n    \"Object\": \"objName\",\n    \"Verb\": \"verbName\",\n    \"Criteria\": {\n    }\n  },\n  \"LookUp\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LetterOfCredit\",\n    \"Verb\": \"getSwiftCode\",\n    \"Criteria\": {\n      \"bankName\": \"\",\n      \"country\": \"\",\n      \"city\": \"\",\n      \"branchName\": \"\"\n    }\n  }\n}",
+                    "group": "Create LC",
+                    "kuid": "g4e9bf6120d4407d81b3ec06d4352f40",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "d2d3cbdb72d84750a57b0b9fb4d3b6a2",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "Create LC",
+                    "kuid": "bd93fc6636d241d688f2bdb7a98b5332",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "d2d3cbdb72d84750a57b0b9fb4d3b6a2",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"BP1\": 640,\n  \"BP2\": 1024,\n  \"BP3\": 1366,\n  \"BP4\": 1380\n}",
+                    "group": "Create LC",
+                    "kuid": "e2e43a1d27c34b088f502f9aa919dc12",
+                    "originalPropertyKey": "breakpoints",
+                    "propertyIndex": 3,
+                    "propertyKey": "breakpoints",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Breakpoints",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "d2d3cbdb72d84750a57b0b9fb4d3b6a2",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"flxCreditDetails\": {\n    \"lblReferenceNumber\": {\n      \"BP1\": \"${i18n{i18n.transfers.RefrenceNumber}}\",\n      \"default\": \"${i18n{i18n.transfers.RefrenceNumber}}\"\n    },\n    \"lblCurrency\": {\n      \"BP1\": \"${i18n{i18n.common.Currency}}\",\n      \"default\": \"${i18n{i18n.common.Currency}}\"\n    },\n    \"lblAmount\": {\n      \"BP1\": \"${i18n{i18n.transfers.lblAmount}}\",\n      \"default\": \"${i18n{i18n.transfers.lblAmount}}\"\n    },\n    \"lblPercentage\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.TolerancePercentage}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.TolerancePercentage}}\"\n    },\n    \"lblMaxCredit\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.MaxCreditAmount}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.MaxCreditAmount}}\"\n    },\n    \"lblPayableCurrency\": {\n      \"BP1\": \"${i18n{i18n.common.Currency}}\",\n      \"default\": \"${i18n{i18n.common.Currency}}\"\n    },\n    \"lblPayableAmount\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.AdditionalPayableAmount}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.AdditionalPayableAmount}}\"\n    },\n    \"lblPaymentTerms\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.PaymentTerms}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.PaymentTerms}}\"\n    },\n    \"lblAvailable\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.AvailableWith}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.AvailableWith}}\"\n    },\n    \"lblExpiryDate\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ExpiryDate}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ExpiryDate}}\"\n    },\n    \"lblIssueDate\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.IssueDate}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.IssueDate}}\"\n    },\n    \"lblExpiryPlace\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ExpiryPlace}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ExpiryPlace}}\"\n    },\n    \"lblChargesAccount\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ChargesAccountOptional}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ChargesAccountOptional}}\"\n    },\n    \"lblCommissionAccount\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.CommissionAccountOptional}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.CommissionAccountOptional}}\"\n    },\n    \"lblMarginAccount\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.MarginAccountOptional}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.MarginAccountOptional}}\"\n    },\n    \"lblMessage\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.MessageToBank}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.MessageToBank}}\"\n    },\n    \"tbxReferenceNumber\": \"${Collection.objName.lcReferenceNo}\",\n    \"tbxAmount\": \"${Collection.objName.lcAmount}\",\n    \"tbxCurrency\": \"${Collection.objName.lcCurrency}\",\n    \"tbxTotalPercentage\": \"${Collection.objName.tolerancePercentage}\",\n    \"tbxPayableCurrency\": \"${Collection.objName.additionalPayableCurrency}\",\n    \"tbxPayableAmount\": \"${Collection.objName.additionalAmountPayable}\",\n    \"tbxAvailable1\": \"${Collection.objName.availableWith1}\",\n    \"tbxAvailable2\": \"${Collection.objName.availableWith2}\",\n    \"tbxAvailable3\": \"${Collection.objName.availableWith3}\",\n    \"tbxAvailable4\": \"${Collection.objName.availableWith4}\",\n    \"tbxIssueDate\": \"${Collection.objName.issueDate}\",\n    \"tbxExpiryDate\": \"${Collection.objName.expiryDate}\",\n    \"tbxExpiryPlace\": \"${Collection.objName.expiryPlace}\",\n    \"tbxMessage\": \"${Collection.objName.messageToBank}\"\n  },\n   \"flxBeneficiaryDetails\": {\n    \"lblBeneficiaryName\": {\n      \"BP1\": \"${i18n{kony.i18n.common.beneficiary}}\",\n      \"default\": \"${i18n{kony.i18n.common.beneficiary}}\"\n    },\n    \"lblBeneficiaryAddress\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.BeneficiaryAddress}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.BeneficiaryAddress}}\"\n    },\n    \"lblCity\": {\n      \"BP1\": \"${i18n{i18n.common.city}}\",\n      \"default\": \"${i18n{i18n.common.city}}\"\n    },\n    \"lblBeneficiaryState\": {\n      \"BP1\": \"${i18n{i18n.common.state}}\",\n      \"default\": \"${i18n{i18n.common.state}}\"\n    },\n    \"lblBeneficiaryZipCode\": {\n      \"BP1\": \"${i18n{kony.tab.common.ZipCode}}\",\n      \"default\": \"${i18n{kony.tab.common.ZipCode}}\"\n    },\n    \"lblBankName\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.BankNameOptional}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.BankNameOptional}}\"\n    },\n    \"lblBankAddress\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.BankAddressOptional}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.BankAddressOptional}}\"\n    },\n    \"lblBankCity\": {\n      \"BP1\": \"${i18n{i18n.common.city}}\",\n      \"default\": \"${i18n{i18n.common.city}}\"\n    },\n    \"lblBankState\": {\n      \"BP1\": \"${i18n{i18n.common.state}}\",\n      \"default\": \"${i18n{i18n.common.state}}\"\n    },\n    \"lblBankZipCode\": {\n      \"BP1\": \"${i18n{kony.tab.common.ZipCode}}\",\n      \"default\": \"${i18n{kony.tab.common.ZipCode}}\"\n    },\n   \n    \"tbxBeneficiaryName\": \"${Collection.objName.beneficiaryName}\",\n    \"tbxBeneficiaryAddress1\": \"${Collection.objName.beneficiaryAddressLine1}\",\n    \"tbxBeneficiaryAddress2\": \"${Collection.objName.beneficiaryAddressLine2}\",\n    \"tbxCity\": \"${Collection.objName.beneficiaryCity}\",\n    \"tbxBeneficiaryZipCode\": \"${Collection.objName.beneficiaryPostCode}\",\n     \"tbxBankName\": \"${Collection.objName.beneficiaryBank}\",\n    \"tbxBankAddress1\": \"${Collection.objName.beneficiaryBankAdressLine1}\",\n    \"tbxBankAddress2\": \"${Collection.objName.beneficiaryBankAdressLine2}\",\n    \"tbxBankCity\": \"${Collection.objName.beneficiaryBankCity}\",\n    \"tbxBankZipCode\": \"${Collection.objName.beneficiaryBankPostCode}\"\n  },\n  \"flxShipmentDetails\": {\n    \"lblPlaceOfCharge\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ChargeTakingPlace}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ChargeTakingPlace}}\"\n    },\n    \"lblPortLoading\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.PortOfLoading}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.BeneficiaryAddress}}\"\n    },\n    \"lblPortCharge\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.PortOfDischarge}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.PortOfDischarge}}\"\n    },\n    \"lblFinalDeliveryPlace\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.PlaceOfFinalDelivery}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.PlaceOfFinalDelivery}}\"\n    },\n    \"lblShipmentDate\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.LatestShipmentDate}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.LatestShipmentDate}}\"\n    },\n    \"lblTranshipment\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.Transhipment}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.Transhipment}}\"\n    },\n    \"lblPartialShipment\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.PartialShipment}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.PartialShipment}}\"\n    },\n    \"lblIncoTerms\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.IncoTerms}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.IncoTerms}}\"\n    },\n    \"lblShipmentMode\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ModeOfShipment}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ModeOfShipment}}\"\n    },   \n    \"tbxPlaceOfCharge\": \"${Collection.objName.placeOfTakingIncharge}\",\n    \"tbxPortLoading\": \"${Collection.objName.portOfLoading}\",\n    \"tbxPortCharge\": \"${Collection.objName.portOfDischarge}\",\n    \"tbxFinalDeliveryPlace\": \"${Collection.objName.placeOfFinalDelivery}\",\n    \"tbxshipmentDate\": \"${Collection.objName.latestShippingDate}\"\n  },\n  \"flxDocuments\": {\n    \"lblDescription\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.DescriptionOfGoods}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.DescriptionOfGoods}}\"\n    },\n    \"lblRequiredDocuments\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.DocumentsRequired}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.DocumentsRequired}}\"\n    },\n    \"lblAdditionalCondition\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.AdditionalConditionsCode}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.AdditionalConditionsCode}}\"\n    },\n    \"lblOtherCondition\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.OtherAdditionalConditionsy}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.OtherAdditionalConditions}}\"\n    },\n    \"lblCharges\": {\n      \"BP1\": \"${i18n{i18n.accounts.charges}}\",\n      \"default\": \"${i18n{i18n.accounts.charges}}\"\n    },\n    \"lblConfirmationInstruction\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ConfirmationInstructions}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ConfirmationInstructions}}\"\n    },\n    \"lblTransferable\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.Transferable}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.Transferable}}\"\n    },\n    \"lblStandByLC\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.StandByLC}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.StandByLC}}\"\n    },\n    \"lblUploadDocs\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.UploadDocuments}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.UploadDocuments}}\"\n    },   \n    \"tbxDescription\": \"${Collection.objName.descriptionOfGoods}\",\n    \"tbxRequiredDocuments\": \"${Collection.objName.documentsRequired}\",\n    \"tbxAdditionalCondition\": \"${Collection.objName.additionalConditionsCode}\",\n    \"tbxOtherCondition\": \"${Collection.objName.otherAdditionalConditions}\",\n    \"tbxCharges\": \"${Collection.objName.documentCharges}\"\n  },\n  \"PaymentTermsDropdown\" : {\n    \"lblValuePaymentTerms\" : \"${Collection.objName.paymentTerms}\",\n    \"docNames\" : \"${Collection.objName.docNames}\",\n    \"docID\" : \"${Collection.objName.docID}\",\n    \"DropdownValues\" : {\n    \"Sight\" : \"Sight\",\n    \"Deferred\" : \"Deferred\",\n    \"Acceptance\" : \"Acceptance\",\n    \"Negotiation Sight\" :  \"Negotiation Sight\",\n    \"Negotiation Acceptance\" : \"Negotiation Acceptance\"\n    }\n  },\n  \"TranshipmentDropdown\" : {\n    \"lblSelectedTranshipment\" : \"${Collection.objName.transshipment}\",\n    \"DropdownValues\" : {\n    \"Allowed\" : \"Allowed\",\n    \"Not Allowed\" : \"Not Allowed\"\n    }\n  },\n  \"PartialShipmentsDropdown\" : {\n     \"lblSelectedPartialShipment\" : \"${Collection.objName.partialShipments}\",\n    \"DropdownValues\" : {\n    \"Allowed\" : \"Allowed\",\n    \"Not Allowed\" : \"Not Allowed\",\n    \"Conditional\" : \"Conditional\"\n    }\n  },\n  \"IncoTermsDropdown\" : {\n     \"lblSelectedIncoTerms\" : \"${Collection.objName.incoTerms}\",\n    \"DropdownValues\" : {\n    \"CIF\" : \"COST,INSURANCE AND FREIGHT\",\n    \"CFR\" : \"COST AND FREIGHT\",\n    \"FOB\" : \"FREE ON BOARD\",\n    \"FCA\" : \"FREE CARRIER\",\n    \"FAS\" : \"FREE ALONGSIDE SHIP\",\n    \"CPT\" : \"CARRIAGE PAID TO\",\n    \"CIP\" : \"CARRIAGE AND INSURANCE PAID TO\",\n    \"DAP\" : \"DELEIVERED AT FRONTIER\",\n    \"DDP\" : \"DELIEVERED DUTY PAID\",\n    \"DDU\" : \"DELIVERED DUTY UNPAID\",\n    \"DES\" : \"DELIVERED EX SHIP\",\n    \"DEQ\" : \"DELIVERED EX QUAY\",\n    \"EXW\" : \"EX WORKS\"\n    }\n    },\n  \"ModeOfShipmentDropdown\" : {\n     \"lblSelectedShipmentMode\" : \"${Collection.objName.modeOfShipment}\",\n    \"DropdownValues\" : {\n    \"Air\" : \"Air\",\n    \"Sea\" : \"Sea\",\n    \"Road\" : \"Road\",\n    \"Rail\" : \"Rail\",\n    \"Multi modal\" : \"Multi modal\",\n    \"Other\" : \"Other\"\n    }\n  },\n    \"ConfirmationInstructionsDropdown\" : {\n       \"lblSelectedInstruction\" : \"${Collection.objName.confirmationInstruction}\",\n      \"DropdownValues\" : {\n      \"Confirm\" : \"Confirm\",\n      \"May Add\" : \"May Add\",\n      \"Without\" : \"Without\"\n      }\n    },\n    \"TransferableDropdown\" : {\n       \"lblSelectedTransferable\" : \"${Collection.objName.transferable}\",\n      \"DropdownValues\" : {\n      \"Yes\" : \"Yes\",\n      \"No\" : \"No\"\n      }\n    },\n    \"StandByLCDropdown\" : {\n       \"lblSelectedStandByLC\" : \"${Collection.objName.standByLC}\",\n      \"DropdownValues\" : {\n      \"Yes\" : \"Yes\",\n      \"No\" : \"No\"\n      }\n    },\n  \"CurrencyDropdown\" :\n  {\n    \"lblSelectedValueCurrency\" : \"${Collection.objName.lcCurrency}\",\n      \"DropdownValues\" : {\n      \"GBP\" : \"£-GBP\",\n      \"EUR\" : \"€-EUR\",\n      \"INR\" : \"₹-INR\",\n      \"USD\" : \"$-USD\"\n      }\n  }\n}",
+                    "group": "Create LC",
+                    "kuid": "id95c7679a894fa9b220917693893972",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 4,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "d2d3cbdb72d84750a57b0b9fb4d3b6a2",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.TradeFinanceMA",
+    "version": "1.0.0"
+}

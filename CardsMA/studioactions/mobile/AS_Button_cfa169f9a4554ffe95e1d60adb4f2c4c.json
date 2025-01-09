@@ -1,0 +1,23 @@
+{
+    "AS_Button_cfa169f9a4554ffe95e1d60adb4f2c4c": {
+        "id": "AS_Button_cfa169f9a4554ffe95e1d60adb4f2c4c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmManageTravelCountryCode",
+            "type": "forms",
+            "platform": null,
+            "KUID": "df6fc61b90a5499699c6677fd923938c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b978ab72bef54836ac6dd930ec0462a6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var authMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthModule\"); \nauthMod.presentationController.commonFunctionForNavigation(\"frmLogin\");",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "AS_Image_hc220de929284a0bbbc8af44d13e5bfe": {
+        "id": "AS_Image_hc220de929284a0bbbc8af44d13e5bfe",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segAttachment",
+            "type": "templates",
+            "platform": "",
+            "KUID": "h4ba489bc7504aa29463708d732fd945"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_aa0e955b7e7845f0a551e25b2ea5ff45",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "self.removeClicked(eventobject, context);",
+            "parentId": null
+        }]
+    }
+}

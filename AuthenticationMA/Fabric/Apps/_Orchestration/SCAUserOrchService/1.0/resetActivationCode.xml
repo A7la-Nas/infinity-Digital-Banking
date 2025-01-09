@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="" groupType="" id="resetActivationCode" passwordencrypted="" security="private" type="CompositeConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value="function validateParams(){&#10;  var userId=serviceInputParams.get('userId');&#10;  var activationCode=serviceInputParams.get('activationCode');&#10;&#10;  if(userId !='' &amp;&amp; activationCode !=''){&#10;     return true;&#10;  }else{ &#10;    &#10;    var outParam=new com.konylabs.middleware.dataobject.Param();&#10; outParam.setName('opstatus');&#10; outParam.setValue('-1');&#10;    result.setParam(outParam);&#10;   return false;&#10;  }    &#10;}&#10;validateParams();"/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="exec_type" value="Sequential"/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="1.0" appid="ClientCredentials" name="service" value="fetchAccessToken"/>
+        <config-param api-version="1.0" appid="SCAScimApis" name="service" value="scaSearchUser"/>
+        <config-param api-version="1.0" appid="SCAScimApis" name="service" value="deleteActivationCodeAuthenticator"/>
+        <config-param api-version="1.0" appid="SCAScimApis" name="service" value="assignActivationCodeAuthenticator"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false"/>
+    <service-output passthrough="false" isExtended="false"/>
+</service>

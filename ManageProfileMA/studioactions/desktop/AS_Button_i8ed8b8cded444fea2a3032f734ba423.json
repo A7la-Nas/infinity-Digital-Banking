@@ -1,0 +1,23 @@
+{
+    "AS_Button_i8ed8b8cded444fea2a3032f734ba423": {
+        "id": "AS_Button_i8ed8b8cded444fea2a3032f734ba423",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSecuritySettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ba9b347c522d476097854be34e565734"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a119eabfee6f4fcb8d9ae1a3e964dc02",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var self = this;\nself.view.flxErrorEditSecuritySettings.setVisibility(false);\nvar SettingsNewUIModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\n  \"moduleName\": \"SettingsNewUIModule\",\n  \"appName\": \"ManageProfileMA\"\n});\nSettingsNewUIModule.presentationController.requestOtp(self.onSaveSecurityQuestions());",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,513 @@
+{
+    "classname": "securityNotification",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "Flex Skin",
+                "Label Skin",
+                "Button Skin",
+                "Label Text",
+                "Button Text",
+                "Image Source"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlx003e75Bg",
+                    "group": "Flex Skin",
+                    "kuid": "j57ee5fdc465441189dea5e9ef0fec19",
+                    "originalPropertyKey": "flxHeaderSkn",
+                    "propertyIndex": 1,
+                    "propertyKey": "flxHeaderSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxHeader Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblffffffSSP30px",
+                    "group": "Label Skin",
+                    "kuid": "f7ec66f7f30d4678abc6f0c43f47de5d",
+                    "originalPropertyKey": "lblScreenNameSkn",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblScreenNameSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblScreenName Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknBtnffffffSSP",
+                    "group": "Button Skin",
+                    "kuid": "b5cfbe74d68f4be5b9c5a3986d486b98",
+                    "originalPropertyKey": "btnCancelSkn",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnCancelSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnCancel Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.SecurityNotification.SecurityNotifications",
+                    "group": "Label Text",
+                    "kuid": "bc1db42a8bc9414e8abd9ec75c34b181",
+                    "originalPropertyKey": "lblScreenNameTxt",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblScreenNameTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblScreenName Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.Cancel",
+                    "group": "Button Text",
+                    "kuid": "i877c64a1f824e46b6078417f98c1062",
+                    "originalPropertyKey": "btnCancelTxt",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnCancelTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnCancel Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "backbutton.png",
+                    "group": "Image Source",
+                    "kuid": "e44cac2e72c14ba2a420586afb562331",
+                    "originalPropertyKey": "imgBackSrc",
+                    "propertyIndex": 1,
+                    "propertyKey": "imgBackSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "imgBack Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxffffffShadowdcdde1",
+                    "group": "Flex Skin",
+                    "kuid": "g1528716a6a44d8ab163afb9518ccd46",
+                    "originalPropertyKey": "flxTopMsgSkn",
+                    "propertyIndex": 2,
+                    "propertyKey": "flxTopMsgSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxTopMsg Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl42424215pxSSPR",
+                    "group": "Label Skin",
+                    "kuid": "d43160087d4e4be9a3d0ffc21639efce",
+                    "originalPropertyKey": "lblTopMsgSkn",
+                    "propertyIndex": 2,
+                    "propertyKey": "lblTopMsgSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblTopMsg Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnBg003E75Border1pxRad4pxFont15pxFFFFFF",
+                    "group": "Button Skin",
+                    "kuid": "h2128f75e6cb4a8abe1ed06ac61719a5",
+                    "originalPropertyKey": "btnCheckNewNotificationSkn",
+                    "propertyIndex": 2,
+                    "propertyKey": "btnCheckNewNotificationSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnCheckNewNotification Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.SecurityNotification.TopMessage",
+                    "group": "Label Text",
+                    "kuid": "d8192b69682c4b728daa562f04330ced",
+                    "originalPropertyKey": "lblTopMsgTxt",
+                    "propertyIndex": 2,
+                    "propertyKey": "lblTopMsgTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblTopMsg Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.SecurityNotification.CheckNewNotifications",
+                    "group": "Button Text",
+                    "kuid": "e28edd4cd9f44bfa85c2d0b56df161eb",
+                    "originalPropertyKey": "btnCheckNewNotificationTxt",
+                    "propertyIndex": 2,
+                    "propertyKey": "btnCheckNewNotificationTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnCheckNewNotification Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "infogrey.png",
+                    "group": "Image Source",
+                    "kuid": "if4f956ac86e4e09a4195e442c07205b",
+                    "originalPropertyKey": "imgInfoSrc",
+                    "propertyIndex": 2,
+                    "propertyKey": "imgInfoSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "imgInfo Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxGradientEEEEEEToFFFFFF",
+                    "group": "Flex Skin",
+                    "kuid": "f1af353d90a747e3bae56f448b2ce164",
+                    "originalPropertyKey": "flxGradientSkn",
+                    "propertyIndex": 3,
+                    "propertyKey": "flxGradientSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxGradient Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlbl424242SSPR18px",
+                    "group": "Label Skin",
+                    "kuid": "i6f3632ad0ff4d438df06dfe1830b63e",
+                    "originalPropertyKey": "lblNotificationForSkn",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblNotificationForSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblNotificationFor Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnBgFFFFFFFont4176A4",
+                    "group": "Button Skin",
+                    "kuid": "a83b6b9cff7949baa20ac887b9890c89",
+                    "originalPropertyKey": "btnOKSkn",
+                    "propertyIndex": 3,
+                    "propertyKey": "btnOKSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnOK Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Notifications For:",
+                    "group": "Label Text",
+                    "kuid": "dd818034b99d45bcbdf5d00512664451",
+                    "originalPropertyKey": "lblNotificationForTxt",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblNotificationForTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblNotificationFor Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.OK",
+                    "group": "Button Text",
+                    "kuid": "e9f07de7d47f4b52869547af57941683",
+                    "originalPropertyKey": "btnOKTxt",
+                    "propertyIndex": 3,
+                    "propertyKey": "btnOKTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnOK Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknflxf6f6f6Bg",
+                    "group": "Flex Skin",
+                    "kuid": "id1a117144e246d1aaf8d61fa37a8550",
+                    "originalPropertyKey": "flxNotificationForUserSkn",
+                    "propertyIndex": 4,
+                    "propertyKey": "flxNotificationForUserSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxNotificationForUser Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSPSemiBold18px424242",
+                    "group": "Label Skin",
+                    "kuid": "a966a437306b4d2f85807b30fad500a7",
+                    "originalPropertyKey": "lblUserNameSkn",
+                    "propertyIndex": 4,
+                    "propertyKey": "lblUserNameSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblUserName Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.SecurityNotification.NoNewNotifications",
+                    "group": "Label Text",
+                    "kuid": "bc31f2f91efd485794206a3ce3ce57ee",
+                    "originalPropertyKey": "lblNoNotificationsTxt",
+                    "propertyIndex": 4,
+                    "propertyKey": "lblNoNotificationsTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblNoNotifications Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlx000000Op50",
+                    "group": "Flex Skin",
+                    "kuid": "j860c603010c41cdb4ca52b2240c0dc5",
+                    "originalPropertyKey": "flxPopupSkn",
+                    "propertyIndex": 5,
+                    "propertyKey": "flxPopupSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxPopup Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "lblSeparator",
+                    "group": "Label Skin",
+                    "kuid": "gb6f32208c6a4532a052d87729d19803",
+                    "originalPropertyKey": "lblSeparatorNotificationForSkn",
+                    "propertyIndex": 5,
+                    "propertyKey": "lblSeparatorNotificationForSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSeparatorNotificationFor Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.SecurityNotification.NoNewNotifications",
+                    "group": "Label Text",
+                    "kuid": "f7b91613660c424385ec750aa476b028",
+                    "originalPropertyKey": "lblNoRecordsTxt",
+                    "propertyIndex": 5,
+                    "propertyKey": "lblNoRecordsTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblNoRecords Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxFFFFFFBorderE9E9E9Radius4px",
+                    "group": "Flex Skin",
+                    "kuid": "a6caa012c247424b83be1b460894ae13",
+                    "originalPropertyKey": "flxNoNotificationPopupSkn",
+                    "propertyIndex": 6,
+                    "propertyKey": "flxNoNotificationPopupSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxNoNotificationPopup Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl42424215pxSSPR",
+                    "group": "Label Skin",
+                    "kuid": "b42e7c3409694a2caf0f27c36de8c6f0",
+                    "originalPropertyKey": "lblNotificationSkn",
+                    "propertyIndex": 6,
+                    "propertyKey": "lblNotificationSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblNotification Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl42424215pxSSPR",
+                    "group": "Label Skin",
+                    "kuid": "bc2d65509fca486498b7dc721d9fda6d",
+                    "originalPropertyKey": "lblNoNotificationsSkn",
+                    "propertyIndex": 7,
+                    "propertyKey": "lblNoNotificationsSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblNoNotifications Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSPSemiBold18px424242",
+                    "group": "Label Skin",
+                    "kuid": "be7a5b62bf6f42adb11745b1bc43f6aa",
+                    "originalPropertyKey": "lblNoRecordsSkn",
+                    "propertyIndex": 8,
+                    "propertyKey": "lblNoRecordsSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblNoRecords Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "lblSeparator",
+                    "group": "Label Skin",
+                    "kuid": "b600950a77dd49049684edcaa3c88368",
+                    "originalPropertyKey": "lblSeparatorSkn",
+                    "propertyIndex": 9,
+                    "propertyKey": "lblSeparatorSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSeparator Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc9925ee428a442a8a884f1aa23e9e0d",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.mb.sca.uniken",
+    "version": "1.0.0"
+}

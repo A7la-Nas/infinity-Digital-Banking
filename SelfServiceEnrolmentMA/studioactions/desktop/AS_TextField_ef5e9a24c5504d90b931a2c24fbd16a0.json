@@ -1,0 +1,24 @@
+{
+    "AS_TextField_ef5e9a24c5504d90b931a2c24fbd16a0": {
+        "id": "AS_TextField_ef5e9a24c5504d90b931a2c24fbd16a0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollNow",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bd78051f2239477699cd5b3d036cf72a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fbc18ae6122349c0b90749abc42a1067",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.enableSecurityQuestions(this.view.SetSecurityQuestions.tbxAnswer1.text,this.view.SetSecurityQuestions.tbxAnswer2.text,this.view.SetSecurityQuestions.tbxAnswer3.text,this.view.SetSecurityQuestions.tbxAnswer4.text,this.view.SetSecurityQuestions.tbxAnswer5.text); ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

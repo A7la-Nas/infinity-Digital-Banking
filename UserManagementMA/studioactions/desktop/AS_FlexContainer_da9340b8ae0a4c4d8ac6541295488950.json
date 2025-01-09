@@ -1,0 +1,26 @@
+{
+    "AS_FlexContainer_da9340b8ae0a4c4d8ac6541295488950": {
+        "id": "AS_FlexContainer_da9340b8ae0a4c4d8ac6541295488950",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segUserManagementNonAccountTablet",
+            "type": "templates",
+            "platform": "",
+            "KUID": "e274ce6c6813497db5db3e45c51d7286"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a3a48ae1344142629c1fa87f0fab39f4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.selectOrUnselectParentFeature(eventobject, context);",
+            "parentId": null
+        }]
+    }
+}

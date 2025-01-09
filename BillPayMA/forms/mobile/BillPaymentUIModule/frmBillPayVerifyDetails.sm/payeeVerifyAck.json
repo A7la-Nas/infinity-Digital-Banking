@@ -1,0 +1,75 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s966eaf1ea1441148b4828270a782f8b",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "data": {
+        "btn1": "{     \"text\": \"i18n.common.confirm\",     \"action\": {       \"level\": \"form\",       \"method\": \"navigateTofrmAcknowledgment\"      }   }",
+        "btn2": "",
+        "customCREATECriteria": "{\"accountNumber\":\"{$.c.accountNumber}\",\"addressLine1\":\"{$.c.street}\",\"addressLine2\":\"{$.c.addressLine2}\",\"cityName\":\"{$.c.cityName}\",\"payeeNickName\":\"{$.c.payeeNickName}\",\"zipCode\":\"{$.c.zipCode}\",\"companyName\":\"{$.c.companyName}\",\"isBusinessPayee\":\"{$.c.isBusinessPayee}\",\"nameOnBill\":\"{$.c.nameOnBill}\",\"billerId\":\"{$.c.billerId}\",\"phone\":\"{$.c.phone}\",\"state\":\"{$.c.state}\",\"notes\":\"{$.c.notes}\",\"country\":\"{$.c.countryName}\"}",
+        "lblField3": "[   {     \"text\": \"i18n.ProfileManagement.PhoneNumber\",     \"category\": [       \"2\"     ]   },   {     \"text\":\"Policy Number:\",     \"category\": [       \"4\"     ]   } ]",
+        "lblField4": "i18n.payments.payeeAddressWithColon",
+        "lblField5": "",
+        "lblField6": "",
+        "lblFieldValue4": "{\"mapping\":\"{$.c.payeeAddress}\"}",
+        "lblFieldValue5": "",
+        "lblFieldValue6": "",
+        "payeeCREATECriteria": "{\"accountNumber\":\"{$.c.accountNumber}\",\"addressLine1\":\"{$.c.street}\",\"addressLine2\":\"{$.c.addressLine2}\",\"cityName\":\"{$.c.cityName}\",\"payeeNickName\":\"{$.c.payeeNickName}\",\"zipCode\":\"{$.c.zipCode}\",\"companyName\":\"{$.c.companyName}\",\"isBusinessPayee\":\"{$.c.isBusinessPayee}\",\"nameOnBill\":\"{$.c.nameOnBill}\",\"billerId\":\"{$.c.billerId}\",\"phone\":\"{$.c.phone}\",\"state\":\"{$.c.state}\",\"notes\":\"{$.c.notes}\",\"cif\":\"{$.c.cif}\",\"country\":\"{$.c.countryName}\"}",
+        "payeeEDITCriteria": "{\"payeeId\":\"{$.c.payeeId}\",\"payeeNickName\":\"{$.c.payeeNickName}\",\"addressLine1\":\"{$.c.addressLine1}\",\"addressLine2\":\"{$.c.addressLine2}\",\"state\":\"{$.c.state}\",\"zipCode\":\"{$.c.zipCode}\",\"cityName\":\"{$.c.city}\",\"country\":\"{$.c.countryName}\"}",
+        "sknTxtValue": "ICSknTbxPlaceholder72727215px",
+        "txtEditValue1": "{   \"mapping\": \"{$.c.companyName}\",   \"mask\": \"false\",   \"placeHolder\": \"kony.mb.BillPay.NameOnBill\",   \"inputMode\": \"Any\" }",
+        "txtEditValue2": "{   \"mapping\": \"{$.c.payeeNickName}\",   \"mask\": \"false\",   \"placeHolder\": \"kony.mb.AccInfo.EnterNickName\",   \"inputMode\": \"Any\" }"
+    },
+    "enablescrolling": true,
+    "id": "payeeVerifyAck",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b3ffbcacc7e146a5a218e408e0392e7b",
+    "layouttype": 2,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxMainContainerNew",
+    "pf": "frmBillPayVerifyDetails",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "c7724a6aa35c4362a41494e2d01a2b3e",
+    "wType": "UserWidgetInstance"
+}

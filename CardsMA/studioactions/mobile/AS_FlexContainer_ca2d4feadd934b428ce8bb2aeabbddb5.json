@@ -1,0 +1,33 @@
+{
+    "AS_FlexContainer_ca2d4feadd934b428ce8bb2aeabbddb5": {
+        "id": "AS_FlexContainer_ca2d4feadd934b428ce8bb2aeabbddb5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCardStatements",
+            "type": "forms",
+            "platform": null,
+            "KUID": "i79f56839ea74c13932cae7a41d9479d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onTouchStart_f02f5eec40524a659e18a5a9004ae8d1",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "flxArrowOnclick",
+            "display": "flxArrowOnclick",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

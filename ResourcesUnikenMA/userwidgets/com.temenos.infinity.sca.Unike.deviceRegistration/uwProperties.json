@@ -1,0 +1,1623 @@
+{
+    "classname": "deviceRegistration",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e5c26de5cd2a4b9483acbe02463f421a",
+                    "paramList": [],
+                    "propertyKey": "fetchDevices",
+                    "pw": {
+                        "displayName": "fetchDevices",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f78b4a141fdf4e36aadad04d0e308645",
+                    "paramList": [
+                        {
+                            "name": "context"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "updateFormUI",
+                    "pw": {
+                        "displayName": "updateFormUI",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Get Devices Service",
+                "Update My Device Service",
+                "Revoke My Device Service",
+                "Register New Device Service",
+                "Fetch Auth Status Service",
+                "Flex Skin",
+                "Btn Skin",
+                "FontIcon Skin",
+                "Label Skin",
+                "Flex Skin of Popup",
+                "Btn Skin of Popup",
+                "FontIcon Skin of Popup",
+                "Label Skin of Popup",
+                "Image Source",
+                "Btn Text",
+                "Btn Text of Popup",
+                "FontIcon Text",
+                "FontIcon Text of Popup",
+                "Label Text",
+                "Label Text of Popup"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAUniken",
+                    "group": "Get Devices Service",
+                    "kuid": "d3700fa53b50461da535bfa697787835",
+                    "originalPropertyKey": "objSeviceName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "objSeviceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Sevice Name",
+                        "toolTip": "Obj Sevice Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAUniken",
+                    "group": "Update My Device Service",
+                    "kuid": "bd6c2227d3b64e708bc8c2839b4d147d",
+                    "originalPropertyKey": "objSeviceName1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "objSeviceName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Sevice Name 1",
+                        "toolTip": "Obj Sevice Name 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAUniken",
+                    "group": "Revoke My Device Service",
+                    "kuid": "b24d73bae47845c193cb78a6ba0b3200",
+                    "originalPropertyKey": "objSeviceName2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "objSeviceName2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Sevice Name 2",
+                        "toolTip": "Obj Sevice Name 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAUniken",
+                    "group": "Fetch Auth Status Service",
+                    "kuid": "f595f1bb01c04c709edc5f2ac2cc9e02",
+                    "originalPropertyKey": "objSeviceName4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "objSeviceName4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Sevice Name 4",
+                        "toolTip": "Obj Sevice Name 4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAUniken",
+                    "group": "Register New Device Service",
+                    "kuid": "ab45e79670fc4a39b088862821098691",
+                    "originalPropertyKey": "objSeviceName3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "objSeviceName3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Sevice Name 3",
+                        "toolTip": "Obj Sevice Name 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFFFFFFscroll",
+                    "group": "Flex Skin",
+                    "kuid": "fed6ac9a1e7240c6ba51eb5342eff08d",
+                    "originalPropertyKey": "flxMainContainerSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "flxMainContainerSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxMainContainer Skin",
+                        "toolTip": "flxMainContainer Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnSSP0273e313Px",
+                    "group": "Btn Skin",
+                    "kuid": "ff7b552245164f6b831ad40968b78121",
+                    "originalPropertyKey": "btnRegisterNewDeviceSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnRegisterNewDeviceSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnRegisterNewDevice Skin",
+                        "toolTip": "btnRegisterNewDevice Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFontIconCrossEE000550px",
+                    "group": "FontIcon Skin",
+                    "kuid": "eef98862413d41a6a2981d56845651a0",
+                    "originalPropertyKey": "fontIconMsgTypeErrSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "fontIconMsgTypeErrSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fontIconMsgType Error Skin",
+                        "toolTip": "fontIconMsgType Error Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSSP42424224Px",
+                    "group": "Label Skin",
+                    "kuid": "hf95953f55d64a1c9a6828ce69fbf306",
+                    "originalPropertyKey": "lblMsgHeaderSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblMsgHeaderSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblMsgHeader Skin",
+                        "toolTip": "lblMsgHeader Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlx000000Opacity40",
+                    "group": "Flex Skin of Popup",
+                    "kuid": "ccf8cfda4a5944e89e1defbf53463e25",
+                    "originalPropertyKey": "popupBgSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "popupBgSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "popup Background Skin",
+                        "toolTip": "popup Background Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnNormalSSPFFFFFF15Px",
+                    "group": "Btn Skin of Popup",
+                    "kuid": "j680981af8734093a1209a63e0a5f988",
+                    "originalPropertyKey": "btnYesSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnYesSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnYes Skin",
+                        "toolTip": "btnYes Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknOLBFonts003e7520px",
+                    "group": "FontIcon Skin of Popup",
+                    "kuid": "fdbd1b23e0a741cb86ecd0927300ed65",
+                    "originalPropertyKey": "lblClosePopupSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblClosePopupSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblClosePopup Skin",
+                        "toolTip": "lblClosePopup Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSSPRegular42424215Px",
+                    "group": "Label Skin of Popup",
+                    "kuid": "c7275bcee9084665a7cd584f289d60ed",
+                    "originalPropertyKey": "lblRegisterDevicePopupHeaderSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblRegisterDevicePopupHeaderSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblRegisterDevicePopupHeader Skin",
+                        "toolTip": "lblRegisterDevicePopupHeader Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "info_grey.png",
+                    "group": "Image Source",
+                    "kuid": "cc302ece0f024c2687aeaea9b3c3e851",
+                    "originalPropertyKey": "imgInfoSrc",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "imgInfoSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "imgInfo Source",
+                        "toolTip": "imgInfo Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i",
+                    "group": "FontIcon Text",
+                    "kuid": "a19db78aeb024622bdf1f2702dc8abf5",
+                    "originalPropertyKey": "fontIconLastStatusSuspendTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "fontIconLastStatusSuspendTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fontIconLastStatusSuspend Text",
+                        "toolTip": "fontIconLastStatusSuspend Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "g",
+                    "group": "FontIcon Text of Popup",
+                    "kuid": "dfc5762e8f8e4ca3ba5aa8f8bb1eb4af",
+                    "originalPropertyKey": "lblClosePopupTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblClosePopupTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblClosePopup Text",
+                        "toolTip": "lblClosePopup Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.RegisterNewDevice",
+                    "group": "Btn Text",
+                    "kuid": "a73d9ebdcbc94e42b159e557608d9093",
+                    "originalPropertyKey": "btnRegisterNewDeviceTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnRegisterNewDeviceTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnRegisterNewDevice Text",
+                        "toolTip": "btnRegisterNewDevice Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Yes",
+                    "group": "Btn Text of Popup",
+                    "kuid": "i42b7fda3f2a4554879416a71abc1814",
+                    "originalPropertyKey": "btnYesTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnYesTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnYes Text",
+                        "toolTip": "btnYes Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.MsgActivationCodeCreated",
+                    "group": "Label Text",
+                    "kuid": "f713d9b3d2004a0aa55e42ce84ce49b0",
+                    "originalPropertyKey": "lblMsgHeaderTxtActivationCodeCreated",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblMsgHeaderTxtActivationCodeCreated",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblMsgHeader Text Activation Code Created",
+                        "toolTip": "lblMsgHeader Text Activation Code Created",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.RegisterNewDevice",
+                    "group": "Label Text of Popup",
+                    "kuid": "ia72daa6a2404f7fa4b1744738db2ccb",
+                    "originalPropertyKey": "lblRegisterDevicePopupHeaderTxtRegisterNewDevice",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblRegisterDevicePopupHeaderTxtRegisterNewDevice",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblRegisterDevicePopupHeader Text Register New Device",
+                        "toolTip": "lblRegisterDevicePopupHeader Text Register New Device",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getUserDevices",
+                    "group": "Get Devices Service",
+                    "kuid": "f5e762b46a984029bcaef978fc25b700",
+                    "originalPropertyKey": "operationName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "operationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "toolTip": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "updateMyDeviceStatus",
+                    "group": "Update My Device Service",
+                    "kuid": "fac8557f3a624b3da7bd17740dc5d09f",
+                    "originalPropertyKey": "operationName1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "operationName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name 1",
+                        "toolTip": "Operation Name 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "revokeMyDevice",
+                    "group": "Revoke My Device Service",
+                    "kuid": "f33a843a8cb347ea9ad67b46388f178d",
+                    "originalPropertyKey": "operationName2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "operationName2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name 2",
+                        "toolTip": "Operation Name 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "fetch",
+                    "group": "Fetch Auth Status Service",
+                    "kuid": "e2bf7dff3f394ac89b0e6316a4600029",
+                    "originalPropertyKey": "operationName4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "operationName4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name 4",
+                        "toolTip": "Operation Name 4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "registerNewDevice",
+                    "group": "Register New Device Service",
+                    "kuid": "b94011c7f212483398b33d79d03792a4",
+                    "originalPropertyKey": "operationName3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "operationName3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name 3",
+                        "toolTip": "Operation Name 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknrounded",
+                    "group": "Flex Skin",
+                    "kuid": "j1a4f52a9abe4e048a5c8f812ea6f99e",
+                    "originalPropertyKey": "flxTopMsgInnerSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "flxTopMsgInnerSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxTopMsgInner Skin",
+                        "toolTip": "flxTopMsgInner Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "knFontIconActive04A61524px",
+                    "group": "FontIcon Skin",
+                    "kuid": "i021acc81274465c80337631b4b5f16c",
+                    "originalPropertyKey": "fontIconMsgTypeSuccessSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "fontIconMsgTypeSuccessSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fontIconMsgType Success Skin",
+                        "toolTip": "fontIconMsgType Success Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSSP72727215Px",
+                    "group": "Label Skin",
+                    "kuid": "ebca42160441430ba5246224ade0de5f",
+                    "originalPropertyKey": "lblMsgSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "lblMsgSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblMsg Skin",
+                        "toolTip": "lblMsg Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "bbSknFlxffffffWithShadow",
+                    "group": "Flex Skin of Popup",
+                    "kuid": "a13431734e5d439ab3069ca304c5b368",
+                    "originalPropertyKey": "flxRegisterDevicePopupSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "flxRegisterDevicePopupSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxRegisterDevicePopup Skin",
+                        "toolTip": "flxRegisterDevicePopup Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtn003E75Border",
+                    "group": "Btn Skin of Popup",
+                    "kuid": "c47ba84005754acc98e2809ba538058e",
+                    "originalPropertyKey": "btnNoSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "btnNoSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnNo Skin",
+                        "toolTip": "btnNo Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlblSSPreg42424220px",
+                    "group": "Label Skin of Popup",
+                    "kuid": "fd103aadc0274e1ca233f619fe3215f5",
+                    "originalPropertyKey": "lblRegisterDevicePopupBodySkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "lblRegisterDevicePopupBodySkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblRegisterDevicePopupBody Skin",
+                        "toolTip": "lblRegisterDevicePopupBody Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "g",
+                    "group": "FontIcon Text",
+                    "kuid": "a787215ff17349dc92faa33a12f39c4e",
+                    "originalPropertyKey": "lblCloseMsgTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "lblCloseMsgTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblCloseMsg Text",
+                        "toolTip": "lblCloseMsg Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "No",
+                    "group": "Btn Text of Popup",
+                    "kuid": "f880c8d76afd41299983639aae2c2166",
+                    "originalPropertyKey": "btnNoTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "btnNoTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnNo Text",
+                        "toolTip": "btnNo Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.MsgReceivePushNotifications",
+                    "group": "Label Text",
+                    "kuid": "e787f246153a4699b545b9cd83fc9c4b",
+                    "originalPropertyKey": "lblMsgTxtReceivePushNotifications",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "lblMsgTxtReceivePushNotifications",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblMsg Text Receive Push Notifications",
+                        "toolTip": "lblMsg Text Receive Push Notifications",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "rb_4_0_ad_loading_indicator.gif",
+                    "group": "Image Source",
+                    "kuid": "ea57c9aeab7e4d15aa4ddf1e126ba14c",
+                    "originalPropertyKey": "imgLoadingSrc",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "imgLoadingSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "imgLoading Souce",
+                        "toolTip": "imgLoading Souce",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.WarningMsgNotReceivePushNotificationsSuspend",
+                    "group": "Label Text of Popup",
+                    "kuid": "i033e379dec64a68a0ece0692ee48c4f",
+                    "originalPropertyKey": "lblPopupInfoTxtNotReceivePushNotificationsSuspend",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "lblPopupInfoTxtNotReceivePushNotificationsSuspend",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblPopupInfo Text Not Receive Push Notifications Suspend",
+                        "toolTip": "lblPopupInfo Text Not Receive Push Notifications Suspend",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCADevice",
+                    "group": "Get Devices Service",
+                    "kuid": "eec327874682419fbab5d9b59a4469d4",
+                    "originalPropertyKey": "objName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "objName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Name",
+                        "toolTip": "Obj Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCADevice",
+                    "group": "Update My Device Service",
+                    "kuid": "d4dd72f1f48846f2b181748f6b25149f",
+                    "originalPropertyKey": "objName1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "objName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Name 1",
+                        "toolTip": "Obj Name 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCADevice",
+                    "group": "Revoke My Device Service",
+                    "kuid": "c947338deff74804b52cf7705a4c328d",
+                    "originalPropertyKey": "objName2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "objName2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Name 2",
+                        "toolTip": "Obj Name 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "AuthStatus",
+                    "group": "Fetch Auth Status Service",
+                    "kuid": "f40b44986db149a292d44a4d15f7b23a",
+                    "originalPropertyKey": "objName4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "objName4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Name 4",
+                        "toolTip": "Obj Name 4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCADevice",
+                    "group": "Register New Device Service",
+                    "kuid": "f404b3285fa24f35852dffe5c94458ca",
+                    "originalPropertyKey": "objName3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "objName3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Name 3",
+                        "toolTip": "Obj Name 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFFFFFFnoBor",
+                    "group": "Flex Skin",
+                    "kuid": "ed5476a762f944579c8990cb555ec33d",
+                    "originalPropertyKey": "flxRegisterDevicesHeaderSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "flxRegisterDevicesHeaderSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxRegisterDevicesHeader Skin",
+                        "toolTip": "flxRegisterDevicesHeader Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknOlbFonts0273e317px",
+                    "group": "FontIcon Skin",
+                    "kuid": "f6a1c89a366d499fa6372f44e869ae2b",
+                    "originalPropertyKey": "lblCloseMsgSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblCloseMsgSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblCloseMsg Skin",
+                        "toolTip": "lblCloseMsg Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSP42424215px",
+                    "group": "Label Skin",
+                    "kuid": "b5cdcefce20248e7862b47c02764070a",
+                    "originalPropertyKey": "lblRegisterDeviceHeaderSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblRegisterDeviceHeaderSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblRegisterDeviceHeader Skin",
+                        "toolTip": "lblRegisterDeviceHeader Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxd3d3d3op60",
+                    "group": "Flex Skin of Popup",
+                    "kuid": "e14167095edd49258fb6ed4786733b89",
+                    "originalPropertyKey": "flxPopupHeaderSeparatorSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "flxPopupHeaderSeparatorSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxPopupHeaderSeparator Skin",
+                        "toolTip": "flxPopupHeaderSeparator Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSSP72727215Px",
+                    "group": "Label Skin of Popup",
+                    "kuid": "a75fccd8f39a4fd99afa9383ee116dfb",
+                    "originalPropertyKey": "lblPopupInfoSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblPopupInfoSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblPopupInfo Skin",
+                        "toolTip": "lblPopupInfo Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "N",
+                    "group": "FontIcon Text",
+                    "kuid": "j1deef9df0214827bcdcf647ef01e625",
+                    "originalPropertyKey": "fontIconLastStatusActiveTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "fontIconLastStatusActiveTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fontIconLastStatusActive Text",
+                        "toolTip": "fontIconLastStatusActive Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.MsgnNotReceivePushNotifications",
+                    "group": "Label Text",
+                    "kuid": "b292536724084995a4686b0cc7220e41",
+                    "originalPropertyKey": "lblMsgTxtNotReceivePushNotifications",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblMsgTxtNotReceivePushNotifications",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblMsg Text Not Receive Push Notifications",
+                        "toolTip": "lblMsg Text Not Receive Push Notifications",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.WarningMsgNotReceivePushNotificationsRemove",
+                    "group": "Label Text of Popup",
+                    "kuid": "a783f923e28d48c5b95bc6befedf6773",
+                    "originalPropertyKey": "lblPopupInfoTxtNotReceivePushNotificationsRemove",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblPopupInfoTxtNotReceivePushNotificationsRemove",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblPopupInfo Text Not Receive Push Notifications Remove",
+                        "toolTip": "lblPopupInfo Text Not Receive Push Notifications Remove",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxd3d3d3op60",
+                    "group": "Flex Skin",
+                    "kuid": "d4eb039f5daa4f5ab104e03f91998cb7",
+                    "originalPropertyKey": "flxRegisterDeviceHeaderSeperatorSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "flxRegisterDeviceHeaderSeperatorSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxRegisterDeviceHeaderSeperator Skin",
+                        "toolTip": "flxRegisterDeviceHeaderSeperator Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFontIconDevice003E7530px",
+                    "group": "FontIcon Skin",
+                    "kuid": "a8fbd5405780491397e72e2fa348b48c",
+                    "originalPropertyKey": "fontIconDeviceSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "fontIconDeviceSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fontIconDevice Skin",
+                        "toolTip": "fontIconDevice Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSSPRegular42424215Px",
+                    "group": "Label Skin",
+                    "kuid": "g7405066f36b46f48efbca28c02b3b4f",
+                    "originalPropertyKey": "lblDeviceNameSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "lblDeviceNameSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblDeviceName Skin",
+                        "toolTip": "lblDeviceName Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "J",
+                    "group": "FontIcon Text",
+                    "kuid": "g2994fc1a29342cdb7aadcedfe22761b",
+                    "originalPropertyKey": "fontIconMsgTypeErrTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "fontIconMsgTypeErrTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fontIconMsgType Error Text",
+                        "toolTip": "fontIconMsgType Error Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.MsgActivationCodeSent",
+                    "group": "Label Text",
+                    "kuid": "f8f014c5443d466d856fd99f17408a50",
+                    "originalPropertyKey": "lblMsgTxtActivationCodeSent",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "lblMsgTxtActivationCodeSent",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblMsg Text Activation Code Sent",
+                        "toolTip": "lblMsg Text Activation Code Sent",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknflx000000op50",
+                    "group": "Flex Skin of Popup",
+                    "kuid": "gae80c5e973244d4bad4e15eb95b875b",
+                    "originalPropertyKey": "popupLoadingBgSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "popupLoadingBgSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "popup Loading Background Skin",
+                        "toolTip": "popup Loading Background Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlbl424242SSPReg17px",
+                    "group": "Label Skin of Popup",
+                    "kuid": "e673665618af4385a78f0ce597c2c1e9",
+                    "originalPropertyKey": "ldlPopupTextSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "ldlPopupTextSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ldlPopupText Skin",
+                        "toolTip": "ldlPopupText Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.WarningMsgNotReceivePushNotificationsSuspendOnlyDevice",
+                    "group": "Label Text of Popup",
+                    "kuid": "jffa4f645f9142fd8cd5adcf95a74865",
+                    "originalPropertyKey": "lblPopupInfoTxtNotReceivePushNotificationsSuspendOnlyDevice",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "lblPopupInfoTxtNotReceivePushNotificationsSuspendOnlyDevice",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblPopupInfo Text Not Receive Push Notifications Suspend Only Device",
+                        "toolTip": "lblPopupInfo Text Not Receive Push Notifications Suspend Only Device",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxBgFFFFFFBorderE3E3E3Radius4Px",
+                    "group": "Flex Skin",
+                    "kuid": "e6a04e37e4dc43f7a557d073e96bcc34",
+                    "originalPropertyKey": "flxDevicesSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "flxDevicesSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxDevices Skin",
+                        "toolTip": "flxDevices Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFontIconActive04A61524px",
+                    "group": "FontIcon Skin",
+                    "kuid": "e0932c9a30804ad79f85f08ab2bcc081",
+                    "originalPropertyKey": "fontIconLastStatusActiveSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "fontIconLastStatusActiveSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fontIconLastStatus Active Skin",
+                        "toolTip": "fontIconLastStatus Active Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSP72727215px",
+                    "group": "Label Skin",
+                    "kuid": "ca9f2a7d29bc4b458e4ca5fcc91d0900",
+                    "originalPropertyKey": "lblRegisteredOnSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "lblRegisteredOnSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblRegisteredOn Skin",
+                        "toolTip": "lblRegisteredOn Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "N",
+                    "group": "FontIcon Text",
+                    "kuid": "dac269d0294149cd823cf93421458d21",
+                    "originalPropertyKey": "fontIconMsgTypeSuccessTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "fontIconMsgTypeSuccessTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fontIconMsgType Success Text",
+                        "toolTip": "fontIconMsgType Success Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.ErrMsgApprovalDenied",
+                    "group": "Label Text",
+                    "kuid": "h2fb85ca4f9346468e219ea632e1f2f9",
+                    "originalPropertyKey": "lblMsgTxtRequestDeniedErr",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "lblMsgTxtRequestDeniedErr",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblMsg Text Request Denied Error",
+                        "toolTip": "lblMsg Text Request Denied Error",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknflxffffffRadius5px",
+                    "group": "Flex Skin of Popup",
+                    "kuid": "e4d477e915f64c47b12939a46e88747a",
+                    "originalPropertyKey": "flxPopupLoadingSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "flxPopupLoadingSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxPopup Loading Skin",
+                        "toolTip": "flxPopup Loading Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.WarningMsgNotReceivePushNotificationsRemoveOnlyDevice",
+                    "group": "Label Text of Popup",
+                    "kuid": "b3684be1937d43c6925a744cb699a3ce",
+                    "originalPropertyKey": "lblPopupInfoTxtNotReceivePushNotificationsRemoveOnlyDevice",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "lblPopupInfoTxtNotReceivePushNotificationsRemoveOnlyDevice",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblPopupInfo Text Not Receive Push Notifications Remove Only Device",
+                        "toolTip": "lblPopupInfo Text Not Receive Push Notifications Remove Only Device",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxd3d3d3op60",
+                    "group": "Flex Skin",
+                    "kuid": "a59c6d41e08e429c955a8d1876c94a74",
+                    "originalPropertyKey": "flxSeparatorSegmentSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "flxSeparatorSegmentSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxSeparatorSegment Skin",
+                        "toolTip": "flxSeparatorSegment Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFontIconSuspendFFA50024px",
+                    "group": "FontIcon Skin",
+                    "kuid": "cc5f89ae5ef542d5b271b0da64418fd5",
+                    "originalPropertyKey": "fontIconLastStatusSuspendSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "fontIconLastStatusSuspendSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fontIconLastStatus Suspend Skin",
+                        "toolTip": "fontIconLastStatus Suspend Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSSPRegular42424215Px",
+                    "group": "Label Skin",
+                    "kuid": "ecaae4f961064d04a9c56bb3ce7a5a07",
+                    "originalPropertyKey": "lblLastStatusSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "lblLastStatusSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblLastStatus Skin",
+                        "toolTip": "lblLastStatus Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "(",
+                    "group": "FontIcon Text",
+                    "kuid": "eaad7246d0524a67be259457f38059f6",
+                    "originalPropertyKey": "fontIconDeviceTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "fontIconDeviceTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fontIconDevice Text",
+                        "toolTip": "fontIconDevice Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.ErrMsgApprovalTimedOut",
+                    "group": "Label Text",
+                    "kuid": "db9dbf63c3ce41ba8c7c7008efa3b057",
+                    "originalPropertyKey": "lblMsgTxtRequestTimedOutErr",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "lblMsgTxtRequestTimedOutErr",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblMsg Text Request Timed Out Error",
+                        "toolTip": "lblMsg Text Request Timed Out Error",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.MsgApproveRequestNotificationSent",
+                    "group": "Label Text of Popup",
+                    "kuid": "b5f397587ddd41ae9005f1c973d6eae0",
+                    "originalPropertyKey": "ldlPopupTextTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "ldlPopupTextTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ldlPopupText Text",
+                        "toolTip": "ldlPopupText Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSSP4176a415px",
+                    "group": "Label Skin",
+                    "kuid": "h083aaa610ca415f902054b4f1b3638a",
+                    "originalPropertyKey": "lblSuspendDeviceSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "lblSuspendDeviceSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSuspendDevice Skin",
+                        "toolTip": "lblSuspendDevice Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.RegisterDevices",
+                    "group": "Label Text",
+                    "kuid": "f7204649fe694110bc7984f2a3f91895",
+                    "originalPropertyKey": "lblRegisterDeviceHeaderTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "lblRegisterDeviceHeaderTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblRegisterDeviceHeader Text",
+                        "toolTip": "lblRegisterDeviceHeader Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSSP4176a415px",
+                    "group": "Label Skin",
+                    "kuid": "d1aa10e2d16142a491887de6f59f86d3",
+                    "originalPropertyKey": "lblRemoveDeviceSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "lblRemoveDeviceSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblRemoveDevice Skin",
+                        "toolTip": "lblRemoveDevice Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.RegisteredOn",
+                    "group": "Label Text",
+                    "kuid": "f319b942f1c044b8838762aebc628d53",
+                    "originalPropertyKey": "lblRegisteredOnTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "lblRegisteredOnTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblRegisteredOn Text",
+                        "toolTip": "lblRegisteredOn Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSP72727215px",
+                    "group": "Label Skin",
+                    "kuid": "hf70e83c4e89475ba4827f2a20301f9d",
+                    "originalPropertyKey": "lblNoRecordsSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "lblNoRecordsSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblNoRecords Skin",
+                        "toolTip": "lblNoRecords Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.Active",
+                    "group": "Label Text",
+                    "kuid": "cd1e139733f2421cbd5515fea338ae0a",
+                    "originalPropertyKey": "lblLastStatusActiveTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "lblLastStatusActiveTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblLastStatus Active Text",
+                        "toolTip": "lblLastStatus Active Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.DeviceSuspended",
+                    "group": "Label Text",
+                    "kuid": "fd71a0cbb585477186e968b7ff8084e3",
+                    "originalPropertyKey": "lblLastStatusSuspendTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "lblLastStatusSuspendTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblLastStatus Suspend Text",
+                        "toolTip": "lblLastStatus Suspend Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.SuspendDevice",
+                    "group": "Label Text",
+                    "kuid": "f03af26a64034f8fae2e12132698fcb5",
+                    "originalPropertyKey": "lblSuspendDeviceSuspendTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "lblSuspendDeviceSuspendTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSuspendDevice Suspend Text",
+                        "toolTip": "lblSuspendDevice Suspend Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.UnsuspendDevice",
+                    "group": "Label Text",
+                    "kuid": "a330cd073f5641398a3940d9e109666c",
+                    "originalPropertyKey": "lblSuspendDeviceUnsuspendTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 12,
+                    "propertyKey": "lblSuspendDeviceUnsuspendTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSuspendDevice Unsuspend Text",
+                        "toolTip": "lblSuspendDevice Unsuspend Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.DeviceRegistration.RemoveDevice",
+                    "group": "Label Text",
+                    "kuid": "e08b914b41034593b50f7e3bf3550958",
+                    "originalPropertyKey": "lblRemoveDeviceTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 13,
+                    "propertyKey": "lblRemoveDeviceTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblRemoveDevice Text",
+                        "toolTip": "lblRemoveDevice Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "No devices found.",
+                    "group": "Label Text",
+                    "kuid": "f44384602f284e16aefb3d3aa6db00e6",
+                    "originalPropertyKey": "lblNoRecordsTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 14,
+                    "propertyKey": "lblNoRecordsTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblNoRecords Text",
+                        "toolTip": "lblNoRecords Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ue476a4974244a09aee20b04d3f25d7e",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.sca.Unike",
+    "version": "1.0.0"
+}

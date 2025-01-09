@@ -1,0 +1,75 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "accountsSearchObject": "Recipients",
+        "accountsSearchObjectService": "PayeeObjects",
+        "accountsSearchOperation": "getExternalPayees",
+        "additionalDetailsLabel1Tab1": "{\"default\":\"{i.i18n.common.accountNumber}\"}",
+        "additionalDetailsLabel5Tab1": "",
+        "additionalDetailsType5Tab1": "",
+        "additionalDetailsValue5Tab1": "",
+        "blockTitle": "{\"default\":\"{i.i18n.PayAPerson.ManageRecipient}\"}",
+        "dataGridColumn3Tab1": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.serviceRequests.Status}\",\"default\":\"{i.i18n.serviceRequests.Status}\"},\"mapping\":\"{$.rootPath.isVerified}\",\"fieldType\":\"Label\",\"sortBy\":\"isVerified\"}",
+        "dataGridColumn5Tab2": "{   \"title\": {     \"$.BREAKPTS.bp1\": \"{i.i18n.wireTransfers.Actions}\",     \"default\": \"{i.i18n.wireTransfers.Actions}\"   },   \"text\": {     \"$.BREAKPTS.bp1\": \"{i.i18n.Pay.SendMoney}\",     \"default\": \"{i.i18n.Pay.SendMoney}\"   },   \"action\": {     \"level\": \"Form\",     \"method\": \"p2pSendMoney\",     \"context\": \"\"   },   \"entitlement\": [     \"P2P_CREATE\"   ] }",
+        "emptyListAction": "{\"text\":{\"$.BREAKPTS.bp1\":\"{i.i18n.Pay.SendMoney}\",\"default\":\"{i.i18n.Pay.SendMoney}\"},\"action\":{\"level\":\"Form\",\"method\":\"onAddRecipient\",\"context\":\"\"},\"entitlement\":[]}",
+        "emptyListLabel": "{\"text\":{\"$.BREAKPTS.bp1\":\"{i.i18n.FastTransfers.NoAccounts}\",\"default\":\"{i.i18n.FastTransfers.NoAccounts}\"},\"entitlement\":[]}",
+        "p2pGETOperation": "getP2PPayees",
+        "p2pObject": "Payee_P2P",
+        "p2pObjectService": "DigitalTransfer",
+        "placeHolderSearch": "{\"$.BREAKPTS.bp1\":\"{i.i18n.billpay.SearchMessageMobile}\",\"default\":\"{i.i18n.TransfersEur.SearchByNameOrAccountDetails}\"}"
+    },
+    "id": "BeneficiaryList",
+    "info": null,
+    "iscustomlayout": false,
+    "issegmentchild": false,
+    "isvisible": true,
+    "kuid": "e1c79b3b5fa5404b9f118d76a36d9657",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxContent1",
+    "pf": "frmFastManagePayee",
+    "responsiveData": {
+        "b1": {}
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "caaeea92d95a4c0b84281f4bb938a7de",
+    "wType": "UserWidgetInstance"
+}

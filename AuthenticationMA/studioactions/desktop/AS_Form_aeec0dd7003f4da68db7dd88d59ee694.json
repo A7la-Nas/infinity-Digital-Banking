@@ -1,0 +1,23 @@
+{
+    "AS_Form_aeec0dd7003f4da68db7dd88d59ee694": {
+        "id": "AS_Form_aeec0dd7003f4da68db7dd88d59ee694",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginHID",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a090e0f90189424cbcc313b5461c9c6f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_postShow_d481383e7f2344d4b0bbb7d5ed433545",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onPostShow();\nif(!this.isOriginationFlow) {\napplicationManager.getTypeManager().initialiseAccountTypeManager();\napplicationManager.getTypeManager().initialiseTransactionTypeManager();\napplicationManager.getTypeManager().initialisePfmTypeManager();\n}",
+            "callbackType": null
+        }]
+    }
+}

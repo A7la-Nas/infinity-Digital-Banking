@@ -1,0 +1,21 @@
+{
+  "name" : "UnikenIdentity",
+  "type" : "oauth2",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"auth_type\":\"oauth2\",\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"},\"profile\":{\"profile_attribute_selectors\":{\"federation_id\":\"sub\",\"last_name\":\"lastName\",\"custom_profile_attribute_selectors\":{},\"first_name\":\"firstName\",\"email\":\"\"},\"endpoint\":{\"location\":\"url\",\"type\":\"direct\",\"value\":\"https://temenos-dev1.rel-id.com:8006/relid/authserver/oauth/userinfo\"},\"request_method\":\"GET\"},\"enable_identity_pkce\":false,\"dependent_providers\":[],\"client_authentication\":{\"client_pvt_key_jwt\":false,\"authentication_scheme\":\"header\",\"client_secret\":\"6838686aa332a0192847a624b907e683e2ae3bb6e262d3659b8c3cf493bfe5d9\",\"client_id\":\"YTQxZWNhYTktNTE1YS00OTY5LTllY2EtYTk1MTVhZjk2OWRk\"},\"authorization_endpoint\":\"https://temenos-dev1.rel-id.com:8006/relid/authserver/oauth/authorize\",\"enable_refresh_login\":true,\"logout_url\":\"\",\"additional_data\":{\"refresh_request\":[],\"token_request\":[],\"revoke_request\":[],\"profile_request\":[],\"authorize_request\":[]},\"grant_type\":\"authorization_code\",\"scope\":\"openid\",\"dollarParamPresence\":{\"logout_url\":false,\"revoke_url\":false,\"profile_url\":false,\"authorization_endpoint\":false,\"token_endpoint\":false},\"authentication_scheme\":\"header\",\"oauthProviderType\":\"default\",\"token_endpoint\":\"https://temenos-dev1.rel-id.com:8006/relid/authserver/oauth/token\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false,
+    "oauth2_success_url_config" : {
+      "allow_any" : true,
+      "allowed_urls" : [ ],
+      "default" : -1
+    }
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : false,
+  "empty" : true,
+  "mapType" : "java.util.HashMap"
+}

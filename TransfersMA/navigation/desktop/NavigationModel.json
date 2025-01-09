@@ -1,0 +1,959 @@
+{ 
+  "Application": {},
+  "Forms": {
+    "frmUTFLanding": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFSameBankTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFDomesticTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFInternationalTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFP2PTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmActivateP2P",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmSameBankAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmDomesticAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmInternationalAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmPayaPersonAddBeneficiary",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmUTFDomesticTransfer":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFDomesticTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFInternationalTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSameBankTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFP2PTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFDomesticTransferConfirmation",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmUTFDomesticTransferConfirmation":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFDomesticTransferAcknowledgement",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFDomesticTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSecurityQuestions",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFEmailOrSMS",
+            "appName": "TransfersMA"
+          }
+          
+        ]
+      }
+    },
+    "frmUTFDomesticTransferAcknowledgement":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmPastPaymentsEurNew",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmSavePayeeforOTT",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmUTFInternationalTransfer":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFInternationalTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFDomesticTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSameBankTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFP2PTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFInternationalTransferConfirmation",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmUTFInternationalTransferConfirmation":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFInternationalTransferAcknowledgement",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFInternationalTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFEmailOrSMS",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSecurityQuestions",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmUTFInternationalTransferAcknowledgement":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmPastPaymentsEurNew",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmSavePayeeforOTT",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmUTFSameBankTransfer":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFSameBankTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFDomesticTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFInternationalTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFP2PTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSameBankTransferConfirmation",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmUTFSameBankTransferConfirmation":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFSameBankTransferAcknowledgement",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSameBankTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFEmailOrSMS",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSecurityQuestions",
+            "appName": "TransfersMA"
+          }
+      
+        ]
+      }
+    },
+    "frmUTFSecurityQuestions":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFInternationalTransferAcknowledgement",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFDomesticTransferAcknowledgement",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSameBankTransferAcknowledgement",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmUTFEmailOrSMS":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFInternationalTransferAcknowledgement",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFDomesticTransferAcknowledgement",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSameBankTransferAcknowledgement",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmUTFSameBankTransferAcknowledgement":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmPastPaymentsEurNew",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmSavePayeeforOTT",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+	"frmLinkPayee":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmSameBankAddBeneficiaryConfirm",
+            "appName": "TransfersMA"
+          },
+                    {
+            "friendlyName": "frmSameBankAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmInternationalAddBeneficiaryConfirm",
+            "appName": "TransfersMA"
+          },
+                    {
+            "friendlyName": "frmInternationalAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmDomesticAddBeneficiaryConfirm",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmDomesticAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+           {
+             "appName": "TransfersMA",
+             "friendlyName": "frmPayaPersonAddBeneficiary"
+           },
+          {
+            "appName": "TransfersMA",
+            "friendlyName": "frmPayaPersonAddBeneficiaryConfirm"
+        	},
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmDomesticAddBeneficiary":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmLinkPayee",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmInternationalAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmSameBankAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmPayaPersonAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmDomesticAddBeneficiaryConfirm",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmDomesticAddBeneficiaryConfirm":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmDomesticAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmDomesticAddBeneAcknowledgement",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmDomesticAddBeneAcknowledgement":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmPastPaymentsEurNew",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmInternationalAddBeneficiary":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmLinkPayee",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmDomesticAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmSameBankAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmPayaPersonAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmInternationalAddBeneficiaryConfirm",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmInternationalAddBeneficiaryConfirm":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmInternationalAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmInternationalAddBeneAcknowledgement",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmInternationalAddBeneAcknowledgement":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmPastPaymentsEurNew",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmSameBankAddBeneficiary":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmLinkPayee",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmDomesticAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmInternationalAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmPayaPersonAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmSameBankAddBeneficiaryConfirm",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmSameBankAddBeneficiaryConfirm":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmSameBankAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmSameBankAddBeneAcknowledgement",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmSameBankAddBeneAcknowledgement":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmPastPaymentsEurNew",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmSavePayeeforOTT":{ 
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFLanding",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    }, 
+    "frmPastPaymentsEurNew":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFDomesticTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFInternationalTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFP2PTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSameBankTransfer",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmScheduledPaymentsEurNew":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFDomesticTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFInternationalTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFP2PTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSameBankTransfer",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmManageBeneficiaries":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFDomesticTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFInternationalTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFP2PTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSameBankTransfer",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+   "frmAddBeneficiaryAcknowledgementEuro":{
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFDomesticTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFInternationalTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFP2PTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFSameBankTransfer",
+            "appName": "TransfersMA"
+          }
+        ]
+      }
+    },
+    "frmAcknowledgement": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handlefrmAcknowledgementNavigation",
+        "targetForms": [{
+          "friendlyName": "frmUTFLanding",
+          "appName" : "TransfersMA"
+        }, {
+          "friendlyName": "frmUTFLanding",
+          "appName": "TransfersMA"
+        }]
+      }
+    },
+    
+    "frmActivateP2P": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handlefrmActivateP2PNavigation",
+        "targetForms": [{
+          "friendlyName": "frmAcknowledgement",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmDeactivateAcknowledgement",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmUTFLanding",
+          "appName": "TransfersMA"
+        }]
+      }
+    },
+    
+    "frmDeactivateAcknowledgement": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handlefrmDeactivateAcknowledgementNavigation",
+        "targetForms": [{
+          "friendlyName": "frmUTFLanding",
+          "appName" : "TransfersMA"
+        }]
+      }
+    },
+   
+    "frmUTFP2PTransfer": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handlefrmUTFP2PTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmUTFSameBankTransfer",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmUTFDomesticTransfer",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmUTFInternationalTransfer",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmUTFP2PTransfer",
+          "appName" : "TransfersMA"
+        }, {
+          "friendlyName": "frmUTFLanding",
+          "appName": "TransfersMA"
+        },{
+          "friendlyName": "frmUTFP2PTransferConfirmation",
+          "appName": "TransfersMA"
+        }]
+      }
+    },
+    
+    "frmUTFP2PTransferAcknowledgement": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handlefrmUTFP2PTransferAcknowledgementNavigation",
+        "targetForms": [{
+          "friendlyName": "frmUTFEmailOrSMS",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmUTFSecurityQuestions",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmUTFP2PTransfer",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmUTFLanding",
+          "appName": "TransfersMA"
+        },{
+          "friendlyName": "frmSavePayeeforOTT",
+          "appName": "TransfersMA"
+        }
+        ,{
+          "friendlyName": "frmUTFP2PTransferAcknowledgement",
+          "appName": "TransfersMA"
+        }]
+      }
+    },
+    
+    "frmUTFP2PTransferConfirmation": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handlefrmUTFP2PTransferConfirmationNavigation",
+        "targetForms": [{
+          "friendlyName": "frmUTFEmailOrSMS",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmUTFSecurityQuestions",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmUTFP2PTransfer",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmUTFLanding",
+          "appName" : "TransfersMA"
+        }, {
+          "friendlyName": "frmUTFP2PTransferAcknowledgement",
+          "appName": "TransfersMA"
+        },{
+          "friendlyName": "frmUTFSecurityQuestions",
+          "appName": "TransfersMA"
+        },{
+          "friendlyName": "frmUTFEmailOrSMS",
+          "appName": "TransfersMA"
+        }
+      ]
+      }
+    },
+    
+    
+    "frmPayaPersonAddBeneAcknowledgement": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handlefrmPayaPersonAddBeneAcknowledgementNavigation",
+        "targetForms": [{
+          "friendlyName": "frmUTFLanding",
+          "appName" : "TransfersMA"
+        }]
+      }
+    },
+    
+    
+    "frmPayaPersonAddBeneficiary": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handlefrmPayaPersonAddBeneficiaryNavigation",
+        "targetForms": [{
+          "friendlyName": "frmSameBankAddBeneficiary",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmDomesticAddBeneficiary",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmInternationalAddBeneficiary",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmPayaPersonAddBeneficiary",
+          "appName" : "TransfersMA"
+        },{
+          "friendlyName": "frmLinkPayee",
+          "appName" : "TransfersMA"
+        }, {
+          "friendlyName": "frmPayaPersonAddBeneficiaryConfirm",
+          "appName": "TransfersMA"
+        },{
+          "friendlyName": "frmUTFLanding",
+          "appName" : "TransfersMA"
+        }]
+      }
+    },
+    
+    
+    "frmPayaPersonAddBeneficiaryConfirm": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handlefrmPayaPersonAddBeneficiaryConfirmNavigation",
+        "targetForms": [{
+          "friendlyName": "frmUTFLanding",
+          "appName": "TransfersMA"
+        }, {
+          "friendlyName": "frmPayaPersonAddBeneAcknowledgement",
+          "appName": "TransfersMA"
+        },{
+          "friendlyName": "frmPayaPersonAddBeneficiary",
+          "appName": "TransfersMA"
+        }]
+      }
+    }
+  },
+  "UIModules" : {
+    "ManageActivitiesUIModule": {
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmDirectDebitsEur",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmManageBeneficiaries",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmPastPaymentsEurNew",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmScheduledPaymentsEurNew",
+            "appName" : "TransfersMA"
+          }
+        ]
+      }
+    },
+    "UnifiedTransferFlowUIModule": {
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmUTFSameBankTransfer",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFDomesticTransfer",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFInternationalTransfer",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmUTFP2PTransfer",
+            "appName" : "TransfersMA"
+          }
+        ]
+      }
+    },
+    "UnifiedAddBeneficiaryUIModule": {
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "frmSameBankAddBeneficiary",
+            "appName": "TransfersMA"
+          },
+          {
+            "friendlyName": "frmDomesticAddBeneficiary",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmInternationalAddBeneficiary",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "frmPayaPersonAddBeneficiary",
+            "appName" : "TransfersMA"
+          }
+        ]
+      }
+    },
+    "TransferEurUIModule": {
+      "destinationConfig": {
+        "callback": "handleTransferNavigation",
+        "targetForms": [
+          {
+            "friendlyName": "TransferEurUIModule/frmMakePayment",
+            "appName": "TransfersMA"
+          },          
+          {
+            "friendlyName": "TransferEurUIModule/frmAddBeneficiaryEuro",
+            "appName" : "TransfersMA"
+          },
+          {
+            "friendlyName": "TransferEurUIModule/frmAddBeneficiaryAcknowledgementEuro",
+            "appName" : "TransfersMA"
+          }
+        ]}}
+  }
+}

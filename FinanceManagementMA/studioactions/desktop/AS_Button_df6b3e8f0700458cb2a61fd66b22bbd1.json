@@ -1,0 +1,23 @@
+{
+    "AS_Button_df6b3e8f0700458cb2a61fd66b22bbd1": {
+        "id": "AS_Button_df6b3e8f0700458cb2a61fd66b22bbd1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": null,
+            "KUID": "i38f067d45084256b0da2187b68478d7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b5dfb7485c374cb9885bdc7722ca2d13",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\n   var self = this; \n    kony.application.showLoadingScreen(\"\", \"Authenticating the user\");    \n var authParams = {  \n   \"UserName\": \"1166317776\",  \n     \"Password\": \"Kony@1234\",    \n   \"loginOptions\": {   \n     \"isOfflineEnabled\": false   \n    }    };     \nauthClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");     authClient.login(authParams, successCallback, errorCallback);\n    function successCallback(resSuccess) {   \n  kony.application.dismissLoadingScreen();    \n   kony.print(resSuccess);    \n//     var pfmModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"PersonalFinanceManagementUIModule\");\n//      pfmModule.presentationController.navigateToPFMModule();\n// new kony.mvc.Navigation({\n//                 \"appName\": \"PfmMA\",\n//                 \"friendlyName\": \"frmPersonalFinanceManagement\"\n//             }).navigate();\n    var   pfmMAname=\"FinanceManagementMA\";\n  var pfmModule = kony.mvc.MDAApplication.getSharedInstance().moduleManager.getModule({\"moduleName\" : \"PersonalFinanceManagementUIModule\", \"appName\" : pfmMAname});\n  pfmModule.presentationController.initPFMForm();\n      // ntf.navigate();  \n   }\n    function errorCallback(resError) { \n     kony.application.dismissLoadingScreen();   \n    kony.print(resError);    \n   alert(\"login is not working...\");     }\n",
+            "parentId": null
+        }]
+    }
+}

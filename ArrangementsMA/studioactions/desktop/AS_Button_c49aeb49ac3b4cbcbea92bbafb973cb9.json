@@ -1,0 +1,23 @@
+{
+    "AS_Button_c49aeb49ac3b4cbcbea92bbafb973cb9": {
+        "id": "AS_Button_c49aeb49ac3b4cbcbea92bbafb973cb9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmConsolidatedStatements",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cbd1540e6e1b474aa5da2373890f1fc8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b34ccd2340874c5584adab2e2f768df1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flxDownladstatementspopup.setVisibility(false);\n//this.view.flxGenerateStatementsPopup.setVisibility(true);\nthis.generateCombinedStatement();\n",
+            "parentId": null
+        }]
+    }
+}

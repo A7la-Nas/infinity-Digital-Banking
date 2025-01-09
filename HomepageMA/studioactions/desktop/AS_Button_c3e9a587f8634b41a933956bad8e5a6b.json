@@ -1,0 +1,16 @@
+{
+    "AS_Button_c3e9a587f8634b41a933956bad8e5a6b": {
+        "id": "AS_Button_c3e9a587f8634b41a933956bad8e5a6b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f6774dc1a3b348bdba2d7d9bc17de711",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\n        var authParams = {\n            \"UserName\": this.view.txtUserName.text,\n            \"Password\": this.view.txtPassword.text,\n            \"loginOptions\": {\n                \"isOfflineEnabled\": false\n            }\n        };\n        authClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\n        authClient.login(authParams, onLoginSuccess, errorCallback);\n\n        function successCallback(resSuccess) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resSuccess);\n            kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AccountsUIModule\").presentationController.showAccountsDashboard();\n        }\n\n        function onLoginSuccess(response) {\n            let self = this;\n            let params = kony.sdk.getCurrentInstance().tokens['DbxUserLogin'].provider_token.params;\n            if (params && params.is_mfa_enabled) {\n                //self.MFANavigation(params.mfa_meta);\n            } else {\n                response = {\n                    \"username\": self.username,\n                    \"rememberMe\": kony.mvc.MDAApplication.getSharedInstance().appContext.rememberMeStatus\n                };\n                //self.onSuccessCallback(response);\n                kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthModule\").presentationController.onLoginSuccess(response);\n            }\n        }\n\n        function errorCallback(resError) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resError);\n            alert(\"login is not working...\");\n        }"
+        }]
+    }
+}

@@ -1,0 +1,48 @@
+{
+  "operationConfig" : {
+    "name" : "updateCustomerStatus5658",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"userName\" outputpath=\"userName\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"response_in\" outputpath=\"response_out\">    <map inputpath=\"Update\" outputpath=\"Update\"/>  </map></mapper>",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"SCAUser\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"UnikenJavaApis (1.0).updateCustomerStatus\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:SCAUser:userName:\",\"to\":\"target:userName:\",\"fromPort\":\"source:SCAUser:userName:\",\"toPort\":\"target:userName:\",\"visible\":true,\"common\":true}]}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"SCAUser\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"UnikenJavaApis (1.0).updateCustomerStatus\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:SCAUser\",\"fromPort\":\"target\",\"toPort\":\"target:SCAUser\",\"visible\":true,\"common\":false},{\"from\":\"target:SCAUser\",\"to\":\"target:SCAUser:t_p_fields\",\"fromPort\":\"target:SCAUser\",\"toPort\":\"target:SCAUser:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:SCAUser:t_p_fields\",\"to\":\"target:SCAUser:userName:\",\"fromPort\":\"target:SCAUser:t_p_fields\",\"toPort\":\"target:SCAUser:userName:\",\"visible\":true,\"common\":false},{\"from\":\"target:SCAUser:t_p_fields\",\"to\":\"target:SCAUser:auth_req_id:\",\"fromPort\":\"target:SCAUser:t_p_fields\",\"toPort\":\"target:SCAUser:auth_req_id:\",\"visible\":true,\"common\":false},{\"from\":\"target:SCAUser:t_p_fields\",\"to\":\"target:SCAUser:serviceName:\",\"fromPort\":\"target:SCAUser:t_p_fields\",\"toPort\":\"target:SCAUser:serviceName:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "UnikenJavaApis",
+      "serviceVersion" : "1.0",
+      "operationName" : "updateCustomerStatus"
+    },
+    "relationshipHierarchyMapping" : {
+      "name" : "SCAUser",
+      "children" : [ ],
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : true,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"userName\" outputpath=\"userName\"/>\n    </map>\n</mapper>\n",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"response_in\" outputpath=\"response_out\">    <map inputpath=\"Update\" outputpath=\"Update\"/>  </map></mapper>",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"SCAUser\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"UnikenJavaApis (1.0).updateCustomerStatus\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:SCAUser:userName:\",\"to\":\"target:userName:\",\"fromPort\":\"source:SCAUser:userName:\",\"toPort\":\"target:userName:\",\"visible\":true,\"common\":true}]}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"SCAUser\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"UnikenJavaApis (1.0).updateCustomerStatus\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:SCAUser\",\"fromPort\":\"target\",\"toPort\":\"target:SCAUser\",\"visible\":true,\"common\":false},{\"from\":\"target:SCAUser\",\"to\":\"target:SCAUser:t_p_fields\",\"fromPort\":\"target:SCAUser\",\"toPort\":\"target:SCAUser:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:SCAUser:t_p_fields\",\"to\":\"target:SCAUser:userName:\",\"fromPort\":\"target:SCAUser:t_p_fields\",\"toPort\":\"target:SCAUser:userName:\",\"visible\":true,\"common\":false},{\"from\":\"target:SCAUser:t_p_fields\",\"to\":\"target:SCAUser:auth_req_id:\",\"fromPort\":\"target:SCAUser:t_p_fields\",\"toPort\":\"target:SCAUser:auth_req_id:\",\"visible\":true,\"common\":false},{\"from\":\"target:SCAUser:t_p_fields\",\"to\":\"target:SCAUser:serviceName:\",\"fromPort\":\"target:SCAUser:t_p_fields\",\"toPort\":\"target:SCAUser:serviceName:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : true,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

@@ -1,0 +1,555 @@
+{
+    "classname": "ClearingCodeLookup",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a0a1765d29a246c4bd9a5f181cd19581",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bd4bb3e18f6f4f93afee84e4ca4ba389",
+                    "paramList": [],
+                    "propertyKey": "setFocusToClose",
+                    "pw": {
+                        "displayName": "setFocusToClose",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f048b9ea2be440b39d946d23abec2d58",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "removeSwiftLookup",
+                    "pw": {
+                        "displayName": "removeSwiftLookup",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a7282df413ad42c6bd7e73bfdfa3faa4",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "initializePopup",
+                    "pw": {
+                        "displayName": "initializePopup",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Context",
+                "Swift Lookup Service",
+                "Config",
+                "Icon",
+                "skin"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{$.c.swiftLookupDescription}\"",
+                    "group": "Context",
+                    "kuid": "ba8c6b76c15d4b2a91cc2a773506a895",
+                    "originalPropertyKey": "swiftLookupDescription",
+                    "propertyIndex": 1,
+                    "propertyKey": "swiftLookupDescription",
+                    "pw": {
+                        "displayName": "Description",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{$.c.lookupObjectName}\"",
+                    "group": "Swift Lookup Service",
+                    "kuid": "f95f26361860496db531ed8c0809d5fb",
+                    "originalPropertyKey": "lookupObjectName",
+                    "propertyIndex": 1,
+                    "propertyKey": "lookupObjectName",
+                    "pw": {
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{$.c.cacheEnabled}\"",
+                    "group": "Swift Lookup Service",
+                    "kuid": "c6b3980abc6e4809ac03fa3931ca0b9d",
+                    "originalPropertyKey": "cacheEnabled",
+                    "propertyIndex": 5,
+                    "propertyKey": "cacheEnabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Cache Enabled",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.BREAKPTS}\"",
+                    "group": "Config",
+                    "kuid": "e0381cf53b544cc1a6080676cf52f925",
+                    "originalPropertyKey": "BREAKPTS",
+                    "propertyIndex": 1,
+                    "propertyKey": "BREAKPTS",
+                    "pw": {
+                        "displayName": "BREAKPTS",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{$.c.infoIcon}\"",
+                    "group": "Icon",
+                    "kuid": "a7331a1edb9d4ae9a0f897a5887bcefa",
+                    "originalPropertyKey": "infoIcon",
+                    "propertyIndex": 1,
+                    "propertyKey": "infoIcon",
+                    "pw": {
+                        "displayName": "Info icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.txtBoxSkn}\"",
+                    "group": "skin",
+                    "kuid": "ie3e521a778244838b1800ccf01a0aea",
+                    "originalPropertyKey": "txtBoxSkn",
+                    "propertyIndex": 1,
+                    "propertyKey": "txtBoxSkn",
+                    "pw": {
+                        "displayName": "Text box skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.swiftLookupHeader}\"",
+                    "group": "Context",
+                    "kuid": "ba290610fcfb4a6493cf3b1483749bd0",
+                    "originalPropertyKey": "swiftLookupHeader",
+                    "propertyIndex": 2,
+                    "propertyKey": "swiftLookupHeader",
+                    "pw": {
+                        "displayName": "Header",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.lookupOperationName}\"",
+                    "group": "Swift Lookup Service",
+                    "kuid": "d3d3f96a209347ec8e4de45360883d7d",
+                    "originalPropertyKey": "lookupOperationName",
+                    "propertyIndex": 2,
+                    "propertyKey": "lookupOperationName",
+                    "pw": {
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BREAKPTS.BP1\": \"ICSkntxtBoxMandatory\",   \"default\": \"ICSkntxtBoxMandatory\" }",
+                    "group": "skin",
+                    "kuid": "e058c6be056e44f0b05578caa923cbf9",
+                    "originalPropertyKey": "txtBoxMandatorySkn",
+                    "propertyIndex": 2,
+                    "propertyKey": "txtBoxMandatorySkn",
+                    "pw": {
+                        "displayName": "Text Box Mandatory ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.searchField1Label}\"",
+                    "group": "Context",
+                    "kuid": "abae88a5c8eb4d2691609a5c07184197",
+                    "originalPropertyKey": "searchField1Label",
+                    "propertyIndex": 3,
+                    "propertyKey": "searchField1Label",
+                    "pw": {
+                        "displayName": "Search Field 1 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.lookupIdentifier}\"",
+                    "group": "Swift Lookup Service",
+                    "kuid": "ja4f55ee432040e6a783d72e9679cde8",
+                    "originalPropertyKey": "lookupIdentifier",
+                    "propertyIndex": 3,
+                    "propertyKey": "lookupIdentifier",
+                    "pw": {
+                        "displayName": "Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.fieldValueSkn}\"",
+                    "group": "skin",
+                    "kuid": "d1ba4993231b44a395dbf1e760dbeabc",
+                    "originalPropertyKey": "fieldValueSkn",
+                    "propertyIndex": 3,
+                    "propertyKey": "fieldValueSkn",
+                    "pw": {
+                        "displayName": "Field Value Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.searchField1Value}\"",
+                    "group": "Context",
+                    "kuid": "ea9d03515ce54a03a8dd89b6f9a1f5e4",
+                    "originalPropertyKey": "searchField1Value",
+                    "propertyIndex": 4,
+                    "propertyKey": "searchField1Value",
+                    "pw": {
+                        "displayName": "Search Field 1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.fieldLabelSkn}\"",
+                    "group": "skin",
+                    "kuid": "db18548ac09047aabc63b5e4fad6ca73",
+                    "originalPropertyKey": "fieldLabelSkn",
+                    "propertyIndex": 4,
+                    "propertyKey": "fieldLabelSkn",
+                    "pw": {
+                        "displayName": "Field Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.lookupServiceName}\"",
+                    "group": "Swift Lookup Service",
+                    "kuid": "c04dd20033234716893a35e58a425033",
+                    "originalPropertyKey": "lookupServiceName",
+                    "propertyIndex": 4,
+                    "propertyKey": "lookupServiceName",
+                    "pw": {
+                        "displayName": "Lookup Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{$.c.searchField2Label}\"",
+                    "group": "Context",
+                    "kuid": "f4612c47bd134c8087cdb420a90677b7",
+                    "originalPropertyKey": "searchField2Label",
+                    "propertyIndex": 5,
+                    "propertyKey": "searchField2Label",
+                    "pw": {
+                        "displayName": "Search Field 2 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.searchField2Value}\"",
+                    "group": "Context",
+                    "kuid": "iab80745d79a4f959672c812c113c186",
+                    "originalPropertyKey": "searchField2Value",
+                    "propertyIndex": 6,
+                    "propertyKey": "searchField2Value",
+                    "pw": {
+                        "displayName": "Search Field 2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{$.c.searchField3Label}\"",
+                    "group": "Context",
+                    "kuid": "d8a273e9e9244684a84722d3cef67f1d",
+                    "originalPropertyKey": "searchField3Label",
+                    "propertyIndex": 7,
+                    "propertyKey": "searchField3Label",
+                    "pw": {
+                        "displayName": "Search Field 3 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.searchField3Value}\"",
+                    "group": "Context",
+                    "kuid": "b286bbcd8f2b4c2484f4502ae891c6f2",
+                    "originalPropertyKey": "searchField3Value",
+                    "propertyIndex": 8,
+                    "propertyKey": "searchField3Value",
+                    "pw": {
+                        "displayName": "Search Field 3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.searchField4Label}\"",
+                    "group": "Context",
+                    "kuid": "f6b4d64daa6d4894aab47f1b6e66f510",
+                    "originalPropertyKey": "searchField4Label",
+                    "propertyIndex": 9,
+                    "propertyKey": "searchField4Label",
+                    "pw": {
+                        "displayName": "Search Field 4 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{$.c.searchField4Value}\"",
+                    "group": "Context",
+                    "kuid": "j9675e1879db4e84a830cb6adfe044c6",
+                    "originalPropertyKey": "searchField4Value",
+                    "propertyIndex": 10,
+                    "propertyKey": "searchField4Value",
+                    "pw": {
+                        "displayName": "Search Field 4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{$.c.lblColumn1}\"",
+                    "group": "Context",
+                    "kuid": "d92cca8d53554d2faedd362370d779a9",
+                    "originalPropertyKey": "lblColumn1",
+                    "propertyIndex": 11,
+                    "propertyKey": "lblColumn1",
+                    "pw": {
+                        "displayName": "Column1 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.lblColumn2}\"",
+                    "group": "Context",
+                    "kuid": "g5339e2e3e2348e892b1b7db5b521078",
+                    "originalPropertyKey": "lblColumn2",
+                    "propertyIndex": 12,
+                    "propertyKey": "lblColumn2",
+                    "pw": {
+                        "displayName": "Column2 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{$.c.lblColumn1Value}\"",
+                    "group": "Context",
+                    "kuid": "i74c00329e774fff8ddc00e6ce1fc84b",
+                    "originalPropertyKey": "lblColumn1Value",
+                    "propertyIndex": 13,
+                    "propertyKey": "lblColumn1Value",
+                    "pw": {
+                        "displayName": "Column1 Label Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.lblColumn2Value}\"",
+                    "group": "Context",
+                    "kuid": "c288f55fd8594284b9fa188c0b797245",
+                    "originalPropertyKey": "lblColumn2Value",
+                    "propertyIndex": 14,
+                    "propertyKey": "lblColumn2Value",
+                    "pw": {
+                        "displayName": "Column2 Label Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{$.c.lblColumn3Value}\"",
+                    "group": "Context",
+                    "kuid": "a4f1839eb9274ba0be02c92f021e4628",
+                    "originalPropertyKey": "lblColumn3Value",
+                    "propertyIndex": 15,
+                    "propertyKey": "lblColumn3Value",
+                    "pw": {
+                        "displayName": "Column3 Label Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.btnSearch}\"",
+                    "group": "Context",
+                    "kuid": "h9289cdde1ce4ebd9d5f4227420622a4",
+                    "originalPropertyKey": "btnSearch",
+                    "propertyIndex": 16,
+                    "propertyKey": "btnSearch",
+                    "pw": {
+                        "displayName": "Search Button",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":{\"ICSknLabelSSPRegular4981B015px\"},\"default\":{\"ICSknLabelSSPRegular4981B015px\"}}",
+                    "group": "Context",
+                    "kuid": "g1b1f013534546cf894b61b848bd9f5f",
+                    "originalPropertyKey": "sknSelectLabel",
+                    "propertyIndex": 17,
+                    "propertyKey": "sknSelectLabel",
+                    "pw": {
+                        "displayName": "Swift lookup select Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": " \"{$.c.emptyResponseMessage}\"",
+                    "group": "Context",
+                    "kuid": "c2bbffb215dd4b5bb5b2728656f2c299",
+                    "originalPropertyKey": "emptyResponseMessage",
+                    "propertyIndex": 18,
+                    "propertyKey": "emptyResponseMessage",
+                    "pw": {
+                        "displayName": "Empty table Message",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f8a7980515d343c7908abbefd14e4843",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Transfers",
+    "version": "1.0.0"
+}

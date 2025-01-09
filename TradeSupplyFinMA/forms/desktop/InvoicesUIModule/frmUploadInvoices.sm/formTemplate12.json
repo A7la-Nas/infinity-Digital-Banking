@@ -1,0 +1,1023 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s359249dd0d24f7b8ced1d8aedf84f42",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "btnManualUpload": {
+        "@class": "com.kony.gen.viz.model.component.KVizButton",
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_height_": {
+            "type": "string",
+            "value": "40dp"
+        },
+        "_left_": {
+            "type": "number",
+            "value": ""
+        },
+        "_margin_": [
+            6,
+            6,
+            6,
+            6
+        ],
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_right_": {
+            "type": "string",
+            "value": "0dp"
+        },
+        "_skin_": "sfbbba35ede4457b94eb681b72349b98",
+        "_text_": "Manual Upload",
+        "_top_": {
+            "type": "string",
+            "value": "30dp"
+        },
+        "_width_": {
+            "type": "string",
+            "value": "150dp"
+        },
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "string",
+            "value": "50%"
+        },
+        "containerweight": 100,
+        "contentalignment": 5,
+        "displaytext": true,
+        "focusskin": "sfbbba35ede4457b94eb681b72349b98",
+        "id": "btnManualUpload",
+        "info": null,
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "f3fb37de1c5f4368a064e26884b291b0",
+        "name": "kony.ui.Button",
+        "parent": "flxManualContent",
+        "pf": "frmUploadInvoices",
+        "responsiveData": {
+            "b3": {
+                "left": {
+                    "type": "string",
+                    "value": ""
+                }
+            }
+        },
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "snapshot": {
+            "md5": "yGSmwyjhxDTeJ0JtMKTBZTQJk38="
+        },
+        "tooltip": "Confirm & Submit",
+        "wType": "Button"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "activeMenuID": "SupplyChainFinance",
+        "activeSubMenuID": "Anchor",
+        "backFlag": true,
+        "backProperties": "[\r\n    {\r\n        \"btnBack\": \"${i18n{i18n.wealth.backtoDashboard}}\",\r\n        \"btnBacka11yLabel\": \"${i18n{i18n.wealth.backtoDashboard}}\",\r\n        \"callToAction\": {\r\n            \"appName\": \"TradeSupplyFinMA\",\r\n            \"form\": \"\",\r\n            \"module\": \"InvoicesUIModule\",\r\n            \"presentationControllerMethod\": \"loadScreenWithContext\",\r\n            \"params\": {\r\n                \"context\": \"backToDashboard\"\r\n            }\r\n        }\r\n    }\r\n]",
+        "flxContentTCCenter": {
+            "children": [
+                "flxContainer"
+            ],
+            "targetContainerInfo": true
+        },
+        "pageTitle": "",
+        "pageTitlei18n": "i18n.TradeSupplyFinance.UploadInvoices"
+    },
+    "flxBulkContent": {
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_bottom_": {
+            "type": "string",
+            "value": "95dp"
+        },
+        "_height_": {
+            "type": "ref",
+            "value": "preferred"
+        },
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_orientation_": 6,
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_percent_": true,
+        "_skin_": "s2f2394c36594f9f82f65de14066c874",
+        "_width_": {
+            "type": "string",
+            "value": "100%"
+        },
+        "allboxes": [],
+        "autogrowmode": 1,
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "string",
+            "value": "50%"
+        },
+        "children": [
+            "flxUploadBulkIcon",
+            "lblUploadBulk",
+            "lblUploadBulkHeader",
+            "lblNote",
+            "btnBulkUpload"
+        ],
+        "clipbounds": false,
+        "containerweight": 100,
+        "enablescrolling": true,
+        "id": "flxBulkContent",
+        "info": null,
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "h614e3a395b44f7a91eebcfdd8c88f28",
+        "layouttype": 4,
+        "name": "kony.ui.FlexContainer",
+        "parent": "flxBulkUpload",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "retainflowhorizontalalignment": false,
+        "snapgridsize": 10,
+        "snapshot": {
+            "md5": "uPPmAWxtqwCoVrN3kK7cFvhr5Yw="
+        },
+        "snaptogrid": true,
+        "wType": "FlexContainer",
+        "widgetalignment": 1,
+        "zindex": 2
+    },
+    "flxBulkUpload": {
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_height_": {
+            "type": "string",
+            "value": "374dp"
+        },
+        "_left_": {
+            "type": "string",
+            "value": "3%"
+        },
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_orientation_": 6,
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_percent_": true,
+        "_skin_": "s68de26bdced4cb093b1bbd6b10f9dcd",
+        "_top_": {
+            "type": "string",
+            "value": "0dp"
+        },
+        "_width_": {
+            "type": "string",
+            "value": "46.50%"
+        },
+        "allboxes": [],
+        "autogrowmode": 0,
+        "canUpdateUI": true,
+        "children": [
+            "flxBulkContent",
+            "flxDownload"
+        ],
+        "clipbounds": false,
+        "containerweight": 100,
+        "enablescrolling": true,
+        "id": "flxBulkUpload",
+        "info": null,
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "ef666d5bee96417b8f639ed62235645f",
+        "layouttype": 2,
+        "name": "kony.ui.FlexContainer",
+        "parent": "flxContainer",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "retainflowhorizontalalignment": false,
+        "snapgridsize": 10,
+        "snapshot": {
+            "md5": "XzLnXcHwFnzNVJYrfBovFfUVajE="
+        },
+        "snaptogrid": true,
+        "wType": "FlexContainer",
+        "widgetalignment": 1
+    },
+    "flxManualContent": {
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_bottom_": {
+            "type": "string",
+            "value": "95dp"
+        },
+        "_height_": {
+            "type": "ref",
+            "value": "preferred"
+        },
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_orientation_": 6,
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_percent_": true,
+        "_skin_": "s2f2394c36594f9f82f65de14066c874",
+        "_width_": {
+            "type": "string",
+            "value": "100%"
+        },
+        "allboxes": [],
+        "autogrowmode": 1,
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "string",
+            "value": "50%"
+        },
+        "children": [
+            "flxUploadManuallyIcon",
+            "lblUploadManually",
+            "lblUploadManuallyHeader",
+            "btnManualUpload"
+        ],
+        "clipbounds": false,
+        "containerweight": 100,
+        "enablescrolling": true,
+        "id": "flxManualContent",
+        "info": null,
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "gefc8f29c41e44e5ba01e29cefa39b3d",
+        "layouttype": 4,
+        "name": "kony.ui.FlexContainer",
+        "parent": "flxManualUpload",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "retainflowhorizontalalignment": false,
+        "snapgridsize": 10,
+        "snapshot": {
+            "md5": "uPPmAWxtqwCoVrN3kK7cFvhr5Yw="
+        },
+        "snaptogrid": true,
+        "wType": "FlexContainer",
+        "widgetalignment": 1,
+        "zindex": 2
+    },
+    "flxManualUpload": {
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_height_": {
+            "type": "string",
+            "value": "374dp"
+        },
+        "_left_": {
+            "type": "string",
+            "value": "2%"
+        },
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_orientation_": 6,
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_percent_": true,
+        "_skin_": "s68de26bdced4cb093b1bbd6b10f9dcd",
+        "_top_": {
+            "type": "string",
+            "value": "0dp"
+        },
+        "_width_": {
+            "type": "string",
+            "value": "46.50%"
+        },
+        "allboxes": [],
+        "autogrowmode": 0,
+        "canUpdateUI": true,
+        "children": [
+            "flxManualContent"
+        ],
+        "clipbounds": false,
+        "containerweight": 100,
+        "enablescrolling": true,
+        "id": "flxManualUpload",
+        "info": null,
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "d7aa4674196943089d9722095c5f2c5c",
+        "layouttype": 3,
+        "name": "kony.ui.FlexContainer",
+        "parent": "flxContainer",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "retainflowhorizontalalignment": false,
+        "snapgridsize": 10,
+        "snapshot": {
+            "md5": "rsgpfU+CFri9eXGXvy8cwtmBx2Q="
+        },
+        "snaptogrid": true,
+        "wType": "FlexContainer",
+        "widgetalignment": 1,
+        "zindex": 2
+    },
+    "flxUploadBulkIcon": {
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_height_": {
+            "type": "string",
+            "value": "21dp"
+        },
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_orientation_": 6,
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_percent_": true,
+        "_skin_": "s94cdb65efdd4952844640b768507380",
+        "_top_": {
+            "type": "string",
+            "value": "0dp"
+        },
+        "_width_": {
+            "type": "string",
+            "value": "21dp"
+        },
+        "allboxes": [],
+        "autogrowmode": 0,
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "string",
+            "value": "50%"
+        },
+        "children": [
+            "lblUploadBulkIcon"
+        ],
+        "clipbounds": false,
+        "containerweight": 100,
+        "enablescrolling": true,
+        "id": "flxUploadBulkIcon",
+        "info": null,
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "c26d632f6a174c6bb74cdeec959c9e3e",
+        "layouttype": 2,
+        "name": "kony.ui.FlexContainer",
+        "parent": "flxBulkContent",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "retainflowhorizontalalignment": false,
+        "snapgridsize": 10,
+        "snapshot": {
+            "md5": "KFkGBOc0aLEkrzhMUolQAZP1eig="
+        },
+        "snaptogrid": true,
+        "wType": "FlexContainer",
+        "widgetalignment": 1
+    },
+    "flxUploadManuallyIcon": {
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_height_": {
+            "type": "string",
+            "value": "21dp"
+        },
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_orientation_": 6,
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_percent_": true,
+        "_skin_": "s94cdb65efdd4952844640b768507380",
+        "_top_": {
+            "type": "string",
+            "value": "0dp"
+        },
+        "_width_": {
+            "type": "string",
+            "value": "21dp"
+        },
+        "allboxes": [],
+        "autogrowmode": 0,
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "string",
+            "value": "50%"
+        },
+        "children": [
+            "lblUploadManuallyIcon"
+        ],
+        "clipbounds": false,
+        "containerweight": 100,
+        "enablescrolling": true,
+        "id": "flxUploadManuallyIcon",
+        "info": null,
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "f9ef00f3b2d9461fa39a99d5304f23a8",
+        "layouttype": 2,
+        "name": "kony.ui.FlexContainer",
+        "parent": "flxManualContent",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "retainflowhorizontalalignment": false,
+        "snapgridsize": 10,
+        "snapshot": {
+            "md5": "KFkGBOc0aLEkrzhMUolQAZP1eig="
+        },
+        "snaptogrid": true,
+        "wType": "FlexContainer",
+        "widgetalignment": 1
+    },
+    "id": "formTemplate12",
+    "imgOR": {
+        "@class": "com.kony.gen.viz.model.component.KVizImage2",
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_base64_": null,
+        "_height_": {
+            "type": "string",
+            "value": "30dp"
+        },
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_right_": {
+            "type": "string",
+            "value": "0dp"
+        },
+        "_skin_": "s57c4543dedd4ad5b268bdea8e1babc7",
+        "_src_": "or_circle.png",
+        "_width_": {
+            "type": "string",
+            "value": "30dp"
+        },
+        "canUpdateUI": true,
+        "centery": {
+            "type": "string",
+            "value": "50%"
+        },
+        "containerweight": 100,
+        "id": "imgOR",
+        "imagescalemode": 1,
+        "info": null,
+        "invokedProperty": "src",
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "b9f9a34271f742f692314ce032e0b236",
+        "name": "kony.ui.Image2",
+        "parent": "flxOR",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "snapshot": {
+            "md5": "7pQRBzswnlNEDsecw4RaMlBFEcU="
+        },
+        "srcType": 1,
+        "wType": "Image",
+        "widgetalignment": 5
+    },
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f34e911ba0a04d9c99ce0ec29fab7d28",
+    "lblUploadBulk": {
+        "@class": "com.kony.gen.viz.model.component.KVizLabel",
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_height_": {
+            "type": "ref",
+            "value": "preferred"
+        },
+        "_i18n_text_": "i18n.WireTransfers.Information",
+        "_left_": {
+            "type": "string",
+            "value": "0"
+        },
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_skin_": "s0c6b7dec39b42f18d466408c415324c",
+        "_text_": "",
+        "_top_": {
+            "type": "string",
+            "value": "20dp"
+        },
+        "_width_": {
+            "type": "ref",
+            "value": "preferred"
+        },
+        "_wrapping_": 2,
+        "android": {
+            "textStyle": {
+                "letterSpacing": 0,
+                "strikeThrough": false
+            }
+        },
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "string",
+            "value": "50%"
+        },
+        "containerweight": 100,
+        "contentalignment": 4,
+        "id": "lblUploadBulk",
+        "info": null,
+        "ipad": {
+            "psp": {
+                "wrapping": 2
+            }
+        },
+        "iphone": {
+            "psp": {
+                "wrapping": 2
+            }
+        },
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "d52511a0d18147e588b488420bda00a9",
+        "name": "kony.ui.Label",
+        "parent": "flxBulkContent",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "snapshot": {
+            "md5": "L7lQrL32WNFMMXrSmnCieyXjiCs="
+        },
+        "texti18n": "i18n.bulkwire.uploadbulkfile",
+        "tooltip": "",
+        "wType": "Label"
+    },
+    "lblUploadBulkHeader": {
+        "@class": "com.kony.gen.viz.model.component.KVizLabel",
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_height_": {
+            "type": "ref",
+            "value": "preferred"
+        },
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_skin_": "s8e46f2a16b74bc4bc77363f8ccf9f01",
+        "_text_": "Supported file types: XML, CSV",
+        "_top_": {
+            "type": "string",
+            "value": "10dp"
+        },
+        "_width_": {
+            "type": "ref",
+            "value": "preferred"
+        },
+        "_wrapping_": 2,
+        "android": {
+            "textStyle": {
+                "letterSpacing": 0,
+                "strikeThrough": false
+            }
+        },
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "string",
+            "value": "50%"
+        },
+        "containerweight": 100,
+        "contentalignment": 4,
+        "id": "lblUploadBulkHeader",
+        "info": null,
+        "ipad": {
+            "psp": {
+                "wrapping": 2
+            }
+        },
+        "iphone": {
+            "psp": {
+                "wrapping": 2
+            }
+        },
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "ibcd11bc38c84bd28a050a693b180def",
+        "name": "kony.ui.Label",
+        "parent": "flxBulkContent",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "snapshot": {
+            "md5": "kGnvvnxHFr+sVZLRpU5J7mFXPK0="
+        },
+        "tooltip": "",
+        "wType": "Label"
+    },
+    "lblUploadBulkIcon": {
+        "@class": "com.kony.gen.viz.model.component.KVizLabel",
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_height_": {
+            "type": "ref",
+            "value": "preferred"
+        },
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_skin_": "s8a45ceca1a84de2bbe377dfc6a1e8b2",
+        "_text_": "S",
+        "_width_": {
+            "type": "string",
+            "value": "34dp"
+        },
+        "_wrapping_": 2,
+        "android": {
+            "textStyle": {
+                "letterSpacing": 0,
+                "strikeThrough": false
+            }
+        },
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "string",
+            "value": "50%"
+        },
+        "centery": {
+            "type": "string",
+            "value": "50%"
+        },
+        "containerweight": 100,
+        "contentalignment": 4,
+        "id": "lblUploadBulkIcon",
+        "info": null,
+        "ipad": {
+            "psp": {
+                "wrapping": 2
+            }
+        },
+        "iphone": {
+            "psp": {
+                "wrapping": 2
+            }
+        },
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "f9009395cc654a4d811e4e44a9db0de4",
+        "name": "kony.ui.Label",
+        "parent": "flxUploadBulkIcon",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "snapshot": {
+            "md5": "kGnvvnxHFr+sVZLRpU5J7mFXPK0="
+        },
+        "tooltip": "",
+        "wType": "Label"
+    },
+    "lblUploadManually": {
+        "@class": "com.kony.gen.viz.model.component.KVizLabel",
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_height_": {
+            "type": "ref",
+            "value": "preferred"
+        },
+        "_i18n_text_": "i18n.WireTransfers.Information",
+        "_left_": {
+            "type": "string",
+            "value": "0"
+        },
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_skin_": "s0c6b7dec39b42f18d466408c415324c",
+        "_text_": "Upload Invoices Manually",
+        "_top_": {
+            "type": "string",
+            "value": "20dp"
+        },
+        "_width_": {
+            "type": "ref",
+            "value": "preferred"
+        },
+        "_wrapping_": 2,
+        "android": {
+            "textStyle": {
+                "letterSpacing": 0,
+                "strikeThrough": false
+            }
+        },
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "string",
+            "value": "50%"
+        },
+        "containerweight": 100,
+        "contentalignment": 4,
+        "id": "lblUploadManually",
+        "info": null,
+        "ipad": {
+            "psp": {
+                "wrapping": 2
+            }
+        },
+        "iphone": {
+            "psp": {
+                "wrapping": 2
+            }
+        },
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "d41471f4b96e4014bb3535b807a192a5",
+        "name": "kony.ui.Label",
+        "parent": "flxManualContent",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "snapshot": {
+            "md5": "L7lQrL32WNFMMXrSmnCieyXjiCs="
+        },
+        "tooltip": "",
+        "wType": "Label"
+    },
+    "lblUploadManuallyHeader": {
+        "@class": "com.kony.gen.viz.model.component.KVizLabel",
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_height_": {
+            "type": "ref",
+            "value": "preferred"
+        },
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_skin_": "s8e46f2a16b74bc4bc77363f8ccf9f01",
+        "_text_": "This will let you create each invoice individually",
+        "_top_": {
+            "type": "string",
+            "value": "10dp"
+        },
+        "_width_": {
+            "type": "ref",
+            "value": "preferred"
+        },
+        "_wrapping_": 2,
+        "android": {
+            "textStyle": {
+                "letterSpacing": 0,
+                "strikeThrough": false
+            }
+        },
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "string",
+            "value": "50%"
+        },
+        "containerweight": 100,
+        "contentalignment": 4,
+        "id": "lblUploadManuallyHeader",
+        "info": null,
+        "ipad": {
+            "psp": {
+                "wrapping": 2
+            }
+        },
+        "iphone": {
+            "psp": {
+                "wrapping": 2
+            }
+        },
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "e341902e93f843f28045be14d2daa97e",
+        "name": "kony.ui.Label",
+        "parent": "flxManualContent",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "snapshot": {
+            "md5": "kGnvvnxHFr+sVZLRpU5J7mFXPK0="
+        },
+        "tooltip": "",
+        "wType": "Label"
+    },
+    "lblUploadManuallyIcon": {
+        "@class": "com.kony.gen.viz.model.component.KVizLabel",
+        "DNDConfig": null,
+        "__UDWInstanceModelForRender__": true,
+        "_height_": {
+            "type": "ref",
+            "value": "preferred"
+        },
+        "_margin_": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_skin_": "s8a45ceca1a84de2bbe377dfc6a1e8b2",
+        "_text_": "S",
+        "_width_": {
+            "type": "string",
+            "value": "34dp"
+        },
+        "_wrapping_": 2,
+        "android": {
+            "textStyle": {
+                "letterSpacing": 0,
+                "strikeThrough": false
+            }
+        },
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "string",
+            "value": "50%"
+        },
+        "centery": {
+            "type": "string",
+            "value": "50%"
+        },
+        "containerweight": 100,
+        "contentalignment": 4,
+        "id": "lblUploadManuallyIcon",
+        "info": null,
+        "ipad": {
+            "psp": {
+                "wrapping": 2
+            }
+        },
+        "iphone": {
+            "psp": {
+                "wrapping": 2
+            }
+        },
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "defd76598a124bd8b76133ef4041c6a8",
+        "name": "kony.ui.Label",
+        "parent": "flxUploadManuallyIcon",
+        "pf": "frmUploadInvoices",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "snapshot": {
+            "md5": "kGnvvnxHFr+sVZLRpU5J7mFXPK0="
+        },
+        "tooltip": "",
+        "wType": "Label"
+    },
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "frmUploadInvoices",
+    "pf": "frmUploadInvoices",
+    "responsiveData": {
+        "b1": {
+            "backProperties": "{}"
+        },
+        "b3": {
+            "breadCrumbBackFlag": false,
+            "flag": false
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "fc759784eafa43d8805b40bd5e81b304",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

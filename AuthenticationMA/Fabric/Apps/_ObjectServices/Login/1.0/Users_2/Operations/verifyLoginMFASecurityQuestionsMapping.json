@@ -1,0 +1,46 @@
+{
+  "customCode" : {
+    "requestProcessorName" : "com.kony.dbputilities.mfa.preprocessors.VerifyLoginMFASecurityQuestionsPreprocessor",
+    "responseProcessorName" : "com.kony.dbputilities.mfa.postprocessors.VerifyLoginMFASecurityQuestionsPostProcessor"
+  },
+  "operationConfig" : {
+    "name" : "DBX_verifyCustomerSecurityQuestions9295",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"UserName\" outputpath=\"userName\"/></map></mapper>",
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "authAdminConsoleServices",
+      "serviceVersion" : "1.0",
+      "operationName" : "DBX_verifyCustomerSecurityQuestions"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Users_2",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"UserName\" outputpath=\"userName\"/></map></mapper>",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : true,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

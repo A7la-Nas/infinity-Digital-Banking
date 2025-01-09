@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_d2b620f16a4c4081b888a9e70e20ab9f": {
+        "id": "AS_AppEvents_d2b620f16a4c4081b888a9e70e20ab9f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f87b0d4553264c6da6a433702bcd5939",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true)\n\tkony.print(\"Testing JS Load\");\n\tvar isIOS13 =  (/(iPad|iPhone);.*CPU.*OS 13_\\d/i).test(navigator.userAgent);\n\tif(isIOS13){\n\t\tkony.application.setApplicationBehaviors({disableForceRepaint: true});\n\t}\n\trequire([\"ApprovalMatrixMA/SettingsNew/frmApprovalmatrix\"], function (){});\n\trequire([\"ApprovalMatrixMA/SettingsNew/frmApprovalmatrixController\"], function (){});\n\n\tvar moduleName = 'ApplicationManager';\n\trequire([moduleName], function(ApplicationManager){\n\tapplicationManager =  ApplicationManager.getApplicationManager();\n\tvar config = applicationManager.getConfigurationManager();\n\tif(performance.navigation.type===1){\n\t\tconfig.setBrowserRefreshProperty(\"true\");\n\t}\n\tvar sm = applicationManager.getStorageManager();\n\tvar langObjFromStorage = sm.getStoredItem(\"langObj\");\n\tif (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\n\t\tconfig.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\n\t\tconfig.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n\t} else {\n\t\tconfig.configurations.setItem(\"LOCALE\", \"en_US\");\n\t\tconfig.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n\t}\n\tkony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function(){}, function(){});\n\tdocument.body.addEventListener('contextmenu', function(e) {\n\t\te.preventDefault();        \n\t\talert(kony.i18n.getLocalizedString(\"i18n.general.rightclickdisabled\"));  // do something with fooModule\n\t})\n\t});",
+            "parentId": null
+        }]
+    }
+}

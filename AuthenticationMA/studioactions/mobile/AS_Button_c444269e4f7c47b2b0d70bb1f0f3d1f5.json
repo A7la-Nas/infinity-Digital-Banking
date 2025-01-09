@@ -1,0 +1,23 @@
+{
+    "AS_Button_c444269e4f7c47b2b0d70bb1f0f3d1f5": {
+        "id": "AS_Button_c444269e4f7c47b2b0d70bb1f0f3d1f5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginHID",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d2290ff3858d48938cbd19960c045a3a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_dc19e3107d594929812cf38d1235db4c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "const authModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthUIModule\");\nauthModule.presentationController.checkAppinit = true;\nauthModule.presentationController.navigateToMicroApp({\n  appName: \"AboutUsMA\",\n  friendlyName: \"InformationUIModule/frmSupport\"\n});",
+            "callbackType": null
+        }]
+    }
+}

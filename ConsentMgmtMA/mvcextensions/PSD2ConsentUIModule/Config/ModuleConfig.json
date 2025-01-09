@@ -1,0 +1,48 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "PSD2ConsentUIModule/PresentationControllers/PresentationController"
+        },
+        "Mobile": {
+            "PresentationControllerClass": "PSD2ConsentUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": []
+        }
+    },
+    "Forms": {
+        "desktop": {
+            "frmManageAccountAccess": {
+                "Controller": "PSD2ConsentUIModule/frmManageAccountAccessController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "PSD2ConsentUIModule/frmManageAccountAccess",
+                "friendlyName": "frmManageAccountAccess"
+            }
+        },
+        "mobile": {
+            "frmSelectTPP": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "PSD2ConsentUIModule/frmSelectTPPController",
+                "FormName": "PSD2ConsentUIModule/frmSelectTPP",
+                "friendlyName": "frmSelectTPP"
+            },
+            "frmTppBankNameSelection": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "PSD2ConsentUIModule/frmTppBankNameSelectionController",
+                "FormName": "PSD2ConsentUIModule/frmTppBankNameSelection",
+                "friendlyName": "frmTppBankNameSelection"
+            },
+            "frmTppAccountDetails": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "PSD2ConsentUIModule/frmTppAccountDetailsController",
+                "FormName": "PSD2ConsentUIModule/frmTppAccountDetails",
+                "friendlyName": "frmTppAccountDetails"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "PSD2ConsentUIModule"
+}

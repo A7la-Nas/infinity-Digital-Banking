@@ -1,0 +1,225 @@
+{
+    "classname": "uploadFiles3",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f88abc4831904cfeae38d2f126d81779",
+                    "paramList": [
+                        {
+                            "name": "file"
+                        }
+                    ],
+                    "propertyKey": "updateDocFile",
+                    "pw": {
+                        "displayName": "updateDocFile",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a44649d74cb24ca3a0ea90288c243ced",
+                    "paramList": [],
+                    "propertyKey": "getData",
+                    "pw": {
+                        "displayName": "getData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bee7b5705ef943df94ae5b1f5af30384",
+                    "paramList": [],
+                    "propertyKey": "setData",
+                    "pw": {
+                        "displayName": "setData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b1be8c40d09a4a27bf1db245691cf882",
+                    "paramList": [],
+                    "propertyKey": "updateDescription",
+                    "pw": {
+                        "displayName": "updateDescription",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ef1a48ab55cc4d9fb2ad38f217216cdf",
+                    "paramList": [],
+                    "propertyKey": "onSubmit",
+                    "pw": {
+                        "displayName": "onSubmit",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bab4efa5f359405a8d8a8df234be949f",
+                    "paramList": [],
+                    "propertyKey": "setReadOnly",
+                    "pw": {
+                        "displayName": "setReadOnly",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b0bfcc2e53f94d7fb3486d7c3a5c3c21",
+                    "paramList": [],
+                    "propertyKey": "setReadWrite",
+                    "pw": {
+                        "displayName": "setReadWrite",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h6ba05cd3c3041ab9bca6115a2ff9c8e",
+                    "paramList": [],
+                    "propertyKey": "setCommonError",
+                    "pw": {
+                        "displayName": "setCommonError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ae5b2ba9a95145e4837037b979de6e34",
+                    "paramList": [],
+                    "propertyKey": "removeAllDocs",
+                    "pw": {
+                        "displayName": "removeAllDocs",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b0bda003eaf74bf193a88f6a9493d5d0",
+                    "paramList": [],
+                    "propertyKey": "attachmentFocus",
+                    "pw": {
+                        "displayName": "attachmentFocus",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "db370f21e89648ca885ab90894a7c195",
+                    "paramList": [],
+                    "propertyKey": "attachmentsetActive",
+                    "pw": {
+                        "displayName": "attachmentsetActive",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Read",
+                    "defaultValue": false,
+                    "group": "General",
+                    "kuid": "c6e49aac4af94e07acc1a789f66af624",
+                    "originalPropertyKey": "inErrorState",
+                    "propertyIndex": 1,
+                    "propertyKey": "inErrorState",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Component Error State",
+                        "toolTip": "Component Error State",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 0,
+                    "group": "General",
+                    "kuid": "jcb0ac03826f4c60999c1445503bf0b0",
+                    "originalPropertyKey": "maxFilesCount",
+                    "propertyIndex": 2,
+                    "propertyKey": "maxFilesCount",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Max Files to be added",
+                        "toolTip": "Max Files to be added",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Read",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "bdb2eaaa8d014cfdab56bc76cfaeda61",
+                    "originalPropertyKey": "aaa",
+                    "propertyIndex": 3,
+                    "propertyKey": "aaa",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "aaa",
+                        "toolTip": "aaa",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "u0d215d3e72446e18b66f89a93e1ff8b",
+                    "type": "boolean",
+                    "value": "true/false"
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.ArrangementsMA",
+    "version": "1.0.0"
+}

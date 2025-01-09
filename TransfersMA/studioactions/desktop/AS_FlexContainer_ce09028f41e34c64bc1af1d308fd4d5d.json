@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_ce09028f41e34c64bc1af1d308fd4d5d": {
+        "id": "AS_FlexContainer_ce09028f41e34c64bc1af1d308fd4d5d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "eventPayload"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segTransfersToMobile",
+            "type": "templates",
+            "platform": "",
+            "KUID": "c20a6c2d1c594ebbaca400e9606d6136"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_cd2fdc790c8c4ac5ad8095e6c5f9be72",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.navigationToDropdown(eventobject, eventPayload, context);",
+            "parentId": null
+        }]
+    }
+}

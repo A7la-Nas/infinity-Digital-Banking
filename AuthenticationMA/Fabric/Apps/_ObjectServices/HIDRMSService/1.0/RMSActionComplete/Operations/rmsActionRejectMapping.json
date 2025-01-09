@@ -1,0 +1,48 @@
+{
+  "operationConfig" : {
+    "name" : "actionReject3779",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"tm_action_id\" outputpath=\"tm_action_id\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"\" outputpath=\"RMSActionComplete\">\n            <set-param inputpath=\"error_code\" outputpath=\"error_code\"/>\n            <set-param inputpath=\"error_message\" outputpath=\"error_message\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"RMSActionComplete\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"RMSThreatMarkAPI (1.0).actionReject\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:RMSActionComplete:tm_action_id:\",\"to\":\"target:tm_action_id:\",\"fromPort\":\"source:RMSActionComplete:tm_action_id:\",\"toPort\":\"target:tm_action_id:\",\"visible\":true,\"common\":true}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"RMSActionComplete\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"RMSThreatMarkAPI (1.0).actionReject\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:error_code:\",\"to\":\"target:RMSActionComplete:error_code:\",\"fromPort\":\"source:error_code:\",\"toPort\":\"target:RMSActionComplete:error_code:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:error_message:\",\"to\":\"target:RMSActionComplete:error_message:\",\"fromPort\":\"source:error_message:\",\"toPort\":\"target:RMSActionComplete:error_message:\",\"visible\":true,\"common\":true}]}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "RMSThreatMarkAPI",
+      "serviceVersion" : "1.0",
+      "operationName" : "actionReject"
+    },
+    "relationshipHierarchyMapping" : {
+      "name" : "RMSActionComplete",
+      "children" : [ ],
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"request_in\" outputpath=\"request_out\">    <set-param inputpath=\"tm_action_id\" outputpath=\"tm_action_id\"/>  </map></mapper>",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"\" outputpath=\"RMSActionComplete\">\n            <set-param inputpath=\"error_code\" outputpath=\"error_code\"/>\n            <set-param inputpath=\"error_message\" outputpath=\"error_message\"/>\n        </map>\n    </map>\n</mapper>\n",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"RMSActionComplete\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"RMSThreatMarkAPI (1.0).actionReject\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:RMSActionComplete:tm_action_id:\",\"to\":\"target:tm_action_id:\",\"fromPort\":\"source:RMSActionComplete:tm_action_id:\",\"toPort\":\"target:tm_action_id:\",\"visible\":true,\"common\":true},{\"from\":\"source\",\"to\":\"source:RMSActionComplete\",\"fromPort\":\"source\",\"toPort\":\"source:RMSActionComplete\",\"visible\":true,\"common\":false},{\"from\":\"source:RMSActionComplete\",\"to\":\"source:RMSActionComplete:t_p_fields\",\"fromPort\":\"source:RMSActionComplete\",\"toPort\":\"source:RMSActionComplete:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"source:RMSActionComplete:t_p_fields\",\"to\":\"source:RMSActionComplete:application_id:\",\"fromPort\":\"source:RMSActionComplete:t_p_fields\",\"toPort\":\"source:RMSActionComplete:application_id:\",\"visible\":true,\"common\":false},{\"from\":\"source:RMSActionComplete:t_p_fields\",\"to\":\"source:RMSActionComplete:channel_id:\",\"fromPort\":\"source:RMSActionComplete:t_p_fields\",\"toPort\":\"source:RMSActionComplete:channel_id:\",\"visible\":true,\"common\":false},{\"from\":\"source:RMSActionComplete:t_p_fields\",\"to\":\"source:RMSActionComplete:error_code:\",\"fromPort\":\"source:RMSActionComplete:t_p_fields\",\"toPort\":\"source:RMSActionComplete:error_code:\",\"visible\":true,\"common\":false},{\"from\":\"source:RMSActionComplete:t_p_fields\",\"to\":\"source:RMSActionComplete:error_message:\",\"fromPort\":\"source:RMSActionComplete:t_p_fields\",\"toPort\":\"source:RMSActionComplete:error_message:\",\"visible\":true,\"common\":false},{\"from\":\"source:RMSActionComplete:t_p_fields\",\"to\":\"source:RMSActionComplete:tm_action_id:\",\"fromPort\":\"source:RMSActionComplete:t_p_fields\",\"toPort\":\"source:RMSActionComplete:tm_action_id:\",\"visible\":true,\"common\":false},{\"from\":\"source:RMSActionComplete:t_p_fields\",\"to\":\"source:RMSActionComplete:app_action_id:\",\"fromPort\":\"source:RMSActionComplete:t_p_fields\",\"toPort\":\"source:RMSActionComplete:app_action_id:\",\"visible\":true,\"common\":false},{\"from\":\"target\",\"to\":\"target:t_p_parameters\",\"fromPort\":\"target\",\"toPort\":\"target:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:app_action_id:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:app_action_id:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:application_id:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:application_id:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:channel_id:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:channel_id:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:tm_action_id:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:tm_action_id:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"RMSActionComplete\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"RMSThreatMarkAPI (1.0).actionReject\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:error_code:\",\"to\":\"target:RMSActionComplete:error_code:\",\"fromPort\":\"source:error_code:\",\"toPort\":\"target:RMSActionComplete:error_code:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:error_message:\",\"to\":\"target:RMSActionComplete:error_message:\",\"fromPort\":\"source:error_message:\",\"toPort\":\"target:RMSActionComplete:error_message:\",\"visible\":true,\"common\":true}]}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

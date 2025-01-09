@@ -1,0 +1,31 @@
+
+{
+    "NSContactsUsageDescription"   : "This will let you choose contacts from your phone book", 
+    "NSAppTransportSecurity" :
+    {
+        "NSAllowsArbitraryLoads" : true ,
+        "NSExceptionDomains" :
+            {
+                "example.com" :
+                    {
+                        "NSIncludesSubdomains" : true ,
+                        "NSExceptionAllowsInsecureHTTPLoads" : true
+                    }
+            }
+    } ,
+    "NSCameraUsageDescription" : "This will let you capture the image using device camera",
+	"NSFaceIDUsageDescription" : "Do you want to allow ‘Kony Mobile Banking' to use FaceID?",
+	"NSPhotoLibraryUsageDescription" : "This will let you upload photos available on your device",
+	"NSMicrophoneUsageDescription" : "Your microphone will let you use Voice Commands to Interact with ChatBot",
+	"NSLocationWhenInUseUsageDescription" : "- We will use your location to find nearby ATMs or Branches and for sending offers",
+	"NSLocationAlwaysUsageDescription":"- We will use your location to find nearby ATMs or Branches and for sending offers",
+    "NSSpeechRecognitionUsageDescription":"This will let you use Voice Commands to Interact with ChatBot",
+    "NSCalendarsUsageDescription":"This app need to access your calendar events",
+    "NSSiriUsageDescription":"This app need to access your siri.",
+    "fileExcludeFromBackup" : true,
+    "UISupportedInterfaceOrientations": [
+        UIInterfaceOrientationPortrait,
+        UIInterfaceOrientationPortraitUpsideDown
+    ]
+}
+

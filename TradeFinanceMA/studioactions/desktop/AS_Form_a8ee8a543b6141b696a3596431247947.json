@@ -1,0 +1,31 @@
+{
+    "AS_Form_a8ee8a543b6141b696a3596431247947": {
+        "id": "AS_Form_a8ee8a543b6141b696a3596431247947",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "contextObj": {
+            "name": "frmIssuance",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h79049e6323d465097e302c04babb409"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__a65bd58d8c7648db989b75d57185a30f",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBreakpointChange",
+            "display": "onBreakpointChange",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

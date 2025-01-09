@@ -1,0 +1,226 @@
+{
+    "classname": "activateDeactivateP2P",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c49973929cd841b09fb366360fc934d3",
+                    "paramList": [
+                        {
+                            "name": "err"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "g1a59b68e5a14111a8907c3ba487c826",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ec1d4d8d042046b081b2edf187eb6758",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "g1a59b68e5a14111a8907c3ba487c826",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "gc2a83cd05d14046893b02d77f740d09",
+                    "paramList": [
+                        {
+                            "name": "text"
+                        }
+                    ],
+                    "propertyIndex": 2,
+                    "propertyKey": "setHeaderLabel",
+                    "pw": {
+                        "displayName": "setHeaderLabel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "g1a59b68e5a14111a8907c3ba487c826",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bdcff2758331438188aa7d68c22e2eb1",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onCancelTransfer",
+                    "pw": {
+                        "displayName": "onCancelTransfer",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "g1a59b68e5a14111a8907c3ba487c826",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i44fd1d7103748ec87eb92f2ecff94e0",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyIndex": 4,
+                    "propertyKey": "setAcknowledgementData",
+                    "pw": {
+                        "displayName": "setAcknowledgementData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "g1a59b68e5a14111a8907c3ba487c826",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a4c03f9fd0464a43a3c0a1c0b09f74e4",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyIndex": 5,
+                    "propertyKey": "failAckService",
+                    "pw": {
+                        "displayName": "failAckService",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "g1a59b68e5a14111a8907c3ba487c826",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"flxInputs\": {\n    \"headerLabelActivate\": {\n      \"default\": \"${i18n{i18n.P2P.ActivatePersontoPerson}}\"\n    },\n    \"headerLabelDeactivate\": {\n      \"default\": \"${i18n{i18n.P2P.deactivatePersonToPerson}}\"\n    },\n    \"lblActivateHeader\": {\n      \"default\": \"${i18n{i18n.PayAPerson.P2PSettings}}\"\n    },\n    \"lblName\": {\n      \"BP1\": \"${i18n{i18n.userManagement.Name}}\",\n      \"default\": \"${i18n{i18n.P2P.RegisteredName}}\"\n    },\n    \"tbxNameValue\": \"${Collection.ActivateP2P.name}\",\n    \"lblContactType\": {\n      \"BP1\": \"${i18n{i18n.ChequeBookReq.SelectType}}\",\n      \"default\": \"${i18n{i18n.P2P.SelectContactType}}\"\n    },\n    \"primaryContactType\": \"Phone Number\",\n    \"contactTypeSegment\": \"false\",\n    \"lblRadioValue1\": {\n      \"default\": \"${i18n{i18n.ProfileManagement.PhoneNumbers}}\"\n    },\n    \"lblRadioValue2\": {\n      \"default\": \"${i18n{i18n.ProfileManagement.consent.EMAIL}}\"\n    },\n    \"lblRadioValue3\": {\n      \"default\": \"${i18n{i18n.UnifiedAddBeneficiary.NationalId}}\"\n    },\n    \"lblPhone\": {\n      \"default\": \"${i18n{i18n.CardManagement.RegisteredPhoneNo}}\"\n    },\n    \"lblSelectedValue\": \"${Collection.P2PContextJSON.selectedPhoneNumber}\",\n    \"lblEmail\": {\n      \"default\": \"${i18n{i18n.P2P.RegisteredEmailAddress}}\"\n    },\n    \"lblSelectedEmail\": \"${Collection.P2PContextJSON.selectedEmail}\",\n    \"lblNationalID\": {\n      \"default\": \"${i18n{i18n.P2P.NationalID}}\"\n    },\n    \"lblTaxID\": {\n      \"default\": \"${i18n{i18n.common.taxId}}\"\n    },\n    \"lblABNNumber\": {\n      \"default\": \"${i18n{i18n.P2P.ABNNumber}}\"\n    },\n    \"tbxNationalID\": \"${Collection.P2PContextJSON.tbxNationalID}\",\n    \"currency\": \"${Collection.P2PContextJSON.currency}\",\n    \"currencyUI\": \"${Collection.P2PContextJSON.currencyUI}\",\n    \"lblDepositAccount\": {\n      \"default\": \"${i18n{i18n.P2P.DefaultDeposiAccount}}\"\n    },\n    \"lblSelectedAccount\": \"${Collection.P2PContextJSON.formattedDeposiAccount}\",\n    \"lblTransferLimit\": {\n      \"BP1\": \"${i18n{i18n.P2P.TransferLimit}}\",\n      \"default\": \"${i18n{i18n.P2P.TransferLimit}}\"\n    },\n    \"lblTransferLimit1\": {\n      \"BP1\": \"${i18n{i18n.ActivateP2P.transferLimit1}}\",\n      \"default\": \"${i18n{i18n.ActivateP2P.transferLimit1}}\"\n    },\n    \"lblTransferLimit2\": {\n      \"default\": \"${i18n{i18n.ActivateP2P.transferLimit2}}\"\n    },\n    \"segCurrency1\": \"${Collection.ActivateP2P.currency}\",\n    \"segCurrency2\": \"${Collection.ActivateP2P.currency}\",\n    \"tbxAmount1\": \"${Collection.P2PContextJSON.transferLimit}\",\n    \"tbxAmount2\": \"${Collection.P2PContextJSON.tbxAmount2}\",\n    \"lblsegmentPhone\": \"${Collection.ActivateP2P.phoneNumber}\",\n    \"lblsegmentEmail\": \"${Collection.ActivateP2P.Value}\",\n    \"lblActivateCancelMsg\": \"${i18n{i18n.P2P.activateCancelMsg}}\",\n    \"lblDeactivateCancelMsg\": \"${i18n{i18n.P2P.deactivateCancelMsg}}\",\n    \"btnActivate\": {\n      \"default\": \"${i18n{i18n.userManagement.Continue}}\"\n    },\n    \"btnCancel\": {\n      \"default\": \"${i18n{i18n.transfers.Cancel}}\"\n    }\n  },\n  \"flxActivate\": {\n    \"lblHeader\": {\n      \"default\": \"${i18n{i18n.P2P.activatePoint1}}\"\n    },\n    \"lblField1\": {\n      \"default\": \"${i18n{i18n.P2P.activatePoint11}}\"\n    },\n    \"lblField2\": {\n      \"default\": \"${i18n{i18n.P2P.activatePoint2}}\"\n    },\n    \"lblField3\": {\n      \"default\": \"${i18n{i18n.P2P.activatePoint3}}\"\n    },\n    \"lblField4\": {\n      \"default\": \"${i18n{i18n.P2P.activatePoint4}}\"\n    },\n    \"lblAccept\": {\n      \"default\": \"${i18n{i18n.P2P.TC}}\"\n    },\n    \"btnT&C\": {\n      \"default\": \"${i18n{i18n.common.TnC}}\"\n    },\n    \"btnActivated\": {\n      \"default\": \"${i18n{i18n.userManagement.activate}}\"\n    },\n    \"btnActivateCancel\": {\n      \"default\": \"${i18n{i18n.transfers.Cancel}}\"\n    }\n  },\n  \"flxDeactivate\": {\n    \"lblHeaderDeactivate\": {\n      \"default\": \"${i18n{i18n.p2p.deactivateP2pTitle}}\"\n    },\n    \"lblField11\": {\n      \"default\": \"${i18n{i18n.p2p.deactivateP2pGuidelineOne}}\"\n    },\n    \"lblField12\": {\n      \"default\": \"${i18n{i18n.p2p.deactivateP2pGuidelineTwo}}\"\n    },\n    \"lblField13\": {\n      \"default\": \"${i18n{i18n.P2P.DeactivatePoint3}}\"\n    },\n    \"lblField14\": {\n      \"default\": \"${i18n{i18n.P2P.DeactivatePoint4}}\"\n    },\n    \"btnDectivated\": {\n      \"default\": \"${i18n{i18n.transfers.Confirm}}\"\n    },\n    \"btnDeactivateCancel\": {\n      \"default\": \"${i18n{i18n.transfers.Cancel}}\"\n    }\n  },\n  \"segments\": {\n    \"segDepositAccountList\": {\n      \"segmentMasterData\": \"${Collection.DigitalArrangements}\",\n      \"segmentUI\": {\n        \"lblName\": \"${segmentMasterData.accountName}\",\n        \"imgIcon\": \"${segmentMasterData.personalIcon}\",\n        \"imgBank\": \"${segmentMasterData.bankIcon}\"\n      }\n    }\n  },\n  \"segDropdownContactType\": {\n    \"segmentMasterData\": \"${Collection.contactType}\",\n    \"segmentUI\": {\n      \"lblListValue\": \"Phone Number, Email, National ID, Tax ID, ABN Number\"\n    },\n    \"backendMapping\": {\n      \"currency\": \"${segmentMasterData.contactType}\"\n    }\n  },\n  \"segDropdownCurrencyList1\": {\n    \"segmentMasterData\": \"${Collection.currency}\",\n    \"segmentUI\": {\n      \"lblListValue\": \"$ USD,€ EUR,₹ INR\"\n    },\n    \"backendMapping\": {\n      \"currency\": \"${segmentMasterData.currency}\"\n    }\n  },\n  \"segDropdownCurrencyList2\": {\n    \"segmentMasterData\": \"${Collection.currency}\",\n    \"segmentUI\": {\n      \"lblListValue\": \"$ USD,€ EUR,₹ INR\"\n    },\n    \"backendMapping\": {\n      \"currency\": \"${segmentMasterData.currency}\"\n    }\n  }\n}",
+                    "group": "General",
+                    "kuid": "b394c54d7a1d44ffb452f6e5147ab610",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "g1a59b68e5a14111a8907c3ba487c826",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\n  \"getDepositAccounts\":{\n    \"Service\": \"Holdings\",\n    \"Object\": \"DigitalArrangements\",\n    \"Verb\": \"getList\",\n    \"Criteria\": {}   \n  },\n  \"validateNationalID\":{\n    \"Service\": \"\",\n    \"Object\": \"\",\n    \"Verb\": \"\",\n    \"Criteria\": {}   \n  },\n  \"validateTransferLimit\":{\n    \"Service\": \"\",\n    \"Object\": \"\",\n    \"Verb\": \"\",\n    \"Criteria\": {}   \n  },\n  \"ActivateP2P\": {\n    \"Service\": \"Holdings\",\n    \"Object\": \"ArrangementPreferences_1\",\n    \"Verb\": \"activateP2P\",\n    \"Criteria\": {}\n  },\n \"updateP2PDepositAccount\": {\n    \"Service\": \"Holdings\",\n    \"Object\": \"ArrangementPreferences_1\",\n    \"Verb\": \"updateP2PPreferredAccount\",\n    \"Criteria\": {\n      \"default_to_account_p2p\" : \"${Collection.P2PContextJSON.selectedAccountNumber}\"\n    }\n  },\n  \"DeactivateP2P\": {\n  \"Service\": \"Holdings\",\n  \"Object\" : \"ArrangementPreferences_1\",\n  \"Verb\"   : \"deactivateP2P\",\n  \"Criteria\": {}\n}\n  \n  \n}",
+                    "group": "General",
+                    "kuid": "b67633f7b8cb472fa962a8ac4fc3eaac",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "g1a59b68e5a14111a8907c3ba487c826",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "b2143014a55d4b0bad79c36c1d54e769",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "g1a59b68e5a14111a8907c3ba487c826",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"BP1\":640,\n  \"BP2\":1024,\n  \"BP3\":1366,\n  \"BP4\":1380\n}",
+                    "group": "General",
+                    "kuid": "j0e06d2b2234432d9080ef46fbc1a7e6",
+                    "originalPropertyKey": "breakpoints",
+                    "propertyIndex": 4,
+                    "propertyKey": "breakpoints",
+                    "pw": {
+                        "displayName": "Break Points",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "g1a59b68e5a14111a8907c3ba487c826",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Transfers",
+    "version": "1.0.0"
+}

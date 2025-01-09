@@ -1,0 +1,1250 @@
+{
+    "classname": "updatePassword",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "Check Password Status Service",
+                "Change OLB Password Service",
+                "Create OLB Password Service",
+                "Get Password Policies Service",
+                "Flex Skin",
+                "Label Skin",
+                "Button Skin",
+                "Textbox Skin",
+                "Richtext Skin",
+                "Label Text",
+                "Button Text",
+                "Textbox Placeholder Text",
+                "Image Source"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAObjects",
+                    "group": "Change OLB Password Service",
+                    "kuid": "ced829374e0f475ab81022acc5c74c3e",
+                    "originalPropertyKey": "objectServiceName2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAObjects",
+                    "group": "Create OLB Password Service",
+                    "kuid": "a96787e22157442088fcf60139a9cc69",
+                    "originalPropertyKey": "objectServiceName3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAActivationObjects",
+                    "group": "Get Password Policies Service",
+                    "kuid": "fdf5babcd01f42e2b2dfb952a21a0b62",
+                    "originalPropertyKey": "objectServiceName4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlx003e75Bg",
+                    "group": "Flex Skin",
+                    "kuid": "c1dc3bfbc71d401b8f2afe5253ad4306",
+                    "originalPropertyKey": "flxHeaderSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "flxHeaderSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxHeader Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblffffffSSP30px",
+                    "group": "Label Skin",
+                    "kuid": "dbde342fb26b4287a607a0bcbd4b718f",
+                    "originalPropertyKey": "lblScreenNameSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblScreenNameSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblScreenName Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknBtnffffffSSP",
+                    "group": "Button Skin",
+                    "kuid": "d0395b97c3614139a0ada52a318af2d7",
+                    "originalPropertyKey": "btnCancelSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnCancelSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnCancel Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknTbxFontSSPR",
+                    "group": "Textbox Skin",
+                    "kuid": "d6a7ec5204f944cfb000e6d596fb3423",
+                    "originalPropertyKey": "tbxCurrentPasswordSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "tbxCurrentPasswordSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tbxCurrentPassword Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknrtxfd",
+                    "group": "Richtext Skin",
+                    "kuid": "c29ba264094248fabd8434eedeb13311",
+                    "originalPropertyKey": "rtxRulesPwdSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "rtxRulesPwdSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "rtxRulesPwd Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.CreatePassword",
+                    "group": "Label Text",
+                    "kuid": "bffa5e62ba9d4f64b6f52daa99c55e50",
+                    "originalPropertyKey": "lblScreenNameCreatePasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblScreenNameCreatePasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblScreenName Create Password Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.Cancel",
+                    "group": "Button Text",
+                    "kuid": "i9d2d493397d47329b844d4eccb68c58",
+                    "originalPropertyKey": "btnCancelTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnCancelTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnCancel Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.EnterCurrentPassword",
+                    "group": "Textbox Placeholder Text",
+                    "kuid": "ceec9db2389e4c69a40ebeeeac698252",
+                    "originalPropertyKey": "tbxCurrentPasswordPlaceholderTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "tbxCurrentPasswordPlaceholderTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tbxCurrentPassword Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "backbutton.png",
+                    "group": "Image Source",
+                    "kuid": "g828d2dd48514b6f85ae932d2d5dcf10",
+                    "originalPropertyKey": "imgBackSrc",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "imgBackSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "imgBack Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAObjects",
+                    "group": "Check Password Status Service",
+                    "kuid": "i7b7ebd9e15640149e4b55e8f0497ba9",
+                    "originalPropertyKey": "objectServiceName1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAUser",
+                    "group": "Change OLB Password Service",
+                    "kuid": "be1690ae304e496f8f1ec96e0308c94e",
+                    "originalPropertyKey": "objectName2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAUser",
+                    "group": "Create OLB Password Service",
+                    "kuid": "c949312b62e44bf6baf584a3aa1a0df7",
+                    "originalPropertyKey": "objectName3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PasswordPolicy",
+                    "group": "Get Password Policies Service",
+                    "kuid": "e3cd98a6ec884cfc8d6cdab78d8598f5",
+                    "originalPropertyKey": "objectName4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxffffff",
+                    "group": "Flex Skin",
+                    "kuid": "f7ce85ea98634ac584fa0965e13e8a07",
+                    "originalPropertyKey": "flxMainContainerSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "flxMainContainerSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxMainContainer Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl42424215pxSSPR",
+                    "group": "Label Skin",
+                    "kuid": "c4109059910c42c3bee7e41ae83770fa",
+                    "originalPropertyKey": "lblTopMsgSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "lblTopMsgSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblTopMsg Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnBg003E75Border1pxRad4pxFont15pxFFFFFF",
+                    "group": "Button Skin",
+                    "kuid": "c3d6745ad2ff4acc86b0a2a00434b985",
+                    "originalPropertyKey": "btnCreatePasswordEnabledSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "btnCreatePasswordEnabledSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnCreatePassword Enabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopytbxBlueFocus",
+                    "group": "Textbox Skin",
+                    "kuid": "cfb155bdbfaa48d7bd7b854317d6a079",
+                    "originalPropertyKey": "tbxCurrentPasswordFocusSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "tbxCurrentPasswordFocusSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tbxCurrentPassword Focus Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.ChangePassword",
+                    "group": "Label Text",
+                    "kuid": "g197b4aa75754e3ea968bdbf9f77d1cd",
+                    "originalPropertyKey": "lblScreenNameChangePasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "lblScreenNameChangePasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblScreenName Change Password Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.CreatePassword",
+                    "group": "Button Text",
+                    "kuid": "a1ee6cbfb25b4c06a28cbcabba12c690",
+                    "originalPropertyKey": "btnCreatePasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "btnCreatePasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnCreatePassword Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.EnterNewPassword",
+                    "group": "Textbox Placeholder Text",
+                    "kuid": "e87ec0d73a884012aaaf8663c7e82c82",
+                    "originalPropertyKey": "tbxNewPasswordPlaceholderTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "tbxNewPasswordPlaceholderTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tbxNewPassword Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "viewactive.png",
+                    "group": "Image Source",
+                    "kuid": "e30ac71258d7403ba5b6434f8d884e8e",
+                    "originalPropertyKey": "imgCurrentPasswordVisiblityToggleTrueSrc",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "imgCurrentPasswordVisiblityToggleTrueSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "imgCurrentPasswordVisiblityToggle True Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAUser",
+                    "group": "Check Password Status Service",
+                    "kuid": "f640542ff9cc4c51af1b4d76844a69b0",
+                    "originalPropertyKey": "objectName1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "checkPasswordAuthenticatorForUser",
+                    "group": "Check Password Status Service",
+                    "kuid": "bc6dacaaf1b246e6a569f27bf282df77",
+                    "originalPropertyKey": "operationName1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "changeOLBPassword",
+                    "group": "Change OLB Password Service",
+                    "kuid": "edbbaab8ddb34fafa5942306970bad65",
+                    "originalPropertyKey": "operationName2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "createOLBPassword",
+                    "group": "Create OLB Password Service",
+                    "kuid": "acbe897bc4ab4f5aa91fe0ff73a2e354",
+                    "originalPropertyKey": "operationName3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "fetch",
+                    "group": "Get Password Policies Service",
+                    "kuid": "ac92c9afc01441b095bef1c4cac768e4",
+                    "originalPropertyKey": "operationName4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxGradientEEEEEEToFFFFFF",
+                    "group": "Flex Skin",
+                    "kuid": "e282477d08d94d8a8335471301b98b62",
+                    "originalPropertyKey": "flxGradientSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "flxGradientSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxGradient Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblEE0005SSPR114pct",
+                    "group": "Label Skin",
+                    "kuid": "f7412f6750744e5bb106b080aaa04c5c",
+                    "originalPropertyKey": "lblErrorMsgSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblErrorMsgSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblErrorMsg Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnBg003E75Border1pxRad4pxFont15pxFFFFFF",
+                    "group": "Button Skin",
+                    "kuid": "d06359f1a63a470883e2606d2a77bbb0",
+                    "originalPropertyKey": "btnChangePasswordEnabledSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "btnChangePasswordEnabledSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnChangePassword Enabled SkinSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknTbxFontSSPR",
+                    "group": "Textbox Skin",
+                    "kuid": "cc3fbcde7bb34a24873b356356f9d76c",
+                    "originalPropertyKey": "tbxNewPasswordSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "tbxNewPasswordSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tbxNewPassword Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.TopMessage",
+                    "group": "Label Text",
+                    "kuid": "acec568bd88e4d21957e58ac20c3cc5c",
+                    "originalPropertyKey": "lblTopMsgCreatePasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblTopMsgCreatePasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblTopMsg Create Password Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.ChangePassword",
+                    "group": "Button Text",
+                    "kuid": "add7f90d839f474c877c66add863f4ea",
+                    "originalPropertyKey": "btnChangePasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "btnChangePasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnChangePassword Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.ReEnterNewPassword",
+                    "group": "Textbox Placeholder Text",
+                    "kuid": "d2f81ae23a2141afb3f70a082a1d3f53",
+                    "originalPropertyKey": "tbxReEnterPasswordPlaceholderTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "tbxReEnterPasswordPlaceholderTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tbxReEnterPassword Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "view.png",
+                    "group": "Image Source",
+                    "kuid": "d4c98c27af6c4758830239136b2a4f81",
+                    "originalPropertyKey": "imgCurrentPasswordVisiblityToggleFalseSrc",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "imgCurrentPasswordVisiblityToggleFalseSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "imgCurrentPasswordVisiblityToggle False Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxffffff",
+                    "group": "Flex Skin",
+                    "kuid": "g797dbff561145d6a2c478cabb0a782d",
+                    "originalPropertyKey": "flxSuccessContainerSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "flxSuccessContainerSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "flxSuccessContainer Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknLbl2",
+                    "group": "Label Skin",
+                    "kuid": "ca02178193694dfd8a39cd77a9c79422",
+                    "originalPropertyKey": "lblCurrentPasswordSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "lblCurrentPasswordSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblCurrentPassword Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnBg003E75Border1pxRad4pxFont15pxFFFFFF",
+                    "group": "Button Skin",
+                    "kuid": "h9c8791f0475490ab177271fb8533290",
+                    "originalPropertyKey": "btnBack2SettingsSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "btnBack2SettingsSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnBack2Settings Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopytbxBlueFocus",
+                    "group": "Textbox Skin",
+                    "kuid": "cac71cab1e8a49e48a002f8c2ce09d31",
+                    "originalPropertyKey": "tbxNewPasswordFocusSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "tbxNewPasswordFocusSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tbxNewPassword Focus Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.TopMessage1",
+                    "group": "Label Text",
+                    "kuid": "j5663d68cbce42c9a4ab53153a3455ea",
+                    "originalPropertyKey": "lblTopMsgChangePasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "lblTopMsgChangePasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblTopMsg Change Password Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.Back2Settings",
+                    "group": "Button Text",
+                    "kuid": "cb54c702d73d4c26b35e3c3599029b0f",
+                    "originalPropertyKey": "btnBack2SettingsTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "btnBack2SettingsTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnBack2Settings Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "viewactive.png",
+                    "group": "Image Source",
+                    "kuid": "j9dad57d03ee4e0aaa63c800d7faef22",
+                    "originalPropertyKey": "imgNewPasswordVisiblityToggleTrueSrc",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "imgNewPasswordVisiblityToggleTrueSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "imgNewPasswordVisiblityToggle True Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknLbl2",
+                    "group": "Label Skin",
+                    "kuid": "a6ef8f49c3704f3bab23023ab1dadc5e",
+                    "originalPropertyKey": "lblNewPasswordSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "lblNewPasswordSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblNewPassword Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknTbxFontSSPR",
+                    "group": "Textbox Skin",
+                    "kuid": "cff58f86e05949cc95002905020b7be1",
+                    "originalPropertyKey": "tbxReEnterPasswordSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "tbxReEnterPasswordSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tbxReEnterPassword Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.ErrorMessage",
+                    "group": "Label Text",
+                    "kuid": "j70c5290168a48a8845d9c6ca608e0ae",
+                    "originalPropertyKey": "lblErrorMsgCreatePasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "lblErrorMsgCreatePasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblErrorMsg Create Password Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "view.png",
+                    "group": "Image Source",
+                    "kuid": "d874442337af4aaf865448ace2d70460",
+                    "originalPropertyKey": "imgNewPasswordVisiblityToggleFalseSrc",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "imgNewPasswordVisiblityToggleFalseSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "imgNewPasswordVisiblityToggle False Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtna0a0a0SSPReg26px",
+                    "group": "Button Skin",
+                    "kuid": "h34f94f2f5d54ac4b89329d643c4f57c",
+                    "originalPropertyKey": "btnCreatePasswordDisabledSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "btnCreatePasswordDisabledSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnCreatePassword Disabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknLbl2",
+                    "group": "Label Skin",
+                    "kuid": "deb14960abf24ec0b48debebf78df603",
+                    "originalPropertyKey": "lblReEnterPasswordSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "lblReEnterPasswordSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblReEnterPassword Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopytbxBlueFocus",
+                    "group": "Textbox Skin",
+                    "kuid": "e5ef7c198a8f4dfb889f9b724ea85e6a",
+                    "originalPropertyKey": "tbxReEnterPasswordFocusSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "tbxReEnterPasswordFocusSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tbxReEnterPassword Focus Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.ErrorMessage1",
+                    "group": "Label Text",
+                    "kuid": "e6c1342c19474e0aab766a33879463ba",
+                    "originalPropertyKey": "lblErrorMsgChangePasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "lblErrorMsgChangePasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblErrorMsg Change Password Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "greentick.png",
+                    "group": "Image Source",
+                    "kuid": "ec83661459544ce19746d284fbb70cb3",
+                    "originalPropertyKey": "imgReEnterPasswordMatchTrueSrc",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "imgReEnterPasswordMatchTrueSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "imgReEnterPasswordMatch True Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtna0a0a0SSPReg26px",
+                    "group": "Button Skin",
+                    "kuid": "b2f2833814494a89b9eae5ac8225fc04",
+                    "originalPropertyKey": "btnChangePasswordDisabledSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "btnChangePasswordDisabledSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "btnChangePassword Disabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknLblSSPRegFD",
+                    "group": "Label Skin",
+                    "kuid": "d7e703bda50e4a71accf848740639d27",
+                    "originalPropertyKey": "lblSecurityRequirementsSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "lblSecurityRequirementsSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSecurityRequirements Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.CurrentPassword",
+                    "group": "Label Text",
+                    "kuid": "f2d0322ae9b84b63a0488e1deb222615",
+                    "originalPropertyKey": "lblCurrentPasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "lblCurrentPasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblCurrentPassword Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "tickmark.png",
+                    "group": "Image Source",
+                    "kuid": "f89979b2ae564f7aa5fc449c5ef94b40",
+                    "originalPropertyKey": "imgReEnterPasswordMatchFalseSrc",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "imgReEnterPasswordMatchFalseSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "imgReEnterPasswordMatch False Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSSPSemiBold24px000000",
+                    "group": "Label Skin",
+                    "kuid": "e595623311934a74a2d92815413884c5",
+                    "originalPropertyKey": "lblSuccessHeaderSkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "lblSuccessHeaderSkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSuccessHeader Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.NewPassword",
+                    "group": "Label Text",
+                    "kuid": "g39717b1ff934c2083b9e03074eb4c44",
+                    "originalPropertyKey": "lblNewPasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "lblNewPasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblNewPassword Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "confirmation_tick.png",
+                    "group": "Image Source",
+                    "kuid": "ge47d4ea8ca64e2e89466ed436ed0d85",
+                    "originalPropertyKey": "imgSuccessSrc",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "imgSuccessSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "imgSuccess Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSPR16px727272",
+                    "group": "Label Skin",
+                    "kuid": "g31bcc8e08ad4b46a427561563b1111e",
+                    "originalPropertyKey": "lblSuccessBodySkn",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "lblSuccessBodySkn",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSuccessBody Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.ReEnterNewPassword",
+                    "group": "Label Text",
+                    "kuid": "ec588b2ade524d70a078b071e8e0ecb6",
+                    "originalPropertyKey": "lblReEnterPasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "lblReEnterPasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblReEnterPassword Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.SecurityRequirements",
+                    "group": "Label Text",
+                    "kuid": "ee639fcc6d5944baaf1910ffabb6ac79",
+                    "originalPropertyKey": "lblSecurityRequirementsTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "lblSecurityRequirementsTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSecurityRequirements Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.SuccessHeader",
+                    "group": "Label Text",
+                    "kuid": "ae15612e4ecd4cb5bc12eef1a5a2fabc",
+                    "originalPropertyKey": "lblSuccessHeaderCreatePasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "lblSuccessHeaderCreatePasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSuccessHeader Create Password Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.SuccessBody",
+                    "group": "Label Text",
+                    "kuid": "ea3a0c9b01c748789fa05e456095661b",
+                    "originalPropertyKey": "lblSuccessBodyCreatePasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 12,
+                    "propertyKey": "lblSuccessBodyCreatePasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSuccessBody Create Password Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.SuccessBody1",
+                    "group": "Label Text",
+                    "kuid": "b4218745ef4d46568d5d0344e49fcfdb",
+                    "originalPropertyKey": "lblSuccessBodyChangePasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 13,
+                    "propertyKey": "lblSuccessBodyChangePasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSuccessBody Change Password Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.CreateOrChangePassword.SuccessHeader1",
+                    "group": "Label Text",
+                    "kuid": "ae4110d2955b497089ff03b1ec726e73",
+                    "originalPropertyKey": "lblSuccessHeaderChangePasswordTxt",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 14,
+                    "propertyKey": "lblSuccessHeaderChangePasswordTxt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "lblSuccessHeader Change Password TextCreate Password Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u46398d52eff4cd7a404688f11b6d933",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.mb.sca.uniken",
+    "version": "1.0.0"
+}

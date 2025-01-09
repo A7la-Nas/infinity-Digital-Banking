@@ -1,0 +1,726 @@
+{
+    "classname": "contractList1",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ef31811ef5ac4ccf87d11d44f0214d94",
+                    "paramList": [
+                        {
+                            "name": "context"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bf4c35f6e4af4e23b7cf3ce51cc8c693",
+                    "paramList": [
+                        {
+                            "name": "scope"
+                        }
+                    ],
+                    "propertyKey": "setParentScope",
+                    "pw": {
+                        "displayName": "setParentScope",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d890b6b9d92f4d15b62968a53c86f597",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        },
+                        {
+                            "name": "editData"
+                        }
+                    ],
+                    "propertyKey": "initialiseComponent",
+                    "pw": {
+                        "displayName": "initialiseComponent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "cce51352a5304554af2872f8b77a5fb4",
+                    "paramList": [],
+                    "propertyKey": "getCIFDataForEdit",
+                    "pw": {
+                        "displayName": "getCIFDataForEdit",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e96eb52bb5474ac4a31fe2637a45c06a",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Skins",
+                "Search ",
+                "Images/Icons",
+                "Component Config",
+                "Data Grid",
+                "Customer Info",
+                "Action Buttons"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"{i.i18n.payments.linkPayee}\"}",
+                    "group": "General",
+                    "kuid": "g03380bf42124bedb19ae267296fa8f8",
+                    "originalPropertyKey": "blockTitle",
+                    "propertyIndex": 1,
+                    "propertyKey": "blockTitle",
+                    "pw": {
+                        "displayName": "Block Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"{i.i18n.payments.linkPayeeMessage}\"}",
+                    "group": "General",
+                    "kuid": "f05d9375b9fe4958ad058598b25a92ed",
+                    "originalPropertyKey": "subTitle",
+                    "propertyIndex": 1,
+                    "propertyKey": "subTitle",
+                    "pw": {
+                        "displayName": "Sub Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "ed4db1284e4d4540992088923c907fe9",
+                    "originalPropertyKey": "sknRowExpanded",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknRowExpanded",
+                    "pw": {
+                        "displayName": "Row expanded skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.billpay.searchForKeywords",
+                    "group": "Search ",
+                    "kuid": "h2204ea802a34a53a3cd2cff4a8502ab",
+                    "originalPropertyKey": "placeholderSearch",
+                    "propertyIndex": 1,
+                    "propertyKey": "placeholderSearch",
+                    "pw": {
+                        "displayName": "Placeholder ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images/Icons",
+                    "kuid": "e87df568a8d24e2dbfcb35822d266d46",
+                    "originalPropertyKey": "iconRowExpand",
+                    "propertyIndex": 1,
+                    "propertyKey": "iconRowExpand",
+                    "pw": {
+                        "displayName": "Row expand icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"BP1\":\"640\",\"BP2\":\"1024\",\"BP3\":\"1366\"}",
+                    "group": "Component Config",
+                    "kuid": "f0170c04bf5a4711b57efa12c041683d",
+                    "originalPropertyKey": "BREAKPTS",
+                    "propertyIndex": 1,
+                    "propertyKey": "BREAKPTS",
+                    "pw": {
+                        "displayName": "Breakpoints",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": \"{i.i18n.unifiedBeneficiary.Cancel}\",   \"action\": {     \"level\": \"Form\",     \"method\": \"cancelLinkPayee\"   } }",
+                    "group": "Action Buttons",
+                    "kuid": "b77d35e31462408e8c1c60cab2ad127f",
+                    "originalPropertyKey": "button1",
+                    "propertyIndex": 1,
+                    "propertyKey": "button1",
+                    "pw": {
+                        "displayName": "Button 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.rootPath.contracts}",
+                    "group": "Data Grid",
+                    "kuid": "ba9fd36ddd114d7a92f32a095cb39d4c",
+                    "originalPropertyKey": "responsePathDataGrid",
+                    "propertyIndex": 1,
+                    "propertyKey": "responsePathDataGrid",
+                    "pw": {
+                        "displayName": "Response Path",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "contractCustomers",
+                    "group": "Customer Info",
+                    "kuid": "d94d96c3f8fc433087fb213f06e24532",
+                    "originalPropertyKey": "responsePathCustomerInfo",
+                    "propertyIndex": 1,
+                    "propertyKey": "responsePathCustomerInfo",
+                    "pw": {
+                        "displayName": "Response Path",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": \"{i.i18n.approvals.contract}\",   \"mapping\": \"contractName\",   \"fieldType\": \"Label\",   \"sortBy\": \"contractName\",   \"sortByType\": \"string\" }",
+                    "group": "Data Grid",
+                    "kuid": "gb754e1a98e04922852e192222d71441",
+                    "originalPropertyKey": "column1",
+                    "propertyIndex": 2,
+                    "propertyKey": "column1",
+                    "pw": {
+                        "displayName": "Column 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "j05d9b3d76644e1c8a2b3a9bf757909b",
+                    "originalPropertyKey": "sknRowHover",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknRowHover",
+                    "pw": {
+                        "displayName": "Row hover skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Search ",
+                    "kuid": "hd2827f93c674c5ab3645dc850e6f860",
+                    "originalPropertyKey": "iconSearch",
+                    "propertyIndex": 2,
+                    "propertyKey": "iconSearch",
+                    "pw": {
+                        "displayName": "Search icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images/Icons",
+                    "kuid": "b061598a4db545c396672a011fc854a2",
+                    "originalPropertyKey": "iconRowCollapse",
+                    "propertyIndex": 2,
+                    "propertyKey": "iconRowCollapse",
+                    "pw": {
+                        "displayName": "Row collapse icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": \"{i.i18n.CardManagement.Back}\",   \"action\": {     \"level\": \"Form\",     \"method\": \"backLinkPayee\"   } }",
+                    "group": "Action Buttons",
+                    "kuid": "bed3ae5130e44d8d86f6dcab240190c7",
+                    "originalPropertyKey": "button2",
+                    "propertyIndex": 2,
+                    "propertyKey": "button2",
+                    "pw": {
+                        "displayName": "Button 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"mapping\":\"coreCustomerName\"}",
+                    "group": "Customer Info",
+                    "kuid": "ca995181fb03468b937d28addf3853d9",
+                    "originalPropertyKey": "field1",
+                    "propertyIndex": 2,
+                    "propertyKey": "field1",
+                    "pw": {
+                        "displayName": "Field 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": \"{i.i18n.payments.identityNumber}\",   \"mapping\": \"contractId\",   \"fieldType\": \"Label\",   \"sortBy\": \"contractId\",   \"sortByType\": \"string\" }",
+                    "group": "Data Grid",
+                    "kuid": "f25053b2ef5f49a8850075292ee489aa",
+                    "originalPropertyKey": "column2",
+                    "propertyIndex": 3,
+                    "propertyKey": "column2",
+                    "pw": {
+                        "displayName": "Column 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "afabc05f38a2467da8337efb612c7154",
+                    "originalPropertyKey": "sknRowSeperator",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknRowSeperator",
+                    "pw": {
+                        "displayName": "Row separator skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images/Icons",
+                    "kuid": "hc4aa2e03d734e218024dde1223fe61c",
+                    "originalPropertyKey": "iconColumnSort",
+                    "propertyIndex": 3,
+                    "propertyKey": "iconColumnSort",
+                    "pw": {
+                        "displayName": "Column sort default",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{i.i18n.TransfersEur.btnContinue}\",\"action\":{\"level\":\"Form\",\"method\":\"continueLinkPayee\"}}",
+                    "group": "Action Buttons",
+                    "kuid": "ef61acaa6709476080beebba89e1415e",
+                    "originalPropertyKey": "button3",
+                    "propertyIndex": 3,
+                    "propertyKey": "button3",
+                    "pw": {
+                        "displayName": "Button 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"mapping\":\"coreCustomerId\"}",
+                    "group": "Customer Info",
+                    "kuid": "a3ec6ac2ab1a473bb0593b9b853bed49",
+                    "originalPropertyKey": "field2",
+                    "propertyIndex": 3,
+                    "propertyKey": "field2",
+                    "pw": {
+                        "displayName": "Field 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": \"{i.i18n.unifiedBeneficiary.SelectedCIF}\",   \"mapping\": \"Select Contract Count\",   \"fieldType\": \"Label\" }",
+                    "group": "Data Grid",
+                    "kuid": "e6112917c35b4e30885f63d4e68c0361",
+                    "originalPropertyKey": "column3",
+                    "propertyIndex": 4,
+                    "propertyKey": "column3",
+                    "pw": {
+                        "displayName": "Column 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"sknlbl424242SSP15pxSemibold\"},\"1024\":{\"skin\":\"sknlbl424242SSP15pxSemibold\"},\"1366\":{\"skin\":\"sknlbl424242SSP15pxSemibold\"},\"default\":{\"skin\":\"sknlbl424242SSP15pxSemibold\"}}",
+                    "group": "Skins",
+                    "kuid": "f0c4e013b6c640dd93af741fcff892d5",
+                    "originalPropertyKey": "sknBlockTitle",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknBlockTitle",
+                    "pw": {
+                        "displayName": "Block Title Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images/Icons",
+                    "kuid": "e64696dabd7d469797954ca0db6ffe1b",
+                    "originalPropertyKey": "iconColumnSortAsc",
+                    "propertyIndex": 4,
+                    "propertyKey": "iconColumnSortAsc",
+                    "pw": {
+                        "displayName": "Column Sort Asc",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Customer Info",
+                    "kuid": "d96f9bc8cd3147298e312ab918bd7f82",
+                    "originalPropertyKey": "field3",
+                    "propertyIndex": 4,
+                    "propertyKey": "field3",
+                    "pw": {
+                        "displayName": "Field 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknSSP42424213Px\"},\"1024\":{\"skin\":\"ICSknsknSSP42424215Px\"},\"1366\":{\"skin\":\"ICSknsknSSP42424215Px\"},\"default\":{\"skin\":\"ICSknsknSSP42424215Px\"}}",
+                    "group": "Skins",
+                    "kuid": "f281ef2dfdf24d67832bb03951f36f0d",
+                    "originalPropertyKey": "sknSubTitle",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknSubTitle",
+                    "pw": {
+                        "displayName": "Sub Title Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images/Icons",
+                    "kuid": "c80fe36340c547a9b07096272030ffe2",
+                    "originalPropertyKey": "iconColumnSortDsc",
+                    "propertyIndex": 5,
+                    "propertyKey": "iconColumnSortDsc",
+                    "pw": {
+                        "displayName": "Column Sort Desc",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images/Icons",
+                    "kuid": "fb7069d321f44af7ad2d04d7748342d6",
+                    "originalPropertyKey": "iconCheckboxSelected",
+                    "propertyIndex": 6,
+                    "propertyKey": "iconCheckboxSelected",
+                    "pw": {
+                        "displayName": "Checkbox Selected Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyslLabel0adb3419942094d",
+                    "group": "Skins",
+                    "kuid": "af1ffc309ced4381937228951bcbfa95",
+                    "originalPropertyKey": "sknColumnHeader",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknColumnHeader",
+                    "pw": {
+                        "displayName": "Column Header Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLblSSP42424215px",
+                    "group": "Skins",
+                    "kuid": "c4cd038c8c184dd183add00a05474924",
+                    "originalPropertyKey": "sknDataGridLabel",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknDataGridLabel",
+                    "pw": {
+                        "displayName": "Data Grid Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images/Icons",
+                    "kuid": "c40a66f99f7e47958ea5ff007a49877d",
+                    "originalPropertyKey": "iconCheckboxUnselected",
+                    "propertyIndex": 7,
+                    "propertyKey": "iconCheckboxUnselected",
+                    "pw": {
+                        "displayName": "Checkbox Unselected Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLblSSP42424215px",
+                    "group": "Skins",
+                    "kuid": "a2f4a1daeb0944579d9b7636814d436a",
+                    "originalPropertyKey": "sknCustomerInfoLabel",
+                    "propertyIndex": 8,
+                    "propertyKey": "sknCustomerInfoLabel",
+                    "pw": {
+                        "displayName": "Customer Info Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTbxSSP42424215px",
+                    "group": "Skins",
+                    "kuid": "b051b69258ef42199c78fbc1dd28eb4a",
+                    "originalPropertyKey": "sknSearchTextbox",
+                    "propertyIndex": 9,
+                    "propertyKey": "sknSearchTextbox",
+                    "pw": {
+                        "displayName": "Search Textbox Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknTxtboxPlaceholderMobile\"},\"1024\":{\"skin\":\"ICSknTxtboxPlaceholderTablet\"},\"1366\":{\"skin\":\"ICSknTxtboxPlaceholder\"},\"default\":{\"skin\":\"ICSknTxtboxPlaceholder\"}}",
+                    "group": "Skins",
+                    "kuid": "c232c4eb3c10482da5ce2b2ed5d19828",
+                    "originalPropertyKey": "sknSearchPlaceholder",
+                    "propertyIndex": 10,
+                    "propertyKey": "sknSearchPlaceholder",
+                    "pw": {
+                        "displayName": "Search Placeholder Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "eed6bdfb3b564a59baa372894c937265",
+                    "originalPropertyKey": "sknBusinessPayeeIcon",
+                    "propertyIndex": 11,
+                    "propertyKey": "sknBusinessPayeeIcon",
+                    "pw": {
+                        "displayName": "Business Payee Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "g04e8d501bc941c89188733a5b4ab415",
+                    "originalPropertyKey": "sknPersonalPayeeIcon",
+                    "propertyIndex": 12,
+                    "propertyKey": "sknPersonalPayeeIcon",
+                    "pw": {
+                        "displayName": "Personal Payee Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "c876406dc25941a5b2fa6e2f8d01700a",
+                    "originalPropertyKey": "sknActionButton1",
+                    "propertyIndex": 13,
+                    "propertyKey": "sknActionButton1",
+                    "pw": {
+                        "displayName": "Action Button 1 Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "f4b908f057b44e1880ea16495a0c3aa4",
+                    "originalPropertyKey": "sknActionButton2",
+                    "propertyIndex": 14,
+                    "propertyKey": "sknActionButton2",
+                    "pw": {
+                        "displayName": "Action Button 2 Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "eb10f8f01e5a4e32847b14c298a0dc2c",
+                    "originalPropertyKey": "sknActionButton3",
+                    "propertyIndex": 15,
+                    "propertyKey": "sknActionButton3",
+                    "pw": {
+                        "displayName": "Action Button 3 Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fbca25f03c334daabbaf9f6148883bde",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Transfers",
+    "version": "1.0.0"
+}

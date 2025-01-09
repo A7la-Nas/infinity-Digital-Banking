@@ -1,0 +1,1 @@
+{"table":"Forex","db":"ForeignExchange","verbs":"true"}

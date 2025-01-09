@@ -1,0 +1,34 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "CDPConsentUIModule/PresentationControllers/PresentationController"
+        },
+        "Mobile": {
+            "PresentationControllerClass": "CDPConsentUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": []
+        }
+    },
+    "Forms": {
+        "desktop": {
+            "frmConsentManagement": {
+                "Controller": "CDPConsentUIModule/frmConsentManagementController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "CDPConsentUIModule/frmConsentManagement",
+                "friendlyName": "frmConsentManagement"
+            }
+        },
+        "mobile": {
+            "frmConsentManagement": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "CDPConsentUIModule/frmConsentManagementController",
+                "FormName": "CDPConsentUIModule/frmConsentManagement",
+                "friendlyName": "frmConsentManagement"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "CDPConsentUIModule"
+}

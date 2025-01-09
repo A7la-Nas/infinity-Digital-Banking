@@ -1,0 +1,27 @@
+body {
+  background: #ffffff;
+}
+
+.circular-progress {
+  position: relative;
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.circular-progress:before {
+  content: "";
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.value-container {
+  position: relative;
+  font-size: 11px;
+  color: #727272;
+}

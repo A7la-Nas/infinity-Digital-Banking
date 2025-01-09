@@ -1,0 +1,106 @@
+{
+    "classname": "BrowserSizeWarning",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "j0b1a91adf9e4953ba60697d8c6923b6",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 1,
+                    "propertyKey": "src",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Warning Image Source",
+                        "isHiddenInTool": false,
+                        "srcWidget": "imgFeatureNotAvailable",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "cff1c303b88f4b6d84f24261512e45a2"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a20f6f62b7f8458ca4452c5f17711ca6",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Warning Text",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblWarningText",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ia170cb1148943998eedff3c043b6957"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f9528eeeb16f402da19488c87fb80aa4",
+                    "originalPropertyKey": "i18n_text",
+                    "propertyIndex": 2,
+                    "propertyKey": "i18ntext",
+                    "pw": {
+                        "access": "constructor",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeys": [
+                            "text"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "a20f6f62b7f8458ca4452c5f17711ca6"
+                        ],
+                        "displayName": "Warning Text i18n Key",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblWarningText",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ia170cb1148943998eedff3c043b6957"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Resources",
+    "version": "1.0.0"
+}

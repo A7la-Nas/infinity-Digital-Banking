@@ -1,0 +1,27 @@
+{
+    "AS_TextField_h030bc5eb17e47d39cbf07fc304cd8fa": {
+        "id": "AS_TextField_h030bc5eb17e47d39cbf07fc304cd8fa",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmEnrollNow",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bd78051f2239477699cd5b3d036cf72a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f6699ed1701a43f080db6efd19e444d0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(this.view.resetusingOTPEnterOTP.lblWrongOTP.isVisible){\n  this.reEnterOTP();\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

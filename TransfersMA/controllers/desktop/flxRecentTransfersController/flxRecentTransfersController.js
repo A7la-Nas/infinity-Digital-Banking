@@ -1,0 +1,55 @@
+define({
+    showSelectedRow: function() {
+        var currForm = kony.application.getCurrentForm();
+        if (!currForm.transfermain.segmentTransfers) {
+            currForm.transfermain.segmentTransfers = currForm.segmentTransfers;
+        }
+        var index = currForm.transfermain.segmentTransfers.selectedRowIndex[1];
+        var data = currForm.transfermain.segmentTransfers.data;
+        for (i = 0; i < data.length; i++) {
+            if (i == index) {
+                kony.print("index:" + index);
+                data[i].imgDropdown = "chevron_up.png";
+                data[i].template = "flxRecentTransfersSelected";
+            } else {
+                data[i].imgDropdown = "arrow_down.png";
+                data[i].template = "flxRecentTransfers";
+            }
+        }
+        currForm.transfermain.segmentTransfers.setData(data);
+        this.AdjustScreen(0);
+    },
+    navigateToInternalAccount: function() {
+        kony.print("navigationg to add internal accounts");
+        applicationManager.getNavigationManager().navigateTo("frmAddInternalAccount");
+    },
+    viewReport: function() {
+        var currForm = kony.application.getCurrentForm();
+        var height_to_set = 140 + currForm.flxMain.frame.height;
+        currForm.flxTransferViewReport.height = height_to_set + "dp";
+        currForm.viewReport.height = height_to_set + "dp";
+        currForm.flxTransferViewReport.setVisibility(true);
+        this.AdjustScreen(30);
+        currForm.forceLayout();
+    },
+    AdjustScreen: function(data) {
+        var currentForm = kony.application.getCurrentForm();
+        currentForm.forceLayout()
+        return;
+        //  var mainheight = 0;
+        //  var screenheight = kony.os.deviceInfo().screenHeight;
+        //  mainheight = currentForm.customheader.frame.height + currentForm.flxMain.frame.height;
+        //  var diff = screenheight - mainheight;
+        //  if (mainheight < screenheight) {
+        //      diff = diff - currentForm.flxFooter.frame.height;
+        //      if (diff > 0)
+        //          currentForm.flxFooter.top = mainheight + diff + data + "dp";
+        //      else
+        //          currentForm.flxFooter.top = mainheight + data + "dp";
+        //      currentForm.forceLayout();
+        //   } else {
+        //      currentForm.flxFooter.top = mainheight + data + "dp";
+        //      currentForm.forceLayout();
+        //   }
+    },
+});

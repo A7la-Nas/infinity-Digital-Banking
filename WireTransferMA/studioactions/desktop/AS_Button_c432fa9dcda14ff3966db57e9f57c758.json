@@ -1,0 +1,23 @@
+{
+    "AS_Button_c432fa9dcda14ff3966db57e9f57c758": {
+        "id": "AS_Button_c432fa9dcda14ff3966db57e9f57c758",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmNotEligibleToTransfer",
+            "type": "forms",
+            "platform": "",
+            "KUID": "i86e6c057372417ab1709451c5df6090"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a03a7947435e4637989b3cfbd15da43c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var naoModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"NAOModule\");\nnaoModule.presentationController.showNewAccountOpening();",
+            "parentId": null
+        }]
+    }
+}

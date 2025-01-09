@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_i247d58803ae462fbca241c458a130c8": {
+        "id": "AS_FlexContainer_i247d58803ae462fbca241c458a130c8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "eventPayload"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segFromAccountsList",
+            "type": "templates",
+            "platform": "",
+            "KUID": "e05d5102a0c44e7bb3c28ebb85ec6408"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f6c8fe547a81459caed848dc2bfca994",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.navigationFromDropdown(eventobject, eventPayload, context);",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,830 @@
+{
+    "classname": "manageBillerNative",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "h46d55a163a049408f5f55130ac8f84d",
+                    "paramList": [],
+                    "propertyKey": "setParentScope",
+                    "pw": {
+                        "displayName": "setParentScope",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "caa9cca622234872b37bae45344271a1",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "j2769866c1fc444bb542405cdf65c4c0",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Payee Management Services",
+                "Skins",
+                "Date",
+                "Amount",
+                "Search",
+                "Data Grid "
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": false,
+                    "group": "General",
+                    "kuid": "j32ceac212c940b9bf0c5cf3b4cf6111",
+                    "originalPropertyKey": "payeeIconVisibility",
+                    "propertyIndex": 1,
+                    "propertyKey": "payeeIconVisibility",
+                    "pw": {
+                        "displayName": "Payee icons Visibility",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "BillPay",
+                    "group": "Payee Management Services",
+                    "kuid": "ea815d54a6fb4493b4021d17b44d4fd4",
+                    "originalPropertyKey": "payeeObjectService",
+                    "propertyIndex": 1,
+                    "propertyKey": "payeeObjectService",
+                    "pw": {
+                        "displayName": "Payee Object Service ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\" : \"d-m-Y\"}",
+                    "group": "Date",
+                    "kuid": "b788b5b482ed4f49b3b987ebc6f1e8af",
+                    "originalPropertyKey": "dateFormat",
+                    "propertyIndex": 1,
+                    "propertyKey": "dateFormat",
+                    "pw": {
+                        "displayName": "Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"locale\":\"\", \"positiveFormat\" : \"{CS}{D}\", \"negativeFormat\" : \"-({CS}{D})\", \"fractionDigits\":\"2\"}",
+                    "group": "Amount",
+                    "kuid": "ad36282008964d2895ad4bd59193ea88",
+                    "originalPropertyKey": "amountFormat",
+                    "propertyIndex": 1,
+                    "propertyKey": "amountFormat",
+                    "pw": {
+                        "displayName": "Amount Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S1.Payee}",
+                    "group": "Data Grid ",
+                    "kuid": "e95fae5b731b4a92a68156d13240e728",
+                    "originalPropertyKey": "responsePath",
+                    "propertyIndex": 1,
+                    "propertyKey": "responsePath",
+                    "pw": {
+                        "displayName": "Response Path",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.SearchByPayeeName",
+                    "group": "Search",
+                    "kuid": "d33f2c6b9d0b4c2996747df346c93f69",
+                    "originalPropertyKey": "placeHolderSearch",
+                    "propertyIndex": 1,
+                    "propertyKey": "placeHolderSearch",
+                    "pw": {
+                        "displayName": "Placeholder",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknffffff",
+                    "group": "Skins",
+                    "kuid": "e46f258326b94b80bae30dcb4ad2e4e5",
+                    "originalPropertyKey": "sknRow",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknRow",
+                    "pw": {
+                        "displayName": "Row skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "b80d63ad72fe414ca043c62f2adec954",
+                    "originalPropertyKey": "ebillVisibility",
+                    "propertyIndex": 2,
+                    "propertyKey": "ebillVisibility",
+                    "pw": {
+                        "displayName": "Ebill Visibility",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Payee_BillPay",
+                    "group": "Payee Management Services",
+                    "kuid": "f848a96c2ba8457dbb6aa2e8ac0c6606",
+                    "originalPropertyKey": "payeeObject",
+                    "propertyIndex": 2,
+                    "propertyKey": "payeeObject",
+                    "pw": {
+                        "displayName": "Payee Object",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\" : \"Y-m-d\"}",
+                    "group": "Date",
+                    "kuid": "eaa37315ea484d77a95eca0d80c6132e",
+                    "originalPropertyKey": "backendDateFormat",
+                    "propertyIndex": 2,
+                    "propertyKey": "backendDateFormat",
+                    "pw": {
+                        "displayName": "Backend Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "search.png",
+                    "group": "Search",
+                    "kuid": "a063a44205da44d4b60251e7722dd26e",
+                    "originalPropertyKey": "iconSearch",
+                    "propertyIndex": 2,
+                    "propertyKey": "iconSearch",
+                    "pw": {
+                        "displayName": "Search icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S3.Payee}",
+                    "group": "Data Grid ",
+                    "kuid": "a746d11afadf44e982e053cac080e1c2",
+                    "originalPropertyKey": "responsePathSearch",
+                    "propertyIndex": 2,
+                    "propertyKey": "responsePathSearch",
+                    "pw": {
+                        "displayName": "Response Path For Search",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{  \"mapping\": \"{$.rootPath.payeeName}\",   \"fieldType\": \"Label\" }",
+                    "group": "Data Grid ",
+                    "kuid": "hf0bd79806db47c4948dc7104471282f",
+                    "originalPropertyKey": "field1",
+                    "propertyIndex": 3,
+                    "propertyKey": "field1",
+                    "pw": {
+                        "displayName": "Field 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "ed01bcfc73ed4cd488017f1fc27ba625",
+                    "originalPropertyKey": "sknRowHover",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknRowHover",
+                    "pw": {
+                        "displayName": "Row hover skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getBillPayPayees",
+                    "group": "Payee Management Services",
+                    "kuid": "acea68b379a948b8b3da4f007de60a93",
+                    "originalPropertyKey": "payeeGETOperation",
+                    "propertyIndex": 3,
+                    "propertyKey": "payeeGETOperation",
+                    "pw": {
+                        "displayName": "Payee GET Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.P2P.NoPayeesAvailable",
+                    "group": "General",
+                    "kuid": "jcf3a48f6546438ab8b13b6226962b21",
+                    "originalPropertyKey": "emptyPayeesDisplayLabel",
+                    "propertyIndex": 3,
+                    "propertyKey": "emptyPayeesDisplayLabel",
+                    "pw": {
+                        "displayName": "Empty Payee List Display Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "payeeName,payeeNickName",
+                    "group": "Search",
+                    "kuid": "cb619e1c12af43cb917f9400c858e76d",
+                    "originalPropertyKey": "searchFieldList",
+                    "propertyIndex": 3,
+                    "propertyKey": "searchFieldList",
+                    "pw": {
+                        "displayName": "Search Field List",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{  \"mapping\": \"{$.rootPath.payeeNickName}\",   \"fieldType\": \"Label\" }",
+                    "group": "Data Grid ",
+                    "kuid": "b80cf2dce3884027b9fb3fe3378f35a7",
+                    "originalPropertyKey": "field2",
+                    "propertyIndex": 4,
+                    "propertyKey": "field2",
+                    "pw": {
+                        "displayName": "Field 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxe3e3e3",
+                    "group": "Skins",
+                    "kuid": "cb889e5bf4ba4a279f08d6e8b0e948d2",
+                    "originalPropertyKey": "sknRowSeperator",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknRowSeperator",
+                    "pw": {
+                        "displayName": "Row seperator skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"sortBy\":\"payeeNickName\",\"order\":\"desc\"}",
+                    "group": "Payee Management Services",
+                    "kuid": "d9c8d6350d714a56a2019ea7212b5aa3",
+                    "originalPropertyKey": "payeeGETCriteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "payeeGETCriteria",
+                    "pw": {
+                        "displayName": "Payee GET Criteria ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "i33b637eb2c44df5a4c3694723d61079",
+                    "originalPropertyKey": "inPlaceHandling",
+                    "propertyIndex": 4,
+                    "propertyKey": "inPlaceHandling",
+                    "pw": {
+                        "displayName": "Inplace search",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Condition1\":{\"condition\":{\"{$.rootPath.eBillStatus}\":1},\"image\":\"activeebill.png\"},\"Condition2\":{\"condition\":{\"{$.rootPath.eBillStatus}\":0},\"image\":\"inactiveebill.png\"}}",
+                    "group": "Data Grid ",
+                    "kuid": "h73a258862be4a66a173dda581556b55",
+                    "originalPropertyKey": "fieldEbill",
+                    "propertyIndex": 5,
+                    "propertyKey": "fieldEbill",
+                    "pw": {
+                        "displayName": "Field eBill",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl424242SSP26px",
+                    "group": "Skins",
+                    "kuid": "bb882c234aa244c584e0a13fdeb8e745",
+                    "originalPropertyKey": "sknField1",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknField1",
+                    "pw": {
+                        "displayName": "Field 1 Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S1",
+                    "group": "Payee Management Services",
+                    "kuid": "b4be95b6bf564fd5bf4c381428a22cc7",
+                    "originalPropertyKey": "payeeGETIdentifier",
+                    "propertyIndex": 5,
+                    "propertyKey": "payeeGETIdentifier",
+                    "pw": {
+                        "displayName": "Payee GET Service Identifier ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "25",
+                    "group": "General",
+                    "kuid": "c658dd5b03fe48bda764cf5e34addb33",
+                    "originalPropertyKey": "pageSize",
+                    "propertyIndex": 5,
+                    "propertyKey": "pageSize",
+                    "pw": {
+                        "displayName": "Page Size",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"image\": \"billpayheader.png\",   \"text\": \"Kony.mb.EBill.PayBillSmall\",   \"action\": {     \"level\": \"Form\",     \"method\": \"payBill\"   },   \"entitlement\": [     \"BILL_PAY_CREATE_PAYEES\"   ] }",
+                    "group": "Data Grid ",
+                    "kuid": "b9c691db7cba4db2a4de2a4fd37e5278",
+                    "originalPropertyKey": "swipeBox1",
+                    "propertyIndex": 6,
+                    "propertyKey": "swipeBox1",
+                    "pw": {
+                        "displayName": "Swipe Box 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbla0a0a022px",
+                    "group": "Skins",
+                    "kuid": "gbaf6a895fed436db933ad954f094123",
+                    "originalPropertyKey": "sknField2",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknField2",
+                    "pw": {
+                        "displayName": "Field 2 Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "deleteBillPayPayee",
+                    "group": "Payee Management Services",
+                    "kuid": "ce6d6cc4d27540d19492d579113e5f70",
+                    "originalPropertyKey": "payeeDELETEOperation",
+                    "propertyIndex": 6,
+                    "propertyKey": "payeeDELETEOperation",
+                    "pw": {
+                        "displayName": "Payee DELETE Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"image\": \"billpayheader.png\",   \"text\": \"Edit\",   \"action\": {     \"level\": \"Form\",     \"method\": \"editBill\"   },   \"entitlement\": [     \"BILL_PAY_CREATE\"   ] }",
+                    "group": "Data Grid ",
+                    "kuid": "h38b40c1f22445f79d8bcc3bd696b2f4",
+                    "originalPropertyKey": "swipeBox2",
+                    "propertyIndex": 7,
+                    "propertyKey": "swipeBox2",
+                    "pw": {
+                        "displayName": "Swipe Box 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknBtn0095e426pxEnabled",
+                    "group": "Skins",
+                    "kuid": "af953e64298547d899891bb0acde290d",
+                    "originalPropertyKey": "sknActionButtons",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknActionButtons",
+                    "pw": {
+                        "displayName": "Action Buttons skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"payeeId\":\"1751\"}",
+                    "group": "Payee Management Services",
+                    "kuid": "b340c635882d4bf4b351bda4b34412db",
+                    "originalPropertyKey": "payeeDELETECriteria",
+                    "propertyIndex": 7,
+                    "propertyKey": "payeeDELETECriteria",
+                    "pw": {
+                        "displayName": "Payee DELETE Criteria ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"image\":\"deleteicon.png\",\"text\":\"i18n.bulkwires.Remove\",\"action\":{\"level\":\"Component\",\"method\":\"DELETE\"},\"entitlement\":[\"BILL_PAY_DELETE_PAYEES\"]}",
+                    "group": "Data Grid ",
+                    "kuid": "hcfd10d6385c465f84e49c918c85b4de",
+                    "originalPropertyKey": "swipeBox3",
+                    "propertyIndex": 8,
+                    "propertyKey": "swipeBox3",
+                    "pw": {
+                        "displayName": "Swipe Box 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTbxSSPf1f1f1B",
+                    "group": "Skins",
+                    "kuid": "j555970c45b1458e86c24827cbdb1f6c",
+                    "originalPropertyKey": "sknSearchTextBox",
+                    "propertyIndex": 8,
+                    "propertyKey": "sknSearchTextBox",
+                    "pw": {
+                        "displayName": "Search TextBox Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S2",
+                    "group": "Payee Management Services",
+                    "kuid": "bc3e7c06464f41faa31812db2d21f0c1",
+                    "originalPropertyKey": "payeeDELETEIdentifier",
+                    "propertyIndex": 8,
+                    "propertyKey": "payeeDELETEIdentifier",
+                    "pw": {
+                        "displayName": "Payee DELETE Service Identifier ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "BillPay",
+                    "group": "Payee Management Services",
+                    "kuid": "bd205ddbdc53437c8e9d4c61fd37fdb3",
+                    "originalPropertyKey": "payeeSearchObjectService",
+                    "propertyIndex": 9,
+                    "propertyKey": "payeeSearchObjectService",
+                    "pw": {
+                        "displayName": "Payee Search Object Service ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": \"kony.mb.BillPay.AddPayee\",   \"action\": {     \"level\": \"Form\",     \"method\": \"addPayee\"   },   \"entitlement\": [     \"BILL_PAY_VIEW_PAYMENTS\"   ] }",
+                    "group": "Data Grid ",
+                    "kuid": "g201faf2d68346fca114019ea4360600",
+                    "originalPropertyKey": "actionButton",
+                    "propertyIndex": 9,
+                    "propertyKey": "actionButton",
+                    "pw": {
+                        "displayName": "Action Button",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTbxPlaceholderDefault",
+                    "group": "Skins",
+                    "kuid": "fe46bbfaa04f44628050a1037d2bd72f",
+                    "originalPropertyKey": "sknSearchPlaceHolderTextBox",
+                    "propertyIndex": 9,
+                    "propertyKey": "sknSearchPlaceHolderTextBox",
+                    "pw": {
+                        "displayName": "Search TextBox Placeholder Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Payee_BillPay",
+                    "group": "Payee Management Services",
+                    "kuid": "bdf1a631297c4580b76ecf38a6207368",
+                    "originalPropertyKey": "payeeSearchObject",
+                    "propertyIndex": 10,
+                    "propertyKey": "payeeSearchObject",
+                    "pw": {
+                        "displayName": "Payee Search Object",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTbxSSPf1f1f1B",
+                    "group": "Skins",
+                    "kuid": "a5cd6b822d5448e9a07ef6a05566ac2a",
+                    "originalPropertyKey": "sknSearchTextBoxFocus",
+                    "propertyIndex": 10,
+                    "propertyKey": "sknSearchTextBoxFocus",
+                    "pw": {
+                        "displayName": "Search TextBox Focus Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"action\": {     \"level\": \"Form\",     \"method\": \"rowClickCallBack\"   } }",
+                    "group": "Data Grid ",
+                    "kuid": "e2b912a55a4b493fa669316920046ffb",
+                    "originalPropertyKey": "rowonClickaction",
+                    "propertyIndex": 10,
+                    "propertyKey": "rowonClickaction",
+                    "pw": {
+                        "displayName": "Row onClick Action",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getBillPayPayees",
+                    "group": "Payee Management Services",
+                    "kuid": "ibd2701a464d4d6b8fe076e305215906",
+                    "originalPropertyKey": "payeeSEARCHOperation",
+                    "propertyIndex": 11,
+                    "propertyKey": "payeeSEARCHOperation",
+                    "pw": {
+                        "displayName": "Payee SEARCH Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"searchString\":\"\"}",
+                    "group": "Payee Management Services",
+                    "kuid": "e3fc2655237e478cb48051fc4a740c92",
+                    "originalPropertyKey": "payeeSEARCHCriteria",
+                    "propertyIndex": 12,
+                    "propertyKey": "payeeSEARCHCriteria",
+                    "pw": {
+                        "displayName": "Payee SEARCH Criteria ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S3",
+                    "group": "Payee Management Services",
+                    "kuid": "h027efd75745475b938e878a5595df3f",
+                    "originalPropertyKey": "payeeSEARCHIdentifier",
+                    "propertyIndex": 13,
+                    "propertyKey": "payeeSEARCHIdentifier",
+                    "pw": {
+                        "displayName": "Payee SEARCH Service Identifier ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlx0095e4",
+                    "group": "Skins",
+                    "kuid": "h004f71f06eb4c4b959d7d16566fcbec",
+                    "originalPropertyKey": "sknSwipeBox1",
+                    "propertyIndex": 13,
+                    "propertyKey": "sknSwipeBox1",
+                    "pw": {
+                        "displayName": "SwipeBox1 Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlx0095e4",
+                    "group": "Skins",
+                    "kuid": "ae2f9ba1b3ea4a21b1aba56365f207fb",
+                    "originalPropertyKey": "sknSwipeBox2",
+                    "propertyIndex": 14,
+                    "propertyKey": "sknSwipeBox2",
+                    "pw": {
+                        "displayName": "SwipeBox2 Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknEE0005BG",
+                    "group": "Skins",
+                    "kuid": "fb24cc41103d4e59831a2d962b3c7869",
+                    "originalPropertyKey": "sknSwipeBox3",
+                    "propertyIndex": 15,
+                    "propertyKey": "sknSwipeBox3",
+                    "pw": {
+                        "displayName": "SwipeBox3 Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLblffffff22px",
+                    "group": "Skins",
+                    "kuid": "db1dcdefc9de4fb28d8054db05e2effe",
+                    "originalPropertyKey": "sknSwipeBoxText",
+                    "propertyIndex": 16,
+                    "propertyKey": "sknSwipeBoxText",
+                    "pw": {
+                        "displayName": "Swipe Box Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b2872381986a46a0a697a78ebf8612b1",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.BillPay",
+    "version": "1.0.0"
+}

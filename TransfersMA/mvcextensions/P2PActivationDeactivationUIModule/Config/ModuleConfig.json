@@ -1,0 +1,58 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "P2PActivationDeactivationUIModule/PresentationControllers/PresentationController"
+        }
+    },
+    "Forms": {
+        "desktop": {
+            "frmAcknowledgement": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "P2PActivationDeactivationUIModule/frmAcknowledgementController",
+                "FormName": "P2PActivationDeactivationUIModule/frmAcknowledgement",
+                "friendlyName": "frmAcknowledgement"
+            },
+			"frmActivateP2P": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "P2PActivationDeactivationUIModule/frmActivateP2PController",
+                "FormName": "P2PActivationDeactivationUIModule/frmActivateP2P",
+                "friendlyName": "frmActivateP2P"
+            },
+			"frmDeactivateAcknowledgement": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "P2PActivationDeactivationUIModule/frmDeactivateAcknowledgementController",
+                "FormName": "P2PActivationDeactivationUIModule/frmDeactivateAcknowledgement",
+                "friendlyName": "frmDeactivateAcknowledgement"
+            },
+           
+        },
+        "mobile": {
+            "frmP2PActivation": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "P2PActivationDeactivationUIModule/frmP2PActivationController",
+                "FormName": "P2PActivationDeactivationUIModule/frmP2PActivation",
+                "friendlyName": "frmP2PActivation"
+            },
+            "frmP2PActivationAcknowledgement": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "P2PActivationDeactivationUIModule/frmP2PActivationAcknowledgementController",
+                "FormName": "P2PActivationDeactivationUIModule/frmP2PActivationAcknowledgement",
+                "friendlyName": "frmP2PActivationAcknowledgement"
+            },
+            "frmP2PDeactivationAcknowledgement": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "P2PActivationDeactivationUIModule/frmP2PDeactivationAcknowledgementController",
+                "FormName": "P2PActivationDeactivationUIModule/frmP2PDeactivationAcknowledgement"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "P2PActivationDeactivationUIModule"
+}

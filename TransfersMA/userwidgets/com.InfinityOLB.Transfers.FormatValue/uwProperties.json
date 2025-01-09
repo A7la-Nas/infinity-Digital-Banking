@@ -1,0 +1,501 @@
+{
+    "classname": "FormatValue",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b26e2a43cc5d4980b181367a6f091b77",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyKey": "UpdateCustomProperties",
+                    "pw": {
+                        "displayName": "UpdateCustomProperties",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d3ef563151fd46d2bb9b9a9a1813c3ae",
+                    "paramList": [],
+                    "propertyKey": "formatText",
+                    "pw": {
+                        "displayName": "formatText",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g03039561ba1474eb83cc713ede6787b",
+                    "paramList": [
+                        {
+                            "name": "alignmentData"
+                        }
+                    ],
+                    "propertyKey": "alignLabel",
+                    "pw": {
+                        "displayName": "alignLabel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f1b0e942dff74fa891de04af375f939a",
+                    "paramList": [
+                        {
+                            "name": "skinName"
+                        }
+                    ],
+                    "propertyKey": "setSkinToLabel",
+                    "pw": {
+                        "displayName": "setSkinToLabel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Text",
+                "Amount",
+                "Date",
+                "Account Number"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Text",
+                    "kuid": "hc63ba39c85e484b868db8b928b642a6",
+                    "originalPropertyKey": "textSkin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "textSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Date",
+                    "kuid": "d3ad22d3a2794e2294cc47562a53912e",
+                    "originalPropertyKey": "dateFormat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "dateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Amount",
+                    "kuid": "a6478e93f6574fc880cf0ae6c691f582",
+                    "originalPropertyKey": "currencyFormat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "currencyFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Account Number",
+                    "kuid": "cd0208019a2e43c8ab8756cca01fa505",
+                    "originalPropertyKey": "accountNumberformat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "accountNumberformat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Date",
+                    "kuid": "e9b18fddd2994bfaac9f9d2845f1c6e1",
+                    "originalPropertyKey": "backenddateformat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "backenddateformat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Backend Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Amount",
+                    "kuid": "b84f029c39c143c5a2fffea060d76012",
+                    "originalPropertyKey": "positiveAmountSkin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "positiveAmountSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Positive Amount Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": false,
+                    "group": "Account Number",
+                    "kuid": "c3d13daec6eb4a31a0cb6a20c22a2d66",
+                    "originalPropertyKey": "masking",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "masking",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Masking Required",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Date",
+                    "kuid": "c689a23242344e5da2fa9a087fede988",
+                    "originalPropertyKey": "dateSkin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "dateSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Amount",
+                    "kuid": "cad5ab9205134784bd3e387d6bbabadb",
+                    "originalPropertyKey": "negativeAmountSkin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "negativeAmountSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Negative Amount Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Amount",
+                    "kuid": "j168ddfd87094a13b3866166db8fccad",
+                    "originalPropertyKey": "positiveFormat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "positiveFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Positive Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Account Number",
+                    "kuid": "ab10be6b2c0f44e6813814cb451128af",
+                    "originalPropertyKey": "maskeyeicon",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "maskeyeicon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Mask Eye Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Amount",
+                    "kuid": "g6c46f5cf70144ae83d5da608077e022",
+                    "originalPropertyKey": "negativeFormat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "negativeFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Negative Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Account Number",
+                    "kuid": "d8e61f5f8501403eac2c1545389b56bc",
+                    "originalPropertyKey": "unmaskeyeicon",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "unmaskeyeicon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Unmask Eye Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Account Number",
+                    "kuid": "jc6ed957237f4570be4a65d3af61d01f",
+                    "originalPropertyKey": "maskeyeiconskin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "maskeyeiconskin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Mask Eye Icon Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Account Number",
+                    "kuid": "c2af5bdd45c347cfa660c1355d14df9c",
+                    "originalPropertyKey": "unmaskeyeiconskin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "unmaskeyeiconskin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Unmask Eye Icon Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Account Number",
+                    "kuid": "a89fbe8069fb44ccad988e697d15ad7f",
+                    "originalPropertyKey": "accountNumberSkin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "accountNumberSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c19c3b00714f4708be1768c18e004c3d",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b80f03d5853745ea8ee954f56a5e49fa",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblFormat",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e306273b1c244943be12e7e517860316"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Account Number",
+                    "kuid": "j2721de953c44787b109907cac26e9b4",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 3,
+                    "propertyKey": "isVisible1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Eye Icon Visible",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblEyeIcon",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ef68e3980d3a42608f01086491315d5a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Account Number",
+                    "kuid": "h97c493f6ea2455ab6b632aa3a992c76",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 4,
+                    "propertyKey": "text1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Eye Icon Text",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblEyeIcon",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ef68e3980d3a42608f01086491315d5a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Account Number",
+                    "kuid": "ec9c7b0550a54aa39e588fe841929ce2",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 10,
+                    "propertyKey": "skin2",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblEyeIcon",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ef68e3980d3a42608f01086491315d5a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Account Number",
+                    "kuid": "b4cd7681dfb54f1fa7c46d0b884f5fe1",
+                    "originalPropertyKey": "accessibilityConfig",
+                    "propertyIndex": 11,
+                    "propertyKey": "accessibilityConfig",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Accessibility Config",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxEyeIcon",
+                        "type": "object",
+                        "uiRepresentation": "AccessibilityConfig",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "b498efde5c5a4c678becdb49f69354df"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "c3f33c3dc6bf4320ad26146c0c00bd04",
+                    "propertyKey": "lblEyeIcon",
+                    "srcWgtKUID": "ef68e3980d3a42608f01086491315d5a"
+                },
+                {
+                    "kuid": "eede12b8b97f49329330e33380fac9f9",
+                    "propertyKey": "lblFormat",
+                    "srcWgtKUID": "e306273b1c244943be12e7e517860316"
+                }
+            ],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Transfers",
+    "version": "1.0.0"
+}

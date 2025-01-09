@@ -1,0 +1,29 @@
+{
+    "AS_Image_f71336f103df447c856545b35ff5b232": {
+        "id": "AS_Image_f71336f103df447c856545b35ff5b232",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "KUID": "u9cb1f26e705475f903fcf949d847fbc",
+            "name": "userwidgetmodel",
+            "type": "userwidgets"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__g7cfe6d29817459c888bfd8ba7860ca9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(this.view.imgOption1.src === \"radioinactivebb.png\")\n{\n  this.view.imgOption1.src = \"radioactivebb.png\";\n  this.view.imgOption0.src = \"radioinactivebb.png\";\n  this.view.flxToggleOptions.forceLayout();\n  if(this.onOptionToggle !== undefined && this.onOptionToggle !== null) \n  {\n    this.onOptionToggle();\n  }\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

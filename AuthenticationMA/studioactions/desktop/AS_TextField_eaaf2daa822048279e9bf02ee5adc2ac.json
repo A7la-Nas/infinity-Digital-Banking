@@ -1,0 +1,26 @@
+{
+    "AS_TextField_eaaf2daa822048279e9bf02ee5adc2ac": {
+        "id": "AS_TextField_eaaf2daa822048279e9bf02ee5adc2ac",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmLoginUniken",
+            "type": "forms",
+            "platform": null,
+            "KUID": "c3407682ab9d46b4a1346903db702c5b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onBeginEditing_cbce718d1ed7471a93b3d9f2b2d2e579",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(this.view.main.flxPassword.skin ==\"sknBorderFF0101\"){\nthis.credentialsMissingUIChangesAnti(); \n}",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "AS_FlexContainer_ie8367d17c4a48eda34032349d67ba9c": {
+        "id": "AS_FlexContainer_ie8367d17c4a48eda34032349d67ba9c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segSelectProvider",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b13ef23b67554cf0906a1ab3137600fc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_af0ecda2a3ac44dda47d2e0f8039e424",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.executeOnParent(\"accountingSoftwareSelection\", context);",
+            "parentId": null
+        }]
+    }
+}

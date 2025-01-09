@@ -1,0 +1,33 @@
+{
+    "AS_Segment_ba38f3958af74f0ca0a9ad05b7142b56": {
+        "id": "AS_Segment_ba38f3958af74f0ca0a9ad05b7142b56",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "userwidgetmodel",
+            "type": "userwidgets",
+            "KUID": "u6bfd36b9a2f4a179b643bd8a731c098"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__hb51509126c94ba1865b7b32c95824b0",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getTransactionsDetails",
+            "display": "getTransactionsDetails",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

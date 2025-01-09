@@ -1,0 +1,34 @@
+{
+    "AS_Form_ffd70944f55440b7a9ad4faf55360679": {
+        "id": "AS_Form_ffd70944f55440b7a9ad4faf55360679",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollSecurity",
+            "type": "forms",
+            "platform": null,
+            "KUID": "bd541f396dfd41619d9f9ca103354bd4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___i2d7243dc84746b098c7839d425d9506",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showSecurityCode",
+            "display": "showSecurityCode",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true,
+            "source": "controller"
+        }, {
+            "id": "ADD_SNIPPET__db405cc375f34d349302d9ac7e1cdb21",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.showSecurityCode();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "AS_Button_cc1fcf934d014de4831461869e9353e9": {
+        "id": "AS_Button_cc1fcf934d014de4831461869e9353e9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": null,
+            "KUID": "d66c3fcce2a94b20be1a63da7d3515c4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f7425f529e00476a979f27d690bc4eff",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\n        kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\n        var authParams = {\n            \"UserName\": \"testuser2\",\n            \"Password\": \"Kony@1234\",\n            \"loginOptions\": {\n                \"isOfflineEnabled\": false\n            }\n        };\n        authClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\n        authClient.login(authParams, successCallback, errorCallback);\n\n        function successCallback(resSuccess) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resSuccess);\n                var tokenParams = kony.sdk.getCurrentInstance().tokens.DbxUserLogin.provider_token.params.security_attributes;\n                var permissions = JSON.parse(tokenParams.permissions);\n                var features = JSON.parse(tokenParams.features);\n                var accounts = tokenParams.accounts;\n                applicationManager.getConfigurationManager().setUserPermissions(permissions);\n                applicationManager.getConfigurationManager().setFeatures(features);\n          applicationManager.getUserPreferencesManager().fetchUser(function() {}, function() {});\n          kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\"appName\" : \"TransfersMA\", \"moduleName\" : \"AccountsUIModule\"}).presentationController.fetchAccounts(\"\");\n                //applicationManager.getConfigurationManager().setUserRole(userAttributes.customerTypeId);\n//             new kony.mvc.Navigation({\n//                 \"appName\": \"TransfersMA\",\n//                 \"friendlyName\": \"UnifiedTransferFlowUIModule/frmUTFLanding\"\n//             }).navigate();\n            //applicationManager.getModulesPresentationController(\"TransferModule\").showTransferScreen();\n//             kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\n//                 \"moduleName\": \"TransferEurUIModule\",\n//                 \"appName\": \"TransfersMA\"\n//             }).presentationController.showTransferScreen({ context: \"MakePayment\" });\n                      new kony.mvc.Navigation({\n                \"appName\": \"TransfersMA\",\n                \"friendlyName\": \"LoginUTFUIModule/frmUTFDashboard\"\n            }).navigate();\n        }\n\n        function errorCallback(resError) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resError);\n            alert(\"login is not working...\");\n        }",
+            "parentId": null
+        }]
+    }
+}

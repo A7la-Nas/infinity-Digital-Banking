@@ -1,0 +1,20 @@
+{
+    "AS_FlexContainer_h9409d5227054dfcbabe9674fe87b76f": {
+        "id": "AS_FlexContainer_h9409d5227054dfcbabe9674fe87b76f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a585dc3171564f6aa001c41b301a4eb0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var currBreakpoint = kony.application.getCurrentBreakpoint();\nthis.onBreakpointChangeComponent(currBreakpoint);",
+            "parentId": null
+        }]
+    }
+}

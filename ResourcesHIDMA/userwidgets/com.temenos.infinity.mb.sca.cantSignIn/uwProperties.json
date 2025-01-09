@@ -1,0 +1,135 @@
+{
+    "classname": "cantSignIn",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f779bc3a8818412dae1e5e707736f236",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "navigateToLogin",
+                    "pw": {
+                        "displayName": "navigateToLogin",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u6211ebe69ec402db87ca398fccea21a",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c5d5a819bd8f47c0b55dfa5fd9c8c18e",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "activateProfile",
+                    "pw": {
+                        "displayName": "activateProfile",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u6211ebe69ec402db87ca398fccea21a",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "Validate Password Object Service Details"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "j05945b9ba424d7494819f509452d012",
+                    "originalPropertyKey": "selectedUser",
+                    "propertyIndex": 1,
+                    "propertyKey": "selectedUser",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Selected User",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u6211ebe69ec402db87ca398fccea21a",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "lostDevice",
+                    "group": "Validate Password Object Service Details",
+                    "kuid": "b9ac570c4d904ffbb522295ab482d04e",
+                    "originalPropertyKey": "operation1",
+                    "propertyIndex": 1,
+                    "propertyKey": "operation1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u6211ebe69ec402db87ca398fccea21a",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAActivationObjects",
+                    "group": "Validate Password Object Service Details",
+                    "kuid": "j82d1fdb2a424217b1c3514a7d7702a0",
+                    "originalPropertyKey": "objectService1",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectService1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u6211ebe69ec402db87ca398fccea21a",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCADevice",
+                    "group": "Validate Password Object Service Details",
+                    "kuid": "c04f0499375c45c2b8bfb4180a167742",
+                    "originalPropertyKey": "dataModel1",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataModel1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Model Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u6211ebe69ec402db87ca398fccea21a",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.mb.sca",
+    "version": "1.0.0"
+}

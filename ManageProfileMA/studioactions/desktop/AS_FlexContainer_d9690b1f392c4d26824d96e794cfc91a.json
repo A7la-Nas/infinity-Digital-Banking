@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_d9690b1f392c4d26824d96e794cfc91a": {
+        "id": "AS_FlexContainer_d9690b1f392c4d26824d96e794cfc91a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "eventPayload"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segprofilemanagementAddressnew",
+            "type": "templates",
+            "platform": "",
+            "KUID": "e5d898c5f08a4505be27fc947a367362"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ia784395d5754accbdf069fe5a332ce3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var scopeObj = this;\nvar addFrm = kony.application.getCurrentForm();\nif (eventPayload.keyCode === 9 && eventPayload.shiftKey){\n  var data = addFrm.segprofilemanagementAddressnew.data;\n  for (var i = 0; i < data.length; i++) {\n    if (data[i].flxEdit !== undefined) {\n      if (data[i].flxEdit.isVisible === true) {\n        data[i].flxEdit.isVisible = false;\n        var addr = data[i].flxImgElipses.accessibilityConfig.a11yLabel;\n        data[i].flxImgElipses.accessibilityConfig = {\n          \"a11yLabel\": addr,\n          \"a11yARIA\": {\n            \"aria-expanded\": false,\n            \"aria-haspopup\": \"dialog\",\n            \"aria-labelledby\": \"lblHome\",\n            \"role\": \"button\",\n            \"tabindex\": 0\n          }\n        }\n      }\n    }\n  }\n  addFrm.segprofilemanagementAddressnew.setData(data);\n}",
+            "parentId": null
+        }]
+    }
+}

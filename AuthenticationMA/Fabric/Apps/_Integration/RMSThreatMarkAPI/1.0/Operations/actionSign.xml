@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="actionSign" passwordencrypted="false" security="authorized_app" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.temenos.hidrms.preprocessor.RMSBasePreprocessor"/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://c121.threatmark.com:8053/v3/action/sign"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="server.auth.mode" value="basic"/>
+        <config-param api-version="" appid="" name="userid" value="api_PYmW3P8"/>
+        <config-param api-version="" appid="" name="pwd" value="Qa5NjqU4AMA!"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false"/>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="application_id" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="INFINITY" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="channel_id" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="internet_banking" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="tm_device_tag" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="TDhYEFLw76LVbHaJHimYKKLsp8Bl1ZnM" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="tm_session_sid" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="52MCH56zfvY2A1maM7MgUkwKPV6RV31B" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="app_action_id" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="hid-action_12208" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="app_user_id" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="manish1" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="app_session_id" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="098768" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="client_ip" order="" paramOrder="8" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="115.97.195.243" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="tm_action_id" order="" paramOrder="9" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="00618cfe-2f9b-a24d-8970-592017c6a19a" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="security_item_type" order="" paramOrder="10" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="sms" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="factor_index" order="" paramOrder="11" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="1" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="environment_id" order="" paramOrder="12" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="c121" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10;    &quot;app_action_id&quot;: &quot;$app_action_id&quot;,&#10;    &quot;app_context&quot;: {&#10;        &quot;application_id&quot;: &quot;$application_id&quot;,&#10;        &quot;channel_id&quot;: &quot;$channel_id&quot;&#10;    },&#10;    &quot;app_user_id&quot;: &quot;$app_user_id&quot;,&#10;    &quot;caller_context&quot;: {&#10;        &quot;caller_id&quot;: &quot;coreB_node2_prod&quot;,&#10;        &quot;environment_id&quot;: &quot;$environment_id&quot;&#10;    },&#10;    &quot;session_context&quot;: {&#10;        &quot;app_session_id&quot;: &quot;$app_session_id&quot;,&#10;        &quot;client_ip&quot;: &quot;$client_ip&quot;,&#10;        &quot;tm_device_tag&quot;: &quot;$tm_device_tag&quot;,&#10;        &quot;tm_session_sid&quot;: &quot;$tm_session_sid&quot;&#10;    },&#10;    &quot;signature&quot;: {&#10;        &quot;factor_index&quot;: $factor_index,&#10;     &quot;security_item_type&quot;:&quot;$security_item_type&quot;&#10;    },&#10;    &quot;signature_result&quot;: &quot;signature_accepted&quot;,&#10;    &quot;signed_app_action_id&quot;: &quot;$tm_action_id&quot;&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;    &quot;app_action_id&quot;: &quot;$app_action_id&quot;,&#10;    &quot;app_context&quot;: {&#10;        &quot;application_id&quot;: &quot;$application_id&quot;,&#10;        &quot;channel_id&quot;: &quot;$channel_id&quot;&#10;    },&#10;    &quot;app_user_id&quot;: &quot;$app_user_id&quot;,&#10;    &quot;caller_context&quot;: {&#10;        &quot;caller_id&quot;: &quot;coreB_node2_prod&quot;,&#10;        &quot;environment_id&quot;: &quot;$environment_id&quot;&#10;    },&#10;    &quot;session_context&quot;: {&#10;        &quot;app_session_id&quot;: &quot;$app_session_id&quot;,&#10;        &quot;client_ip&quot;: &quot;$client_ip&quot;,&#10;        &quot;tm_device_tag&quot;: &quot;$tm_device_tag&quot;,&#10;        &quot;tm_session_sid&quot;: &quot;$tm_session_sid&quot;&#10;    },&#10;    &quot;signature&quot;: {&#10;        &quot;factor_index&quot;: $factor_index,&#10;     &quot;security_item_type&quot;:&quot;$security_item_type&quot;&#10;    },&#10;    &quot;signature_result&quot;: &quot;signature_accepted&quot;,&#10;    &quot;signed_app_action_id&quot;: &quot;$tm_action_id&quot;&#10;}" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="tm_action_id" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="$.tm_action_id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="error_message" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="$.message" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="error_code" order="" paramOrder="3" parentOrder="0" passnull="false" sms-name="" src="$.error_code" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

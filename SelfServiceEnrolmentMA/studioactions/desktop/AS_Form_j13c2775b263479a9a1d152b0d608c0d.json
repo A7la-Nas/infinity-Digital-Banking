@@ -1,0 +1,32 @@
+{
+    "AS_Form_j13c2775b263479a9a1d152b0d608c0d": {
+        "id": "AS_Form_j13c2775b263479a9a1d152b0d608c0d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": null,
+            "KUID": "af75e38cbab2497c95f233e1ce5c9315"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onBreakpointChange_j0141fd8522f4fb18b91341ab90b3a4d",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBreakpointChange",
+            "display": "onBreakpointChange",
+            "inputparams": [{
+                "name": "width",
+                "value": " breakpoint"
+            }],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

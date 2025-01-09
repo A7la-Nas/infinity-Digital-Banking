@@ -1,0 +1,31 @@
+{
+    "AS_Form_af849337ec6e4e729f27650226a9aaf9": {
+        "id": "AS_Form_af849337ec6e4e729f27650226a9aaf9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "contextObj": {
+            "name": "frmSameBankAddBeneficiaryConfirm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j32708739d374cd29351d4d15fd18343"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__df851ece4941407e89504897b59d9a0a",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBreakPointChange",
+            "display": "onBreakPointChange",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

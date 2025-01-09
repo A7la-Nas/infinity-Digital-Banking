@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_g395a52e6c064934be7cb7eabf8eedad": {
+        "id": "AS_FlexContainer_g395a52e6c064934be7cb7eabf8eedad",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmBillPayRecurrence",
+            "type": "forms",
+            "platform": null,
+            "KUID": "i478aeb81aa84e7ba1d760efdbb6b815"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b22a6df561d04a1f9c62f7a59c94d2d7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var billPayMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"BillPayModule\");\nbillPayMod.presentationController.commonFunctionForNavigation(\"frmTransfersDuration\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,165 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": ""
+    },
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 0,
+    "data": {
+        "blockTitle": "{\"default\":\"{i.i18n.unifiedBeneficiary.LinkPayee}\"}",
+        "button1": "{   \"text\": \"{i.i18n.unifiedBeneficiary.Cancel}\",   \"action\": {     \"level\": \"Form\",     \"method\": \"cancelLinkPayee\"   } }",
+        "button2": "{   \"text\": \"{i.i18n.TransfersEur.btnBack}\",   \"action\": {     \"level\": \"Form\",     \"method\": \"backLinkPayee\"   } }",
+        "button3": "{\"text\":\"{i.i18n.TransfersEur.btnContinue}\",\"action\":{\"level\":\"Form\",\"method\":\"continueLinkPayee\"}}",
+        "column1": "{   \"text\": \"{i.i18n.approvals.contract}\",   \"mapping\": \"contractName\",   \"fieldType\": \"Label\",   \"sortBy\": \"contractName\",   \"sortByType\": \"string\" }",
+        "column2": "{   \"text\": \"{i.i18n.payments.identityNumber}\",   \"mapping\": \"contractId\",   \"fieldType\": \"Label\",   \"sortBy\": \"contractId\",   \"sortByType\": \"string\" }",
+        "column3": "{   \"text\": \"{i.i18n.unifiedBeneficiary.SelectedCIF}\",   \"mapping\": \"Select Contract Count\",   \"fieldType\": \"Label\" }",
+        "placeholderSearch": "{\"default\":\"i.i18n.billpay.searchForKeywords\"}",
+        "subTitle": "{\"default\":\"{i.i18n.unifiedBeneficiary.contractSubHeader}\"}"
+    },
+    "id": "contractList",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f67138d680a946acb61b32ae128452ea",
+    "layouttype": 2,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxMain",
+    "pf": "frmLinkPayee",
+    "responsiveData": {
+        "b1": {
+            "bottom": {
+                "type": "string",
+                "value": ""
+            },
+            "layoutType": 4,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "minHeight": {
+                "type": "string",
+                "value": ""
+            },
+            "top": {
+                "type": "string",
+                "value": "25dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b2": {
+            "layoutType": 4,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "minHeight": {
+                "type": "string",
+                "value": ""
+            },
+            "top": {
+                "type": "string",
+                "value": "25dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b3": {
+            "layoutType": 4,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "minHeight": {
+                "type": "string",
+                "value": ""
+            },
+            "top": {
+                "type": "string",
+                "value": "30dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b4": {
+            "layoutType": 4,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "minHeight": {
+                "type": "string",
+                "value": ""
+            },
+            "top": {
+                "type": "string",
+                "value": "25dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b5": {
+            "minHeight": {
+                "type": "string",
+                "value": ""
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "fbca25f03c334daabbaf9f6148883bde",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

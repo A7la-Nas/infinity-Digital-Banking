@@ -1,0 +1,190 @@
+{
+    "classname": "VerticalSummaryBarchart",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "General",
+                "Legend"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d70e1764c2df410ea3661db0d5227abb",
+                    "originalPropertyKey": "data",
+                    "propertyIndex": 1,
+                    "propertyKey": "data",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "data",
+                        "isHiddenInTool": false,
+                        "srcWidget": "VerticalAccountsBarChart",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "bac33a212cd9467f8d275567ace6a22c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "bc3f7c80dc6948eeac655ec18a5c1904",
+                    "originalPropertyKey": "customContainerID",
+                    "propertyIndex": 2,
+                    "propertyKey": "customContainerID",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "customContainerID",
+                        "isHiddenInTool": false,
+                        "srcWidget": "VerticalAccountsBarChart",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "bac33a212cd9467f8d275567ace6a22c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "d98cb110bc5340799e7eb2324d340315",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 3,
+                    "propertyKey": "skin1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "color1",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxCircle1",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "cd5078f461e9479cad1bf0bbad433821"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "f84fb25ab4d944c5ab78be57e100c27e",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 4,
+                    "propertyKey": "skin2",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "color2",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxCircle2",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ffe1cd801a254f2aa3382439210b0b6f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "df68793f71b14d34b2bd89cff9768d80",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 5,
+                    "propertyKey": "text1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "text1",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblLegend1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d1e6617f128049eeba0525525d5f345f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "ee16c53d6cc04f51b438e0f0696fb622",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 6,
+                    "propertyKey": "text2",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "text2",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblLegend2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "g55143dbca604643a46740f0e42273da"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "c8962935b24545108a2ad6a502f1a3b5",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 7,
+                    "propertyKey": "visibility",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Visible",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxLegends",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "acee0facd90a4ac18255a493143c31b7"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.SBAdvisory.Overdue",
+    "version": "1.0.0"
+}

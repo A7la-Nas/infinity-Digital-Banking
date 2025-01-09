@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book" rel="stylesheet"
+        type="text/css" />
+    <style>
+        @font-face {
+            font-family: 'CircularStd-Book';
+            src: url('CircularStd-Book.ttf') format('truetype');
+        }
+
+        @import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #visualization {
+            height: 276px;
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 585px) {
+            #visualization {
+                height: 226px;
+            }
+        }
+
+        @media only screen and (width: 788) {
+            #visualization {
+                height: 290px;
+            }
+        }
+
+        .google-visualization-tooltip {
+            border: none !important;
+            height: 223px;
+            min-width: 280px;
+            top: 0 !important;
+        }
+
+        @media only screen and (min-width: 585px) {
+            .google-visualization-tooltip {
+                border: none !important;
+                height: 208px;
+                min-width: 280px;
+                top: 0 !important;
+            }
+        }
+
+        .divider {
+            border-bottom: 1px solid #E3E3E3;
+        }
+
+        .tooltipContainer {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #E3E3E3;
+            border-radius: 5px;
+            max-width: 280px;
+            font-size: 13px;
+            line-height: 16px;
+            background-color: #fff;
+            font-family: 'CircularStd-Book';
+            box-shadow: 0px 2px 10px rgba(70, 69, 69, 0.2);
+            padding-bottom: 5px;
+        }
+
+        .tooltipContainer p {
+            margin: 0;
+        }
+
+        .tooltipTitle {
+            padding: 0 10px;
+            font-size: 15px;
+            line-height: 34px;
+            font-weight: 700;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .closeBtn {
+            width: 13px;
+            height: 13px;
+            color: #008392;
+            background-color: transparent;
+            border: none;
+            align-self: center;
+            padding: 0;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .closeBtn:focus {
+            outline: none;
+        }
+
+        .tooltipInfoContainer {
+            padding: 0 10px;
+        }
+
+        .tooltipMoneyFlowList {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 7px 0;
+        }
+
+        .tooltipMoneyFlowListItemRight {
+            font-weight: bold;
+        }
+
+        .tooltipBalances {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .colorCircle::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            background-color: #34CC57;
+            margin-right: 8px;
+        }
+
+        .orange::before {
+            background-color: #F06E18;
+            border-radius: 50%;
+        }
+
+        .teal::before {
+            background-color: #008392;
+            border-radius: 50%;
+        }
+    </style>
+    <link rel="stylesheet" href="../../../resources/fonts/Desktop_web/CircularStd-Book.ttf">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <div id="visualization"></div>
+    <script>
+        var json = {
+            "response": {
+                "opstatus_GetCashflowPast12": 0,
+                "total": {
+                    "cashOnHand": "14701.42",
+                    "moneyIn": "5568.67",
+                    "moneyOut": "12319.72"
+                },
+                "recordsPast": [
+                    {
+                        "date": "2021-01-01",
+                        "monthlyTotal": "4803.32",
+                        "cashOnHand": "5591.35",
+                        "closingBalance": "1455.68",
+                        "moneyIn": "3287.15",
+                        "monthlyChange": "12738.02",
+                        "moneyOut": "7918.60"
+                    },
+                    {
+                        "date": "2021-02-01",
+                        "monthlyTotal": "4030.49",
+                        "cashOnHand": "13983.47",
+                        "closingBalance": "6981.52",
+                        "moneyIn": "16840.18",
+                        "monthlyChange": "12982.17",
+                        "moneyOut": "7502.58"
+                    },
+                    {
+                        "date": "2021-03-01",
+                        "monthlyTotal": "10896.57",
+                        "cashOnHand": "14701.42",
+                        "closingBalance": "6850.53",
+                        "moneyIn": "5568.67",
+                        "monthlyChange": "2981.87",
+                        "moneyOut": "12319.72"
+                    }
+                ],
+                "opstatus": 0,
+                "recordsPredictive": [
+                    {
+                        "date": "2021-04-01",
+                        "monthlyTotal": "6173.16",
+                        "reason": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dolor sapien, aliquam sed maximus sed, lacinia at velit. Sed molestie risus id pellentesque ullamcorper.",
+                        "cashOnHand": "17542.63",
+                        "closingBalance": "12760.29",
+                        "moneyIn": "",
+                        "monthlyChange": "14654.35",
+                        "moneyOut": ""
+                    },
+                    {
+                        "date": "2021-05-01",
+                        "monthlyTotal": "12007.99",
+                        "reason": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dolor sapien, aliquam sed maximus sed, lacinia at velit. Sed molestie risus id pellentesque ullamcorper.",
+                        "cashOnHand": "3494.96",
+                        "closingBalance": "6035.95",
+                        "moneyIn": "",
+                        "monthlyChange": "14413.96",
+                        "moneyOut": ""
+                    },
+                    {
+                        "date": "2021-06-01",
+                        "monthlyTotal": "4697.47",
+                        "reason": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dolor sapien, aliquam sed maximus sed, lacinia at velit. Sed molestie risus id pellentesque ullamcorper.",
+                        "cashOnHand": "4484.96",
+                        "closingBalance": "5192.54",
+                        "moneyIn": "",
+                        "monthlyChange": "10023.54",
+                        "moneyOut": ""
+                    }
+                ],
+                "opstatus_GetCashFlowPredictive": 0,
+                "httpStatusCode": 200
+            },
+            "StatusCode": 200,
+            "Status": "Success"
+        }
+
+        var response = getRawData();
+
+        google.charts.load("visualization", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawVisualization);
+
+        function drawVisualization() {
+            var data = new google.visualization.DataTable();
+
+            data.addColumn("string", "x");
+            data.addColumn({ type: "string", role: "annotation" });
+            data.addColumn({ type: "string", role: "annotationText" });
+            data.addColumn({ type: 'string', role: 'tooltip', p: { 'html': true } });
+            data.addColumn("number", "Data 1");
+            data.addColumn({ type: "boolean", role: "certainty" });
+            data.addColumn("number", "Data 2");
+            data.addColumn({ type: "boolean", role: "certainty" });
+            data.addColumn("number", "Data 3");
+            data.addColumn({ type: "boolean", role: "certainty" });
+
+            addRowsToGraph(data);
+
+            // Create and draw the visualization.
+            var container = document.getElementById("visualization");
+            var chart = new google.visualization.LineChart(container);
+
+            var observer = new MutationObserver(function () {
+                Array.prototype.forEach.call(
+                    container.getElementsByTagName("text"),
+                    function (annotation) {
+                        if (
+                            annotation.getAttribute("text-anchor") === "middle" &&
+                            annotation.getAttribute("fill") === "#646464") {
+
+                            var chartLayout = chart.getChartLayoutInterface();
+                            annotation.setAttribute("transform", "rotate(0)");
+                            annotation.setAttribute("pointer-events", "none");
+                            annotation.setAttribute(
+                                "y",
+                                chartLayout.getChartAreaBoundingBox().top -
+                                parseInt(annotation.getAttribute("font-size")) / 2
+                            );
+
+                            //set sibling					
+                            var pathSibling = annotation.parentElement;
+                            pathSibling = pathSibling.nextSibling;
+                            pathSibling.setAttribute("transform", "rotate(0)");
+                            pathSibling.setAttribute("pointer-events", "none");
+                            pathSibling.setAttribute(
+                                "y",
+                                chartLayout.getChartAreaBoundingBox().top -
+                                parseInt(pathSibling.getAttribute("font-size")) / 2
+                            );
+                        }
+                    }
+                )
+                var tooltip = container.querySelector('.google-visualization-tooltip');
+                if (tooltip != 'undefined' || tooltip != null) {
+                    //var chartLayout = chart.getChartLayoutInterface();
+                    //tooltip.style.top = 0;
+                }
+            });
+            observer.observe(container, {
+                childList: true,
+                subtree: true
+            });
+
+            var mobileOptions = {
+                curveType: "function",
+                width: '100%',
+                height: '266px',
+                chartArea: { width: '100%', left: 40, right: 10, top: 20, bottom: 25, height: '100%' },
+                legend: 'none',
+                series: {
+                    0: {
+                        lineWidth: 4,
+                        color: '#003B5C'
+                    },
+                    1: {
+                        lineWidth: 4,
+                        color: '#F68D2E'
+                    },
+                    2: {
+                        lineWidth: 4,
+                        color: '#008392'
+                    },
+                },
+                hAxis: {
+                    format: "MMM",
+                    textStyle: {
+                        fontName: 'CircularStd-Book',
+                        fontSize: 12,
+                        color: '#2b2b2b'
+                    },
+                    showTextEvery: 1,
+                    slantedText: false
+                },
+                vAxis: {
+                    maxValue: 10,
+                    format: "short",
+                    minValue: 0,
+                    viewWindow: {
+                        min: 0
+                    },
+                    textStyle: {
+                        fontName: 'CircularStd-Book',
+                        fontSize: 12,
+                        color: '#2b2b2b'
+                    }
+                },
+                annotations: {
+                    style: "line",
+                    textStyle: {
+                        color: "#646464",
+                        fontSize: 11,
+                        fontName: 'CircularStd-Book'
+                    }
+                },
+                crosshair: {
+                    trigger: "focus",
+                    orientation: "vertical",
+                    focused: { color: '#008392' }
+                },
+                theme: "material",
+                focusTarget: "category",
+                tooltip: {
+                    trigger: 'selection',
+                    isHtml: true
+                },
+            };
+
+            var tabletDesktopOptions = {
+                curveType: "function",
+                width: '100%',
+                height: '266px',
+                chartArea: { width: '100%', left: 90, right: 10, top: 20, bottom: 25, height: '100%' },
+                legend: 'none',
+                series: {
+                    0: {
+                        lineWidth: 4,
+                        color: '#003B5C'
+                    },
+                    1: {
+                        lineWidth: 4,
+                        color: '#F68D2E'
+                    },
+                    2: {
+                        lineWidth: 4,
+                        color: '#008392'
+                    },
+                },
+                hAxis: {
+                    format: "MMM",
+                    textStyle: {
+                        fontName: 'CircularStd-Book',
+                        fontSize: 11,
+                        color: '#2b2b2b'
+                    },
+                    slantedText: false
+                },
+                vAxis: {
+                    maxValue: 10,
+                    format: "currency",
+                    minValue: 0,
+                    viewWindow: {
+                        min: 0
+                    },
+                    textStyle: {
+                        fontName: 'CircularStd-Book',
+                        fontSize: 13,
+                        color: '#2b2b2b'
+                    }
+                },
+                annotations: {
+                    style: "line",
+                    textStyle: {
+                        color: "#646464",
+                        fontSize: 13,
+                        fontName: 'CircularStd-Book'
+                    }
+                },
+                crosshair: {
+                    trigger: "focus",
+                    orientation: "vertical",
+                    focused: { color: '#008392' }
+                },
+                theme: "material",
+                focusTarget: "category",
+                tooltip: {
+                    trigger: 'selection',
+                    isHtml: true
+                }
+            };
+
+            google.visualization.events.addListener(chart, 'click', clearSelection);
+            document.body.addEventListener('click', clearSelection, false);
+
+            if (window.innerWidth <= 585) {
+                google.visualization.events.addListener(chart, 'ready', function () {
+                    var axisLabels = container.getElementsByTagName('text');
+                    for (var i = 0; i < axisLabels.length; i++) {
+                        if (axisLabels[i].getAttribute('text-anchor') === 'end') {
+                            axisLabels[i].innerHTML = '$' + axisLabels[i].innerHTML;
+                        }
+                    }
+                });
+                chart.draw(data, mobileOptions);
+            }
+            else {
+                chart.draw(data, tabletDesktopOptions);
+            }
+
+            function clearSelection(e) {
+                if (!container.contains(e.srcElement)) {
+                    chart.setSelection();
+                }
+            }
+        }
+
+        const formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            minimumFractionDigits: 2
+        });
+
+        function setTooltipContent(dataTable, isPredictiveData) {
+            var content =
+                '<div class="tooltipContainer">' +
+                '<div class="tooltipTitle divider">' +
+                '<p>' + getDateMonthLongFormat(dataTable.date) + '</p>' +
+                '<div class="closeBtnContainer">' +
+                '<button class="closeBtn" onClick="closeTooltip()">X</button>' +
+                '</div>' +
+                '</div>' +
+                '<div class="tooltipInfoContainer">' +
+                '<div class="tooltipMoneyFlow divider">' +
+                '<div class="tooltipMoneyFlowList">' +
+                '<p class="tooltipMoneyFlowListItemLeft colorCircle">Cash Inflow</p>' +
+                '<p class="tooltipMoneyFlowListItemRight">' + getMoneyInOutForPredictive(dataTable.moneyIn, isPredictiveData) + '</p>' +
+                '</div>' +
+                '<div class="tooltipMoneyFlowList">' +
+                '<p class="tooltipMoneyFlowListItemLeft colorCircle orange">Cash Outflow</p>' +
+                '<p class="tooltipMoneyFlowListItemRight">' + getMoneyInOutForPredictive(dataTable.moneyOut, isPredictiveData) + '</p>' +
+                '</div>' +
+                '<div class="tooltipMoneyFlowList">' +
+                '<p class="tooltipMoneyFlowListItemLeft colorCircle teal">Cash on Hand</p>' +
+                '<p class="tooltipMoneyFlowListItemRight">' + formatter.format(dataTable.cashOnHand) + '</p>' +
+                '</div>' +
+                '</div>' +
+                '<div class="tooltipMoneyFlow">' +
+                '<div class="tooltipMoneyFlowList">' +
+                '<p class="tooltipMoneyFlowListItemLeft">Closing Balance</p>' +
+                '<p class="tooltipMoneyFlowListItemRight">' + formatter.format(dataTable.closingBalance) + '</p>' +
+                '</div>' +
+                '<div class="tooltipMoneyFlowList">' +
+                '<p class="tooltipMoneyFlowListItemLeft">Monthly Total</p>' +
+                '<p class="tooltipMoneyFlowListItemRight">' + formatter.format(dataTable.monthlyTotal) + '</p>' +
+                '</div>' +
+                '<div class="tooltipMoneyFlowList">' +
+                '<p class="tooltipMoneyFlowListItemLeft">Monthly Change</p>' +
+                '<p class="tooltipMoneyFlowListItemRight">' + formatter.format(dataTable.monthlyChange) + '</p>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>';
+            return content;
+        }
+
+        function getRawData() {
+            // TODO: HTTP CALL IMPLEMENTATION
+            return json.response;
+        }
+
+        function addRowsToGraph(data) {
+            response.recordsPast?.forEach((historicalData, index) => {
+                var shortMonth = getDateMonthShortFormat(historicalData.date);
+
+                if (getDateMonthShortFormat(historicalData.date) === "Jan") {
+                    data.addRow([shortMonth, getDateYear(historicalData.date), "", setTooltipContent(historicalData, false), parseFloatTwoDecimals(historicalData.moneyIn), true, parseFloatTwoDecimals(historicalData.moneyOut), true, parseFloatTwoDecimals(historicalData.cashOnHand), true]);
+                } else if (index === response.recordsPast.length - 1) {
+                    data.addRow([shortMonth, "Today", "", setTooltipContent(historicalData, false), parseFloatTwoDecimals(historicalData.moneyIn), true, parseFloatTwoDecimals(historicalData.moneyOut), true, parseFloatTwoDecimals(historicalData.cashOnHand), true]);
+                } else {
+                    data.addRow([shortMonth, null, null, setTooltipContent(historicalData, false), parseFloatTwoDecimals(historicalData.moneyIn), true, parseFloatTwoDecimals(historicalData.moneyOut), true, parseFloatTwoDecimals(historicalData.cashOnHand), true]);
+                }
+            });
+
+            response.recordsPredictive?.forEach((predictiveData) => {
+                var shortMonth = getDateMonthShortFormat(predictiveData.date);
+
+                if (getDateMonthShortFormat(predictiveData.date) === "Jan") {
+                    data.addRow([shortMonth, getDateYear(predictiveData.date), "", setTooltipContent(predictiveData, true), parseFloatTwoDecimals(predictiveData.moneyIn), false, parseFloatTwoDecimals(predictiveData.moneyOut), false, parseFloatTwoDecimals(predictiveData.cashOnHand), false]);
+                } else {
+                    data.addRow([shortMonth, null, null, setTooltipContent(predictiveData, true), parseFloatTwoDecimals(predictiveData.moneyIn), false, parseFloatTwoDecimals(predictiveData.moneyOut), false, parseFloatTwoDecimals(predictiveData.cashOnHand), false]);
+                }
+            });
+        }
+
+        function getMoneyInOutForPredictive(amount, isPredictiveData) {
+            if (!isPredictiveData) {
+                return formatter.format(amount);
+            } else {
+                if (amount === "") {
+                    return "-"
+                } else {
+                    return formatter.format(amount);
+                }
+            }
+        }
+
+        function getDateMonthLongFormat(date) {
+            return new Date(date).toLocaleString('en', { month: 'long' });
+        }
+
+        function getDateMonthShortFormat(date) {
+            return new Date(date).toLocaleString('en', { month: 'short' });
+        }
+
+        function getDateYear(date) {
+            return new Date(date).toLocaleString('en', { year: 'numeric' });
+        }
+
+        function parseFloatTwoDecimals(strAmount) {
+            return parseFloat(parseFloat(strAmount).toFixed(2));
+        }
+
+        function closeTooltip() {
+            var tooltip = document.querySelector('.google-visualization-tooltip');
+            tooltip.style.display = 'none'
+        }
+
+        window.addEventListener('resize', () => {
+            drawVisualization()
+        })
+    </script>
+</body>
+
+</html>

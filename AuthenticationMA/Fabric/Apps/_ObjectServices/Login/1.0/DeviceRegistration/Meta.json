@@ -1,0 +1,20 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "customCreate" : "customCreateMapping",
+    "dbx_updateCustomerDeviceInfo" : "dbx_updateCustomerDeviceInfoMapping",
+    "get" : "getMapping",
+    "create" : "createMapping",
+    "dbx_registerCustomerDevice" : "dbx_registerCustomerDeviceMapping",
+    "delete" : "deleteMapping",
+    "dbx_isDeviceRegistered" : "dbx_isDeviceRegisteredMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

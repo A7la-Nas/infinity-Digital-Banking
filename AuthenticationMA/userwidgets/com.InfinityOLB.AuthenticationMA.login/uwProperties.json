@@ -1,0 +1,412 @@
+{
+    "classname": "login",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a12196267f5b487ba41b95e287d8a759",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e3c79a41b5214ceba8b13728ef857ba1",
+                    "paramList": [],
+                    "propertyKey": "onBreakpointChange",
+                    "pw": {
+                        "displayName": "onBreakpointChange",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a852430926a34d0fac974a5f8b61b5a2",
+                    "paramList": [],
+                    "propertyKey": "recoveredUsernameUIChanges",
+                    "pw": {
+                        "displayName": "recoveredUsernameUIChanges",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f86cf55871654e8bbaedbbc35daf80e5",
+                    "paramList": [
+                        {
+                            "name": "errorMessage"
+                        }
+                    ],
+                    "propertyKey": "showLoginError",
+                    "pw": {
+                        "displayName": "showLoginError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e8684adc075f436585b9fb0d87cac626",
+                    "paramList": [],
+                    "propertyKey": "resetUI",
+                    "pw": {
+                        "displayName": "resetUI",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d24fc5d433094268aa842cb54835af1a",
+                    "paramList": [],
+                    "propertyKey": "closeUserNameDropdown",
+                    "pw": {
+                        "displayName": "closeUserNameDropdown",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b7fcffb731bf4e8fb60794e79516e115",
+                    "paramList": [],
+                    "propertyKey": "onKeyPressCallBack",
+                    "pw": {
+                        "displayName": "onKeyPressCallBack",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a87a664e7cfb478bab72abf637ded096",
+                    "paramList": [],
+                    "propertyKey": "setUserNameTbxActive",
+                    "pw": {
+                        "displayName": "setUserNameTbxActive",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a03c72afdcaf442ab1ddcb8b1e8a56dc",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "showServerErrorPage",
+                    "pw": {
+                        "displayName": "showServerErrorPage",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fbfaf5565cc1489c95ba571d29263b2e",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "forceLayout",
+                    "pw": {
+                        "displayName": "forceLayout",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c9f7b9de2a404bb4a739c89eaa6900cf",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 3,
+                    "propertyKey": "MFANavigation",
+                    "pw": {
+                        "displayName": "MFANavigation",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "caf762a019414e8fa7540be19a80c451",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 4,
+                    "propertyKey": "onSuccessCallback",
+                    "pw": {
+                        "displayName": "onSuccessCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c1d6d823fabd4679a1562331a54b3928",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "cantSignIn",
+                    "pw": {
+                        "displayName": "cantSignIn",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f595ea0928eb4cc1a0ed3d76444f30da",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 6,
+                    "propertyKey": "onFailureCallback",
+                    "pw": {
+                        "displayName": "onFailureCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Context Setting",
+                "Skins",
+                "Login"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "DbxUserLogin",
+                    "group": "General",
+                    "kuid": "ac11e114e8fa4a6087539f0e835d8a33",
+                    "originalPropertyKey": "identityServiceName",
+                    "propertyIndex": 1,
+                    "propertyKey": "identityServiceName",
+                    "pw": {
+                        "displayName": "Identity Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.successCallback}",
+                    "group": "Context Setting",
+                    "kuid": "d56c54a832e74acf82be654f9d117e1d",
+                    "originalPropertyKey": "successCallback",
+                    "propertyIndex": 1,
+                    "propertyKey": "successCallback",
+                    "pw": {
+                        "displayName": "Success Callback",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"sknSSP72727213Px\"},\"768\":{\"skin\":\"sknlbl727272SSPReg15px\"},\"1024\":{\"skin\":\"sknlbl727272SSPReg15px\"},\"default\":{\"skin\":\"sknlbl727272SSPReg15px\"}}",
+                    "group": "Skins",
+                    "kuid": "b5c230ec62fc400caa9071084ca15347",
+                    "originalPropertyKey": "labelSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "labelSkin",
+                    "pw": {
+                        "displayName": "Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.riskScore}",
+                    "group": "Context Setting",
+                    "kuid": "b807beebf81549e8a92abfde6f6362a6",
+                    "originalPropertyKey": "riskScore",
+                    "propertyIndex": 2,
+                    "propertyKey": "riskScore",
+                    "pw": {
+                        "displayName": "Risk Score",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "f19004ae36e349aa8beba09ea0a077eb",
+                    "originalPropertyKey": "username",
+                    "propertyIndex": 2,
+                    "propertyKey": "username",
+                    "pw": {
+                        "displayName": "Username",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.failureCallback}",
+                    "group": "Context Setting",
+                    "kuid": "f6a0d9cff6af4b8faf31bf735848ec7b",
+                    "originalPropertyKey": "failureCallback",
+                    "propertyIndex": 3,
+                    "propertyKey": "failureCallback",
+                    "pw": {
+                        "displayName": "Failure Callback",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"normalSkin\":\"sknBorderE3E3E3\", \"focusSkin\":\"sknFocusBorder293275\", \"errorSkin\" : \"sknborderff0000error\"}",
+                    "group": "Skins",
+                    "kuid": "a73d9768a73d419ea28c85fa64b5c6a7",
+                    "originalPropertyKey": "flxSkins",
+                    "propertyIndex": 3,
+                    "propertyKey": "flxSkins",
+                    "pw": {
+                        "displayName": "Flex Skins",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "null",
+                    "group": "General",
+                    "kuid": "bb56343d6e7a4fbbb3a6804039c2ef5a",
+                    "originalPropertyKey": "closePopups",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "closePopups",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "close popups",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"normal\":\"sknBtnNormalSSPFFFFFF15Px\", \"hoverSkin\":\"sknBtnNormalSSPFFFFFFHover15Px\", \"focusSkin\":\"sknBtnNormalSSPFFFFFF15PxFocus\"}",
+                    "group": "Skins",
+                    "kuid": "baece917911246cf8fcd30bbf4b92b19",
+                    "originalPropertyKey": "primaryBtnEnableSkin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "primaryBtnEnableSkin",
+                    "pw": {
+                        "displayName": "Primary Btn Enable Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"normal\":\"sknBtnBlockedSSPFFFFFF15Px\", \"hoverSkin\":\"sknBtnBlockedSSPFFFFFF15Px\", \"focusSkin\":\"sknBtnBlockedSSPFFFFFF15Px\"}",
+                    "group": "Skins",
+                    "kuid": "icc41a6dd2e14abcbdced6e1885122a7",
+                    "originalPropertyKey": "primaryBtnDisableSkin",
+                    "propertyIndex": 5,
+                    "propertyKey": "primaryBtnDisableSkin",
+                    "pw": {
+                        "displayName": "Primary Btn Disable Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "a5d10547340e4f90958e0789384ca29c",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "originalPropertyKey": "focusSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "focusSkin1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "displayName": "Focus",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "e7f791f4456f489ba13eb7f83415dceb"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "e9773a701d474fd783cd0d6d68199a7e",
+                    "propertyKey": "flxUserName",
+                    "srcWgtKUID": "e7f791f4456f489ba13eb7f83415dceb"
+                }
+            ],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.AuthenticationMA",
+    "version": "1.0.0"
+}

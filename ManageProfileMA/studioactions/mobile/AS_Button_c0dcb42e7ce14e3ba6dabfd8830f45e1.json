@@ -1,0 +1,23 @@
+{
+    "AS_Button_c0dcb42e7ce14e3ba6dabfd8830f45e1": {
+        "id": "AS_Button_c0dcb42e7ce14e3ba6dabfd8830f45e1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "formDummy",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f84f1fde3f804f529149286231edbd30"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f3149d6ed5e24983b0d5efe278ededf3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\nvar authParams = {\n\"UserName\": \"2860439502\",\n\"Password\": \"Kony@1234\",\n\"loginOptions\": {\n\"isOfflineEnabled\": false\n}\n};\ntry{\nauthClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\nauthClient.login(authParams,successCallback,errorCallback);\n}catch(e){\n  kony.print(\"error\"+e);\n}\nfunction successCallback(resSuccess){\nkony.application.dismissLoadingScreen();\nkony.print(resSuccess);\n  var settingsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\"moduleName\" : \"SettingsUIModule\", \"appName\" : \"ManageProfileMA\"});\n          settingsModule.presentationController.showSettings();\n  var permissions = kony.sdk.getCurrentInstance().tokens[applicationManager.getConfigurationManager().constants.IDENTITYSERVICENAME].provider_token.params;\n            permissions = JSON.parse(permissions.security_attributes.permissions);\n            applicationManager.getConfigurationManager().setUserPermissions(permissions);\n/*var ntf = new kony.mvc.Navigation(\"frmProfile\");\nntf.navigate();*/\n}\nfunction errorCallback(resError){\nkony.application.dismissLoadingScreen();\n  alert(\"failed\");\nkony.print(resError);\nalert(\"login is not working...\"+JSON.stringify(resError))\n}",
+            "parentId": null
+        }]
+    }
+}

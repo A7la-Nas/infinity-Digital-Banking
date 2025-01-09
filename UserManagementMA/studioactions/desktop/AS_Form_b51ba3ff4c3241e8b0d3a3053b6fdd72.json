@@ -1,0 +1,23 @@
+{
+    "AS_Form_b51ba3ff4c3241e8b0d3a3053b6fdd72": {
+        "id": "AS_Form_b51ba3ff4c3241e8b0d3a3053b6fdd72",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": null,
+            "KUID": "idc38e042611417dbb5de668a646e2e5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b0bb415b75e341e3a58fdbe3552752e1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\nvar authParams = {\n \"UserName\": \"7644257870\",\n  \"Password\": \"Kony@1234\",\n  \"loginOptions\": {\n    \"isOfflineEnabled\": false\n  }\n};\nauthClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\nauthClient.login(authParams,successCallback,errorCallback);\nfunction successCallback(resSuccess){\n  var userPrefManager = applicationManager.getUserPreferencesManager();\n  var asyncManager = applicationManager.getAsyncManager();\n  asyncManager.callAsync(\n                [\n                    asyncManager.asyncItem(userPrefManager, 'fetchUser')\n                ],\n                function(){}\n            );\n  kony.application.dismissLoadingScreen();\n            kony.print(resSuccess);\n\t\t\tvar userAttributes, securityAttributes;\n\t\t   var params ={};\n\t\t\tvar authClient = KNYMobileFabric.getIdentityService(applicationManager.getConfigurationManager().constants.IDENTITYSERVICENAME);\n\t\t\tauthClient.getUserAttributes(function (response) {\n\t\t\tparams.userAttributes = response;\n\t\t\tauthClient.getSecurityAttributes(function (data) {\n\t\t\t  params.securityAttributes = data;\n\t\t\t  var userAttributes = params.userAttributes;\n\t\t\t  var  securityAttributes = params.securityAttributes;\n\t\t\t  var configurationManager = applicationManager.getConfigurationManager();\n\t\t\t  configurationManager.isSMEUser = \"false\";\n\t\t\t  configurationManager.isRBUser = \"false\";\n\t\t\t  configurationManager.isMBBUser = \"false\";\n\t\t\t  configurationManager.isCombinedUser = \"false\";\n\n\t\t\t  if (!kony.sdk.isNullOrUndefined(userAttributes.isCombinedUser)) {\n\t\t\t\tconfigurationManager.isCombinedUser = userAttributes.isCombinedUser;\n\t\t\t  }\n\n\t\t\t  if (!kony.sdk.isNullOrUndefined(configurationManager.customerTypeId) && configurationManager.isCombinedUser !== \"true\") {\n\t\t\t\tswitch (userAttributes.CustomerType_id) {\n\t\t\t\t  case \"TYPE_ID_BUSINESS\": configurationManager.isSMEUser = \"true\";\n\t\t\t\t\tbreak;\n\t\t\t\t  case \"TYPE_ID_RETAIL\": configurationManager.isRBUser = \"true\";\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\t  }\n\t\t\t  //Converted string to permission array\n\t\t\t  var permissions = JSON.parse(securityAttributes.permissions);\n\t\t\t  var features = JSON.parse(securityAttributes.features);\n\t\t\t  var accounts = securityAttributes.accounts;\n\t\t\t  applicationManager.getConfigurationManager().setUserPermissions(permissions);\n\t\t\t  applicationManager.getConfigurationManager().setFeatures(features);\n\t\t\t  applicationManager.getConfigurationManager().setUserRole(userAttributes.customerTypeId);\n\t\t\t  var userModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"BusinessBankingUIModule\");\n            applicationManager.getUserPreferencesManager().isLoggedIn = true;\t\n              applicationManager.getConfigurationManager().fetchApplicationProperties(function(res) {\n                userModule.presentationController.showUserManagent({\n                show: 'showAllUsers'\n            });\n            }, function() {});\n              \n              \n\t\t\t }, function (err) {\n\t\t\t  kony.print(\"Error getting User attributes\");\n\t\t\t});\n\t\t  }, function (err) {\n\t\t\tkony.print(\"Error getting User attributes\");\n\t\t  });\n}\nfunction errorCallback(resError){\n  kony.application.dismissLoadingScreen();\n  kony.print(resError);\n  alert(\"login is not working...\");\n}",
+            "parentId": null
+        }]
+    }
+}

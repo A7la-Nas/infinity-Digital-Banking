@@ -1,0 +1,18 @@
+{
+    "AS_AppEvents_i4426b7935b749b49022ae289968a42e": {
+        "id": "AS_AppEvents_i4426b7935b749b49022ae289968a42e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ff3d2c0dd3f64e9cafbf7a274e4d4a4d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true);\n\nvar ApplicationManager = require('ApplicationManager');\napplicationManager = ApplicationManager.getApplicationManager();\n\nvar config = applicationManager.getConfigurationManager();\nif(performance.navigation.type===1){\nconfig.setBrowserRefreshProperty(\"true\");\n}\nvar sm = applicationManager.getStorageManager();\nvar langObjFromStorage = sm.getStoredItem(\"langObj\");\nif (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\nconfig.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\nconfig.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n} else {\nconfig.configurations.setItem(\"LOCALE\", \"en_US\");\nconfig.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n}\nkony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function() {}, function() {});\n\napplicationManager.getConfigurationManager().fetchApplicationProperties(function(res) {\n  applicationManager.getNavigationManager().updateForm({isLanguageSelectionEnabled : res.isLanguageSelectionEnabled}, \"frmLogin\");\n  if(config.isAppPropertiesLoaded === \"false\"){   \n    config.setAppProperties(\"true\");\n    kony.application.dismissLoadingScreen();\n  }\n}, function() {\n  kony.application.dismissLoadingScreen();\n})\n\n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

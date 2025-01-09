@@ -1,0 +1,31 @@
+{
+    "AS_UWI_da396c80f5e54804aa46b68beb3af3ec": {
+        "id": "AS_UWI_da396c80f5e54804aa46b68beb3af3ec",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "response",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "name": "frmForgotResetInformation",
+            "type": "forms",
+            "platform": "",
+            "KUID": "eacf9bb86c794fd2823201cf43e520c8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__g0345c659c904a54a0709ca04465c58c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "resetPasswordFailureCallback",
+            "display": "resetPasswordFailureCallback",
+            "inputparams": [{
+                "name": "response",
+                "value": "response"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

@@ -1,0 +1,60 @@
+<!--
+* Created by Team Kony.
+* Copyright (c) 2017 Kony Inc. All rights reserved.
+-->
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <title>Chartist</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type = "text/css" href = "chartistCss.css">  
+    <link rel="stylesheet" type="text/css" href="chartist-plugin-tooltip.css">
+    <style> 
+      html, body {width:100%;height:100%;overflow:hidden;}
+	  #chart svg{
+		overflow: visible;
+	  }
+      #chart{
+        margin-left: 5%;
+        top: 13%;
+        width: 90%;
+        height: 85%;
+        z-index: 2;
+        position: absolute;
+      }
+      .Title_style {
+        margin: 0;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #646464 !important;
+      }
+      .ct-label {
+        fill: rgba(88,88,91,1);
+        color: rgba(88,88,91,1);
+        font-size: 75%;  
+        line-height: 2;
+        font-family: 'CircularStd-Book';
+      }
+      .ct-barlabelhzntl {
+        fill: rgba(88, 88, 91, 1);
+        color: rgba(88, 88, 91, 1);
+        font-size: 100%;
+        line-height: 1;
+        font-family: 'CircularStd-Book';
+      }
+	.chartist-tooltip {
+		box-shadow: 1px 2px 8px #bebebe;
+	  }
+    </style>
+  </head>
+  <body>
+    <p id = 'lblTitle' class = 'Title_style' style = 'text-align:center;'></p>
+    <div class = "ct-chart" id = "chart"></div> 
+    <script type = "text/javascript" src = "chartist.js"></script>  
+    <script type = "text/javascript" src = "chartist-plugin-axistitle.js"></script>
+    <script type = "text/javascript" src = "chartist_HorizontalBar.js"></script>       
+    <script type="text/javascript" src="chartist-plugin-tooltip.js"></script>
+  </body>
+</html>

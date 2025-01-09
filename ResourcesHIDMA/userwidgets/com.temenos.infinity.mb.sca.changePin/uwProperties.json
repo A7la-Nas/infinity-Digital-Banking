@@ -1,0 +1,612 @@
+{
+    "classname": "changePin",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "Text Properties",
+                "Skin Properties",
+                "Image Properties"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.ChangePin",
+                    "group": "Text Properties",
+                    "kuid": "h5e94526191b4d00b80d101f89bfca57",
+                    "originalPropertyKey": "headerChangePinLblText",
+                    "propertyIndex": 1,
+                    "propertyKey": "headerChangePinLblText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Change Pin Label Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlx003e75Bg",
+                    "group": "Skin Properties",
+                    "kuid": "hce17f759b584323b1655b489ba84e5e",
+                    "originalPropertyKey": "headerBgSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "headerBgSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Background Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "backbutton.png",
+                    "group": "Image Properties",
+                    "kuid": "f068cb5abe964fa3b6a3f8f8aaf15004",
+                    "originalPropertyKey": "backBtnImage",
+                    "propertyIndex": 1,
+                    "propertyKey": "backBtnImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Back Button Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.Cancel",
+                    "group": "Text Properties",
+                    "kuid": "c3d3dcb80fcf42bd845bee884d0df386",
+                    "originalPropertyKey": "headerBtnCancelText",
+                    "propertyIndex": 2,
+                    "propertyKey": "headerBtnCancelText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Button Cancel Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblffffffSSP30px",
+                    "group": "Skin Properties",
+                    "kuid": "h249f890f9b04cbca3e964007491ca7e",
+                    "originalPropertyKey": "headerLabelSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "headerLabelSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "viewicon.png",
+                    "group": "Image Properties",
+                    "kuid": "af6242cd2548476ba099b675278c3b23",
+                    "originalPropertyKey": "eyeIconInactiveImage",
+                    "propertyIndex": 2,
+                    "propertyKey": "eyeIconInactiveImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Eye Icon Inactive Gray Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.PleaseEnterTheCurrentPinAndChooseYourNewPin",
+                    "group": "Text Properties",
+                    "kuid": "adcaf4db9d0d4f21951b6928019f54b4",
+                    "originalPropertyKey": "topMsgLblText",
+                    "propertyIndex": 3,
+                    "propertyKey": "topMsgLblText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Top Message Label Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknBtnffffffSSP",
+                    "group": "Skin Properties",
+                    "kuid": "efac2939d2c34ae8a0e797aae4ad9573",
+                    "originalPropertyKey": "headerbtnCancelSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "headerbtnCancelSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Cancel Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "viewactive.png",
+                    "group": "Image Properties",
+                    "kuid": "ga4505939c88493eabff09c30ad0ef16",
+                    "originalPropertyKey": "eyeIconActiveImage",
+                    "propertyIndex": 3,
+                    "propertyKey": "eyeIconActiveImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Eye Icon Active Blue Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.CurrentPIN",
+                    "group": "Text Properties",
+                    "kuid": "cd3a9706ff9e4d8caab468e01f788714",
+                    "originalPropertyKey": "currPinLblText",
+                    "propertyIndex": 4,
+                    "propertyKey": "currPinLblText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Current Pin Label Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl42424215pxSSPR",
+                    "group": "Skin Properties",
+                    "kuid": "aa6c555c27c64f27986ec3c01fa7ea98",
+                    "originalPropertyKey": "topMessageSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "topMessageSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Top Message Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "tickmark.png",
+                    "group": "Image Properties",
+                    "kuid": "f127a0861ead4d0197909c928322e01b",
+                    "originalPropertyKey": "tickInactiveImage",
+                    "propertyIndex": 4,
+                    "propertyKey": "tickInactiveImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Tick Inactive Gray Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.EnterCurrentPINCAPS",
+                    "group": "Text Properties",
+                    "kuid": "hecb7383b0e44900a85cd9f43e3fb42b",
+                    "originalPropertyKey": "currPinTbxText",
+                    "propertyIndex": 5,
+                    "propertyKey": "currPinTbxText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Current Pin Textbox Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblEE0005SSPR114pct",
+                    "group": "Skin Properties",
+                    "kuid": "e78b52c02e7041f0bf9ea897455da748",
+                    "originalPropertyKey": "errorLblSkin",
+                    "propertyIndex": 5,
+                    "propertyKey": "errorLblSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Error Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "greentick.png",
+                    "group": "Image Properties",
+                    "kuid": "e10eb2fadcea4283aa51c992c04f0373",
+                    "originalPropertyKey": "tickActiveImage",
+                    "propertyIndex": 5,
+                    "propertyKey": "tickActiveImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Tick Active Green Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.NewPIN",
+                    "group": "Text Properties",
+                    "kuid": "ffc7d031b4a3410b9262940046c2b607",
+                    "originalPropertyKey": "newPinLblText",
+                    "propertyIndex": 6,
+                    "propertyKey": "newPinLblText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "New Pin Label Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknLbl2",
+                    "group": "Skin Properties",
+                    "kuid": "af12a8cc51be4b29bf9aa63d063063de",
+                    "originalPropertyKey": "tbxLabelSkin",
+                    "propertyIndex": 6,
+                    "propertyKey": "tbxLabelSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Textbox Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "confirmation_tick_3.png",
+                    "group": "Image Properties",
+                    "kuid": "a8d83287612d4debad5a29aafd19e76f",
+                    "originalPropertyKey": "greenTickSuccessImage",
+                    "propertyIndex": 6,
+                    "propertyKey": "greenTickSuccessImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Green Tick Success Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.EnterNewPIN",
+                    "group": "Text Properties",
+                    "kuid": "fc35ef2332984fde96dc3149c4bb2d4c",
+                    "originalPropertyKey": "newPinTbxText",
+                    "propertyIndex": 7,
+                    "propertyKey": "newPinTbxText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "New Pin Textbox Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknTbxFontSSPR",
+                    "group": "Skin Properties",
+                    "kuid": "h8a509a41b5c4a93a5f9ee7ef44f436c",
+                    "originalPropertyKey": "tbxSkin",
+                    "propertyIndex": 7,
+                    "propertyKey": "tbxSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Textbox Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.ReEnterPIN",
+                    "group": "Text Properties",
+                    "kuid": "g361ae3117e8476b8ca72ae526564668",
+                    "originalPropertyKey": "reEnterPinLblText",
+                    "propertyIndex": 8,
+                    "propertyKey": "reEnterPinLblText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ReEnter Pin Label Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknLblSSPRegFD",
+                    "group": "Skin Properties",
+                    "kuid": "ae7ee31ef8164f608feebc8ae1c2a389",
+                    "originalPropertyKey": "pswrdReqLblSkin",
+                    "propertyIndex": 8,
+                    "propertyKey": "pswrdReqLblSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Password Req Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.ReEnterPIN",
+                    "group": "Text Properties",
+                    "kuid": "bb2f97d3679843eba84154ef54fee30c",
+                    "originalPropertyKey": "reEnterTbxText",
+                    "propertyIndex": 9,
+                    "propertyKey": "reEnterTbxText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ReEnter Pin Textbox Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopyCopysknrtxfd",
+                    "group": "Skin Properties",
+                    "kuid": "eae3bf6465f145acae8505d669ddd6dc",
+                    "originalPropertyKey": "pswrdReqValuesSkin",
+                    "propertyIndex": 9,
+                    "propertyKey": "pswrdReqValuesSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Password Req Values Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.securityReq.passwordtitle",
+                    "group": "Text Properties",
+                    "kuid": "fb358dd7208f4f30b08e90296cef91ef",
+                    "originalPropertyKey": "pinPolicyLblText",
+                    "propertyIndex": 10,
+                    "propertyKey": "pinPolicyLblText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pin Policy Label Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtn0095e426pxEnabled",
+                    "group": "Skin Properties",
+                    "kuid": "a661bcd5a96143bead4e588364ee425f",
+                    "originalPropertyKey": "btnEnabledSkin",
+                    "propertyIndex": 10,
+                    "propertyKey": "btnEnabledSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button Enabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.Continue",
+                    "group": "Text Properties",
+                    "kuid": "h27a125575394eae909d12545cdbbf40",
+                    "originalPropertyKey": "btnContinueText",
+                    "propertyIndex": 11,
+                    "propertyKey": "btnContinueText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button Continue Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtna0a0a0SSPReg26px",
+                    "group": "Skin Properties",
+                    "kuid": "ef1915cc69604485803af122ad9542e3",
+                    "originalPropertyKey": "btnDisabledSkin",
+                    "propertyIndex": 11,
+                    "propertyKey": "btnDisabledSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button Disabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.PinChanged",
+                    "group": "Text Properties",
+                    "kuid": "he7b975f70474a3c96bd99f91f31c471",
+                    "originalPropertyKey": "successMsgLblText",
+                    "propertyIndex": 12,
+                    "propertyKey": "successMsgLblText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Msg Header Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSSPSemiBold24px000000",
+                    "group": "Skin Properties",
+                    "kuid": "d2f0bd322be64f8dbac4696857d8f771",
+                    "originalPropertyKey": "successHeaderLblSkin",
+                    "propertyIndex": 12,
+                    "propertyKey": "successHeaderLblSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Msg Header Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "You have changed your pin successfully.  \\nPlease use this to sign in .",
+                    "group": "Text Properties",
+                    "kuid": "c9da229c131c47a49996aec42298c217",
+                    "originalPropertyKey": "successMsgDescText",
+                    "propertyIndex": 13,
+                    "propertyKey": "successMsgDescText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Msg Desc Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSPR16px727272",
+                    "group": "Skin Properties",
+                    "kuid": "f09f65f6e20f44b888710b0d6fd527d3",
+                    "originalPropertyKey": "successDescLblSkin",
+                    "propertyIndex": 13,
+                    "propertyKey": "successDescLblSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Msg Desc Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.SignIn",
+                    "group": "Text Properties",
+                    "kuid": "d3c81fcb1dab4004bd4eadca357a6c23",
+                    "originalPropertyKey": "btnSignInText",
+                    "propertyIndex": 14,
+                    "propertyKey": "btnSignInText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button Sign In Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtn0095e426pxEnabled",
+                    "group": "Skin Properties",
+                    "kuid": "h0bed267e2324ae990f1b4984599abec",
+                    "originalPropertyKey": "btnSignInSkin",
+                    "propertyIndex": 14,
+                    "propertyKey": "btnSignInSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button Sign In Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u1007a080d66411fa0aa471bdb86d79e",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.mb.sca",
+    "version": "1.0.0"
+}

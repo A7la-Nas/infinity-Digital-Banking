@@ -1,0 +1,325 @@
+{
+    "classname": "registeredDevices",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "Text Fields",
+                "Get User Devices",
+                "Update My Device Status - Suspend-Unsuspend",
+                "Revoke My Device",
+                "Register New Device"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.RegisteredDevices",
+                    "group": "Text Fields",
+                    "kuid": "d287d331cfaf4210b471ab57b24941f3",
+                    "originalPropertyKey": "lblRegisteredDevicesText",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblRegisteredDevicesText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Lbl Registered Devices Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAActivationObjects",
+                    "group": "Get User Devices",
+                    "kuid": "c38add896de54c3cab132915e816133d",
+                    "originalPropertyKey": "objectServiceName1",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAActivationObjects",
+                    "group": "Update My Device Status - Suspend-Unsuspend",
+                    "kuid": "a71f8fccea4e4c83adc5d37abef4f46f",
+                    "originalPropertyKey": "objectServiceName2",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAActivationObjects",
+                    "group": "Revoke My Device",
+                    "kuid": "ja82a36075b34af3a5f448dc1e4e35b0",
+                    "originalPropertyKey": "objectServiceName3",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAActivationObjects",
+                    "group": "Register New Device",
+                    "kuid": "e5e6f9371c3248219998178cc7a38ff0",
+                    "originalPropertyKey": "objectServiceName4",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.RegisterANewDevice",
+                    "group": "Text Fields",
+                    "kuid": "a687f8fa893143b8a3fd008e649baef0",
+                    "originalPropertyKey": "btnRegisterNewDeviceText",
+                    "propertyIndex": 2,
+                    "propertyKey": "btnRegisterNewDeviceText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Btn Register New Device Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Device",
+                    "group": "Get User Devices",
+                    "kuid": "ef0ec92367f742ac8fc6163d7e1d5343",
+                    "originalPropertyKey": "objectName1",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Device",
+                    "group": "Update My Device Status - Suspend-Unsuspend",
+                    "kuid": "c67d5a92ebef48e590a7b98e63ad5e43",
+                    "originalPropertyKey": "objectName2",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Device",
+                    "group": "Revoke My Device",
+                    "kuid": "cdcf1461b68e45739d6c91872911c37a",
+                    "originalPropertyKey": "objectName3",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Device",
+                    "group": "Register New Device",
+                    "kuid": "jff187c4e6a247848f5ea94b565d397c",
+                    "originalPropertyKey": "objectName4",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.SuspendDevice",
+                    "group": "Text Fields",
+                    "kuid": "f64d685875bf4d288a4ecadf869794e8",
+                    "originalPropertyKey": "btnSuspendDeviceText",
+                    "propertyIndex": 3,
+                    "propertyKey": "btnSuspendDeviceText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Btn Suspend Device Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getMyDevices",
+                    "group": "Get User Devices",
+                    "kuid": "ic8537f23e3945bf9b9c2f4be2fb3efb",
+                    "originalPropertyKey": "operationName1",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "updateMyDeviceStatus",
+                    "group": "Update My Device Status - Suspend-Unsuspend",
+                    "kuid": "a5fb2679924c4aaa993afd8be85fbca4",
+                    "originalPropertyKey": "operationName2",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "revokeMyDevice",
+                    "group": "Revoke My Device",
+                    "kuid": "c59c79e1b1f94569becebaef6017aa34",
+                    "originalPropertyKey": "operationName3",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "registerNewDevice",
+                    "group": "Register New Device",
+                    "kuid": "e22bb4d017614e60a3d0a0082f272bab",
+                    "originalPropertyKey": "operationName4",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.UnsuspendDevice",
+                    "group": "Text Fields",
+                    "kuid": "dc311575fd57409d9206c67dbbf83f91",
+                    "originalPropertyKey": "btnUnsuspendDeviceText",
+                    "propertyIndex": 4,
+                    "propertyKey": "btnUnsuspendDeviceText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Btn Unsuspend Device Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.sca.RemoveDevice",
+                    "group": "Text Fields",
+                    "kuid": "fb63599241c5490caf62af1a3193410a",
+                    "originalPropertyKey": "btnRemoveDeviceText",
+                    "propertyIndex": 5,
+                    "propertyKey": "btnRemoveDeviceText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Btn Remove Device Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u2efb9bfc9894d86a5936b9b8fe7be7d",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.mb.sca",
+    "version": "1.0.0"
+}

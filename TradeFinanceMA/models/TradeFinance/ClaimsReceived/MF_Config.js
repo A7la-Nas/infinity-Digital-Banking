@@ -1,0 +1,140 @@
+/*
+    This is an auto generated file and any modifications to it may result in corrupted data.
+*/
+define([], function() {
+	var mappings = {
+		"beneficiaryName": "beneficiaryName",
+		"guaranteesSRMSId": "guaranteesSRMSId",
+		"productType": "productType",
+		"guaranteeAndSBLCType": "guaranteeAndSBLCType",
+		"amount": "amount",
+		"unUtilizedAmount": "unUtilizedAmount",
+		"issueDate": "issueDate",
+		"expiryType": "expiryType",
+		"expiryDate": "expiryDate",
+		"expiryCondition": "expiryCondition",
+		"advisingBank": "advisingBank",
+		"status": "status",
+		"claimStatus": "claimStatus",
+		"claimsSRMSId": "claimsSRMSId",
+		"claimType": "claimType",
+		"claimAmount": "claimAmount",
+		"claimCurrency": "claimCurrency",
+		"receivedOn": "receivedOn",
+		"expectedSettlementDate": "expectedSettlementDate",
+		"dueDays": "dueDays",
+		"presentationDetails": "presentationDetails",
+		"demandType": "demandType",
+		"newExtensionDate": "newExtensionDate",
+		"documents": "documents",
+		"documentStatus": "documentStatus",
+		"otherDemandDetails": "otherDemandDetails",
+		"messageFromBank": "messageFromBank",
+		"claimAcceptance": "claimAcceptance",
+		"debitAccount": "debitAccount",
+		"requestedOverdraft": "requestedOverdraft",
+		"reasonForRejection": "reasonForRejection",
+		"rejectedDate": "rejectedDate",
+		"acceptedDate": "acceptedDate",
+		"messageToBank": "messageToBank",
+		"discrepancyDetails": "discrepancyDetails",
+		"discrepancyAcceptance": "discrepancyAcceptance",
+		"discrepancyHistory": "discrepancyHistory",
+		"returnCount": "returnCount",
+		"returnedTime": "returnedTime",
+		"serviceRequestTime": "serviceRequestTime",
+		"paymentStatus": "paymentStatus",
+		"settledDate": "settledDate",
+		"totalAmountToBePaid": "totalAmountToBePaid",
+		"reasonForReturn": "reasonForReturn",
+		"returnMessageToBank": "returnMessageToBank",
+		"corporateUserName": "corporateUserName",
+		"message": "message",
+		"errMsg": "errMsg",
+		"errCode": "errCode",
+		"errorMessage": "errorMessage",
+		"errorCode": "errorCode",
+		"errorMsg": "errorMsg",
+		"dbpErrMsg": "dbpErrMsg",
+		"dbpErrCode": "dbpErrCode",
+	};
+
+	Object.freeze(mappings);
+
+	var typings = {
+		"beneficiaryName": "string",
+		"guaranteesSRMSId": "string",
+		"productType": "string",
+		"guaranteeAndSBLCType": "string",
+		"amount": "string",
+		"unUtilizedAmount": "string",
+		"issueDate": "string",
+		"expiryType": "string",
+		"expiryDate": "string",
+		"expiryCondition": "string",
+		"advisingBank": "string",
+		"status": "string",
+		"claimStatus": "string",
+		"claimsSRMSId": "string",
+		"claimType": "string",
+		"claimAmount": "string",
+		"claimCurrency": "string",
+		"receivedOn": "string",
+		"expectedSettlementDate": "string",
+		"dueDays": "string",
+		"presentationDetails": "string",
+		"demandType": "string",
+		"newExtensionDate": "string",
+		"documents": "string",
+		"documentStatus": "string",
+		"otherDemandDetails": "string",
+		"messageFromBank": "string",
+		"claimAcceptance": "string",
+		"debitAccount": "string",
+		"requestedOverdraft": "string",
+		"reasonForRejection": "string",
+		"rejectedDate": "string",
+		"acceptedDate": "string",
+		"messageToBank": "string",
+		"discrepancyDetails": "string",
+		"discrepancyAcceptance": "string",
+		"discrepancyHistory": "string",
+		"returnCount": "string",
+		"returnedTime": "string",
+		"serviceRequestTime": "string",
+		"paymentStatus": "string",
+		"settledDate": "string",
+		"totalAmountToBePaid": "string",
+		"reasonForReturn": "string",
+		"returnMessageToBank": "string",
+		"corporateUserName": "string",
+		"message": "string",
+		"errMsg": "string",
+		"errCode": "string",
+		"errorMessage": "string",
+		"errorCode": "string",
+		"errorMsg": "string",
+		"dbpErrMsg": "string",
+		"dbpErrCode": "string",
+	}
+
+	Object.freeze(typings);
+
+	var primaryKeys = [
+					"claimsSRMSId",
+	];
+
+	Object.freeze(primaryKeys);
+
+	var config = {
+		mappings: mappings,
+		typings: typings,
+		primaryKeys: primaryKeys,
+		serviceName: "TradeFinance",
+		tableName: "ClaimsReceived"
+	};
+
+	Object.freeze(config);
+
+	return config;
+})

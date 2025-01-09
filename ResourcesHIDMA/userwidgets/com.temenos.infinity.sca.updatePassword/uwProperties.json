@@ -1,0 +1,275 @@
+{
+    "classname": "updatePassword",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b2452dffb8f34f57a8336732334eae86",
+                    "paramList": [],
+                    "propertyKey": "getPasswordPolicies",
+                    "pw": {
+                        "displayName": "getPasswordPolicies",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i1c46f0f08dd48239a69cc279e848088",
+                    "paramList": [
+                        {
+                            "name": "errorMessage"
+                        }
+                    ],
+                    "propertyKey": "showErrorMessage",
+                    "pw": {
+                        "displayName": "showErrorMessage",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e2e021169ed54eac88f17ff2a3f05e50",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSuccessCallback",
+                    "pw": {
+                        "displayName": "onSuccessCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a98c806a8f0442cd953cf5a67df8e6a9",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onFailureCallback",
+                    "pw": {
+                        "displayName": "onFailureCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a4362ebb5d2348c59c91d9503a76d423",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onCancel",
+                    "pw": {
+                        "displayName": "onCancel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Skins",
+                "Fetch Password Policy Service",
+                "Update Password Service"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAActivationObjects",
+                    "group": "Fetch Password Policy Service",
+                    "kuid": "hc6f9834079e4be79106e24f264e7a8c",
+                    "originalPropertyKey": "objSeviceName",
+                    "propertyIndex": 1,
+                    "propertyKey": "objSeviceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Sevice Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAObjects",
+                    "group": "Update Password Service",
+                    "kuid": "g652b8c523e04eeb9abfb0b06764f93c",
+                    "originalPropertyKey": "objSeviceName1",
+                    "propertyIndex": 1,
+                    "propertyKey": "objSeviceName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Sevice Name 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\" : {\"normalSkin\": \"sknBtnBlockedSSP0273e313px\", \"hoverSkin\": \"sknBtnBlockedSSP0273e313px\", \"focusSkin\": \"sknBtnBlockedSSP0273e313px\"}, \"768\": {\"normalSkin\": \"sknBtnBlockedSSP0273e313px\", \"hoverSkin\": \"sknBtnBlockedSSP0273e313px\", \"focusSkin\": \"sknBtnBlockedSSP0273e313px\"},\"default\": {\"normalSkin\": \"sknBtnBlockedSSP0273e315px\", \"hoverSkin\": \"sknBtnBlockedSSP0273e315px\", \"focusSkin\": \"sknBtnBlockedSSP0273e315px\"}}",
+                    "group": "Skins",
+                    "kuid": "cd1885f8b414446e9aaf5db91179bd5b",
+                    "originalPropertyKey": "primaryBtnDisableSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "primaryBtnDisableSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Button Disable Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PasswordPolicy",
+                    "group": "Fetch Password Policy Service",
+                    "kuid": "i254023781ad4f298d0e3bc1c24938bc",
+                    "originalPropertyKey": "objName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAUser",
+                    "group": "Update Password Service",
+                    "kuid": "h5bcb0068285441a9d373fcb79c4f764",
+                    "originalPropertyKey": "objName1",
+                    "propertyIndex": 2,
+                    "propertyKey": "objName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\" : {\"normalSkin\": \"sknBtnNormalSSPFFFFFF13Px\", \"hoverSkin\": \"sknBtnNormalSSPFFFFFFHover13Px\", \"focusSkin\": \"sknBtnNormalSSPFFFFFF13PxFocus\"}, \"768\": {\"normalSkin\": \"sknBtnNormalSSPFFFFFF13Px\", \"hoverSkin\": \"sknBtnNormalSSPFFFFFFHover13Px\", \"focusSkin\": \"sknBtnNormalSSPFFFFFF13PxFocus\"}, \"default\": {\"normalSkin\": \"sknBtnNormalSSPFFFFFF15Px\", \"hoverSkin\": \"sknBtnNormalSSPFFFFFFHover15Px\", \"focusSkin\": \"sknBtnNormalSSPFFFFFF15PxFocus\"}}",
+                    "group": "Skins",
+                    "kuid": "d3d7332b1d614068a70f8dc008c6a0a3",
+                    "originalPropertyKey": "primaryBtnEnableSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "primaryBtnEnableSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Button Enable Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "fetch",
+                    "group": "Fetch Password Policy Service",
+                    "kuid": "f9591ac0a1204cb5806252b4fee3b624",
+                    "originalPropertyKey": "operationName",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "changeOLBPassword",
+                    "group": "Update Password Service",
+                    "kuid": "bdcbd71b6f9a4c6ca28a8d05bcd5853c",
+                    "originalPropertyKey": "operationName1",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":\"sknTbxSSP42424213PxWithoutBorder\", \"768\":\"sknTbxSSP42424213PxWithoutBorder\", \"1024\":\"sknTbxSSP42424215PxWithoutBorder\", \"default\":\"sknTbxSSP42424215PxWithoutBorder\"}",
+                    "group": "Skins",
+                    "kuid": "hb1ed2d98fd6433594cf672c84264833",
+                    "originalPropertyKey": "textboxSkins",
+                    "propertyIndex": 4,
+                    "propertyKey": "textboxSkins",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Textbox Skins",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"normalSkin\": \"sknBorderE3E3E3\", \"focusSkin\": \"sknFlxBorder4A90E23px\", \"errorSkin\": \"sknborderff0000error\"}",
+                    "group": "Skins",
+                    "kuid": "aa5d3f85604847f1b138da3df2b80e0f",
+                    "originalPropertyKey": "flexSkins",
+                    "propertyIndex": 5,
+                    "propertyKey": "flexSkins",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Flex Skins",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u84f00efea124b34b11e6c6a0cee3d69",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.sca",
+    "version": "1.0.0"
+}

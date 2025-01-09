@@ -1,0 +1,24 @@
+{
+    "AS_Button_bccdd148f545430ba4f819367c5fa246": {
+        "id": "AS_Button_bccdd148f545430ba4f819367c5fa246",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollLastName",
+            "type": "forms",
+            "platform": null,
+            "KUID": "cec4f0b2aea2420a937739e98e009103"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f8c18aa9797b49d88de7caa941055606",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//var enrollMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"EnrollModule\");\n//enrollMod.presentationController.commonFunctionForNavigation(\"frmLogin\");\n//new kony.mvc.Navigation({\"appName\" : \"AuthenticationMA\", \"friendlyName\" : \"frmLogin\"}).navigate();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

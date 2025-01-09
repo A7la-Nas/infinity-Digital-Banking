@@ -1,0 +1,23 @@
+{
+    "AS_Form_bffd329e66b94c7c8f2aeab2c3e5a814": {
+        "id": "AS_Form_bffd329e66b94c7c8f2aeab2c3e5a814",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollActivateProfileUniken",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ae13e1884c0749328dade08a0b34e4dc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_e20df7181ed44f7d8c3c5079a4733954",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\r\n    this.view.customHeader.btnRight.info = eventobject;",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "classname": "CustomPopupNew",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b485ed4f915849a4b4d27a4e751f0042",
+                    "paramList": [],
+                    "propertyKey": "resetPopup",
+                    "pw": {
+                        "displayName": "resetPopup",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j2a34ee5b894449389314fdf54340866",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fd65817b6ec8426c812bc4fdc3e300fe",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j2a34ee5b894449389314fdf54340866",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "Account Closure",
+                    "group": "General",
+                    "kuid": "e0350d41308c4b819565f54174ea26c6",
+                    "originalPropertyKey": "lblMsg",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblMsg",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Message to display",
+                        "toolTip": "Message to display",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j2a34ee5b894449389314fdf54340866",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "d83dba37c27b4d9fb37ccd9ac0a07a23",
+                    "propertyKey": "btnNo",
+                    "srcWgtKUID": "ee90e2330d9d4251a66bdc5d347c1739"
+                },
+                {
+                    "kuid": "j3565da4c68144c3a1a81cd6ae7171bc",
+                    "propertyKey": "btnYes",
+                    "srcWgtKUID": "j33b8e0b932e4585950a2b3dd9edf3dd"
+                },
+                {
+                    "kuid": "h9fd659c82e44df6b5bc77e165c4d73d",
+                    "propertyKey": "imgLoading",
+                    "srcWgtKUID": "c7933f71b65a4ed5af3277930568dae5"
+                },
+                {
+                    "kuid": "i05859a9e3a54e97beba850e422aefdf",
+                    "propertyKey": "lblPopupMessage",
+                    "srcWgtKUID": "e52e3451a6454132acfedcd688f2f692"
+                },
+                {
+                    "kuid": "abbdf2fa4ac94346a8b3116c624490fd",
+                    "propertyKey": "lblHeading",
+                    "srcWgtKUID": "e94960c50fc14eee95cd3dcad6e202c7"
+                }
+            ],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.ArrangementsMA",
+    "version": "1.0.0"
+}

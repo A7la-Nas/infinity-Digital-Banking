@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <div class="circular-progress">
+    <div class="value-container">- of -</div>
+  </div>
+  <style>
+    body {
+      background: #ffffff;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .circular-progress {
+      height: 30px;
+      width: 30px;
+      border-radius: 100%;
+      display: grid;
+      place-items: center;
+    }
+
+    .circular-progress:before {
+      content: "";
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      background-color: #ffffff;
+      border-radius: 50%;
+    }
+
+    .value-container {
+      position: relative;
+      font-size: 7px;
+      color: #727272;
+    }
+  </style>
+  <script>
+    let progressBar = document.querySelector(".circular-progress");
+    let valueContainer = document.querySelector(".value-container");
+    let progressValue = 0;
+    let oldValue = 29;
+    let currentValue = 69;
+    let progressEndValue = 420;
+    const params = new URLSearchParams(window.location.search);
+    let hasData = 0;
+    if (params.has("lastValue")) {
+      oldValue = Number(params.get("lastValue"));
+      hasData++;
+    }
+    if (params.has("newValue")) {
+      currentValue = Number(params.get("newValue"));
+      hasData++;
+    }
+    if (params.has("maxValue")) {
+      progressEndValue = Number(params.get("maxValue"));
+      hasData++;
+    }
+
+    if (hasData != 3) {
+      console.log("Not enough data");
+    } else if (!(oldValue <= progressEndValue)) {
+      console.log("Old value is greater than max value");
+    } else if (!(currentValue <= progressEndValue)) {
+      console.log("New value is greater than max value");
+    } else if (!(oldValue <= currentValue)) {
+      console.log("old value is greater than new value");
+    } else {
+      progressValue = oldValue;
+      let slowness = 30;
+      let multiplier = 360 / progressEndValue;
+      progressBar.style.background = `conic-gradient(
+      #2a9e05 ${oldValue * multiplier}deg,
+      #c6c6c8 ${oldValue * multiplier}deg
+  )`;
+      valueContainer.textContent = `${currentValue} of ${progressEndValue}`;
+      let progress = setInterval(() => {
+        if (progressValue == currentValue) {
+          clearInterval(progress);
+        }
+        else {
+          progressValue++;
+          progressBar.style.background = `conic-gradient(
+      #2a9e05 ${progressValue * multiplier}deg,
+      #c6c6c8 ${progressValue * multiplier}deg
+  )`;
+        }
+      }, slowness);
+    }
+
+  </script>
+</body>
+
+</html>

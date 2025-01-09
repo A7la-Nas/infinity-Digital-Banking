@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_b64963df07d24599b953a6355068572f": {
+        "id": "AS_FlexContainer_b64963df07d24599b953a6355068572f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTransfersToAccountDBXEurope",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a0f50302e6784140a8aa2ca3e1d54783"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_e82320b3f47446e9a99670d958a845bb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var transModPresentationController = applicationManager.getModulesPresentationController(\"TransferModule\");\ntransModPresentationController.commonFunctionForNavigation(\"frmTransactionMode\");",
+            "callbackType": null
+        }]
+    }
+}

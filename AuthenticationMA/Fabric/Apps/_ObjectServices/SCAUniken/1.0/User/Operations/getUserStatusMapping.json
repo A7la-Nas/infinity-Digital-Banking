@@ -1,0 +1,48 @@
+{
+  "operationConfig" : {
+    "name" : "getUserStatus3484",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"userName\" outputpath=\"userName\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"\" outputpath=\"User\">\n            <set-param inputpath=\"user_status\" outputpath=\"user_status\"/>\n            <set-param inputpath=\"error_code\" outputpath=\"error_code\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"User\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"UnikenOrchestration (1.0).getUserStatus\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:User:userName:\",\"to\":\"target:userName:\",\"fromPort\":\"source:User:userName:\",\"toPort\":\"target:userName:\",\"visible\":true,\"common\":true}]}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"User\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"UnikenOrchestration (1.0).getUserStatus\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:user_status:\",\"to\":\"target:User:user_status:\",\"fromPort\":\"source:user_status:\",\"toPort\":\"target:User:user_status:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:error_code:\",\"to\":\"target:User:error_code:\",\"fromPort\":\"source:error_code:\",\"toPort\":\"target:User:error_code:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "UnikenOrchestration",
+      "serviceVersion" : "1.0",
+      "operationName" : "getUserStatus"
+    },
+    "relationshipHierarchyMapping" : {
+      "name" : "User",
+      "children" : [ ],
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"userName\" outputpath=\"userName\"/>\n    </map>\n</mapper>\n",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"response_in\" outputpath=\"response_out\">    <map inputpath=\"\" outputpath=\"User\">      <set-param inputpath=\"user_status\" outputpath=\"user_status\"/>      <set-param inputpath=\"error_code\" outputpath=\"error_code\"/>    </map>  </map></mapper>",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"User\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"UnikenOrchestration (1.0).getUserStatus\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:User:userName:\",\"to\":\"target:userName:\",\"fromPort\":\"source:User:userName:\",\"toPort\":\"target:userName:\",\"visible\":true,\"common\":true}]}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"User\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"UnikenOrchestration (1.0).getUserStatus\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:user_status:\",\"to\":\"target:User:user_status:\",\"fromPort\":\"source:user_status:\",\"toPort\":\"target:User:user_status:\"},{\"from\":\"target\",\"to\":\"target:User\",\"fromPort\":\"target\",\"toPort\":\"target:User\",\"visible\":true,\"common\":false},{\"from\":\"target:User\",\"to\":\"target:User:t_p_fields\",\"fromPort\":\"target:User\",\"toPort\":\"target:User:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:User:t_p_fields\",\"to\":\"target:User:userName:\",\"fromPort\":\"target:User:t_p_fields\",\"toPort\":\"target:User:userName:\",\"visible\":true,\"common\":false},{\"from\":\"target:User:t_p_fields\",\"to\":\"target:User:user_status:\",\"fromPort\":\"target:User:t_p_fields\",\"toPort\":\"target:User:user_status:\",\"visible\":true,\"common\":false},{\"from\":\"target:User:t_p_fields\",\"to\":\"target:User:error_code:\",\"fromPort\":\"target:User:t_p_fields\",\"toPort\":\"target:User:error_code:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:t_p_parameters\",\"fromPort\":\"source\",\"toPort\":\"source:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:access_token:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:access_token:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:error_code:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:error_code:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:error_message:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:error_message:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:expires_in:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:expires_in:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:jti:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:jti:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:response_code:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:response_code:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:scope:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:scope:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:token_type:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:token_type:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:user_status:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:user_status:\",\"visible\":true,\"common\":false},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:error_code:\",\"to\":\"target:User:error_code:\",\"fromPort\":\"source:error_code:\",\"toPort\":\"target:User:error_code:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

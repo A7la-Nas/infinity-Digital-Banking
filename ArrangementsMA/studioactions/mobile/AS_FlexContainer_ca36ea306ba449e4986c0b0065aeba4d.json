@@ -1,0 +1,34 @@
+{
+    "AS_FlexContainer_ca36ea306ba449e4986c0b0065aeba4d": {
+        "id": "AS_FlexContainer_ca36ea306ba449e4986c0b0065aeba4d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "SegCombinedStatementsHeader",
+            "type": "templates",
+            "platform": "",
+            "KUID": "j93540708bf445ae8671953061ac41c2"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__g94f9c5289424f219b16022d3ce39381",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onSectionClick",
+            "display": "onSectionClick",
+            "inputparams": [{
+                "name": "context",
+                "value": " context"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

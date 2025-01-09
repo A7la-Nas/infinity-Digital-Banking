@@ -1,0 +1,33 @@
+{
+    "AS_Form_d91d5f4944b440b3958432a43f927677": {
+        "id": "AS_Form_d91d5f4944b440b3958432a43f927677",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "contextObj": {
+            "name": "frmTransactionLimits",
+            "type": "forms",
+            "platform": null,
+            "KUID": "e30e8b64c11948d28fdce55e3ae27f2a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onBreakpointChange_a8f07b7e8700493786102af4d7353c5f",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBreakpointChange",
+            "display": "onBreakpointChange",
+            "inputparams": [{
+                "name": "width",
+                "value": " breakpoint"
+            }],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

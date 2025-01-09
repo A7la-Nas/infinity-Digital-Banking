@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_j58ba9e21dad43ca9d4b99f2104e25bf": {
+        "id": "AS_AppEvents_j58ba9e21dad43ca9d4b99f2104e25bf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b1471d87991c4fea94d7589f5868f0ee",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try {\n  applicationManager.postAppInitiate();\n  applicationManager.applicationMode = \"Mobile\";\n  kony.application.setApplicationProperties({\n    // \"statusBarForegroundColor\": \"000000\"\n  });\n  //   var registrationManager = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\n  //     \"moduleName\": \"RegistrationManager\",\n  //     \"appName\": \"AuthenticationMA\"\n  //   }).businessController;\n  //   registrationManager.setEventTracking();\n} catch (err) {\n  throw GlobalExceptionHandler.addMessageAndActionForException(err, \"kony.error.App_Initialisation_Failed\", GlobalExceptionHandler.ActionConstants.BLOCK, arguments.callee.name);\n}",
+            "parentId": null
+        }]
+    }
+}

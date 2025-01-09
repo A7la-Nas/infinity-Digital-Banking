@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s966eaf1ea1441148b4828270a782f8b",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "field1Value": "{\"Savings\":{\"default\":{\"text\":\"{$.L1.description}\",\"fieldType\":\"label\"},\"ST1\":{\"text\":\"{$.L1.lockReason}\",\"fieldType\":\"label\"}},\"Checking\":{\"default\":{\"text\":\"{$.L1.description}\",\"fieldType\":\"label\"},\"ST1\":{\"text\":\"{$.L1.lockReason}\",\"fieldType\":\"label\"}},\"CreditCard\":{\"default\":{\"text\":\"{$.L1.description}\",\"fieldType\":\"label\"}},\"Loan\":{\"default\":{\"text\":\"{$.L1.description}\",\"fieldType\":\"label\"},\"ST3\":{\"text\":\"{$.L1.paymentDate}\",\"fieldType\":\"date\"},\"ST4\":{\"text\":\"{$.L1.paymentDate}\",\"fieldType\":\"date\"}},\"Mortgage\":{\"default\":{\"text\":\"{$.L1.description}\",\"fieldType\":\"label\"},\"ST3\":{\"text\":\"{$.L1.paymentDate}\",\"fieldType\":\"date\"},\"ST4\":{\"text\":\"{$.L1.paymentDate}\",\"fieldType\":\"date\"}},\"Deposit\":{\"default\":{\"text\":\"{$.L1.description}\",\"fieldType\":\"label\"}}}",
+        "field2Value": "{\"Savings\":{\"default\":{\"text\":\"{$.L1.amount}\",\"fieldType\":\"amount\"},\"ST1\":{\"text\":\"{$.L1.lockedAmount}\",\"fieldType\":\"amount\"}},\"Checking\":{\"default\":{\"text\":\"{$.L1.amount}\",\"fieldType\":\"amount\"},\"ST1\":{\"text\":\"{$.L1.lockedAmount}\",\"fieldType\":\"amount\"}},\"CreditCard\":{\"default\":{\"text\":\"{$.L1.amount}\",\"fieldType\":\"amount\"}},\"Loan\":{\"default\":{\"text\":\"{$.L1.amount}\",\"fieldType\":\"amount\"},\"ST3\":{\"text\":\"{$.L1.installmentAmount}\",\"fieldType\":\"amount\"},\"ST4\":{\"text\":\"{$.L1.installmentAmount}\",\"fieldType\":\"amount\"}},\"Mortgage\":{\"default\":{\"text\":\"{$.L1.amount}\",\"fieldType\":\"amount\"},\"ST3\":{\"text\":\"{$.L1.installmentAmount}\",\"fieldType\":\"amount\"},\"ST4\":{\"text\":\"{$.L1.installmentAmount}\",\"fieldType\":\"amount\"}},\"Deposit\":{\"default\":{\"text\":\"{$.L1.amount}\",\"fieldType\":\"amount\"}}}",
+        "field3Value": "{\"Savings\":{\"default\":{\"text\":\"{$.L1.scheduledDate}\",\"fieldType\":\"date\"},\"ST1\":{\"text\":\"{$.L1.transactionReference}\",\"fieldType\":\"label\"}},\"Checking\":{\"default\":{\"text\":\"{$.L1.scheduledDate}\",\"fieldType\":\"date\"},\"ST1\":{\"text\":\"{$.L1.transactionReference}\",\"fieldType\":\"label\"}},\"CreditCard\":{\"default\":{\"text\":\"{$.L1.scheduledDate}\",\"fieldType\":\"date\"}},\"Loan\":{\"default\":{\"text\":\"{$.L1.scheduledDate}\",\"fieldType\":\"date\"}},\"Mortgage\":{\"default\":{\"text\":\"{$.L1.scheduledDate}\",\"fieldType\":\"date\"}},\"Deposit\":{\"default\":{\"text\":\"{$.L1.scheduledDate}\",\"fieldType\":\"date\"}}}",
+        "segregationTypes": "{\"ST1\":{\"value\":\"Blocked\",\"displayText\":\"${i18n{i18n.accounts.blockedFunds}}\",\"weight\":\"1\"},\"ST2\":{\"value\":\"Pending\",\"displayText\":\"${i18n{i18n.bulkWire.pendingTransactions}}\",\"weight\":\"2\"},\"ST3\":{\"value\":\"DUE\",\"displayText\":\"${i18n{i18n.AccountSummary.overdueInstallments}}\",\"weight\":\"1\"},\"ST4\":{\"value\":\"PAID\",\"displayText\":\"${i18n{i18n.AccountSummary.paidInstallments}}\",\"weight\":\"2\"},\"ST5\":{\"value\":\"Successful\",\"displayText\":\"${i18n{kony.applewatch.transactions.PostedTransactions}}\",\"weight\":\"3\"}}"
+    },
+    "id": "accountsTransactionListNative",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "eb8804b29787497dabdb53b5a5643a22",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxAccountTransactions",
+    "pf": "frmAccountDetails",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "ff81c0fde4534d78af4b9a1d569372d3",
+    "wType": "UserWidgetInstance"
+}

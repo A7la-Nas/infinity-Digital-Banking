@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_g75165b7e71b45a78ab3b1cf1574ac9b": {
+        "id": "AS_AppEvents_g75165b7e71b45a78ab3b1cf1574ac9b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f24135ff36ca4f87befb6e1089c51e28",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try {\napplicationManager.applicationMode = \"Mobile\";\n} catch (err) {\nalert(err);\n}",
+            "parentId": null
+        }]
+    }
+}

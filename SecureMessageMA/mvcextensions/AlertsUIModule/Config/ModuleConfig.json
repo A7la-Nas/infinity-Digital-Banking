@@ -1,0 +1,28 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "AlertsUIModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": [
+            ]
+        },
+        "Mobile": {
+            "PresentationControllerClass": "AlertsUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": [
+            ]
+        }
+    },
+    "Forms": {
+        "mobile": {
+            "frmAlertsLanding": {
+                "ControllerExtensions": [
+                ],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "AlertsUIModule/frmAlertsLandingController",
+                "FormName": "AlertsUIModule/frmAlertsLanding",
+                "friendlyName": "frmAlertsLanding"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "AlertsUIModule"
+}

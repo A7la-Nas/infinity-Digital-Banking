@@ -1,0 +1,34 @@
+{
+    "AS_Form_d2247d4d100f476395bc7618bb12671d": {
+        "id": "AS_Form_d2247d4d100f476395bc7618bb12671d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollSSn",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a15114bd0e9642f99fe77b6ae30e3dde"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___d88cd0f578f449c8a8470d0b90afa67c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showEnterSSN",
+            "display": "showEnterSSN",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true,
+            "source": "controller"
+        }, {
+            "id": "ADD_SNIPPET__b8eba38cf0124067857ab14546e524fd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.showEnterSSN();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

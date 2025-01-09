@@ -1,0 +1,1 @@
+{"table":"Alerts","db":"AlertsManagement","verbs":"true"}

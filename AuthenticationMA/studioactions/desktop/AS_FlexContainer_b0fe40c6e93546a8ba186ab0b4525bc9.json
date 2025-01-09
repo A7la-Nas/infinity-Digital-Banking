@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_b0fe40c6e93546a8ba186ab0b4525bc9": {
+        "id": "AS_FlexContainer_b0fe40c6e93546a8ba186ab0b4525bc9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "eventPayload"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segLegalEntity",
+            "type": "templates",
+            "platform": "",
+            "KUID": "a480aa629a15471688789f1bb482a606"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_d90b81bc80164f1aba44b921e543618b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onKeyPressCallBack(eventobject, eventPayload, context);",
+            "parentId": null
+        }]
+    }
+}

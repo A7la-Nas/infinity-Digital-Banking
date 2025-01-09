@@ -1,0 +1,103 @@
+/*Type your css here*/
+#linechart{
+  background-color: #ffffff;
+  position:absolute;
+  left: -20px;
+  top: 0;
+  height:90%;
+  width:100%;
+  font-family: Lato, Helvetica-Neue, monospace;
+}
+.linechart-tooltip-wrapper {
+    padding: 6px;
+    background: #fff;
+    border-radius: 3px;
+}
+.ct-grids line{
+  stroke: #E3E3E3;
+  stroke-opacity: 0.5;
+}
+.ct-line{
+ stroke-width: 2px;
+}
+
+.ct-grids line{
+  stroke: #E3E3E3;
+  stroke-opacity: 0.5;
+}
+.ct-series-a .ct-line{
+  stroke: #293276;
+}
+.ct-series-a .ct-area{
+fill: url(#gradient) !important;
+}
+
+.ct-series-a .ct-point{
+  stroke: #293276;
+}
+.ct-chart-line.ct-chart-line .ct-point--hover {
+   stroke-width: 14px; 
+}
+.ct-label.ct-label.ct-horizontal {
+  padding-top: 15px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.ct-label.ct-label.ct-vertical {
+  padding-left: 0px;
+  text-align: left;
+  justify-content: flex-start;
+}
+.ct-label{
+  color: #424242;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.ct-point {
+  stroke-width: 0px;
+  stroke-opacity: 0.8;
+  transition: all 0.2s linear;
+}
+
+.vertical-line
+{
+	  stroke: #293276;
+}
+
+.tooltip-text1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    color: #424242;
+    height: 20px;
+    padding: 5px !important;
+    line-height: 20px;
+}
+
+.tooltip-text2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(54, 77, 58, 1);
+	height: 25px;
+    padding: 5px !important;
+	line-height: 20px;
+}
+
+.tooltip-text3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    color: #2f8523ff;
+    height: 20px;
+    padding: 5px !important;
+    line-height: 20px;
+}
+.tooltip-text4{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #EE0005;
+  height: 25px;
+    padding: 5px !important;
+  line-height: 18pt;
+}

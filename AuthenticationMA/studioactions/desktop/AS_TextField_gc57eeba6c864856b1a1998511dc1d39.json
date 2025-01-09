@@ -1,0 +1,23 @@
+{
+    "AS_TextField_gc57eeba6c864856b1a1998511dc1d39": {
+        "id": "AS_TextField_gc57eeba6c864856b1a1998511dc1d39",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginHID",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a090e0f90189424cbcc313b5461c9c6f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onKeyUp_af2b1e9cf8a64c5c8064aa434f961b40",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.enableLogin(this.view.main.tbxUserName.text.trim(),this.view.main.tbxPassword.text);\nthis.capsLockIndicatorForPassword();",
+            "callbackType": null
+        }]
+    }
+}

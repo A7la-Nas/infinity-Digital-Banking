@@ -1,0 +1,201 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "6%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_skin_": "s8a5c8cb7a7c4283baf401804633ccbe",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "58%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "accountNumberFormat": "{\"format\" : \"\\\\w(?=\\\\w{4})\", \"replaceCharacter\" : \"X\",  \"modifiers\" : \"g\"}",
+        "accountNumberSkin": "{\"640\":{\"skin\":\"ICSknBBLabelSSP42424215px\"},\"default\":{\"skin\":\"ICSknBBLabelSSP42424215px\"}}",
+        "activeTabSkin": "{\"640\":{\"skin\":\"ICSknBtnAccountSummarySelected2\"},\"default\":{\"skin\":\"ICSknBtnAccountSummarySelected\"}}",
+        "amountFormat": "{ \"locale\":\"\", \"positiveFormat\" : \"{CS}{D}\", \"negativeFormat\" : \"-{CS}{D}\", \"fractionDigits\":\"2\"}",
+        "highlightedFieldSkin": "{\"640\":{\"skin\":\"sknlbl42424240px\"},\"default\":{\"skin\":\"sknlbl42424240px\"}}",
+        "inactiveTabSkin": "{\"640\":{\"skin\":\"ICSknBtnAccountSummaryUnselected2\"},\"default\":{\"skin\":\"ICSknBtnAccountSummaryUnselected\"}}",
+        "infoIcon": "info_grey_3.png",
+        "installmentDetailSknData": "sknBBLabelSSP42424215px",
+        "installmentDetailSknLegend": "{\"default\":\"ICSknlbl727272SSP13px\",\"640\":\"ICSbbSknLbl727272SSP13px\"}",
+        "installmentDetailTab": "{\"Loan\":{\"640\":\"{i.i18n.AccountSummary.Installments}\",\"default\":\"{i.i18n.AccountSummary.installmentDetails}\"},\"Mortgage\":{\"640\":\"{i.i18n.AccountSummary.Installments}\",\"default\":\"{i.i18n.AccountSummary.installmentDetails}\"},\"mortgageFacility\":{\"640\":\"{i.i18n.AccountSummary.Installments}\",\"default\":\"{i.i18n.AccountSummary.installmentDetails}\"}}",
+        "installmentDetailTabVisibility": "{\"Loan\":\"true\",\"Mortgage\":\"true\",\"mortgageFacility\":\"true\"}",
+        "installmentDetailsEntitlementKey": "{\"Loan\":[\"VIEW_INSTALLMENT_SUMMARY\"],\"mortgageFacility\":[\"VIEW_INSTALLMENT_SUMMARY\"]}",
+        "labelSkin": "{\"640\":{\"skin\":\"ICSknBBLabelSSP42424215px\"},\"default\":{\"skin\":\"ICSknlbl727272SSP13px\"}}",
+        "maskeyeicon": "{\"maskeyeicon\" : \"h\"}",
+        "maskeyeiconskin": "{\"640\":{\"skin\":\"bbSknLblFontIcon\"},\"default\":{\"skin\":\"bbSknLblFontIcon\"}}",
+        "tab1field1backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].pendingDeposit}\",\"Checking\":\"{$.S1.Accounts[0].pendingDeposit}\",\"Loan\":\"{$.S1.Accounts[0].originalAmount}\",\"CreditCard\":\"{$.S1.Accounts[0].availableCredit}\",\"Mortgage\":\"{$.S1.Accounts[0].originalAmount}\",\"Current\":\"{$.S1.Accounts[0].pendingDeposit}\",\"mortgageFacility\":\"{$.S1.Accounts[0].accountID}\",\"Deposit\":\"{$.S1.Accounts[0].pendingDeposit}\"}",
+        "tab1field1text": "{\"Savings\":\"{i.i18n.accountDetail.pendingDeposit}:\",\"Checking\":\"{i.i18n.accountDetail.pendingDeposit}:\",\"Loan\":\"{i.i18n.accountDetail.principalAmount}:\",\"CreditCard\":\"{i.i18n.accountDetail.availableCredit}:\",\"Current\":\"{i.i18n.accountDetail.pendingDeposit}:\",\"Mortgage\":\"{i.i18n.accountDetail.principalAmount}:\",\"mortgageFacility\":\"{i.i18n.common.accountNumber}:\",\"Deposit\":\"{i.i18n.accountDetail.pendingDeposit}:\"}",
+        "tab1field1type": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Amount\",\"Deposit\":\"Amount\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Amount\",\"Current\":\"Amount\",\"mortgageFacility\":\"Account Number\",\"Deposit\":\"Amount\"}",
+        "tab1field2backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].pendingWithdrawal}\",\"Checking\":\"{$.S1.Accounts[0].pendingWithdrawal}\",\"Loan\":\"{$.S1.Accounts[0].paymentDue}\",\"Deposit\":\"{$.S1.Accounts[0].pendingWithdrawal}\",\"CreditCard\":\"{$.S1.Accounts[0].currentAmountDue}\",\"Mortgage\":\"{$.S1.Accounts[0].paymentDue}\",\"Current\":\"{$.S1.Accounts[0].pendingWithdrawal}\",\"mortgageFacility\":\"{$.S1.Accounts[0].IBAN}\"}",
+        "tab1field2text": "{\"Savings\":\"{i.i18n.accountDetail.pendingWithdrawals}:\",\"Checking\":\"{i.i18n.accountDetail.pendingWithdrawals}:\",\"Loan\":\"{i.i18n.accountDetail.totalOverdue}:\",\"Deposit\":\"{i.i18n.accountDetail.pendingWithdrawals}:\",\"CreditCard\":\"{i.i18n.accountDetail.currentDueAmount}:\",\"Current\":\"{i.i18n.accountDetail.pendingWithdrawals}:\",\"Mortgage\":\"{i.i18n.accountDetail.totalOverdue}:\",\"mortgageFacility\":\"IBAN:\"}",
+        "tab1field2type": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Amount\",\"Deposit\":\"Amount\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Amount\",\"Current\":\"Amount\",\"mortgageFacility\":\"Account Number\"}",
+        "tab1field3backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].blockedAmount}\",\"Checking\":\"{$.S1.Accounts[0].blockedAmount}\",\"Loan\":\"{$.S1.Accounts[0].nextPaymentAmount}\",\"CreditCard\":\"{$.S1.Accounts[0].dueDate}\",\"Mortgage\":\"{$.S1.Accounts[0].nextPaymentAmount}\",\"Current\":\"{$.S1.Accounts[0].blockedAmount}\",\"mortgageFacility\":\"{$.S1.Accounts[0].utilisedAmount}\"}",
+        "tab1field3text": "{\"Savings\":\"{i.i18n.accountDetail.blockedAmount}:\",\"Checking\":\"{i.i18n.accountDetail.blockedAmount}:\",\"Loan\":\"{i.i18n.accountDetail.currentDue}:\",\"CreditCard\":\"{i.i18n.loan.dueOn}:\",\"Current\":\"{i.i18n.accountDetail.blockedAmount}:\",\"Mortgage\":\"{i.i18n.accountDetail.currentDue}:\",\"mortgageFacility\":\"Utilised Amount:\"}",
+        "tab1field3type": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Amount\",\"CreditCard\":\"Date\",\"Mortgage\":\"Amount\",\"Current\":\"Amount\",\"mortgageFacility\":\"Amount\"}",
+        "tab1field4backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].approvedOverdraftLimit}\",\"Checking\":\"{$.S1.Accounts[0].approvedOverdraftLimit}\",\"Loan\":\"{$.S1.Accounts[0].nextPaymentDate}\",\"CreditCard\":\"{$.S1.Accounts[0].creditLimit}\",\"Mortgage\":\"{$.S1.Accounts[0].nextPaymentDate}\",\"Deposit\":\"{$.S1.Accounts[0].accruedInterest}\",\"Current\":\"{$.S1.Accounts[0].transferLimit}\",\"mortgageFacility\":\"{$.S1.Accounts[0].nextPaymentAmount}\"}",
+        "tab1field4text": "{\"Savings\":\"{i.i18n.accountDetail.overdraftLimit}:\",\"Checking\":\"{i.i18n.accountDetail.overdraftLimit}:\",\"Loan\":\"{i.i18n.billPay.DueDate}:\",\"CreditCard\":\"{i.i18n.accountDetail.creditLimit}:\",\"Deposit\":\"{i.i18n.AccountsDetails.InterestAccrued}:\",\"Current\":\"{i.i18n.accountDetail.availableOverdraftLimit}:\",\"Mortgage\":\"{i.i18n.billPay.DueDate}:\",\"mortgageFacility\":\"Next Payment Amount:\"}",
+        "tab1field4type": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Date\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Date\",\"Deposit\":\"Amount\",\"Current\":\"Amount\",\"mortgageFacility\":\"Amount\"}",
+        "tab1field5backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].transferLimit}\",\"Checking\":\"{$.S1.Accounts[0].transferLimit}\",\"mortgageFacility\":\"{$.S1.Accounts[0].nextPaymentDate}\"}",
+        "tab1field5text": "{\"Savings\":\"{i.i18n.accountDetail.overdraftBalance}:\",\"Checking\":\"{i.i18n.accountDetail.overdraftBalance}:\",\"mortgageFacility\":\"Next Payment Due:\"}",
+        "tab1field5type": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"mortgageFacility\":\"Date\"}",
+        "tab1field6backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].currentBalance}\",\"Checking\":\"{$.S1.Accounts[0].currentBalance}\",\"Current\":\"{$.S1.Accounts[0].currentBalance}\",\"mortgageFacility\":\"{$.S1.Accounts[0].currentAmountDue}\"}",
+        "tab1field6text": "{\"Savings\":\"{i.i18n.accounts.currentBalance}:\",\"Checking\":\"{i.i18n.accounts.currentBalance}:\",\"Current\":\"{i.i18n.accounts.currentBalance}:\",\"mortgageFacility\":\"{i.i18n.accountDetail.totalOverdue}:\"}",
+        "tab1field6type": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Current\":\"Amount\",\"mortgageFacility\":\"Amount\"}",
+        "tab1field7backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].availableBalance}\",\"Checking\":\"{$.S1.Accounts[0].availableBalance}\",\"Loan\":\"{$.S1.Accounts[0].outstandingBalance}\",\"Deposit\":\"{$.S1.Accounts[0].currentBalance}\",\"CreditCard\":\"{$.S1.Accounts[0].currentBalance}\",\"Mortgage\":\"{$.S1.Accounts[0].outstandingBalance}\",\"Current\":\"{$.S1.Accounts[0].availableBalance}\",\"mortgageFacility\":\"{$.S1.Accounts[0].outstandingBalance}\"}",
+        "tab1field7text": "{\"Savings\":\"{i.i18n.accounts.availableBalance}:\",\"Checking\":\"{i.i18n.accounts.availableBalance}:\",\"Loan\":\"{i.i18n.accounts.outstandingBalance}:\",\"Deposit\":\"{i.i18n.accounts.currentBalance}:\",\"CreditCard\":\"{i.i18n.accounts.currentBalance}:\",\"Current\":\"{i.i18n.accounts.availableBalance}:\",\"Mortgage\":\"{i.i18n.accounts.outstandingBalance}:\",\"mortgageFacility\":\"{i.i18n.accounts.outstandingBalance}:\"}",
+        "tab2field1backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].lastPaymentDate}\",\"Checking\":\"{$.S1.Accounts[0].lastPaymentDate}\",\"Loan\":\"{$.S1.Accounts[0].interestPaidYTD}\",\"Deposit\":\"{$.S1.Accounts[0].dividendLastPaidAmount}\",\"CreditCard\":\"{$.S1.Accounts[0].minimumDue}\",\"Mortgage\":\"{$.S1.Accounts[0].interestPaidYTD}\",\"Current\":\"{$.S1.Accounts[0].lastPaymentDate}\",\"mortgageFacility\":\"{$.S1.Accounts[0].interestPaidYTD}\"}",
+        "tab2field1text": "{\"Savings\":\"{i.i18n.accountDetail.paidOn}:\",\"Checking\":\"{i.i18n.accountDetail.paidOn}:\",\"Loan\":\"{i.i18n.accountDetail.interestPaidYTD}:\",\"Mortgage\":\"{i.i18n.accountDetail.interestPaidYTD}:\",\"Deposit\":\"{i.i18n.accountDetails.lastPaidInterest}:\",\"CreditCard\":\"{i.i18n.accountDetail.minimumDueAmount}:\",\"Current\":\"{i.i18n.accountDetail.paidOn}:\",\"mortgageFacility\":\"{i.i18n.accountDetail.interestPaidYTD}:\"}",
+        "tab2field1type": "{\"Savings\":\"Date\",\"Checking\":\"Date\",\"Loan\":\"Amount\",\"Deposit\":\"Amount\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Amount\",\"Current\":\"Date\",\"mortgageFacility\":\"Amount\"}",
+        "tab2field2backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].dividendRate}\",\"Checking\":\"{$.S1.Accounts[0].dividendRate}\",\"Loan\":\"{$.S1.Accounts[0].lastPaymentAmount}\",\"Deposit\":\"{$.S1.Accounts[0].dividendPaidYTD}\",\"CreditCard\":\"{$.S1.Accounts[0].dueDate}\",\"Mortgage\":\"{$.S1.Accounts[0].lastPaymentAmount}\",\"Current\":\"{$.S1.Accounts[0].dividendRate}\",\"mortgageFacility\":\"{$.S1.Accounts[0].lastPaymentAmount}\"}",
+        "tab2field2text": "{\"Savings\":\"{i.i18n.accountDetail.interestRate}:\",\"Checking\":\"{i.i18n.accountDetail.interestRate}:\",\"Loan\":\"{i.i18n.accountDetail.lastPaymentAmount}:\",\"Mortgage\":\"{i.i18n.accountDetail.lastPaymentAmount}:\",\"Deposit\":\"{i.i18n.accountDetail.paidInterestYTD}:\",\"CreditCard\":\"{i.i18n.accountDetail.paymentDueDate}:\",\"Current\":\"{i.i18n.accountDetail.interestRate}:\",\"mortgageFacility\":\"{i.i18n.accountDetail.lastPaymentAmount}:\"}",
+        "tab2field2type": "{\"Savings\":\"Percentage\",\"Checking\":\"Percentage\",\"Loan\":\"Amount\",\"Deposit\":\"Amount\",\"CreditCard\":\"Date\",\"Mortgage\":\"Amount\",\"Current\":\"Percentage\",\"mortgageFacility\":\"Amount\"}",
+        "tab2field3backendmapping": "{\"Loan\":\"{$.S1.Accounts[0].lastPaymentDate}\",\"Deposit\":\"{$.S1.Accounts[0].payoutAccount}\",\"CreditCard\":\"{$.S1.Accounts[0].lastStatementBalance}\",\"Mortgage\":\"{$.S1.Accounts[0].lastPaymentDate}\",\"mortgageFacility\":\"{$.S1.Accounts[0].lastPaymentDate}\"}",
+        "tab2field3text": "{\"Loan\":\"{i.i18n.accountDetail.lastPaymentDate}:\",\"Mortgage\":\"{i.i18n.accountDetail.lastPaymentDate}:\",\"Deposit\":\"{i.i18n.accountDetail.settlementAccount}:\",\"CreditCard\":\"{i.i18n.accountDetail.lastStatementBalance}:\",\"mortgageFacility\":\"{i.i18n.accountDetail.lastPaymentDate}:\"}",
+        "tab2field3type": "{\"Loan\":\"Date\",\"Deposit\":\"Label\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Date\",\"mortgageFacility\":\"Date\"}",
+        "tab2field4backendmapping": "{\"Loan\":\"{$.S1.Accounts[0].interestRate}\",\"Mortgage\":\"{$.S1.Accounts[0].interestRate}\",\"Deposit\":\"{$.S1.Accounts[0].termInterestDue}\",\"mortgageFacility\":\"{$.S1.Accounts[0].rePaymentFrequency}\"}",
+        "tab2field4text": "{\"Loan\":\"{i.i18n.accountDetail.interestRate}:\",\"Mortgage\":\"{i.i18n.accountDetail.interestRate}:\",\"Deposit\":\"{i.kony.mb.accdetails.interestDue}:\",\"mortgageFacility\":\"{i.i18n.accountDetails.rePaymentFrequency}:\"}",
+        "tab2field4type": "{\"Loan\":\"Percentage\",\"Mortgage\":\"Percentage\",\"Deposit\":\"Amount\",\"mortgageFacility\":\"Label\"}",
+        "tab2field5backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].accruedInterest}\",\"Checking\":\"{$.S1.Accounts[0].accruedInterest}\",\"Loan\":\"{$.S1.Accounts[0].rePaymentFrequency}\",\"Mortgage\":\"{$.S1.Accounts[0].rePaymentFrequency}\",\"Current\":\"{$.S1.Accounts[0].accruedInterest}\",\"mortgageFacility\":\"{$.S1.Accounts[0].interestRate}\"}",
+        "tab2field5text": "{\"Savings\":\"{i.i18n.AccountsDetails.InterestAccrued}:\",\"Checking\":\"{i.i18n.AccountsDetails.InterestAccrued}:\",\"Loan\":\"{i.i18n.accountDetails.rePaymentFrequency}:\",\"Mortgage\":\"{i.i18n.accountDetails.rePaymentFrequency}:\",\"Current\":\"{i.i18n.AccountsDetails.InterestAccrued}:\",\"mortgageFacility\":\"{i.i18n.accountDetail.interestRate}:\"}",
+        "tab2field5type": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Label\",\"Mortgage\":\"Label\",\"Current\":\"Amount\",\"mortgageFacility\":\"Percentage\"}",
+        "tab2field6backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].dividendLastPaidAmount}\",\"Checking\":\"{$.S1.Accounts[0].dividendLastPaidAmount}\",\"Loan\":\"{$.S1.Accounts[0].sanctionedAmount}\",\"Deposit\":\"{$.S1.Accounts[0].interestRate}\",\"CreditCard\":\"{$.S1.Accounts[0].lastPaymentAmount}\",\"Mortgage\":\"{$.S1.Accounts[0].sanctionedAmount}\",\"Current\":\"{$.S1.Accounts[0].dividendLastPaidAmount}\"}",
+        "tab2field6text": "{\"Savings\":\"{i.i18n.accountDetails.lastPaidInterest}:\",\"Checking\":\"{i.i18n.accountDetails.lastPaidInterest}:\",\"Loan\":\"{i.i18n.accountDetails.sanctionedAmount}:\",\"Mortgage\":\"{i.i18n.accountDetails.sanctionedAmount}:\",\"Deposit\":\"{i.i18n.accountDetail.creditInterestRate}:\",\"CreditCard\":\"{i.i18n.accountDetail.lastPaymentAmount}:\"}",
+        "tab2field6type": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Amount\",\"Deposit\":\"Percentage\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Amount\",\"Current\":\"Amount\"}",
+        "tab2field7backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].dividendPaidYTD}\",\"Checking\":\"{$.S1.Accounts[0].dividendPaidYTD}\",\"Loan\":\"{$.S1.Accounts[0].sanctionedDate}\",\"Deposit\":\"{$.S1.Accounts[0].dividendLastPaidDate}\",\"CreditCard\":\"{$.S1.Accounts[0].lastPaymentDate}\",\"Mortgage\":\"{$.S1.Accounts[0].sanctionedDate}\",\"Current\":\"{$.S1.Accounts[0].dividendPaidYTD}\",\"mortgageFacility\":\"{$.S1.Accounts[0].sanctionedAmount}\"}",
+        "tab2field7text": "{\"Savings\":\"{i.i18n.accountDetail.paidInterestYTD}:\",\"Checking\":\"{i.i18n.accountDetail.paidInterestYTD}:\",\"Loan\":\"{i.i18n.accountDetails.sanctionedDate}:\",\"Mortgage\":\"{i.i18n.accountDetails.sanctionedDate}:\",\"Deposit\":\"{i.i18n.accountDetail.paidOn}:\",\"CreditCard\":\"{i.i18n.accountDetail.lastPaymentDate}:\",\"Current\":\"{i.i18n.accountDetail.paidInterestYTD}:\",\"mortgageFacility\":\"Approved Loan Amount:\"}",
+        "tab2field7type": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Date\",\"Deposit\":\"Date\",\"CreditCard\":\"Date\",\"Mortgage\":\"Date\",\"Current\":\"Amount\",\"mortgageFacility\":\"Amount\"}",
+        "tab2field8backendmapping": "{\"Loan\":\"{$.S1.Accounts[0].originalAmount}\",\"CreditCard\":\"{$.S1.Accounts[0].availableCredit}\",\"Mortgage\":\"{$.S1.Accounts[0].originalAmount}\",\"Deposit\":\"{$.S1.Accounts[0].interestDueDate}\",\"mortgageFacility\":\"{$.S1.Accounts[0].maturityDate}\"}",
+        "tab2field8text": "{\"Loan\":\"{i.i18n.accountDetail.principalAmount}:\",\"Mortgage\":\"{i.i18n.accountDetail.principalAmount}:\",\"CreditCard\":\"{i.i18n.accountDetail.rewardBalance}:\",\"Deposit\":\"{i.i18n.billPay.DueDate}:\",\"mortgageFacility\":\"{i.i18n.accountDetail.maturityDate}:\"}",
+        "tab2field8type": "{\"Loan\":\"Amount\",\"CreditCard\":\"Label\",\"Mortgage\":\"Amount\",\"Deposit\":\"Date\",\"mortgageFacility\":\"Date\"}",
+        "tab2field9text": "{\"CreditCard\":\"{i.i18n.accountDetail.interestRate}:\",\"Loan\":\"{i.i18n.accountDetail.maturityDate}:\",\"Mortgage\":\"{i.i18n.accountDetail.maturityDate}:\"}",
+        "tab2title": "{\"Savings\":\"Interest Details\",\"Checking\":\"Interest Details\",\"Loan\":\"Interest Details\",\"Mortgage\":\"Interest Details\",\"Deposit\":\"Interest Details\",\"CreditCard\":\"Balance & Bill Details\",\"Current\":\"Interest Details\",\"mortgageFacility\":\"Interest Details\"}",
+        "tab3field10backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].jointHolders[4].fullname}\",\"Checking\":\"{$.S1.Accounts[0].jointHolders[4].fullname}\",\"Loan\":\"{$.S1.Accounts[0].jointHolders[4].fullname}\",\"Deposit\":\"{$.S1.Accounts[0].jointHolders[4].fullname}\",\"Mortgage\":\"{$.S1.Accounts[0].jointHolders[4].fullname}\",\"Current\":\"{$.S1.Accounts[0].jointHolders[4].fullname}\"}",
+        "tab3field10text": "{\"Savings\":\"{i.i18n.accountDetail.jointHolder5}:\",\"Checking\":\"{i.i18n.accountDetail.jointHolder5}:\",\"Loan\":\"{i.i18n.accountDetail.jointHolder5}:\",\"Mortgage\":\"{i.i18n.accountDetail.jointHolder5}:\",\"Deposit\":\"{i.i18n.accountDetail.jointHolder5}:\",\"Current\":\"{i.i18n.accountDetail.jointHolder5}:\"}",
+        "tab3field10type": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"Deposit\":\"Label\",\"Mortgage\":\"Label\",\"Current\":\"Label\"}",
+        "tab3field1backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].{$.c.regionSpecification[0].value}}\",\"Checking\":\"{$.S1.Accounts[0].{$.c.regionSpecification[0].value}}\",\"Loan\":\"{$.S1.Accounts[0].routingNumber}\",\"CreditCard\":\"{$.S1.Accounts[0].availableCredit}\",\"Mortgage\":\"{$.S1.Accounts[0].routingNumber}\",\"Current\":\"{$.S1.Accounts[0].{$.c.regionSpecification[0].value}}\"}",
+        "tab3field1text": "{\"Savings\":\"{$.c.regionSpecification[0].label}\",\"Checking\":\"{$.c.regionSpecification[0].label}\",\"Loan\":\"{i.i18n.accounts.routingNumber}:\",\"Mortgage\":\"{i.i18n.accounts.routingNumber}:\",\"CreditCard\":\"{i.i18n.accountDetail.availableCredit}:\",\"Current\":\"{$.c.regionSpecification[0].label}\"}",
+        "tab3field1type": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Label\",\"Current\":\"Label\"}",
+        "tab3field2backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].accountID}\",\"Checking\":\"{$.S1.Accounts[0].accountID}\",\"Loan\":\"{$.S1.Accounts[0].accountID}\",\"Deposit\":\"{$.S1.Accounts[0].accountID}\",\"CreditCard\":\"{$.S1.Accounts[0].accountHolder}\",\"Mortgage\":\"{$.S1.Accounts[0].accountID}\",\"Current\":\"{$.S1.Accounts[0].accountID}\"}",
+        "tab3field2text": "{\"Savings\":\"{i.i18n.common.accountNumber}:\",\"Checking\":\"{i.i18n.common.accountNumber}:\",\"Loan\":\"{i.i18n.common.accountNumber}:\",\"Mortgage\":\"{i.i18n.common.accountNumber}:\",\"Deposit\":\"{i.i18n.common.accountNumber}:\",\"CreditCard\":\"{i.i18n.accounts.primaryholder}:\",\"Current\":\"{i.i18n.common.accountNumber}:\"}",
+        "tab3field2type": "{\"Savings\":\"Account Number\",\"Checking\":\"Account Number\",\"Loan\":\"Account Number\",\"Deposit\":\"Account Number\",\"CreditCard\":\"Label\",\"Mortgage\":\"Account Number\",\"Current\":\"Account Number\"}",
+        "tab3field3backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].accountHolder.fullname}\",\"Checking\":\"{$.S1.Accounts[0].accountHolder.fullname}\",\"CreditCard\":\"{$.S1.Accounts[0].openingDate}\",\"Loan\":\"{$.S1.Accounts[0].accountHolder.fullname}\",\"Mortgage\":\"{$.S1.Accounts[0].accountHolder.fullname}\",\"Current\":\"{$.S1.Accounts[0].accountHolder.fullname}\",\"Deposit\":\"{$.S1.Accounts[0].accountHolder.fullname}\"}",
+        "tab3field3text": "{\"Savings\":\"{$.c.nameSpecification[0].label}\",\"Checking\":\"{$.c.nameSpecification[0].label}\",\"Loan\":\"{i.i18n.accountDetail.customerName}:\",\"Mortgage\":\"{i.i18n.accountDetail.customerName}:\",\"CreditCard\":\"{i.i18n.accountDetail.creditIssueDate}:\",\"Current\":\"{$.c.nameSpecification[0].label}\",\"Deposit\":\"{i.i18n.accountDetail.customerName}:\"}",
+        "tab3field3type": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"CreditCard\":\"Date\",\"Loan\":\"Label\",\"Mortgage\":\"Label\",\"Current\":\"Label\",\"Deposit\":\"Label\"}",
+        "tab3field4backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].jointHolders[1].fullname}\",\"Checking\":\"{$.S1.Accounts[0].jointHolders[1].fullname}\",\"Loan\":\"{$.S1.Accounts[0].jointHolders[1].fullname}\",\"Deposit\":\"{$.S1.Accounts[0].jointHolders[1].fullname}\",\"Mortgage\":\"{$.S1.Accounts[0].jointHolders[1].fullname}\",\"Current\":\"{$.S1.Accounts[0].jointHolders[1].fullname}\"}",
+        "tab3field4text": "{\"Savings\":\"{i.i18n.accountDetail.jointHolder2}:\",\"Checking\":\"{i.i18n.accountDetail.jointHolder2}:\",\"Loan\":\"{i.i18n.accountDetail.jointHolder2}:\",\"Mortgage\":\"{i.i18n.accountDetail.jointHolder2}:\",\"Deposit\":\"{i.i18n.accountDetail.jointHolder2}:\",\"Current\":\"{i.i18n.accountDetail.jointHolder2}:\"}",
+        "tab3field4type": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"Deposit\":\"Label\",\"Mortgage\":\"Label\",\"Current\":\"Label\"}",
+        "tab3field5backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].jointHolders[3].fullname}\",\"Checking\":\"{$.S1.Accounts[0].jointHolders[3].fullname}\",\"Loan\":\"{$.S1.Accounts[0].jointHolders[3].fullname}\",\"Deposit\":\"{$.S1.Accounts[0].jointHolders[3].fullname}\",\"Mortgage\":\"{$.S1.Accounts[0].jointHolders[3].fullname}\",\"Current\":\"{$.S1.Accounts[0].jointHolders[3].fullname}\"}",
+        "tab3field5text": "{\"Savings\":\"{i.i18n.accountDetail.jointHolder4}:\",\"Checking\":\"{i.i18n.accountDetail.jointHolder4}:\",\"Loan\":\"{i.i18n.accountDetail.jointHolder4}:\",\"Mortgage\":\"{i.i18n.accountDetail.jointHolder4}:\",\"Deposit\":\"{i.i18n.accountDetail.jointHolder4}:\",\"Current\":\"{i.i18n.accountDetail.jointHolder4}:\"}",
+        "tab3field5type": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"Deposit\":\"Label\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Label\",\"Current\":\"Label\"}",
+        "tab3field6backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].swiftCode}\",\"Checking\":\"{$.S1.Accounts[0].swiftCode}\",\"Loan\":\"{$.S1.Accounts[0].swiftCode}\",\"Mortgage\":\"{$.S1.Accounts[0].swiftCode}\",\"Current\":\"{$.S1.Accounts[0].swiftCode}\"}",
+        "tab3field6text": "{\"Savings\":\"{i.i18n.accounts.swiftCode}:\",\"Checking\":\"{i.i18n.accounts.swiftCode}:\",\"Loan\":\"{i.i18n.accounts.swiftCode}:\",\"Mortgage\":\"{i.i18n.accounts.swiftCode}:\",\"Current\":\"{i.i18n.accounts.swiftCode}:\"}",
+        "tab3field6type": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"Mortgage\":\"Label\",\"Current\":\"Label\"}",
+        "tab3field7text": "{\"Loan\":\"{i.i18n.transfers.accountType}:\",\"Mortgage\":\"{i.i18n.transfers.accountType}:\"}",
+        "tab3field8backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].jointHolders[0].fullname}\",\"Checking\":\"{$.S1.Accounts[0].jointHolders[0].fullname}\",\"Loan\":\"{$.S1.Accounts[0].jointHolders[0].fullname}\",\"Deposit\":\"{$.S1.Accounts[0].jointHolders[0].fullname}\",\"Mortgage\":\"{$.S1.Accounts[0].jointHolders[0].fullname}\",\"Current\":\"{$.S1.Accounts[0].jointHolders[0].fullname}\"}",
+        "tab3field8text": "{\"Savings\":\"{i.i18n.accountDetail.jointHolder1}:\",\"Checking\":\"{i.i18n.accountDetail.jointHolder1}:\",\"Deposit\":\"{i.i18n.accountDetail.jointHolder1}:\",\"Loan\":\"{i.i18n.accountDetail.jointHolder1}:\",\"Mortgage\":\"{i.i18n.accountDetail.jointHolder1}:\",\"Current\":\"{i.i18n.accountDetail.jointHolder1}:\"}",
+        "tab3field8type": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"Deposit\":\"Label\",\"Mortgage\":\"Label\",\"Current\":\"Label\"}",
+        "tab3field9backendmapping": "{\"Savings\":\"{$.S1.Accounts[0].jointHolders[2].fullname}\",\"Checking\":\"{$.S1.Accounts[0].jointHolders[2].fullname}\",\"Loan\":\"{$.S1.Accounts[0].jointHolders[2].fullname}\",\"Deposit\":\"{$.S1.Accounts[0].jointHolders[2].fullname}\",\"Mortgage\":\"{$.S1.Accounts[0].jointHolders[2].fullname}\",\"Current\":\"{$.S1.Accounts[0].jointHolders[2].fullname}\"}",
+        "tab3field9text": "{\"Savings\":\"{i.i18n.accountDetail.jointHolder3}:\",\"Checking\":\"{i.i18n.accountDetail.jointHolder3}:\",\"Loan\":\"{i.i18n.accountDetail.jointHolder3}:\",\"Mortgage\":\"{i.i18n.accountDetail.jointHolder3}:\",\"Deposit\":\"{i.i18n.accountDetail.jointHolder3}:\",\"Current\":\"{i.i18n.accountDetail.jointHolder3}:\"}",
+        "tab3field9type": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"Deposit\":\"Label\",\"Mortgage\":\"Label\",\"Current\":\"Label\"}",
+        "tab3title": "{\"Savings\":{\"640\":\"Info\",\"default\":\"Account Info\"},\"Checking\":{\"640\":\"Info\",\"default\":\"Account Info\"},\"Loan\":{\"640\":\"Info\",\"default\":\"Account Info\"},\"Mortgage\":{\"640\":\"Info\",\"default\":\"Account Info\"},\"Deposit\":{\"640\":\"Info\",\"default\":\"Account Info\"},\"CreditCard\":{\"640\":\"Info\",\"default\":\"Account Info\"},\"Current\":{\"640\":\"Info\",\"default\":\"Account Info\"}}",
+        "text": "{\"Savings\":{\"640\":\"Summary\",\"default\":\"Account Summary\"},\"Checking\":{\"640\":\"Summary\",\"default\":\"Account Summary\"},\"Loan\":{\"640\":\"Summary\",\"default\":\"Account Summary\"},\"Deposit\":{\"640\":\"Summary\",\"default\":\"Account Summary\"},\"CreditCard\":{\"640\":\"Summary\",\"default\":\"Account Summary\"},\"Current\":{\"640\":\"Summary\",\"default\":\"Account Summary\"},\"Mortgage\":{\"640\":\"Summary\",\"default\":\"Account Summary\"},\"mortgageFacility\":{\"640\":\"Summary\",\"default\":\"Account Summary\"}}",
+        "unmaskeyeicon": "{\"unmaskeyeicon\" : \"g\"}",
+        "unmaskeyeiconskin": "{\"640\":{\"skin\":\"bbSknLblFontIcon\"},\"default\":{\"skin\":\"bbSknLblFontIcon\"}}"
+    },
+    "id": "summary",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c99b60deb39e40ab9a49366e38322852",
+    "masterType": 1,
+    "minheight": {
+        "type": "string",
+        "value": "220dp"
+    },
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxAccountSummaryAndActions",
+    "pf": "frmAccountsDetails",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "string",
+                "value": "237dp"
+            },
+            "minHeight": {
+                "type": "string",
+                "value": "200dp"
+            }
+        },
+        "b2": {
+            "isVisible": true,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "right": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": ""
+            }
+        },
+        "b3": {
+            "height": {
+                "type": "string",
+                "value": "220dp"
+            },
+            "left": {
+                "type": "string",
+                "value": "27dp"
+            },
+            "right": {
+                "type": "string",
+                "value": "30dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "92%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "ib0481a185ed44d9af961a34a1d9c4c1",
+    "wType": "UserWidgetInstance",
+    "zindex": 2
+}

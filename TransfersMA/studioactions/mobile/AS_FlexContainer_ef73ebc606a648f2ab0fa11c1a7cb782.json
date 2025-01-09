@@ -1,0 +1,26 @@
+{
+    "AS_FlexContainer_ef73ebc606a648f2ab0fa11c1a7cb782": {
+        "id": "AS_FlexContainer_ef73ebc606a648f2ab0fa11c1a7cb782",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segDownloadAttachmentsList",
+            "type": "templates",
+            "platform": "",
+            "KUID": "bfb4f97cf49c4e2ab9b4348c24f43cfb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_bdca94bb93924c92ae92c21adcfc8c02",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.downloadSingleFile();",
+            "parentId": null
+        }]
+    }
+}

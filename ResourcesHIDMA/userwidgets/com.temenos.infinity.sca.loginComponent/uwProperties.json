@@ -1,0 +1,271 @@
+{
+    "classname": "loginComponent",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "jb3de6feb0eb43f7807ded8fb97022d3",
+                    "paramList": [
+                        {
+                            "name": "context"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g1c95e641b314e54aadfbc80481a2473",
+                    "paramList": [],
+                    "propertyKey": "onBreakpointChange",
+                    "pw": {
+                        "displayName": "onBreakpointChange",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b664c198737744b5894f660c356b9c73",
+                    "paramList": [],
+                    "propertyKey": "resetUI",
+                    "pw": {
+                        "displayName": "resetUI",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fba2dc6fd54e41ca910bd97571c45a12",
+                    "paramList": [],
+                    "propertyKey": "showLoginError",
+                    "pw": {
+                        "displayName": "showLoginError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bc8a5b393a2c4b7498c50a81f2808eea",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSuccessCallback",
+                    "pw": {
+                        "displayName": "onSuccessCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i01e1646372041a18f542bb166c190f3",
+                    "paramList": [
+                        {
+                            "name": "error"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onFailureCallback",
+                    "pw": {
+                        "displayName": "onFailureCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d9f2453c27024c6c8a9ed518b8d5df80",
+                    "paramList": [
+                        {
+                            "name": "isVisible"
+                        }
+                    ],
+                    "propertyIndex": 2,
+                    "propertyKey": "showOrHideOtherLoginOptions",
+                    "pw": {
+                        "displayName": "showOrHideOtherLoginOptions",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e9a607f3a22e46ecbfd2b16de4ae8746",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "cantSignIn",
+                    "pw": {
+                        "displayName": "cantSignIn",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "skins"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"normal\":\"sknBtnNormalSSPFFFFFF15Px\", \"hoverSkin\":\"sknBtnNormalSSPFFFFFFHover15Px\", \"focusSkin\":\"sknBtnNormalSSPFFFFFF15PxFocus\"}",
+                    "group": "skins",
+                    "kuid": "e8a0ddbf73274b859f392258bfbbb1e5",
+                    "originalPropertyKey": "primaryBtnEnableSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "primaryBtnEnableSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Button Enable Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"BP1\": \"640\", \"BP2\": \"1024\", \"BP3\": \"1366\" }",
+                    "group": "General",
+                    "kuid": "bc5b1d5bd4834c5b873c601bdff60495",
+                    "originalPropertyKey": "breakpoints",
+                    "propertyIndex": 1,
+                    "propertyKey": "breakpoints",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Breakpoints",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"normal\":\"sknBtnBlockedSSP0273e315px\", \"hoverSkin\":\"sknBtnBlockedSSP0273e315px\", \"focusSkin\":\"sknBtnBlockedSSP0273e315px\"}",
+                    "group": "skins",
+                    "kuid": "acb2643bc9da4f7f91c060463dfbdd43",
+                    "originalPropertyKey": "primaryBtnDisableSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "primaryBtnDisableSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Button Disable Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "b302ae3c339b454c9d99f4b980f00c8a",
+                    "originalPropertyKey": "isRMSEnabled",
+                    "propertyIndex": 4,
+                    "propertyKey": "isRMSEnabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "isRMSEnabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "TS01d4cc80",
+                    "group": "General",
+                    "kuid": "dba516b926814364bd06df96df11e47d",
+                    "originalPropertyKey": "tmCookieTag",
+                    "propertyIndex": 5,
+                    "propertyKey": "tmCookieTag",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tmCookieTag",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "C8hDRqP6KY",
+                    "group": "General",
+                    "kuid": "h3710f6551cc4a07b2f2bc033022563e",
+                    "originalPropertyKey": "tmCookieSid",
+                    "propertyIndex": 6,
+                    "propertyKey": "tmCookieSid",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tmCookieSid",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "g6587a5a974c44a3b81ef0036936136f",
+                    "originalPropertyKey": "isRMSReadOnly",
+                    "propertyIndex": 8,
+                    "propertyKey": "isRMSReadOnly",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "isRMSReadOnly",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ubd5b72134c2489f85e58b733edbbd07",
+                    "type": "boolean",
+                    "value": "true/false"
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.sca",
+    "version": "1.0.0"
+}

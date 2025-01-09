@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_a604af99935444eca2935804695af07f": {
+        "id": "AS_AppEvents_a604af99935444eca2935804695af07f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_h36af4ed10bb4a3882407994e6e15cd4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true)\nkony.print(\"Testing JS Load\");\nvar isIOS13 =  (/(iPad|iPhone);.*CPU.*OS 13_\\d/i).test(navigator.userAgent);\nif(isIOS13){\n  kony.application.setApplicationBehaviors({disableForceRepaint: true});\n}\n//require([\"AccountsModule/frmAccountsLanding\", \"AccountsModule/frmAccountsLandingController\", \"AccountsModule/frmDashboard\", \"AccountsModule/frmDashboardController\"], function (){});\n//require([\"BBAccountsModule/frmBBAccountsLanding\", \"BBAccountsModule/frmBBAccountsLandingController\"], function (){});\n//require([\"StopPaymentsModule/frmStopPayments\", \"StopPaymentsModule/frmStopPaymentsController\"], function (){});\n//var authModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthModule\");\n//var ApplicationManager = require('ApplicationManager');\nvar moduleName = 'ApplicationManager';\nrequire([moduleName], function(ApplicationManager){\napplicationManager =  ApplicationManager.getApplicationManager();\nvar config = applicationManager.getConfigurationManager();\nif(performance.navigation.type===1){\n  config.setBrowserRefreshProperty(\"true\");\n}\nvar sm = applicationManager.getStorageManager();\nvar langObjFromStorage = sm.getStoredItem(\"langObj\");\nif (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\n  config.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\n  config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n} else {\n  config.configurations.setItem(\"LOCALE\", \"en_US\");\n  config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n}\nkony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function(){}, function(){});\napplicationManager.getConfigurationManager().fetchApplicationProperties(function(res) {\n            applicationManager.getNavigationManager().updateForm({isLanguageSelectionEnabled : res.isLanguageSelectionEnabled}, \"frmLogin\");\n            if(config.isAppPropertiesLoaded === \"false\"){   \n               config.setAppProperties(\"true\");\n               kony.application.dismissLoadingScreen();\n            }\n               //config.fetchClientSideConfigurations();\n        }, function() {\n     kony.application.dismissLoadingScreen();\n})\ndocument.body.addEventListener('contextmenu', function(e) {\n  e.preventDefault();       \n  alert(kony.i18n.getLocalizedString(\"i18n.general.rightclickdisabled\"));\n})\n});",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "AS_Form_ee655c9068334f69b544b5d1ea5f0122": {
+        "id": "AS_Form_ee655c9068334f69b544b5d1ea5f0122",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e910f7b623954ec59eba3f987f96bfe4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_h3b0b08c1be6448e979287515e8c3c83",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\n\tvar authParams = {\n\t\t\"UserName\": \"7465350930\",\n\t\t\"Password\": \"Kony@1234\",\n\t\"loginOptions\": {\n\t\t\"isOfflineEnabled\": false\n\t\t}\n\t};\n\tauthClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\n\tauthClient.login(authParams,successCallback,errorCallback);\n\tfunction successCallback(resSuccess) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resSuccess);\n\t\t\t var providerTokenParams =  kony.sdk.getCurrentInstance()\n    .tokens[applicationManager.getConfigurationManager().constants.IDENTITYSERVICENAME]\n    .provider_token.params;\n\n    var securityAttributes = providerTokenParams.security_attributes;\n    var userAttributes = providerTokenParams.user_attributes;\n\t var permissions = JSON.parse(securityAttributes.permissions); \n\t applicationManager.getConfigurationManager().setUserPermissions(permissions);\n      applicationManager.fetchAppProperties();\n      applicationManager.getUserPreferencesManager().fetchUser(userSuccess,userError);\n            \n        }\n\n \n\n        function errorCallback(resError) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resError);\n            alert(\"login is not working...\")\n        }\n        \n        function userSuccess(res){\n            var settingsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"SettingsNewUIModule\");\n            settingsModule.presentationController.enterProfileSettings(\"approvalMatrix\");\n          }\n\t\tfunction userError(resError) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resError);\n            alert(\"fetch user is not working...\")\n        }        ",
+            "parentId": null
+        }]
+    }
+}

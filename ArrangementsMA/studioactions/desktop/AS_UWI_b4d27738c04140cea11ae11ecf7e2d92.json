@@ -1,0 +1,23 @@
+{
+    "AS_UWI_b4d27738c04140cea11ae11ecf7e2d92": {
+        "id": "AS_UWI_b4d27738c04140cea11ae11ecf7e2d92",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "error",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "name": "frmServiceRequests",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cbc5e28ce70b4d38ac65c41b0c3c8b21"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a9514639442241308190663322d445bc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flxDowntimeWarning.setVisibility(true);\nthis.view.rtxDowntimeWarning.text = error;\nthis.view.forceLayout();",
+            "parentId": null
+        }]
+    }
+}

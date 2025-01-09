@@ -1,0 +1,30 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "ServiceRequestsUIModule/PresentationControllers/PresentationController"
+        }
+    },
+    "Forms": {
+        "desktop": {
+            "frmServiceRequests": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "ServiceRequestsUIModule/frmServiceRequestsController",
+                "FormName": "ServiceRequestsUIModule/frmServiceRequests",
+                "friendlyName": "frmServiceRequests"
+            }
+        },
+		"mobile": {
+			"frmViewRequests": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "ServiceRequestsUIModule/frmServiceRequestsController",
+                "FormName": "ServiceRequestsUIModule/frmViewRequests",
+                "friendlyName": "frmViewRequests"
+            }
+		}
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "ServiceRequestsUIModule"
+}

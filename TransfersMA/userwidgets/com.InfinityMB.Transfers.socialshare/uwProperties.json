@@ -1,0 +1,104 @@
+{
+    "classname": "socialshare",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "baa5315017a3466288fd036acb0c982d",
+                    "paramList": [
+                        {
+                            "name": "filepaths"
+                        }
+                    ],
+                    "propertyKey": "shareWithFilepath",
+                    "pw": {
+                        "displayName": "shareWithFilepath",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f23c5a38c4e740bab025c4b63a57a1a1",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "de9617f4ee4b42e3bf110206459cfd14",
+                    "paramList": [
+                        {
+                            "name": "base64"
+                        },
+                        {
+                            "name": "filename"
+                        }
+                    ],
+                    "propertyKey": "shareWithBase64",
+                    "pw": {
+                        "displayName": "shareWithBase64",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f23c5a38c4e740bab025c4b63a57a1a1",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e8dbf9a979394129b5e49273ba022035",
+                    "paramList": [
+                        {
+                            "name": "error"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onErrorCallback",
+                    "pw": {
+                        "displayName": "onErrorCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f23c5a38c4e740bab025c4b63a57a1a1",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Android"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "Kony",
+                    "group": "Android",
+                    "kuid": "b4951532ec2f40d5967b356ea5a39281",
+                    "originalPropertyKey": "title",
+                    "propertyIndex": 1,
+                    "propertyKey": "title",
+                    "pw": {
+                        "displayName": "Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f23c5a38c4e740bab025c4b63a57a1a1",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Transfers",
+    "version": "1.0.0"
+}

@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_d821ad0783dc4d12ac72eca962df9da1": {
+        "id": "AS_AppEvents_d821ad0783dc4d12ac72eca962df9da1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ie5332c135a14c7691ea3b9526c46b7e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true);\nkony.print(\"Testing JS Load\");\nvar isIOS13 = (/(iPad|iPhone);.*CPU.*OS 13_\\d/i).test(navigator.userAgent);\nif (isIOS13) {\nkony.application.setApplicationBehaviors({\ndisableForceRepaint: true\n});\n}\nrequire([\"AlertSettingsMA/SettingsNewUIModule/frmAlertCommunication\", \"AlertSettingsMA/SettingsNewUIModule/frmAlertCommunicationController\"], function() {});\nrequire([\"AlertSettingsMA/SettingsNewUIModule/frmAccountAlertsEdit\", \"AlertSettingsMA/SettingsNewUIModule/frmAccountAlertsEditController\"], function() {});\nrequire([\"AlertSettingsMA/SettingsNewUIModule/frmAccountAlertsList\", \"AlertSettingsMA/SettingsNewUIModule/frmAccountAlertsListController\"], function() {});\nrequire([\"AlertSettingsMA/SettingsNewUIModule/frmLogin\", \"AlertSettingsMA/SettingsNewUIModule/frmLoginController\"], function() {});\n\nvar moduleName = 'ApplicationManager';\nrequire([moduleName], function(ApplicationManager) {\napplicationManager = ApplicationManager.getApplicationManager();\nvar config = applicationManager.getConfigurationManager();\nif (performance.navigation.type === 1) {\nconfig.setBrowserRefreshProperty(\"true\");\n}\nvar sm = applicationManager.getStorageManager();\nvar langObjFromStorage = sm.getStoredItem(\"langObj\");\nif (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\nconfig.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\nconfig.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n} else {\nconfig.configurations.setItem(\"LOCALE\", \"en_US\");\nconfig.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n}\nkony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function() {}, function() {});\ndocument.body.addEventListener('contextmenu', function(e) {\ne.preventDefault();\nalert(kony.i18n.getLocalizedString(\"i18n.general.rightclickdisabled\")); // do something with fooModule\n});\n});",
+            "parentId": null
+        }]
+    }
+}

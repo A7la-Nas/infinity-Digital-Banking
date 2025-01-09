@@ -1,0 +1,33 @@
+{
+    "AS_FlexScrollContainer_a1f17e219b8e42f2b39be7959665e088": {
+        "id": "AS_FlexScrollContainer_a1f17e219b8e42f2b39be7959665e088",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCardStatements",
+            "type": "forms",
+            "platform": null,
+            "KUID": "i79f56839ea74c13932cae7a41d9479d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onTouchStart_f3be3a55dfd541d480f09666d2b4c673",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "animateFlxSelectYearBack",
+            "display": "animateFlxSelectYearBack",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

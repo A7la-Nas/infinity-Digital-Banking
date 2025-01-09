@@ -1,0 +1,3268 @@
+{
+    "classname": "accDetailsSummary",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "db434c54f4ee4cb7aebb48d23ee2e87d",
+                    "paramList": [
+                        {
+                            "name": "context"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bd3bdda79564432a8cb38ce9ee6f83ac",
+                    "paramList": [
+                        {
+                            "name": "errorObj"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ac569d0a957f44d8b785942bc4616cb3",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "requestStart",
+                    "pw": {
+                        "displayName": "requestStart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j2888367355c4376840c3aff7e1ad906",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "requestEnd",
+                    "pw": {
+                        "displayName": "requestEnd",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "jbd60accb4d3495faef18f4a22679a36",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "onSummaryTabClick",
+                    "pw": {
+                        "displayName": "onSummaryTabClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Account Summary Service",
+                "Context Setting",
+                "Skins",
+                "Amount",
+                "Date",
+                "Account Number",
+                "Tab1",
+                "Info",
+                "Tab2",
+                "Tab3",
+                "Tab4",
+                "Installment Details Tab"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "Holdings",
+                    "group": "Account Summary Service",
+                    "kuid": "ic879b92ec6c477196d95021ccda8b5b",
+                    "originalPropertyKey": "objectServiceName1",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"locale\":\"\", \"positiveFormat\" : \"{CS}{D}\", \"negativeFormat\" : \"-{CS}{D}\", \"fractionDigits\":\"2\"}",
+                    "group": "Amount",
+                    "kuid": "ie4ea972ce394cd4b57214a94e2f07b3",
+                    "originalPropertyKey": "amountFormat",
+                    "propertyIndex": 1,
+                    "propertyKey": "amountFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Amount Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.accountType}",
+                    "group": "Context Setting",
+                    "kuid": "j2d9d22df89d4cf8938989a5e4607309",
+                    "originalPropertyKey": "accountTypeContextPath",
+                    "propertyIndex": 1,
+                    "propertyKey": "accountTypeContextPath",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Account Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\" : \"m/d/Y\"}",
+                    "group": "Date",
+                    "kuid": "jbf457aff3c34fc4a97228cbea8de731",
+                    "originalPropertyKey": "dateFormat",
+                    "propertyIndex": 1,
+                    "propertyKey": "dateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"masking\" : true}",
+                    "group": "Account Number",
+                    "kuid": "hf23ac02a81d4650a23392af3b1636f1",
+                    "originalPropertyKey": "masking",
+                    "propertyIndex": 1,
+                    "propertyKey": "masking",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Masking Required",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknlbl727272SSP11px\"},\"default\":{\"skin\":\"ICSknlbl727272SSP13px\"}}",
+                    "group": "Skins",
+                    "kuid": "e9e498163aa348bd854edaa08702efc6",
+                    "originalPropertyKey": "labelSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "labelSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Loan\":\"true\"}",
+                    "group": "Installment Details Tab",
+                    "kuid": "a31f3fc7ff114a6fb105a3f799b7dcb9",
+                    "originalPropertyKey": "installmentDetailTabVisibility",
+                    "propertyIndex": 1,
+                    "propertyKey": "installmentDetailTabVisibility",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Visibility",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSP42424215pxBold",
+                    "group": "Info",
+                    "kuid": "ea5b674271af4328a824abb94b00d96a",
+                    "originalPropertyKey": "sknInfoHeader",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknInfoHeader",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"bbSknLbl424242SSP12Px\"},\"default\":{\"skin\":\"sknBBLabelSSP42424215px\"}}",
+                    "group": "Skins",
+                    "kuid": "c2390605fd2e401f801a0642481efa8b",
+                    "originalPropertyKey": "textSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "textSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Default Value Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.currencyCode}",
+                    "group": "Context Setting",
+                    "kuid": "c2025d8b7b324cd2bdfb8bd77bee6faf",
+                    "originalPropertyKey": "currencyCodeContextPath",
+                    "propertyIndex": 2,
+                    "propertyKey": "currencyCodeContextPath",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Currency Code",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ArrangementDetails",
+                    "group": "Account Summary Service",
+                    "kuid": "d17184b11e194384944095412ce0a7cf",
+                    "originalPropertyKey": "objectName1",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\" : \"Y-m-d\"}",
+                    "group": "Date",
+                    "kuid": "ff75745e2d254fa2903836a8a4ed9b24",
+                    "originalPropertyKey": "backendDateFormat",
+                    "propertyIndex": 2,
+                    "propertyKey": "backendDateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Backend Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\" : \"\\\\d(?=\\\\d{4})\", \"replaceCharacter\" : \"X\",  \"modifiers\" : \"g\"}",
+                    "group": "Account Number",
+                    "kuid": "f5c4cebf2e7345deacd5dc7edd72dad7",
+                    "originalPropertyKey": "accountNumberFormat",
+                    "propertyIndex": 2,
+                    "propertyKey": "accountNumberFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Account Number Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Loan\":{\"default\":\"{i.i18n.AccountSummary.installmentDetail}\",\"640\":\"{i.i18n.AccountSummary.Installments}\"}}",
+                    "group": "Installment Details Tab",
+                    "kuid": "d563d134d1954458a9f66cf3ffbc1bda",
+                    "originalPropertyKey": "installmentDetailTab",
+                    "propertyIndex": 2,
+                    "propertyKey": "installmentDetailTab",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknRtx42424213px",
+                    "group": "Info",
+                    "kuid": "d23912b6aa3b46b6a93e699b6fb17c98",
+                    "originalPropertyKey": "sknInfoText",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknInfoText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Info Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknBBLabelSSP42424215px\"},\"default\":{\"skin\":\"ICSknBBLabelSSP42424215px\"}}",
+                    "group": "Skins",
+                    "kuid": "ebe8adcebe434dd78eafd87b996996c9",
+                    "originalPropertyKey": "dateSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "dateSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Date Value Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getDetails",
+                    "group": "Account Summary Service",
+                    "kuid": "f3bfbf827f4d4158824b166db4d459ad",
+                    "originalPropertyKey": "operationName1",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].pendingDeposit}\",\"Checking\":\"{$.S1.Accounts[0].pendingDeposit}\",\"Loan\":\"{$.S1.Accounts[0].originalAmount}\",\"CreditCard\":\"{$.S1.Accounts[0].availableCredit}\",\"Mortgage\":\"{$.S1.Accounts[0].originalAmount}\"}",
+                    "group": "Tab1",
+                    "kuid": "gabc9bcb50d64fdc8c2d42ca63ced9f8",
+                    "originalPropertyKey": "tab1field1backendmapping",
+                    "propertyIndex": 3,
+                    "propertyKey": "tab1field1backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"maskeyeicon\" : \"i\"}",
+                    "group": "Account Number",
+                    "kuid": "cf4c9ab841f34f04a1779cc4d21aef6b",
+                    "originalPropertyKey": "maskeyeicon",
+                    "propertyIndex": 3,
+                    "propertyKey": "maskeyeicon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Mask VizIcon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"ICSbbSknLbl727272SSP15px\",\"640\":\"ICSbbSknLbl727272SSP13px\"}",
+                    "group": "Installment Details Tab",
+                    "kuid": "b3adf61735784b799627cf1b62853fc0",
+                    "originalPropertyKey": "installmentDetailSknLegend",
+                    "propertyIndex": 3,
+                    "propertyKey": "installmentDetailSknLegend",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Legend Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "info_grey.png",
+                    "group": "Info",
+                    "kuid": "i2e79ca8299446a089c42697cab7238d",
+                    "originalPropertyKey": "infoIcon",
+                    "propertyIndex": 3,
+                    "propertyKey": "infoIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Info Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknBBLabelSSP42424215px\"},\"default\":{\"skin\":\"ICSknBBLabelSSP42424215px\"}}",
+                    "group": "Skins",
+                    "kuid": "b1d1c502411e4be191f1d56fff877270",
+                    "originalPropertyKey": "percentageSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "percentageSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Percentage Value Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"accountID\":\"{$.c.accountID}\"}",
+                    "group": "Account Summary Service",
+                    "kuid": "a0871994d49c4271b50bfee2911969f1",
+                    "originalPropertyKey": "criteria1",
+                    "propertyIndex": 4,
+                    "propertyKey": "criteria1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].lastPaymentDate}\",\"Checking\":\"{$.S1.Accounts[0].lastPaymentDate}\",\"Loan\":\"{$.S1.Accounts[0].interestPaidYTD}\",\"Deposit\":\"{$.S1.Accounts[0].dividendLastPaidAmount}\",\"CreditCard\":\"{$.S1.Accounts[0].minimumDue}\",\"Mortgage\":\"{$.S1.Accounts[0].interestPaidYTD}\"}",
+                    "group": "Tab2",
+                    "kuid": "g8a2e0a178a84db78f36cc482df4aec5",
+                    "originalPropertyKey": "tab2field1backendmapping",
+                    "propertyIndex": 4,
+                    "propertyKey": "tab2field1backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].{$.c.regionSpecification[0].value}}\",\"Checking\":\"{$.S1.Accounts[0].{$.c.regionSpecification[0].value}}\",\"Loan\":\"{$.S1.Accounts[0].routingNumber}\",\"CreditCard\":\"{$.S1.Accounts[0].availableCredit}\",\"Mortgage\":\"{$.S1.Accounts[0].routingNumber}\"}",
+                    "group": "Tab3",
+                    "kuid": "aa6d096438344f00bb5d3f34c3074180",
+                    "originalPropertyKey": "tab3field1backendmapping",
+                    "propertyIndex": 4,
+                    "propertyKey": "tab3field1backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Amount",
+                    "group": "Tab1",
+                    "kuid": "a70f2ec50cb2489b978cc4d6a6bb9a8e",
+                    "originalPropertyKey": "tab1field1type",
+                    "propertyIndex": 4,
+                    "propertyKey": "tab1field1type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "jfa1a41878124a60829fdd0a95cfb1a1",
+                    "originalPropertyKey": "tab4field1backendmapping",
+                    "propertyIndex": 4,
+                    "propertyKey": "tab4field1backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"unmaskeyeicon\" : \"h\"}",
+                    "group": "Account Number",
+                    "kuid": "b1fcadec8d854055a9be5400ab6f1efb",
+                    "originalPropertyKey": "unmaskeyeicon",
+                    "propertyIndex": 4,
+                    "propertyKey": "unmaskeyeicon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Unmask VizIcon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl424242SSPRegular20Px",
+                    "group": "Installment Details Tab",
+                    "kuid": "f91de132008e489faec0d37005e752fd",
+                    "originalPropertyKey": "installmentDetailSknData",
+                    "propertyIndex": 4,
+                    "propertyKey": "installmentDetailSknData",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "g",
+                    "group": "Info",
+                    "kuid": "e81c259032394eaeadf8b0d0e8b172bd",
+                    "originalPropertyKey": "infoCrossButton",
+                    "propertyIndex": 4,
+                    "propertyKey": "infoCrossButton",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Cross Font Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Information",
+                    "group": "Info",
+                    "kuid": "h05ed43336f1429da1d9c47710f8f3f5",
+                    "originalPropertyKey": "infoHeaderText",
+                    "propertyIndex": 5,
+                    "propertyKey": "infoHeaderText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknBBLabelSSP42424215px\"},\"default\":{\"skin\":\"ICSknBBLabelSSP42424215px\"}}",
+                    "group": "Skins",
+                    "kuid": "b1d42cd3796744cdb4f99ae3a9763ec8",
+                    "originalPropertyKey": "positiveAmountSkin",
+                    "propertyIndex": 5,
+                    "propertyKey": "positiveAmountSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Positive Amount Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S1",
+                    "group": "Account Summary Service",
+                    "kuid": "de803619e87b4322a4cc6535ac84fe03",
+                    "originalPropertyKey": "identifier1",
+                    "propertyIndex": 5,
+                    "propertyKey": "identifier1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Label\"}",
+                    "group": "Tab3",
+                    "kuid": "d9b3588ab47e480da546b16d3a8097dd",
+                    "originalPropertyKey": "tab3field1type",
+                    "propertyIndex": 5,
+                    "propertyKey": "tab3field1type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Date\",\"Checking\":\"Date\",\"Loan\":\"Amount\",\"Deposit\":\"Amount\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Amount\"}",
+                    "group": "Tab2",
+                    "kuid": "c34d6fc41fb2473690e2648f2db0ba0d",
+                    "originalPropertyKey": "tab2field1type",
+                    "propertyIndex": 5,
+                    "propertyKey": "tab2field1type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "e79bcff67d804ababab77c3fb91b8d3a",
+                    "originalPropertyKey": "tab4field1type",
+                    "propertyIndex": 5,
+                    "propertyKey": "tab4field1type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl424242SSPB35px",
+                    "group": "Installment Details Tab",
+                    "kuid": "d5f47ce5f8154825be7b17307d1eef80",
+                    "originalPropertyKey": "installmentDetailSknTotalNumber",
+                    "propertyIndex": 5,
+                    "propertyKey": "installmentDetailSknTotalNumber",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Total Number Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"sknlblff000011px\"},\"default\":{\"skin\":\"sknlblff000015px\"}}",
+                    "group": "Skins",
+                    "kuid": "c32e32f0b0ae437099d85cd0fd38ca9f",
+                    "originalPropertyKey": "negativeAmountSkin",
+                    "propertyIndex": 6,
+                    "propertyKey": "negativeAmountSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Negative Amount Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl727272SSPR17px",
+                    "group": "Installment Details Tab",
+                    "kuid": "cd348f942f014dd18b8f09ad6005a103",
+                    "originalPropertyKey": "installmentDetailSknTotalText",
+                    "propertyIndex": 6,
+                    "propertyKey": "installmentDetailSknTotalText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Total Text Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "The current balance is the total amount of funds in your account. The available balance is your current balance excluding overdraft minus any outstanding holds or debits that have not been posted to your account.",
+                    "group": "Info",
+                    "kuid": "j371244a49174484b108c65294872ec5",
+                    "originalPropertyKey": "infoText",
+                    "propertyIndex": 6,
+                    "propertyKey": "infoText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Info Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"data\": \"{$.S1.Accounts[0].paidInstallmentsCount}\", \"legend\": {\"default\":\"{i.i18n.AccountSummary.paidInstallments}:\",\"640\":\"{i.i18n.AccountSummary.paid}:\"}, \"color\": \"2A9E05\"}",
+                    "group": "Installment Details Tab",
+                    "kuid": "f372d76305d94d9aad85504a088b5e56",
+                    "originalPropertyKey": "installmentDetailField1",
+                    "propertyIndex": 7,
+                    "propertyKey": "installmentDetailField1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknBBLabelSSP42424215px\"},\"default\":{\"skin\":\"ICSknBBLabelSSP42424215px\"}}",
+                    "group": "Skins",
+                    "kuid": "a465630f30c34512997840e292f5fc43",
+                    "originalPropertyKey": "accountNumberSkin",
+                    "propertyIndex": 7,
+                    "propertyKey": "accountNumberSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Account Number Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].pendingWithdrawal}\",\"Checking\":\"{$.S1.Accounts[0].pendingWithdrawal}\",\"Loan\":\"{$.S1.Accounts[0].paymentDue}\",\"Deposit\":\"{$.S1.Accounts[0].maturityDate}\",\"CreditCard\":\"{$.S1.Accounts[0].currentAmountDue}\",\"Mortgage\":\"{$.S1.Accounts[0].paymentDue}\"}",
+                    "group": "Tab1",
+                    "kuid": "f145f1685ab94c77a539b6ed743fd826",
+                    "originalPropertyKey": "tab1field2backendmapping",
+                    "propertyIndex": 7,
+                    "propertyKey": "tab1field2backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"data\": \"{$.S1.Accounts[0].overDueInstallmentsCount}\", \"legend\": {\"default\":\"{i.i18n.AccountSummary.overdueInstallments}:\",\"640\":\"{i.i18n.AccountSummary.overdue}:\"}, \"color\": \"F9256C\"}",
+                    "group": "Installment Details Tab",
+                    "kuid": "eda10b762d29443bb4d105fe9de97b09",
+                    "originalPropertyKey": "installmentDetailField2",
+                    "propertyIndex": 8,
+                    "propertyKey": "installmentDetailField2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknGlyster20px\"},\"default\":{\"skin\":\"ICSknGlyster20px\"}}",
+                    "group": "Skins",
+                    "kuid": "e02608dfb29a4b3caaa82ee1f21bcb9e",
+                    "originalPropertyKey": "maskeyeiconskin",
+                    "propertyIndex": 8,
+                    "propertyKey": "maskeyeiconskin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Mask Icon Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].dividendRate}\",\"Checking\":\"{$.S1.Accounts[0].dividendRate}\",\"Loan\":\"{$.S1.Accounts[0].lastPaymentAmount}\",\"Deposit\":\"{$.S1.Accounts[0].dividendPaidYTD}\",\"CreditCard\":\"{$.S1.Accounts[0].dueDate}\",\"Mortgage\":\"{$.S1.Accounts[0].lastPaymentAmount}\"}",
+                    "group": "Tab2",
+                    "kuid": "a706f0e636e54b029c1104a5b4d80d07",
+                    "originalPropertyKey": "tab2field2backendmapping",
+                    "propertyIndex": 8,
+                    "propertyKey": "tab2field2backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].accountID}\",\"Checking\":\"{$.S1.Accounts[0].accountID}\",\"Loan\":\"{$.S1.Accounts[0].accountID}\",\"Deposit\":\"{$.S1.Accounts[0].customerName.fullname}\",\"CreditCard\":\"{$.S1.Accounts[0].accountHolder}\",\"Mortgage\":\"{$.S1.Accounts[0].accountID}\"}",
+                    "group": "Tab3",
+                    "kuid": "ab58b2f286b547d198a2ca7b015ddf4a",
+                    "originalPropertyKey": "tab3field2backendmapping",
+                    "propertyIndex": 8,
+                    "propertyKey": "tab3field2backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Amount\",\"Deposit\":\"Date\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Amount\"}",
+                    "group": "Tab1",
+                    "kuid": "ac99d42aa6554131b2b94d7d0c68a456",
+                    "originalPropertyKey": "tab1field2type",
+                    "propertyIndex": 8,
+                    "propertyKey": "tab1field2type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "jca41e98124346f3b1d0b88b0bb5051e",
+                    "originalPropertyKey": "tab4field2backendmapping",
+                    "propertyIndex": 8,
+                    "propertyKey": "tab4field2backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknGlyster20px\"},\"default\":{\"skin\":\"ICSknGlyster20px\"}}",
+                    "group": "Skins",
+                    "kuid": "g5f61c83678d4853b774af6d3978f132",
+                    "originalPropertyKey": "unmaskeyeiconskin",
+                    "propertyIndex": 9,
+                    "propertyKey": "unmaskeyeiconskin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Unmask Icon Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Account Number\",\"Checking\":\"Account Number\",\"Loan\":\"Account Number\",\"Deposit\":\"Label\",\"CreditCard\":\"Label\",\"Mortgage\":\"Account Number\"}",
+                    "group": "Tab3",
+                    "kuid": "g7937a793a624e38bba17a01683ede29",
+                    "originalPropertyKey": "tab3field2type",
+                    "propertyIndex": 9,
+                    "propertyKey": "tab3field2type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Percentage\",\"Checking\":\"Percentage\",\"Loan\":\"Amount\",\"Deposit\":\"Amount\",\"CreditCard\":\"Date\",\"Mortgage\":\"Amount\"}",
+                    "group": "Tab2",
+                    "kuid": "a7008105c22843caad8d5890df822ee0",
+                    "originalPropertyKey": "tab2field2type",
+                    "propertyIndex": 9,
+                    "propertyKey": "tab2field2type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "f865c3e83df8481899010b65766c0bc3",
+                    "originalPropertyKey": "tab4field2type",
+                    "propertyIndex": 9,
+                    "propertyKey": "tab4field2type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"data\": \"{$.S1.Accounts[0].futureInstallmentsCount}\", \"legend\": {\"default\":\"{i.i18n.AccountSummary.futureInstallments}:\",\"640\":\"{i.i18n.AccountSummary.future}:\"}, \"color\": \"E3E3E3\"}",
+                    "group": "Installment Details Tab",
+                    "kuid": "g71e6ba42ced4a988924bf36538d2884",
+                    "originalPropertyKey": "installmentDetailField3",
+                    "propertyIndex": 9,
+                    "propertyKey": "installmentDetailField3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknBtnSSP42424213pxSelectedTab\"},\"default\":{\"skin\":\"ICSknBtnAccountSummarySelected\"}}",
+                    "group": "Skins",
+                    "kuid": "cc8ffcd860804c6ba0d3f5c3593a0253",
+                    "originalPropertyKey": "activeTabSkin",
+                    "propertyIndex": 10,
+                    "propertyKey": "activeTabSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Active Tab Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Installment Details Tab",
+                    "kuid": "h301f938ecd24f9f8388d0f94ef2233c",
+                    "originalPropertyKey": "installmentDetailField4",
+                    "propertyIndex": 10,
+                    "propertyKey": "installmentDetailField4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].blockedAmount}\",\"Checking\":\"{$.S1.Accounts[0].blockedAmount}\",\"Loan\":\"{$.S1.Accounts[0].nextPaymentAmount}\",\"CreditCard\":\"{$.S1.Accounts[0].dueDate}\",\"Mortgage\":\"{$.S1.Accounts[0].nextPaymentAmount}\"}",
+                    "group": "Tab1",
+                    "kuid": "f8ab120b72be4dd29a02f1d2d62bc207",
+                    "originalPropertyKey": "tab1field3backendmapping",
+                    "propertyIndex": 11,
+                    "propertyKey": "tab1field3backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "h8a79bfb0c1a41f2b3ce9c33382a813c",
+                    "originalPropertyKey": "tab4field3backendmapping",
+                    "propertyIndex": 11,
+                    "propertyKey": "tab4field3backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"sknBtnSSP42424213PxSelectedTabHover\"},\"default\":{\"skin\":\"ICSknBtnAccountSummarySelectedHover\"}}",
+                    "group": "Skins",
+                    "kuid": "d8eda2d6e7d04dd3b6b1bce0d72ed936",
+                    "originalPropertyKey": "activeTabHoverSkin",
+                    "propertyIndex": 11,
+                    "propertyKey": "activeTabHoverSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Active Tab Hover Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Installment Details Tab",
+                    "kuid": "b26ab63d0f3d41e1be31d263a53d1e46",
+                    "originalPropertyKey": "installmentDetailField5",
+                    "propertyIndex": 11,
+                    "propertyKey": "installmentDetailField5",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Loan\":\"{$.S1.Accounts[0].lastPaymentDate}\",\"Deposit\":\"{$.S1.Accounts[0].payoutAccount}\",\"CreditCard\":\"{$.S1.Accounts[0].lastStatementBalance}\",\"Mortgage\":\"{$.S1.Accounts[0].lastPaymentDate}\"}",
+                    "group": "Tab2",
+                    "kuid": "e778748985bb48c98d7c5a9ab0922f4d",
+                    "originalPropertyKey": "tab2field3backendmapping",
+                    "propertyIndex": 12,
+                    "propertyKey": "tab2field3backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].{$.c.nameSpecification[0].value}}\",\"Checking\":\"{$.S1.Accounts[0].{$.c.nameSpecification[0].value}}\",\"CreditCard\":\"{$.S1.Accounts[0].openingDate}\",\"Loan\":\"{$.S1.Accounts[0].accountHolder.fullname}\",\"Mortgage\":\"{$.S1.Accounts[0].accountHolder.fullname}\"}",
+                    "group": "Tab3",
+                    "kuid": "e100c6b3af0f4c9f854b01290ec66bc7",
+                    "originalPropertyKey": "tab3field3backendmapping",
+                    "propertyIndex": 12,
+                    "propertyKey": "tab3field3backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Amount\",\"CreditCard\":\"Date\",\"Mortgage\":\"Amount\"}",
+                    "group": "Tab1",
+                    "kuid": "i3f10fc954704bbbaef52321a9d8bc46",
+                    "originalPropertyKey": "tab1field3type",
+                    "propertyIndex": 12,
+                    "propertyKey": "tab1field3type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "g3bbc5cd58f5410e8271f17c9a5b366b",
+                    "originalPropertyKey": "tab4field3type",
+                    "propertyIndex": 12,
+                    "propertyKey": "tab4field3type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknBtnSSP72727213pxUnselectedTab\"},\"default\":{\"skin\":\"ICSknBtnAccountSummaryUnselected\"}}",
+                    "group": "Skins",
+                    "kuid": "a5f8442d77034375852641b784903548",
+                    "originalPropertyKey": "inactiveTabSkin",
+                    "propertyIndex": 12,
+                    "propertyKey": "inactiveTabSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Inactive Tab Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Installment Details Tab",
+                    "kuid": "b869bb7e117645bfa9f8bba5eae9959e",
+                    "originalPropertyKey": "installmentDetailField6",
+                    "propertyIndex": 12,
+                    "propertyKey": "installmentDetailField6",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"CreditCard\":\"Date\",\"Loan\":\"Label\",\"Mortgage\":\"Label\"}",
+                    "group": "Tab3",
+                    "kuid": "e2cb2ce6581e4afda32fe1e26a731ba9",
+                    "originalPropertyKey": "tab3field3type",
+                    "propertyIndex": 13,
+                    "propertyKey": "tab3field3type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Loan\":\"Date\",\"Deposit\":\"Label\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Date\"}",
+                    "group": "Tab2",
+                    "kuid": "c16e5b6d67c347529afceedeb5dbcf41",
+                    "originalPropertyKey": "tab2field3type",
+                    "propertyIndex": 13,
+                    "propertyKey": "tab2field3type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"sknBtnSSP72727213PxUnSelectedTabHover\"},\"default\":{\"skin\":\"ICSknBtnAccountSummaryUnselectedHover\"}}",
+                    "group": "Skins",
+                    "kuid": "f7d8b11448d14472a46282cec52d05b0",
+                    "originalPropertyKey": "inactiveTabHoverSkin",
+                    "propertyIndex": 13,
+                    "propertyKey": "inactiveTabHoverSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Inactive Tab Hover Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Loan\":[\"VIEW_INSTALLMENT_SUMMARY\"]}",
+                    "group": "Installment Details Tab",
+                    "kuid": "a43be00ec8a04140820b28171f1e2c94",
+                    "originalPropertyKey": "installmentDetailsEntitlementKey",
+                    "propertyIndex": 13,
+                    "propertyKey": "installmentDetailsEntitlementKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Enititlement Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "c048a808687b487f88e8a1374a0b0873",
+                    "originalPropertyKey": "tab4field4backendmapping",
+                    "propertyIndex": 14,
+                    "propertyKey": "tab4field4backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "f3a1457ab08940f68deedfc41b286efc",
+                    "originalPropertyKey": "tab4field4type",
+                    "propertyIndex": 15,
+                    "propertyKey": "tab4field4type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Loan\":\"{$.S1.Accounts[0].interestRate}\",\"Mortgage\":\"{$.S1.Accounts[0].interestRate}\",\"Deposit\":\"{$.S1.Accounts[0].termInterestDue}\"}",
+                    "group": "Tab2",
+                    "kuid": "dc044e96a9084307b936ecbe302ffa41",
+                    "originalPropertyKey": "tab2field4backendmapping",
+                    "propertyIndex": 16,
+                    "propertyKey": "tab2field4backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].jointHolders[1].fullname}\",\"Checking\":\"{$.S1.Accounts[0].jointHolders[1].fullname}\",\"Loan\":\"{$.S1.Accounts[0].jointHolders[1].fullname}\",\"Deposit\":\"{$.S1.Accounts[0].jointHolders[1].fullname}\",\"Mortgage\":\"{$.S1.Accounts[0].jointHolders[1].fullname}\"}",
+                    "group": "Tab3",
+                    "kuid": "a49aa55760e04261968050ed211a5246",
+                    "originalPropertyKey": "tab3field4backendmapping",
+                    "propertyIndex": 16,
+                    "propertyKey": "tab3field4backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"Deposit\":\"Label\",\"Mortgage\":\"Label\"}",
+                    "group": "Tab3",
+                    "kuid": "cc03c0eb96b246d9bfde28ff8f7c3987",
+                    "originalPropertyKey": "tab3field4type",
+                    "propertyIndex": 17,
+                    "propertyKey": "tab3field4type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Loan\":\"Percentage\",\"Mortgage\":\"Percentage\",\"Deposit\":\"Amount\"}",
+                    "group": "Tab2",
+                    "kuid": "j870fdda42eb46a9908cff9c6bd772bc",
+                    "originalPropertyKey": "tab2field4type",
+                    "propertyIndex": 17,
+                    "propertyKey": "tab2field4type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "i08e363c6845444082222e0ef21cd9f2",
+                    "originalPropertyKey": "tab4field5backendmapping",
+                    "propertyIndex": 17,
+                    "propertyKey": "tab4field5backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].approvedOverdraftLimit}\",\"Checking\":\"{$.S1.Accounts[0].approvedOverdraftLimit}\",\"Loan\":\"{$.S1.Accounts[0].nextPaymentDate}\",\"CreditCard\":\"{$.S1.Accounts[0].creditLimit}\",\"Mortgage\":\"{$.S1.Accounts[0].nextPaymentDate}\",\"Deposit\":\"{$.S1.Accounts[0].accruedInterest}\"}",
+                    "group": "Tab1",
+                    "kuid": "cda372ddf0c84eb4851b3bd101e72988",
+                    "originalPropertyKey": "tab1field4backendmapping",
+                    "propertyIndex": 18,
+                    "propertyKey": "tab1field4backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4  Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "e05852687d7146f194ccb667699dcd59",
+                    "originalPropertyKey": "tab4field5type",
+                    "propertyIndex": 18,
+                    "propertyKey": "tab4field5type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Date\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Date\",\"Deposit\":\"Amount\"}",
+                    "group": "Tab1",
+                    "kuid": "aefe10d3faf343c8ad98c7a1c1550048",
+                    "originalPropertyKey": "tab1field4type",
+                    "propertyIndex": 19,
+                    "propertyKey": "tab1field4type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "d417d8882f0b4dd6ae91a61c88ebda02",
+                    "originalPropertyKey": "tab4field6backendmapping",
+                    "propertyIndex": 20,
+                    "propertyKey": "tab4field6backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].jointHolders[3].fullname}\",\"Checking\":\"{$.S1.Accounts[0].jointHolders[3].fullname}\",\"Loan\":\"{$.S1.Accounts[0].jointHolders[3].fullname}\",\"Deposit\":\"{$.S1.Accounts[0].jointHolders[3].fullname}\",\"Mortgage\":\"{$.S1.Accounts[0].jointHolders[3].fullname}\"}",
+                    "group": "Tab3",
+                    "kuid": "d63c02c8c37541bdb4fa74afe4fd376f",
+                    "originalPropertyKey": "tab3field5backendmapping",
+                    "propertyIndex": 21,
+                    "propertyKey": "tab3field5backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "d310f04f9c8e45f0921dcedeae53c15d",
+                    "originalPropertyKey": "tab4field6type",
+                    "propertyIndex": 21,
+                    "propertyKey": "tab4field6type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].accruedInterest}\",\"Checking\":\"{$.S1.Accounts[0].accruedInterest}\",\"Loan\":\"{$.S1.Accounts[0].rePaymentFrequency}\",\"Mortgage\":\"{$.S1.Accounts[0].rePaymentFrequency}\"}",
+                    "group": "Tab2",
+                    "kuid": "gde72f8853b046b9b23c38c1250f3c18",
+                    "originalPropertyKey": "tab2field5backendmapping",
+                    "propertyIndex": 22,
+                    "propertyKey": "tab2field5backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"Deposit\":\"Label\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Label\"}",
+                    "group": "Tab3",
+                    "kuid": "fb6058a439a648aaaa0ec6be1dc9bbae",
+                    "originalPropertyKey": "tab3field5type",
+                    "propertyIndex": 22,
+                    "propertyKey": "tab3field5type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].transferLimit}\",\"Checking\":\"{$.S1.Accounts[0].transferLimit}\"}",
+                    "group": "Tab1",
+                    "kuid": "e024e7bf1f2e479bb3fdd7d4fde3b84a",
+                    "originalPropertyKey": "tab1field5backendmapping",
+                    "propertyIndex": 22,
+                    "propertyKey": "tab1field5backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5  Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Label\",\"Mortgage\":\"Label\"}",
+                    "group": "Tab2",
+                    "kuid": "b5ea2fe57a1449e49c8fb4f767ad8fb2",
+                    "originalPropertyKey": "tab2field5type",
+                    "propertyIndex": 23,
+                    "propertyKey": "tab2field5type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "e38a0c57a4354aa1b81568d16c4b9d25",
+                    "originalPropertyKey": "tab4field7backendmapping",
+                    "propertyIndex": 23,
+                    "propertyKey": "tab4field7backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "i223bff2129642f589bd35395a68d548",
+                    "originalPropertyKey": "tab4field7type",
+                    "propertyIndex": 24,
+                    "propertyKey": "tab4field7type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\"}",
+                    "group": "Tab1",
+                    "kuid": "je451fc3e6234c67b58e1e389c23165b",
+                    "originalPropertyKey": "tab1field5type",
+                    "propertyIndex": 24,
+                    "propertyKey": "tab1field5type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].swiftCode}\",\"Checking\":\"{$.S1.Accounts[0].swiftCode}\",\"Loan\":\"{$.S1.Accounts[0].swiftCode}\",\"Mortgage\":\"{$.S1.Accounts[0].swiftCode}\"}",
+                    "group": "Tab3",
+                    "kuid": "fc6683160e3348ceb576cdd24e48e040",
+                    "originalPropertyKey": "tab3field6backendmapping",
+                    "propertyIndex": 26,
+                    "propertyKey": "tab3field6backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].dividendLastPaidAmount}\",\"Checking\":\"{$.S1.Accounts[0].dividendLastPaidAmount}\",\"Loan\":\"{$.S1.Accounts[0].sanctionedAmount}\",\"Deposit\":\"{$.S1.Accounts[0].dividendRate}\",\"CreditCard\":\"{$.S1.Accounts[0].lastPaymentAmount}\",\"Mortgage\":\"{$.S1.Accounts[0].sanctionedAmount}\"}",
+                    "group": "Tab2",
+                    "kuid": "f1e00678babb4088995d6c6e77d0d5de",
+                    "originalPropertyKey": "tab2field6backendmapping",
+                    "propertyIndex": 26,
+                    "propertyKey": "tab2field6backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "b4984251c9ef492ab7aaf4109145d086",
+                    "originalPropertyKey": "tab4field8backendmapping",
+                    "propertyIndex": 26,
+                    "propertyKey": "tab4field8backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"Mortgage\":\"Label\"}",
+                    "group": "Tab3",
+                    "kuid": "b56d22f70b9e48309e583fe67c8fc209",
+                    "originalPropertyKey": "tab3field6type",
+                    "propertyIndex": 27,
+                    "propertyKey": "tab3field6type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Amount\",\"Deposit\":\"Percentage\",\"CreditCard\":\"Amount\",\"Mortgage\":\"Amount\"}",
+                    "group": "Tab2",
+                    "kuid": "e2b45929322b4347b78b8bc619c30979",
+                    "originalPropertyKey": "tab2field6type",
+                    "propertyIndex": 27,
+                    "propertyKey": "tab2field6type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "ed2d236f148447d69d185d079b67206d",
+                    "originalPropertyKey": "tab4field8type",
+                    "propertyIndex": 27,
+                    "propertyKey": "tab4field8type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].currentBalance}\",\"Checking\":\"{$.S1.Accounts[0].currentBalance}\"}",
+                    "group": "Tab1",
+                    "kuid": "j642e6c9ca614338993ceca187bf91b0",
+                    "originalPropertyKey": "tab1field6backendmapping",
+                    "propertyIndex": 27,
+                    "propertyKey": "tab1field6backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6  Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\"}",
+                    "group": "Tab1",
+                    "kuid": "be7d1e48f47e4afa861703007522b00f",
+                    "originalPropertyKey": "tab1field6type",
+                    "propertyIndex": 28,
+                    "propertyKey": "tab1field6type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "d6463e6765644c18a699f568cfb7de5d",
+                    "originalPropertyKey": "tab4field9backendmapping",
+                    "propertyIndex": 29,
+                    "propertyKey": "tab4field9backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].availableBalance}\",\"Checking\":\"{$.S1.Accounts[0].availableBalance}\",\"Loan\":\"{$.S1.Accounts[0].outstandingBalance}\",\"Deposit\":\"{$.S1.Accounts[0].currentBalance}\",\"CreditCard\":\"{$.S1.Accounts[0].currentBalance}\",\"Mortgage\":\"{$.S1.Accounts[0].outstandingBalance}\"}",
+                    "group": "Tab1",
+                    "kuid": "a0756a24f9034e02b20f9c26100f46ce",
+                    "originalPropertyKey": "tab1field7backendmapping",
+                    "propertyIndex": 30,
+                    "propertyKey": "tab1field7backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7  Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].dividendPaidYTD}\",\"Checking\":\"{$.S1.Accounts[0].dividendPaidYTD}\",\"Loan\":\"{$.S1.Accounts[0].sanctionedDate}\",\"Deposit\":\"{$.S1.Accounts[0].dividendLastPaidDate}\",\"CreditCard\":\"{$.S1.Accounts[0].lastPaymentDate}\",\"Mortgage\":\"{$.S1.Accounts[0].sanctionedDate}\"}",
+                    "group": "Tab2",
+                    "kuid": "e5a15668400546c3b331d9efb7ea62c8",
+                    "originalPropertyKey": "tab2field7backendmapping",
+                    "propertyIndex": 30,
+                    "propertyKey": "tab2field7backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "iad3eeb3305c4b78a5ec45f84c567978",
+                    "originalPropertyKey": "tab4field9type",
+                    "propertyIndex": 30,
+                    "propertyKey": "tab4field9type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Amount",
+                    "group": "Tab1",
+                    "kuid": "f6d2be9a9f7c489a998beb62f696c184",
+                    "originalPropertyKey": "tab1field7type",
+                    "propertyIndex": 31,
+                    "propertyKey": "tab1field7type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Loan\":\"{$.S1.Accounts[0].accountType}\",\"Mortgage\":\"{$.S1.Accounts[0].accountType}\"}",
+                    "group": "Tab3",
+                    "kuid": "f1d4c23c4dee4826820d70fbfc40bce8",
+                    "originalPropertyKey": "tab3field7backendmapping",
+                    "propertyIndex": 31,
+                    "propertyKey": "tab3field7backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Amount\",\"Checking\":\"Amount\",\"Loan\":\"Date\",\"Deposit\":\"Date\",\"CreditCard\":\"Date\",\"Mortgage\":\"Date\"}",
+                    "group": "Tab2",
+                    "kuid": "d11ae3e6588c4391b87c1e90340fa6ad",
+                    "originalPropertyKey": "tab2field7type",
+                    "propertyIndex": 31,
+                    "propertyKey": "tab2field7type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "jea713e433d449b194232f7d43863fa2",
+                    "originalPropertyKey": "tab4field10backendmapping",
+                    "propertyIndex": 32,
+                    "propertyKey": "tab4field10backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 10 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"sknSSPBold42424220Px\"},\"default\":{\"skin\":\"ICSknLbl424242SSPB35px\"}}",
+                    "group": "Tab1",
+                    "kuid": "j215c1a835e54b79a5d58f0eca2b512c",
+                    "originalPropertyKey": "highlightedFieldSkin",
+                    "propertyIndex": 32,
+                    "propertyKey": "highlightedFieldSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Highlighter Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Loan\":\"Label\",\"Mortgage\":\"Label\"}",
+                    "group": "Tab3",
+                    "kuid": "iaa5b32400c54ee4a4a9d15460aeb176",
+                    "originalPropertyKey": "tab3field7type",
+                    "propertyIndex": 33,
+                    "propertyKey": "tab3field7type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab4",
+                    "kuid": "e9c798019ad54b0a871019e1a9ec7832",
+                    "originalPropertyKey": "tab4field10type",
+                    "propertyIndex": 33,
+                    "propertyKey": "tab4field10type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 10 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"bbSknLbl424242SSP17Px\"},\"default\":{\"skin\":\"ICSknlbl424242SSP24px\"}}",
+                    "group": "Tab1",
+                    "kuid": "e010835ca9d04c07a009b553cfcef01e",
+                    "originalPropertyKey": "highlightedFieldSkin2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 33,
+                    "propertyKey": "highlightedFieldSkin2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Highlighter Skin 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Loan\":\"{$.S1.Accounts[0].originalAmount}\",\"CreditCard\":\"{$.S1.Accounts[0].availableCredit}\",\"Mortgage\":\"{$.S1.Accounts[0].originalAmount}\",\"Deposit\":\"{$.S1.Accounts[0].interestDueDate}\"}",
+                    "group": "Tab2",
+                    "kuid": "f909ec4847ee451b8d167197346e4151",
+                    "originalPropertyKey": "tab2field8backendmapping",
+                    "propertyIndex": 34,
+                    "propertyKey": "tab2field8backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Loan\":\"Amount\",\"CreditCard\":\"Label\",\"Mortgage\":\"Amount\",\"Deposit\":\"Date\"}",
+                    "group": "Tab2",
+                    "kuid": "e44d8346e6974f309270b87c050f6767",
+                    "originalPropertyKey": "tab2field8type",
+                    "propertyIndex": 35,
+                    "propertyKey": "tab2field8type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].jointHolders[0].fullname}\",\"Checking\":\"{$.S1.Accounts[0].jointHolders[0].fullname}\",\"Loan\":\"{$.S1.Accounts[0].jointHolders[0].fullname}\",\"Deposit\":\"{$.S1.Accounts[0].jointHolders[0].fullname}\",\"Mortgage\":\"{$.S1.Accounts[0].jointHolders[0].fullname}\"}",
+                    "group": "Tab3",
+                    "kuid": "f46de62052d84f87aa1a2b5f0491827a",
+                    "originalPropertyKey": "tab3field8backendmapping",
+                    "propertyIndex": 37,
+                    "propertyKey": "tab3field8backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"Deposit\":\"Label\",\"Mortgage\":\"Label\"}",
+                    "group": "Tab3",
+                    "kuid": "i340a58d6afa403784919c0d696a5a1c",
+                    "originalPropertyKey": "tab3field8type",
+                    "propertyIndex": 38,
+                    "propertyKey": "tab3field8type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"CreditCard\":\"{$.S1.Accounts[0].interestRate}\",\"Loan\":\"{$.S1.Accounts[0].maturityDate}\",\"Mortgage\":\"{$.S1.Accounts[0].maturityDate}\"}",
+                    "group": "Tab2",
+                    "kuid": "ef60f9eec9824202badb002d617d1135",
+                    "originalPropertyKey": "tab2field9backendmapping",
+                    "propertyIndex": 38,
+                    "propertyKey": "tab2field9backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"CreditCard\":\"Percentage\",\"Loan\":\"Date\",\"Mortgage\":\"Date\"}",
+                    "group": "Tab2",
+                    "kuid": "ja4ebebed3604fb9b9e135b9b2b8cd06",
+                    "originalPropertyKey": "tab2field9type",
+                    "propertyIndex": 39,
+                    "propertyKey": "tab2field9type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].jointHolders[2].fullname}\",\"Checking\":\"{$.S1.Accounts[0].jointHolders[2].fullname}\",\"Loan\":\"{$.S1.Accounts[0].jointHolders[2].fullname}\",\"Deposit\":\"{$.S1.Accounts[0].jointHolders[2].fullname}\",\"Mortgage\":\"{$.S1.Accounts[0].jointHolders[2].fullname}\"}",
+                    "group": "Tab3",
+                    "kuid": "hdd02b532c264166b32a53f18ca0c28d",
+                    "originalPropertyKey": "tab3field9backendmapping",
+                    "propertyIndex": 40,
+                    "propertyKey": "tab3field9backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"Deposit\":\"Label\",\"Mortgage\":\"Label\"}",
+                    "group": "Tab3",
+                    "kuid": "aae1eb76551647bf8d2df44772d9ea9d",
+                    "originalPropertyKey": "tab3field9type",
+                    "propertyIndex": 41,
+                    "propertyKey": "tab3field9type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab2",
+                    "kuid": "a0ff25b9e3584488baf5cba29f06b28e",
+                    "originalPropertyKey": "tab2field10backendmapping",
+                    "propertyIndex": 41,
+                    "propertyKey": "tab2field10backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 10 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Tab2",
+                    "kuid": "c2cd5a32f08741e1bc1a65c942e76927",
+                    "originalPropertyKey": "tab2field10type",
+                    "propertyIndex": 42,
+                    "propertyKey": "tab2field10type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 10 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"{$.S1.Accounts[0].jointHolders[4].fullname}\",\"Checking\":\"{$.S1.Accounts[0].jointHolders[4].fullname}\",\"Loan\":\"{$.S1.Accounts[0].jointHolders[4].fullname}\",\"Deposit\":\"{$.S1.Accounts[0].jointHolders[4].fullname}\",\"Mortgage\":\"{$.S1.Accounts[0].jointHolders[4].fullname}\"}",
+                    "group": "Tab3",
+                    "kuid": "a1bfe7378a1044a28ebd31b5663cae27",
+                    "originalPropertyKey": "tab3field10backendmapping",
+                    "propertyIndex": 43,
+                    "propertyKey": "tab3field10backendmapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 10 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":\"Label\",\"Checking\":\"Label\",\"Loan\":\"Label\",\"Deposit\":\"Label\",\"Mortgage\":\"Label\"}",
+                    "group": "Tab3",
+                    "kuid": "i70dd8e5112e4a63b7a21210e784ade0",
+                    "originalPropertyKey": "tab3field10type",
+                    "propertyIndex": 44,
+                    "propertyKey": "tab3field10type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 10 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ib0481a185ed44d9af961a34a1d9c4c1",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "Tab1",
+                    "kuid": "be505c13a6b945a9b431b2d3c8bdf8ab",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnTab1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "bb4cda8233f744f09ccee47be6613ebb"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab2",
+                    "kuid": "b51fce48709e441ea3c8d76b405ac806",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 1,
+                    "propertyKey": "tab2isVisible",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Visible",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnTab2",
+                        "toolTip": "Hides/shows the widget in the screen",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "f756b2af659047ac97b6cabbf0334f11"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab3",
+                    "kuid": "b3a8e6f0138443a1a20fd6acf660d41a",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 1,
+                    "propertyKey": "tab3isVisible",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Visible",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnTab3",
+                        "toolTip": "Hides/shows the widget in the screen",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "cfd3483b0cf942de9016f781ce5df7fb"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab4",
+                    "kuid": "ff811ffe095842c9a38159dece6a251e",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 1,
+                    "propertyKey": "tab4isVisible",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Visible",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnTab4",
+                        "toolTip": "Hides/shows the widget in the screen",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "c8ed44ef6ccd44aca4ede16af41aaa15"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab3",
+                    "kuid": "fa3b04a3ff89481a822e11a4510d78ca",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "tab3title",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnTab3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "cfd3483b0cf942de9016f781ce5df7fb"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab2",
+                    "kuid": "ebb52bbd2c934f15b2bdcc4376c0ae47",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "tab2title",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnTab2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "f756b2af659047ac97b6cabbf0334f11"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab4",
+                    "kuid": "df47e1a4500b44f9bf4822318e9fe4f2",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "tab4title",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnTab4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "c8ed44ef6ccd44aca4ede16af41aaa15"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab1",
+                    "kuid": "a7864fcbaf8f47319948fa4386a09e70",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "tab1field1text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 1 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl1Tab1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "dd49c6b6de0f4cd0a5d9b4db2ddf066b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab2",
+                    "kuid": "be80aa35c66a4bc8a2e905d901f60843",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "tab2field1text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 1 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl1Tab2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d53d95fa14bc456389fbbcd46f62369c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab3",
+                    "kuid": "b29a8f01efab45b1a0be06347fced437",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "tab3field1text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 1 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl1Tab3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "fb8a598f47b6401ca6a4810704ff6199"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab4",
+                    "kuid": "j3314c580b3c411dac319a8a3a444d7f",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "tab4field1text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 1 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl1Tab4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "db4f535a4c2844d8af96b11786dea0bf"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab4",
+                    "kuid": "e21cc06b08364688af9bf15c16bd19d5",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 6,
+                    "propertyKey": "tab4field2text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 2 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl2Tab4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "j528ca77816b4f2f9b82d97204f6a396"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab1",
+                    "kuid": "d9a028830f964d1eb9fabfba14c8a988",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 6,
+                    "propertyKey": "tab1field2text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 2 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl2Tab1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "h0eab6e99e2749b3b4993be0b68153da"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab3",
+                    "kuid": "afe10c54466647f4a5b6567176bb2f83",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 7,
+                    "propertyKey": "tab3field2text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 2 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl2Tab3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "hec3bbf2c31d426593b10a43a3cb0ea6"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab2",
+                    "kuid": "d905c23e5d0244b0a43d6daec1b10993",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 7,
+                    "propertyKey": "tab2field2text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 2 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl2Tab2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a5ee9c91108144149f74381244d60ae2"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab4",
+                    "kuid": "b2186733995243e1823ff92b1e031577",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 10,
+                    "propertyKey": "tab4field3text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 3 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl3Tab4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "aaa6c28b7aff4af28667901eef2148d9"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab1",
+                    "kuid": "h51a917c52724ef49030cc9396461b1e",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 10,
+                    "propertyKey": "tab1field3text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 3 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl3Tab1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bdc490e835aa4a40ae1058c46e3a2085"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab3",
+                    "kuid": "f3cf6f8f50b6484e8d9bca925e65c9bb",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 11,
+                    "propertyKey": "tab3field3text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 3 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl3Tab3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "f02544c0981541f68aebfab4f429970f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab2",
+                    "kuid": "fc4f16cd9fa142ec96b7047a5f4c1433",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 11,
+                    "propertyKey": "tab2field3text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 3 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl3Tab2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "f54b3b5456d143768d17578638cb0ab4"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab4",
+                    "kuid": "e5b6d7996de842b0bf2669b9bb47464d",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 13,
+                    "propertyKey": "tab4field4text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 4 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl4Tab4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "hfa75de081aa4911b92187c3d85a718f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab3",
+                    "kuid": "f5f8e8de1e474f4ea1306e569c7082ae",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 15,
+                    "propertyKey": "tab3field4text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 4 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl4Tab3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a27d11928fe14877b5b8fe6bb1733183"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab2",
+                    "kuid": "cedfe2d54a6b4bdda95742eb3aaf112a",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 15,
+                    "propertyKey": "tab2field4text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 4 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl4Tab2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d72f949e5cdc4d3ab1601476a065a3b3"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab4",
+                    "kuid": "a470d27bbacd4d3f82566b9837999845",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 16,
+                    "propertyKey": "tab4field5text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 5 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl5Tab4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d2d130e545f44acb9e9b8bd30b693671"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab1",
+                    "kuid": "fc0019570df747e9819cae6795174591",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 17,
+                    "propertyKey": "tab1field4text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 4 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl4Tab1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "jafdf23662c74022a75e32bddf1ed0c3"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab4",
+                    "kuid": "c15c3f8de6754ab9a9ebd980d69584c6",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 19,
+                    "propertyKey": "tab4field6text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 6 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl6Tab4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "i5189d6d50864251a67903a22d23e25c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab3",
+                    "kuid": "dc59e4be9c96425abc6d9738a3524912",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 19,
+                    "propertyKey": "tab3field5text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 5 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl5Tab3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "efee90414ae54192bc76c3b509150f1c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab2",
+                    "kuid": "ab8cb98ffca049c283a88ecb666c5032",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 21,
+                    "propertyKey": "tab2field5text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 5 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl5Tab2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a708d44f9b4c4b1b96c5a8a7c098e2aa"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab1",
+                    "kuid": "ic3385b274c2457ea55269b45b4ef546",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 21,
+                    "propertyKey": "tab1field5text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 5 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl5Tab1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "i77aee07af8e4ca8a0c593a6ffe48eac"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab4",
+                    "kuid": "gf380bf11f654fc08ccfd920416100b1",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 22,
+                    "propertyKey": "tab4field7text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 7 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl7Tab4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bd63117805ff4f0899e0f04b86177239"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab2",
+                    "kuid": "i0e2522b34874f9da282753eee36616f",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 25,
+                    "propertyKey": "tab2field6text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 6 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl6Tab2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "c570cc74f74c49ea8c5720addfba5408"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab4",
+                    "kuid": "gf20327e42ab4537badd6b002b8038c4",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 25,
+                    "propertyKey": "tab4field8text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 8 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl8Tab4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "be1df7e7032d4920b0dbeb7250ffe341"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab3",
+                    "kuid": "g6a0fc821443435bae856f4565f99e46",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 25,
+                    "propertyKey": "tab3field6text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 6 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl6Tab3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bc46131c2e53486195935ba008494051"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab1",
+                    "kuid": "ja959c8634614b4aab0e517f71694407",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 26,
+                    "propertyKey": "tab1field6text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 6 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl6Tab1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e20c68a571ed4b2e97a776279ff7a0f6"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab4",
+                    "kuid": "d1be7d78b5bb49168df02c8e2e8233f0",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 28,
+                    "propertyKey": "tab4field9text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 9 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl9Tab4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d31ad02501854095b6e981da4689481a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab1",
+                    "kuid": "a51b87891caa44f4b10fdc26b94bfa58",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 29,
+                    "propertyKey": "tab1field7text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 7 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl7Tab1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "h25e6dfb28704cfaa87c57fa8c13c8e6"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab2",
+                    "kuid": "gda24e3ff85441b18554e3b379897b60",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 29,
+                    "propertyKey": "tab2field7text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 7 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl7Tab2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d511a39fdf324f12a32adc337c901660"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab3",
+                    "kuid": "b803a3eebde74ccf8c41698949be1717",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 30,
+                    "propertyKey": "tab3field7text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 7 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl7Tab3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "f3024623c76549018cc784f07cd01fd3"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab4",
+                    "kuid": "b47fb54635104a988fa88b00318dc76c",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 31,
+                    "propertyKey": "tab4field10text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 10 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl10Tab4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b5761598b09044bfbeccd2ddccc960c5"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab2",
+                    "kuid": "j0f568ed864041e99e6197ddf8066713",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 33,
+                    "propertyKey": "tab2field8text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 8 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl8Tab2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "i3873efeace4415e8add3f5e4b30f20e"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab3",
+                    "kuid": "b9652fa62a6c4772b2bd8473861a0c49",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 36,
+                    "propertyKey": "tab3field8text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 8 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl8Tab3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "iab8b6f2c3444758842d6853a3cf95a0"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab2",
+                    "kuid": "ib6d59ae3ed5419ebf0b608a905ab5c9",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 37,
+                    "propertyKey": "tab2field9text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 9 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl9Tab2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "g6de02a54d5a4ef3a0a9eb867219a5f8"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab3",
+                    "kuid": "abb4cc85d1084b7f90a0bdc0d7bc81a4",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 39,
+                    "propertyKey": "tab3field9text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 9 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl9Tab3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "h3a684593e2b44c3b5383c26dc2d8662"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab2",
+                    "kuid": "d755a8d839a64d74bea37e7390534bf4",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 40,
+                    "propertyKey": "tab2field10text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 10 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl10Tab2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a0b395eff17e49a096de37dd59a0199d"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Tab3",
+                    "kuid": "f3412776332145fb9e095ba585424bbd",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 42,
+                    "propertyKey": "tab3field10text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Field 10 Label",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lbl10Tab3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "fc777f534d1a49579fb6fdec5906f8ed"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "eb365dea733c485db4fb4d5bd8097eeb",
+                    "propertyKey": "flxTabs",
+                    "srcWgtKUID": "j81b4718fabf41699597ba75bf9b7897"
+                },
+                {
+                    "kuid": "e300536b7f8448cf972aaeff8b422e15",
+                    "propertyKey": "btnAccountSummary",
+                    "srcWgtKUID": "bb4cda8233f744f09ccee47be6613ebb"
+                },
+                {
+                    "kuid": "e5442dfc21ad4e59abb1c682e3c38b62",
+                    "propertyKey": "btnBalanceDetails",
+                    "srcWgtKUID": "f756b2af659047ac97b6cabbf0334f11"
+                },
+                {
+                    "kuid": "e127e37b62da414e957512cd683d96a8",
+                    "propertyKey": "btnAccountInfo",
+                    "srcWgtKUID": "cfd3483b0cf942de9016f781ce5df7fb"
+                },
+                {
+                    "kuid": "e0ddf57083fc40aa898160766a5bbb02",
+                    "propertyKey": "lbl1Tab1",
+                    "srcWgtKUID": "dd49c6b6de0f4cd0a5d9b4db2ddf066b"
+                },
+                {
+                    "kuid": "jdc379d36ab04ee3adb61e577ba65dd1",
+                    "propertyKey": "lbl2Tab1",
+                    "srcWgtKUID": "h0eab6e99e2749b3b4993be0b68153da"
+                },
+                {
+                    "kuid": "debb3dd650ab480a912cdaf66a1be152",
+                    "propertyKey": "lbl3Tab1",
+                    "srcWgtKUID": "bdc490e835aa4a40ae1058c46e3a2085"
+                },
+                {
+                    "kuid": "d1fe4be7359f41adbade831fa329bd85",
+                    "propertyKey": "lbl6Tab1",
+                    "srcWgtKUID": "h25e6dfb28704cfaa87c57fa8c13c8e6"
+                },
+                {
+                    "kuid": "i4fa1a82fa044d508f5f1f1e59c4aa72",
+                    "propertyKey": "flx1Tab1",
+                    "srcWgtKUID": "ade7370cd323489e85ed84b597fafc15"
+                },
+                {
+                    "kuid": "e424124f758744c596019a26a4a0917a",
+                    "propertyKey": "lblField4",
+                    "srcWgtKUID": "d810bea04fde4c25bff4271e4368f052"
+                },
+                {
+                    "kuid": "i2b199a800c94133aa02c6202518a911",
+                    "propertyKey": "lblField4Value",
+                    "srcWgtKUID": "d95acef56a254ecda790721e3b5a4d7d"
+                },
+                {
+                    "kuid": "aeb581b89d3349ccb71645e6f7b742ef",
+                    "propertyKey": "lblField6",
+                    "srcWgtKUID": "edecc4b2a7394b4fbca012a7ae97015c"
+                },
+                {
+                    "kuid": "i7cd5b9afe0e486884ad8042504e4b08",
+                    "propertyKey": "lblField6Value",
+                    "srcWgtKUID": "a45593dce68d43eb8c194ca064b5d268"
+                },
+                {
+                    "kuid": "c0819c64c2c8405c99c0592dd8431081",
+                    "propertyKey": "lblField61",
+                    "srcWgtKUID": "i41e1b3841b74bd48b6d7ed6ae536ad3"
+                },
+                {
+                    "kuid": "c459d77aa97a43b5a6e4dc46079d1257",
+                    "propertyKey": "lblField7",
+                    "srcWgtKUID": "e20c68a571ed4b2e97a776279ff7a0f6"
+                },
+                {
+                    "kuid": "j62894d172a643d693c6086338231195",
+                    "propertyKey": "lbl1Tab2",
+                    "srcWgtKUID": "d53d95fa14bc456389fbbcd46f62369c"
+                },
+                {
+                    "kuid": "c06ee9ac6e214f7cb926710d6c378446",
+                    "propertyKey": "lbl2Tab2",
+                    "srcWgtKUID": "a5ee9c91108144149f74381244d60ae2"
+                },
+                {
+                    "kuid": "cf1008f9ae4548eebf3bf580e49daded",
+                    "propertyKey": "lbl3Tab2",
+                    "srcWgtKUID": "f54b3b5456d143768d17578638cb0ab4"
+                },
+                {
+                    "kuid": "ad2eb88b44d248d7b85fb94d6d9634e4",
+                    "propertyKey": "lbl4Tab2",
+                    "srcWgtKUID": "d72f949e5cdc4d3ab1601476a065a3b3"
+                },
+                {
+                    "kuid": "g43d6ae4351847d3b92d26c914ef5a95",
+                    "propertyKey": "lbl6Tab2",
+                    "srcWgtKUID": "c570cc74f74c49ea8c5720addfba5408"
+                },
+                {
+                    "kuid": "f199bcb755a04652bce04f73bc4e241c",
+                    "propertyKey": "lblDummyOneTitle",
+                    "srcWgtKUID": "d511a39fdf324f12a32adc337c901660"
+                },
+                {
+                    "kuid": "geb8013d1c4b49bda474abd882c12556",
+                    "propertyKey": "lbl8Tab2",
+                    "srcWgtKUID": "i3873efeace4415e8add3f5e4b30f20e"
+                },
+                {
+                    "kuid": "e741d52e4e724bf0ab9c2f0fe2a5fe53",
+                    "propertyKey": "flxBalanceDetailDesktop",
+                    "srcWgtKUID": "a890ef2a452843b4840635158427d8d0"
+                },
+                {
+                    "kuid": "j47d3ece53294b438fea7ff7dcb069a3",
+                    "propertyKey": "lbl4Tab1",
+                    "srcWgtKUID": "jafdf23662c74022a75e32bddf1ed0c3"
+                },
+                {
+                    "kuid": "f994f848b4ac48368378fdcbffab30a8",
+                    "propertyKey": "flxSummaryDesktop",
+                    "srcWgtKUID": "f4d48ef1c18645309719e0f7c95eb5bf"
+                },
+                {
+                    "kuid": "cd8c958178e644ca8ced58e1bf61834d",
+                    "propertyKey": "lbl9Tab2",
+                    "srcWgtKUID": "g6de02a54d5a4ef3a0a9eb867219a5f8"
+                },
+                {
+                    "kuid": "jfee253d316845d19053bc28a9dabaa9",
+                    "propertyKey": "lbl10Tab2",
+                    "srcWgtKUID": "a0b395eff17e49a096de37dd59a0199d"
+                },
+                {
+                    "kuid": "aa3c86289f1d4b70a1c6257bbf4677b7",
+                    "propertyKey": "flxTab3",
+                    "srcWgtKUID": "hf2e96bce7b34d5ebbf1e94390f29507"
+                },
+                {
+                    "kuid": "fcd74e6704774c2a9e0e0f967453ddcb",
+                    "propertyKey": "flxTab4",
+                    "srcWgtKUID": "f79ec59815314ff0b0995ad852f4f99d"
+                }
+            ],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.ArrangementsMA",
+    "version": "1.0.0"
+}

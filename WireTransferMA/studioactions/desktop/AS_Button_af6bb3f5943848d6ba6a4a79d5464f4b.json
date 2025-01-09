@@ -1,0 +1,23 @@
+{
+    "AS_Button_af6bb3f5943848d6ba6a4a79d5464f4b": {
+        "id": "AS_Button_af6bb3f5943848d6ba6a4a79d5464f4b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmNotEligibleToTransfer",
+            "type": "forms",
+            "platform": "",
+            "KUID": "i86e6c057372417ab1709451c5df6090"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e7c0060391764755afe79198a557777e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(applicationManager.getConfigurationManager().getConfigurationValue('isFastTransferEnabled') === \"true\")\n  applicationManager.getModulesPresentationController(\"TransferFastModule\").showTransferScreen();\nelse\n  applicationManager.getModulesPresentationController(\"TransferModule\").showTransferScreen();",
+            "parentId": null
+        }]
+    }
+}

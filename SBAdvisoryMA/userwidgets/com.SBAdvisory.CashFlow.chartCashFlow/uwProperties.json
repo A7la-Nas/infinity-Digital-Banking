@@ -1,0 +1,84 @@
+{
+    "classname": "chartCashFlow",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d0527d45290842f888e9239816e490d3",
+                    "originalPropertyKey": "data",
+                    "propertyIndex": 0,
+                    "propertyKey": "data",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "data",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "e42901765824424c989fc0a904867905"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c2ba914eeb9942d6a8986f8cafa4aa69",
+                    "originalPropertyKey": "customContainerID",
+                    "propertyIndex": 1,
+                    "propertyKey": "customContainerID",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "customContainerID",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "e42901765824424c989fc0a904867905"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "a4490d1799ed43718e7427f163043dbc",
+                    "propertyKey": "linechartCashFlow",
+                    "srcWgtKUID": "e42901765824424c989fc0a904867905"
+                }
+            ],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.SBAdvisory.CashFlow",
+    "version": "1.0.0"
+}

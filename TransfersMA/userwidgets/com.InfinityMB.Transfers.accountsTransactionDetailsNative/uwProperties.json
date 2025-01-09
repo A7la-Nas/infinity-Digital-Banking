@@ -1,0 +1,1412 @@
+{
+    "classname": "accountsTransactionDetailsNative",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "h9b36e8fdf98403a96b1a85bdda25fee",
+                    "paramList": [
+                        {
+                            "name": "contextObject"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b1641c1438ef452c8a867b8786522b7b",
+                    "paramList": [
+                        {
+                            "name": "errObj"
+                        }
+                    ],
+                    "propertyIndex": 3,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e56bd032bf444cba8c6cfccdca24e747",
+                    "paramList": [
+                        {
+                            "name": "btnId"
+                        },
+                        {
+                            "name": "entitlementKeys"
+                        },
+                        {
+                            "name": "callback"
+                        }
+                    ],
+                    "propertyIndex": 5,
+                    "propertyKey": "getBtnEntitlement",
+                    "pw": {
+                        "displayName": "getBtnEntitlement",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a22d5ca47ae948439bdae3f1169834fa",
+                    "paramList": [],
+                    "propertyIndex": 6,
+                    "propertyKey": "requestStart",
+                    "pw": {
+                        "displayName": "requestStart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c4eee11103e44b5ba4b004b7dc34801f",
+                    "paramList": [],
+                    "propertyIndex": 7,
+                    "propertyKey": "requestEnd",
+                    "pw": {
+                        "displayName": "requestEnd",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i3c67dc988654e979239af7122479132",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyIndex": 8,
+                    "propertyKey": "contextualActionButtonOnClick",
+                    "pw": {
+                        "displayName": "contextualActionButtonOnClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f708db62857f4cce83c21a20b3c82393",
+                    "paramList": [],
+                    "propertyIndex": 10,
+                    "propertyKey": "downloadCheck",
+                    "pw": {
+                        "displayName": "downloadCheck",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ee37435515a9436587efce9bdb2b96d6",
+                    "paramList": [],
+                    "propertyIndex": 11,
+                    "propertyKey": "navigateToViewAttachments",
+                    "pw": {
+                        "displayName": "navigateToViewAttachments",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Check Images Service",
+                "Context",
+                "DataFormat",
+                "Skins",
+                "Data Visibility",
+                "Transaction Types",
+                "TransactionDetails",
+                "Checks and Swift Transactions",
+                "Get Attachments Service"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"locale\":\"\", \"positiveFormat\" : \"{CS}{D}\", \"negativeFormat\" : \"-{CS}{D}\", \"fractionDigits\":\"2\"}",
+                    "group": "DataFormat",
+                    "kuid": "c0094291841c4d89b616bb8ac69393b8",
+                    "originalPropertyKey": "amountFormat",
+                    "propertyIndex": 1,
+                    "propertyKey": "amountFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Amount Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxFFFFFFmb",
+                    "group": "Skins",
+                    "kuid": "f3bd28464b4d4500b13c1eb0eab647aa",
+                    "originalPropertyKey": "sknTransDetails",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknTransDetails",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction details background",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.mb.chequemgmt.chequeNumber)",
+                    "group": "Checks and Swift Transactions",
+                    "kuid": "e86b6a7f0abf454dbc9920bfb9da6b6a",
+                    "originalPropertyKey": "checkNumberLabel",
+                    "propertyIndex": 1,
+                    "propertyKey": "checkNumberLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Check Number Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "TransactionAdvice",
+                    "group": "Check Images Service",
+                    "kuid": "h86f367b07284161970a2914337f4e3d",
+                    "originalPropertyKey": "objectServiceName",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "Data Visibility",
+                    "kuid": "g49bf13d4f7040d9830db3f07ca3d2ec",
+                    "originalPropertyKey": "statusFieldVisibility",
+                    "propertyIndex": 1,
+                    "propertyKey": "statusFieldVisibility",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Status Field Visibility",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"transactionType\",\"loanSchedule\":\"installmentType\"}",
+                    "group": "Transaction Types",
+                    "kuid": "g24a8610fab34c7c85ca09ea04bf2647",
+                    "originalPropertyKey": "transactionTypeIdentifier",
+                    "propertyIndex": 1,
+                    "propertyKey": "transactionTypeIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction Type Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "DocumentManagement",
+                    "group": "Get Attachments Service",
+                    "kuid": "f3417156eabc4050a57c9f9afe71964c",
+                    "originalPropertyKey": "objectServiceNameAttachments",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceNameAttachments",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.transactionType}",
+                    "group": "Context",
+                    "kuid": "j2037a0c71574f6b9274ce712a7a6bcd",
+                    "originalPropertyKey": "transactionType",
+                    "propertyIndex": 2,
+                    "propertyKey": "transactionType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "m/d/Y",
+                    "group": "DataFormat",
+                    "kuid": "j051df5d4317454e9da7242dbcadf921",
+                    "originalPropertyKey": "dateFormat",
+                    "propertyIndex": 2,
+                    "propertyKey": "dateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl727272SSPReg22px",
+                    "group": "Skins",
+                    "kuid": "jfce68305d5f4b558e5fafa3d0e37966",
+                    "originalPropertyKey": "sknTransDetailsLabel",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknTransDetailsLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction details label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.checkNumber}",
+                    "group": "Checks and Swift Transactions",
+                    "kuid": "ga123f4bf0b849908e3fbbb9b8d1da4f",
+                    "originalPropertyKey": "checkNumberValue",
+                    "propertyIndex": 2,
+                    "propertyKey": "checkNumberValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Check Number Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "TransactionAdviceObject",
+                    "group": "Check Images Service",
+                    "kuid": "g6eea0e0fa7d44c4acbbe670d6593145",
+                    "originalPropertyKey": "objectName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CustomerAdvice",
+                    "group": "Get Attachments Service",
+                    "kuid": "ab0d12b75f024672b86fb1e679bf3e06",
+                    "originalPropertyKey": "objectNameAttachments",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectNameAttachments",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"TT1\":\"BillPay\",\"TT2\":\"InternalTransfer\",\"TT3\":\"ExternalTransfer\",\"TT4\":\"InternetTransaction\",\"TT5\":\"POS\",\"TT6\":\"Credit\",\"TT7\":\"Deposit\",\"TT8\":\"Interest\",\"TT9\":\"Loan\",\"TT10\":\"Wire\",\"TT11\":\"Fee\",\"TT12\":\"Cardless\",\"TT13\":\"P2P\",\"TT14\":\"SwiftPayment\",\"TT15\":\"Tax\",\"TT16\":\"CardPayment\",\"TT17\":\"Cheque\",\"TT18\":\"Draft\",\"TT19\":\"CheckWithdrawal\",\"TT20\":\"CheckDeposit\",\"TT21\":\"Others\",\"TT22\":\"BlockedFund\",\"TT23\":\"DUE\",\"TT24\":\"PAID\"}",
+                    "group": "Transaction Types",
+                    "kuid": "b0d0eac100b64f4fb98fd10b95e3c439",
+                    "originalPropertyKey": "transactionTypes",
+                    "propertyIndex": 3,
+                    "propertyKey": "transactionTypes",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction Types",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Y-m-d",
+                    "group": "DataFormat",
+                    "kuid": "fbf7c14c7e3c4f78b95c7af88ca011e3",
+                    "originalPropertyKey": "backendDateFormat",
+                    "propertyIndex": 3,
+                    "propertyKey": "backendDateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Backend Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLblSSP42424213pxmb",
+                    "group": "Skins",
+                    "kuid": "d633092af3ef46b68b0926ed73493b6b",
+                    "originalPropertyKey": "sknTransDetailsValue",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknTransDetailsValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction details value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Field 4",
+                    "group": "Checks and Swift Transactions",
+                    "kuid": "a84f87ab7de24a89b2ce94b60205faaa",
+                    "originalPropertyKey": "swiftTransaction",
+                    "propertyIndex": 3,
+                    "propertyKey": "swiftTransaction",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Swift Transaction",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "list selector",
+                    "value": [
+                        "Field 1",
+                        "Field 2",
+                        "Field 3",
+                        "Field 4",
+                        "Field 5",
+                        "Field 6",
+                        "Field 7",
+                        "Field 8",
+                        "Field 9",
+                        "Field 10",
+                        "Field 11",
+                        "Field 12"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getBase64",
+                    "group": "Check Images Service",
+                    "kuid": "hc5be730f32e48c1bad4152f806770e1",
+                    "originalPropertyKey": "operationName",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":true,\"loanSchedule\":false}",
+                    "group": "Data Visibility",
+                    "kuid": "c02fc76a12b94d0f8eee92788e6a063a",
+                    "originalPropertyKey": "statusIndicatorVisibility",
+                    "propertyIndex": 3,
+                    "propertyKey": "statusIndicatorVisibility",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Status Indicator Visibility",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "generate",
+                    "group": "Get Attachments Service",
+                    "kuid": "e387ac0d6dcf493985710b12c0688ecd",
+                    "originalPropertyKey": "operationNameAttachments",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationNameAttachments",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.transactionCurrency}",
+                    "group": "DataFormat",
+                    "kuid": "b0f81580728b4a4fb64ac5d323ca7825",
+                    "originalPropertyKey": "currencyCode",
+                    "propertyIndex": 4,
+                    "propertyKey": "currencyCode",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Currency Code",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"customerId\":\"{$.c.customerId}\",\"accountId\":\"{$.c.accountId}\",\"transactionRef\":\"{$.c.transactionId}\",\"mediaType\":\"png\",\"transactionType\":\"{$.c.transactionType}\",\"page\":\"0\"}",
+                    "group": "Check Images Service",
+                    "kuid": "ab4ddb8ac65049fd880fbdc4b1f96c05",
+                    "originalPropertyKey": "criteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "criteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknSSP4176a442424213Px",
+                    "group": "Checks and Swift Transactions",
+                    "kuid": "h5f8582a170f494fb2b9810ef27ee178",
+                    "originalPropertyKey": "swiftTransactionSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "swiftTransactionSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Swift Transaction Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"customerId\":\"{$.c.customerId}\",\"transactionId\":\"{$.c.transactionId}\"}",
+                    "group": "Get Attachments Service",
+                    "kuid": "jd50fb21de51420690ec5485bfb3e121",
+                    "originalPropertyKey": "criteriaAttachments",
+                    "propertyIndex": 4,
+                    "propertyKey": "criteriaAttachments",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"ICSknLblSSP42424213pxmb\",\"Field 1\":\"ICSknLbl4176a4Reg35px\"}",
+                    "group": "Skins",
+                    "kuid": "h540916d821b4ce59b024f5ea4b03966",
+                    "originalPropertyKey": "sknTransDetailsAmount",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknTransDetailsAmount",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction details amount ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "Get Attachments Service",
+                    "kuid": "c50f753928cb452b9f3eb566787bbdfd",
+                    "originalPropertyKey": "enableAttachments",
+                    "propertyIndex": 5,
+                    "propertyKey": "enableAttachments",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Enable Attachments",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknflxE3E3E3mb",
+                    "group": "Skins",
+                    "kuid": "dd4d5c37b5e74e3daf610bd4ca2c882c",
+                    "originalPropertyKey": "sknTransDetailsSeparator",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknTransDetailsSeparator",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction details Separator ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxFFB000",
+                    "group": "Skins",
+                    "kuid": "f883ec8297604452b6eb92c13a7f4bad",
+                    "originalPropertyKey": "sknTransStatusPending",
+                    "propertyIndex": 9,
+                    "propertyKey": "sknTransStatusPending",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction Status Pending",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlx2a9e05",
+                    "group": "Skins",
+                    "kuid": "b7d9f405302c49acbcde230aa6af9047",
+                    "originalPropertyKey": "sknTransStatusSuccess",
+                    "propertyIndex": 10,
+                    "propertyKey": "sknTransStatusSuccess",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction Status Success",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl42424215pxmb",
+                    "group": "Skins",
+                    "kuid": "d220b2a313c7484cbf37d27f4bd183f1",
+                    "originalPropertyKey": "sknTransDetailsStatus",
+                    "propertyIndex": 11,
+                    "propertyKey": "sknTransDetailsStatus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction Details Status",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"{$.c.statusDescription}\",\"skin\":\"ICSknlblSSP42424215pxmb\"},\"$.TRANSTYPE.TT23\":{\"text\":\"Overdue\",\"displayText\":\"Overdue\",\"skin\":\"ICSknLbl727272SSPReg22px\"},\"$.TRANSTYPE.TT24\":{\"text\":\"Paid\",\"displayText\":\"Paid\",\"skin\":\"ICSknLbl727272SSPReg22px\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "c605a564719649f1bfa06f993eda4578",
+                    "originalPropertyKey": "fieldStatus",
+                    "propertyIndex": 71,
+                    "propertyKey": "fieldStatus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field Status",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"{$.c.transactionType}\"},\"$.TRANSTYPE.TT1\":{\"text\":\"{i.kony.mb.BillPay.BillPay}\"},\"$.TRANSTYPE.TT2\":{\"text\":\"{i.kony.mb.Hamburger.MoneyMovementTransfers}\"},\"$.TRANSTYPE.TT3\":{\"text\":\"{i.kony.mb.Hamburger.MoneyMovementTransfers}\"},\"$.TRANSTYPE.TT9\":{\"text\":\"{i.kony.mb.Manage.Loan}\"},\"$.TRANSTYPE.TT10\":{\"text\":\"{i.kony.mb.transfer.WireTransfer}\"},\"$.TRANSTYPE.TT12\":{\"text\":\"{i.kony.mb.transaction.cashWithdrawal}\"},\"$.TRANSTYPE.TT14\":{\"text\":\"{i.i18n.Transactions.backendExternalTransfer}\"},\"$.TRANSTYPE.TT17\":{\"text\":\"{i.kony.mb.ChequeDeposit}\"},\"$.TRANSTYPE.TT20\":{\"text\":\"{i.kony.mb.ChequeDeposit}\"},\"$.TRANSTYPE.TT23\":{\"text\":\"{i.kony.mb.common.Amount}\"},\"$.TRANSTYPE.TT24\":{\"text\":\"{i.kony.mb.common.Amount}\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "e818752424514a1c9d91efacab0e293a",
+                    "originalPropertyKey": "field1Label",
+                    "propertyIndex": 72,
+                    "propertyKey": "field1Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"{$.c.amount}\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{$.c.lockedAmount}\"},\"$.TRANSTYPE.TT23\":{\"text\":\"{$.c.installmentAmount}\"},\"$.TRANSTYPE.TT24\":{\"text\":\"{$.c.installmentAmount}\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "b479dd2ee43e4bf39c350a4593d195e8",
+                    "originalPropertyKey": "field1Value",
+                    "propertyIndex": 73,
+                    "propertyKey": "field1Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"amount\"}",
+                    "group": "TransactionDetails",
+                    "kuid": "e41a19eef53e4f96a9b9f93da4c3ad6c",
+                    "originalPropertyKey": "field1Type",
+                    "propertyIndex": 74,
+                    "propertyKey": "field1Type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"{i.kony.mb.Accounts.Description}:\"},\"$.TRANSTYPE.TT2\":{\"text\":\"{i.kony.mb.Accounts.Description}:\"},\"$.TRANSTYPE.TT3\":{\"text\":\"{i.kony.mb.Accounts.Description}:\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{i.kony.mb.transaction.referenceNo}:\"},\"$.TRANSTYPE.TT23\":{\"text\":\"{i.kony.mb.transfers.Date}:\"},\"$.TRANSTYPE.TT24\":{\"text\":\"{i.kony.mb.transfers.Date}:\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "ia654d606a0346c4977f419251a2ccc7",
+                    "originalPropertyKey": "field2Label",
+                    "propertyIndex": 75,
+                    "propertyKey": "field2Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"{$.c.description}\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{$.c.transactionReference}\"},\"$.TRANSTYPE.TT23\":{\"text\":\"{$.c.paymentDate}\"},\"$.TRANSTYPE.TT24\":{\"text\":\"{$.c.paymentDate}\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "ad00c891a04c4fefa6ee1dd72d7f6735",
+                    "originalPropertyKey": "field2Value",
+                    "propertyIndex": 76,
+                    "propertyKey": "field2Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"text\",\"$.TRANSTYPE.TT23\":\"date\",\"$.TRANSTYPE.TT24\":\"date\"}",
+                    "group": "TransactionDetails",
+                    "kuid": "jd1801bdf9c146d7a2eda7ac893f0ae2",
+                    "originalPropertyKey": "field2Type",
+                    "propertyIndex": 77,
+                    "propertyKey": "field2Type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"{i.kony.mb.transaction.transactionDate}:\"},\"$.TRANSTYPE.TT7\":{\"text\":\"{i.kony.mb.accounts.postedDate}:\"},\"$.TRANSTYPE.TT17\":{\"text\":\"{i.kony.mb.accounts.postedDate}:\"},\"$.TRANSTYPE.TT20\":{\"text\":\"{i.kony.mb.accounts.postedDate}:\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{i.kony.mb.transaction.transactionDate}:\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "gb489282cba44077bce9e7d2099e5a84",
+                    "originalPropertyKey": "field3Label",
+                    "propertyIndex": 78,
+                    "propertyKey": "field3Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"{$.c.transactionDate}\"},\"$.TRANSTYPE.TT7\":{\"text\":\"{$.c.showDate}\"},\"$.TRANSTYPE.TT20\":{\"text\":\"{$.c.postedDate}\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{$.c.transactionDate}\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "c3eaf272c5694ca4979b16d72260894a",
+                    "originalPropertyKey": "field3Value",
+                    "propertyIndex": 79,
+                    "propertyKey": "field3Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"date\",\"$.TRANSTYPE.TT1\":\"date\",\"$.TRANSTYPE.TT7\":\"date\",\"$.TRANSTYPE.TT20\":\"date\",\"$.TRANSTYPE.TT22\":\"date\"}",
+                    "group": "TransactionDetails",
+                    "kuid": "jcd00db32ce54183b4608dffba7316c8",
+                    "originalPropertyKey": "field3Type",
+                    "propertyIndex": 80,
+                    "propertyKey": "field3Type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"{i.kony.mb.transaction.referenceNo}:\"},\"$.TRANSTYPE.TT1\":{\"text\":\"{i.kony.mb.accounts.postedDate}:\"},\"$.TRANSTYPE.TT2\":{\"text\":\"{i.kony.mb.transaction.frequency}:\"},\"$.TRANSTYPE.TT3\":{\"text\":\"{i.kony.mb.transaction.frequency}:\"},\"$.TRANSTYPE.TT19\":{\"text\":\"{i.kony.mb.accounts.postedDate}:\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{i.kony.mb.Accounts.Description}:\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "i5bd16430a1c49d1a3eb7c81419ef763",
+                    "originalPropertyKey": "field4Label",
+                    "propertyIndex": 81,
+                    "propertyKey": "field4Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"{$.c.transactionId}\"},\"$.TRANSTYPE.TT1\":{\"text\":\"{$.c.scheduledDate}\"},\"$.TRANSTYPE.TT2\":{\"text\":\"{$.c.frequencyType}\"},\"$.TRANSTYPE.TT\":{\"text\":\"{$.c.frequencyType}\"},\"$.TRANSTYPE.TT19\":{\"text\":\"{$.c.scheduledDate}\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{$.c.description}\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "a8da24b1f0d24211b056b932da46ba1f",
+                    "originalPropertyKey": "field4Value",
+                    "propertyIndex": 82,
+                    "propertyKey": "field4Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"text\",\"$.TRANSTYPE.TT1\":\"date\",\"$.TRANSTYPE.TT2\":\"text\",\"$.TRANSTYPE.TT3\":\"text\",\"$.TRANSTYPE.TT19\":\"date\",\"$.TRANSTYPE.TT22\":\"text\"}",
+                    "group": "TransactionDetails",
+                    "kuid": "cfa1e2876a2945cba7430e119d5a2482",
+                    "originalPropertyKey": "field4Type",
+                    "propertyIndex": 83,
+                    "propertyKey": "field4Type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"\"},\"$.TRANSTYPE.TT1\":{\"text\":\"{i.kony.mb.transaction.referenceNo}:\"},\"$.TRANSTYPE.TT2\":{\"text\":\"{i.kony.mb.transaction.referenceNo}:\"},\"$.TRANSTYPE.TT3\":{\"text\":\"{i.kony.mb.transaction.referenceNo}:\"},\"$.TRANSTYPE.TT19\":{\"text\":\"{i.kony.mb.transaction.referenceNo}:\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{i.kony.mb.transaction.fromDate}:\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "b1281d9c347244caa7ab1905144e8abb",
+                    "originalPropertyKey": "field5Label",
+                    "propertyIndex": 84,
+                    "propertyKey": "field5Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"\"},\"$.TRANSTYPE.TT1\":{\"text\":\"{$.c.transactionId}\"},\"$.TRANSTYPE.TT2\":{\"text\":\"{$.c.transactionId}\"},\"$.TRANSTYPE.TT3\":{\"text\":\"{$.c.transactionId}\"},\"$.TRANSTYPE.TT19\":{\"text\":\"{$.c.transactionId}\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{$.c.fromDate}\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "jc5a202352654ce6bcc12810204e99f5",
+                    "originalPropertyKey": "field5Value",
+                    "propertyIndex": 85,
+                    "propertyKey": "field5Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"text\",\"$.TRANSTYPE.TT1\":\"date\",\"$.TRANSTYPE.TT2\":\"text\",\"$.TRANSTYPE.TT3\":\"text\",\"$.TRANSTYPE.TT19\":\"text\",\"$.TRANSTYPE.TT22\":\"date\"}",
+                    "group": "TransactionDetails",
+                    "kuid": "h05f28a9653c4658a3078f2ef135ba92",
+                    "originalPropertyKey": "field5Type",
+                    "propertyIndex": 86,
+                    "propertyKey": "field5Type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"\"},\"$.TRANSTYPE.TT2\":{\"text\":\"{i.kony.mb.TransfersEurope.Currency}:\"},\"$.TRANSTYPE.TT3\":{\"text\":\"{i.kony.mb.TransfersEurope.Currency}:\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{i.kony.mb.transaction.todate}:\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "d3921b904891489cbd13420240009d16",
+                    "originalPropertyKey": "field6Label",
+                    "propertyIndex": 87,
+                    "propertyKey": "field6Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"\"},\"$.TRANSTYPE.TT2\":{\"text\":\"{$.c.transactionCurrency}\"},\"$.TRANSTYPE.TT3\":{\"text\":\"{$.c.transactionCurrency}\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{$.c.toDate}\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "haa0c7a7245c4faeba371a28e3df0555",
+                    "originalPropertyKey": "field6Value",
+                    "propertyIndex": 88,
+                    "propertyKey": "field6Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"text\",\"$.TRANSTYPE.TT2\":\"text\",\"$.TRANSTYPE.TT3\":\"text\",\"$.TRANSTYPE.TT22\":\"Date\"}",
+                    "group": "TransactionDetails",
+                    "kuid": "de6c232fe9744690804e8b82cad5c110",
+                    "originalPropertyKey": "field6Type",
+                    "propertyIndex": 89,
+                    "propertyKey": "field6Type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"\"},\"$.TRANSTYPE.TT2\":{\"text\":\"{i.kony.mb.transaction.notes}:\"},\"$.TRANSTYPE.TT3\":{\"text\":\"{i.kony.mb.transaction.notes}:\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{i.kony.mb.transaction.notes}:\"},\"$.TRANSTYPE.TT23\":{\"text\":\"{i.kony.mb.Europe.Tax}:\"},\"$.TRANSTYPE.TT24\":{\"text\":\"{i.kony.mb.Europe.Tax}:\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "b8d07c100f5c4bd9b1310a5006bef751",
+                    "originalPropertyKey": "field7Label",
+                    "propertyIndex": 90,
+                    "propertyKey": "field7Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"\"},\"$.TRANSTYPE.TT2\":{\"text\":\"{$.c.transactionsNotes}\"},\"$.TRANSTYPE.TT3\":{\"text\":\"{$.c.transactionsNotes}\"},\"$.TRANSTYPE.TT22\":{\"text\":\"{$.c.transactionsNotes}\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "e190c3f8176b42d983c926cffb3b9fab",
+                    "originalPropertyKey": "field7Value",
+                    "propertyIndex": 91,
+                    "propertyKey": "field7Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"text\",\"$.TRANSTYPE.TT2\":\"text\",\"$.TRANSTYPE.TT3\":\"text\",\"$.TRANSTYPE.TT22\":\"text\"}",
+                    "group": "TransactionDetails",
+                    "kuid": "bdc1216613354b44a44d86c447995751",
+                    "originalPropertyKey": "field7Type",
+                    "propertyIndex": 92,
+                    "propertyKey": "field7Type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"\"},\"$.TRANSTYPE.TT23\":{\"text\":\"{i.kony.mb.transfers.Insurance}:\"},\"$.TRANSTYPE.TT24\":{\"text\":\"{i.kony.mb.transfers.Insurance}:\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "a1fec13c86df4e0694a2c6e5e4038462",
+                    "originalPropertyKey": "field8Label",
+                    "propertyIndex": 93,
+                    "propertyKey": "field8Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"\",\"skin\":\"\"},\"$.TRANSTYPE.TT23\":{\"text\":\"{$.c.insurance}\"},\"$.TRANSTYPE.TT24\":{\"text\":\"{$.c.insurance}\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "c5348c1d6f894a6b888c42c7919031c2",
+                    "originalPropertyKey": "field8Value",
+                    "propertyIndex": 94,
+                    "propertyKey": "field8Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"text\",\"$.TRANSTYPE.TT23\":\"amount\",\"$.TRANSTYPE.TT24\":\"amount\"}",
+                    "group": "TransactionDetails",
+                    "kuid": "c7f18ab73a0d4e4fa495b10aeff62e13",
+                    "originalPropertyKey": "field8Type",
+                    "propertyIndex": 95,
+                    "propertyKey": "field8Type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"{i.kony.mb.Europe.Attachments}:\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "a35b2e4c32534b33be1cfc4baf1727dd",
+                    "originalPropertyKey": "field9Label",
+                    "propertyIndex": 96,
+                    "propertyKey": "field9Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"text\":\"{$.c.fileNames}\"}}",
+                    "group": "TransactionDetails",
+                    "kuid": "j57b9d4e85ca4ca5b2b57781b7602b99",
+                    "originalPropertyKey": "field9Value",
+                    "propertyIndex": 97,
+                    "propertyKey": "field9Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"text\"}",
+                    "group": "TransactionDetails",
+                    "kuid": "ed533dc1670c43af9ee12702201921a5",
+                    "originalPropertyKey": "field9Type",
+                    "propertyIndex": 98,
+                    "propertyKey": "field9Type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "TransactionDetails",
+                    "kuid": "b198bd07ae444cac951f3d040d4771ec",
+                    "originalPropertyKey": "field10Label",
+                    "propertyIndex": 99,
+                    "propertyKey": "field10Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 10 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "TransactionDetails",
+                    "kuid": "b31a8f6cd8544efdbe7c5b52ec4c25ed",
+                    "originalPropertyKey": "field10Value",
+                    "propertyIndex": 100,
+                    "propertyKey": "field10Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 10 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "TransactionDetails",
+                    "kuid": "jfbc0f6f8f374f23b28277d4ac25fe8c",
+                    "originalPropertyKey": "field10Type",
+                    "propertyIndex": 101,
+                    "propertyKey": "field10Type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 10 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "TransactionDetails",
+                    "kuid": "ec844ef46a7c472ba3e8c0430bdeb725",
+                    "originalPropertyKey": "field11Label",
+                    "propertyIndex": 102,
+                    "propertyKey": "field11Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 11 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "TransactionDetails",
+                    "kuid": "h77d64bb69c845abbc22dd17a3604f8a",
+                    "originalPropertyKey": "field11Value",
+                    "propertyIndex": 103,
+                    "propertyKey": "field11Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 11 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "TransactionDetails",
+                    "kuid": "c790f360ee5347c6879bf54602d182e9",
+                    "originalPropertyKey": "field11Type",
+                    "propertyIndex": 104,
+                    "propertyKey": "field11Type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 11 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "TransactionDetails",
+                    "kuid": "c8407b22243f41169eeaab2321a8247b",
+                    "originalPropertyKey": "field12Label",
+                    "propertyIndex": 105,
+                    "propertyKey": "field12Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 12 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "TransactionDetails",
+                    "kuid": "aa6bebec3a944e35bb0bc08138f52013",
+                    "originalPropertyKey": "filed12Value",
+                    "propertyIndex": 106,
+                    "propertyKey": "filed12Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 12 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "TransactionDetails",
+                    "kuid": "jc8cbca10ae745cfba7900b5ae8d871b",
+                    "originalPropertyKey": "field12Type",
+                    "propertyIndex": 107,
+                    "propertyKey": "field12Type",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 12 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"id\":\"DownloadTransaction\",\"text\":\"{i.kony.mb.DownloadTransaction}\",\"skin\":\"ICSknBtn003E75RoundedffffffSSP26px\",\"entitlement_keys\":[],\"entitlement_action\":false},\"$.TRANSTYPE.TT22\":{\"id\":\"\",\"text\":\"\",\"skin\":\"\",\"entitlement_keys\":[],\"entitlement_action\":true}}",
+                    "group": "TransactionDetails",
+                    "kuid": "dc932e1424f14cfd80e3489e670d7831",
+                    "originalPropertyKey": "btnContextualAction1",
+                    "propertyIndex": 108,
+                    "propertyKey": "btnContextualAction1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contextual Action Button1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"id\":\"RepeatTransaction\",\"text\":\"{i.i18n.accounts.repeatTransaction}\",\"skin\":\"ICSknBtnffffffRounded003e75SSP26px\",\"entitlement_keys\":[\"INTERNATIONAL_WIRE_TRANSFER_CREATE\"],\"entitlement_action\":true},\"$.TRANSTYPE.TT22\":{\"id\":\"\",\"text\":\"\",\"skin\":\"\",\"entitlement_keys\":[],\"entitlement_action\":false},\"$.TRANSTYPE.TT23\":{\"id\":\"PayOverdue\",\"text\":\"{i.kony.mb.loans.PayOverdue}\",\"skin\":\"ICSknBtnffffffRounded003e75SSP26px\",\"entitlement_keys\":[],\"entitlement_action\":false}}",
+                    "group": "TransactionDetails",
+                    "kuid": "i53e8019bbf9445fa13337ee81f1b55f",
+                    "originalPropertyKey": "btnContextualAction2",
+                    "propertyIndex": 109,
+                    "propertyKey": "btnContextualAction2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contextual Action Button2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"id\":\"DisputeTransaction\",\"text\":\"{i.kony.mb.transaction.disputeTransaction}\",\"skin\":\"ICSknBtnffffffRounded003e75SSP26px\",\"entitlement_keys\":[\"DISPUTE_TRANSACTIONS\"],\"entitlement_action\":true},\"$.TRANSTYPE.TT14\":{\"id\":\"RepeatTransaction\",\"text\":\"{i.i18n.accounts.repeatTransaction}\",\"skin\":\"ICSknBtn003E75RoundedffffffSSP26px\",\"entitlement_keys\":[\"INTERNATIONAL_WIRE_TRANSFER_CREATE\"],\"entitlement_action\":false},\"$.TRANSTYPE.TT22\":{\"id\":\"\",\"text\":\"\",\"skin\":\"\",\"entitlement_keys\":[],\"entitlement_action\":false},\"$.TRANSTYPE.TT23\":{\"id\":\"\",\"text\":\"\",\"skin\":\"\",\"entitlement_keys\":[],\"entitlement_action\":false},\"$.TRANSTYPE.TT24\":{\"id\":\"\",\"text\":\"\",\"skin\":\"\",\"entitlement_keys\":[],\"entitlement_action\":false}}",
+                    "group": "TransactionDetails",
+                    "kuid": "c2be531548aa4162ba039992642b4558",
+                    "originalPropertyKey": "btnContextualAction3",
+                    "propertyIndex": 110,
+                    "propertyKey": "btnContextualAction3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contextual Action Button3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"id\":\"ViewRequest\",\"text\":\"{i.kony.mb.ViewRequest}\",\"skin\":\"ICSknBtnffffffRounded003e75SSP26px\",\"entitlement_keys\":[\"CHECK_MANAGEMENT_VIEW_DISPUTED_CHECKS\"],\"entitlement_action\":true},\"$.TRANSTYPE.TT22\":{\"id\":\"\",\"text\":\"\",\"skin\":\"\",\"entitlement_keys\":[],\"entitlement_action\":false},\"$.TRANSTYPE.TT23\":{\"id\":\"\",\"text\":\"\",\"skin\":\"\",\"entitlement_keys\":[],\"entitlement_action\":false},\"$.TRANSTYPE.TT24\":{\"id\":\"\",\"text\":\"\",\"skin\":\"\",\"entitlement_keys\":[],\"entitlement_action\":false}}",
+                    "group": "TransactionDetails",
+                    "kuid": "a2d52667bb134151a5d92ac7ccb5e3bd",
+                    "originalPropertyKey": "btnContextualAction4",
+                    "propertyIndex": 111,
+                    "propertyKey": "btnContextualAction4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contextual Action Button4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"id\":\"CancelPayment\",\"text\":\"{i.kony.i18n.common.cancelPayment}\",\"skin\":\"ICSknBtnffffffRounded003e75SSP26px\",\"entitlement_keys\":[],\"entitlement_action\":true},\"$.TRANSTYPE.TT22\":{\"id\":\"\",\"text\":\"\",\"skin\":\"\",\"entitlement_keys\":[],\"entitlement_action\":false},\"$.TRANSTYPE.TT23\":{\"id\":\"\",\"text\":\"\",\"skin\":\"\",\"entitlement_keys\":[],\"entitlement_action\":false},\"$.TRANSTYPE.TT24\":{\"id\":\"\",\"text\":\"\",\"skin\":\"\",\"entitlement_keys\":[],\"entitlement_action\":false}}",
+                    "group": "TransactionDetails",
+                    "kuid": "fa6a7a15e2b844438966ab5b105e29cc",
+                    "originalPropertyKey": "btnContextualAction5",
+                    "propertyIndex": 112,
+                    "propertyKey": "btnContextualAction5",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Contextual Action Button5",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd4e93fb79514c76b49e1a177e5e49fa",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "aaad117e7d384730a5522b675d8f8231",
+                    "propertyKey": "lblStatusIndicator",
+                    "srcWgtKUID": "fc08f285f60e470d8f49387ee160bf30"
+                }
+            ],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Transfers",
+    "version": "1.0.0"
+}

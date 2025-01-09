@@ -1,0 +1,37 @@
+{
+    "AS_Label_g5a41d24595245bdb82544628a2ead04": {
+        "id": "AS_Label_g5a41d24595245bdb82544628a2ead04",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segBulkUpdateTransactionsPFM",
+            "type": "templates",
+            "platform": "",
+            "KUID": "d28115ccbf3042ae8bf50d025253a736"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__db38f29b750d458c900709e863a47f0d",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "toggleCheckBox",
+            "display": "toggleCheckBox",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

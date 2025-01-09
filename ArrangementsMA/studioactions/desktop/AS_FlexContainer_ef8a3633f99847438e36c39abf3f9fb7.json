@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_ef8a3633f99847438e36c39abf3f9fb7": {
+        "id": "AS_FlexContainer_ef8a3633f99847438e36c39abf3f9fb7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "eventPayload"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segFileFilter",
+            "type": "templates",
+            "platform": "",
+            "KUID": "g3f7a99ac06f459281dc036c40007db4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a47adb1e5d224ef9a43229d882a6db5c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.yearsDropdownFocus(eventobject, eventPayload, context);",
+            "parentId": null
+        }]
+    }
+}

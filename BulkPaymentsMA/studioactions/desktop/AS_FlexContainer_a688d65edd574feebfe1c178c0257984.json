@@ -1,0 +1,27 @@
+{
+    "AS_FlexContainer_a688d65edd574feebfe1c178c0257984": {
+        "id": "AS_FlexContainer_a688d65edd574feebfe1c178c0257984",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segBulkPayementRowTemplate",
+            "type": "templates",
+            "platform": "",
+            "KUID": "db1d94e92aa74a4d99f615975eb77301"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ja51a680943a40e09c95d1e39bba1926",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.showDetails(eventobject, context);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

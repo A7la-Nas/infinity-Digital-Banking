@@ -1,0 +1,23 @@
+{
+    "AS_Button_a9e9d668e3a04579a6c5a0d1e47378bf": {
+        "id": "AS_Button_a9e9d668e3a04579a6c5a0d1e47378bf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDummy",
+            "type": "forms",
+            "platform": null,
+            "KUID": "c51ce94db01649a09dc1132de71f82f9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_i1b541dca0e24f9f8423d79ba0de9e73",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\nvar authParams = {\n\"UserName\": \"testeu01\",\n\"Password\": \"Kony@1234\",\n\"loginOptions\": {\n\"isOfflineEnabled\": false\n}\n};\nvar ApplicationManager = require('ApplicationManager');\n    applicationManager = ApplicationManager.getApplicationManager();\ntry{\nauthClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\nauthClient.login(authParams,successCallback,errorCallback);\n}catch(e){\n  kony.print(\"error\"+e);\n}\nfunction successCallback(resSuccess){\nkony.application.dismissLoadingScreen();\nkony.print(resSuccess);\n var tokenParams = kony.sdk.getCurrentInstance().tokens.DbxUserLogin.provider_token.params.security_attributes;\n        var permissions = JSON.parse(tokenParams.permissions);\n        var features = JSON.parse(tokenParams.features);\n        var accounts = tokenParams.accounts;\n        applicationManager.getConfigurationManager().setUserPermissions(permissions);\n        applicationManager.getConfigurationManager().setFeatures(features);\n        var userPreferences = applicationManager.getUserPreferencesManager();\n        userPreferences.fetchUser();\nvar ntf = new kony.mvc.Navigation(\"frmProfile\");\nntf.navigate();\n}\nfunction errorCallback(resError){\nkony.application.dismissLoadingScreen();\n  alert(\"failed\");\nkony.print(resError);\nalert(\"login is not working...\"+JSON.stringify(resError))\n}",
+            "parentId": null
+        }]
+    }
+}

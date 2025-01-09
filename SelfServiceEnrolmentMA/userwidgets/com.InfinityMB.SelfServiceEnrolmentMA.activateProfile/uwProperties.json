@@ -1,0 +1,817 @@
+{
+    "classname": "activateProfile",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a40172498ddd453ca1fc1942e25f18cf",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "navigateToLogin",
+                    "pw": {
+                        "displayName": "navigateToLogin",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c3ec524bfc3f41b396977b30f4c59293",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "closeActivateProfileFlow",
+                    "pw": {
+                        "displayName": "closeActivateProfileFlow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "Skins",
+                "Images",
+                "Screen 1",
+                "Screen 2",
+                "Screen 3",
+                "ServiceDetails",
+                "ErrorMessages"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlx1a98ff",
+                    "group": "Skins",
+                    "kuid": "cec8af15155143f994a88dacd2774c91",
+                    "originalPropertyKey": "headerSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "headerSkin",
+                    "pw": {
+                        "displayName": "Header Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "view.png",
+                    "group": "Images",
+                    "kuid": "icda896e8e9640478771754a3b8a2b35",
+                    "originalPropertyKey": "textVisiblityOffIcon",
+                    "propertyIndex": 1,
+                    "propertyKey": "textVisiblityOffIcon",
+                    "pw": {
+                        "displayName": "Text Visiblity Off Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Profile Activation",
+                    "group": "Screen 1",
+                    "kuid": "cbcac7bf8052426c9def7c74db532729",
+                    "originalPropertyKey": "screen1HeaderMessageText",
+                    "propertyIndex": 1,
+                    "propertyKey": "screen1HeaderMessageText",
+                    "pw": {
+                        "displayName": "Header Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Create Password",
+                    "group": "Screen 2",
+                    "kuid": "h17eb29166af4b5b955aa94043e22093",
+                    "originalPropertyKey": "screen2HeaderMessageText",
+                    "propertyIndex": 1,
+                    "propertyKey": "screen2HeaderMessageText",
+                    "pw": {
+                        "displayName": "Header Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Profile Activation",
+                    "group": "Screen 3",
+                    "kuid": "a09cb627ad234ea6996e403a2148ee79",
+                    "originalPropertyKey": "screen3HeaderMessageText",
+                    "propertyIndex": 1,
+                    "propertyKey": "screen3HeaderMessageText",
+                    "pw": {
+                        "displayName": "Header Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ExternalUsers_2",
+                    "group": "ServiceDetails",
+                    "kuid": "e446c346986f4b56a19e075858729887",
+                    "originalPropertyKey": "objectName",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectName",
+                    "pw": {
+                        "displayName": "objectName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Your activation code has been expired.",
+                    "group": "ErrorMessages",
+                    "kuid": "aae416f0383c47eb8e167adfb38bf562",
+                    "originalPropertyKey": "activationExpire",
+                    "propertyIndex": 1,
+                    "propertyKey": "activationExpire",
+                    "pw": {
+                        "displayName": "activationExpire",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSPSemiBold34pxFFF",
+                    "group": "Skins",
+                    "kuid": "d69defcbb6bf48a799430fb029d01f57",
+                    "originalPropertyKey": "headerTextSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "headerTextSkin",
+                    "pw": {
+                        "displayName": "Header Text Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "viewactive.png",
+                    "group": "Images",
+                    "kuid": "db7d3ccf7b824502b975439b9c043117",
+                    "originalPropertyKey": "textVisiblityOnIcon",
+                    "propertyIndex": 2,
+                    "propertyKey": "textVisiblityOnIcon",
+                    "pw": {
+                        "displayName": "Text Visiblity On Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.Cancel",
+                    "group": "Screen 1",
+                    "kuid": "h11ad59494fe4226af7804a28f0a9326",
+                    "originalPropertyKey": "screen1HeaderCancelText",
+                    "propertyIndex": 2,
+                    "propertyKey": "screen1HeaderCancelText",
+                    "pw": {
+                        "displayName": "Header Cancel Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.Cancel",
+                    "group": "Screen 2",
+                    "kuid": "f717385c7209400880132165fa8199dc",
+                    "originalPropertyKey": "screen2HeaderCancelText",
+                    "propertyIndex": 2,
+                    "propertyKey": "screen2HeaderCancelText",
+                    "pw": {
+                        "displayName": "Header Cancel Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Activated Successfully",
+                    "group": "Screen 3",
+                    "kuid": "d47487bd3470476f9543fd4ba22ac57d",
+                    "originalPropertyKey": "screen3MessageText",
+                    "propertyIndex": 2,
+                    "propertyKey": "screen3MessageText",
+                    "pw": {
+                        "displayName": "Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "validateActivationCodeForEnrollment",
+                    "group": "ServiceDetails",
+                    "kuid": "f375a0846c734356a60bca62572a9da0",
+                    "originalPropertyKey": "validateService",
+                    "propertyIndex": 2,
+                    "propertyKey": "validateService",
+                    "pw": {
+                        "displayName": "validateService",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Unable to verify Activation code",
+                    "group": "ErrorMessages",
+                    "kuid": "eecf6830fbf74b33bfbe1d589e6c39d1",
+                    "originalPropertyKey": "unableToVerify",
+                    "propertyIndex": 2,
+                    "propertyKey": "unableToVerify",
+                    "pw": {
+                        "displayName": "unableToVerify",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnffffffSSP28px",
+                    "group": "Skins",
+                    "kuid": "f85440bf55fa44c3ba1520f98ad52cd7",
+                    "originalPropertyKey": "headerCancelButtonSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "headerCancelButtonSkin",
+                    "pw": {
+                        "displayName": "Header Cancel Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "tickmark.png",
+                    "group": "Images",
+                    "kuid": "e49aef2242b348a38da356818bd75377",
+                    "originalPropertyKey": "tickGrayIcon",
+                    "propertyIndex": 3,
+                    "propertyKey": "tickGrayIcon",
+                    "pw": {
+                        "displayName": "Tick Gray Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Please enter user ID and Activation code that was sent to your email and phone",
+                    "group": "Screen 1",
+                    "kuid": "de0cf46bc88a48d38e3bb002d82e560f",
+                    "originalPropertyKey": "screen1DescriptionText",
+                    "propertyIndex": 3,
+                    "propertyKey": "screen1DescriptionText",
+                    "pw": {
+                        "displayName": "Description Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Create new password",
+                    "group": "Screen 2",
+                    "kuid": "i8828a1258ae446092d5f5fd59db15ce",
+                    "originalPropertyKey": "screen2MessageText",
+                    "propertyIndex": 3,
+                    "propertyKey": "screen2MessageText",
+                    "pw": {
+                        "displayName": "Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "We have activated your profile successfully.  \\nPlease sign in to continue",
+                    "group": "Screen 3",
+                    "kuid": "hfc58d3a19144e3ebb462ca4bdd9409d",
+                    "originalPropertyKey": "screen3DescriptionText",
+                    "propertyIndex": 3,
+                    "propertyKey": "screen3DescriptionText",
+                    "pw": {
+                        "displayName": "Description Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "UpdatePasswordForActivationFlow",
+                    "group": "ServiceDetails",
+                    "kuid": "b268778cb394426a80d03eea6a4992ed",
+                    "originalPropertyKey": "passwordUpdateService",
+                    "propertyIndex": 3,
+                    "propertyKey": "passwordUpdateService",
+                    "pw": {
+                        "displayName": "passwordUpdateService",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Unable to update Password",
+                    "group": "ErrorMessages",
+                    "kuid": "feefcf849d4d4fdaa90d8d3c3b0740d4",
+                    "originalPropertyKey": "unableToUpdate",
+                    "propertyIndex": 3,
+                    "propertyKey": "unableToUpdate",
+                    "pw": {
+                        "displayName": "unableToUpdate",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "greentick.png",
+                    "group": "Images",
+                    "kuid": "jd31ff02f6b8406f9a57c2fe84e0359b",
+                    "originalPropertyKey": "tickGreenIcon",
+                    "propertyIndex": 4,
+                    "propertyKey": "tickGreenIcon",
+                    "pw": {
+                        "displayName": "Tick Green Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Incorrect username or activation code!",
+                    "group": "Screen 1",
+                    "kuid": "e183e392fbeb41e1a1c9ade599fa5bcd",
+                    "originalPropertyKey": "screen1ErrorMessageText",
+                    "propertyIndex": 4,
+                    "propertyKey": "screen1ErrorMessageText",
+                    "pw": {
+                        "displayName": "Error Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.Forgot.NewPassword",
+                    "group": "Screen 2",
+                    "kuid": "ia2979b6367b438ea1a25b942edfd439",
+                    "originalPropertyKey": "screen2Label1Text",
+                    "propertyIndex": 4,
+                    "propertyKey": "screen2Label1Text",
+                    "pw": {
+                        "displayName": "Label 1 Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Done",
+                    "group": "Screen 3",
+                    "kuid": "j8e614ab33594be49598b0c1a5c7ef9f",
+                    "originalPropertyKey": "screen3SubmitBtnText",
+                    "propertyIndex": 4,
+                    "propertyKey": "screen3SubmitBtnText",
+                    "pw": {
+                        "displayName": "Submit Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getPasswordRulesAndPolicy",
+                    "group": "ServiceDetails",
+                    "kuid": "f4066aa6a6d64bb483af3839f73fb3ee",
+                    "originalPropertyKey": "passwordPolicyService",
+                    "propertyIndex": 4,
+                    "propertyKey": "passwordPolicyService",
+                    "pw": {
+                        "displayName": "passwordPolicyService",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblEE0005SSPR114pct",
+                    "group": "Skins",
+                    "kuid": "f94f7b20eee5489d84f9a285516385f6",
+                    "originalPropertyKey": "errorMessageSkin",
+                    "propertyIndex": 5,
+                    "propertyKey": "errorMessageSkin",
+                    "pw": {
+                        "displayName": "Error Message Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "confirmation_tick.png",
+                    "group": "Images",
+                    "kuid": "e03de36e39a649b897c30570fb8397e4",
+                    "originalPropertyKey": "successTickIcon",
+                    "propertyIndex": 5,
+                    "propertyKey": "successTickIcon",
+                    "pw": {
+                        "displayName": "Success Tick Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.login.username",
+                    "group": "Screen 1",
+                    "kuid": "b86d0b8b0ac34f95a2373bad0ea127d1",
+                    "originalPropertyKey": "screen1TextBox1PlaceholderText",
+                    "propertyIndex": 5,
+                    "propertyKey": "screen1TextBox1PlaceholderText",
+                    "pw": {
+                        "displayName": "Textbox 1 Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.EnterNewPassword",
+                    "group": "Screen 2",
+                    "kuid": "j6a998dada29479fab42df5376969e3b",
+                    "originalPropertyKey": "screen2Textbox1PlaceholderText",
+                    "propertyIndex": 5,
+                    "propertyKey": "screen2Textbox1PlaceholderText",
+                    "pw": {
+                        "displayName": "Textbox 1 Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknTbxBgFFFRounded4pxBdrE3E3E3FontSSPR15px949494",
+                    "group": "Skins",
+                    "kuid": "f322cf20eb714d3b8b2b8c3ebf2c9fca",
+                    "originalPropertyKey": "textBoxNormalSkin",
+                    "propertyIndex": 6,
+                    "propertyKey": "textBoxNormalSkin",
+                    "pw": {
+                        "displayName": "TextBox Normal Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Activation Code",
+                    "group": "Screen 1",
+                    "kuid": "ha7b2bd9d5d8407b8c7c4dfbaa323e14",
+                    "originalPropertyKey": "screen1TextBox2PlaceholderText",
+                    "propertyIndex": 6,
+                    "propertyKey": "screen1TextBox2PlaceholderText",
+                    "pw": {
+                        "displayName": "Textbox 2 Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.Forgot.ReEnterNewPassword",
+                    "group": "Screen 2",
+                    "kuid": "a2fb11b36d4b47f29982aa33b02e4031",
+                    "originalPropertyKey": "screen2Label2Text",
+                    "propertyIndex": 6,
+                    "propertyKey": "screen2Label2Text",
+                    "pw": {
+                        "displayName": "Label 2 Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknTbxBorderF54B5Efont15pxSSPRrad4px",
+                    "group": "Skins",
+                    "kuid": "cae8b4ab56de43d3be2e4186c6731695",
+                    "originalPropertyKey": "textBoxErrorSkin",
+                    "propertyIndex": 7,
+                    "propertyKey": "textBoxErrorSkin",
+                    "pw": {
+                        "displayName": "TextBox Error Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.ProfileManagement.Verify",
+                    "group": "Screen 1",
+                    "kuid": "f79fd431463b40ddba3c35069b6a4957",
+                    "originalPropertyKey": "screen1SubmitBtnText",
+                    "propertyIndex": 7,
+                    "propertyKey": "screen1SubmitBtnText",
+                    "pw": {
+                        "displayName": "Submit Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.Forgot.ReEnterNewPassword",
+                    "group": "Screen 2",
+                    "kuid": "cb6a35a6501e4efa8d92a1e3d7550c64",
+                    "originalPropertyKey": "screen2Textbox2PlaceholderText",
+                    "propertyIndex": 7,
+                    "propertyKey": "screen2Textbox2PlaceholderText",
+                    "pw": {
+                        "displayName": "Textbox 2 Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtn0095e426pxEnabled",
+                    "group": "Skins",
+                    "kuid": "d2724158edcc4a52b4dcc7039a899588",
+                    "originalPropertyKey": "buttonEnabledSkin",
+                    "propertyIndex": 8,
+                    "propertyKey": "buttonEnabledSkin",
+                    "pw": {
+                        "displayName": "Button Enabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.login.cannotLogin",
+                    "group": "Screen 1",
+                    "kuid": "eac195cdf0a249399793594f72364562",
+                    "originalPropertyKey": "screen1ForgetPasswordBtnText",
+                    "propertyIndex": 8,
+                    "propertyKey": "screen1ForgetPasswordBtnText",
+                    "pw": {
+                        "displayName": "Forget Password Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.securityReq.passwordtitle",
+                    "group": "Screen 2",
+                    "kuid": "gdfbc244b71b406388e12741fe199db6",
+                    "originalPropertyKey": "screen2LabelPasswordRulesText",
+                    "propertyIndex": 8,
+                    "propertyKey": "screen2LabelPasswordRulesText",
+                    "pw": {
+                        "displayName": "Label Password Rules Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtna0a0a0SSPReg26px",
+                    "group": "Skins",
+                    "kuid": "c3e3cdeace494dee84fcedc3532db59e",
+                    "originalPropertyKey": "buttonDisabledSkin",
+                    "propertyIndex": 9,
+                    "propertyKey": "buttonDisabledSkin",
+                    "pw": {
+                        "displayName": "Button Disabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Set Password",
+                    "group": "Screen 2",
+                    "kuid": "f6ffd6e1921c40ce975cf7d22309d655",
+                    "originalPropertyKey": "screen2SubmitBtnText",
+                    "propertyIndex": 9,
+                    "propertyKey": "screen2SubmitBtnText",
+                    "pw": {
+                        "displayName": "Submit Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl004B95SSPRegular26px",
+                    "group": "Skins",
+                    "kuid": "e534b9ac379a44c3aca17197a36c70a1",
+                    "originalPropertyKey": "forgetPasswordSkin",
+                    "propertyIndex": 10,
+                    "propertyKey": "forgetPasswordSkin",
+                    "pw": {
+                        "displayName": "Forget Password Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPL200pct",
+                    "group": "Skins",
+                    "kuid": "bb053677eb0c4c2781ca73124e8cc500",
+                    "originalPropertyKey": "screen2MessageSkin",
+                    "propertyIndex": 11,
+                    "propertyKey": "screen2MessageSkin",
+                    "pw": {
+                        "displayName": "Screen 2 Message Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl72727215pxSSPR",
+                    "group": "Skins",
+                    "kuid": "d80c6f6489ee4f038ab7948183b16dd5",
+                    "originalPropertyKey": "labelSkin",
+                    "propertyIndex": 12,
+                    "propertyKey": "labelSkin",
+                    "pw": {
+                        "displayName": "Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSPRegFD3F2F28px",
+                    "group": "Skins",
+                    "kuid": "aad91ac904814a9fb25b8f9114c38a99",
+                    "originalPropertyKey": "passwordRulesLabelSkin",
+                    "propertyIndex": 13,
+                    "propertyKey": "passwordRulesLabelSkin",
+                    "pw": {
+                        "displayName": "Password Rules Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknrtxfd3f2fSSp95pr",
+                    "group": "Skins",
+                    "kuid": "f2797384a7554a47afad206ca5e4decf",
+                    "originalPropertyKey": "passwordRulesSkin",
+                    "propertyIndex": 14,
+                    "propertyKey": "passwordRulesSkin",
+                    "pw": {
+                        "displayName": "Password Rules Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlbl000000SSPSemiBold72px",
+                    "group": "Skins",
+                    "kuid": "j901b71e3f2342719bae7d4bd8032488",
+                    "originalPropertyKey": "screen3MessageSkin",
+                    "propertyIndex": 15,
+                    "propertyKey": "screen3MessageSkin",
+                    "pw": {
+                        "displayName": "Screen 3 Message Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b04a14ef181949f0a60bd28a25903e38",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.SelfServiceEnrolmentMA",
+    "version": "1.0.0"
+}

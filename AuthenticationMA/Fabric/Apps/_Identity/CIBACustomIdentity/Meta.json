@@ -1,0 +1,16 @@
+{
+  "name" : "CIBACustomIdentity",
+  "type" : "custom",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"custom_idp_url\":\"http://mobiletest.firstaden-bank.com:8080/services/CIBAAuthOrchService\",\"provider_params\":{},\"is_mfa_enabled\":true,\"mfa_url\":\"http://mobiletest.firstaden-bank.com:8080/services/CIBAValidationOrchService/validateRequest\",\"tracking_attribute\":\"no_tracking\",\"body_params\":{},\"header_params\":[\"x-kony-app-key\",\"x-kony-app-secret\"],\"pre_mfa_token_timeout\":3,\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"}}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : false,
+  "empty" : true,
+  "mapType" : "java.util.HashMap"
+}

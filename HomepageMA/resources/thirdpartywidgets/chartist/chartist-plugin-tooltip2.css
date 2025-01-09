@@ -1,0 +1,62 @@
+/**
+ * Chartist.js plugin to display a tooltip on top of a chart.
+ * @author  Antonia Ciocodeica
+ * @version 0.1 22 Nov 2016
+ */
+
+.chartist-tooltip {
+    position: absolute;
+    left: 0;
+    top: 75;
+	width: 80px;
+	height: 80px;
+    z-index: 1000;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;	
+}
+    .chartist-tooltip:not([hidden]) {
+        visibility: visible;;
+        transform: none;
+        opacity: 1;
+    }
+
+    /* Tooltip arrow */
+    .chartist-tooltip::before {
+	content: attr(tooltip);
+	position: absolute;
+	opacity: 0;
+	transition: all 0.2s ease;
+          z-index: -1;
+        font-size: 1.3em;
+        line-height: .5em;
+        font-family: Arial, sans-serif;
+        color: rgba(255, 255, 255, 0.9);
+        transform: scaleY(0.7);
+        text-shadow: 0 0.25em 0.35em rgba(0, 0, 0, 0.1);
+		
+    }
+        .chartist-tooltip--left::before {
+            left: 0.75em;
+        }
+        .chartist-tooltip--right::before {
+            left: auto;
+            right: 0.75em;
+        }
+
+/* Adds a small point transition (line charts) when the point is active */
+.ct-point {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Increased specificity intended to overwrite the default chartist style */
+    .ct-chart-line.ct-chart-line .ct-point--hover {
+        stroke-width: 1.50em;
+    }

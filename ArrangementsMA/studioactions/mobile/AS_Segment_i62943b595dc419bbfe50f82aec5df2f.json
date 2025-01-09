@@ -1,0 +1,30 @@
+{
+    "AS_Segment_i62943b595dc419bbfe50f82aec5df2f": {
+        "id": "AS_Segment_i62943b595dc419bbfe50f82aec5df2f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmDepositToCD",
+            "type": "forms",
+            "platform": null,
+            "KUID": "b9bf5f8a519d473ca567f3615129b6cc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b7cef47e8a61408589cbef635404984e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.segTransactionModeRowClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

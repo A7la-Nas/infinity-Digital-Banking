@@ -1,0 +1,18 @@
+{
+    "AS_BarButtonItem_ce4a7103147243539244cca95a8b0f03": {
+        "id": "AS_BarButtonItem_ce4a7103147243539244cca95a8b0f03",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e32e4f357b3a49489cc66d0eee5c53ef",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var enrollMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"EnrollModule\");\nenrollMod.presentationController.commonFunctionForNavigation(\"frmLogin\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

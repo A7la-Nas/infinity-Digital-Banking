@@ -1,0 +1,253 @@
+{
+    "classname": "authValidation",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "i7f3d1b6b9aa4dcfb0d283daf9f036ea",
+                    "paramList": [
+                        {
+                            "name": "payload"
+                        },
+                        {
+                            "name": "successCallback"
+                        },
+                        {
+                            "name": "failureCallback"
+                        }
+                    ],
+                    "propertyKey": "sendSCANotificationRequest",
+                    "pw": {
+                        "displayName": "sendSCANotificationRequest",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d46c081c927a43829dcc74b033f6c091",
+                    "paramList": [],
+                    "propertyKey": "PerformStepdownAction",
+                    "pw": {
+                        "displayName": "PerformStepdownAction",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d1543d1e38284810a7db8db685355d7a",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSuccessCallback",
+                    "pw": {
+                        "displayName": "onSuccessCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b820a8c8e96a45ee8058d7f7e0fb13e2",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onFailureCallback",
+                    "pw": {
+                        "displayName": "onFailureCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bc2fa21774e040718cf08e759cb939c1",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onCancel",
+                    "pw": {
+                        "displayName": "onCancel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "CIBA Request Messages"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "gda3b97800ee47b0986fded7341ffc05",
+                    "originalPropertyKey": "objSeviceName",
+                    "propertyIndex": 1,
+                    "propertyKey": "objSeviceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Sevice Name",
+                        "toolTip": "Object Sevice Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.ProfileManagement.CIBARequestDenied",
+                    "group": "CIBA Request Messages",
+                    "kuid": "bd156a11b58649ffb19bfba325fa70d3",
+                    "originalPropertyKey": "CIBARequestDeniedMsg",
+                    "propertyIndex": 1,
+                    "propertyKey": "CIBARequestDeniedMsg",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "CIBA Request Denied Message",
+                        "toolTip": "CIBA Request Denied Message",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "af29e4525ff6406cae8db80a8fb281f6",
+                    "originalPropertyKey": "objName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "toolTip": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.ProfileManagement.CIBARequestExpired",
+                    "group": "CIBA Request Messages",
+                    "kuid": "ccda498d065a4bc9a591bd51b48d3169",
+                    "originalPropertyKey": "CIBARequestExpiredMsg",
+                    "propertyIndex": 2,
+                    "propertyKey": "CIBARequestExpiredMsg",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "CIBA Request Expired Message",
+                        "toolTip": "CIBA Request Expired Message",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "db73bc8f46e84b93b3be250e05080a96",
+                    "originalPropertyKey": "operationName",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "toolTip": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAObjects",
+                    "group": "General",
+                    "kuid": "i7d106fb9bbf43cd922839d8cc804705",
+                    "originalPropertyKey": "objSeviceName1",
+                    "propertyIndex": 4,
+                    "propertyKey": "objSeviceName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Sevice Name 1",
+                        "toolTip": "Object Sevice Name 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "AuthStatus",
+                    "group": "General",
+                    "kuid": "i6f4e5006eb04d628b25f310ab1530ab",
+                    "originalPropertyKey": "objName1",
+                    "propertyIndex": 5,
+                    "propertyKey": "objName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name 1",
+                        "toolTip": "Object Name 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "fetch",
+                    "group": "General",
+                    "kuid": "fc78a541c73b4657bcf003675576eeeb",
+                    "originalPropertyKey": "operationName1",
+                    "propertyIndex": 6,
+                    "propertyKey": "operationName1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name 1",
+                        "toolTip": "Operation Name 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u93eb54a7eab482e9bad103d8c5829d9",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.sca",
+    "version": "1.0.0"
+}

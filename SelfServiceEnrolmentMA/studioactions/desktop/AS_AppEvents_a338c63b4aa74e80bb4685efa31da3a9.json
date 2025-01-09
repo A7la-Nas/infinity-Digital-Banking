@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_a338c63b4aa74e80bb4685efa31da3a9": {
+        "id": "AS_AppEvents_a338c63b4aa74e80bb4685efa31da3a9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_be32fd5994b74fd7a1739c2596612373",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true);\nkony.print(\"Testing JS Load\");\nvar isIOS13 = (/(iPad|iPhone);.*CPU.*OS 13_\\d/i).test(navigator.userAgent);\nif(isIOS13){\n  kony.application.setApplicationBehaviors({disableForceRepaint: true});\n}\n_kony.mvc.initCompositeApp(true);\nkony.print(\"Testing JS Load\");\nvar isIOS13 = (/(iPad|iPhone);.*CPU.*OS 13_\\d/i).test(navigator.userAgent);\nif (isIOS13) {\n  kony.application.setApplicationBehaviors({\n    disableForceRepaint: true\n  });\n}\nrequire([\"SelfServiceEnrolmentMA/EnrollUImodule/frmEnrollNow\", \"SelfServiceEnrolmentMA/EnrollUImodule/frmEnrollNowController\"], function() {});\n//require([\"AboutUsMA/FeedbackModule/frmCustomerFeedback\", \"AboutUsMA/FeedbackModule/frmCustomerFeedbackController\"], function() {});\n//require([\"AboutUsMA/InformationContentModule/frmContactUsPrivacyTandC\", \"AboutUsMA/InformationContentModule/frmContactUsPrivacyTandCController\"], function() {});\n//require([\"AboutUsMA/InformationContentModule/frmOnlineHelp\", \"AboutUsMA/InformationContentModule/frmOnlineHelpController\"], function() {});\n//require([\"BBAccountsModule/frmBBAccountsLanding\", \"BBAccountsModule/frmBBAccountsLandingController\"], function (){});\n//var authModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthModule\");\n//var ApplicationManager = require('ApplicationManager');\nvar moduleName = 'ApplicationManager';\nrequire([moduleName], function(ApplicationManager){\n  applicationManager = ApplicationManager.getApplicationManager();\n  var config = applicationManager.getConfigurationManager();\n  if(performance.navigation.type===1){\n    config.setBrowserRefreshProperty(\"true\");\n  }\n  var sm = applicationManager.getStorageManager();\n  var langObjFromStorage = sm.getStoredItem(\"langObj\");\n  if (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\n    config.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\n    config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n  } else {\n    config.configurations.setItem(\"LOCALE\", \"en_US\");\n    config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n  }\n  kony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function(){}, function(){});\n  document.body.addEventListener('contextmenu', function(e) {\n    e.preventDefault();\n    alert(kony.i18n.getLocalizedString(\"i18n.general.rightclickdisabled\")); // do something with fooModule\n  })\n});",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,36 @@
+{ 
+  "Application": {},
+  "Forms" : {
+    "ImportLCUIModule/frmIssuance": {
+      "preConditionConfig": [],
+      "destinationConfig":
+      {
+        "callback": "handleFormIssuanceNavigation",
+        "targetForms":
+        [{
+          "friendlyName": "ImportLCUIModule/frmImportLCDashboard",
+          "appName": "TradeFinanceMA"
+        }, {
+          "friendlyName": "ImportLCUIModule/frmImportLCAcknowledgment",
+          "appName": "TradeFinanceMA"
+        }]
+      }
+    },
+    "ImportLCUIModule/frmImportLCAcknowledgment": {
+      "preConditionConfig": [],
+      "destinationConfig":
+      {
+        "callback": "handleFormAckNavigation",
+        "targetForms":
+        [{
+          "friendlyName": "ImportLCUIModule/frmImportLCDashboard",
+          "appName": "TradeFinanceMA"
+        }, {
+          "friendlyName": "ImportLCUIModule/frmIssuance",
+          "appName": "TradeFinanceMA"
+        }]
+      }
+    }
+  },
+  "UIModules" : {} 
+}

@@ -1,0 +1,329 @@
+{
+    "classname": "accSummaryDonutChartNative",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "if6edf18f604476c843d78816f00acd0",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "i68e8ef4471643429796f306f1f50a64",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f75d0f6c821848acb00b7b6f9d699d53",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "requestStart",
+                    "pw": {
+                        "displayName": "requestStart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j6570e3177bc4b3ab14d298c9bca86cb",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "requestEnd",
+                    "pw": {
+                        "displayName": "requestEnd",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Loan Amount Service",
+                "Skins",
+                "Data"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl72727217pxSSPR",
+                    "group": "Skins",
+                    "kuid": "ea9ab791e4c846ac99fdd7c5ff9f6d25",
+                    "originalPropertyKey": "totalTextSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "totalTextSkin",
+                    "pw": {
+                        "displayName": "Total Text Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"data\": \"{$.c.paidInstallmentsCount}\", \"legend\": \"Paid\", \"color\": \"2A9E05\"}",
+                    "group": "Data",
+                    "kuid": "f7b8bfcac1844c6cbf6656e9816c9a24",
+                    "originalPropertyKey": "field1",
+                    "propertyIndex": 1,
+                    "propertyKey": "field1",
+                    "pw": {
+                        "displayName": "Field 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Holdings",
+                    "group": "Loan Amount Service",
+                    "kuid": "f59d2abf06d74dafb459a2c3066a770f",
+                    "originalPropertyKey": "objectServiceName",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName",
+                    "pw": {
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl424242SSPSB35px",
+                    "group": "Skins",
+                    "kuid": "a474b4191e524e42947699de57708aa9",
+                    "originalPropertyKey": "totalNumberSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "totalNumberSkin",
+                    "pw": {
+                        "displayName": "Total Number Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"data\": \"{$.c.overDueInstallmentsCount}\", \"legend\": \"Overdue\", \"color\": \"F9256C\"}",
+                    "group": "Data",
+                    "kuid": "f9367b7698e642baabe6482776d51f91",
+                    "originalPropertyKey": "field2",
+                    "propertyIndex": 2,
+                    "propertyKey": "field2",
+                    "pw": {
+                        "displayName": "Field 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ArrangementDetails",
+                    "group": "Loan Amount Service",
+                    "kuid": "he1f0401e05649179942dc1a65f4c430",
+                    "originalPropertyKey": "objectName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName",
+                    "pw": {
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl72727215pxSSPR",
+                    "group": "Skins",
+                    "kuid": "h7608f61102a415a8783e9ec17132f93",
+                    "originalPropertyKey": "legendSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "legendSkin",
+                    "pw": {
+                        "displayName": "Legend Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getDetails",
+                    "group": "Loan Amount Service",
+                    "kuid": "cf4021c9665b4b32ad2af7796b07f9ae",
+                    "originalPropertyKey": "operationName",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName",
+                    "pw": {
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"data\": \"{$.c.futureInstallmentsCount}\", \"legend\": \"Future\", \"color\": \"E3E3E3\"}",
+                    "group": "Data",
+                    "kuid": "i91cc38ef6c4445eb2cceb75c89b5a7e",
+                    "originalPropertyKey": "field3",
+                    "propertyIndex": 3,
+                    "propertyKey": "field3",
+                    "pw": {
+                        "displayName": "Field 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"accountID\":\"{$.c.accountID}\",\"accountType\":\"{$.c.accountType}\"}",
+                    "group": "Loan Amount Service",
+                    "kuid": "c5f1261e0eb64901b93317b74d2b45a0",
+                    "originalPropertyKey": "criteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "criteria",
+                    "pw": {
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Data",
+                    "kuid": "a4dbef11fcfe4425b5677f0b91ae74c9",
+                    "originalPropertyKey": "field4",
+                    "propertyIndex": 4,
+                    "propertyKey": "field4",
+                    "pw": {
+                        "displayName": "Field 4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl424242SSPSB24px",
+                    "group": "Skins",
+                    "kuid": "f444bc2f08024a75aeb2c27cc008734c",
+                    "originalPropertyKey": "dataSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "dataSkin",
+                    "pw": {
+                        "displayName": "Data Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S1",
+                    "group": "Loan Amount Service",
+                    "kuid": "g554a3c59eeb42638af3a1bb673d3f61",
+                    "originalPropertyKey": "serviceIdentifier",
+                    "propertyIndex": 5,
+                    "propertyKey": "serviceIdentifier",
+                    "pw": {
+                        "displayName": "Service Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Data",
+                    "kuid": "be4706b652744269bb604ebf8ee4320e",
+                    "originalPropertyKey": "field5",
+                    "propertyIndex": 5,
+                    "propertyKey": "field5",
+                    "pw": {
+                        "displayName": "Field 5",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Data",
+                    "kuid": "h103411085974ed9a872811b6c0bc7ca",
+                    "originalPropertyKey": "field6",
+                    "propertyIndex": 6,
+                    "propertyKey": "field6",
+                    "pw": {
+                        "displayName": "Field 6",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j57f44f126eb46b48b3932ed8d52c4f7",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.ArrangementsMA",
+    "version": "1.0.0"
+}

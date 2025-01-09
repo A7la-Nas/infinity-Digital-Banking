@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_adac6893b04a41f2ade141fc8c50bfc8": {
+        "id": "AS_AppEvents_adac6893b04a41f2ade141fc8c50bfc8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b9182e21e5974bf08601fc5bcb6b2a03",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true);\nif(SCAType === \"UNIKEN\") {\n    RDNAAPI = require(\"RDNAAPI.js\");\n    RDNACallback = require(\"RDNACallback.js\");\n    RDNAUtility = require(\"RDNAUtility.js\");\n    Utility = require(\"Utility.js\");\n}\nvar ApplicationManager = require('ApplicationManager');\napplicationManager = ApplicationManager.getApplicationManager();\nkony.application.setApplicationBehaviors({\n        'rtlMirroringInWidgetPropertySetter': true\n    });\ntry {\n  // require('objectSvcMeta.js');\n  applicationManager.preappInitCalls();\n  var sm = applicationManager.getStorageManager();\n  var config = applicationManager.getConfigurationManager();\n  config.configurations.setItem('CURRENCYCODE', 'USD');\n  var langObjFromStorage = sm.getStoredItem(\"langObj\");\n  if (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\n    config.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\n    config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n  } else {\n    config.configurations.setItem(\"LOCALE\", \"ar_AE\");\n    config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"ar_AE\"]);\n  }\n  var theme = sm.getStoredItem(\"themeDetails\")\n          if(kony.sdk.isNullOrUndefined(theme) )\n            theme=\"default\";\n            kony.theme.setCurrentTheme(theme, function() {\n                kony.print(\"Theme Change: Success\")\n            }, function() {\n                kony.print(\"Theme Change: Failed\")\n            });\n  kony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function() {}, function() {});\n  config.setStartupLocaleAndDateFormat();\n} catch (err) {\n  alert(err);\n}",
+            "parentId": null
+        }]
+    }
+}

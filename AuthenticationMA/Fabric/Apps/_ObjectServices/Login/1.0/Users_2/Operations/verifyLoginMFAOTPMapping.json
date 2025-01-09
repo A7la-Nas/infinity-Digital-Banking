@@ -1,0 +1,48 @@
+{
+  "customCode" : {
+    "requestProcessorName" : "com.kony.dbputilities.mfa.preprocessors.VerifyLoginMFAOTPPreprocessor",
+    "responseProcessorName" : "com.kony.dbputilities.mfa.postprocessors.VerifyLoginMFAOTPPostProcessor"
+  },
+  "operationConfig" : {
+    "name" : "VerifyLoginMFAOTP1345",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"Otp\" outputpath=\"OTP\"/><set-param inputpath=\"securityKey\" outputpath=\"securityKey\"/><set-param inputpath=\"serviceKey\" outputpath=\"serviceKey\"/><set-param inputpath=\"serviceName\" outputpath=\"serviceName\"/></map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><set-param inputpath=\"remainingFailedAttempts\" outputpath=\"remainingFailedAttempts\"/><set-param inputpath=\"isOTPExpired\" outputpath=\"isOTPExpired\"/><set-param inputpath=\"dbpErrCode\" outputpath=\"dbpErrCode\"/><set-param inputpath=\"maxFailedAttemptsAllowed\" outputpath=\"maxFailedAttemptsAllowed\"/><set-param inputpath=\"logoutUser\" outputpath=\"logoutUser\"/><set-param inputpath=\"success\" outputpath=\"success\"/><set-param inputpath=\"failedAttempts\" outputpath=\"failedAttempts\"/><set-param inputpath=\"lockUser\" outputpath=\"lockUser\"/><set-param inputpath=\"remainingResendAttempts\" outputpath=\"remainingResendAttempts\"/><set-param inputpath=\"sacMaxResendRequestsAllowed\" outputpath=\"sacMaxResendRequestsAllowed\"/><set-param inputpath=\"dbpErrMsg\" outputpath=\"dbpErrMsg\"/><set-param inputpath=\"lockoutTime\" outputpath=\"lockoutTime\"/></map></mapper>",
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "authMFAServices",
+      "serviceVersion" : "1.0",
+      "operationName" : "VerifyLoginMFAOTP"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Users_2",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"Otp\" outputpath=\"OTP\"/><set-param inputpath=\"securityKey\" outputpath=\"securityKey\"/><set-param inputpath=\"serviceKey\" outputpath=\"serviceKey\"/><set-param inputpath=\"serviceName\" outputpath=\"serviceName\"/></map></mapper>",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><set-param inputpath=\"remainingFailedAttempts\" outputpath=\"remainingFailedAttempts\"/><set-param inputpath=\"isOTPExpired\" outputpath=\"isOTPExpired\"/><set-param inputpath=\"dbpErrCode\" outputpath=\"dbpErrCode\"/><set-param inputpath=\"maxFailedAttemptsAllowed\" outputpath=\"maxFailedAttemptsAllowed\"/><set-param inputpath=\"logoutUser\" outputpath=\"logoutUser\"/><set-param inputpath=\"success\" outputpath=\"success\"/><set-param inputpath=\"failedAttempts\" outputpath=\"failedAttempts\"/><set-param inputpath=\"lockUser\" outputpath=\"lockUser\"/><set-param inputpath=\"remainingResendAttempts\" outputpath=\"remainingResendAttempts\"/><set-param inputpath=\"sacMaxResendRequestsAllowed\" outputpath=\"sacMaxResendRequestsAllowed\"/><set-param inputpath=\"dbpErrMsg\" outputpath=\"dbpErrMsg\"/><set-param inputpath=\"lockoutTime\" outputpath=\"lockoutTime\"/></map></mapper>",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : true,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

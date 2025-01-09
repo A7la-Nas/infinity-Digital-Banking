@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_ed57e4e339b14187bc1493456ecd86ec": {
+        "id": "AS_AppEvents_ed57e4e339b14187bc1493456ecd86ec",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_e40f9e3b8183491eb334c4a95b2d271b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.mvc.MDAApplication.getSharedInstance().appContext.deeplinkUrl={\n  deeplinkpath:eventobject.deeplinkpath,\n  formID:eventobject.formID,\n}",
+            "parentId": null
+        }]
+    }
+}

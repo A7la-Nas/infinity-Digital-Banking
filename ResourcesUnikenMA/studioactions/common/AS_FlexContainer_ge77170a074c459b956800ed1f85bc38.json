@@ -1,0 +1,33 @@
+{
+    "AS_FlexContainer_ge77170a074c459b956800ed1f85bc38": {
+        "id": "AS_FlexContainer_ge77170a074c459b956800ed1f85bc38",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "contextObj": {
+            "name": "userwidgetmodel",
+            "type": "userwidgets",
+            "KUID": "u1c4b6a761ee4d4bb53d9696ae8b7ed1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__a5379dff592146909aa03a0e98850f48",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBreakpointChange",
+            "display": "onBreakpointChange",
+            "inputparams": [{
+                "name": "breakpoint",
+                "value": " breakpoint"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

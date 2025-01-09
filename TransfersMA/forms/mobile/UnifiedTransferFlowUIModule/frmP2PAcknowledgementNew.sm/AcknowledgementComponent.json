@@ -1,0 +1,74 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-1dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "dataMapping": "{\n  \"fieldValue1\":\"${CNTX.referenceId}\",\n  \"fieldValue2\":\"${CNTX.formattedfromAccountName}\",\n  \"fieldValue3\":\"${CNTX.formattedtoAccountName}\",\n  \"fieldValue4\":\"${CNTX.currency}\",\n  \"fieldValue5\":\"${CNTX.formattedTransferAmount}\",\n  \"fieldValue6\":\"${CNTX.fxRateReference}\",\n  \"fieldValue7\":\"${CNTX.exchangeRate}\",\n  \"fieldValue8\":\"${CNTX.frequencyType}\",\n  \"fieldValue9\":\"${CNTX.sendOnUI}\",\n  \"fieldValue10\":\"${CNTX.startDateUI}\",\n  \"fieldValue11\":\"${CNTX.endDateUI}\",\n  \"fieldValue12\":\"${CNTX.accountNumber}\",\n  \"fieldValue13\":\"${CNTX.selectedFeesPaidBy}\",\n  \"fieldValue14\":\"${CNTX.intermidiaryBic}\",\n  \"fieldValue15\":\"${CNTX.e2eReference}\",\n  \"fieldValue17\":\"${CNTX.swiftCode}\",\n  \"fieldValue18\":\"${CNTX.beneficiaryPhone}\",\n  \"fieldValue19\":\"${CNTX.beneficiaryEmail}\",\n  \"fieldValue20\":\"${CNTX.TXNFEE}\",\n  \"fieldValue21\":\"${CNTX.BROKERFEE}\",\n  \"fieldValue22\":\"${CNTX.AUDITFEE}\",\n  \"fieldValue24\":\"${CNTX.dueDate}\",\n  \"lblFailDescription\":\"${CNTX.dbpErrMsg}\",\n  \"lblNotesValue\":\"${CNTX.transactionsNotes}\",\n  \"supportingDocuments\":\"${CNTX.successfulUploads}\",\n  \"lblAddress1\":\"${CNTX.addressLine1}\",\n  \"lblAddress2\":\"${CNTX.addressLine2}\",\n  \"lblMobileValue\":\"${CNTX.phone}\",\n  \"lblEmailValue\":\"${CNTX.email}\",\n  \"lblCityValue\":\"${CNTX.city}\",\n  \"lblStateValue\":\"${CNTX.state}\",\n  \"lblCountryValue\":\"${CNTX.country}\",\n  \"lblPostalCodeValue\":\"${CNTX.zipcode}\",\n  \"transactionID\":\"${CNTX.referenceId}\",\n  \"payeeType\":\"${CNTX.payeeFlow}\",\n  \"transferType\":\"${CNTX.transferType}\",\n  \"btnSuccessAction1\":\"${CNTX.btn1Text}\",\n  \"btnSuccessAction2\":\"${CNTX.btn2Text}\",\n  \"btnSuccessAction3\":\"${CNTX.btn3Text}\",\n  \"btnSuccessAction4\":\"${CNTX.btn4Text}\",\n  \"btnFailureAction1\":\"${CNTX.btnFailText}\",\n  \"errorDetails\":\"${CNTX.errorDetails}\",\n  \"maxLength\":\"0\",\n  \"lblFailTitle\":\"${CNTX.dbpErrMsg}\",\n  \"lblSuccess\":\"${i18n{kony.mb.loans.PostedTransferMessage}}\",\n  \"originalDocuments\":\"${CNTX.originalDocuments}\",\n  \"lblNotesLabel\":\"${i18n{kony.i18n.verifyDetails.note}}\",\n  \"lblAddressLabel\":\"${i18n{kony.mb.TransfersEurope.BenAddress}}\",\n  \"lblMobileLabel\":\"${i18n{kony.mb.ProfilePersonalDetails.Mobile}}\",\n  \"lblEmailLabel\":\"${i18n{i18n.ProfileManagement.EmailId}}\",\n  \"lblCityLabel\":\"${i18n{kony.tab.common.City}}\",\n  \"lblStateLabel\":\"${i18n{i18n.common.state}}\",\n  \"lblCountryLabel\":\"${i18n{kony.tab.common.Country}}\",\n  \"lblPostalCodeLabel\":\"${i18n{kony.mb.common.ZipCode}}\",\n  \"lblDocuementsLabel\":\"${i18n{i18n.TransfersEur.SupportingDocuments}}\",\n  \"lblAcknowledgement\":\"${i18n{kony.mb.MM.Acknowledgement}}\",\n  \"fieldLabel1\": \"${i18n{i18n.wealth.acknowledgement.refID}}\",\n  \"fieldLabel2\": \"${i18n{kony.mb.common.from}:}\",\n  \"fieldLabel3\": \"${i18n{kony.mb.common.To}:}\",\n  \"fieldLabel4\": \"${i18n{i18n.WireTransfer.TransferCurrency}:}\",\n  \"fieldLabel5\": \"${i18n{kony.mb.common.Amount}:}\",\n  \"fieldLabel6\": \"${i18n{kony.i18n.verifyDetails.fxRateReference}:}\",\n  \"fieldLabel7\": \"${i18n{i18n.TransfersEur.ExchangeRate}:}\",\n  \"fieldLabel8\": \"${i18n{kony.mb.transaction.frequency}:}\",\n  \"fieldLabel9\": \"${i18n{kony.i18n.verifyDetails.sendOn}}\",\n  \"fieldLabel10\": \"${i18n{kony.mb.common.StartDate}:}\",\n  \"fieldLabel11\": \"${i18n{kony.i18n.verifyDetails.endDate}}\",\n  \"fieldLabel12\": \"${i18n{kony.i18n.verifyDetails.accountNumber}}\",\n  \"fieldLabel13\": \"${i18n{i18n.TransfersEur.FeesPaidBy}:}\",\n  \"fieldLabel14\": \"${i18n{kony.i18n.verifyDetails.intermediatoryBIC}:}\",\n  \"fieldLabel15\": \"${i18n{kony.i18n.verifyDetails.e2eReference}}\",\n  \"fieldLabel16\": \"${i18n{kony.mb.TransfersEurope.PaymentMethodColon}}\",\n  \"fieldLabel17\": \"${i18n{i18n.TransfersEur.BICSWIFT}:}\",\n  \"fieldLabel18\": \"${i18n{i18n.ProfileManagement.PhoneNumber}}\",\n  \"fieldLabel19\": \"${i18n{i18n.P2PActivation.Email}}\",\n  \"fieldLabel20\": \"${i18n{kony.i18n.verifyDetails.transactionFee}}\",\n  \"fieldLabel21\": \"${i18n{kony.i18n.verifyDetails.brokerFee}:}\",\n  \"fieldLabel22\": \"${i18n{kony.i18n.verifyDetails.transferCharges}:}\",\n  \"fieldLabel23\": \"${i18n{kony.mb.Europe.ServiceCharge}:}\",\n  \"fieldLabel24\": \"${i18n{kony.i18n.verifyDetails.dueDate}:}\"\n}",
+        "field13Value": "{\"text\":\"{$.c.selectedFeesPaidBy}\",\"fieldType\":\"label\"}",
+        "field14Label": "Email Address:",
+        "field14Value": "{\"text\":\"{$.c.emailAddress}\",\"fieldType\":\"label\"}",
+        "field15Label": "{i.kony.i18n.verifyDetails.exchangeRate}:",
+        "field15Value": "{\"text\":\"{$.c.exchangeRate}\",\"fieldType\":\"label\"}",
+        "field16Label": "{i.kony.i18n.verifyDetails.totalDebitAmount}:",
+        "field16Value": "{\"text\":\"{$.c.totalAmount}\",\"fieldType\":\"label\"}",
+        "field17Label": "",
+        "field17Value": "",
+        "field18Label": "",
+        "field18Value": "",
+        "field19Label": "",
+        "field19Value": "",
+        "field6Label": "Payment Method:",
+        "field6Value": "{ \"text\": \"{$.c.paymentType}\", \"fieldType\": \"label\" }",
+        "field7Label": "Phone Number:",
+        "field7Value": "{\"text\":\"{$.c.phoneNumber}\",\"fieldType\":\"label\"}",
+        "field9Label": "{i.kony.i18n.verifyDetails.sendOn}:"
+    },
+    "id": "AcknowledgementComponent",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "cd048faf0a4640d1bb434fd3c2d8add6",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxContents",
+    "pf": "frmP2PAcknowledgementNew",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "c52fdf7fdc114e97af8ff9ba02f7d40f",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

@@ -1,0 +1,495 @@
+{
+    "classname": "activateNow",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "cb3aaa9cbc0e46b0be7d701d9eba80db",
+                    "paramList": [],
+                    "propertyKey": "resetUI",
+                    "pw": {
+                        "displayName": "resetUI",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "g40fba8fc34d4f0db3f0e4de656daac9",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "closeActivateProfile",
+                    "pw": {
+                        "displayName": "closeActivateProfile",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e7406e05c1324ebab41519bb005bae91",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "cantSignIn",
+                    "pw": {
+                        "displayName": "cantSignIn",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e2075b8264d0481aac31dc56e1ab6c59",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "generateQRCode",
+                    "pw": {
+                        "displayName": "generateQRCode",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fce31e9ea61248c79dd96b77f3c96a3a",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "clearUserNameAndActivationCode",
+                    "pw": {
+                        "displayName": "clearUserNameAndActivationCode",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Skins",
+                "FontIcons",
+                "Object Service Details",
+                "Error Messages",
+                "Integration Service Details"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"normal\":\"sknBtnNormalSSPFFFFFF15Px\", \"hoverSkin\":\"sknBtnNormalSSPFFFFFFHover15Px\", \"focusSkin\":\"sknBtnNormalSSPFFFFFF15PxFocus\"}",
+                    "group": "Skins",
+                    "kuid": "i9fdb40b2fb445f5821c035ee08480f5",
+                    "originalPropertyKey": "primaryBtnEnableSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "primaryBtnEnableSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Btn Enable Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "N",
+                    "group": "FontIcons",
+                    "kuid": "be3b6a6fb3db480699dd80eb734bc469",
+                    "originalPropertyKey": "tickFontIcon",
+                    "propertyIndex": 1,
+                    "propertyKey": "tickFontIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Tick Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAUniken",
+                    "group": "Object Service Details",
+                    "kuid": "f18324a1a49b493a8b3e8993857ddc1c",
+                    "originalPropertyKey": "objectName",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Unable to set password.Please try again.",
+                    "group": "Error Messages",
+                    "kuid": "e69e8dcaeeb14f378ec70d592ffdb082",
+                    "originalPropertyKey": "setPasswordErrorMessage",
+                    "propertyIndex": 1,
+                    "propertyKey": "setPasswordErrorMessage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "setPassword error message",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "services",
+                    "group": "Integration Service Details",
+                    "kuid": "e24b3469490343b5bf6db54fbcb8e064",
+                    "originalPropertyKey": "integrationName",
+                    "propertyIndex": 1,
+                    "propertyKey": "integrationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Integration Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"normal\":\"sknBtnBlockedSSP0273e315px\", \"hoverSkin\":\"sknBtnBlockedSSP0273e315px\", \"focusSkin\":\"sknBtnBlockedSSP0273e315px\"}",
+                    "group": "Skins",
+                    "kuid": "c4eeb2d7dd0c43c498757fe2284c42b9",
+                    "originalPropertyKey": "primaryBtnDisableSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "primaryBtnDisableSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Btn Disable Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "K",
+                    "group": "FontIcons",
+                    "kuid": "a9aad296da614c6fbd02cd77b8526c20",
+                    "originalPropertyKey": "exclamationFontIcon",
+                    "propertyIndex": 2,
+                    "propertyKey": "exclamationFontIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Exclamation Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCADevice",
+                    "group": "Object Service Details",
+                    "kuid": "b02acce9f46c4d53bfaf31e9e26fecde",
+                    "originalPropertyKey": "objectService",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Your activation code has expired. Please select “Can’t Sign In” to regenerate a new activation code",
+                    "group": "Error Messages",
+                    "kuid": "b7ab2efe06c54a908354d2acaa35c77c",
+                    "originalPropertyKey": "expiredActivationCode",
+                    "propertyIndex": 2,
+                    "propertyKey": "expiredActivationCode",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Activation code expired error Msg",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SCAScimApis",
+                    "group": "Integration Service Details",
+                    "kuid": "iddf28eac57b4cf5b2c7a310541b231e",
+                    "originalPropertyKey": "integrationService",
+                    "propertyIndex": 2,
+                    "propertyKey": "integrationService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Integration Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"normalSkin\":\"sknBorderE3E3E3\", \"focusSkin\":\"sknFlxBorder4A90E23px\", \"errorSkin\":\"sknborderff0000error\"}",
+                    "group": "Skins",
+                    "kuid": "h7fce5c900664179916c87e9c9c8dcb7",
+                    "originalPropertyKey": "textBoxSkins",
+                    "propertyIndex": 3,
+                    "propertyKey": "textBoxSkins",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Textbox Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "verifyExtCode",
+                    "group": "Object Service Details",
+                    "kuid": "fa986d0717964b13a5be4bd28c42d3b1",
+                    "originalPropertyKey": "activationCodeValidationOperation",
+                    "propertyIndex": 3,
+                    "propertyKey": "activationCodeValidationOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ActivationCodeValidationOperationName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Your activation code is blocked. Please select “Can’t Sign In” to regenerate a new activation code",
+                    "group": "Error Messages",
+                    "kuid": "i9724e2ba71f4a8e9737828da146ada4",
+                    "originalPropertyKey": "activationCodeBlock",
+                    "propertyIndex": 3,
+                    "propertyKey": "activationCodeBlock",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Activation code blocked",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getDevice",
+                    "group": "Integration Service Details",
+                    "kuid": "b89b322605a04d59b5985ffff171686b",
+                    "originalPropertyKey": "getDeviceOperation",
+                    "propertyIndex": 3,
+                    "propertyKey": "getDeviceOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "getDeviceOperationName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFontIcon2a9e07Bgffffont18pxOlbFontIcon",
+                    "group": "Skins",
+                    "kuid": "eb49df210efe4dea873e3fadc6065920",
+                    "originalPropertyKey": "successIconSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "successIconSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Font Icon Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "createPassword",
+                    "group": "Object Service Details",
+                    "kuid": "g92502d016f84cdea47e254a3cd5fdb0",
+                    "originalPropertyKey": "setPasswordOperation",
+                    "propertyIndex": 4,
+                    "propertyKey": "setPasswordOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "SetPasswordOperationName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFontIconffa909Bgffffont18pxOlbFontIcon",
+                    "group": "Skins",
+                    "kuid": "a7edb58cdeaf4cd68ec35e3e31f0694e",
+                    "originalPropertyKey": "warningIconSkin",
+                    "propertyIndex": 5,
+                    "propertyKey": "warningIconSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Warning Font Icon Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Object Service Details",
+                    "kuid": "ae4f5680ab8141b08bf7568a4fa054e4",
+                    "originalPropertyKey": "passwordRulesAndPoliciesOperation",
+                    "propertyIndex": 5,
+                    "propertyKey": "passwordRulesAndPoliciesOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "passwordRulesAndPoliciesOperationName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "fetch",
+                    "group": "Object Service Details",
+                    "kuid": "fb77411e29d844bea6c4c23fc17ee7ec",
+                    "originalPropertyKey": "fetchOperationName",
+                    "propertyIndex": 6,
+                    "propertyKey": "fetchOperationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fetchOperationName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "createDevice",
+                    "group": "Object Service Details",
+                    "kuid": "h52be677c4fd42a69ee8ae899b5a462c",
+                    "originalPropertyKey": "createDeviceOperation",
+                    "propertyIndex": 7,
+                    "propertyKey": "createDeviceOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "CreateDeviceOperationName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PasswordPolicy",
+                    "group": "Object Service Details",
+                    "kuid": "cc8e8e5aa1e84a0c9ed70515d2238330",
+                    "originalPropertyKey": "passwordPolicyService",
+                    "propertyIndex": 8,
+                    "propertyKey": "passwordPolicyService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "PasswordPolicyService",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "generateActivationQRCode",
+                    "group": "Object Service Details",
+                    "kuid": "a48564aa8124464c81b7a5b6c2ebc3be",
+                    "originalPropertyKey": "ActivationQRCodeOperationName",
+                    "propertyIndex": 9,
+                    "propertyKey": "ActivationQRCodeOperationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ActivationQRCodeOperationName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getDevices",
+                    "group": "Object Service Details",
+                    "kuid": "f01e702db83e4e2e8bba55a2a3b1a13a",
+                    "originalPropertyKey": "getDevicesOparationName",
+                    "propertyIndex": 10,
+                    "propertyKey": "getDevicesOparationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "getDevicesOparationName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u83283874d4d41ba9f629b46c95f7ca9",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.sca.uniken",
+    "version": "1.0.0"
+}

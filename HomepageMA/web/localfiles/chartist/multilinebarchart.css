@@ -1,0 +1,220 @@
+/*Type your css here*/
+@font-face {
+  font-family: 'SourceSansProRegular';
+  src: url('sspr.eot'); /* Compatibility */
+  src: url('sspr.eot?#iefix') format('embedded-opentype'), /* Compatibility with clearview fix */
+       url('sspr.woff2') format('woff2'), /* iOS 14+ */
+       url('sspr.woff') format('woff'), /* iOS 9 - 13 */
+       url('sspr.ttf')  format('truetype'), /* Android */
+       url('sspr.svg#SourceSansProRegular') format('svg'); /* Legacy iOS */
+}
+.bgContainer{
+  position:absolute;
+  left:0%;
+  top:20%;
+  height:80%;
+  width:100%;
+  background: #3d4827;
+}
+.valueContainer{
+  position:absolute;
+  left:0%;
+  top:0%;
+  height:20%;
+  width:100%;
+  background: #3d4827;
+}
+.box {
+  float: left;
+  height: 10px;
+  width: 10px;
+  margin-bottom: 15px;
+  clear: both;
+}
+.labelName{
+	color: white;
+	font-size: 12px;
+    font-family: 'SourceSansProRegular';
+}
+
+#credit {
+  position:absolute;
+  left: 150%;
+  top: -140%;
+}
+
+#debit {
+  position:absolute;
+  left: 150%;
+  top: -140%;
+}
+
+#available {
+  position:absolute;
+  left: 150%;
+  top: -140%;
+  width: 1000%;
+}
+.creditValue {
+  
+  background-color: #B0DAFF;
+  position:absolute;
+  left: 5%;
+  top: 90%;
+}
+
+.debitValue {
+  
+  background-color: #B0DAFF;
+  position:absolute;
+  left: 5%;
+  top: 90%;
+}
+
+.availableValue {
+  
+  background-color: #B0DAFF;
+  position:absolute;
+  left: 5%;
+  top: 90%;
+}
+
+.credit {
+  
+  background-color: #B0DAFF;
+  position:absolute;
+  left: 5%;
+  top: 10%;
+}
+
+.debit {
+  position:absolute;
+  left: 5%;
+  top: 10%;
+  background-color: white;
+}
+
+.available {
+  position:absolute;
+  left: 5%;
+  top: 10%;
+  background-color: #3E6F9A;
+}
+
+.innerContainer{
+  position:absolute;
+  left:4%;
+  top:10%;
+  height:70%;
+  width:92%;
+  background: #3d4827;
+}
+.triangleContainer{
+  position:absolute;
+  left:4%;
+  top:80%;
+  height:10%;
+  width:92%;
+}
+#triangle{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #3d4827;
+}
+.creditContainer{
+  position:absolute;
+  left:0%;
+  top:0%;
+  height:100%;
+  width:33.3%;
+}
+.separator.first{
+  position:absolute;
+  left:33.3%;
+  top:10%;
+  height:80%;
+  width:1px;
+  background: white;
+  opacity: 15%;
+}
+.separator.second{
+  position:absolute;
+  left:66.6%;
+  top:10%;
+  height:80%;
+  width:1px;
+  background: white;
+  opacity: 15%;
+}
+.debitContainer{
+  position:absolute;
+  left:33.3%;
+  top:0%;
+  height:100%;
+  width:33.3%;
+}
+.availableContainer{
+  position:absolute;
+  left:66.6%;
+  top:0%;
+  height:100%;
+  width:33.4%;
+}
+
+.spendingContainer{
+  position:absolute;
+  left:0px;
+  right:0px;
+  height:160px;
+  top:35px;
+  background-color:rgba(0,0,0,0);
+  
+}
+
+.ct-series-a .ct-bar {
+  /* Set the colour of this series line */
+  stroke: #B0DAFF;
+  /* Control the thikness of your lines */
+  stroke-width: 8px;
+  
+}
+.ct-series-a .ct-point {
+  /* Colour of your points */
+  stroke: #05D5B4;
+  /* Size of your points */
+  stroke-width: 10px;
+  
+}
+
+
+.ct-label.ct-horizontal.ct-end{
+  color: white !important;
+  font-size:8px;
+}
+.ct-label{
+  color: white;
+  font-size:8px;
+}
+.ct-series-b .ct-bar{
+	stroke: white;
+  /* Control the thikness of your lines */
+  stroke-width: 8px;
+	
+}
+.ct-series-c .ct-bar{
+	stroke: #3E6F9A;
+  /* Control the thikness of your lines */
+  stroke-width: 8px;
+  
+	
+}
+.dataContainer{
+	height:200px;
+	width: 100px;
+	color: white;
+}
+
+

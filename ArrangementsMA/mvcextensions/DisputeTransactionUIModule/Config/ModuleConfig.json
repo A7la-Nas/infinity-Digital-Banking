@@ -1,0 +1,83 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "DisputeTransactionUIModule/PresentationControllers/PresentationController"
+        },
+        "Mobile": {
+            "PresentationControllerClass": "DisputeTransactionUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": []
+        }
+    },
+    "Forms": {
+        "desktop": {
+            "frmConfirmDisputeTransaction": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "DisputeTransactionUIModule/frmConfirmDisputeTransactionController",
+                "FormName": "DisputeTransactionUIModule/frmConfirmDisputeTransaction",
+                "friendlyName": "frmConfirmDisputeTransaction"
+            },
+            "frmDisputedTransactionsList": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "DisputeTransactionUIModule/frmDisputedTransactionsListController",
+                "FormName": "DisputeTransactionUIModule/frmDisputedTransactionsList",
+                "friendlyName": "frmDisputedTransactionsList"
+            },
+            "frmDisputeTransactionAcknowledgement": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "DisputeTransactionUIModule/frmDisputeTransactionAcknowledgementController",
+                "FormName": "DisputeTransactionModule/frmDisputeTransactionAcknowledgement",
+                "friendlyName": "frmDisputeTransactionAcknowledgement"
+            },
+            "frmDisputeTransactionDetail": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "DisputeTransactionUIModule/frmDisputeTransactionDetailController",
+                "FormName": "DisputeTransactionUIModule/frmDisputeTransactionDetail",
+                "friendlyName": "frmDisputeTransactionDetail"
+            }
+        },
+		"mobile": {
+            "frmDisputeTransactionDetails": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "DisputeTransactionUIModule/frmDisputeTransactionDetailsController",
+                "FormName": "DisputeTransactionUIModule/frmDisputeTransactionDetails",
+                "friendlyName": "frmDisputeTransactionDetails"
+            },
+            "frmDisputedTransactionsList": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "DisputeTransactionUIModule/frmDisputedTransactionsListController",
+                "FormName": "DisputeTransactionUIModule/frmDisputedTransactionsList",
+                "friendlyName": "frmDisputedTransactionsList"
+            },
+			"frmDTAcknowledgement": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "DisputeTransactionUIModule/frmDTAcknowledgementController",
+                "FormName": "DisputeTransactionUIModule/frmDTAcknowledgement",
+                "friendlyName": "frmDTAcknowledgement"
+            },
+            "frmDisputeReason": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "DisputeTransactionUIModule/frmDisputeReasonController",
+                "FormName": "DisputeTransactionUIModule/frmDisputeReason",
+                "friendlyName": "frmDisputeReason"
+            },
+            "frmDTConfirm": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "DisputeTransactionUIModule/frmDTConfirmController",
+                "FormName": "DisputeTransactionUIModule/frmDTConfirm",
+                "friendlyName": "frmDTConfirm"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "DisputeTransactionUIModule"
+}

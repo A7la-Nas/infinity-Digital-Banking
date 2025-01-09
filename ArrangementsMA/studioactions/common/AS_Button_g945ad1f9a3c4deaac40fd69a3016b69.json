@@ -1,0 +1,23 @@
+{
+    "AS_Button_g945ad1f9a3c4deaac40fd69a3016b69": {
+        "id": "AS_Button_g945ad1f9a3c4deaac40fd69a3016b69",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "userwidgetmodel",
+            "type": "userwidgets",
+            "KUID": "u694d82bae5d41058e82f2c283bff61f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c69a7e2b480142e7947173eff258e7b4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var currForm = kony.application.getCurrentForm();\nif(currForm.flxEditRule.isVisible == true){\n  currForm.flxEditRule.isVisible = false;\n}else{\n  currForm.flxEditRule.isVisible = true;\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

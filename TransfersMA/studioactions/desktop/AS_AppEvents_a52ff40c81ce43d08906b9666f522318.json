@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_a52ff40c81ce43d08906b9666f522318": {
+        "id": "AS_AppEvents_a52ff40c81ce43d08906b9666f522318",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c92501c9007b4360b1366050a2bf69ab",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true);\nkony.print(\"Testing JS Load\");\nvar isIOS13 = (/(iPad|iPhone);.*CPU.*OS 13_\\d/i).test(navigator.userAgent);\nif(isIOS13){\nkony.application.setApplicationBehaviors({disableForceRepaint: true});\n}\nvar moduleName = 'ApplicationManager';\nrequire([moduleName], function(ApplicationManager){\napplicationManager = ApplicationManager.getApplicationManager();\nvar config = applicationManager.getConfigurationManager();\nif(performance.navigation.type===1){\nconfig.setBrowserRefreshProperty(\"true\");\n}\nvar sm = applicationManager.getStorageManager();\nvar langObjFromStorage = sm.getStoredItem(\"langObj\");\nif (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\nconfig.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\nconfig.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n} else {\nconfig.configurations.setItem(\"LOCALE\", \"en_US\");\nconfig.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n}\nkony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function(){}, function(){});\napplicationManager.getConfigurationManager().fetchApplicationProperties(function(res) {\napplicationManager.getNavigationManager().updateForm({\nisLanguageSelectionEnabled: res.isLanguageSelectionEnabled\n}, \"frmLogin\");\nif (config.isAppPropertiesLoaded === \"false\") {\nconfig.setAppProperties(\"true\");\nkony.application.dismissLoadingScreen();\n}\n//config.fetchClientSideConfigurations();\n}, function() {\nkony.application.dismissLoadingScreen();\n});\ndocument.body.addEventListener('contextmenu', function(e) {\ne.preventDefault();\nalert(kony.i18n.getLocalizedString(\"i18n.general.rightclickdisabled\")); // do something with fooModule\n})\n});",
+            "parentId": null
+        }]
+    }
+}

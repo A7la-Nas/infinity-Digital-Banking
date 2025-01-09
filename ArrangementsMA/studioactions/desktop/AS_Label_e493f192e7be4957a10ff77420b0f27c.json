@@ -1,0 +1,32 @@
+{
+    "AS_Label_e493f192e7be4957a10ff77420b0f27c": {
+        "id": "AS_Label_e493f192e7be4957a10ff77420b0f27c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segRequestsSelected",
+            "type": "templates",
+            "platform": "",
+            "KUID": "c531b699be6d4964a389a97f651a7d6a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b1a3d5e2880242c5abddcfe045dacbea",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onRequestSelection(context);",
+            "parentId": null
+        }]
+    }
+}

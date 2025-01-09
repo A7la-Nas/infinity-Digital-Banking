@@ -1,0 +1,33 @@
+{
+    "BusinessControllerConfig": {
+        "BusinessControllerClass": "EnrollModule/BusinessControllers/BusinessController",
+        "CommandHandler": []
+    },
+    "Forms": {
+        "desktop": {
+            "frmEnrollNow": {
+                "Controller": "EnrollUIModule/frmEnrollNowController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "EnrollUIModule/frmEnrollNow",
+                "friendlyName": "frmEnrollNow"
+            },
+			"frmEnrollBusiness": {
+                "Controller": "EnrollUIModule/frmEnrollBusinessController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "EnrollUIModule/frmEnrollBusiness",
+                "friendlyName": "frmEnrollBusiness"
+            },
+        }
+    },
+    "ModuleName": "EnrollModule",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "EnrollModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": [
+                "EnrollModule/PresentationControllers/PresentationController_Extn"
+            ]
+        }
+    }
+}

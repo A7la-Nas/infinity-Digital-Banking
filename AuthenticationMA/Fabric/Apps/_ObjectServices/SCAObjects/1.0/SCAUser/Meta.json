@@ -1,0 +1,19 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "validateTransaction" : "validateTransactionMapping",
+    "updateMyStatus" : "updateMyStatusMapping",
+    "checkPasswordAuthenticatorForUser" : "checkPasswordAuthenticatorForUserMapping",
+    "updateMyProfileDetails" : "updateMyProfileDetailsMapping",
+    "changeOLBPassword" : "changeOLBPasswordMapping",
+    "createOLBPassword" : "createOLBPasswordMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

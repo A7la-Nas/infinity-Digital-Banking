@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="SetAlertPreferences" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://_$_AC_HOST_URL_$_/services/data/v1/AlertAndAlertTypes/operations/alertPreference/setAlertPreferences"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="urlprovider" value="com.kony.dbputilities.util.ServiceURLProvider"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="X-Kony-AC-API-Access-By" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="X-Kony-Integrity-Salt" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="X-Kony-Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="expression" sourcevalue="$Request.backendToken" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="isSubscribed" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="alertCategoryId" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="accountId" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="alertSubscription" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="customerId" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="accountTypeId" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="collection" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="accounts" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="customerTypeStr" order="" paramOrder="8" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="backendId" order="" paramOrder="9" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="legalEntityId" order="" paramOrder="10" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10;#if($isSubscribed)&#10;&quot;isSubscribed&quot;:'$isSubscribed',&#10;#end&#10;#if($alertCategoryId)&#10;&quot;alertCategoryId&quot;:'$alertCategoryId',&#10;#end&#10;#if($accountId)&#10;&quot;accountId&quot;:'$accountId',&#10;#end&#10;#if($accountTypeId)&#10;&quot;accountTypeId&quot;:'$accountTypeId',&#10;#end&#10;#if($legalEntityId)&#10;&quot;legalEntityId&quot;:'$legalEntityId',&#10;#end&#10;#if($alertSubscription)&#10;&quot;alertSubscription&quot;:'$alertSubscription',&#10;#end&#10;&quot;accounts&quot;: [ #foreach $accounts&#10; #if($velocityCount!=1)&#10;  ,&#10; #end&#10;  {&#10;                 &quot;accountID&quot;: &quot;$accountID&quot;,&#10;                 &quot;accountName&quot;:&quot;$accountName&quot;,&#10;                 &quot;accountPreference&quot;:&quot;$accountPreference&quot;,&#10;                 &quot;accountType&quot;:&quot;$accountType&quot;,&#10;                 &quot;displayName&quot;:&quot;$displayName&quot;,&#10;                 &quot;availableBalance&quot;:&quot;$availableBalance&quot;,&#10;                 &quot;bankName&quot;:&quot;$bankName&quot;,&#10;                 &quot;currencyCode&quot;:&quot;$currencyCode&quot;,&#10;                 &quot;currentBalance&quot;:&quot;$currentBalance&quot;,&#10;                 &quot;nickName&quot;:&quot;$nickName&quot;,&#10;                 &quot;statusDesc&quot;:&quot;$statusDesc&quot;,&#10;                 &quot;Account_id&quot;:&quot;$Account_id&quot;,&#10;                 &quot;AccountName&quot;:&quot;$AccountName&quot;&#10;        } #end ],&#10;#if($customerTypeStr)&#10;&quot;customerTypeStr&quot;:'$customerTypeStr',&#10;#end&#10;#if($backendId)&#10;&quot;backendId&quot;:'$backendId',&#10;#end&#10;#if($customerId)&#10;&quot;customerId&quot;:'$customerId'&#10;#end&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;#if($isSubscribed)&#10;&quot;isSubscribed&quot;:'$isSubscribed',&#10;#end&#10;#if($alertCategoryId)&#10;&quot;alertCategoryId&quot;:'$alertCategoryId',&#10;#end&#10;#if($accountId)&#10;&quot;accountId&quot;:'$accountId',&#10;#end&#10;#if($accountTypeId)&#10;&quot;accountTypeId&quot;:'$accountTypeId',&#10;#end&#10;#if($legalEntityId)&#10;&quot;legalEntityId&quot;:'$legalEntityId',&#10;#end&#10;#if($alertSubscription)&#10;&quot;alertSubscription&quot;:'$alertSubscription',&#10;#end&#10;&quot;accounts&quot;: [ #foreach $accounts&#10; #if($velocityCount!=1)&#10;  ,&#10; #end&#10;  {&#10;                 &quot;accountID&quot;: &quot;$accountID&quot;,&#10;                 &quot;accountName&quot;:&quot;$accountName&quot;,&#10;                 &quot;accountPreference&quot;:&quot;$accountPreference&quot;,&#10;                 &quot;accountType&quot;:&quot;$accountType&quot;,&#10;                 &quot;displayName&quot;:&quot;$displayName&quot;,&#10;                 &quot;availableBalance&quot;:&quot;$availableBalance&quot;,&#10;                 &quot;bankName&quot;:&quot;$bankName&quot;,&#10;                 &quot;currencyCode&quot;:&quot;$currencyCode&quot;,&#10;                 &quot;currentBalance&quot;:&quot;$currentBalance&quot;,&#10;                 &quot;nickName&quot;:&quot;$nickName&quot;,&#10;                 &quot;statusDesc&quot;:&quot;$statusDesc&quot;,&#10;                 &quot;Account_id&quot;:&quot;$Account_id&quot;,&#10;                 &quot;AccountName&quot;:&quot;$AccountName&quot;&#10;        } #end ],&#10;#if($customerTypeStr)&#10;&quot;customerTypeStr&quot;:'$customerTypeStr',&#10;#end&#10;#if($backendId)&#10;&quot;backendId&quot;:'$backendId',&#10;#end&#10;#if($customerId)&#10;&quot;customerId&quot;:'$customerId'&#10;#end&#10;}" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="true" isExtended="false"/>
+</service>

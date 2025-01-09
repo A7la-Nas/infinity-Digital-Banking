@@ -1,0 +1,23 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "requestLoginMFAOTP" : "requestLoginMFAOTPMapping",
+    "verifyLoginMFASecurityQuestions" : "verifyLoginMFASecurityQuestionsMapping",
+    "regenerateActivationCode" : "regenerateActivationCodeMapping",
+    "resetUserPassword" : "resetUserPasswordMapping",
+    "verifyOTPPreLogin" : "verifyOTPPreLoginMapping",
+    "verifyUser" : "verifyUserMapping",
+    "getPasswordLockoutSettings" : "getPasswordLockoutSettingsMapping",
+    "verifyLoginMFAOTP" : "verifyLoginMFAOTPMapping",
+    "getPasswordRulesAndPolicy" : "getPasswordRulesAndPolicyMapping",
+    "requestResetPasswordOTP" : "requestResetPasswordOTPMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

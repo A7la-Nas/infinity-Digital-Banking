@@ -1,0 +1,31 @@
+{
+    "AS_UWI_cc48f6d6e84b41bba87ac80807f3f7d9": {
+        "id": "AS_UWI_cc48f6d6e84b41bba87ac80807f3f7d9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "filter",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "f008b8b804aa46ac8e1e56fddb197964",
+            "name": "frmDashboard"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__g9cc85d0050c455ebc76916ac3172bdc",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onFilterChanged",
+            "display": "onFilterChanged",
+            "inputparams": [{
+                "name": "filter",
+                "value": "filter"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

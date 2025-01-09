@@ -1,0 +1,391 @@
+{
+    "classname": "SecurityQuestions",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "edab5d472ba3482fa516dd2eebba46eb",
+                    "paramList": [
+                        {
+                            "name": "mfaJSON"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f7fc4f2126914d6db2bbf5298be6d0d7",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSuccessCallback",
+                    "pw": {
+                        "displayName": "onSuccessCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "gfe18214f1274ce0b0c420eb5c348829",
+                    "paramList": [
+                        {
+                            "name": "rememberDeviceReg"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "rememberDeviceRegFlag",
+                    "pw": {
+                        "displayName": "rememberDeviceRegFlag",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "je43b4aa9bf54ed5ac10dc2f85ff02af",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 2,
+                    "propertyKey": "onFailureCallback",
+                    "pw": {
+                        "displayName": "onFailureCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a24615c2014841f89e73edb1123a7fad",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onCancel",
+                    "pw": {
+                        "displayName": "onCancel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Verify Security Questions",
+                "Skins",
+                "Images",
+                "Text Fields"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "Login",
+                    "group": "Verify Security Questions",
+                    "kuid": "hb19c300d45243f8a966496f7c5445a2",
+                    "originalPropertyKey": "objectServiceName1",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName1",
+                    "pw": {
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxf9f9f9",
+                    "group": "Skins",
+                    "kuid": "d9c4a02a3bb94063b03af2b1197e08e3",
+                    "originalPropertyKey": "titleBgSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "titleBgSkin",
+                    "pw": {
+                        "displayName": "Title Background Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "a.png",
+                    "group": "Images",
+                    "kuid": "a220fd77c2fd4bbbba18e7f5f0f90dec",
+                    "originalPropertyKey": "checkboxSelectedImg",
+                    "propertyIndex": 1,
+                    "propertyKey": "checkboxSelectedImg",
+                    "pw": {
+                        "displayName": "Selected Checkbox Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.MFA.SecurityQuestions",
+                    "group": "Text Fields",
+                    "kuid": "fff367a50a80493baf16c63de044837d",
+                    "originalPropertyKey": "titleMsgText",
+                    "propertyIndex": 1,
+                    "propertyKey": "titleMsgText",
+                    "pw": {
+                        "displayName": "Title Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "j798928974824a84ab2c72d476456371",
+                    "originalPropertyKey": "isPostLogin",
+                    "propertyIndex": 1,
+                    "propertyKey": "isPostLogin",
+                    "pw": {
+                        "displayName": "Is Post Login",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Users_2",
+                    "group": "Verify Security Questions",
+                    "kuid": "cc16777fb863405c990f58df3769c804",
+                    "originalPropertyKey": "objectName1",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName1",
+                    "pw": {
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSP26px",
+                    "group": "Skins",
+                    "kuid": "j68337ea335d4fd89ef130fd4e83ff6c",
+                    "originalPropertyKey": "titleMsgSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "titleMsgSkin",
+                    "pw": {
+                        "displayName": "Title Message Skin ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "tickmarkbox.png",
+                    "group": "Images",
+                    "kuid": "a6662135b1df4996adcb3aadc91ff16d",
+                    "originalPropertyKey": "checkboxEmptyImg",
+                    "propertyIndex": 2,
+                    "propertyKey": "checkboxEmptyImg",
+                    "pw": {
+                        "displayName": "Empty Checkbox Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.MFA.ErrorQnA",
+                    "group": "Text Fields",
+                    "kuid": "b445f044d86b45fa844348b56d73bada",
+                    "originalPropertyKey": "errorMsgText",
+                    "propertyIndex": 2,
+                    "propertyKey": "errorMsgText",
+                    "pw": {
+                        "displayName": "Error Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "ef908e5f38e64b0aa915bf6ffb70363c",
+                    "originalPropertyKey": "action",
+                    "propertyIndex": 2,
+                    "propertyKey": "action",
+                    "pw": {
+                        "displayName": "Action",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "verifyLoginMFASecurityQuestions",
+                    "group": "Verify Security Questions",
+                    "kuid": "hddd159de2a545bb98161227add2fbf7",
+                    "originalPropertyKey": "operationName1",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName1",
+                    "pw": {
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblF54B5E26px",
+                    "group": "Skins",
+                    "kuid": "cef814a4fcef49f2b6e044734b46797c",
+                    "originalPropertyKey": "errorMsgSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "errorMsgSkin",
+                    "pw": {
+                        "displayName": "Error Message Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.Forgot.Verify",
+                    "group": "Text Fields",
+                    "kuid": "c43e9806883c476cb8e4fc413550a224",
+                    "originalPropertyKey": "submitBtnText",
+                    "propertyIndex": 3,
+                    "propertyKey": "submitBtnText",
+                    "pw": {
+                        "displayName": "Submit Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtn0095e426pxEnabled",
+                    "group": "Skins",
+                    "kuid": "f45889ce657845a7a9f984466c661dcb",
+                    "originalPropertyKey": "enableBtnSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "enableBtnSkin",
+                    "pw": {
+                        "displayName": "Enable Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.devReg.remMyDevice",
+                    "group": "Text Fields",
+                    "kuid": "j936e69d4ed04d99b43fb2fcee0860cd",
+                    "originalPropertyKey": "registerDeviceText",
+                    "propertyIndex": 4,
+                    "propertyKey": "registerDeviceText",
+                    "pw": {
+                        "displayName": "Register Device Option Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtna0a0a0SSPReg26px",
+                    "group": "Skins",
+                    "kuid": "a8edf7d835d147e59846f2eca37e412b",
+                    "originalPropertyKey": "disableBtnSkin",
+                    "propertyIndex": 5,
+                    "propertyKey": "disableBtnSkin",
+                    "pw": {
+                        "displayName": "Disable Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPReg30px",
+                    "group": "Skins",
+                    "kuid": "h5adaa323bf84b8e9cc133bc73971c3f",
+                    "originalPropertyKey": "registerDeviceSkin",
+                    "propertyIndex": 6,
+                    "propertyKey": "registerDeviceSkin",
+                    "pw": {
+                        "displayName": "Register Device Option Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee58fe67445c41ef8f9bd8205922b4c9",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Resources.mfa",
+    "version": "1.0.0"
+}

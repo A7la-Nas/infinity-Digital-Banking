@@ -1,0 +1,18 @@
+{
+    "AS_BarButtonItem_g0464c76621343e2ab2b3491ce7814ea": {
+        "id": "AS_BarButtonItem_g0464c76621343e2ab2b3491ce7814ea",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__i27c1148582446c2a49b357b5abbb49c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "applicationManager.getPresentationUtility().showLoadingScreen();\nvar messagesMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"MessagesUIModule\");\nmessagesMod.presentationController.getCategories();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

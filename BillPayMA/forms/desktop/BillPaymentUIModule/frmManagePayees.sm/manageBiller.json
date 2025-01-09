@@ -1,0 +1,87 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "data": {
+        "additionalDetailsAction1": "{\"text\":{\"$.BREAKPTS.BP2\":\"{i.i18n.transfers.viewActivity}\",\"default\":\"{i.i18n.transfers.viewActivity}\"},\"action\":{\"level\":\"Form\",\"method\":\"executeViewActivity\"},\"entitlement\":[\"BILL_PAY_VIEW_PAYMENTS\"]}",
+        "additionalDetailsAction2": "{\"Condition1\":{\"condition\":{\"{$.rootPath.eBillStatus}\":1},\"text\":{\"$.BREAKPTS.BP2\":\"{i.i18n.billpay.deactivate}\",\"default\":\"{i.i18n.billpay.deactivate}\"},\"action\":{\"level\":\"Component\",\"method\":\"DEACTIVATE_EBILL\"},\"entitlement\":[\"BILL_PAY_ACTIVATE_OR_DEACTIVATE_EBILL\"]},\"Condition2\":{\"condition\":{\"{$.rootPath.eBillStatus}\":0},\"text\":\"\",\"action\":\"\",\"entitlement\":[]}}",
+        "additionalDetailsAction3": "{\"text\":\"{i.i18n.billPay.editBiller}\",\"action\":{\"level\":\"Form\",\"method\":\"executeEditBiller\"},\"entitlement\":[\"BILL_PAY_CREATE_PAYEES\"]}",
+        "additionalDetailsAction4": "{\"text\":\"{i.i18n.billPay.deleteBiller}\",\"action\":{\"level\":\"Component\",\"method\":\"DELETE_BILLER\"},\"entitlement\":[\"BILL_PAY_DELETE_PAYEES\"]}",
+        "additionalDetailsLabel3": "{i.kony.mb.billPay.LinkedWith}",
+        "additionalDetailsLabel4": "{i.i18n.payments.payeeAddressWithColon}",
+        "additionalText1": "{i.i18n.BillPay.YouareActivatingtheEBillfeatureforthisBiller}",
+        "additionalText2": "\"{i.i18n.BillPay.NowonwardyourBillamountwillbeappearinginthelistautomatically}\"",
+        "additionalText3": "{i.i18n.BillPay.Doyouwanttocontinue}",
+        "dataGridColumn1": "{\"text\":\"{i.i18n.billPay.BillerNickName}\",\"mapping\":\"{$.rootPath.payeeNickName}\",\"fieldType\":\"Label\",\"sortBy\":\"payeeNickName\",\"sortByType\":\"string\"}",
+        "dataGridColumn2": "{\"text\":{\"$.BREAKPTS.BP1\":\"{i.i18n.payments.accNumWithColon}\",\"default\":\"{i.i18n.common.accountNumber}\"},\"mapping\":\"{$.rootPath.accountNumber}\",\"fieldType\":\"Label\"}",
+        "dataGridColumn3": "{\"text\":{\"$.BREAKPTS.BP1\":\"{i.i18n.payments.nextBillWithColon}\",\"default\":\"{i.i18n.billPay.NextBill}\"},\"mapping\":\"{$.rootPath.dueAmount}\",\"fieldType\":\"Amount\",\"sortBy\":\"dueAmount\",\"sortByType\":\"number\"}",
+        "dataGridColumnAction": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.konybb.Common.Actions}\",\"default\":\"{i.i18n.konybb.Common.Actions}\"},\"Condition1\":{\"condition\":{\"{$.rootPath.eBillStatus}\":1},\"text\":\"{i.i18n.Pay.PayBill}\",\"action\":{\"level\":\"Form\",\"method\":\"executePayMoney\"},\"entitlement\":[\"BILL_PAY_CREATE\"]},\"Condition2\":{\"condition\":{\"{$.rootPath.eBillStatus}\":0},\"text\":\"{i.i18n.payments.activateEbill}\",\"action\":{\"level\":\"Component\",\"method\":\"ACTIVATE_EBILL\"},\"entitlement\":[\"BILL_PAY_ACTIVATE_OR_DEACTIVATE_EBILL\"]}}",
+        "ebillPopupTitle": "{i.kony.tab.Ebill.ActivateEbill}",
+        "popupField1": "{i.i18n.BillPay.BillerName}",
+        "popupField2": "{i.i18n.ProfileManagement.AccountNumber}",
+        "tab1": "{\"text\":{\"$.BREAKPTS.BP1\":\"{i.i18n.billPay.AllPayees}\",\"default\":\"{i.i18n.billPay.AllPayees}\"},\"action\":{\"level\":\"Form\",\"method\":\"onTab1Click\",\"widget\":\"btnTab1\"},\"entitlement\":[]}",
+        "tab2": "{\"text\":{\"$.BREAKPTS.BP1\":\"{i.i18n.billPay.PaymentDue}\",\"default\":\"{i.i18n.billPay.PaymentDue}\"},\"action\":{\"level\":\"Form\",\"method\":\"onTab2Click\",\"widget\":\"btnTab2\"},\"entitlement\":[]}",
+        "tab3": "{\"text\":{\"$.BREAKPTS.BP1\":\"{i.i18n.billPay.scheduled}\",\"default\":\"{i.i18n.billPay.scheduled}\"},\"action\":{\"level\":\"Form\",\"method\":\"onTab3Click\",\"widget\":\"btnTab3\"},\"entitlement\":[]}",
+        "tab4": "{\"text\":{\"$.BREAKPTS.BP1\":\"{i.i18n.kony.BulkPayments.bulkPaymentHistory}\",\"default\":\"{i.i18n.kony.BulkPayments.bulkPaymentHistory}\"},\"action\":{\"level\":\"Form\",\"method\":\"onTab4Click\",\"widget\":\"btnTab4\"},\"entitlement\":[]}",
+        "tab5": "{\"text\":{\"$.BREAKPTS.BP1\":\"{i.i18n.billPay.ManagePayee}\",\"default\":\"{i.i18n.billPay.ManagePayee}\"},\"action\":{\"level\":\"Component\",\"method\":\"onManagePayeeClick\",\"widget\":\"btnTab5\"},\"entitlement\":[\"BILL_PAY_VIEW_PAYEES\"]}"
+    },
+    "id": "manageBiller",
+    "info": null,
+    "iscustomlayout": false,
+    "issegmentchild": false,
+    "isvisible": true,
+    "kuid": "eca9c2128f484baaaa6676474f22657c",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxComponent",
+    "pf": "frmManagePayees",
+    "responsiveData": {
+        "b1": {},
+        "b2": {
+            "right": {
+                "type": "string",
+                "value": "2%"
+            }
+        },
+        "b3": {}
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "c80fed5ce67d40e8b758bfbaba7de2ff",
+    "wType": "UserWidgetInstance"
+}

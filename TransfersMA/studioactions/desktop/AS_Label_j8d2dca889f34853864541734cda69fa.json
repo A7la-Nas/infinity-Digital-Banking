@@ -1,0 +1,30 @@
+{
+    "AS_Label_j8d2dca889f34853864541734cda69fa": {
+        "id": "AS_Label_j8d2dca889f34853864541734cda69fa",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmFastTransfers",
+            "type": "forms",
+            "platform": "",
+            "KUID": "dafe58294c114b15bb1f0099cc24b9a8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__dd5d70de22354da89648aca14e226728",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"TransferFastUIModule\").presentationController.showTransferScreen({showRecipientGateway:true}); ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

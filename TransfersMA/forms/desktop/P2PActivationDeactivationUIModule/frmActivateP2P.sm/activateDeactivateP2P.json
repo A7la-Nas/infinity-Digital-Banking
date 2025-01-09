@@ -1,0 +1,109 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "serviceParameters": "{\n\n  \"getDepositAccounts\":{\n    \"Service\": \"Holdings\",\n    \"Object\": \"DigitalArrangements\",\n    \"Verb\": \"getList\",\n    \"Criteria\": {}   \n  },\n  \"validateNationalID\":{\n    \"Service\": \"\",\n    \"Object\": \"\",\n    \"Verb\": \"\",\n    \"Criteria\": {}   \n  },\n  \"validateTransferLimit\":{\n    \"Service\": \"\",\n    \"Object\": \"\",\n    \"Verb\": \"\",\n    \"Criteria\": {}   \n  },\n  \"ActivateP2P\": {\n    \"Service\": \"Holdings\",\n    \"Object\": \"ArrangementPreferences_1\",\n    \"Verb\": \"activateP2P\",\n    \"Criteria\": {}\n  },\n \"updateP2PDepositAccount\": {\n    \"Service\": \"Holdings\",\n    \"Object\": \"ArrangementPreferences_1\",\n    \"Verb\": \"updateP2PPreferredAccount\",\n    \"Criteria\": {\n      \"default_to_account_p2p\" : \"${Collection.P2PContextJSON.selectedAccountNumber}\"\n    }\n  },\n  \"DeactivateP2P\": {\n  \"Service\": \"Holdings\",\n  \"Object\" : \"ArrangementPreferences_1\",\n  \"Verb\"   : \"deactivateP2P\",\n  \"Criteria\": {}\n}\n  \n  \n}"
+    },
+    "id": "activateDeactivateP2P",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a34e882fa8b5479a92a8c75a7833a27f",
+    "layouttype": 2,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxDataContainer",
+    "pf": "frmActivateP2P",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "ref",
+                "value": "preferred"
+            },
+            "isVisible": true
+        },
+        "b2": {
+            "height": {
+                "type": "ref",
+                "value": "preferred"
+            },
+            "top": {
+                "type": "string",
+                "value": "5dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "97%"
+            }
+        },
+        "b4": {
+            "layoutType": 2,
+            "left": {
+                "type": "string",
+                "value": "3%"
+            },
+            "top": {
+                "type": "string",
+                "value": "10dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "94%"
+            }
+        },
+        "b5": {
+            "left": {
+                "type": "string",
+                "value": "3.80%"
+            },
+            "top": {
+                "type": "string",
+                "value": "10dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "94%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "g1a59b68e5a14111a8907c3ba487c826",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

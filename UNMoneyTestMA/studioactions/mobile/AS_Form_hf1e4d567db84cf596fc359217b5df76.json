@@ -1,0 +1,28 @@
+{
+    "AS_Form_hf1e4d567db84cf596fc359217b5df76": {
+        "id": "AS_Form_hf1e4d567db84cf596fc359217b5df76",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmULTUNWithdrawMoney",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b0e315321a3d4757b2ad97706bcf161d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ecb01dbb19424967be34e3b71dea5362",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "frmULTUNSendMoneyPreShow",
+            "display": "frmULTUNSendMoneyPreShow",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

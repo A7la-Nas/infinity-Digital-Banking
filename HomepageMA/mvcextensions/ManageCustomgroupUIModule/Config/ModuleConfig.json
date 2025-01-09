@@ -1,0 +1,60 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "ManageCustomgroupUIModule/PresentationControllers/PresentationController"
+        },
+		 "Mobile": {
+            "PresentationControllerClass": "ManageCustomgroupUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": []
+        }
+    },
+    "Forms": {
+        "mobile": {
+            "frmCreateCustomGroup": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "ManageCustomgroupUIModule/frmCreateCustomGroupController",
+                "FormName": "ManageCustomgroupUIModule/frmCreateCustomGroup"
+            },
+            "frmCustomAcknowledgement": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "ManageCustomgroupUIModule/frmCustomAcknowledgementController",
+                "FormName": "ManageCustomgroupUIModule/frmCustomAcknowledgement"
+            },
+			"frmCustomView": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "ManageCustomgroupUIModule/frmCustomViewController",
+                "FormName": "ManageCustomgroupUIModule/frmCustomView"
+            },
+			"frmEditCustomGroupName": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "ManageCustomgroupUIModule/frmEditCustomGroupNameController",
+                "FormName": "ManageCustomgroupUIModule/frmEditCustomGroupName"
+            },
+			"frmManageCustomGroup": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "ManageCustomgroupUIModule/frmManageCustomGroupController",
+                "FormName": "ManageCustomgroupUIModule/frmManageCustomGroup"
+            },
+			"frmMyAccount": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "ManageCustomgroupUIModule/frmMyAccountController",
+                "FormName": "ManageCustomgroupUIModule/frmMyAccount"
+            },
+			"frmSelectAccounts": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "ManageCustomgroupUIModule/frmSelectAccountsController",
+                "FormName": "ManageCustomgroupUIModule/frmSelectAccounts"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "ManageCustomgroupUIModule"
+}

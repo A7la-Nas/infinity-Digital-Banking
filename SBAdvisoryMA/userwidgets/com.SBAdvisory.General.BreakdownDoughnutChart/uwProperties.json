@@ -1,0 +1,517 @@
+{
+    "classname": "BreakdownDoughnutChart",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "Legend"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d0aae1f14f85487e9f6677bbf92aceba",
+                    "originalPropertyKey": "data",
+                    "propertyIndex": 1,
+                    "propertyKey": "data",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "data",
+                        "isHiddenInTool": false,
+                        "srcWidget": "BreakdownDoughnut",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "c9e0f428720643e399ee11288e0b16ce"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d7c9dba144ec424ab6d9ad83775f9338",
+                    "originalPropertyKey": "customContainerID",
+                    "propertyIndex": 1,
+                    "propertyKey": "customContainerID",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "customContainerID",
+                        "isHiddenInTool": false,
+                        "srcWidget": "BreakdownDoughnut",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "c9e0f428720643e399ee11288e0b16ce"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "hb47ebc653ef4a3f8150a423c0777f6e",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 1,
+                    "propertyKey": "isVisible1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Visible1",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxLegendRow1",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "g208f854b7214c05ae84b76cb77f8e85"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "ca7e0d3498414d15b10b8ed836e4771b",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 2,
+                    "propertyKey": "isVisible2",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Visible2",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxLegendRow2",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "j2fa51d2b13d4eee91112826a70760e8"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "e86a96881f0444a7b3203f14e7481428",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 3,
+                    "propertyKey": "isVisible3",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Visible3",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxLegendRow3",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "f97ef89c7e89447397ed1d31afda2b90"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "a590aa68bbf94d98b0172951490d536d",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 4,
+                    "propertyKey": "skin1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "skin1",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxRow1LeftColor",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ie210412af244eafbb446d92c90d6187"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "b479d14a8df54b06abdad198040ca31e",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 5,
+                    "propertyKey": "skin2",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "skin2",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxRow1RightColor",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ifece52c29584526866cbb34e14edc28"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "f970a75027bb485bafe533f0724c24f6",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 6,
+                    "propertyKey": "skin3",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "skin3",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxRow2LeftColor",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "a5b6b9ba22414164a3b9222002e5aec5"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "ca1900ea98b845b595a61d470c8a405a",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 7,
+                    "propertyKey": "skin4",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "skin4",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxRow2RightColor",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "h2aa90ae10384c27bcde136886f1378e"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "f95403a2af6845cc8978f3973305ab0c",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 8,
+                    "propertyKey": "skin5",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "skin5",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxRow3LeftColor",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "adf913054c93429d8460a76dfc3af6b0"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "d9b6636ab4f0475d8a90cf0310ae5191",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 9,
+                    "propertyKey": "skin6",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "skin6",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxRow3RightColor",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "b460148b4ac84bccbb266ebd8e865908"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "b5cc2c61efdd452cb140d28c74a7203c",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 10,
+                    "propertyKey": "text1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text1",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRow1LeftLabel",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b5abd2ea42614fc9b654ae5984338b3e"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "dd3dd6924864448eb0b08274eac4baaa",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 11,
+                    "propertyKey": "text2",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text2",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRow1LeftValue",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ac4f7ea065fe4034bf6bfa8f3d973565"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "ff527819f6f841af9b6d21f1e5107867",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 12,
+                    "propertyKey": "text3",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text3",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRow1RightLabel",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a1e61921b1324a54971d6197b8d582e3"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "cd35d272b5ca40d1b2844d9b5812f1ac",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 13,
+                    "propertyKey": "text4",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text4",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRow1RightValue",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a1d674537e26450b996f402c748948e5"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "g96e098d26eb479297c484587df191c7",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 14,
+                    "propertyKey": "text5",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text5",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRow2LeftLabel",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ee0c977e442944e0aa0e375a6afc458f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "c7804ce4311a4368acff725f56ad30c8",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 15,
+                    "propertyKey": "text6",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text6",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRow2LeftValue",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "cd1820cf9f434f32a4d573a50726774b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "if4ea6a64a9241ca860f049754c998e7",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 16,
+                    "propertyKey": "text7",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text7",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRow2RightLabel",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "j5c531569b084dec9339631dd2e46351"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "c81d4a9609c346f7881f16a70ddfd31e",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 17,
+                    "propertyKey": "text8",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text8",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRow2RightValue",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ad048a8a21da4b9b88b2c1684ee66f3d"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "e515f1fb9d394f4f9eb8cb39962ecd7b",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 18,
+                    "propertyKey": "text9",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text9",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRow3LeftLabel",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "hebae5019e9a43799b36ece537202728"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "i9e236f5b401495887c88dcd414a1960",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 19,
+                    "propertyKey": "text10",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text10",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRow3LeftValue",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "i9bb98101d8e4a7abb113d9b34358231"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "ef356ba85f304f5eabf3166cc203dd51",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 20,
+                    "propertyKey": "text11",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text11",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRow3RightLabel",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d48f8ae964e241ea9c19f5dda77cbb58"
+                },
+                {
+                    "access": "Enable",
+                    "group": "Legend",
+                    "kuid": "fab15b4e52d54358b1275659e89d784b",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 21,
+                    "propertyKey": "text12",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text12",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRow3RightValue",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "af933df7c3384d7db0fd831239554c56"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.SBAdvisory.General",
+    "version": "1.0.0"
+}

@@ -1,0 +1,26 @@
+{
+    "AS_FlexContainer_c3ddb645ae7a447a8f1d049f1f680feb": {
+        "id": "AS_FlexContainer_c3ddb645ae7a447a8f1d049f1f680feb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segprofilemanagementAddressnew",
+            "type": "templates",
+            "platform": "",
+            "KUID": "e5d898c5f08a4505be27fc947a367362"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c23a26f11eb9479aa2d7b5a42da6e00b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(this.view.flxEdit.isVisible === false){\n    this.view.flxImgElipses.onclick = this.view.flxEdit.setVisibility(true);\n    this.view.flxImgElipses.accessibilityConfig = {\n      \"a11yARIA\": {\n        \"aria-expanded\": true,\n        \"role\": \"button\"\n      }\n    }\n  }\n  else\n  {\n    this.view.flxImgElipses.onclick = this.view.flxEdit.setVisibility(false);\n    this.view.flxImgElipses.accessibilityConfig = {\n      \"a11yARIA\": {\n        \"aria-expanded\": false,\n        \"role\": \"button\"\n      }\n    }\n  } \n",
+            "parentId": null
+        }]
+    }
+}

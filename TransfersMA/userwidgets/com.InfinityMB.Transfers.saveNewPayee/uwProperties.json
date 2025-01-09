@@ -1,0 +1,720 @@
+{
+    "classname": "saveNewPayee",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "jceed8e8b18049d1b9ddeea8e7183ad4",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "requestStart",
+                    "pw": {
+                        "displayName": "requestStart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h3e72a76a0554e68ae93529f38a39a3e",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "requestEnd",
+                    "pw": {
+                        "displayName": "requestEnd",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "acd4f28008b74f8da44bb277144f0e3f",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ccbeefebe69b4890a48095f77e94e1f4",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "jce8332f04c24d26a967d51b914704d4",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "getBtnEntitlement",
+                    "pw": {
+                        "displayName": "getBtnEntitlement",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c59f6fd6de1244a48353aeb1afb413e6",
+                    "paramList": [],
+                    "propertyIndex": 6,
+                    "propertyKey": "contextualActionButtonOnClick",
+                    "pw": {
+                        "displayName": "contextualActionButtonOnClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j4146d5789fb433488432ef81fd0761e",
+                    "paramList": [],
+                    "propertyIndex": 7,
+                    "propertyKey": "onBack",
+                    "pw": {
+                        "displayName": "onBack",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ea43f4136c6e470f9708b5f68974438a",
+                    "paramList": [],
+                    "propertyIndex": 8,
+                    "propertyKey": "iphonePayeeAcknowledgmentHeaderHandler",
+                    "pw": {
+                        "displayName": "iphonePayeeAcknowledgmentHeaderHandler",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "Save New Payee Service",
+                "Skins",
+                "Icons",
+                "Payee Nickname",
+                "Success Acknowledgement details",
+                "Failure Acknowledgement details"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "PayeeObjects",
+                    "group": "Save New Payee Service",
+                    "kuid": "dbd78d50356245c0bfc070eb8aea25f6",
+                    "originalPropertyKey": "objectServiceName",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknHeaderFFF",
+                    "group": "Skins",
+                    "kuid": "j0de780ac9484daeacdaead9a32f50db",
+                    "originalPropertyKey": "sknHeaderLabel",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknHeaderLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Saved Successfully",
+                    "group": "Success Acknowledgement details",
+                    "kuid": "d79f9ab0b5924b78857c16f9c202eba7",
+                    "originalPropertyKey": "successAcknowledgementTitle",
+                    "propertyIndex": 1,
+                    "propertyKey": "successAcknowledgementTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Acknowledgement Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Save Payee Failed",
+                    "group": "Failure Acknowledgement details",
+                    "kuid": "ia6aabc0e90c48b594063833a33fac39",
+                    "originalPropertyKey": "failureAcknowledgementTitle",
+                    "propertyIndex": 1,
+                    "propertyKey": "failureAcknowledgementTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Failure Acknowledgement Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "success.png",
+                    "group": "Icons",
+                    "kuid": "a634faa7fcb6454d9e02b41d865a455f",
+                    "originalPropertyKey": "successImage",
+                    "propertyIndex": 1,
+                    "propertyKey": "successImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.billPay.PayeeNickName}",
+                    "group": "General",
+                    "kuid": "b72ed163654648c39f732bc1afe86193",
+                    "originalPropertyKey": "headerLabel",
+                    "propertyIndex": 1,
+                    "propertyKey": "headerLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Enter the payee nickname",
+                    "group": "Payee Nickname",
+                    "kuid": "a1c56bec0d0b48f8b5453788967ff95b",
+                    "originalPropertyKey": "nicknameDescription",
+                    "propertyIndex": 1,
+                    "propertyKey": "nicknameDescription",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Nickname Description",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "createExternalPayee",
+                    "group": "Save New Payee Service",
+                    "kuid": "fa9506070f3a4bfa934fb68884f58b5a",
+                    "originalPropertyKey": "operationName",
+                    "propertyIndex": 2,
+                    "propertyKey": "operationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxBg003e7515px",
+                    "group": "Skins",
+                    "kuid": "j418ef2e77c545e2adcf1febc5d3f525",
+                    "originalPropertyKey": "sknHeaderBackground",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknHeaderBackground",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Background",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Payee nickname saved successfully for future transactions.",
+                    "group": "Success Acknowledgement details",
+                    "kuid": "e5896f6d1efa40e09af651bae4e3bdce",
+                    "originalPropertyKey": "successAcknowledgementDescription",
+                    "propertyIndex": 2,
+                    "propertyKey": "successAcknowledgementDescription",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Acknowledgement Description",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.dbpErrMsg}",
+                    "group": "Failure Acknowledgement details",
+                    "kuid": "ef5d94c2fc3149e391fd0b2f769e6394",
+                    "originalPropertyKey": "failureAcknowledgementDescription",
+                    "propertyIndex": 2,
+                    "propertyKey": "failureAcknowledgementDescription",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Failure Acknowledgement Description",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "failed.png",
+                    "group": "Icons",
+                    "kuid": "b4e3711813994ef0b7834e064a06ff6a",
+                    "originalPropertyKey": "failureImage",
+                    "propertyIndex": 2,
+                    "propertyKey": "failureImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Failure Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.payeeNickname}\",\"placeHolder\":\"Enter Payee Nickname\",\"inputMode\":\"ANY\",\"min\":\"3\",\"max\":\"34\"}",
+                    "group": "Payee Nickname",
+                    "kuid": "f82ab57992314754bf1bc3e7f2ba3f2e",
+                    "originalPropertyKey": "nicknameTextboxValue",
+                    "propertyIndex": 2,
+                    "propertyKey": "nicknameTextboxValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Nickname Input value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "ce614cc5a6934a0a965e2ae46dabc2b0",
+                    "originalPropertyKey": "payeeStatus",
+                    "propertyIndex": 2,
+                    "propertyKey": "payeeStatus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Payee Status",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Recipients",
+                    "group": "Save New Payee Service",
+                    "kuid": "e59b810d80af42f4990fbfb38c980563",
+                    "originalPropertyKey": "objectName",
+                    "propertyIndex": 3,
+                    "propertyKey": "objectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl42424234px",
+                    "group": "Skins",
+                    "kuid": "ge0296ade9484409a860981eefc73b83",
+                    "originalPropertyKey": "sknNicknameDescription",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknNicknameDescription",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Nickname Description",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "backbutton.png",
+                    "group": "Icons",
+                    "kuid": "a649c655e7054215a26b4d2b3281d0fd",
+                    "originalPropertyKey": "backbuttonIcon",
+                    "propertyIndex": 3,
+                    "propertyKey": "backbuttonIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Back Button Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"id\":\"NewTransfer\",\"text\":\"{i.kony.mb.MM.NewTransfer}\",\"skin\":\"ICSknBtn003E75RoundedffffffSSP26px\",\"entitlement_keys\":[],\"entitlement_action\":false}",
+                    "group": "Success Acknowledgement details",
+                    "kuid": "f0bb8acd937542a1bd4cb3babc9479c5",
+                    "originalPropertyKey": "successButtonAction1",
+                    "propertyIndex": 3,
+                    "propertyKey": "successButtonAction1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Action Button 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"id\":\"TryAgain\",\"text\":\"Try Again\",\"skin\":\"ICSknBtn003E75RoundedffffffSSP26px\",\"entitlement_keys\":[],\"entitlement_action\":false}",
+                    "group": "Failure Acknowledgement details",
+                    "kuid": "fbd3a82f33c044f9a8314ef3eb09ea29",
+                    "originalPropertyKey": "failureButtonAction1",
+                    "propertyIndex": 3,
+                    "propertyKey": "failureButtonAction1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Failure Action Button 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"id\":\"Continue\",\"text\":\"Continue\",\"skin\":\"sknBtnOnBoardingInactive\",\"entitlement_keys\":[],\"entitlement_action\":false}",
+                    "group": "Payee Nickname",
+                    "kuid": "a5cd1869be7644a6ab6824b8e720a7b0",
+                    "originalPropertyKey": "nicknameButton",
+                    "propertyIndex": 3,
+                    "propertyKey": "nicknameButton",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Nickname Button",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S1",
+                    "group": "Save New Payee Service",
+                    "kuid": "eec2fc600fcb4e21bc72d28d6159aca7",
+                    "originalPropertyKey": "serviceResponseIdentifier",
+                    "propertyIndex": 4,
+                    "propertyKey": "serviceResponseIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Response Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxffffff",
+                    "group": "Skins",
+                    "kuid": "d6f7a6d5a97f431f9031af279e3cfb97",
+                    "originalPropertyKey": "sknNicknameDescriptionBackground",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknNicknameDescriptionBackground",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Nickname Description Background",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"id\":\"TransferActivities\",\"text\":\"{i.kony.mb.MM.transferActivity}\",\"skin\":\"ICSknBtnffffffRounded003e75SSP26px\",\"entitlement_keys\":[],\"entitlement_action\":false}",
+                    "group": "Success Acknowledgement details",
+                    "kuid": "i9a5bdee405b46d0b1a66219dbc37642",
+                    "originalPropertyKey": "successButtonAction2",
+                    "propertyIndex": 4,
+                    "propertyKey": "successButtonAction2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Action Button 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxSeparatora6a6a6",
+                    "group": "Skins",
+                    "kuid": "he32be9a099c4f5ea5cd321296a3167e",
+                    "originalPropertyKey": "sknRowSeparator",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknRowSeparator",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row Separator",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"accountNumber\":\"{$.c.accountNumber}\",\"IBAN\":\"{$.c.IBAN}\",\"beneficiaryName\":\"{$.c.beneficiaryName}\",\"bankName\":\"{$.c.toBankName}\",\"nickName\":\"{$.c.nickName}\",\"addressLine1\":\"{$.c.addressLine1}\",\"addressLine2\":\"{$.c.addressLine2}\",\"country\":\"{$.c.country}\",\"city\":\"{$.c.city}\",\"state\":\"{$.c.state}\",\"zipcode\":\"{$.c.zipcode}\",\"phone\":\"{$.c.phone}\",\"email\":\"{$.c.email}\",\"swiftCode\":\"{$.c.swiftCode}\",\"isVerified\":\"true\",\"isSameBankAccount\":\"{$.c.isSameBankAccount}\",\"isInternationalAccount\":\"{$.c.isInternationalAccount}\"}",
+                    "group": "Save New Payee Service",
+                    "kuid": "i109791f4f794093ba24ad32f8e871b2",
+                    "originalPropertyKey": "criteria",
+                    "propertyIndex": 5,
+                    "propertyKey": "criteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Success Acknowledgement details",
+                    "kuid": "jdaf3b7937ec4a8aa978739cde9772b0",
+                    "originalPropertyKey": "successButtonAction3",
+                    "propertyIndex": 5,
+                    "propertyKey": "successButtonAction3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Action Button 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTxtE3E3E31px34px",
+                    "group": "Skins",
+                    "kuid": "fef19fecb7c243ef91eaaf9c4a7aa9b6",
+                    "originalPropertyKey": "sknNicknameTextbox",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknNicknameTextbox",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Nickname Textbox",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Success Acknowledgement details",
+                    "kuid": "c36d79d16d4b4751a44370a6869eaaeb",
+                    "originalPropertyKey": "successButtonAction4",
+                    "propertyIndex": 6,
+                    "propertyKey": "successButtonAction4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Action Button 4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlbl000000SSPSemiBold24px",
+                    "group": "Skins",
+                    "kuid": "c555c1d92f3d4f09a232a43f5e9ee436",
+                    "originalPropertyKey": "sknSuccessAcknowledgementTitle",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknSuccessAcknowledgementTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Acknowledgement Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlbl000000SSPSemiBold24px",
+                    "group": "Skins",
+                    "kuid": "e005323352e8427ca2c19919fd3beb4b",
+                    "originalPropertyKey": "sknFailureAcknowledgementTitle",
+                    "propertyIndex": 8,
+                    "propertyKey": "sknFailureAcknowledgementTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Failure Acknowledgement Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICsknlbl727272SSP24px",
+                    "group": "Skins",
+                    "kuid": "e99ae6be870d462b825893724181af45",
+                    "originalPropertyKey": "sknSuccessAcknowledgementDescription",
+                    "propertyIndex": 9,
+                    "propertyKey": "sknSuccessAcknowledgementDescription",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Acknowledgement Description",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICsknlbl727272SSP24px",
+                    "group": "Skins",
+                    "kuid": "df038f8168d440989c71af4f778a4365",
+                    "originalPropertyKey": "sknFailureAcknowledgementDescription",
+                    "propertyIndex": 10,
+                    "propertyKey": "sknFailureAcknowledgementDescription",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Failure Acknowledgement Description",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknBtn003E75RoundedffffffSSP26px",
+                    "group": "Skins",
+                    "kuid": "f4a514bcaea643c2bad6c4e4dcdbbcf4",
+                    "originalPropertyKey": "sknEnabledButton",
+                    "propertyIndex": 11,
+                    "propertyKey": "sknEnabledButton",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Enabled Button",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtna0a0a0SSPReg26px",
+                    "group": "Skins",
+                    "kuid": "e479f13848a44b0b9f9283bc5e19c0fe",
+                    "originalPropertyKey": "sknDisabledButton",
+                    "propertyIndex": 12,
+                    "propertyKey": "sknDisabledButton",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Disabled Button",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca932c81c1654a37919df1f86a4018f0",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Transfers",
+    "version": "1.0.0"
+}

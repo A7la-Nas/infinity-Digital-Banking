@@ -1,0 +1,29 @@
+{
+    "AS_Button_a5230d480c8e4140ba8b529da4ec3366": {
+        "id": "AS_Button_a5230d480c8e4140ba8b529da4ec3366",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "KUID": "u6c7ae4d1bc546a3a67b8908c1988413",
+            "name": "userwidgetmodel",
+            "type": "userwidgets"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__de681971512843cb996e391f7b94336a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.lblActivation.text = \"We'll send an email to \"+this.view.tbxEmail.text+\" in 5 minutes. Open it up to activate your account. \"; ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

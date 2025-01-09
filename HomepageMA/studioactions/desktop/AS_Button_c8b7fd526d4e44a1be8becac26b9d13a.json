@@ -1,0 +1,22 @@
+{
+    "AS_Button_c8b7fd526d4e44a1be8becac26b9d13a": {
+        "id": "AS_Button_c8b7fd526d4e44a1be8becac26b9d13a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": null,
+            "KUID": "g23e114c96b8476d9ee9858dd099a5f1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ja22ec39873a404190869691e2ccab2c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var accountModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AccountsModule\");\naccountModule.presentationController.showAccountsDashboard();",
+            "callbackType": null
+        }]
+    }
+}

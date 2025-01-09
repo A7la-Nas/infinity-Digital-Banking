@@ -1,0 +1,18 @@
+{
+    "AS_Button_e4c5558cfcbd426daa54c7a7e3a64852": {
+        "id": "AS_Button_e4c5558cfcbd426daa54c7a7e3a64852",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ge92d775b1d54feeba6ff26219898c78",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var authMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthUIModule\"); \nauthMod.presentationController.commonFunctionForNavigation(\"frmDevRegSecCode\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

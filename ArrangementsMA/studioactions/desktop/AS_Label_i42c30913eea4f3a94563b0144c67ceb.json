@@ -1,0 +1,32 @@
+{
+    "AS_Label_i42c30913eea4f3a94563b0144c67ceb": {
+        "id": "AS_Label_i42c30913eea4f3a94563b0144c67ceb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segConsolidatedSectionHeaderMobile",
+            "type": "templates",
+            "platform": "",
+            "KUID": "h2397c284bd54ca781f670e2ca7f04bb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_i90b27ede6d8447bbdf9792a0cb75abe",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.toggleSegment(eventobject, context);",
+            "parentId": null
+        }]
+    }
+}

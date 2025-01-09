@@ -1,0 +1,217 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "85dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sfa77fa8edbe48c0b2a353776df1cb24",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "IBANSwiftObjectName": "BankDetails",
+        "IBANSwiftObjectServiceName": "PayeeManagement",
+        "accValidationCriteria": "{\"iban\":\"{$.c.accountNumber}\"}",
+        "accValidationObject": "BankDetails",
+        "accValidationOperation": "isValidIBAN",
+        "accValidationService": "PayeeManagement",
+        "addressObjectService": "Utility",
+        "adfTextBox1": "{\n  \"mapping\": \"{$.c.countryCode}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.Code}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.Code}\"\n  }\n}",
+        "adfTextBox2": "{\n  \"mapping\": \"{$.c.displayPhoneNumber}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterPhoneNumber}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterPhoneNumber}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterPhoneNumber}\",\n  \"inputMode\": \"NUMERIC\",\n  \"formatType\":\"PHONE\"\n}",
+        "adfTextBox2Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.konybb.manageUser.PhoneNo}:\",\n  \"default\": \"{i.i18n.konybb.manageUser.PhoneNo}:\"\n},\n\"helpTooltip\" : \"{i.i18n.konybb.manageUser.PhoneNo}\"\n}",
+        "adfTextBox3": "{\n  \"mapping\": \"{$.c.emailID}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterEmailId}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterEmailId}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterEmailId}\",\n  \"inputMode\": \"EMAIL\",\n  \"formatType\":\"EMAIL\"\n}",
+        "adfTextBox3Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.konybb.manageUser.EmailID}\",\n  \"default\": \"{i.i18n.konybb.manageUser.EmailID}\"\n},\n\"helpTooltip\" : \"{i.i18n.konybb.manageUser.EmailID}\"\n}",
+        "adfTextBox4": "{\n  \"mapping\": \"{$.c.addressLine1}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterAddressLine01}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterAddressLine01}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterAddressLine01}\",\n  \"inputMode\": \"Any\"\n}",
+        "adfTextBox4Label": "{\n\"text\":\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.AddressLine01}:\",\n  \"default\": \"{i.i18n.TransfersEur.AddressLine01}:\"\n},\n\"helpTooltip\" : \"{i.i18n.TransfersEur.AddressLine01}\"\n}",
+        "adfTextBox5": "{\n  \"mapping\": \"{$.c.addressLine2}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterAddressLine02}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterAddressLine02}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterAddressLine02}\",\n  \"inputMode\": \"Any\"\n}",
+        "adfTextBox5Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.AddressLine02}:\",\n  \"default\": \"{i.i18n.TransfersEur.AddressLine02}:\"\n},\n\"helpTooltip\" : \"{i.i18n.TransfersEur.AddressLine02}\"\n}",
+        "adfTextBox6": "{\n  \"mapping\": \"{$.c.city}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterCity}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterCity}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterCity}\",\n  \"inputMode\": \"ALPHABET\"\n}",
+        "adfTextBox6Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.City}:\",\n  \"default\": \"{i.i18n.TransfersEur.City}:\"\n},\n\"helpTooltip\" : \"{i.i18n.TransfersEur.City}\"\n}",
+        "adfTextBox7": "{\n  \"mapping\": \"{$.c.zipCode}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterZipCode}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterZipCode}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterZipCode}\",\n  \"inputMode\": \"ALPHANUMERIC\"\n}",
+        "adfTextBox7Label": "{\n\"text\" : \n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.common.zipcode}:\",\n  \"default\": \"{i.i18n.common.zipcode}:\"\n},\n\"helpTooltip\" : \"{i.i18n.common.zipcode}\"\n}",
+        "bankCountryValue": "{\r\n  \"mapping\": \"{$.c.countryName}\",\r\n  \"placeHolder\": {\r\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterCountry}\",\r\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterCountry}\"\r\n  },\r\n  \"tooltip\": \"{i.i18n.WireTransfer.Country}\"\r\n}",
+        "cacheEnabled": false,
+        "contractObject": "ExternalUsers_1",
+        "contractObjectService": "ExternalUserManagement",
+        "countryLabel": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.Country}:\",\n  \"default\": \"{i.i18n.TransfersEur.Country}:\"\n},\n\"helpTooltip\" : \"{i.i18n.TransfersEur.Country}\"\n}",
+        "countryValue": "{\n  \"mapping\": \"{$.c.country}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterCountry}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterCountry}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterCountry}\"\n}",
+        "ctLabel1": "{}",
+        "ctLabel2": "{}",
+        "ctLabel3": "{}",
+        "ctOption1": "{}",
+        "ctOption2": "{}",
+        "ctOption3": "{}",
+        "ctTextBox1": "{}",
+        "ctTextBox2": "{}",
+        "ctTextBox3": "{}",
+        "ctTextBox4": "{}",
+        "ctlblContactType": "{}",
+        "dvfConfig": "{\n  \"Recipients\": {\n    \"if_txtValue1\": \"MANDATORY\",\n    \"if_txtValue2\": \"MANDATORY\",\n    \"if_txtValue3\": \"MANDATORY\"\n  }\n}",
+        "ifReenterTextBox2": "{\n  \"mapping\":\"{$.c.newPayeeAccountNumberReenter}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.ReenterAccountNumber}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.ReenterAccountNumber}\"\n  },\n  \"isMaskingEnabled\":false,\n  \"inputMode\":\"ALPHANUMERIC\"\n}\n",
+        "ifReenterTextBox2Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.WireTransfers.ReEnterAccountNumber}:\",\n  \"default\":\"{i.i18n.WireTransfers.ReEnterAccountNumber}:\"\n},\n\"helpTooltip\" : \"{i.i18n.WireTransfers.ReEnterAccountNumber}\"\n}\n",
+        "ifTextBox1": "{\n  \"mapping\":\"{$.c.payeeName}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.EnterPayeeName}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.EnterPayeeName}\"\n  },\n  \"inputMode\":\"ALPHACHAR\"\n}",
+        "ifTextBox10": "{\r\n  \"mapping\":\"{$.c.intermediaryBIC}\",\r\n  \"placeHolder\":\r\n  {\r\n    \"$.BREAKPTS.BP1\":\"{i.i18n.unified.intermediaryBIC}\",\r\n    \"default\":\"{i.i18n.unified.intermediaryBIC}\"\r\n  }\r\n}",
+        "ifTextBox10Label": "{\r\n\"text\" :\r\n{\r\n  \"$.BREAKPTS.BP1\":\"{i.i18n.payments.intermediaryBICOptional}:\",\r\n  \"default\":\"{i.i18n.payments.intermediaryBICOptional}:\"\r\n},\r\n\"helpTooltip\" : \"{i.i18n.payments.intermediaryBICOptional}\"\r\n}",
+        "ifTextBox1Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.ChequeManagement.PayeeName}:\",\n  \"default\":\"{i.i18n.ChequeManagement.PayeeName}:\"\n},\n\"helpTooltip\" : \"{i.i18n.ChequeManagement.PayeeName}\"\n}",
+        "ifTextBox2": "{\n  \"mapping\":\"{$.c.accountNumber}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.AccountNumber}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.AccountNumber}\"\n  },\n  \"isMaskingEnabled\":true,\n  \"inputMode\":\"ALPHANUMERIC\"\n}",
+        "ifTextBox2Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.ProfileManagement.AccountNumber}\",\n  \"default\":\"{i.i18n.ProfileManagement.AccountNumber}\"\n},\n\"helpTooltip\" : \"{i.i18n.ProfileManagement.AccountNumber}\"\n}",
+        "ifTextBox3": "{\n  \"mapping\":\"{$.c.nickName}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.NickName}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.NickName}\"\n  },\n  \"inputMode\":\"ALPHACHAR\"\n}",
+        "ifTextBox3Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.AccountNickNameOptional}\",\n  \"default\":\"{i.i18n.UnifiedAddBeneficiary.AccountNickNameOptional}\"\n},\n\"helpTooltip\" : \"{i.i18n.UnifiedAddBeneficiary.AccountNickNameOptional}\"\n}",
+        "ifTextBox4": "{\n  \"mapping\":\"{$.c.BICCode}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.SwiftCode}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.SwiftCode}\"\n  },\n  \"formatType\":\"SWIFT\",\n  \"backendMapping\": \"swiftCode\"\n}\n",
+        "ifTextBox4Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.TransfersEur.BICSWIFT}:\",\n  \"default\":\"{i.i18n.TransfersEur.BICSWIFT}:\"\n},\n\"helpTooltip\" : \"{i.i18n.TransfersEur.BICSWIFT}\"\n}\n",
+        "ifTextBox5": "{\n  \"mapping\":\"{$.c.clearingCode1}\",\n  \"placeHolder\":{\n    \"$.BREAKPTS.BP1\":\"{i.i18n.payments.enterBankClearingCode}\",\n    \"default\":\"{i.i18n.payments.enterBankClearingCode}\"\n  }\n}\n",
+        "ifTextBox5Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.unifiedTransfers.bankClearingCode}:\",\n  \"default\":\"{i.i18n.unifiedTransfers.bankClearingCode}:\"\n},\n\"helpTooltip\" : \"{i.i18n.unifiedTransfers.bankClearingCode}\"\n}\n",
+        "ifTextBox6": "{\n  \"mapping\":\"{$.c.clearingCode2}\",\n  \"placeHolder\":{\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.enterClearingCode2}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.enterClearingCode2}\"\n  }\n}\n",
+        "ifTextBox6Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedTransfer.ClearingCode2}:\",\n  \"default\":\"{i.i18n.UnifiedTransfer.ClearingCode2}:\"\n},\n\"helpTooltip\" : \"{i.i18n.UnifiedTransfer.ClearingCode2}\"\n}",
+        "ifTextBox7": "{\n  \"mapping\":\"{$.c.bankName}\",\n  \"placeHolder\":{\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.enterBankName}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.enterBankName}\"\n  },\n  \"backendMapping\":\"bankName\"\n}\n",
+        "ifTextBox7Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.payee.bankname}\",\n  \"default\":\"{i.i18n.payee.bankname}\"\n},\n\"helpTooltip\" : \"{i.i18n.payee.bankname}\"\n}\n",
+        "ifTextBox8": "{\n  \"mapping\":\"{$.c.streetName}\",\n  \"placeHolder\":{\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedTransfers.enterStreetName}\",\n    \"default\":\"{i.i18n.UnifiedTransfers.enterStreetName}\"\n}\n}\n",
+        "ifTextBox8Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedTransfers.StreetName}:\",\n  \"default\":\"{i.i18n.UnifiedTransfers.StreetName}:\"\n},\n\"helpTooltip\" : \"{i.i18n.UnifiedTransfers.StreetName}\"\n}\n",
+        "ifTextBox9": "{\n  \"mapping\":\"{$.c.townName}\",\n  \"placeHolder\":{\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedTransfers.enterTownName}\",\n    \"default\":\"{i.i18n.UnifiedTransfers.enterTownName}\"\n }\n}\n",
+        "ifTextBox9Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedTransfers.TownName}:\",\n  \"default\":\"{i.i18n.UnifiedTransfers.TownName}:\"\n},\n\"helpTooltip\" : \"{i.i18n.UnifiedTransfers.TownName}\"\n}\n",
+        "iflblLookup": "{\n  \"text\": {\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.LookUp}\", \n  \"default\": \"{i.i18n.TransfersEur.LookUp}\"\n  }, \n  \"action\": { \n    \"level\": \"form\", \n    \"callBack\": \"showLookupPopup\" \n  },\n  \"helpTooltip\" : \"{i.i18n.TransfersEur.LookUp}\"\n}\n",
+        "ifsubHeaderTxt": "{\n\"text\" : \"{i.i18n.UnifiedTransfers.internationalpayeeinfo}\",\n\"helpTooltip\" : \"{i.i18n.UnifiedTransfers.internationalpayeeinfo}\"\n}\n",
+        "lookupObjectName": "BankDetails",
+        "lookupServiceName": "PayeeManagement",
+        "maxFillMapping": "{\n  \"Recipients\": {\n    \"if_txtValue1\": \"20\",\n    \"if_txtValue2\": \"40\",\n    \"if_txtValue3\": \"40\",\n    \"if_txtValue4\": \"20\"\n  }\n}",
+        "minFillMapping": "{\n  \"Recipients\": {\n    \"if_txtValue1\": \"1\",\n    \"if_txtValue2\": \"3\",\n    \"if_txtValue3\": \"3\"\n  }\n}",
+        "recipientFlow": "International",
+        "sknMandatoryTextBox": "{\"default\": \"ICSknFlxfbfbfb\"}",
+        "sknPrimaryBtnDisabled": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnDisablede2e9f036px\",\n  \"default\": \"ICSknbtnDisablede2e9f036px\"\n}",
+        "sknSecondaryBtn": "{\n  \"$.BREAKPTS.BP1\": \"ICSknBtnSSPRegular003E7515Px\",\n  \"default\": \"ICSknBtnSSPRegular003E7515Px\"\n}",
+        "sknSecondaryBtnFocus": "{\n  \"$.BREAKPTS.BP1\": \"ICSknBtnSSPRegular003E7515Px\",\n  \"default\": \"ICSknBtnSSPRegular003E7515Px\"\n}",
+        "sknSecondaryBtnHover": "{\n  \"$.BREAKPTS.BP1\": \"ICSknBtnSSPRegular003E7515Px\",\n  \"default\": \"ICSknBtnSSPRegular003E7515Px\"\n}",
+        "sluCTAButton": "{\n  \"text\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.billPay.Search}\",\n    \"default\": \"{i.i18n.billPay.Search}\"\n  }\n}",
+        "sluDescription": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.TofindyourSWIFTcodepleaseenterbankdetailsthenhitSearch}\", \n  \"default\": \"{i.i18n.TransfersEur.TofindyourSWIFTcodepleaseenterbankdetailsthenhitSearch}\"\n}",
+        "sluEmptySearchResult": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.Transfers.NoSearchResultFound}.\",\n  \"default\": \"{i.i18n.Transfers.NoSearchResultFound}.\"\n}",
+        "sluHeader": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.SWIFTBICSearch}\", \n  \"default\": \"{i.i18n.TransfersEur.SWIFTBICSearch}\" \n}",
+        "sluResultItem1": "{\n  \"$.BREAKPTS.BP1\": \"{$.S1.bic}\",\n  \"default\": \"{$.S1.bic}\"\n}",
+        "sluResultItem2": "{\n  \"$.BREAKPTS.BP1\": \"{$.S1.bankAddress}\",\n  \"default\": \"{$.S1.bankAddress}\"\n}",
+        "sluResultItem3": "{\n    \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.selectSwift}\",\n    \"default\": \"{i.i18n.TransfersEur.selectSwift}\"\n}",
+        "sluResultItemLabel1": "{\n  \"$.BREAKPTS.BP1\": \"{i.kony.i18n.verifyDetails.bicSwift}\",\n  \"default\": \"{i.kony.i18n.verifyDetails.bicSwift}\"\n}",
+        "sluResultItemLabel2": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.transfers.bankName}\",\n  \"default\": \"{i.i18n.transfers.bankName}\"\n}",
+        "sluTextBox1": "{\n  \"mapping\": \"{$.c.bankName}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.enterBankName}\",\n    \"default\": \"{i.i18n.UnifiedAddBeneficiary.enterBankName}\"\n  },\n  \"Mandatory\": true\n}",
+        "sluTextBox1Label": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.payee.bankname}\",\n  \"default\": \"{i.i18n.payee.bankname}\"\n}",
+        "sluTextBox2": "{\n  \"mapping\": \"{$.c.branch}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.enterBranchName}\",\n    \"default\": \"{i.i18n.UnifiedAddBeneficiary.enterBranchName}\"\n  },\n  \"Mandatory\": false\n}",
+        "sluTextBox2Label": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.LocateUs.BranchName}:\",\n  \"default\": \"{i.i18n.LocateUs.BranchName}:\"\n}",
+        "sluTextBox3": "{\n  \"mapping\": \"{$.c.country}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterCountry}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterCountry}\"\n  },\n  \"Mandatory\": true\n}",
+        "sluTextBox3Label": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.WireTransfer.Country}:\",\n  \"default\": \"{i.i18n.WireTransfer.Country}:\"\n}",
+        "sluTextBox4": "{\n  \"mapping\": \"{$.c.city}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterCity}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterCity}\"\n  },\n  \"Mandatory\": true\n}",
+        "sluTextBox4Label": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.common.city}:\",\n  \"default\": \"{i.i18n.common.city}:\"\n}",
+        "stateLabel": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.common.state}:\",\n  \"default\": \"{i.i18n.common.state}:\"\n},\n\"helpTooltip\" : \"{i.i18n.common.state}\"\n}",
+        "stateObjectService": "Utility",
+        "stateValue": "{\n  \"mapping\": \"{$.c.state}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterState}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterState}\"\n  },\n  \"tooltip\": \"{i.i18n.UnifiedTransfer.EnterState}\"\n}",
+        "utfButtonYes": "{\n  \"action\": {\n    \"callBack\": \"confirmCancel\",\n    \"level\": \"form\"   \n  }\n}",
+        "utfCTAbutton1": "{\n  \"text\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.btnCancel}\",\n    \"default\": \"{i.i18n.TransfersEur.btnCancel}\"\n  },\n  \"action\": {\n    \"callBack\": \"showCancelPopup\",\n    \"level\": \"component\"   \n  }\n}",
+        "utfCTAbutton2": "{\n  \"text\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.btnContinue}\",\n    \"default\": \"{i.i18n.TransfersEur.btnContinue}\"\n  },\n  \"action\": {\n    \"callBack\": \"continueAddBeneficiary\",\n    \"level\": \"form\"   \n  }\n}"
+    },
+    "id": "unifiedAddBeneficiary",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a0098a43e0f449619a70486d5758f6c7",
+    "layouttype": 4,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxLeft",
+    "pf": "frmInternationalAddBeneficiary",
+    "responsiveData": {
+        "b1": {
+            "layoutType": 2,
+            "left": {
+                "type": "string",
+                "value": "5dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "97%"
+            }
+        },
+        "b2": {
+            "layoutType": 2,
+            "left": {
+                "type": "string",
+                "value": "3%"
+            },
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "94%"
+            }
+        },
+        "b3": {
+            "layoutType": 2,
+            "left": {
+                "type": "string",
+                "value": "3%"
+            },
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "94%"
+            }
+        },
+        "b4": {
+            "layoutType": 2,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "97%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "b8816461498444aaa7083b874b4ed0af",
+    "wType": "UserWidgetInstance"
+}

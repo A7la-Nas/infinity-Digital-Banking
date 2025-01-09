@@ -1,0 +1,26 @@
+{
+    "AS_ListBox_dc52ad2e75324cd6a8d8b0e819a7832d": {
+        "id": "AS_ListBox_dc52ad2e75324cd6a8d8b0e819a7832d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segEditApprovalLimit",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b75ef7ab43364c63bed0dcb6a093274b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_gb8cf31d07f946bab3152b93bdff75a6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onTypeSelection(eventobject, context);",
+            "parentId": null
+        }]
+    }
+}

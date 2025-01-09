@@ -1,0 +1,16 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "sendTransactionPush" : "sendTransactionPushMapping",
+    "verifyPushTransaction" : "verifyPushTransactionMapping",
+    "verifyTransactionMB" : "verifyTransactionMBMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

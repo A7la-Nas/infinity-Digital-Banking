@@ -1,0 +1,281 @@
+{
+    "classname": "tabs",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "hc9d2116ffa84992be295de766d859e2",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b7400f6fabbb4a63b8b66f071facf5db",
+                    "paramList": [],
+                    "propertyKey": "setSelectedTab",
+                    "pw": {
+                        "displayName": "setSelectedTab",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d12ff572fd324d7aaf3badf2c4ee7b35",
+                    "paramList": [],
+                    "propertyKey": "setFocustToFirstTab",
+                    "pw": {
+                        "displayName": "setFocustToFirstTab",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c130a133c7464c189f20a0d25c88ee88",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onTabClick",
+                    "pw": {
+                        "displayName": "onTabClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c90a86f3c18b4f0f900eb7ab4313fe34",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Tabs",
+                "Skins",
+                "Component Config"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":{\"$.BREAKPTS.BP1\":\"{i.i18n.TabsComponent.Transfers}\",\"default\":\"{i.i18n.TabsComponent.Transfers}\"},\"id\":\"tab1\",\"entitlement\":[\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\",\"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\",\"INTRA_BANK_FUND_TRANSFER_VIEW\",\"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\"]}",
+                    "group": "Tabs",
+                    "kuid": "b145437cbe264296849fda56573cd5f0",
+                    "originalPropertyKey": "tab1",
+                    "propertyIndex": 1,
+                    "propertyKey": "tab1",
+                    "pw": {
+                        "displayName": "Tab 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknBtnTabSelectedMobile\",\"default\":\"ICSknBtnTabSelected\"}",
+                    "group": "Skins",
+                    "kuid": "c86c770dda494149846eb14a13fbc42d",
+                    "originalPropertyKey": "sknActiveTab",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknActiveTab",
+                    "pw": {
+                        "displayName": "Active Tab Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"BP1\":\"640\",\"BP2\":\"1024\",\"BP3\":\"1366\",\"BP4\":\"1380\"}",
+                    "group": "Component Config",
+                    "kuid": "ca17e3577cc543da85d65b29c6811c92",
+                    "originalPropertyKey": "BREAKPTS",
+                    "propertyIndex": 1,
+                    "propertyKey": "BREAKPTS",
+                    "pw": {
+                        "displayName": "Breakpoints",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":{\"$.BREAKPTS.BP1\":\"{i.i18n.TabsComponent.Recurring}\",\"default\":\"{i.i18n.TabsComponent.Recurring}\"},\"id\":\"tab2\",\"entitlement\":[\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\",\"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\",\"INTRA_BANK_FUND_TRANSFER_VIEW\",\"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\"]}",
+                    "group": "Tabs",
+                    "kuid": "i8a5322764cb46e3aa6f612bbeaf85dc",
+                    "originalPropertyKey": "tab2",
+                    "propertyIndex": 2,
+                    "propertyKey": "tab2",
+                    "pw": {
+                        "displayName": "Tab 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknBtnTabUnselectedMobile\",\"default\":\"ICSknBtnTabUnselected\"}",
+                    "group": "Skins",
+                    "kuid": "ba1bb2d007a7405abef361200ae5d6f1",
+                    "originalPropertyKey": "sknInactiveTab",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknInactiveTab",
+                    "pw": {
+                        "displayName": "Inactive Tab Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Tab 1",
+                    "group": "Component Config",
+                    "kuid": "f15544c7e5414d42bf6c82eefdddc5e5",
+                    "originalPropertyKey": "tabDefaultSelected",
+                    "propertyIndex": 2,
+                    "propertyKey": "tabDefaultSelected",
+                    "pw": {
+                        "displayName": "Default Selected Tab ",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "list selector",
+                    "value": [
+                        "Tab 1",
+                        "Tab 2",
+                        "Tab 3",
+                        "Tab 4"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":{\"$.BREAKPTS.BP1\":\"{i.i18n.TabsComponent.DirectDebits}\",\"default\":\"{i.i18n.TabsComponent.DirectDebits}\"},\"id\":\"tab3\",\"entitlement\":[]}",
+                    "group": "Tabs",
+                    "kuid": "h7c6312eb09345f3abdb415ddb93f0e3",
+                    "originalPropertyKey": "tab3",
+                    "propertyIndex": 3,
+                    "propertyKey": "tab3",
+                    "pw": {
+                        "displayName": "Tab 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknBtnTabSelectedHoverMobile\",\"default\":\"ICSknBtnTabSelectedHover\"}",
+                    "group": "Skins",
+                    "kuid": "fa206e90c8824347925dd36fcd285260",
+                    "originalPropertyKey": "sknActiveTabHover",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknActiveTabHover",
+                    "pw": {
+                        "displayName": "Active Tab Hover Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknBtnTabUnselectedHoverMobile\",\"default\":\"ICSknBtnTabUnselectedHover\"}",
+                    "group": "Skins",
+                    "kuid": "b65aeb114f3c44738895be2d75d2f041",
+                    "originalPropertyKey": "sknInactiveTabHover",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknInactiveTabHover",
+                    "pw": {
+                        "displayName": "Inactive Tab Hover Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":{\"$.BREAKPTS.BP1\":\"{i.i18n.payments.sweep}\",\"default\":\"{i.i18n.payments.sweep}\"},\"id\":\"tab4\",\"entitlement\":[]}",
+                    "group": "Tabs",
+                    "kuid": "h8c7132cf66c4ac8982fc792ded9f6cf",
+                    "originalPropertyKey": "tab4",
+                    "propertyIndex": 4,
+                    "propertyKey": "tab4",
+                    "pw": {
+                        "displayName": "Tab 4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxffffffShadowdddcdc",
+                    "group": "Skins",
+                    "kuid": "bcafe9ffb7624700bead0678592d6000",
+                    "originalPropertyKey": "sknBorder",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknBorder",
+                    "pw": {
+                        "displayName": "Border skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f7e2b72a8d1048229e9cd43bca451bef",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Transfers",
+    "version": "1.0.0"
+}

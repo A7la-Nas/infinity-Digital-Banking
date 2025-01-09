@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_jcaea33a14c94a6eb312c6d699d6e5df": {
+        "id": "AS_FlexContainer_jcaea33a14c94a6eb312c6d699d6e5df",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmtransfersAccountNumberEurope",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a8cfc87106fe4ba8a7ff56c020bbfb08"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b47330a63ad1422abc82399487213e35",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var transMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"TransferModule\");\ntransMod.presentationController.commonFunctionForNavigation(\"frmTransactionMode\");",
+            "callbackType": null
+        }]
+    }
+}

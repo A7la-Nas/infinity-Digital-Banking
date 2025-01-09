@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_hcda33df8f1d4f3cae65e8409f5dae52": {
+        "id": "AS_FlexContainer_hcda33df8f1d4f3cae65e8409f5dae52",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segBulkUpdateTransactionsPFMMobile",
+            "type": "templates",
+            "platform": "",
+            "KUID": "he3e5a43e0a440508ed2e5e789c196a9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__f5eadde582424dfc8f49b099674ff181",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "toggleCheckBox",
+            "display": "toggleCheckBox",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

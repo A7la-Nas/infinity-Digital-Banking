@@ -1,0 +1,23 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "resetPassword" : "resetPasswordMapping",
+    "getDevices" : "getDevicesMapping",
+    "registerNewDevice" : "registerNewDeviceMapping",
+    "resendActivationCode" : "resendActivationCodeMapping",
+    "generateActivationQRCode" : "generateActivationQRCodeMapping",
+    "revokeMyDevice" : "revokeMyDeviceMapping",
+    "updateMyDeviceStatus" : "updateMyDeviceStatusMapping",
+    "verifyActivationCode" : "verifyActivationCodeMapping",
+    "getUserDevices" : "getUserDevicesMapping",
+    "verifyExtCode" : "verifyExtCodeMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

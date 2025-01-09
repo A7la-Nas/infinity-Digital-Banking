@@ -1,0 +1,156 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_skin_": "s17ff43cabee441e9dd8fc8e3029821f",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "accessibilityconfig": {},
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 0,
+    "data": {
+        "Tab1Button1": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.transfers.reset}\",     \"default\": \"{i.i18n.transfers.reset}\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"screen1BtnRight2OnClick\"   } }",
+        "Tab1Field1Label": "{\"$.BREAKPTS.BP1\": \"{i.i18n.ProfileManagement.Name}\",\"default\": \"{i.i18n.ProfileManagement.Name}\"}",
+        "Tab1Field1Value": "{\"mapping\":\"{$.c.companyName}\",\"placeHolder\":{\"$.BREAKPTS.BP1\":\"{i.i18n.BillPay.SearchforPayee}\",\"default\":\"{i.i18n.payments.searchPayee}\"},\"tooltip\":\"{i.i18n.ProfileManagement.Name}\",\"rootPath\":\"Biller\",\"text\":\"{$.billerSearch.rootPath.billerName}\",\"selectedCategoryID\":\"{$.billerSearch.rootPath.billerCategoryId}\"}",
+        "Tab1Field2Value": "{   \"mapping\": \"{$.c.zipCode}\",   \"placeHolder\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.payments.enterPayeeZipCode}\",     \"default\": \"{i.i18n.payments.enterPayeeZipCode}\"   },   \"inputMode\": \"NUMERIC\",   \"tooltip\": \"{i.i18n.common.zipcode}\" }",
+        "Tab1Field3Value": "{   \"mapping\": \"{$.c.accountNumber}\",   \"placeHolder\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.AccountNumber}\",     \"default\": \"{i.i18n.UnifiedAddBeneficiary.AccountNumber}\"},   \"isMaskingEnabled\": true,   \"infoIconText\": \"\",   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.payments.informationAboutWidget}\",     \"default\": \"{i.i18n.payments.informationAboutWidget}\"   },   \"inputMode\": \"NUMERIC\",   \"tooltip\": \"{i.i18n.common.accountNumber}\" }",
+        "Tab1Field4Value": "{   \"mapping\": \"{$.c.accountNumber}\",   \"placeHolder\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.payments.accountNumberConfirm}\",     \"default\": \"{i.i18n.payments.accountNumberConfirm}\"   },   \"isMaskingEnabled\": false,   \"inputMode\": \"NUMERIC\",   \"tooltip\": \"{i.i18n.common.accountNumber}\" }",
+        "Tab2AddressLine1Value": "{   \"mapping\": \"{$.c.street}\",   \"placeHolder\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.payments.enterBillingAddress}\",     \"default\": \"{i.i18n.payments.enterBillingAddress}\"   },   \"tooltip\": \"{i.kony.tab.p2p.address}\" }",
+        "Tab2AddressLine2Value": "{\"mapping\": \"{$.c.addressLine2}\",\"placeHolder\": {\"$.BREAKPTS.BP1\": \"{i.i18n.StopPayments.Optional}\",\"default\": \"{i.i18n.StopPayments.Optional}\"},\"tooltip\": \"Address Line2\"}",
+        "Tab2Button1": "{\"text\": {\"$.BREAKPTS.BP1\": \"{i.i18n.transfers.reset}\",\"default\": \"{i.i18n.transfers.reset}\"},\"action\": {\"level\": \"Component\",\"method\": \"tab2ResetAction\"}}",
+        "Tab2CheckBoxLabel": "{\"$.BREAKPTS.BP1\": \"{i.i18n.AddPayee.IdonthaveanAccount}\",\"default\": \"{i.i18n.AddPayee.IdonthaveanAccount}\"}",
+        "Tab2CityValue": "{   \"mapping\": \"{$.c.cityName}\",   \"placeHolder\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.payments.enterPayeeCity}\",     \"default\": \"{i.i18n.payments.enterPayeeCity}\"   },   \"tooltip\": \"{i.i18n.TransfersEur.City}\" }",
+        "Tab2CountryValue": "{   \"mapping\": \"{$.c.country}\",   \"placeHolder\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.payments.selectCountry}\",     \"default\": \"{i.i18n.payments.selectCountry}\"   },   \"tooltip\": \"{i.i18n.TransfersEur.City}\" }",
+        "Tab2Field11Label": "{\"$.BREAKPTS.BP1\": \"{i.i18n.accounts.Note}\",\"default\": \"{i.i18n.accounts.Note}\"}",
+        "Tab2Field12Label": "{\"$.BREAKPTS.BP1\": \"{i.i18n.accounts.Note}\",\"default\": \"{i.i18n.accounts.Note}\"}",
+        "Tab2Field1Label": "{\"$.BREAKPTS.BP1\": \"{i.i18n.ProfileManagement.Name}\",\"default\": \"{i.i18n.ProfileManagement.Name}\"}",
+        "Tab2Field1Value": "{   \"mapping\": \"{$.c.companyName}\",   \"placeHolder\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.payments.enterCompanyName}\",     \"default\": \"{i.i18n.payments.enterCompanyName}\"   },   \"tooltip\": \"{i.i18n.konybb.Common.Name}\" }",
+        "Tab2Field8Value": "{   \"mapping\": \"{$.c.accountNumber}\",   \"placeHolder\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.AccountNumber}\",     \"default\": \"{i.i18n.UnifiedAddBeneficiary.AccountNumber}\"   },   \"isMaskingEnabled\": true,   \"infoIconText\": \"\",   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.payments.informationAboutWidget}\",     \"default\": \"{i.i18n.payments.informationAboutWidget}\"   },   \"inputMode\": \"NUMERIC\",   \"tooltip\": \"{i.i18n.common.accountNumber}\" }",
+        "Tab2StateValue": "{   \"mapping\": \"{$.c.state}\",   \"placeHolder\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.payments.selectState}\",     \"default\": \"{i.i18n.payments.selectState}\"   },   \"tooltip\": \"{i.i18n.common.state}\" }",
+        "Tab2ZipCodeValue": "{   \"mapping\": \"{$.c.zipCode}\",   \"placeHolder\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.payments.enterPayeeZipCode}\",     \"default\": \"{i.i18n.payments.enterPayeeZipCode}\"   },   \"tooltip\": \"{i.i18n.common.zipcode}\" }",
+        "ackButton1": "{   \"$.FLOWTYPES.FT1\": {     \"text\": \"{i.i18n.payments.makeABillPayment}\",     \"action\": {       \"level\": \"Component\",       \"method\": \"ackBtnRight1OnClick\",       \"context\": \"\"     },     \"entitlement\": [       \"PAYEE_MANAGEMENT_CREATE\"     ]   },   \"$.FLOWTYPES.FT2\": {     \"text\": \"{i.i18n.hamburger.payABill}\",     \"action\": {       \"level\": \"Component\",       \"method\": \"ackBtnRight1OnClick\",       \"context\": \"\"     },     \"entitlement\": [       \"PAYEE_MANAGEMENT_CREATE\"     ]   } }",
+        "ackButton2": "{\"$.FLOWTYPES.FT1\":{\"text\":\"{i.i18n.payments.viewAllPayees}\",\"action\":{\"level\":\"Component\",\"method\":\"ackBtnRight2OnClick\",\"context\":\"\"},\"entitlement\":[\"PAYEE_MANAGEMENT_VIEW\"]},\"$.FLOWTYPES.FT2\":{\"text\":\"{i.i18n.billPay.ManagePayee}\",\"action\":{\"level\":\"Component\",\"method\":\"ackBtnRight2OnClick\",\"context\":\"\"},\"entitlement\":[\"PAYEE_MANAGEMENT_VIEW\"]}}",
+        "ackReferenceText": "{\"$.BREAKPTS.BP1\": \"{i.i18n.ChequeManagement.ReferenceNumber}\",\"default\": \"{i.i18n.ChequeManagement.ReferenceNumber}\"}",
+        "ackSection1Title": "{\"$.BREAKPTS.BP1\": \"{i.i18n.konybb.common.Acknowledgement}\",\"default\": \"{i.i18n.konybb.common.Acknowledgement}\"}",
+        "ackSection2Title": "{\"$.BREAKPTS.BP1\": \"{i.i18n.AddPayee.payeedetails}\",\"default\": \"{i.i18n.AddPayee.payeedetails}\"}",
+        "blockTitle": "{\"$.BREAKPTS.BP1\": \"{i.i18n.billPay.addPayee}\",\"default\": \"{i.i18n.billPay.addPayee}\"}",
+        "categoryButton1": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"i.kony.tab.common.Cancel\",     \"default\": \"i.kony.tab.common.Cancel\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"categoryBtnRight3Onclick\"   } }",
+        "categoryButton2": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.common.modifiy}\",     \"default\": \"{i.i18n.common.modifiy}\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"categoryBtnRight2Onclick\"   } }",
+        "categoryButton3": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.common.proceed}\",     \"default\": \"{i.i18n.common.proceed}\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"categoryBtnRight1Onclick\"   } }",
+        "categoryLabel1": "{\"$.BREAKPTS.BP1\": \"{i.i18n.header.personal}\",\"default\": \"{i.i18n.header.personal}\"}",
+        "categoryLabel2": "{\"$.BREAKPTS.BP1\": \"{i.i18n.transfer.fasttransfer.businessbanking}\",\"default\": \"{i.i18n.transfer.fasttransfer.businessbanking}\"}",
+        "editButton1": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.kony.tab.common.Cancel}\",     \"default\": \"{i.kony.tab.common.Cancel}\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"editDetailsBtnRight3OnClick\"   } }",
+        "editButton2": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.CardManagement.Back}\",     \"default\": \"{i.i18n.CardManagement.Back}\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"editDetailsBtnRight2OnClick\"   } }",
+        "editButton3": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.userManagement.Continue}\",     \"default\": \"{i.i18n.userManagement.Continue}\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"editDetailsBtnRight1OnClick\"   } }",
+        "editFlowAddress1Value": "{\"mapping\": \"{$.c.street}\",\"placeHolder\": {\"$.BREAKPTS.BP1\": \"{i.i18n.ProfileManagement.Address}\",\"default\": \"{i.i18n.ProfileManagement.Address}\"}}",
+        "editFlowAddress2Value": "{\"mapping\": \"{$.c.addressLine2}\",\"placeHolder\": {\"$.BREAKPTS.BP1\": \"{i.i18n.StopPayments.Optional}\",\"default\": \"{i.i18n.StopPayments.Optional}\"}}",
+        "editFlowButton1": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.transfers.Cancel}\",     \"default\": \"{i.i18n.transfers.Cancel}\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"cancelEditPayee\"   } }",
+        "editFlowButton2": "{\"text\": {\"$.BREAKPTS.BP1\": \"{i.i18n.unifiedBeneficiary.Continue}\",\"default\": \"{i.i18n.unifiedBeneficiary.Continue}\"},\"action\": {\"level\": \"Component\",\"method\": \"editPayee\"}}",
+        "editFlowCityValue": "{\"mapping\": \"{$.c.cityName}\",\"placeHolder\": {\"$.BREAKPTS.BP1\": \"{i.i18n.AddPayee.EnterPayeesCity}\",\"default\": \"{i.i18n.AddPayee.EnterPayeesCity}\"},\"tooltip\": \"{i.i18n.TransfersEur.City}\"}",
+        "editFlowCountryValue": "{\"mapping\": \"{$.c.country}\",\"placeHolder\": {\"$.BREAKPTS.BP1\": \"{i.kony.mb.ProfileCountry.Title}\",\"default\": \"{i.kony.mb.ProfileCountry.Title}\"},\"tooltip\": \"{i.i18n.TransfersEur.City}\"}",
+        "editFlowStateValue": "{\"mapping\": \"{$.c.state}\",\"placeHolder\": {\"$.BREAKPTS.BP1\": \"{i.i18n.payments.stateSelect}\",\"default\": \"{i.i18n.payments.stateSelect}\"},\"tooltip\": \"{i.i18n.common.state}\"}",
+        "editFlowZipCodeValue": "{\"mapping\": \"{$.c.zipCode}\",\"placeHolder\": {\"$.BREAKPTS.BP1\": \"{i.i18n.AddPayee.EnterPayeesZipCode}\",\"default\": \"{i.i18n.AddPayee.EnterPayeesZipCode}\"},\"tooltip\": \"{i.i18n.common.zipcode}\"}",
+        "editblockTitle": "{\"$.BREAKPTS.BP1\": \"{i.i18n.billPay.editBiller}\",\"default\": \"{i.i18n.billPay.editBiller}\"}",
+        "enterInfoManuallyLink": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.kony.mb.OBAddPersonalInfo.Enter}\",     \"default\": \"{i.kony.mb.OBAddPersonalInfo.Enter}\"   },   \"action\": {     \"level\": \"form\",     \"method\": \"enterInformationManually\"   } }",
+        "field9ValueTab2": "{   \"mapping\": \"{$.c.accountNumber}\",   \"placeHolder\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.payments.accountNumberConfirm}\",     \"default\": \"{i.i18n.payments.accountNumberConfirm}\"   },   \"isMaskingEnabled\": false,   \"inputMode\": \"NUMERIC\",   \"tooltip\": \"{i.i18n.common.accountNumber}\" }",
+        "maskeyeicon": "{\"maskeyeicon\" : \"h\"}",
+        "reviewButton1": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.transfers.Cancel}\",     \"default\": \"{i.i18n.transfers.Cancel}\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"confirmBtnRight3OnClick\"   } }",
+        "reviewButton2": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.transfers.Modify}\",     \"default\": \"{i.i18n.transfers.Modify}\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"confirmBtnRight2OnClick\"   } }",
+        "reviewButton3": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.common.confirm}\",     \"default\": \"{i.i18n.common.confirm}\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"confirmBtnRight1OnClick\"   } }",
+        "reviewCancelYesButton": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.common.yes}\",     \"default\": \"{i.i18n.common.yes}\"   },   \"action\": {     \"level\": \"form\",     \"method\": \"cancelYesAction\"   } }",
+        "tab1Button2": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"{i.i18n.userManagement.Continue}\",     \"default\": \"{i.i18n.userManagement.Continue}\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"screen1BtnRight1OnClick\"   } }",
+        "tab1Title": "{   \"$.BREAKPTS.BP1\": \"{i.i18n.AddPayee.SearchByCompanyName}\",   \"default\": \"{i.i18n.AddPayee.SearchByCompanyName}\" }",
+        "tab2Button2": "{\"text\": {\"$.BREAKPTS.BP1\": \"{i.i18n.userManagement.Continue}\",\"default\": \"{i.i18n.userManagement.Continue}\"},\"action\": {\"level\": \"Component\",\"method\": \"manualEntryNextTab2\"}}{\"text\": {\"$.BREAKPTS.BP1\": \"{i.i18n.userManagement.Continue}\",\"default\": \"{i.i18n.userManagement.Continue}\"},\"action\": {\"level\": \"Component\",\"method\": \"manualEntryNextTab2\"}}",
+        "tab2Title": "{   \"$.BREAKPTS.BP1\": \"{i.i18n.AddPayee.ENTERPAYEEINFORMATION}\",   \"default\": \"{i.i18n.AddPayee.ENTERPAYEEINFORMATION}\" }",
+        "unmaskeyeicon": "{\"unmaskeyeicon\" : \"g\"}"
+    },
+    "id": "addPayee",
+    "info": null,
+    "issegmentchild": false,
+    "isvisible": true,
+    "kuid": "ga1363d91dae471b8162683571c62a19",
+    "layouttype": 4,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxLeft",
+    "pf": "frmAddPayee1",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "ref",
+                "value": "preferred"
+            },
+            "skin": "s17ff43cabee441e9dd8fc8e3029821f"
+        },
+        "b2": {
+            "skin": "s17ff43cabee441e9dd8fc8e3029821f"
+        },
+        "b3": {
+            "layoutType": 4,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "right": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "skin": "s17ff43cabee441e9dd8fc8e3029821f",
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            }
+        },
+        "b4": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "height": {
+                "type": "ref",
+                "value": "preferred"
+            },
+            "skin": "s17ff43cabee441e9dd8fc8e3029821f"
+        }
+    },
+    "sourceUserWidget": "dbff9459b2f94eb08b49e6e6c42bccff",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

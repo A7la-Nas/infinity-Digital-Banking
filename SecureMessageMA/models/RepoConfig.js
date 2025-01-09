@@ -1,0 +1,1 @@
+{"table":"Message","db":"SecureMessaging","verbs":"true"},{"table":"media","db":"MessageBinary","verbs":"true"},{"table":"NotificationList","db":"Notifications","verbs":"true"},{"table":"UnreadNotifications","db":"Notifications","verbs":"true"}

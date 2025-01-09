@@ -1,0 +1,28 @@
+{
+    "AS_FlexContainer_c1fd4fa7f5ea4f4da5b9c484ccdd07b6": {
+        "id": "AS_FlexContainer_c1fd4fa7f5ea4f4da5b9c484ccdd07b6",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__a501b207d6e7462f92e22059982098e5",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "toggleSegRowCheckBox",
+            "display": "toggleSegRowCheckBox",
+            "inputparams": [{
+                "name": "context",
+                "value": " context"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

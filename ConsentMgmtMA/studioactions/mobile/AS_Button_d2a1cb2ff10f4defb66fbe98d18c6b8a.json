@@ -1,0 +1,24 @@
+{
+    "AS_Button_d2a1cb2ff10f4defb66fbe98d18c6b8a": {
+        "id": "AS_Button_d2a1cb2ff10f4defb66fbe98d18c6b8a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDummyLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d35425c1d5c44e50a0223209cb9b2441"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_g3f6086cba4443849f43f108028cab4a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " new kony.mvc.Navigation({\n                \"appName\": \"ConsentMgmtMA\",\n                \"friendlyName\": \"PSD2ConsentUIModule/frmSelectTPP\"\n            }).navigate();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

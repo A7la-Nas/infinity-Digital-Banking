@@ -1,0 +1,61 @@
+{
+    "Forms": {
+        "desktop": {
+            "frmPayDueAmount": {
+                "Controller": "LoanPayUIModule/frmPayDueAmountController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "LoanPayUIModule/frmPayDueAmount",
+                "friendlyName": "frmPayDueAmount"
+            }
+        },
+		"mobile": {
+            "frmLoansFromAccount": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "LoanPayUIModule/frmLoansFromAccountController",
+                "FormName": "LoanPayUIModule/frmLoansFromAccount",
+                "friendlyName": "frmLoansFromAccount"
+            },
+            "frmLoanPayoff": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "LoanPayUIModule/frmLoanPayoffController",
+                "FormName": "LoanPayUIModule/frmLoanPayoff",
+                "friendlyName": "frmLoanPayoff"
+            },
+            "frmLoansVerify": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "LoanPayUIModule/frmLoansVerifyController",
+                "FormName": "LoanPayUIModule/frmLoansVerify",
+                "friendlyName": "frmLoansVerify"
+            },
+            "frmLoansAcknowledgement": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "LoanPayUIModule/frmLoansAcknowledgementController",
+                "FormName": "LoanPayUIModule/frmLoansAcknowledgement",
+                "friendlyName": "frmLoansAcknowledgement"
+            },
+            "frmLoansDate": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "LoanPayUIModule/frmLoansDateController",
+                "FormName": "LoanPayUIModule/frmLoansDate",
+                "friendlyName": "frmLoansDate"
+            }
+        }
+    },
+    "ModuleName": "LoanPayUIModule",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "LoanPayUIModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": []
+        },
+		"Mobile": {
+            "PresentationControllerClass": "LoanPayUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": []
+        }
+    }
+}

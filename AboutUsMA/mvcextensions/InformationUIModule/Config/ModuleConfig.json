@@ -1,0 +1,38 @@
+{
+    "Forms": {
+        "mobile": {
+            "frmSupport": {
+                "Controller": "InformationUIModule/frmSupportController",
+                "ControllerExtensions": [
+                ],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "InformationUIModule/frmSupport",
+                "friendlyName": "frmSupport"
+            },
+            "frmSupportInfo": {
+                "Controller": "InformationUIModule/frmSupportInfoController",
+                "ControllerExtensions": [
+                ],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "InformationUIModule/frmSupportInfo",
+                "friendlyName": "frmSupportInfo"
+            }
+        },
+       
+    },
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "InformationUIModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": [
+            ]
+        },
+        "Mobile": {
+            "PresentationControllerClass": "InformationUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": [
+            ]
+        },
+       
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "InformationUIModule"
+}

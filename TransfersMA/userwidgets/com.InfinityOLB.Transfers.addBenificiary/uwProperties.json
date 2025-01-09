@@ -1,0 +1,2600 @@
+{
+    "classname": "addBenificiary",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b0a7c14e300247f48da78808c7fffe58",
+                    "paramList": [
+                        {
+                            "name": "context"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f3bade4408fb496e812e74f5f9c5dc48",
+                    "paramList": [],
+                    "propertyKey": "getContext",
+                    "pw": {
+                        "displayName": "getContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e1cdcb1253514af290f3bb7bb1cfe445",
+                    "paramList": [],
+                    "propertyKey": "lblsetActive",
+                    "pw": {
+                        "displayName": "lblsetActive",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d812787c39ef4fbe9423dec8d9ef07e6",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e483d4cc45da4db4b47cd657a653e34b",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 2,
+                    "propertyKey": "quickLink1Action",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "quickLink1Action",
+                        "srcWidget": "flxQuickLink1",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "d4bacc2ce1e84dde99d59bc1375aeebb"
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Beneficiary Management Service",
+                "Account Number Validation Service",
+                "P2P Management Service",
+                "Component Configs",
+                "Context",
+                "Account Number",
+                "Add Beneficiary",
+                "Review - Added Beneficiary",
+                "Acknowledgement - Added Beneficiary ",
+                "Skins",
+                "Beneficiary Add Category",
+                "Quick Links",
+                "P2P Quick Links"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "PayeeObjects",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "af13c0aed4be4dfb94213abcad08f4e6",
+                    "originalPropertyKey": "beneficiaryobjectService",
+                    "propertyIndex": 1,
+                    "propertyKey": "beneficiaryobjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"BT1\": \"Same Bank\",   \"BT2\": \"External\",   \"BT3\": \"International\",   \"BT4\": \"P2P\" }",
+                    "group": "Component Configs",
+                    "kuid": "d2d3b8714d4d42b4aa8d22b633999ae4",
+                    "originalPropertyKey": "BNFTYPES",
+                    "propertyIndex": 1,
+                    "propertyKey": "BNFTYPES",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary types",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.BT1\":{\"$.FLOWTYPES.FT1\":{\"$.BREAKPTS.BP1\":\"{i.i18n.FastTransfers.AddDBXAccount}\",\"default\":\"{i.i18n.FastTransfers.AddDBXAccount}\"},\"$.FLOWTYPES.FT2\":{\"$.BREAKPTS.BP1\":\"{i.i18n.ProfileManagement.EditConsent} {$.c.recipientName}\",\"default\":\"{i.i18n.ProfileManagement.EditConsent} {$.c.recipientName}\"}},\"$.BNFTYPES.BT2\":{\"$.FLOWTYPES.FT1\":{\"$.BREAKPTS.BP1\":\"{i.i18n.FastTransfers.AddExternalAccount}\",\"default\":\"{i.i18n.FastTransfers.AddExternalAccount}\"},\"$.FLOWTYPES.FT2\":{\"$.BREAKPTS.BP1\":\"{i.i18n.ProfileManagement.EditConsent} {$.c.recipientName}\",\"default\":\"{i.i18n.ProfileManagement.EditConsent} {$.c.recipientName}\"}},\"$.BNFTYPES.BT3\":{\"$.FLOWTYPES.FT1\":{\"$.BREAKPTS.BP1\":\"{i.i18n.FastTransfers.AddInternationalAccount}\",\"default\":\"{i.i18n.FastTransfers.AddInternationalAccount}\"},\"$.FLOWTYPES.FT2\":{\"$.BREAKPTS.BP1\":\"{i.i18n.ProfileManagement.EditConsent} {$.c.recipientName}\",\"default\":\"{i.i18n.ProfileManagement.EditConsent} {$.c.recipientName}\"}},\"$.BNFTYPES.BT4\":{\"$.FLOWTYPES.FT1\":{\"$.BREAKPTS.BP1\":\"{i.i18n.FastTransfers.AddPersonToPersonRecipient}\",\"default\":\"{i.i18n.FastTransfers.AddPersonToPersonRecipient}\"},\"$.FLOWTYPES.FT2\":{\"$.BREAKPTS.BP1\":\"{i.i18n.ProfileManagement.EditConsent} {$.c.recipientName}\",\"default\":\"{i.i18n.ProfileManagement.EditConsent} {$.c.recipientName}\"}}}",
+                    "group": "General",
+                    "kuid": "bfa4234361b949a68c5bf22301d99c16",
+                    "originalPropertyKey": "blockTitle",
+                    "propertyIndex": 1,
+                    "propertyKey": "blockTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Block title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSP72727215px",
+                    "group": "Skins",
+                    "kuid": "ef28d9a4bf804d2ca57fe95ba87893c8",
+                    "originalPropertyKey": "sknAddLabel",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknAddLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "AddLabelSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Account Number\",     \"default\": \"Account Number\"   },    \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Routing Number\",     \"default\": \"Routing Number\"   },    \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"SWIFT Code\",     \"default\": \"SWIFT Code\"   },    \"$.BNFTYPES.BT4\": {     \"$.BREAKPTS.BP1\": \"Recipient Name :\",     \"default\": \"Recipient Name :\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "d54a4865b51b43248509a88a78061855",
+                    "originalPropertyKey": "textInput1Label",
+                    "propertyIndex": 1,
+                    "propertyKey": "textInput1Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input1 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Confirm Recipient Details\",     \"default\": \"Confirm Recipient Details\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Confirm Recipient Details\",     \"default\": \"Confirm Recipient Details\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Confirm Recipient Details\",     \"default\": \"Confirm Recipient Details\"   },   \"$.BNFTYPES.BT4\": {     \"$.BREAKPTS.BP1\": \"Add Recipient - Confirmation\",     \"default\": \"Add Recipient - Confirmation\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "d645f11eb53748e3b09a581bf6d682e9",
+                    "originalPropertyKey": "reviewSectionTitle",
+                    "propertyIndex": 1,
+                    "propertyKey": "reviewSectionTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "SectionTitle",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Acknowledgement\",     \"default\": \"Acknowledgement\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Acknowledgement\",     \"default\": \"Acknowledgement\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Acknowledgement\",     \"default\": \"Acknowledgement\"   },   \"$.BNFTYPES.BT4\": {     \"$.BREAKPTS.BP1\": \"Acknowledgement\",     \"default\": \"Acknowledgement\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "c5b97097d2034d8bb13413da71faabb5",
+                    "originalPropertyKey": "acknowledgementTitle",
+                    "propertyIndex": 1,
+                    "propertyKey": "acknowledgementTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Section1Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.flowType}",
+                    "group": "Context",
+                    "kuid": "a196948456fb4570baf4652e915d9335",
+                    "originalPropertyKey": "selectedflowType",
+                    "propertyIndex": 1,
+                    "propertyKey": "selectedflowType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Selected FlowType",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"masking\" : true }",
+                    "group": "Account Number",
+                    "kuid": "db68189076b946ec90902b055622556d",
+                    "originalPropertyKey": "masking",
+                    "propertyIndex": 1,
+                    "propertyKey": "masking",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Masking Required",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PayeeObjects",
+                    "group": "P2P Management Service",
+                    "kuid": "dcb021e5f61e4043a79d5334907b1947",
+                    "originalPropertyKey": "payeeObjectService",
+                    "propertyIndex": 1,
+                    "propertyKey": "payeeObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"Add Recipient to\",\"default\":\"Add Recipient to\"}",
+                    "group": "Beneficiary Add Category",
+                    "kuid": "ab775ff683b1489e8ba2b27bcf441d97",
+                    "originalPropertyKey": "selectionTitle",
+                    "propertyIndex": 1,
+                    "propertyKey": "selectionTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"Add Infinity Bank Account\",     \"default\": \"Add Infinity Bank Account\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"quickLinkAction1\",     \"context\": \"\"   },   \"entitlement\": [     \"INTRA_BANK_FUND_TRANSFER_CREATE_RECEPIENT\"   ] }",
+                    "group": "Quick Links",
+                    "kuid": "f851191ed1b0425d94b86baf029461b2",
+                    "originalPropertyKey": "quickLink1",
+                    "propertyIndex": 1,
+                    "propertyKey": "quickLink1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Quick Link1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"View Person-To-Person Settings\",     \"default\": \"View Person-To-Person Settings\"   },   \"action\": {     \"level\": \"Form\",     \"method\": \"viewP2PSettings\",     \"context\": \"\"   },   \"entitlement\": [     \"P2P_VIEW&&P2P_CREATE_RECEPIENT\"   ] }",
+                    "group": "P2P Quick Links",
+                    "kuid": "f53e67fdd32749cc8f8b6c9b02d562a0",
+                    "originalPropertyKey": "p2pQuickLink1",
+                    "propertyIndex": 1,
+                    "propertyKey": "p2pQuickLink1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P QuickLink1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Payee_Name",
+                    "group": "Account Number Validation Service",
+                    "kuid": "g578dfdc38c74a01a4ce658dce83e4c9",
+                    "originalPropertyKey": "objName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.isCombinedUser}",
+                    "group": "Beneficiary Add Category",
+                    "kuid": "d6bb79a0369f42eab28a16362184cdb4",
+                    "originalPropertyKey": "beneficiaryTypeSelectionVisibility2",
+                    "propertyIndex": 2,
+                    "propertyKey": "beneficiaryTypeSelectionVisibility2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "User Role Based Visibility",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Recipients",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "ed4c486506394c6f873f0d7e5913723f",
+                    "originalPropertyKey": "beneficiaryObject",
+                    "propertyIndex": 2,
+                    "propertyKey": "beneficiaryObject",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Object",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTextBox424242",
+                    "group": "Skins",
+                    "kuid": "d1c500c2ddee48a6b6e96a86034518d0",
+                    "originalPropertyKey": "sknAddTextBoxEnabled",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknAddTextBoxEnabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "AddTextBoxEnabledSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"text\": \"{$.c.accountNumber}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter Account Number\",       \"default\": \"Enter Account Number\"     },     \"isMaskingEnabled\": true,     \"infoIconText\": \"\",     \"inputMode\": \"NUMERIC\",     \"tooltip\": \"Account Number\"   },   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.routingNumber}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter Routing Number\",       \"default\": \"Enter Routing Number\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"NUMERIC\",     \"tooltip\": \"Routing Number\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.swiftCode}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter SWIFT Code\",       \"default\": \"Enter SWIFT Code\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"ANY\",     \"tooltip\": \"Swift Code\"   },   \"$.BNFTYPES.BT4\": {     \"text\": \"{$.c.recipientName}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter Recipient Name\",       \"default\": \"Enter Recipient Name\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"ANY\",     \"tooltip\": \"Recipient Name\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "i01e09a5c48f4984bd946e0b14679ada",
+                    "originalPropertyKey": "textInput1Value",
+                    "propertyIndex": 2,
+                    "propertyKey": "textInput1Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Account Number :\",     \"default\": \"Account Number :\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Routing Number :\",     \"default\": \"Routing Number :\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"SWIFT Code :\",     \"default\": \"SWIFT Code :\"   },   \"$.BNFTYPES.BT4\": {     \"$.BREAKPTS.BP1\": \"Recipient Name :\",     \"default\": \"Recipient Name :\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "bf3794b987f742d9bfddf5d50b8e898e",
+                    "originalPropertyKey": "reviewRow1Label",
+                    "propertyIndex": 2,
+                    "propertyKey": "reviewRow1Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row1 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":{\"$.FLOWTYPES.FT1\":\"{$.c.recipientName} ... {$.c.accountNumber} {i.i18n.common.HasBeenAddedSuccessfully}\",\"$.FLOWTYPES.FT2\":\"{$.c.recipientName} ... {$.c.accountNumber} {i.i18n.FastTransfers.hasbeensuccessfullyedited}\"},\"$.BNFTYPES.BT4\":{\"$.FLOWTYPES.FT1\":\"{$.c.recipientName} {i.i18n.common.HasBeenAddedSuccessfully}\",\"$.FLOWTYPES.FT2\":\"{$.c.recipientName} {i.i18n.FastTransfers.hasbeensuccessfullyedited}\"}}",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "h67aedd39a0343acb41056721dbfc36f",
+                    "originalPropertyKey": "acknowledgementText",
+                    "propertyIndex": 2,
+                    "propertyKey": "acknowledgementText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "AcknowledgementText",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.accountNumber}",
+                    "group": "Context",
+                    "kuid": "ea201afa4d9940779b03b78b833a9487",
+                    "originalPropertyKey": "accountNumber",
+                    "propertyIndex": 2,
+                    "propertyKey": "accountNumber",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Account Number",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"BP1\": \"640\",   \"BP2\": \"1024\",   \"BP3\": \"1366\" }",
+                    "group": "Component Configs",
+                    "kuid": "ad90f532895e446b9b7cb2d65baf8ad0",
+                    "originalPropertyKey": "BREAKPTS",
+                    "propertyIndex": 2,
+                    "propertyKey": "BREAKPTS",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Breakpoints",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\" : \"\\\\d(?=\\\\d{4})\", \"replaceCharacter\" : \"X\",  \"modifiers\" : \"g\"}",
+                    "group": "Account Number",
+                    "kuid": "bdd2a24b4da84651a0318f337bc05f8d",
+                    "originalPropertyKey": "accountNumberFormat",
+                    "propertyIndex": 2,
+                    "propertyKey": "accountNumberFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Account Number Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Recipients",
+                    "group": "P2P Management Service",
+                    "kuid": "f1a0aa489352457b8fede36e42758400",
+                    "originalPropertyKey": "payeeObject",
+                    "propertyIndex": 2,
+                    "propertyKey": "payeeObject",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Object",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"Recipients\": {     \"accountNumber\": \"ACCOUNT_NUMBER\",     \"reAccountNumber\": \"ACCOUNT_NUMBER\",     \"routingNumber\": \"ROUTING_NUMBER\",     \"swiftCode\": \"SWIFT_CODE\",     \"recipientName\": \"FIRSTNAME\",     \"nickName\": \"NAME\"   },   \"PayPerson\": {     \"recipientName\": \"FIRSTNAME\",     \"nickName\": \"NAME\",     \"Phone Number\": \"MOBILE_NUMBER\",     \"Email\": \"EMAIL\"   } }",
+                    "group": "General",
+                    "kuid": "f67bcdf755624b31b036a860fde5f0f4",
+                    "originalPropertyKey": "dvfConfig",
+                    "propertyIndex": 2,
+                    "propertyKey": "dvfConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Validation Config",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"Add External Account\",     \"default\": \"Add External Account\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"quickLinkAction2\",     \"context\": \"\"   },   \"entitlement\": [     \"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\"   ] }  ",
+                    "group": "Quick Links",
+                    "kuid": "b421ae9af4f24bbd96d39261dda1f3d4",
+                    "originalPropertyKey": "quickLink2",
+                    "propertyIndex": 2,
+                    "propertyKey": "quickLink2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Quick Link2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"Deactivate Person-To-Person\",     \"default\": \"Deactivate Person-To-Person\"   },   \"action\": {     \"level\": \"Form\",     \"method\": \"deactivateP2PSettings\",     \"context\": \"\"   },   \"entitlement\": [     \"P2P_VIEW&&P2P_CREATE_RECEPIENT\"   ] }",
+                    "group": "P2P Quick Links",
+                    "kuid": "d7154835b3a9402e8f1debf995e759d5",
+                    "originalPropertyKey": "p2pQuickLink2",
+                    "propertyIndex": 2,
+                    "propertyKey": "p2pQuickLink2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P QuickLink2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getPayeeName",
+                    "group": "Account Number Validation Service",
+                    "kuid": "c8fcb76a80b94b4f8f92b19fd54d9ada",
+                    "originalPropertyKey": "operationName",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "createExternalPayee",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "b96132178e9d4b33b8b095ab25fb25e3",
+                    "originalPropertyKey": "beneficiaryCREATEOperation",
+                    "propertyIndex": 3,
+                    "propertyKey": "beneficiaryCREATEOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Create Operation ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTextBox94949415px",
+                    "group": "Skins",
+                    "kuid": "jb07eb4655ee47d4a8f8d77a7fb0d70a",
+                    "originalPropertyKey": "sknAddTextBoxPlaceHolder",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknAddTextBoxPlaceHolder",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "AddTextBoxPlaceHolderSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": false   },   \"$.BNFTYPES.BT2\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": false   },   \"$.BNFTYPES.BT3\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": false   },   \"$.BNFTYPES.BT4\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": false   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "a6ab820a7f0b4f91a1b1315f63335ce3",
+                    "originalPropertyKey": "textInput1Enabled",
+                    "propertyIndex": 3,
+                    "propertyKey": "textInput1Enabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input1 Enabled",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"text\": \"{$.c.accountNumber}\",     \"fieldType\": \"Account Number\"   },   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.routingNumber}\",     \"fieldType\": \"Label\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.swiftCode}\",     \"fieldType\": \"Label\"   },   \"$.BNFTYPES.BT4\": {     \"text\": \"{$.c.recipientName}\",     \"fieldType\": \"Label\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "f05746fa2e384cff8d7cc905b7ccaf01",
+                    "originalPropertyKey": "reviewRow1Value",
+                    "propertyIndex": 3,
+                    "propertyKey": "reviewRow1Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"success_green.png\"}",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "aee6f366d9e24697a520240647e3c962",
+                    "originalPropertyKey": "acknowledgementImage",
+                    "propertyIndex": 3,
+                    "propertyKey": "acknowledgementImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.swiftCode}",
+                    "group": "Context",
+                    "kuid": "def07884debf4ca28afbfbcb4e8b5f63",
+                    "originalPropertyKey": "swiftCode",
+                    "propertyIndex": 3,
+                    "propertyKey": "swiftCode",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Swift Code",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"FT1\": \"ADD\",   \"FT2\": \"EDIT\" }",
+                    "group": "Component Configs",
+                    "kuid": "a6ec61b752d149dc833805e8c564902e",
+                    "originalPropertyKey": "FLOWTYPES",
+                    "propertyIndex": 3,
+                    "propertyKey": "FLOWTYPES",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "FlowTypes",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"maskeyeicon\" : \"i\"}",
+                    "group": "Account Number",
+                    "kuid": "a741f09d3dac4ccb8c5dcd3052a767bc",
+                    "originalPropertyKey": "maskeyeicon",
+                    "propertyIndex": 3,
+                    "propertyKey": "maskeyeicon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Mask VizIcon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "createP2PPayee",
+                    "group": "P2P Management Service",
+                    "kuid": "a4a39e7cb7da494a89db1ccb8812bdf2",
+                    "originalPropertyKey": "payeeCREATEOperation",
+                    "propertyIndex": 3,
+                    "propertyKey": "payeeCREATEOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Create Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.BT1\": true,\"$.BNFTYPES.BT2\": true,\"$.BNFTYPES.BT3\": true,\"$.BNFTYPES.BT4\": false }",
+                    "group": "Beneficiary Add Category",
+                    "kuid": "ae8e36eeadbb4425977aa7a39aadf0cf",
+                    "originalPropertyKey": "beneficiaryTypeSelectionVisibility1",
+                    "propertyIndex": 3,
+                    "propertyKey": "beneficiaryTypeSelectionVisibility1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Type Based Visibility",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"Recipients\": {     \"accountNumber\": \"3\",     \"reAccountNumber\": \"3\",     \"routingNumber\": \"3\",     \"swiftCode\": \"3\",     \"recipientName\": \"2\",     \"nickName\": \"2\"   },   \"PayPerson\": {     \"recipientName\": \"2\",     \"nickName\": \"2\",     \"Phone Number\": \"3\",     \"Email\": \"3\"   } }",
+                    "group": "General",
+                    "kuid": "ie994085e8164e27b0593ed9e3278e36",
+                    "originalPropertyKey": "minFillMapping",
+                    "propertyIndex": 3,
+                    "propertyKey": "minFillMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Minimum Fill Mapping",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"Add International Account\",     \"default\": \"Add International Account\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"quickLinkAction3\",     \"context\": \"\"   },   \"entitlement\": [     \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\"   ] }",
+                    "group": "Quick Links",
+                    "kuid": "a8d9fc228cae4d71ba6ae461518bb743",
+                    "originalPropertyKey": "quickLink3",
+                    "propertyIndex": 3,
+                    "propertyKey": "quickLink3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Quick Link3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PayeeManagement",
+                    "group": "Account Number Validation Service",
+                    "kuid": "b63ff811585f44369b10124074a8be3c",
+                    "originalPropertyKey": "serviceName",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"icon\":{\"skin\":\"sknLblFontTypeIcon003E7520px\",\"vizIcon\":\"M\"},   \"reviewIcon\":{\"skin\":\"bbSknLblFontIcon\",\"vizIcon\":\"s\"},   \"selected\":true }",
+                    "group": "Beneficiary Add Category",
+                    "kuid": "g28744eacac8448daf403c966575bf33",
+                    "originalPropertyKey": "radioIcon1",
+                    "propertyIndex": 4,
+                    "propertyKey": "radioIcon1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Radio Icon1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"routingNumber\": \"{$.c.routingNumber}\",   \"swiftCode\": \"{$.c.swiftCode}\",   \"bankName\": \"{$.c.bankName}\",   \"accountType\": \"{$.c.accountType}\",   \"accountNumber\": \"{$.c.accountNumber}\",   \"beneficiaryName\": \"{$.c.recipientName}\",   \"nickName\": \"{$.c.nickName}\",   \"isBusinessPayee\": \"{$.c.isBusinessPayee}\",   \"displayName\": \"{$.c.displayName}\",   \"isSameBankAccount\": \"{$.c.isSameBankAccount}\",   \"isInternationalAccount\": \"{$.c.isInternationalAccount}\",   \"isVerified\": \"{$.c.isVerified}\" }",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "c3944f6e97cd4da9a032056bb03302d4",
+                    "originalPropertyKey": "beneficiaryCREATECriteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "beneficiaryCREATECriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Create Criteria  ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTextBox424242",
+                    "group": "Skins",
+                    "kuid": "jc31c2886e80497c9e1e9e795e03ece5",
+                    "originalPropertyKey": "sknAddTextBoxFocus",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknAddTextBoxFocus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "AddTextBoxFocusSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Reference Number\",     \"default\": \"Reference Number\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Reference Number\",     \"default\": \"Reference Number\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Reference Number\",     \"default\": \"Reference Number\"   },   \"$.BNFTYPES.BT4\": {     \"$.BREAKPTS.BP1\": \"Reference Number\",     \"default\": \"Reference Number\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "e5640ca0636d4770b333674e301cd052",
+                    "originalPropertyKey": "acknowledgementReferenceLabel",
+                    "propertyIndex": 4,
+                    "propertyKey": "acknowledgementReferenceLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ReferenceLabel  ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.routingNumber}",
+                    "group": "Context",
+                    "kuid": "d42c799663ab44a880542959a7f98daa",
+                    "originalPropertyKey": "routingNumber",
+                    "propertyIndex": 4,
+                    "propertyKey": "routingNumber",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "RoutingNumber",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"unmaskeyeicon\" : \"h\"}",
+                    "group": "Account Number",
+                    "kuid": "gb8ce3a6d66d45748fa900422fc94a4d",
+                    "originalPropertyKey": "unmaskeyeicon",
+                    "propertyIndex": 4,
+                    "propertyKey": "unmaskeyeicon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Unmask VizIcon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Re-Enter Account Number\",     \"default\": \"Re-Enter Account Number\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Account Number\",     \"default\": \"Account Number\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Account Number\",     \"default\": \"Account Number\"   },   \"$.BNFTYPES.BT4\": {     \"$.BREAKPTS.BP1\": \"Nickname :\",     \"default\": \"Nickname :\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "hb19a31b520c4e6ba7821badcddef3f2",
+                    "originalPropertyKey": "textInput2Label",
+                    "propertyIndex": 4,
+                    "propertyKey": "textInput2Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input2 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"Cancel\",     \"default\": \"Cancel\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"reviewCancelAction\",     \"context\": \"\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "a4dda3ddae5f41c6a032bd0ad7148ec4",
+                    "originalPropertyKey": "reviewButton1",
+                    "propertyIndex": 4,
+                    "propertyKey": "reviewButton1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"name\":\"{$.c.recipientName}\",\"nickName\":\"{$.c.nickName}\",\"{$.c.selectedRadioBackendValue}\":\"{$.c.radioTextValue}\",\"primaryContactForSending\":\"{$.c.radioTextValue}\"}",
+                    "group": "P2P Management Service",
+                    "kuid": "j8c417fdf72a4b7bac12c6819a1c2da5",
+                    "originalPropertyKey": "payeeCREATECriteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "payeeCREATECriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Create Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"Add Person-To-Person Recipient\",     \"default\": \"Add Person-To-Person Recipient\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"quickLinkAction4\",     \"context\": \"\"   },   \"entitlement\": [     \"P2P_VIEW&&P2P_CREATE_RECEPIENT\"   ] }",
+                    "group": "Quick Links",
+                    "kuid": "f2decb6ce99a4f47bc077c5bf63fe471",
+                    "originalPropertyKey": "quickLink4",
+                    "propertyIndex": 4,
+                    "propertyKey": "quickLink4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Quick Link4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"accountNumber\":\"{$.c.accountNumber}\"}",
+                    "group": "Account Number Validation Service",
+                    "kuid": "eea019ef620c43dd8efef294f684169a",
+                    "originalPropertyKey": "criteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "criteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"icon\": {     \"skin\": \"sknLblFontTypeIcon003E7520px\",     \"vizIcon\": \"L\"   },   \"reviewIcon\": {     \"skin\": \"bbSknLblFontIcon\",     \"vizIcon\": \"r\"   },   \"selected\":false }",
+                    "group": "Beneficiary Add Category",
+                    "kuid": "b418ced8398e46ada8f192e8f0637cdf",
+                    "originalPropertyKey": "radioIcon2",
+                    "propertyIndex": 5,
+                    "propertyKey": "radioIcon2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Radio Icon2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "beneficiaryCreate",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "f6c398d141a94d7bb621d112215b7f10",
+                    "originalPropertyKey": "beneficiaryCREATEIdentifier",
+                    "propertyIndex": 5,
+                    "propertyKey": "beneficiaryCREATEIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Create Service Response Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSSP42424215PxBorder4A90E2",
+                    "group": "Skins",
+                    "kuid": "f7975913abcb47999d7d66ff1c6fbe95",
+                    "originalPropertyKey": "sknAddTextBoxHover",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknAddTextBoxHover",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "AddTextBoxHoverSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"default\": {     \"$.FLOWTYPES.FT1\": \"{$.beneficiaryCreate.Id}\",     \"$.FLOWTYPES.FT2\": \"{$.beneficiaryEdit.Id}\"   },   \"$.BNFTYPES.BT4\": {     \"$.FLOWTYPES.FT1\": \"{$.payeeCreate.PayPersonId}\",     \"$.FLOWTYPES.FT2\": \"{$.c.payPersonId}\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "b384ef3a38d848eabe6c3c2c07f73da3",
+                    "originalPropertyKey": "acknowledgementReferenceValue",
+                    "propertyIndex": 5,
+                    "propertyKey": "acknowledgementReferenceValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ReferenceValue",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.nickName}",
+                    "group": "Context",
+                    "kuid": "c5857678946a4d6595c02634258d9162",
+                    "originalPropertyKey": "nickName",
+                    "propertyIndex": 5,
+                    "propertyKey": "nickName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Nick Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"text\": \"{$.c.accountNumber}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter Account Number\",       \"default\": \"Enter Account Number\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"NUMERIC\",     \"tooltip\": \"Account Number\"   },   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.accountNumber}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter Account Number\",       \"default\": \"Enter Account Number\"     },     \"isMaskingEnabled\": true,     \"infoIconText\": \"\",     \"inputMode\": \"NUMERIC\",     \"tooltip\": \"Account Number\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.accountNumber}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter Account Number\",       \"default\": \"Enter Account Number\"     },     \"isMaskingEnabled\": true,     \"infoIconText\": \"\",     \"inputMode\": \"ANY\",     \"tooltip\": \"Account Number\"   },   \"$.BNFTYPES.BT4\": {     \"text\": \"{$.c.nickName}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter Nickname\",       \"default\": \"Enter Nickname\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"ANY\",     \"tooltip\": \"Nick Name\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "ac3dda3a25c74ce4bd45813794a8a3a0",
+                    "originalPropertyKey": "textInput2Value",
+                    "propertyIndex": 5,
+                    "propertyKey": "textInput2Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"Modify\",     \"default\": \"Modify\"   },   \"action\": {     \"level\": \"Component\",     \"method\": \"reviewModifyAction\",     \"context\": \"\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "f62f5a257dae417993106464621e5363",
+                    "originalPropertyKey": "reviewButton2",
+                    "propertyIndex": 5,
+                    "propertyKey": "reviewButton2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "payeeCreate",
+                    "group": "P2P Management Service",
+                    "kuid": "cfa773ff034c4e06b4d23805f97192c1",
+                    "originalPropertyKey": "payeeCREATEIdentifier",
+                    "propertyIndex": 5,
+                    "propertyKey": "payeeCREATEIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Create Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"isBusinessPayee\":\"0\"}",
+                    "group": "Beneficiary Add Category",
+                    "kuid": "b98aafbcb29c4f249b052f28b2d84c01",
+                    "originalPropertyKey": "radioIcon1Criteria",
+                    "propertyIndex": 6,
+                    "propertyKey": "radioIcon1Criteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Radio Icon1 Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "editP2PPayee",
+                    "group": "P2P Management Service",
+                    "kuid": "bc735a418ab24fa386a6304d4896dae2",
+                    "originalPropertyKey": "payeeEDITOperation",
+                    "propertyIndex": 6,
+                    "propertyKey": "payeeEDITOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Edit Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "editExternalPayee",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "i119070366de485797121dc3f8b426c0",
+                    "originalPropertyKey": "beneficiaryEDITOperation",
+                    "propertyIndex": 6,
+                    "propertyKey": "beneficiaryEDITOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Edit Operation ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknBBLabelSSP42424220px",
+                    "group": "Skins",
+                    "kuid": "ddbca27142c74b50835f61ac89334a36",
+                    "originalPropertyKey": "sknBlockTitle",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknBlockTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "BlockTitleSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.recipientName}",
+                    "group": "Context",
+                    "kuid": "hbf84bb15ac448a39e0bb797df1ac030",
+                    "originalPropertyKey": "recepientName",
+                    "propertyIndex": 6,
+                    "propertyKey": "recepientName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Recepient Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": false   },   \"$.BNFTYPES.BT2\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": false   },   \"$.BNFTYPES.BT3\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": false   },   \"$.BNFTYPES.BT4\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": true   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "d365c51a60c84adf8f6fd1ed9be36d88",
+                    "originalPropertyKey": "textInput2Enabled",
+                    "propertyIndex": 6,
+                    "propertyKey": "textInput2Enabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input2 Enabled",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"default\": {     \"text\": {       \"$.BREAKPTS.BP1\": \"Add Account\",       \"default\": \"Add Account\"     },     \"action\": {       \"level\": \"Component\",       \"method\": \"reviewContinueBeneficiary\",       \"context\": \"\"     }   },   \"$.BNFTYPES.BT4\": {     \"text\": {       \"$.BREAKPTS.BP1\": \"Confirm\",       \"default\": \"Confirm\"     },     \"action\": {       \"level\": \"Component\",       \"method\": \"reviewContinueP2P\",       \"context\": \"\"     }   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "ddf68c33feb946d19b503ae006054010",
+                    "originalPropertyKey": "reviewButton3",
+                    "propertyIndex": 6,
+                    "propertyKey": "reviewButton3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"isBusinessPayee\":\"1\"}",
+                    "group": "Beneficiary Add Category",
+                    "kuid": "bc4d9ced4daa4e88a4a44d98beca3d6b",
+                    "originalPropertyKey": "radioIcon2Criteria",
+                    "propertyIndex": 7,
+                    "propertyKey": "radioIcon2Criteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Radio Icon2 Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"name\":\"{$.c.recipientName}\",\"nickName\":\"{$.c.nickName}\",\"{$.c.selectedRadioBackendValue}\":\"{$.c.radioTextValue}\",\"primaryContactForSending\":\"{$.c.radioTextValue}\",\"PayPersonId\":\"{$.c.payPersonId}\"}",
+                    "group": "P2P Management Service",
+                    "kuid": "gbc5f7596f9442d784700f0f72289c61",
+                    "originalPropertyKey": "payeeEDITCriteria",
+                    "propertyIndex": 7,
+                    "propertyKey": "payeeEDITCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Edit Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Recipient Name\",     \"default\": \"Recipient Name\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Account Number\",     \"default\": \"Account Number\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Account Number\",     \"default\": \"Account Number\"   },   \"$.BNFTYPES.BT4\": {     \"$.BREAKPTS.BP1\": \"Nickname :\",     \"default\": \"Nickname :\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "d1cd758989534ac3819f47f089e00b5f",
+                    "originalPropertyKey": "reviewRow2Label",
+                    "propertyIndex": 7,
+                    "propertyKey": "reviewRow2Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row2 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"routingNumber\": \"{$.c.routingNumber}\",   \"swiftCode\": \"{$.c.swiftCode}\",   \"bankName\": \"{$.c.bankName}\",   \"accountType\": \"{$.c.accountType}\",   \"accountNumber\": \"{$.c.accountNumber}\",   \"oldName\":\"{$.c.oldName}\",   \"beneficiaryName\": \"{$.c.recipientName}\",   \"nickName\": \"{$.c.nickName}\",   \"isBusinessPayee\": \"{$.c.isBusinessPayee}\",   \"displayName\": \"{$.c.displayName}\",   \"isSameBankAccount\": \"{$.c.isSameBankAccount}\",   \"isInternationalAccount\": \"{$.c.isInternationalAccount}\",   \"payeeId\": \"{$.c.Id}\" }",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "c87c67b4aa2e4a56b96ddb0e71f47040",
+                    "originalPropertyKey": "beneficiaryEDITCriteria",
+                    "propertyIndex": 7,
+                    "propertyKey": "beneficiaryEDITCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Edit Criteria ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlbl424242SSP15pxSemibold",
+                    "group": "Skins",
+                    "kuid": "cdcb008eb11a476f81aac2e8b20fae43",
+                    "originalPropertyKey": "sknSectionHeader",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknSectionHeader",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "SectionHeaderSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Recipient Name\",     \"default\": \"Recipient Name\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Re-Enter Account Number\",     \"default\": \"Re-Enter Account Number\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Re-Enter Account Number\",     \"default\": \"Re-Enter Account Number\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "e78c6f8444794c048f904ea9187e82b9",
+                    "originalPropertyKey": "textInput3Label",
+                    "propertyIndex": 7,
+                    "propertyKey": "textInput3Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input3 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.FLOWTYPES.FT1\": {     \"text\": \"Add Another Recipient\",     \"action\": {       \"level\": \"form\",       \"method\": \"addAnotherRecepientAction\",       \"context\": \"\"     },     \"entitlement\": [       \"INTRA_BANK_FUND_TRANSFER_CREATE_RECEPIENT\"     ]   },   \"$.FLOWTYPES.FT2\": {     \"text\": \"Accounts\",     \"action\": {       \"level\": \"form\",       \"method\": \"navigatetofrmCombinedAccountsLanding\",       \"context\": \"\"     },     \"entitlement\": [       \"INTRA_BANK_FUND_TRANSFER_CREATE_RECEPIENT\"     ]   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "a1fd18b666694c4dab1d9d5ced974432",
+                    "originalPropertyKey": "acknowledgementButton1",
+                    "propertyIndex": 7,
+                    "propertyKey": "acknowledgementButton1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"Personal Banking\",\"default\":\"Personal Banking\"}",
+                    "group": "Beneficiary Add Category",
+                    "kuid": "j2d46ab19fa449658599bb4b1814e413",
+                    "originalPropertyKey": "selectionLabel1",
+                    "propertyIndex": 8,
+                    "propertyKey": "selectionLabel1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Radio Value1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "payeeEdit",
+                    "group": "P2P Management Service",
+                    "kuid": "i9cc12a7c6e043bdb8054cf3665a13f0",
+                    "originalPropertyKey": "payeeEDITIdentifier",
+                    "propertyIndex": 8,
+                    "propertyKey": "payeeEDITIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Edit Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "beneficiaryEdit",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "g851a74e6d03418d87b987fd70c9f991",
+                    "originalPropertyKey": "beneficiaryEDITIdentifier",
+                    "propertyIndex": 8,
+                    "propertyKey": "beneficiaryEDITIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Edit Service Response Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"sknSSPRegular13px\"},\"default\":{\"skin\":\"sknSSPRegular727272op10015px\"}}",
+                    "group": "Skins",
+                    "kuid": "b3c6db24a2214a03bc048f91cd992848",
+                    "originalPropertyKey": "sknReviewLabel",
+                    "propertyIndex": 8,
+                    "propertyKey": "sknReviewLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ReviewLabelSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.beneficiaryType}",
+                    "group": "Context",
+                    "kuid": "db95fd2fa90748888ce6ceee1b3f43fb",
+                    "originalPropertyKey": "selectedBeneficiaryType",
+                    "propertyIndex": 8,
+                    "propertyKey": "selectedBeneficiaryType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Selected Beneficiary Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"text\": \"{$.c.recipientName}\",     \"fieldType\": \"TextWithIcon\"   },   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.accountNumber}\",     \"fieldType\": \"Account Number\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.accountNumber}\",     \"fieldType\": \"Account Number\"   },   \"$.BNFTYPES.BT4\": {     \"text\": \"{$.c.nickName}\",     \"fieldType\": \"Label\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "bc06d63d36ab48c4ac86ebedc4f7c212",
+                    "originalPropertyKey": "reviewRow2Value",
+                    "propertyIndex": 8,
+                    "propertyKey": "reviewRow2Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"text\": \"{$.c.recipientName}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter Beneficiary Name\",       \"default\": \"Enter Beneficiary Name\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"ANY\",     \"tooltip\": \"Beneficiary Name\"   },   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.accountNumber}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter Account Number\",       \"default\": \"Enter Account Number\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"NUMERIC\",     \"tooltip\": \"Account Number\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.accountNumber}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter Account Number\",       \"default\": \"Enter Account Number\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"ANY\",     \"tooltip\": \"Account Number\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "df2136896ffd4972b160c01b0ae58332",
+                    "originalPropertyKey": "textInput3Value",
+                    "propertyIndex": 8,
+                    "propertyKey": "textInput3Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.FLOWTYPES.FT1\": {     \"text\": \"Transfer\",     \"action\": {       \"level\": \"form\",       \"method\": \"newTransferAction\",       \"context\": \"\"     },     \"entitlement\": [       \"INTRA_BANK_FUND_TRANSFER_CREATE\"     ]   },   \"$.FLOWTYPES.FT2\": {     \"text\": \"Manage Recipients\",     \"action\": {       \"level\": \"form\",       \"method\": \"navigatetofrmFastManagePayee\",       \"context\": \"\"     },     \"entitlement\": [       \"INTRA_BANK_FUND_TRANSFER_CREATE\"     ]   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "d2a921beb5af41f48aa0ebeff3c7cb00",
+                    "originalPropertyKey": "acknowledgementButton2",
+                    "propertyIndex": 8,
+                    "propertyKey": "acknowledgementButton2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"Business Banking\",\"default\":\"Business Banking\"}",
+                    "group": "Beneficiary Add Category",
+                    "kuid": "j487b7ea938540d9bb4f5294491a1977",
+                    "originalPropertyKey": "selectionLabel2",
+                    "propertyIndex": 9,
+                    "propertyKey": "selectionLabel2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Radio Value2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "d614c40bf4c944bb97ad324206925e4a",
+                    "originalPropertyKey": "beneficiaryGETOperation",
+                    "propertyIndex": 9,
+                    "propertyKey": "beneficiaryGETOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Get Operation ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknSSPLbl42424213PX00\"},\"default\":{\"skin\":\"ICSknLabel42424215PXBG00\"}}",
+                    "group": "Skins",
+                    "kuid": "c54995759ff74465bec5d05f60ee40ef",
+                    "originalPropertyKey": "sknReviewValue",
+                    "propertyIndex": 9,
+                    "propertyKey": "sknReviewValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ReviewValueSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Account Nickname\",     \"default\": \"Account Nickname\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Recipient Name\",     \"default\": \"Recipient Name\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Recipient Name\",     \"default\": \"Recipient Name\"   },   \"$.BNFTYPES.BT4\":\"{$.c.radioValue} :\"    }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "bf25e153b3f842cf833f966d627a903f",
+                    "originalPropertyKey": "reviewRow3Label",
+                    "propertyIndex": 9,
+                    "propertyKey": "reviewRow3Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row3 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": false   },   \"$.BNFTYPES.BT2\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": false   },   \"$.BNFTYPES.BT3\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": false   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "f19ff170e0584e55ad9f6096f1871155",
+                    "originalPropertyKey": "textInput3Enabled",
+                    "propertyIndex": 9,
+                    "propertyKey": "textInput3Enabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input3 Enabled",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.radioTextValue}",
+                    "group": "Context",
+                    "kuid": "fee6802a28cc4d8c8a8105b439cb6f1d",
+                    "originalPropertyKey": "selectedRadioTextInputValue",
+                    "propertyIndex": 9,
+                    "propertyKey": "selectedRadioTextInputValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Selected Radio TextInput Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "d4a91c9da19b4b03a805a10a1ab39ec6",
+                    "originalPropertyKey": "acknowledgmentButton3",
+                    "propertyIndex": 9,
+                    "propertyKey": "acknowledgmentButton3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":{\"$.BREAKPTS.BP1\":\"Cancel\",\"default\":\"Cancel\"},\"action\":{\"level\":\"Component\",\"method\":\"reviewCancelAction\",\"context\":\"\"}}",
+                    "group": "Beneficiary Add Category",
+                    "kuid": "a093408384d449018a121fb8475294b0",
+                    "originalPropertyKey": "selectionButton1",
+                    "propertyIndex": 10,
+                    "propertyKey": "selectionButton1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Recipient Details\",     \"default\": \"Recipient Details\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Recipient Details\",     \"default\": \"Recipient Details\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Recipient Details\",     \"default\": \"Recipient Details\"   },   \"$.BNFTYPES.BT4\": {     \"$.BREAKPTS.BP1\": \"Recipient Details\",     \"default\": \"Recipient Details\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "f137e2c9179d404fb9acd9092d59d973",
+                    "originalPropertyKey": "acknowledgementSection2Title",
+                    "propertyIndex": 10,
+                    "propertyKey": "acknowledgementSection2Title",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Section2Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "j12419b094024ca5b3cc93a3f2a75fd6",
+                    "originalPropertyKey": "beneficiaryGETCriteria",
+                    "propertyIndex": 10,
+                    "propertyKey": "beneficiaryGETCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Get Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CopysknlblSSP0j451d866ede543",
+                    "group": "Skins",
+                    "kuid": "d9618b2754664130b570aba26bbe9dd7",
+                    "originalPropertyKey": "sknAcknowledgementSuccess",
+                    "propertyIndex": 10,
+                    "propertyKey": "sknAcknowledgementSuccess",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "AcknowledgementSuccessSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"text\": \"{$.c.nickName}\",     \"fieldType\": \"Label\"   },   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.recipientName}\",     \"fieldType\": \"TextWithIcon\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.recipientName}\",     \"fieldType\": \"TextWithIcon\"   },   \"$.BNFTYPES.BT4\": {     \"text\": \"{$.c.radioTextValue}\",     \"fieldType\": \"Label\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "bdba8b7926214570960c2545e738ad7a",
+                    "originalPropertyKey": "reviewRow3Value",
+                    "propertyIndex": 10,
+                    "propertyKey": "reviewRow3Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Account Nickname\",     \"default\": \"Account Nickname\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Recipient Name\",     \"default\": \"Recipient Name\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Recipient Name\",     \"default\": \"Recipient Name\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "ef9351a4a1184f9496b42e47e877e0da",
+                    "originalPropertyKey": "textInput4Label",
+                    "propertyIndex": 10,
+                    "propertyKey": "textInput4Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input4 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.selectedRadioBackendValue}",
+                    "group": "Context",
+                    "kuid": "b2be88dac64848f189bbf37b38ccf7c6",
+                    "originalPropertyKey": "selectedRadioBackendValue",
+                    "propertyIndex": 10,
+                    "propertyKey": "selectedRadioBackendValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Selected Radio Backend Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":{\"$.BREAKPTS.BP1\":\"Modify\",\"default\":\"Modify\"},\"action\":{\"level\":\"Component\",\"method\":\"reviewModifyAction\",\"context\":\"\"}}",
+                    "group": "Beneficiary Add Category",
+                    "kuid": "ga8df9f39d5448fbba52fa732ac2aba1",
+                    "originalPropertyKey": "selectionButton2",
+                    "propertyIndex": 11,
+                    "propertyKey": "selectionButton2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Account Number\",     \"default\": \"Account Number\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Routing Number\",     \"default\": \"Routing Number\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"SWIFT Code\",     \"default\": \"SWIFT Code\"   },   \"$.BNFTYPES.BT4\": {     \"$.BREAKPTS.BP1\": \"Recipient Name :\",     \"default\": \"Recipient Name :\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "g69fc554822f43bb9bd5f7d8ba0dcf0a",
+                    "originalPropertyKey": "acknowledgementRow1Label",
+                    "propertyIndex": 11,
+                    "propertyKey": "acknowledgementRow1Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row1 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "a7ec82eba6a54564a9d4074d29d38792",
+                    "originalPropertyKey": "beneficiaryGETIdentifier",
+                    "propertyIndex": 11,
+                    "propertyKey": "beneficiaryGETIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Get Service Response Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblLaoLight17px",
+                    "group": "Skins",
+                    "kuid": "ff08f1c3e8cc4d0c802b6de671f93bf3",
+                    "originalPropertyKey": "sknAcknowledgementReferenceNumberLabel",
+                    "propertyIndex": 11,
+                    "propertyKey": "sknAcknowledgementReferenceNumberLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "AcknowledgementReferenceNumberLabelSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Bank Name\",     \"default\": \"Bank Name\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Account Nickname\",     \"default\": \"Account Nickname\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Account Nickname\",     \"default\": \"Account Nickname\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "ea9a9605893b4c8280ce7204e8a9aef0",
+                    "originalPropertyKey": "reviewRow4Label",
+                    "propertyIndex": 11,
+                    "propertyKey": "reviewRow4Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row4 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"text\": \"{$.c.nickName}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Default: Benificiary Name\",       \"default\": \"Default: Benificiary Name\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"ANY\",     \"tooltip\": \"Beneficiary Name\"   },   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.recipientName}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter Beneficiary Name\",       \"default\": \"Enter Beneficiary Name\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"ANY\",     \"tooltip\": \"Beneficiary Name\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.recipientName}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Enter Beneficiary Name\",       \"default\": \"Enter Beneficiary Name\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"ANY\",     \"tooltip\": \"Beneficiary Name\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "d94f2b1801984a4d981c9d339a19d84c",
+                    "originalPropertyKey": "textInput4Value",
+                    "propertyIndex": 11,
+                    "propertyKey": "textInput4Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.isCombinedUser}",
+                    "group": "Context",
+                    "kuid": "d4177deb642943ccbd7ef51c1ae80ba7",
+                    "originalPropertyKey": "selectedUserRoleType",
+                    "propertyIndex": 11,
+                    "propertyKey": "selectedUserRoleType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "SelectedUserRoleType",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":{\"$.BREAKPTS.BP1\":\"Continue\",\"default\":\"Continue\"},\"action\":{\"level\":\"Component\",\"method\":\"categoryContinueBeneficiary\",\"context\":\"\"}}",
+                    "group": "Beneficiary Add Category",
+                    "kuid": "f452dcca39b44ee3bd3b7b44d218c1d5",
+                    "originalPropertyKey": "selectionButton3",
+                    "propertyIndex": 12,
+                    "propertyKey": "selectionButton3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"text\": \"{$.c.accountNumber}\",     \"fieldType\": \"Account Number\"   },   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.routingNumber}\",     \"fieldType\": \"Label\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.swiftCode}\",     \"fieldType\": \"Label\"   },   \"$.BNFTYPES.BT4\": {     \"text\": \"{$.c.recipientName}\",     \"fieldType\": \"Label\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "g88f33b84ac74b6080602b759a7c6197",
+                    "originalPropertyKey": "acknowledgementRow1Value",
+                    "propertyIndex": 12,
+                    "propertyKey": "acknowledgementRow1Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSSPLight42424228px",
+                    "group": "Skins",
+                    "kuid": "fcf7bfc810124ef8923770bb28db1ada",
+                    "originalPropertyKey": "sknAcknowledgementReferenceNumberValue",
+                    "propertyIndex": 12,
+                    "propertyKey": "sknAcknowledgementReferenceNumberValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "AcknowledgementReferenceNumberValueSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"text\": \"{$.c.bankName}\",     \"fieldType\": \"Label\"   },   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.nickName}\",     \"fieldType\": \"Label\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.nickName}\",     \"fieldType\": \"Label\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "c40fdb1550e4465e962d8a60db7d3985",
+                    "originalPropertyKey": "reviewRow4Value",
+                    "propertyIndex": 12,
+                    "propertyKey": "reviewRow4Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": true   },   \"$.BNFTYPES.BT2\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": false   },   \"$.BNFTYPES.BT3\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": false   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "cdccb8aa192045209b95dab323f86d2a",
+                    "originalPropertyKey": "textInput4Enabled",
+                    "propertyIndex": 12,
+                    "propertyKey": "textInput4Enabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input4 Enabled",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnSSPffffff15pxBg0273e3",
+                    "group": "Skins",
+                    "kuid": "d2d5bcf268e841e8ad775fcd7bdb41da",
+                    "originalPropertyKey": "sknPrimaryButton",
+                    "propertyIndex": 13,
+                    "propertyKey": "sknPrimaryButton",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "PrimaryButtonSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Bank Name\",     \"default\": \"Bank Name\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Bank Name\",     \"default\": \"Bank Name\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "if6f9835a4444322bda460f8e98c6772",
+                    "originalPropertyKey": "reviewRow5Label",
+                    "propertyIndex": 13,
+                    "propertyKey": "reviewRow5Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row5 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Recipient Name\",     \"default\": \"Recipient Name\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Account Number\",     \"default\": \"Account Number\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Account Number\",     \"default\": \"Account Number\"   },   \"$.BNFTYPES.BT4\": {     \"$.BREAKPTS.BP1\": \"Nickname :\",     \"default\": \"Nickname :\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "cf13a015f0144d468823b0875f6cbfe3",
+                    "originalPropertyKey": "acknowledgementRow2Label",
+                    "propertyIndex": 13,
+                    "propertyKey": "acknowledgementRow2Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row2 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{    \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Account Nickname\",     \"default\": \"Account Nickname\"   },    \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Account Nickname\",     \"default\": \"Account Nickname\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "f42c18daea3b4c75a76644826312eb41",
+                    "originalPropertyKey": "textInput5Label",
+                    "propertyIndex": 13,
+                    "propertyKey": "textInput5Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input5 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "bb9792f704c54117b355d045fd05967b",
+                    "originalPropertyKey": "sknPrimaryButtonDisabled",
+                    "propertyIndex": 14,
+                    "propertyKey": "sknPrimaryButtonDisabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "PrimaryButtonDisabledSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.bankName}\",     \"fieldType\": \"Label\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.bankName}\",     \"fieldType\": \"Label\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "ba68c3d063a0440f996f35bcbbec4b31",
+                    "originalPropertyKey": "reviewRow5Value",
+                    "propertyIndex": 14,
+                    "propertyKey": "reviewRow5Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row5 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"text\": \"{$.c.recipientName}\",     \"fieldType\": \"TextWithIcon\"   },   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.accountNumber}\",     \"fieldType\": \"Account Number\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.accountNumber}\",     \"fieldType\": \"Account Number\"   },   \"$.BNFTYPES.BT4\": {     \"text\": \"{$.c.nickName}\",     \"fieldType\": \"Label\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "c9f32f8a3cf243b6bf9b3344ae870b5a",
+                    "originalPropertyKey": "acknowledgementRow2Value",
+                    "propertyIndex": 14,
+                    "propertyKey": "acknowledgementRow2Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.nickName}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Default: Benificiary Name\",       \"default\": \"Default: Benificiary Name\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"ANY\",     \"tooltip\": \"Beneficiary Name\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.nickName}\",     \"placeHolder\": {       \"$.BREAKPTS.BP1\": \"Default: Benificiary Name\",       \"default\": \"Default: Benificiary Name\"     },     \"isMaskingEnabled\": false,     \"infoIconText\": \"\",     \"inputMode\": \"ANY\",     \"tooltip\": \"Beneficiary Name\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "hd15206d10bd40a4bafccfb0a4a5ca80",
+                    "originalPropertyKey": "textInput5Value",
+                    "propertyIndex": 14,
+                    "propertyKey": "textInput5Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input5 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnNormalSSPFFFFFF15PxFocus",
+                    "group": "Skins",
+                    "kuid": "gc348f203ba14dd9860c49d31d21293c",
+                    "originalPropertyKey": "sknPrimaryButtonFocus",
+                    "propertyIndex": 15,
+                    "propertyKey": "sknPrimaryButtonFocus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "PrimaryButtonFocusSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Account Nickname\",     \"default\": \"Account Nickname\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Recipient Name\",     \"default\": \"Recipient Name\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Recipient Name\",     \"default\": \"Recipient Name\"   },   \"$.BNFTYPES.BT4\":\"{$.c.radioValue} :\"    }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "bbc44ee180504401baf6cb98eb457b39",
+                    "originalPropertyKey": "acknowledgementRow3Label",
+                    "propertyIndex": 15,
+                    "propertyKey": "acknowledgementRow3Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row3 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT2\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": true   },   \"$.BNFTYPES.BT3\": {     \"$.FLOWTYPES.FT1\": true,     \"$.FLOWTYPES.FT2\": true   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "d1db36b8cdca4341aabee04a2eda3331",
+                    "originalPropertyKey": "textInput5Enabled",
+                    "propertyIndex": 15,
+                    "propertyKey": "textInput5Enabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Input5 Enabled",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"Yes\",     \"default\": \"Yes\"   },   \"action\": {     \"level\": \"form\",     \"method\": \"reviewCancelYesAction\",     \"context\": \"\"   } }",
+                    "group": "Review - Added Beneficiary",
+                    "kuid": "dcd1b48452aa46b7b4129a4d3c34d3c1",
+                    "originalPropertyKey": "reviewCancelYesButton",
+                    "propertyIndex": 15,
+                    "propertyKey": "reviewCancelYesButton",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Cacnel Yes Button",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT4\": {     \"$.BREAKPTS.BP1\": \"Add Contact Details :\",     \"default\": \"Add Contact Details :\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "e2294769b1aa41c6b412619e57e48435",
+                    "originalPropertyKey": "radioInput1Label",
+                    "propertyIndex": 16,
+                    "propertyKey": "radioInput1Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "RadioInput1Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnNormalSSPFFFFFFHover15Px",
+                    "group": "Skins",
+                    "kuid": "df13065658f541c0a43c527067fe3477",
+                    "originalPropertyKey": "sknPrimaryButtonHover",
+                    "propertyIndex": 16,
+                    "propertyKey": "sknPrimaryButtonHover",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "PrimaryButtonHoverSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"text\": \"{$.c.nickName}\",     \"fieldType\": \"Label\"   },   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.recipientName}\",     \"fieldType\": \"TextWithIcon\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.recipientName}\",     \"fieldType\": \"TextWithIcon\"   },   \"$.BNFTYPES.BT4\": {     \"text\": \"{$.c.radioTextValue}\",     \"fieldType\": \"Label\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "df6f056d22fa49c490bd435e0e257027",
+                    "originalPropertyKey": "acknowledgementRow3Value",
+                    "propertyIndex": 16,
+                    "propertyKey": "acknowledgementRow3Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT4\": {     \"optionValues\": \"Phone Number,Email\",     \"optionBackendValues\": \"phone,email\",     \"selectedValue\": \"$.c.selectedradioButtonValue\",     \"textInputRequired\": true,     \"infoIconText\": \"\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "a17857b47c47492985d78c5fa83ce3cb",
+                    "originalPropertyKey": "radioInput1Value",
+                    "propertyIndex": 17,
+                    "propertyKey": "radioInput1Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "RadioInput1Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnffffffBorder0273e31pxRadius2px",
+                    "group": "Skins",
+                    "kuid": "d248d5ecbeaa426cbb149e4cd328e934",
+                    "originalPropertyKey": "sknSecondaryButton",
+                    "propertyIndex": 17,
+                    "propertyKey": "sknSecondaryButton",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "SecondaryButtonSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Bank Name\",     \"default\": \"Bank Name\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Account Nickname\",     \"default\": \"Account Nickname\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Account Nickname\",     \"default\": \"Account Nickname\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "i72a27f1d4964fbaa686ef2bad3153a5",
+                    "originalPropertyKey": "acknowledgementRow4Label",
+                    "propertyIndex": 17,
+                    "propertyKey": "acknowledgementRow4Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row4 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnffffffBorder3343a81pxRadius2px",
+                    "group": "Skins",
+                    "kuid": "f4bc0cb341584673aefd19cf49b5f683",
+                    "originalPropertyKey": "sknSecondaryButtonHover",
+                    "propertyIndex": 18,
+                    "propertyKey": "sknSecondaryButtonHover",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "SecondaryButtonHoverSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"text\": \"{$.c.bankName}\",     \"fieldType\": \"Label\"   },   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.nickName}\",     \"fieldType\": \"Label\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.nickName}\",     \"fieldType\": \"Label\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "c13bb3992e6e4022946a5e274888495c",
+                    "originalPropertyKey": "acknowledgementRow4Value",
+                    "propertyIndex": 18,
+                    "propertyKey": "acknowledgementRow4Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.BT4\":{\"Phone Number\":{\"$.BREAKPTS.BP1\":\"{i.i18n.ProfileManagement.PhoneNumbers}\",\"default\":\"{i.i18n.ProfileManagement.PhoneNumbers}\"},\"Email\":{\"$.BREAKPTS.BP1\":\"{i.i18n.ProfileManagement.EmailID}\",\"default\":\"{i.i18n.ProfileManagement.EmailID}\"}}}",
+                    "group": "Add Beneficiary",
+                    "kuid": "bbe0d993025548feb40aafc8b8f88d87",
+                    "originalPropertyKey": "radioInputTextLabel",
+                    "propertyIndex": 18,
+                    "propertyKey": "radioInputTextLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Radio Input Text Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.BT4\":{\"text\":\"{$.c.radioTextValue}\",\"placeHolder\":{\"Phone Number\":{\"$.BREAKPTS.BP1\":\"{i.i18n.PayAPerson.AddPhonePlaceholder}\",\"default\":\"{i.i18n.PayAPerson.AddPhonePlaceholder}\"},\"Email\":{\"$.BREAKPTS.BP1\":\"{i.i18n.PayAPerson.AddEmailPlaceholder}\",\"default\":\"{i.i18n.PayAPerson.AddEmailPlaceholder}\"}},\"isMaskingEnabled\":false,\"infoIconText\":\"\",\"inputMode\":{\"Phone Number\":\"NUMERIC\",\"Email\":\"ANY\"},\"tooltip\":{\"Phone Number\":\"{i.i18n.payments.P2pPhoneNumber}\",\"Email\":\"{i.i18n.payments.emailId}\"}}}",
+                    "group": "Add Beneficiary",
+                    "kuid": "acd7bafe51374fe782fe4a22e11a85cd",
+                    "originalPropertyKey": "radioInputTextValue",
+                    "propertyIndex": 19,
+                    "propertyKey": "radioInputTextValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "RadioInput Text Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnSecondaryFocusSSP3343a815Px",
+                    "group": "Skins",
+                    "kuid": "b57a6aa7fd1c4dbfb78fcae1dd42b63f",
+                    "originalPropertyKey": "sknSecondaryButtonFocus",
+                    "propertyIndex": 19,
+                    "propertyKey": "sknSecondaryButtonFocus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "SecondaryButtonFocusSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Bank Name\",     \"default\": \"Bank Name\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Bank Name\",     \"default\": \"Bank Name\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "ac95939356c84606bad109f0f950016c",
+                    "originalPropertyKey": "acknowledgementRow5Label",
+                    "propertyIndex": 19,
+                    "propertyKey": "acknowledgementRow5Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row5 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": {     \"$.BREAKPTS.BP1\": \"Cancel\",     \"default\": \"Cancel\"   },   \"action\": {     \"level\": \"form\",     \"method\": \"cancelClick\",     \"context\": \"\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "e039c29bc26b4761b814358871ccf454",
+                    "originalPropertyKey": "addBeneficiaryButton1",
+                    "propertyIndex": 20,
+                    "propertyKey": "addBeneficiaryButton1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT2\": {     \"text\": \"{$.c.bankName}\",     \"fieldType\": \"Label\"   },   \"$.BNFTYPES.BT3\": {     \"text\": \"{$.c.bankName}\",     \"fieldType\": \"Label\"   } }",
+                    "group": "Acknowledgement - Added Beneficiary ",
+                    "kuid": "d223af26786b472d947bff8f848b3b5a",
+                    "originalPropertyKey": "acknowledgementRow5Value",
+                    "propertyIndex": 20,
+                    "propertyKey": "acknowledgementRow5Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row5 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknGlyster20px\"},\"default\":{\"skin\":\"ICSknGlyster20px\"}}",
+                    "group": "Skins",
+                    "kuid": "f1878e65d09f42bfbde760f5f5a9e2c7",
+                    "originalPropertyKey": "maskeyeiconskin",
+                    "propertyIndex": 20,
+                    "propertyKey": "maskeyeiconskin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Mask Icon Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"default\": {     \"$.FLOWTYPES.FT1\": {       \"text\": {         \"$.BREAKPTS.BP1\": \"Continue\",         \"default\": \"Continue\"       },       \"action\": {         \"level\": \"Component\",         \"method\": \"addBeneficiary\",         \"context\": \"\"       }     },     \"$.FLOWTYPES.FT2\": {       \"text\": {         \"$.BREAKPTS.BP1\": \"Continue\",         \"default\": \"Continue\"       },       \"action\": {         \"level\": \"Component\",         \"method\": \"editBeneficiary\",         \"context\": \"\"       }     }   },   \"$.BNFTYPES.BT4\": {     \"$.FLOWTYPES.FT1\": {       \"text\": {         \"$.BREAKPTS.BP1\": \"Continue\",         \"default\": \"Continue\"       },       \"action\": {         \"level\": \"Component\",         \"method\": \"addBeneficiary\",         \"context\": \"\"       }     },     \"$.FLOWTYPES.FT2\": {       \"text\": {         \"$.BREAKPTS.BP1\": \"Continue\",         \"default\": \"Continue\"       },       \"action\": {         \"level\": \"Component\",         \"method\": \"editP2P\",         \"context\": \"\"       }     }   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "h67e30b284344d30bd36ffce0d651ed2",
+                    "originalPropertyKey": "addBeneficiaryButton2",
+                    "propertyIndex": 21,
+                    "propertyKey": "addBeneficiaryButton2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknGlyster20px\"},\"default\":{\"skin\":\"ICSknGlyster20px\"}}",
+                    "group": "Skins",
+                    "kuid": "f04046935c8142afa728a2d03f90591a",
+                    "originalPropertyKey": "unmaskeyeiconskin",
+                    "propertyIndex": 21,
+                    "propertyKey": "unmaskeyeiconskin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Unmask Icon Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Add Beneficiary",
+                    "kuid": "df8ad51275024991bb0d25cf727f0f4d",
+                    "originalPropertyKey": "addBeneficiaryButton3",
+                    "propertyIndex": 22,
+                    "propertyKey": "addBeneficiaryButton3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"640\":{\"skin\":\"ICSknSSPLbl42424213PX00\"},\"default\":{\"skin\":\"ICSknLabel42424215PXBG00\"}}",
+                    "group": "Skins",
+                    "kuid": "icef922152dd43bcb1dc1a0321ab9f1d",
+                    "originalPropertyKey": "accountNumberSkin",
+                    "propertyIndex": 22,
+                    "propertyKey": "accountNumberSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Account Number Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"$.BNFTYPES.BT1\": {     \"$.BREAKPTS.BP1\": \"Recipient Details\",     \"default\": \"Recipient Details\"   },   \"$.BNFTYPES.BT2\": {     \"$.BREAKPTS.BP1\": \"Recipient Details\",     \"default\": \"Recipient Details\"   },   \"$.BNFTYPES.BT3\": {     \"$.BREAKPTS.BP1\": \"Recipient Details\",     \"default\": \"Recipient Details\"   },   \"$.BNFTYPES.BT4\": {     \"$.BREAKPTS.BP1\": \"Recipient Details\",     \"default\": \"Recipient Details\"   } }",
+                    "group": "Add Beneficiary",
+                    "kuid": "g877ac8847694164b9ab926f135d5257",
+                    "originalPropertyKey": "section1Title",
+                    "propertyIndex": 23,
+                    "propertyKey": "section1Title",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Section Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "skntbxsspreg42424215px",
+                    "group": "Skins",
+                    "kuid": "bb61bb26309c4b4c927aed464f3dd721",
+                    "originalPropertyKey": "sknAddTextBoxDisabled",
+                    "propertyIndex": 23,
+                    "propertyKey": "sknAddTextBoxDisabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "AddTextBoxDisabledSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSkn3343a8labelSSPRegular15px",
+                    "group": "Skins",
+                    "kuid": "gef523cfd26741a5ac5c2731998e781a",
+                    "originalPropertyKey": "quickLinkTextSkin",
+                    "propertyIndex": 24,
+                    "propertyKey": "quickLinkTextSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Quick Links Text Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "skntxtSSP424242BorderFF0000Op100Radius2px",
+                    "group": "Skins",
+                    "kuid": "i664df319fad45528d76956bdd1cf59d",
+                    "originalPropertyKey": "sknAddTextBoxError",
+                    "propertyIndex": 25,
+                    "propertyKey": "sknAddTextBoxError",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Add Beneficiary Text Box Error",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c1e275265b5e4e7eb7f68a32dbdb603e",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "fdbfa2c94c154758b5bf98d442994463",
+                    "originalPropertyKey": "lblFormat",
+                    "propertyKey": "lblFormat",
+                    "srcWgtKUID": "h391b64d639f4febadad8155a1625695"
+                },
+                {
+                    "kuid": "b1457122d4e7481c8e2a89c6074a4a8c",
+                    "originalPropertyKey": "lblEyeIcon",
+                    "propertyKey": "lblEyeIcon",
+                    "srcWgtKUID": "h391b64d639f4febadad8155a1625695"
+                },
+                {
+                    "kuid": "c5458f9c5c514a23957e73a446db5837",
+                    "originalPropertyKey": "lblIconStart",
+                    "propertyKey": "lblIconStart",
+                    "srcWgtKUID": "h391b64d639f4febadad8155a1625695"
+                },
+                {
+                    "kuid": "a338a67383744a4ca515d62bc6262ab1",
+                    "propertyKey": "flxContent",
+                    "srcWgtKUID": "ec792ead9fd74f6db219cc7f71675e27"
+                },
+                {
+                    "kuid": "d6bcb50e4e8e4a978bcd829df70ddd53",
+                    "propertyKey": "flxAddInternationalAccount",
+                    "srcWgtKUID": "c2f15a759ded482489788b43f75f5e20"
+                },
+                {
+                    "kuid": "i1a0142f4be14626b1ca086c4abc229e",
+                    "propertyKey": "flxRight",
+                    "srcWgtKUID": "cb18ccfedf854fd8b9afb0480d034950"
+                },
+                {
+                    "kuid": "ac421a85cfa74d659a418506b2138d16",
+                    "propertyKey": "flxQuickLinks",
+                    "srcWgtKUID": "a6a951f0e82f402595d0f472bac914e8"
+                },
+                {
+                    "kuid": "f1d96ede856e4e259c753b0b531f9364",
+                    "propertyKey": "lblTransfers",
+                    "srcWgtKUID": "a644bb8ca82848e89417a9eee9904891"
+                },
+                {
+                    "kuid": "b43aa8ecf00a42dc8fd37a272f71ecbd",
+                    "propertyKey": "flxLeft",
+                    "srcWgtKUID": "j3dc3a0dc23348a2a4b2a96266d1c6d2"
+                }
+            ],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Transfers",
+    "version": "1.0.0"
+}

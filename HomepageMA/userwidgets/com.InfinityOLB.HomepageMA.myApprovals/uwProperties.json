@@ -1,0 +1,182 @@
+{
+    "classname": "myApprovals",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "i58390f472694f37b54f0315e00ec5fa",
+                    "originalPropertyKey": "setData",
+                    "propertyKey": "setWidgetData",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "setWidgetData",
+                        "srcWidget": "approvalsWidgetSegment",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Segment"
+                    },
+                    "srcWgtKUID": "fdb612ba692643bd97408eeed4e36628"
+                }
+            ]
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "component",
+                "Main",
+                "Option1",
+                "option2",
+                "option3"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ab44bd3ca80d46769baa40dc37558e8f",
+                    "originalPropertyKey": "data",
+                    "propertyIndex": 1,
+                    "propertyKey": "widgetData",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Widget Data",
+                        "srcWidget": "SegApprovalsWIdget",
+                        "type": "data",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Masterdata-Segment",
+                                "dataUpdaterId": "Masterdata-Segment",
+                                "popupId": "Masterdata-Segment",
+                                "type": "SegmentMasterDataBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Button",
+                        "wType": "Segment"
+                    },
+                    "srcWgtKUID": "fdb612ba692643bd97408eeed4e36628"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e795d92d28154ccbb82fd1ac6aa5b80f",
+                    "originalPropertyKey": "widgetDataMap",
+                    "propertyIndex": 2,
+                    "propertyKey": "widgetDataMap",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "widgetDataMap",
+                        "isHiddenInTool": true,
+                        "srcWidget": "SegApprovalsWIdget",
+                        "type": "object",
+                        "wType": "Segment"
+                    },
+                    "srcWgtKUID": "fdb612ba692643bd97408eeed4e36628"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ba024b47eb374aadb974a20ea030f58a",
+                    "originalPropertyKey": "rowTemplate",
+                    "propertyIndex": 3,
+                    "propertyKey": "rowTemplate",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeys": [
+                            "data",
+                            "widgetDataMap"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "j31ced0ee5d24d1ab9d84438df698ebf",
+                            "i85865fca63a4d18aec604ffb69c9901"
+                        ],
+                        "dependentProps": [
+                            "snapGridSize",
+                            "snapToGrid",
+                            "defaultUnit",
+                            "layoutType",
+                            "clipBounds"
+                        ],
+                        "displayName": "rowTemplate",
+                        "srcWidget": "SegApprovalsWIdget",
+                        "type": "template",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Segment"
+                    },
+                    "srcWgtKUID": "fdb612ba692643bd97408eeed4e36628"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "gd32baf7de864ded844503a1be26e71f",
+                    "originalPropertyKey": "sectionHeaderTemplate",
+                    "propertyIndex": 4,
+                    "propertyKey": "sectionHeaderTemplate",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeys": [
+                            "data",
+                            "widgetDataMap"
+                        ],
+                        "dependentKeysKUIDs": [
+                            "j31ced0ee5d24d1ab9d84438df698ebf",
+                            "i85865fca63a4d18aec604ffb69c9901"
+                        ],
+                        "displayName": "sectionHeaderTemplate",
+                        "isDependentProp": true,
+                        "srcWidget": "SegApprovalsWIdget",
+                        "type": "enum",
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "Segment"
+                    },
+                    "srcWgtKUID": "fdb612ba692643bd97408eeed4e36628"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "i339342d1a994ca39b88b044b43b0d85",
+                    "originalPropertyKey": "widgetDataMap",
+                    "propertyIndex": 5,
+                    "propertyKey": "widgetDataMap",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "DataMap",
+                        "isHiddenInTool": true,
+                        "srcWidget": "SegApprovalsWIdget",
+                        "type": "object",
+                        "wType": "Segment"
+                    },
+                    "srcWgtKUID": "fdb612ba692643bd97408eeed4e36628"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.HomepageMA",
+    "version": "1.0.0"
+}

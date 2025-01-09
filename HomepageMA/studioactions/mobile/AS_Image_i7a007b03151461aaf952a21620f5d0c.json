@@ -1,0 +1,29 @@
+{
+    "AS_Image_i7a007b03151461aaf952a21620f5d0c": {
+        "id": "AS_Image_i7a007b03151461aaf952a21620f5d0c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "imagesrc"
+        }, {
+            "datatype": "boolean",
+            "name": "issuccess"
+        }],
+        "contextObj": {
+            "name": "frmUnifiedCustomerDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a88fe8e79560437aacef83488a5efcb7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b1ec0623815e4020a2606eb2e1ec772b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onAdDownloadComplete(issuccess,2);",
+            "parentId": null
+        }]
+    }
+}

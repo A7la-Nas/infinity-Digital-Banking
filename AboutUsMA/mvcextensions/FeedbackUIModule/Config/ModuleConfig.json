@@ -1,0 +1,55 @@
+{
+    "Forms": {
+        "desktop": {
+            "frmCustomerFeedback": {
+                "Controller": "FeedbackUIModule/frmCustomerFeedbackController",
+                "ControllerExtensions": [
+                ],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "FeedbackUIModule/frmCustomerFeedback",
+                "friendlyName": "frmCustomerFeedback"
+            }
+        },
+		"mobile": {
+            "frmFeedbackEntry": {
+                "Controller": "FeedbackUIModule/frmFeedbackEntryController",
+                "ControllerExtensions": [
+                ],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "FeedbackUIModule/frmFeedbackEntry",
+                "friendlyName": "frmFeedbackEntry"
+            },
+            "frmFeedBackSuccess": {
+                "Controller": "FeedbackUIModule/frmFeedBackSuccessController",
+                "ControllerExtensions": [
+                ],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "FeedbackUIModule/frmFeedBackSuccess",
+                "friendlyName": "frmFeedBackSuccess"
+            },
+		   "frmInAppFeedbackRating": {
+                "Controller": "FeedbackUIModule/frmInAppFeedbackRatingController",
+                "ControllerExtensions": [
+                ],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "FeedbackUIModule/frmInAppFeedbackRating",
+                "friendlyName": "frmInAppFeedbackRating"
+            },
+			
+        },
+    },
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "FeedbackUIModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": [
+            ]
+        },
+		"Mobile": {
+            "PresentationControllerClass": "FeedbackUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": [
+            ]
+        },
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "FeedbackUIModule"
+}

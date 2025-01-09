@@ -1,0 +1,156 @@
+{
+    "classname": "rmsComponent",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b2bed5ad6abb443d8f5ff9d408f1ace7",
+                    "paramList": [],
+                    "propertyKey": "rmsActionCreate",
+                    "pw": {
+                        "displayName": "rmsActionCreate",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ua9c548f1d4347459205f8ba3e5d7215",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h9013527623e434ba67ecc185c82ee31",
+                    "paramList": [],
+                    "propertyKey": "rmsActionSign",
+                    "pw": {
+                        "displayName": "rmsActionSign",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ua9c548f1d4347459205f8ba3e5d7215",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b947a7efbdda45ef8296d094d4f20ea2",
+                    "paramList": [],
+                    "propertyKey": "updateActionInRMS",
+                    "pw": {
+                        "displayName": "updateActionInRMS",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ua9c548f1d4347459205f8ba3e5d7215",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a874893abbc74d73903cd26a35958d7e",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "rmsActionFailure",
+                    "pw": {
+                        "displayName": "rmsActionFailure",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ua9c548f1d4347459205f8ba3e5d7215",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ee818faaad6b48feb96295aaac92ba6a",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "rmsActionSuccess",
+                    "pw": {
+                        "displayName": "rmsActionSuccess",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ua9c548f1d4347459205f8ba3e5d7215",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a4ade15a4b79425fa0c2b3b859ab7b6e",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "updateActionInRMSFailure",
+                    "pw": {
+                        "displayName": "updateActionInRMSFailure",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ua9c548f1d4347459205f8ba3e5d7215",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ebe0f2bb8ec24b3483095fe35128f43d",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "updateActionInRMSSuccess",
+                    "pw": {
+                        "displayName": "updateActionInRMSSuccess",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ua9c548f1d4347459205f8ba3e5d7215",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "C8hDRqP6KY",
+                    "group": "General",
+                    "kuid": "i9a6e1afc94b4c1d893e14b534c0b302",
+                    "originalPropertyKey": "tmCookieSid",
+                    "propertyIndex": 1,
+                    "propertyKey": "tmCookieSid",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tmCookieSid",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ua9c548f1d4347459205f8ba3e5d7215",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "TS01d4cc80",
+                    "group": "General",
+                    "kuid": "jf8bc8220e474532bf55a76c74642251",
+                    "originalPropertyKey": "tmCookieTag",
+                    "propertyIndex": 2,
+                    "propertyKey": "tmCookieTag",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "tmCookieTag",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ua9c548f1d4347459205f8ba3e5d7215",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.sca",
+    "version": "1.0.0"
+}

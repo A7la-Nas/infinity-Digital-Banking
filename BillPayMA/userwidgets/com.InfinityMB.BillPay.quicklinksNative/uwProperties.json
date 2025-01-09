@@ -1,0 +1,459 @@
+{
+    "classname": "quicklinksNative",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a1d5b632d2344c9399b43f93e1ba5e91",
+                    "paramList": [],
+                    "propertyKey": "setParentScopeAndEntitlements",
+                    "pw": {
+                        "displayName": "setParentScopeAndEntitlements",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h9e5a78265e4452c87c9845432a441db",
+                    "paramList": [
+                        {
+                            "name": "param"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a13432f6a07b4b3598863121ac3a0077",
+                    "paramList": [],
+                    "propertyKey": "showContextualActions",
+                    "pw": {
+                        "displayName": "showContextualActions",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ebe5901bedf94b1da40c3cb5f6a8e726",
+                    "paramList": [],
+                    "propertyKey": "setLinkVisibilityToContext",
+                    "pw": {
+                        "displayName": "setLinkVisibilityToContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c246baa864c34809b79c14f472e31764",
+                    "paramList": [
+                        {
+                            "name": "errorObject"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f57f2700670a4c738c7f50595fdf18b9",
+                    "paramList": [
+                        {
+                            "name": "link"
+                        }
+                    ],
+                    "propertyIndex": 3,
+                    "propertyKey": "getActionEntitlement",
+                    "pw": {
+                        "displayName": "getActionEntitlement",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Skins",
+                "Data"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSkn000000Op0",
+                    "group": "Skins",
+                    "kuid": "e08d16160e774bfb9533e24784326ac8",
+                    "originalPropertyKey": "sknLink",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknLink",
+                    "pw": {
+                        "displayName": "Link skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SAVINGS",
+                    "group": "General",
+                    "kuid": "ef52e426a2254bbbab5817d10f6d2f3c",
+                    "originalPropertyKey": "accountType",
+                    "propertyIndex": 1,
+                    "propertyKey": "accountType",
+                    "pw": {
+                        "displayName": "Account Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLblFFFFFF15PxSSP",
+                    "group": "Skins",
+                    "kuid": "e06f7a66810142479219f1d27dc52516",
+                    "originalPropertyKey": "sknLinkValue",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknLinkValue",
+                    "pw": {
+                        "displayName": "Link value skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":{\"text\":\"Download\",\"action\":\"downloadAction\",\"context\":\"\",\"entitlement\":[],\"entitlement_action\":false},\"Checking\":{\"text\":\"Transfer\",\"action\":\"transferAction\",\"context\":\"\",\"entitlement\":[],\"entitlement_action\":true},\"Loan\":{\"text\":\"Pay Overdue\",\"action\":\"payOverdueAction\",\"context\":\"\",\"entitlement\":[],\"entitlement_action\":true},\"Default\":{\"text\":\"Pay Overdue\",\"action\":\"payOverdueAction\",\"context\":\"\",\"entitlement\":[],\"entitlement_action\":true}}",
+                    "group": "General",
+                    "kuid": "ha8593350d32449ea726d8b5d224ea4a",
+                    "originalPropertyKey": "link1CTA",
+                    "propertyIndex": 2,
+                    "propertyKey": "link1CTA",
+                    "pw": {
+                        "displayName": "Call to Action 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSkn000000Op0",
+                    "group": "Skins",
+                    "kuid": "f121f1ad362e4a979956378a9a62c660",
+                    "originalPropertyKey": "sknAddLink",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknAddLink",
+                    "pw": {
+                        "displayName": "Additional link skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "e039211b86c2418c97766072f30f17ef",
+                    "originalPropertyKey": "link2CTA",
+                    "propertyIndex": 3,
+                    "propertyKey": "link2CTA",
+                    "pw": {
+                        "displayName": "Call to Action 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl007AFF100PSSP",
+                    "group": "Skins",
+                    "kuid": "i5876c7845c44833a9f92ea534980b2e",
+                    "originalPropertyKey": "sknAddLinkValue",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknAddLinkValue",
+                    "pw": {
+                        "displayName": "Additional link value skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "e54afed3d7b74997ae34c4022be01023",
+                    "originalPropertyKey": "link3CTA",
+                    "propertyIndex": 4,
+                    "propertyKey": "link3CTA",
+                    "pw": {
+                        "displayName": "Call to Action 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlx000000BGP",
+                    "group": "Skins",
+                    "kuid": "i4f8332ce47d4f24b700e3f6c9a9977d",
+                    "originalPropertyKey": "sknAddLinkSeperator",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknAddLinkSeperator",
+                    "pw": {
+                        "displayName": "Additional link separator skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "af04ea4ab64a4f5fad5802a79b662f33",
+                    "originalPropertyKey": "link4CTA",
+                    "propertyIndex": 5,
+                    "propertyKey": "link4CTA",
+                    "pw": {
+                        "displayName": "Call to Action 4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxFFFFFF10PFFFFFFR",
+                    "group": "Skins",
+                    "kuid": "cec21264e4b14125809ee5689a9b7b33",
+                    "originalPropertyKey": "sknContainer",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknContainer",
+                    "pw": {
+                        "displayName": "Additional link container skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "baa01e8051e74d6c872a63c3a4c1a2de",
+                    "originalPropertyKey": "link5CTA",
+                    "propertyIndex": 6,
+                    "propertyKey": "link5CTA",
+                    "pw": {
+                        "displayName": "Call to Action 5",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSkn000000BG50P",
+                    "group": "Skins",
+                    "kuid": "ed53dd0d46e94de6bcc30bde0cc15472",
+                    "originalPropertyKey": "sknBackground",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknBackground",
+                    "pw": {
+                        "displayName": "Additional link background skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "d4a1c1cb5c8a4d349a794dcfdc183025",
+                    "originalPropertyKey": "link6CTA",
+                    "propertyIndex": 7,
+                    "propertyKey": "link6CTA",
+                    "pw": {
+                        "displayName": "Call to Action 6",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl007AFF100PSSPBold",
+                    "group": "Skins",
+                    "kuid": "f3bc13d090944fb89b7cfaaf426018b8",
+                    "originalPropertyKey": "sknCancelLink",
+                    "propertyIndex": 8,
+                    "propertyKey": "sknCancelLink",
+                    "pw": {
+                        "displayName": "Cancel link skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "f91ace282c3e4e748f3bc5c5139613bc",
+                    "originalPropertyKey": "link7CTA",
+                    "propertyIndex": 8,
+                    "propertyKey": "link7CTA",
+                    "pw": {
+                        "displayName": "Call to Action 7",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "hc3dfb998e7e47b59bd901cd8492fc6e",
+                    "originalPropertyKey": "link8CTA",
+                    "propertyIndex": 9,
+                    "propertyKey": "link8CTA",
+                    "pw": {
+                        "displayName": "Call to Action 8",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "c41b7a6f14704092b7d696be287cfe06",
+                    "originalPropertyKey": "link9CTA",
+                    "propertyIndex": 10,
+                    "propertyKey": "link9CTA",
+                    "pw": {
+                        "displayName": "Call to Action 9",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "a9eee93afb424ca490c7cb29edb0a05b",
+                    "originalPropertyKey": "link10CTA",
+                    "propertyIndex": 11,
+                    "propertyKey": "link10CTA",
+                    "pw": {
+                        "displayName": "Call to Action 10",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "idcfabb4b1a449799a31a1c00a242ce8",
+                    "originalPropertyKey": "isPrimaryVisible",
+                    "propertyIndex": 12,
+                    "propertyKey": "isPrimaryVisible",
+                    "pw": {
+                        "displayName": "Primary Actions Visibility",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "d9c20d6cfb8840a690ae0a5c81b7f414",
+                    "originalPropertyKey": "linkCancel",
+                    "propertyIndex": 13,
+                    "propertyKey": "linkCancel",
+                    "pw": {
+                        "displayName": "Cancel",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c98b510c31594a1781229b21364de3b2",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.BillPay",
+    "version": "1.0.0"
+}

@@ -1,0 +1,48 @@
+{
+  "operationConfig" : {
+    "name" : "validateTransaction4224",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"context\" outputpath=\"context\"/>\n        <set-param inputpath=\"deviceId\" outputpath=\"deviceId\"/>\n        <set-param inputpath=\"otp\" outputpath=\"ocraOTP\"/>\n        <set-param inputpath=\"userId\" outputpath=\"userId\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"parameters\" outputpath=\"SCAUser\">\n            <set-param inputpath=\"error_description\" outputpath=\"error_message\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"SCAUser\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"SCATxnValidationOrchService (1.0).validateTransaction\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SCAUser:userId:\",\"to\":\"target:parameters:userId:\",\"fromPort\":\"source:SCAUser:userId:\",\"toPort\":\"target:parameters:userId:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SCAUser:otp:\",\"to\":\"target:parameters:ocraOTP:\",\"fromPort\":\"source:SCAUser:otp:\",\"toPort\":\"target:parameters:ocraOTP:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SCAUser:context:\",\"to\":\"target:parameters:context:\",\"fromPort\":\"source:SCAUser:context:\",\"toPort\":\"target:parameters:context:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SCAUser:deviceId:\",\"to\":\"target:parameters:deviceId:\",\"fromPort\":\"source:SCAUser:deviceId:\",\"toPort\":\"target:parameters:deviceId:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"SCAUser\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"SCATxnValidationOrchService (1.0).validateTransaction\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:parameters:error_description:\",\"to\":\"target:SCAUser:error_message:\",\"fromPort\":\"source:parameters:error_description:\",\"toPort\":\"target:SCAUser:error_message:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "SCATxnValidationOrchService",
+      "serviceVersion" : "1.0",
+      "operationName" : "validateTransaction"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "SCAUser",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"context\" outputpath=\"context\"/>\n        <set-param inputpath=\"deviceId\" outputpath=\"deviceId\"/>\n        <set-param inputpath=\"otp\" outputpath=\"ocraOTP\"/>\n        <set-param inputpath=\"userId\" outputpath=\"userId\"/>\n    </map>\n</mapper>\n",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"parameters\" outputpath=\"SCAUser\">\n            <set-param inputpath=\"error_description\" outputpath=\"error_message\"/>\n        </map>\n    </map>\n</mapper>\n",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"SCAUser\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"SCATxnValidationOrchService (1.0).validateTransaction\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SCAUser:userId:\",\"to\":\"target:parameters:userId:\",\"fromPort\":\"source:SCAUser:userId:\",\"toPort\":\"target:parameters:userId:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SCAUser:otp:\",\"to\":\"target:parameters:ocraOTP:\",\"fromPort\":\"source:SCAUser:otp:\",\"toPort\":\"target:parameters:ocraOTP:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SCAUser:context:\",\"to\":\"target:parameters:context:\",\"fromPort\":\"source:SCAUser:context:\",\"toPort\":\"target:parameters:context:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:SCAUser:deviceId:\",\"to\":\"target:parameters:deviceId:\",\"fromPort\":\"source:SCAUser:deviceId:\",\"toPort\":\"target:parameters:deviceId:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"SCAUser\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"SCATxnValidationOrchService (1.0).validateTransaction\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:parameters:error_description:\",\"to\":\"target:SCAUser:error_message:\",\"fromPort\":\"source:parameters:error_description:\",\"toPort\":\"target:SCAUser:error_message:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

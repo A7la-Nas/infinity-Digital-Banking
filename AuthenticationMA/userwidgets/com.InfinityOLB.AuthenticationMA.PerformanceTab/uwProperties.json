@@ -1,0 +1,87 @@
+{
+    "classname": "PerformanceTab",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b6bce0de181a4dc89c681bfed987a1ea",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        },
+                        {
+                            "name": "configurableValue"
+                        }
+                    ],
+                    "propertyKey": "drawDataChart",
+                    "pw": {
+                        "displayName": "drawDataChart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b8c76f4d392643b8adcab4c02f311b68",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "h65e74c89ba643ddaeab8697ae565de4",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "setBenchmark",
+                    "pw": {
+                        "displayName": "setBenchmark",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b8c76f4d392643b8adcab4c02f311b68",
+                    "type": "event"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ad56be64e4234c53ad57b0360c34479c",
+                    "originalPropertyKey": "preShow",
+                    "propertyIndex": 2,
+                    "propertyKey": "preShow",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "preShow",
+                        "srcWidget": "PerformanceTab",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "b8c76f4d392643b8adcab4c02f311b68",
+                    "translateAtInstance": false
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Visibility"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.AuthenticationMA",
+    "version": "1.0.0"
+}

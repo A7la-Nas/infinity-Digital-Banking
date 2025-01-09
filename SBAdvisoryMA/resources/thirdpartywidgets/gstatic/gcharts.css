@@ -1,0 +1,292 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.konycustomcss {
+    overflow: visible !important;
+}
+
+#VerticalBarSummary {
+    height: 250px;
+    width: 100%;
+    font-family: 'Source Sans Pro' !important;
+    margin-left: -35px;
+}
+
+
+#HorizontalBarSummary svg {
+    float: right;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+@media only screen and (min-width: 585px) {
+    #VerticalBarSummary {
+        height: 230px;
+    }
+}
+
+@media only screen and (width: 788) {
+    #VerticalBarSummary {
+        height: 290px;
+    }
+}
+
+.divider {
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.AccountingIntelligenceDashboard .google-visualization-tooltip {
+    pointer-events: none;
+}
+
+#VerticalBarSummary g text[text-anchor="end"] {
+    color: #727272 !important;
+    font-size: 13px !important;
+    font-family: SourceSansPro-Regular;
+
+}
+
+#VerticalBarSummary g text[text-anchor="middle"] {
+    color: #727272 !important;
+    font-size: 13px !important;
+    font-family: SourceSansPro-Regular;
+}
+
+#mainContent {
+    font-family: 'Source Sans Pro' !important;
+    font-size: 15px !important;
+}
+
+.AccountingIntelligenceDashboard p {
+    font-family: 'Source Sans Pro' !important;
+    color: #424242;
+}
+
+#heading {
+    color: #727272 !important;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FA9280;
+    margin-right: 10px;
+}
+
+.doughnutMainContent {
+    display: flex;
+    width: 200px;
+    height: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px !important;
+}
+
+.mainContent {
+    display: flex;
+    width: 200px;
+    height: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px !important;
+}
+
+.mainContent::before {
+    content: '';
+    position: absolute;
+    top: 100%; /* Position a second, bordered arrow behind the white arrow */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent; /* Gray border for the arrow */
+}
+
+.mainContent::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Position the arrow at the bottom of the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+#VerticalBarSummary b {
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #424242;
+}
+
+.rowContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 15px !important;
+    margin-bottom: 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    /* Adjust the space between rows */
+}
+
+.label {
+    margin-right: 12px;
+    /* Adjust the space between label and value */
+    width: 85px;
+    color: #727272;
+    font-family: SourceSansPro-Regular;
+}
+
+.leftlabel {
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.leftlabel::after {
+    content: ":";
+}
+
+.totalLabel {
+    margin-right: 10px;
+    /* Adjust the space between label and value */
+    color: #727272;
+    font-family: SourceSansPro-Regular;
+}
+
+.value {
+    text-align: right;
+    margin-right: 20px;
+    width: 90px;
+    font-family: Source Sans Pro;
+    color: #424242;
+}
+
+.stackedHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px !important;
+    margin-top: 15px;
+}
+
+.rightContent {
+    display: flex;
+    text-align: right;
+}
+.stackedMainContent {
+    font-size: 15px !important;
+}
+
+.stackedMainContent::before {
+    content: '';
+    position: absolute;
+    top: 100%; /* Position a second, bordered arrow behind the white arrow */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent; /* Gray border for the arrow */
+}
+
+.stackedMainContent::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Position the arrow at the bottom of the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+#heading {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;			
+    color: #727272;
+    font-weight: bold;
+}
+
+#HorizontalBarSummary g text[text-anchor="end"] {
+    color: #424242 !important;
+    font-size: 15px !important;
+    font-family: SourceSansPro-Regular;
+
+}
+
+#HorizontalBarSummary g text[text-anchor="middle"] {
+    color: #727272 !important;
+    font-size: 13px !important;
+    font-family: SourceSansPro-Regular;
+}
+
+#HorizontalBarSummary horizontalTooltipContent {
+    color: #424242 !important;
+    font-size: 15px !important;
+    font-family: Source Sans Pro;
+}
+
+#StackedCustomerBarChart g text[text-anchor="end"] {
+    color: #424242 !important;
+    font-size: 15px !important;
+    font-family: SourceSansPro-Regular;
+
+}
+
+#StackedCustomerBarChart g text[text-anchor="middle"] {
+    color: #727272 !important;
+    font-size: 13px !important;
+    font-family: SourceSansPro-Regular;
+}
+
+#HorizontalBarAveragePayment {
+    margin-top: -55px;
+}
+
+#HorizontalBarAveragePayment svg {
+    float: right;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+#HorizontalBarAveragePayment g text[text-anchor="end"] {
+    color: #424242 !important;
+    font-size: 15px !important;
+    font-family: SourceSansPro-Regular;
+
+}
+
+#HorizontalBarAveragePayment g text[text-anchor="middle"] {
+    color: #727272 !important;
+    font-size: 13px !important;
+    font-family: SourceSansPro-Regular;
+}
+
+#HorizontalBarAveragePayment horizontalTooltipContent {
+    color: #424242 !important;
+    font-size: 15px !important;
+    font-family: Source Sans Pro;
+}

@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_f5267eeebc284093a4b8a3942dc69a07": {
+        "id": "AS_FlexContainer_f5267eeebc284093a4b8a3942dc69a07",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segBulkUpdatePFMTransactionsSelected",
+            "type": "templates",
+            "platform": "",
+            "KUID": "dd47c0eff23440f0beb7d9c4e526de6f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__e409e1b1260e404a986ba3ee0b2ebb94",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showSelectedRow",
+            "display": "showSelectedRow",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

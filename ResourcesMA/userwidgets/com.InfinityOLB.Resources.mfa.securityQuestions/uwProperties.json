@@ -1,0 +1,310 @@
+{
+    "classname": "securityQuestions",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a4253e0e53144d03ab7541ab37850e44",
+                    "paramList": [],
+                    "propertyKey": "showSecurityQuestions",
+                    "pw": {
+                        "displayName": "showSecurityQuestions",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "dc7bfe55bf684a68a2fd87f32f7887d2",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "closeSecurityQuestions",
+                    "pw": {
+                        "displayName": "closeSecurityQuestions",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a847796cf6b944c19b4f823e81961caf",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "errorMFANavigation",
+                    "pw": {
+                        "displayName": "errorMFANavigation",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c2bcf57310e747fda7f4ff276ce75548",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 2,
+                    "propertyKey": "forceLayout",
+                    "pw": {
+                        "displayName": "forceLayout",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "hc28c6eafee144c39637dfffaf66baa8",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 4,
+                    "propertyKey": "onSuccessCallback",
+                    "pw": {
+                        "displayName": "onSuccessCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f2f7cb2f2c8c4c3b83243e68145e3e1d",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        },
+                        {
+                            "name": "isTransactionalError"
+                        }
+                    ],
+                    "propertyIndex": 5,
+                    "propertyKey": "onFailureCallback",
+                    "pw": {
+                        "displayName": "onFailureCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Skins",
+                "Object Service Details",
+                "Constants"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"normal\":\"sknBtnNormalSSPFFFFFF15Px\", \"hoverSkin\":\"sknBtnNormalSSPFFFFFFHover15Px\", \"focusSkin\":\"sknBtnNormalSSPFFFFFF15PxFocus\"}",
+                    "group": "Skins",
+                    "kuid": "g55c29f9a91d4044a09d870558163042",
+                    "originalPropertyKey": "primaryBtnEnableSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "primaryBtnEnableSkin",
+                    "pw": {
+                        "displayName": "Primary Button Enable Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "RBObjects",
+                    "group": "Object Service Details",
+                    "kuid": "a46326605bf74545adace238f73e533a",
+                    "originalPropertyKey": "objectService",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectService",
+                    "pw": {
+                        "displayName": "Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "b940961c392b4c18adc3e37a85d73e30",
+                    "originalPropertyKey": "serviceKey",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceKey",
+                    "pw": {
+                        "displayName": "Service Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "D",
+                    "group": "Constants",
+                    "kuid": "d8686aba34494b3f8a251d9e302e4684",
+                    "originalPropertyKey": "checkboxUnSelected",
+                    "propertyIndex": 1,
+                    "propertyKey": "checkboxUnSelected",
+                    "pw": {
+                        "displayName": "Checkbox UnSelect",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"normal\":\"sknBtnBlockedSSP0273e315px\", \"hoverSkin\":\"sknBtnBlockedSSP0273e315px\", \"focusSkin\":\"sknBtnBlockedSSP0273e315px\"}",
+                    "group": "Skins",
+                    "kuid": "e3dea7005c5d4b8488388055e4510e8e",
+                    "originalPropertyKey": "primaryBtnDisableSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "primaryBtnDisableSkin",
+                    "pw": {
+                        "displayName": "Primary Button Disable Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Users_2",
+                    "group": "Object Service Details",
+                    "kuid": "d3e6182e72ac4fb595b0cdce115bdaa4",
+                    "originalPropertyKey": "dataModel",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataModel",
+                    "pw": {
+                        "displayName": "Data Model",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "C",
+                    "group": "Constants",
+                    "kuid": "id5728e35d974e9fab5e31bc13b87d7f",
+                    "originalPropertyKey": "checkboxSelected",
+                    "propertyIndex": 2,
+                    "propertyKey": "checkboxSelected",
+                    "pw": {
+                        "displayName": "Checkbox Select",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "dedfdef2d36a4fd2afdd5a62dcc6b723",
+                    "originalPropertyKey": "isPostLogin",
+                    "propertyIndex": 2,
+                    "propertyKey": "isPostLogin",
+                    "pw": {
+                        "displayName": "Is Post Login",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SERVICE_ID_67",
+                    "group": "Constants",
+                    "kuid": "hfa0e592db83480fade1cc5ab8723322",
+                    "originalPropertyKey": "serviceId",
+                    "propertyIndex": 3,
+                    "propertyKey": "serviceId",
+                    "pw": {
+                        "displayName": "Service ID",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "verifyLoginMFASecurityQuestions",
+                    "group": "Object Service Details",
+                    "kuid": "f0ab5e1f222d425da27a5233be4e55c2",
+                    "originalPropertyKey": "operationName",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName",
+                    "pw": {
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Object Service Details",
+                    "kuid": "b8a0536803b04b169272a9f3eb8d6834",
+                    "originalPropertyKey": "action",
+                    "propertyIndex": 4,
+                    "propertyKey": "action",
+                    "pw": {
+                        "displayName": "Action",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aab93bf7cb1347d4aad479c807110217",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Resources.mfa",
+    "version": "1.0.0"
+}

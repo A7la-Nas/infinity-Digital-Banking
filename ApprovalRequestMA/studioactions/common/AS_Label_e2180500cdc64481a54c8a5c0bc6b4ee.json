@@ -1,0 +1,28 @@
+{
+    "AS_Label_e2180500cdc64481a54c8a5c0bc6b4ee": {
+        "id": "AS_Label_e2180500cdc64481a54c8a5c0bc6b4ee",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "type": "userwidgets",
+            "KUID": "u4dcd28858204dcfa8558beead10fd8d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c2466248948e41f2b60b75a48ec71156",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var viewConstants = require('ViewConstants');\nif (this.view.imgOption0.text === viewConstants.FONT_ICONS.RADIO_BUTTON_UNSELECTED_NUO) {\n  this.view.imgOption0.text = viewConstants.FONT_ICONS.RADIO_BUTTON_SELECTED_NUO;\n  this.view.imgOption1.text = viewConstants.FONT_ICONS.RADIO_BUTTON_UNSELECTED_NUO;\n  this.view.flxToggleOptions.forceLayout();\n  if (this.onOptionToggle !== undefined && this.onOptionToggle !== null) {\n     this.onOptionToggle();\n  }\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

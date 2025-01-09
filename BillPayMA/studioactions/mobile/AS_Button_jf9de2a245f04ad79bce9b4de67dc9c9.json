@@ -1,0 +1,24 @@
+{
+    "AS_Button_jf9de2a245f04ad79bce9b4de67dc9c9": {
+        "id": "AS_Button_jf9de2a245f04ad79bce9b4de67dc9c9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmBillPayConfirmation",
+            "type": "forms",
+            "platform": null,
+            "KUID": "fada5a082a614a14b010926ece425ca9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__df2dc6c6256442d290e8813aa233015d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var billPayMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"BillPayModule\");\nbillPayMod.presentationController.commonFunctionForNavigation(\"frmBillPay\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

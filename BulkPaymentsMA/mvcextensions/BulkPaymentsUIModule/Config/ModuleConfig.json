@@ -1,0 +1,42 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "BulkPaymentsUIModule/PresentationControllers/PresentationController"
+        }       
+    },
+    "Forms": {
+        "desktop": {
+            "frmBulkPaymentsDashboard": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "BulkPaymentsUIModule/frmBulkPaymentsDashboardController",
+                "FormName": "BulkPaymentsUIModule/frmBulkPaymentsDashboard",
+                "friendlyName": "frmBulkPaymentsDashboard"
+            },		
+			"frmBulkPaymentsReview": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "BulkPaymentsUIModule/frmBulkPaymentsReviewController",
+                "FormName": "BulkPaymentsUIModule/frmBulkPaymentsReview",
+                "friendlyName": "frmBulkPaymentsReview"
+            },
+			"frmBulkPaymentsUploadFile": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "BulkPaymentsUIModule/frmBulkPaymentsUploadFileController",
+                "FormName": "BulkPaymentsUIModule/frmBulkPaymentsUploadFile",
+                "friendlyName": "frmBulkPaymentsUploadFile"
+            },
+			"frmBulkPaymentsTemplate": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "BulkPaymentsUIModule/frmBulkPaymentsTemplateController",
+                "FormName": "BulkPaymentsUIModule/frmBulkPaymentsTemplate",
+                "friendlyName": "frmBulkPaymentsTemplate"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "BulkPaymentsUIModule"
+}

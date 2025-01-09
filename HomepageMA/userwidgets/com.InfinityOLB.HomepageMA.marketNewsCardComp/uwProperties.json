@@ -1,0 +1,171 @@
+{
+    "classname": "marketNewsCardComp",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d120b702a1444cb3ba0f8d90028f5b27",
+                    "paramList": [],
+                    "propertyKey": "getCriteria",
+                    "pw": {
+                        "displayName": "getCriteria",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "g1dc41484a9f4c418e3c632793051675",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "g2cb403126b74ad0b2974a2215986f3d",
+                    "originalPropertyKey": "postShow",
+                    "propertyIndex": 1,
+                    "propertyKey": "marketNewsPostShow",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "marketNewsPostShow",
+                        "srcWidget": "marketNewsCardComp",
+                        "toolTip": "marketNewsPostShow",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "g1dc41484a9f4c418e3c632793051675",
+                    "translateAtInstance": false
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthObjects",
+                    "group": "General",
+                    "kuid": "i4bac736b1674142b145add672290247",
+                    "originalPropertyKey": "objService",
+                    "propertyIndex": 1,
+                    "propertyKey": "objService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "g1dc41484a9f4c418e3c632793051675",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "MarketData",
+                    "group": "General",
+                    "kuid": "b3aec6a1078849c18fd6383eb42cf2e1",
+                    "originalPropertyKey": "objName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "g1dc41484a9f4c418e3c632793051675",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getTopMarketNews",
+                    "group": "General",
+                    "kuid": "f6baad77cbc849db927c9411f822e2ec",
+                    "originalPropertyKey": "operation",
+                    "propertyIndex": 3,
+                    "propertyKey": "operation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "g1dc41484a9f4c418e3c632793051675",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "visible",
+                    "group": "General",
+                    "kuid": "d6fc21ae043f48e3850c38082df89bbf",
+                    "originalPropertyKey": "viewAllBtnStatus",
+                    "propertyIndex": 4,
+                    "propertyKey": "viewAllBtnStatus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Status of View All button (visible/hidden)",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "g1dc41484a9f4c418e3c632793051675",
+                    "type": "list selector",
+                    "value": [
+                        "visible",
+                        "hidden"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.Wealth.topNews",
+                    "group": "General",
+                    "kuid": "dcdd3a177581463caba29453e3b0d694",
+                    "originalPropertyKey": "headerLabel",
+                    "propertyIndex": 5,
+                    "propertyKey": "headerLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "g1dc41484a9f4c418e3c632793051675",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxf4f5f8ffradius2px",
+                    "group": "General",
+                    "kuid": "e726e0a06ddd401d8762bed0670ed69b",
+                    "originalPropertyKey": "skinHeading",
+                    "propertyIndex": 6,
+                    "propertyKey": "skinHeading",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Heading Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "g1dc41484a9f4c418e3c632793051675",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.HomepageMA",
+    "version": "1.0.0"
+}

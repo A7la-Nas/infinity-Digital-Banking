@@ -1,0 +1,23 @@
+{
+    "AS_Button_a1ded420be394bf598c04f1a7e6b1a58": {
+        "id": "AS_Button_a1ded420be394bf598c04f1a7e6b1a58",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ac582ee202194b57a4063f432d70884f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_d9c7e59da4f04e449f4f1fde532cf2e8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "    kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\n    var authParams = {\n      \"UserName\": \"4786202531\",\n      \"Password\": \"Kony@1234\",\n      \"loginOptions\": {\n        \"isOfflineEnabled\": false\n      }\n    };\n    authClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\n    authClient.login(authParams, onLoginSuccess, errorCallback);\n\n        function successCallback(resSuccess) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resSuccess);\n            kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AccountsUIModule\").presentationController.showAccountsDashboard();\n        }\n\t\t\n\t\tfunction onLoginSuccess(response){\n      let self = this;\n      let params = kony.sdk.getCurrentInstance().tokens['DbxUserLogin'].provider_token.params;\n      if(params && params.is_mfa_enabled) {\n        //self.MFANavigation(params.mfa_meta);\n      } else {\n        response = {\"username\":self.username,\"rememberMe\":kony.mvc.MDAApplication.getSharedInstance().appContext.rememberMeStatus};\n        //self.onSuccessCallback(response);\n\t\tkony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthModule\").presentationController.onLoginSuccess(response);\n      }\n    }\n\n    function errorCallback(resError) {\n      kony.application.dismissLoadingScreen();\n      kony.print(resError);\n      alert(\"login is not working...\");\n    }\n  ",
+            "parentId": null
+        }]
+    }
+}

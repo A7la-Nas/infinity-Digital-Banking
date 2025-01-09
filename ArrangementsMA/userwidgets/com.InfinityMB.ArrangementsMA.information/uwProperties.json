@@ -1,0 +1,194 @@
+{
+    "classname": "information",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "j582e1bed28f498c98a19824a91514a8",
+                    "paramList": [
+                        {
+                            "name": "infoData"
+                        }
+                    ],
+                    "propertyKey": "setData",
+                    "pw": {
+                        "displayName": "setData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f2e85ececfd5410699da81172f937038",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e4bd2e3f3e7d49ff90816cfb73f586c0",
+                    "paramList": [],
+                    "propertyKey": "setUI",
+                    "pw": {
+                        "displayName": "setUI",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f2e85ececfd5410699da81172f937038",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c8d8ac443c2444fd80ebd2ff21b6e098",
+                    "paramList": [],
+                    "propertyKey": "setFocusMethod",
+                    "pw": {
+                        "displayName": "setFocusMethod",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f2e85ececfd5410699da81172f937038",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g25b6957a85a44c786d7754bb6c85f24",
+                    "paramList": [],
+                    "propertyKey": "setParentScope",
+                    "pw": {
+                        "displayName": "setParentScope",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f2e85ececfd5410699da81172f937038",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ad32241459dc472c9d06ae83b7377afc",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 1,
+                    "propertyKey": "crossOnClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "crossOnClick",
+                        "srcWidget": "btnCross",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "a9e80659738f40e28b5d35d182d19dc6",
+                    "translateAtInstance": false
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Data",
+                "Button",
+                "Skin"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Data",
+                    "kuid": "j72780075a8647839700dc023223cbe7",
+                    "originalPropertyKey": "headerText",
+                    "propertyIndex": 1,
+                    "propertyKey": "headerText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f2e85ececfd5410699da81172f937038",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skin",
+                    "kuid": "j669cd960ea54e81bdfb06ec2e5453d3",
+                    "originalPropertyKey": "sknHeader",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknHeader",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f2e85ececfd5410699da81172f937038",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Button",
+                    "kuid": "b2385f4533b34637a89fd1f76066b59b",
+                    "originalPropertyKey": "crossButtonFontIcon",
+                    "propertyIndex": 1,
+                    "propertyKey": "crossButtonFontIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Cross Font Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f2e85ececfd5410699da81172f937038",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Data",
+                    "kuid": "h11a338879144be7a4234338addcff8f",
+                    "originalPropertyKey": "infoText",
+                    "propertyIndex": 2,
+                    "propertyKey": "infoText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Info",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f2e85ececfd5410699da81172f937038",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skin",
+                    "kuid": "c24de61813a34396b03e0c389bab08e6",
+                    "originalPropertyKey": "sknInfo",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknInfo",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Info",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f2e85ececfd5410699da81172f937038",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.ArrangementsMA",
+    "version": "1.0.0"
+}

@@ -1,0 +1,207 @@
+{
+    "classname": "P2PActivation",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f17e4d20c50a40feb17058a86d8396f9",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aed1c22c6a0f441a94526cf88ae20f57",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fdf0bf0aa3cb4afeb2ca7a569d597c0e",
+                    "paramList": [],
+                    "propertyKey": "goBack",
+                    "pw": {
+                        "displayName": "goBack",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aed1c22c6a0f441a94526cf88ae20f57",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c30c70f2a24442f9863851af60aea65e",
+                    "paramList": [],
+                    "propertyKey": "onCancelPopup",
+                    "pw": {
+                        "displayName": "onCancelPopup",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aed1c22c6a0f441a94526cf88ae20f57",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "gfd6f652635540949893e9ba35ee97da",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aed1c22c6a0f441a94526cf88ae20f57",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "cda2accba8a549a2937ca71329b76250",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "HeaderProperties",
+                    "pw": {
+                        "displayName": "HeaderProperties",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aed1c22c6a0f441a94526cf88ae20f57",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "be38999128f045479522a5d065f9476e",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "showToastMessageError",
+                    "pw": {
+                        "displayName": "showToastMessageError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aed1c22c6a0f441a94526cf88ae20f57",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b7afd5c85a3846d2985f30165d2b339b",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "activateP2PCallback",
+                    "pw": {
+                        "displayName": "activateP2PCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aed1c22c6a0f441a94526cf88ae20f57",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f35f32ce5c5c46149c3f5d90dad34809",
+                    "paramList": [],
+                    "propertyIndex": 6,
+                    "propertyKey": "navigateToLanding",
+                    "pw": {
+                        "displayName": "navigateToLanding",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aed1c22c6a0f441a94526cf88ae20f57",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n \"getDepositAccounts\": {\n    \"Service\": \"Holdings\",\n    \"Object\": \"DigitalArrangements\",\n    \"Verb\": \"getList\",\n    \"Criteria\": {}\n },\n \"validateNationalID\": {\n   \"Service\": \"\",\n    \"Object\": \"\",\n    \"Verb\": \"\",\n    \"Criteria\": {}\n },\n \"validateTransferLimit\": {\n   \"Service\": \"\",\n    \"Object\": \"\",\n    \"Verb\": \"\",\n    \"Criteria\": {}\n },\n\"ActivateP2P\": {\n    \"Service\": \"Holdings\",\n    \"Object\": \"ArrangementPreferences_1\",\n    \"Verb\": \"activateP2P\",\n    \"Criteria\": {}\n  },\n \"updateP2PDepositAccount\": {\n    \"Service\": \"Holdings\",\n    \"Object\": \"ArrangementPreferences_1\",\n    \"Verb\": \"updateP2PPreferredAccount\",\n    \"Criteria\": {\n      \"default_to_account_p2p\" : \"${Collection.ArrangementPreferences_1.selectedDefaultAccount}\"\n    }\n  },\n\"DeactivateP2P\": {\n  \"Service\": \"Holdings\",\n  \"Object\" : \"ArrangementPreferences_1\",\n  \"Verb\"   : \"deactivateP2P\",\n  \"Criteria\": {}\n}\n}",
+                    "group": "General",
+                    "kuid": "ec175e88e0c44d529b74372bbe35758e",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "aed1c22c6a0f441a94526cf88ae20f57",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"ConfirmDetails\": {\n    \"lblActivateP2P\": \"${i18n{i18n.p2pActivate.activateP2P}}\",\n    \"field1Label\": \"${i18n{i18n.P2PActivation.Name}}\",\n    \"field1Value\": \"${Collection.ArrangementPreferences_1.name}\",\n    \"field2Label\": \"${i18n{i18n.P2PActivation.ContactType}}\",\n    \"field2Value\": \"${Collection.ArrangementPreferences_1.selectedType}\",\n    \"phoneLabel\": \"${i18n{i18n.ProfileManagement.PhoneNumber}}\",\n    \"phoneValue\": \"${Collection.ArrangementPreferences_1.selectedPhoneNumber}\",\n    \"emailLabel\": \"${i18n{i18n.P2PActivation.Email}}\",\n    \"emailValue\": \"${Collection.ArrangementPreferences_1.selectedEmail}\",\n    \"nationalIDLabel\": \"${i18n{i18n.P2PActivation.NationalID}}\",\n    \"nationalIDValue\": \"${Collection.ArrangementPreferences_1.nationalID}\",\n    \"field4Label\": \"${i18n{i18n.P2PActivation.DeposiAccount}}\",\n    \"field4Value\": \"${Collection.ArrangementPreferences_1.formattedDepositAccount}\",\n    \"field5Label\": \"${i18n{i18n.P2PActivation.TransferLimit}}\",\n    \"field5Value\": \"${Collection.ArrangementPreferences_1.transferLimit}\",\n    \"selectedDepositAccount\": \"${Collection.ArrangementPreferences_1.selectedDefaultAccount}\"\n  },\n  \"segments\": {\n    \"segAccounts\": {\n      \"segmentMasterData\": \"${Collection.DigitalArrangements}\",\n      \"segmentUI\": {\n        \"lblField1\": \"${segmentMasterData.accountName}\",\n        \"lblField2\": \"${segmentMasterData.accountType}\",\n        \"imgUserIcon\": \"\",\n        \"imgBankIcon\": \"\"\n      }\n    },\n    \"segContactType\": {\n      \"segmentUI\": {\n        \"lblContactType1\" : \"${i18n{Kony.mb.userdetail.PhoneNumber}}\",\n        \"lblContactType2\" : \"${i18n{i18n.ProfileManagement.EmailId}}\",\n        \"lblContactType3\" : \"${i18n{i18n.unifiedBeneficiary.nationalID}}\"\n      },\n      \"backendMapping\": {\n        \"lblContactType1Value\": \"Phone Number\",\n        \"lblContactType2Value\": \"Email\",\n        \"lblContactType3Value\": \"National ID\"\n      }\n    },\n   \"segCurrency\": {\n     \"segmentUI\": {\n        \"lblCurrencyOption1\" : \"USD\",\n        \"lblCurrencyOption2\" : \"EUR\"\n      },\n      \"backendMapping\": {\n        \"lblCurrencyOption1Value\": \"USD\",\n        \"lblCurrencyOption2Value\": \"EUR\"\n      }\n   },\n   \"segActivationGuideliness\" : {\n     \"segmentUI\": {\n        \"lblGuideliness1\" : \"${i18n{i18n.P2PActivation.guidelines1}}\",\n        \"lblGuideliness2\" : \"${i18n{i18n.P2PActivation.guidelines2}}\",\n        \"lblGuideliness3\" : \"${i18n{i18n.P2PActivation.guidelines3}}\",\n        \"lblGuideliness4\" : \"${i18n{i18n.P2PActivation.guidelines4}}\"\n      }\n   },\n   \"segDeactivationGuideliness\" : {\n     \"segmentUI\": {\n        \"lblGuideliness1\" : \"${i18n{i18n.P2PDeactivation.Guidelines1}}\",\n        \"lblGuideliness2\" : \"${i18n{i18n.P2PDeactivation.Guidelines2}}\",\n        \"lblGuideliness3\" : \"${i18n{i18n.P2PDeactivation.Guidelines3}}\",\n        \"lblGuideliness4\" : \"${i18n{i18n.P2PDeactivation.Guidelines4}}\"\n      }\n   }\n  },\n  \"ContactType\": {\n    \"lblContactTypeHeader\": \"${i18n{i18n.unified.contactType}}\"\n  },\n  \"NationalID\": {\n    \"lblNationalIDHeader\": \"${i18n{i18n.unifiedBeneficiary.nationalID}}\",\n    \"tbxNationalIDInput\": \"${Collection.ArrangementPreferences_1.selectedNationalId}\"\n  },\n  \"Currency\": {\n    \"lblCurrencyHeader\": \"${i18n{i18n.common.Currency}}\",\n    \"segCurrencyOption\": \"${Collection.ArrangementPreferences_1.currency}\"\n  },\n  \"TransferLimit\": {\n    \"lblTransferLimit\": \"${i18n{i18n.p2pActivate.transferLimit}}\",\n    \"tbxCurrency\": \"${Collection.ArrangementPreferences_1.currency}\",\n    \"tbxTransferLimit\": \"${Collection.ArrangementPreferences_1.transferLimit}\"\n  },\n  \"DepositAccount\": {\n    \"lblDepositAccountHeader\": \"${i18n{i18n.p2pActivate.depositAccount}}\"\n  },\n  \"phoneNumberorEmail\": {\n    \"lblPreferredEmail\" : \"${i18n{kony.mb.Alerts.SelectPreferredEmail}}\",\n    \"lblPreferredMobile\": \"${i18n{kony.mb.Alerts.SelectPreferredPhoneNumber}}\",\n    \"segContactDetails\" : \"${Collection.ArrangementPreferences_1.contactDetails}\"\n  },\n  \"ActivateP2PGuideliness\": {\n    \"lblHeaderActivateP2P\" : \"${i18n{i18n.p2pActivate.activateP2P}}\",\n    \"lblGuidelinessDescription\": \"${i18n{i18n.P2Ptransfer.Guideliness}}\"\n  },\n  \"TermsandConditions\": {\n    \"lblTermsandConditions\": \"${i18n{kony.mb.settings.termsAndConditions}}\"\n  },\n \"cancelpopup\": {\n    \"lblActivationFlowDescription\": \"${i18n{i18n.P2PActivate.Confirmation}}\",\n    \"lblDeactivationFlowDescription\" : \"${i18n{i18n.P2PDeactivate.Confirmation}}\"\n },\n \"DeactivateP2P\" : {\n  \"lblHeaderDeactivateP2P\" : \"${i18n{i18n.P2PTransfer.Deactivation}}\",\n  \"lblGuidelinesDescripttion\": \"${i18n{i18n.P2PDeactivation.Description}}\"\n }\n}",
+                    "group": "General",
+                    "kuid": "a360b306e8b3466d95c7859905e6e049",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "aed1c22c6a0f441a94526cf88ae20f57",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "d4b3a0de397548569c0b65426fb1ca2f",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "aed1c22c6a0f441a94526cf88ae20f57",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Transfers",
+    "version": "1.0.0"
+}

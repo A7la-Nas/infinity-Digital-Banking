@@ -1,0 +1,84 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s120a55346c946c2b4561ab8f86fe692",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "accValidationObject": "Payee_Name",
+        "accValidationOperation": "getPayeeName",
+        "accValidationService": "PayeeManagement",
+        "adsTextBox3Label": "{i.i18n.TransfersEur.Country}:",
+        "adsTextBox3Value": "{\n  \"inputPoolKey\": \"country\",\n  \"value\": \"{$.inputPool.country}\",\n  \"placeHolder\": \"{i.kony.address.EnterCountryName}\",\n  \"restrictChar\": \"0123456789\"\n}\n",
+        "annTextbox": "{\n  \"inputPoolKey\": \"payeeNickname\",\n  \"value\": \"{$.inputPool.payeeNickname}\",\n  \"placeHolder\": \"Enter Payee Nickname\",\n  \"restrictChar\": \"!@#&*_'-.,\"\n}",
+        "cccsNoRecords": "{i.kony.mb.OB.NoRecordsAvailable}",
+        "ccsCountryListService": "Utility",
+        "cfcsNoRecords": "{i.kony.mb.OB.NoRecordsAvailable}",
+        "dvfConfig": "{\n  \"Recipients\": {\n    \"txtBoxPayeeName\": \"NAME\",\n    \"txtBoxNewAccountNumber\": \"ACCOUNT_NUMBER\",\n    \"txtBoxReenterAccountNumber\": \"ACCOUNT_NUMBER\",\n\t\"txtRequiredBICSwift\":\"ID_ALPHANUMERIC\",\n\t\"txtRequiredClearingCode1\":\"ID_ALPHANUMERIC\",\n\t\"txtRequiredClearingCode2\":\"ID_ALPHANUMERIC\",\n\t\"txtSwiftBICSearchValue1\":\"NAME\",\n\t\"txtSwiftBICSearchValue2\":\"NAME\",\n\t\"txtSwiftBICSearchValue3\":\"NAME\",\n\t\"txtSwiftBICSearchValue4\":\"NAME\",\n    \"txtEmailAddress\":\"EMAIL\",\n    \"txtBoxNationalID\":\"NUMBER\",\n    \"tbxContactCode\":\"NAME\",\n    \"txtNickName\":\"ID_ALPHANUMERIC\",\n    \"txtBoxAddressLine01\": \"ID_ALPHANUMERIC\",\n    \"txtBoxAddressLine02\": \"ID_ALPHANUMERIC\",\n    \"txtBoxCountry\": \"NAME\",\n    \"txtBoxState\": \"NAME\",\n    \"txtBoxCity\": \"NAME\",\n    \"txtBoxPostalCode\": \"ZIPCODE\"\n  }\n}",
+        "gsknHeaderFlex": "sknUnderlinef639afTab",
+        "gsknTextBoxNormal": "ICSknTbxSSPR42424215px",
+        "maxFillMapping": "{\n  \"Recipients\": {\n    \"txtBoxPayeeName\": \"20\",\n    \"txtBoxNewAccountNumber\": \"10\",\n    \"txtBoxReenterAccountNumber\": \"10\",\n    \"txtRequiredBICSwift\":\"40\",\n    \"txtRequiredClearingCode1\":\"40\",\n    \"txtRequiredClearingCode2\":\"40\",\n    \"txtSwiftBICSearchValue1\":\"30\",\n\t\"txtSwiftBICSearchValue2\":\"30\",\n\t\"txtSwiftBICSearchValue3\":\"30\",\n\t\"txtSwiftBICSearchValue4\":\"30\",\n    \"txtEmailAddress\":\"64\",\n    \"lblMobileNumber\":\"10\",\n    \"txtBoxAddressLine01\": \"30\",\n    \"txtBoxAddressLine02\": \"30\",\n    \"txtBoxCountry\": \"30\",\n    \"txtBoxState\": \"30\",\n    \"txtBoxCity\": \"30\",\n    \"txtBoxPostalCode\": \"30\",\n    \"txtNickName\":\"35\"\n  }\n}",
+        "minFillMapping": "{\n  \"Recipients\": {\n    \"txtBoxPayeeName\": \"1\",\n    \"txtBoxNewAccountNumber\": \"3\",\n    \"txtBoxReenterAccountNumber\": \"3\",\n    \"txtSwiftBICSearchValue1\":\"0\",\n\t\"txtSwiftBICSearchValue2\":\"0\",\n\t\"txtSwiftBICSearchValue3\":\"0\",\n\t\"txtSwiftBICSearchValue4\":\"0\",\n    \"txtEmailAddress\":\"6\",\n    \"lblMobileNumber\":\"10\",\n    \"txtBoxNationalID\":\"12\",\n    \"tbxContactCode\":\"3\",\n    \"txtNickName\":\"3\",\n    \"txtBoxAddressLine01\": \"5\",\n    \"txtBoxAddressLine02\": \"5\",\n    \"txtBoxCountry\": \"5\",\n    \"txtBoxState\": \"5\",\n    \"txtBoxCity\": \"5\",\n    \"txtBoxPostalCode\": \"6\"\n  }\n}",
+        "phnoTxtbox1Label": "{i.i18n.unifiedBeneficiary.code}",
+        "pynsVisibility": true,
+        "rcsGetSwiftService": "PayeeManagement",
+        "rcsSwiftObject": "BankDetails",
+        "rcsTextbox1": "{\n  \"inputPoolKey\": \"bic\",\n  \"value\": \"{$.inputPool.bic}\",\n  \"placeHolder\": \"{i.i18n.UnifiedAddBeneficiary.SwiftCode}\",\n  \"inputMode\": \"ANY\",\n  \"defaultBankName\":\"Temenos\"\n}",
+        "sbssSwiftLookupObject": "BankDetails",
+        "sbssSwiftLookupService": "PayeeManagement",
+        "vfsCriteria": "{\n  \"accountNumber\": \"{$.inputPool.accountNumber}\",\n  \"IBAN\": \"{$.inputPool.accountNumber}\",\n  \"beneficiaryName\": \"{$.inputPool.payeeName}\",\n  \"bankName\": \"{$.inputPool.bankName}\",\n  \"nickName\": \"{$.inputPool.payeeNickname}\",\n  \"addressLine1\": \"{$.inputPool.addressLine1}\",\n  \"addressLine2\": \"{$.inputPool.addressLine2}\",\n  \"city\": \"{$.inputPool.city}\",\n  \"zipcode\": \"{$.inputPool.zipCode}\",\n  \"email\": \"{$.inputPool.emailAddress}\",\n  \"state\": \"{$.inputPool.state}\",\n  \"country\": \"{$.inputPool.country}\",\n  \"phone\": \"{$.inputPool.phoneNumber}\",\n  \"swiftCode\": \"{$.inputPool.bic}\",\n  \"sameBank\": \"\",\n  \"otherBank\": \"\",\n  \"isVerified\": true,\n  \"isSameBankAccount\": true,\n  \"isInternationalAccount\": false,\n  \"feature\": \"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\",\n  \"singleCustomer\": \"{$.inputPool.singleCustomer}\",\n  \"cif\": \"{$.inputPool.cifId}\"\n}",
+        "vfsField3Lbl": "",
+        "vfsField4Lbl": "",
+        "vfsField5Lbl": "",
+        "vfsField6Lbl": "",
+        "vfsField7Lbl": "{i.i18n.UnifiedTransfer.NickName}",
+        "vfsField8Lbl": "{i.i18n.payments.P2pPhoneNumber}",
+        "vfsField9Lbl": "{i.kony.i18n.verifyDetails.emailAddress}",
+        "vfsPayeeAddLbl": "{\n  \"text\": \"{i.kony.tab.BillPay.PayeeAddress}\",\n  \"fieldType\": \"Label\",\n  \"optional\": true,\n  \"readOnly\": {\n    \"AddPayeeFlow\": false,\n    \"SavePayeeFlow\": true\n  }\n}"
+    },
+    "id": "AddNewAccount",
+    "info": null,
+    "iscustomlayout": true,
+    "isvisible": true,
+    "kuid": "fba0f60edc704f1b857d4db6e134196e",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxContents",
+    "pf": "frmSameBankAddAccountNew",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "a740e5e0670743d48ddc17a9ea7f426c",
+    "wType": "UserWidgetInstance"
+}

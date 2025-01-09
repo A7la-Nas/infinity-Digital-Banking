@@ -1,0 +1,24 @@
+{
+    "AS_Button_e871bfd24cd74f03b0880c9f934f9980": {
+        "id": "AS_Button_e871bfd24cd74f03b0880c9f934f9980",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h65c10a2cabc493c8ac9ef9c703d1486"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__h3a54308b95d4388a7f9094a387574ce",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "const locateUsUIModule = kony.mvc.MDAApplication.getSharedInstance().moduleManager.getModule({ \n  appName: \"AboutUsMA\", \n  moduleName: \"LocateUsUIModule\" \n});\nlocateUsUIModule.presentationController.presentLocateUsView(false, this);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "AS_Calendar_e8856f3d7c8745a9a35b63a0067d420a": {
+        "id": "AS_Calendar_e8856f3d7c8745a9a35b63a0067d420a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segBillPaymentAllPayeesSelected",
+            "type": "templates",
+            "platform": "",
+            "KUID": "h53f89bc1edb469b8fd61888c99c9944"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__cc579fcdc3b240fa8241a11efbf8a4e5",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "position",
+            "display": "position",
+            "inputparams": [{
+                "name": "eventobject",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

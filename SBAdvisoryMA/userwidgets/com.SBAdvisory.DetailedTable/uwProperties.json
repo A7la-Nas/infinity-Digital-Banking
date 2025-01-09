@@ -1,0 +1,186 @@
+{
+    "classname": "DetailedTable",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "h703c7dac72b49868219030ebf8ba753",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d7e7d83087e94468a4203e9528a6f9ec",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a61c8666e85448438801563eca19fe1a",
+                    "paramList": [],
+                    "propertyKey": "sortResponse",
+                    "pw": {
+                        "displayName": "sortResponse",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d7e7d83087e94468a4203e9528a6f9ec",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f200f25fd92e49b9ba7c72f2d7afecfb",
+                    "paramList": [],
+                    "propertyKey": "setSearchString",
+                    "pw": {
+                        "displayName": "setSearchString",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d7e7d83087e94468a4203e9528a6f9ec",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ec579f5bcb3c4e32acdf78f08ac84ce7",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "initiateSortService",
+                    "pw": {
+                        "displayName": "initiateSortService",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d7e7d83087e94468a4203e9528a6f9ec",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "[\r\n    {\r\n        \"headerName\": \"i18n.accountDetail.customerName\",\r\n        \"keyToLoad\": \"CustomerName\"\r\n    },\r\n    {\r\n        \"headerName\": \"i18n.SBAdvisory.invoiceCount\",\r\n        \"keyToLoad\": \"CountOfOverdueInvoices\"\r\n    },\r\n    {\r\n        \"headerName\": \"i18n.SBAdvisory.overdueAmount\",\r\n        \"keyToLoad\": \"SumOfOverdueInvoiceAmounts\"\r\n    }\r\n]",
+                    "group": "General",
+                    "kuid": "a1f84867d2eb49bfaf147d5864f269e1",
+                    "originalPropertyKey": "dataMapping",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "toolTip": "Provide  key value pairs for the columns",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "d7e7d83087e94468a4203e9528a6f9ec",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "SumOfOverdueInvoiceAmounts",
+                    "group": "General",
+                    "kuid": "h75eb4f42532472d8f3fd05359e40cf4",
+                    "originalPropertyKey": "defaultAscSort",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "defaultAscSort",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Default Acending Sort",
+                        "toolTip": "Default Acending Sort to display on the table",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d7e7d83087e94468a4203e9528a6f9ec",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[\"SumOfOverdueInvoiceAmounts\"]",
+                    "group": "General",
+                    "kuid": "ebf528208a9740069d0ff98df93f442b",
+                    "originalPropertyKey": "appendCurrencySymbol",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "appendCurrencySymbol",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Append Currency Symbol",
+                        "toolTip": "Appending currency symbol in front for row",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d7e7d83087e94468a4203e9528a6f9ec",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "customerName",
+                    "group": "General",
+                    "kuid": "deec054687c34e22a04067229107f07a",
+                    "originalPropertyKey": "searchKey",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "searchKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "SearchKey",
+                        "toolTip": "SearchKey",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d7e7d83087e94468a4203e9528a6f9ec",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "konybb.userMgmt.Customers",
+                    "group": "General",
+                    "kuid": "def0e8d5fb06427198501328dfc23419",
+                    "originalPropertyKey": "paginationKey",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "paginationKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "PaginationKey",
+                        "toolTip": "PaginationKey",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d7e7d83087e94468a4203e9528a6f9ec",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.SBAdvisory",
+    "version": "1.0.0"
+}

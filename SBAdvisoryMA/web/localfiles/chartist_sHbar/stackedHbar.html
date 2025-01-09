@@ -1,0 +1,160 @@
+<!--
+* Created by Team Kony.
+* Copyright (c) 2017 Kony Inc. All rights reserved.
+-->
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <title>Chartist</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type = "text/css" href = "chartistCss.css">  
+    <link rel = "stylesheet" type = "text/css" href = "chartist-plugin-tooltip.css">  
+    <style> 
+	html, body {width:100%;height:100%;overflow:hidden;margin:0 !important;}
+	<!-- @font-face { -->
+		  <!-- font-family: 'Helvetica'; -->
+		  <!-- src: url(font/Helvetica.ttf); -->
+		<!-- } -->
+
+		<!-- div { -->
+		  <!-- font-family: myFirstFont; -->
+		<!-- } -->
+      .ct-hidden {
+        opacity: 0;
+      }
+      .ct-dimmed {
+        opacity: 0.5;
+      }
+      .ct-legend {
+        float: left;	
+        margin-left: 25px;
+        position: relative;
+        list-style: none;
+        text-align: center;
+      }
+      .ct-legend li {
+        position: relative;
+		float: left;
+		padding-left: 25px;
+		margin-left: 14px;
+		color: #bebebe !important;
+		margin-bottom: 3px;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 14px !important;
+      }
+      .ct-legend li:before {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        left: 0px;
+        content: '';
+        border: 3px solid transparent;
+        border-radius: 50%;
+      }
+      .ct-legend li.inactive:before {
+        background: transparent;
+      }
+      .ct-legend.ct-legend-inside {
+        position: absolute;
+        font-family : 'Helvetica';
+        top: 0;
+        left: 0;
+        margin-left:0px;
+      }
+      .ct-legend.ct-legend-inside li{
+        display: block;
+        margin: 2%;
+      }
+      #chart{
+        <!-- margin-left: 5%; -->
+        top: 8%;
+        width: 92%;
+        height: 80%;
+        z-index: 2;
+		left:3%;
+        position: absolute;
+		overflow: visible;
+      }
+	  #chart svg{
+		overflow: visible;
+	  }
+      #legends{ 
+        top: 83%;  
+        margin-left: -5%;
+        width: 100%;
+        height: 0;
+        z-index: 5;  
+        position: absolute
+      }
+      #body {
+        float: vertical;
+      }
+      .Title_style {
+        <!-- margin: 0; -->
+        text-align: center;
+		<!--font: normal bold 17.0px Helvetica !important;-->
+        font-size : 16px;
+		color: #2b2b2b !important;	
+		margin-bottom: 25px;		
+      }
+      .ct-label {
+        fill: #363636;
+        color: #363636;
+        font-size: 11px;
+		font-weight: bold;
+		line-height: 1;
+		font-family: 'CircularStd-Bold';
+      }
+      .ct-barlabelhzntl {
+        fill: rgba(88, 88, 91, 1);
+        color: rgba(88, 88, 91, 1);
+        font-size: 100%;
+        line-height: 1;
+        font-family: 'CircularStd-Bold';
+        visibility: hidden;
+      }
+      .ct-label.ct-vertical {
+        font-size: 13px;
+		overflow: hidden;
+		width: 180% !important;
+		position: relative;
+		text-overflow: ellipsis;
+		right: 60%;
+		top: 33%;
+		display: block !important;		
+		white-space: nowrap;		
+      }	  
+	  .ct-chart foreignObject {
+		width: 30px !important; 		
+		display: block !important;		
+	  }
+	  .ct-label.ct-horizontal {
+		color: #646464;
+		font-size: 13px;
+	  }
+	  svg.ct-chart-bar.ct-horizontal-bars >g.ct-labels > foreignObject:last-child .ct-horizontal {
+		width: 100px;
+		height: 20px;
+		position: relative;
+		left: -15px;
+	}
+	  span.chartist-tooltip-meta {
+		font-weight: bold;
+	}
+	  
+    </style>
+  </head>
+  <body>
+    <p id = 'lblTitle' class = 'Title_style' style = 'text-align:center;'>By Days and Amount</p>
+    <div class = "ct-chart" id = "chart"></div> 
+    <div id='legends' style='width =90%; margin-left=5%; height= 10%'></div>
+    <script type = "text/javascript" src = "chartist.js"></script>  
+    <script type = "text/javascript" src = "chartist-plugin-axistitle.js"></script>
+    <script type = "text/javascript" src = "chartist-plugin-tooltip.js"></script>
+    <script type = "text/javascript" src = "chartistlegend.js"></script>
+    <script type = "text/javascript" src = "stackHbar.js"></script>       
+  </body>
+</html>

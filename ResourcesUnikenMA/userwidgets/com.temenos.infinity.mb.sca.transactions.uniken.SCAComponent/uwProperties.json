@@ -1,0 +1,145 @@
+{
+    "classname": "SCAComponent",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c3f14ef4d93145bf83e86d73be3cd203",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u162cb8d81b740fe8cb4168bda7aa3bd",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c68075f0e3ea444c825653c1fe261899",
+                    "paramList": [],
+                    "propertyKey": "verifyUserCredentials",
+                    "pw": {
+                        "displayName": "verifyUserCredentials",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u162cb8d81b740fe8cb4168bda7aa3bd",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d4b2f17bee8c4f809b45ca39d476130a",
+                    "paramList": [],
+                    "propertyKey": "authenticateUserData",
+                    "pw": {
+                        "displayName": "authenticateUserData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u162cb8d81b740fe8cb4168bda7aa3bd",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e23c3cd88c944a4592c499b9796a52dd",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSuccessCallback",
+                    "pw": {
+                        "displayName": "onSuccessCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u162cb8d81b740fe8cb4168bda7aa3bd",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "jea7701bce284e35b9b422d379f041e0",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onFailureCallback",
+                    "pw": {
+                        "displayName": "onFailureCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u162cb8d81b740fe8cb4168bda7aa3bd",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c317dfd5110f42d498d58e6a6b014916",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onCancel",
+                    "pw": {
+                        "displayName": "onCancel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u162cb8d81b740fe8cb4168bda7aa3bd",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "d9441d1dd6f642519f624625214576d1",
+                    "originalPropertyKey": "servicekey",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "servicekey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u162cb8d81b740fe8cb4168bda7aa3bd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "faaf08a73e494adfbae3e868bad9303a",
+                    "originalPropertyKey": "flowType",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "flowType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Flow Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u162cb8d81b740fe8cb4168bda7aa3bd",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.mb.sca.transactions.uniken",
+    "version": "1.0.0"
+}

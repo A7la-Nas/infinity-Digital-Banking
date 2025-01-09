@@ -1,0 +1,74 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "QRPaymentsUIModule/PresentationControllers/PresentationController"
+        },
+        "Mobile": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "QRPaymentsUIModule/PresentationControllers/PresentationController_Mobile"
+        }
+    },
+    "Forms": {
+        "mobile": {
+            "frmQRPaymentsLanding": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "QRPaymentsUIModule/frmQRPaymentsLandingController",
+                "FormName": "QRPaymentsUIModule/frmQRPaymentsLanding",
+                "friendlyName": "frmQRPaymentsLanding"
+            },
+            "frmQRScan": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "QRPaymentsUIModule/frmQRScanController",
+                "FormName": "QRPaymentsUIModule/frmQRScan",
+                "friendlyName": "frmQRScan"
+            },
+            "frmQRFromAccount": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "QRPaymentsUIModule/frmQRFromAccountController",
+                "FormName": "QRPaymentsUIModule/frmQRFromAccount",
+                "friendlyName": "frmQRFromAccount"
+            },
+            "frmQRAcknowledgement": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "QRPaymentsUIModule/frmQRAcknowledgementController",
+                "FormName": "QRPaymentsUIModule/frmQRAcknowledgement",
+                "friendlyName": "frmQRAcknowledgement"
+            },
+            "frmQRVerify": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "QRPaymentsUIModule/frmQRVerifyController",
+                "FormName": "QRPaymentsUIModule/frmQRVerify",
+                "friendlyName": "frmQRVerify"
+            },
+			"frmQRAmount": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "QRPaymentsUIModule/frmQRAmountController",
+                "FormName": "QRPaymentsUIModule/frmQRAmount",
+                "friendlyName": "frmQRAmount"
+            },
+			"frmQRActivation": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "QRPaymentsUIModule/frmQRActivationController",
+                "FormName": "QRPaymentsUIModule/frmQRActivation",
+                "friendlyName": "frmQRActivation"
+            },
+			"frmQRTnC": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "QRPaymentsUIModule/frmQRTnCController",
+                "FormName": "QRPaymentsUIModule/frmQRTnC",
+                "friendlyName": "frmQRTnC"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "QRPaymentsUIModule"
+}

@@ -1,0 +1,23 @@
+{
+    "AS_Button_he87c6c4ef1c427fa88f7c6272711003": {
+        "id": "AS_Button_he87c6c4ef1c427fa88f7c6272711003",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": null,
+            "KUID": "b0ef782c9c7e493fb3100c2860889494"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ab9372aadde34ef589e549dbb9f1af62",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var self = this;\n        kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\n        var authParams = {\n            \"UserName\": \"testeu01\",\n            \"Password\": \"Kony@1234\",\n            \"loginOptions\": {\n                \"isOfflineEnabled\": false\n            }\n        };\n        authClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\n        authClient.login(authParams, successCallback, errorCallback);\n\n        function successCallback(resSuccess) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resSuccess);\n            new kony.mvc.Navigation({\"appName\" : \"TradeFinanceMA\", \"friendlyName\" : \"HomeUIModule/frmHome\"}).navigate();\n        }\n\n        function errorCallback(resError) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resError);\n            alert(\"login is not working...\")\n        }",
+            "parentId": null
+        }]
+    }
+}

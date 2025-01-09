@@ -1,0 +1,1 @@
+{"table":"TermsAndConditions","db":"ContentManagement","verbs":"true"},{"table":"Locations","db":"ContentManagement","verbs":"true"},{"table":"CustomerFeedback","db":"ContentManagement","verbs":"true"},{"table":"Information","db":"ContentManagement","verbs":"true"}

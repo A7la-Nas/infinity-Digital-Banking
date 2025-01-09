@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_f81bd762dfc9474089affe80a9a8df75": {
+        "id": "AS_FlexContainer_f81bd762dfc9474089affe80a9a8df75",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "eventPayload"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "ICSegFilterList",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b2a12203e80a48e0b244463ebe09426c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f629da84510c4a19a08f0576c10b354d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.navigationDropdownPayments(eventobject, eventPayload, context);",
+            "parentId": null
+        }]
+    }
+}

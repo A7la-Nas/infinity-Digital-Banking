@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="chartist.min.css">
+		<link rel="stylesheet" href="multilinebarchart.css">
+		<script src="chartist.min.js"></script>
+		<script src="multilinebarchart.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="valueContainer">
+			<div class="innerContainer">
+				<div class="creditContainer">
+					<div class='box credit'>
+						<p class="labelName" id="credit">Credit</p>
+						<p class="labelName" id="creditValue">+$783.54</p>
+					</div>
+				</div>
+				<div class="separator first">
+				</div>
+				
+				<div class="debitContainer">
+					<div class='box debit'>
+						<p class="labelName" id="debit">Debit</p>
+						<p class="labelName" id="debitValue">+$783.54</p>
+					</div>
+				</div>
+				<div class="separator second">
+				</div>
+				<div class="availableContainer">
+					<div class='box available'>
+						<p class="labelName" id="available">Available Bal</p>
+						<p class="labelName" id="availableValue">+$783.54</p>
+					</div>
+				</div>
+			</div>
+			<div class="triangleContainer">
+				<div id="triangle"></div>
+				
+			</div>
+		</div>
+				
+		
+		<div class="bgContainer">
+			<div class="ct-chart spendingContainer" id="multiLinechart">
+			</div>
+		</div>
+	<script>
+			addMultiLineBarChart(['JUL', 'AUG', 'SEP', 'OCT'], [[5.50, 4.64, 3.20, 2.11],[1.65, 2.34, 19.14, 5.64],[1.13, 2.15, 3.8, 7.87]], "$");
+	</script> 
+	
+	</body>
+</html>

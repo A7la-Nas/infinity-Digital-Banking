@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_h8f1601135884cbb9bae6c06f5cd660a": {
+        "id": "AS_FlexContainer_h8f1601135884cbb9bae6c06f5cd660a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDashboardAggregated",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ca231daa4214490bb26e21baab5db0db"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e909f60b271742e2b70fc0acbf1807b3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var accountModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AccountModule\");\naccountModule.presentationController.commonFunctionForNavigation(\"frmMessages\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,49 @@
+<project name="PreCompile" default="PreCompileSetup">
+	<!--
+	${basedir} points to the current dir in which this xml is present
+	${konyapp.dir} points to kony application base directory
+	${app.dir} points to Native android application directory created for the current kony app
+	${packagepath} contains the package name folder path relative to src folder
+	${build.option} indicates current build is "debug" or "release" mode
+	${supportx86} is set to "true" if x86 flag is ticked in IDE build options. 
+	${isUniversalApp} is set to "true" for universal build , where both mobile and tablet assets and js files are contained in single apk 
+	${isMobileBuild} is set to "true" if current build is invoked for Mobile and 
+	 is set to "false" if current build is invoked for Tablet.
+	1) Copy this xml to project workspace base directory (using Navigator view in kony Studio)
+	${basedir} var then points to project workspace base directory
+	2) This xml can be used to perform task such as 
+	==> Copy Modified Build xml file to native android folder
+	==> Any other custom libs,assets,res files to be copied in to native android hierarchy
+	==> Copy any x86 .so files from any libs only when variable ${supportx86} is set to true
+	==> Changing or appending some custom paths to project.properties or local.properties etc..
+	==> Custom code can be written under {isMobileBuild} check if there are custom tasks to be performed differently for Mobile and Tablet
+	-->
+	<target name="PreCompileSetup" >
+
+		<echo message="basedir = ${basedir} ,konyapp.dir = ${konyapp.dir}, appdir = ${app.dir} , isUniversalApp = ${isUniversalApp} ,isMobileBuild = ${isMobileBuild}"/>
+		<echo message="Build mode = ${build.option} , Packagepath = ${packagepath} , x86 Support = ${supportx86}" />		
+		<echo>Java/JVM version: ${ant.java.version}</echo> 
+		<echo>Java/JVM detail version: ${java.version}</echo>
+		<replaceregexp file="${app.dir}/build.gradle"
+               match="com.google.android.gms:play-services-location:11.6.0"
+               replace="com.google.android.gms:play-services-location:17.1.0"
+               byline="true"/>
+		<replaceregexp file="${app.dir}/build.gradle"
+               match="com.google.firebase:firebase-messaging:11.6.0"
+               replace="com.google.firebase:firebase-messaging:17.1.0"
+               byline="true"/>
+		<replaceregexp file="${app.dir}/build.gradle"
+               match="com.google.android.gms:play-services-vision:11.6.0"
+               replace="com.google.android.gms:play-services-vision:17.1.0"
+               byline="true"/>
+        <replaceregexp file="${app.dir}/build.gradle"
+               match="com.google.android.gms:play-services-maps:11.6.0"
+               replace="com.google.android.gms:play-services-maps:17.0.1"
+               byline="true"/>
+        <replaceregexp file="${app.dir}/build.gradle"
+               match="com.google.gms:google-services:3.1.0"
+               replace="com.google.gms:google-services:4.3.8"
+               byline="true"/>
+	</target>
+	<delete file="${app.dir}/libs/gson-2.8.9.jar"/>
+</project>

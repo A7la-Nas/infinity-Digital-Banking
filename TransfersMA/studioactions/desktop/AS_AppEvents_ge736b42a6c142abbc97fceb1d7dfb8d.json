@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_ge736b42a6c142abbc97fceb1d7dfb8d": {
+        "id": "AS_AppEvents_ge736b42a6c142abbc97fceb1d7dfb8d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f4ba1b9a6d0a47a18ea1c8c94c373f7b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true);\nkony.print(\"Testing JS Load\");\nvar isIOS13 = (/(iPad|iPhone);.*CPU.*OS 13_\\d/i).test(navigator.userAgent);\nif (isIOS13) {\n  kony.application.setApplicationBehaviors({\n    disableForceRepaint: true\n  });\n}\nconst moduleName = 'ApplicationManager';\nrequire([moduleName], function (ApplicationManager) {\n  applicationManager = ApplicationManager.getApplicationManager();\n  var config = applicationManager.getConfigurationManager();\n  if (performance.navigation.type === 1) {\n    config.setBrowserRefreshProperty(\"true\");\n  }\n  var langObjFromStorage = applicationManager.getStorageManager().getStoredItem(\"langObj\");\n  if (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\n    config.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\n    config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n  } else {\n    config.configurations.setItem(\"LOCALE\", \"en_US\");\n    config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n  }\n  kony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function () { }, function () { });\n  config.fetchApplicationProperties(function () { }, function () { });\n  document.body.addEventListener('contextmenu', function (e) {\n    e.preventDefault();\n    alert(kony.i18n.getLocalizedString(\"i18n.general.rightclickdisabled\"));\n  });\n});",
+            "parentId": null
+        }]
+    }
+}

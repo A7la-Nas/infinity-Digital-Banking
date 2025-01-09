@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="" groupType="" id="getCustomerDetails_Orch" passwordencrypted="" security="authorized_app_user" type="LoopingConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="exec_type" value="Concurrent"/>
+        <config-param api-version="1.0" appid="CustomerData" name="service" value="getCustomerDetails"/>
+        <config-param api-version="" appid="" name="loop_count" value="0"/>
+        <config-param api-version="" appid="" name="loop_separator" value=""/>
+        <config-param api-version="" appid="" name="dependent_tag" value=""/>
+        <config-param api-version="" appid="" name="dependent_value" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false"/>
+    <service-output passthrough="false" isExtended="false"/>
+</service>

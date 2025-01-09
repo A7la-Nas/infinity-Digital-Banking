@@ -1,0 +1,224 @@
+{
+    "classname": "ActivateProfile",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bb03036572b34514b3eddd32cb399d2b",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "showQRCode",
+                    "pw": {
+                        "displayName": "showQRCode",
+                        "toolTip": "showQRCode",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ub1da947f3884bd9aef8fa0815b79ee9",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "Text Fields",
+                "QR Code Properties"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"BP1\": \"640\", \"BP2\": \"1024\", \"BP3\": \"1366\" }",
+                    "group": "General",
+                    "kuid": "ide91304227e472abd880ebd021066a9",
+                    "originalPropertyKey": "breakpoints",
+                    "propertyIndex": 1,
+                    "propertyKey": "breakpoints",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Breakpoints",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ub1da947f3884bd9aef8fa0815b79ee9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.ActivateProfile.Heading",
+                    "group": "Text Fields",
+                    "kuid": "d4121a7e556c4085ac87acdc7a3bd29a",
+                    "originalPropertyKey": "headingtext",
+                    "propertyIndex": 1,
+                    "propertyKey": "headingtext",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Headingtext",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ub1da947f3884bd9aef8fa0815b79ee9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 120,
+                    "group": "QR Code Properties",
+                    "kuid": "d1053b74eb184ddfb55f11e0f37ccc98",
+                    "originalPropertyKey": "qrCodeWidth",
+                    "propertyIndex": 1,
+                    "propertyKey": "qrCodeWidth",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "QR Code Width",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "ub1da947f3884bd9aef8fa0815b79ee9",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.ActivateProfile.Description",
+                    "group": "Text Fields",
+                    "kuid": "b589ab3d97bb400bbb5a7e026e8fde26",
+                    "originalPropertyKey": "descriptiontext",
+                    "propertyIndex": 2,
+                    "propertyKey": "descriptiontext",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Descriptiontext",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ub1da947f3884bd9aef8fa0815b79ee9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 120,
+                    "group": "QR Code Properties",
+                    "kuid": "g3ef549c53ea439eb9f788270db68f89",
+                    "originalPropertyKey": "qrCodeHeight",
+                    "propertyIndex": 2,
+                    "propertyKey": "qrCodeHeight",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "QR Code Height",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "ub1da947f3884bd9aef8fa0815b79ee9",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 2,
+                    "group": "QR Code Properties",
+                    "kuid": "eabfd54bcb114db29fbd5cd342768fb5",
+                    "originalPropertyKey": "qrCodeCorrectionValue",
+                    "propertyIndex": 3,
+                    "propertyKey": "qrCodeCorrectionValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "QR Code Correction Value",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "ub1da947f3884bd9aef8fa0815b79ee9",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "000000",
+                    "group": "QR Code Properties",
+                    "kuid": "h5c1c20cd4ac4e02959e3d875952ab7d",
+                    "originalPropertyKey": "qrCodeColorDark",
+                    "propertyIndex": 4,
+                    "propertyKey": "qrCodeColorDark",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "QR Code Color Dark",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ub1da947f3884bd9aef8fa0815b79ee9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "FFFFFF",
+                    "group": "QR Code Properties",
+                    "kuid": "bd81e5ed42124ca483de84981f938c9b",
+                    "originalPropertyKey": "qrCodeColorLight",
+                    "propertyIndex": 5,
+                    "propertyKey": "qrCodeColorLight",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "QR Code Color Light",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ub1da947f3884bd9aef8fa0815b79ee9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "MB App Store URL",
+                    "group": "QR Code Properties",
+                    "kuid": "f44f84276dec49c99262d823d04437f7",
+                    "originalPropertyKey": "appStoreQRCodeText",
+                    "propertyIndex": 6,
+                    "propertyKey": "appStoreQRCodeText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "App Store QR CodeText",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ub1da947f3884bd9aef8fa0815b79ee9",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "MB Play Store URL",
+                    "group": "QR Code Properties",
+                    "kuid": "ee6f39b29d154049b307842a12df33ca",
+                    "originalPropertyKey": "playStoreQRCodeText",
+                    "propertyIndex": 7,
+                    "propertyKey": "playStoreQRCodeText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Play Store QR CodeText",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ub1da947f3884bd9aef8fa0815b79ee9",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.sca.uniken",
+    "version": "1.0.0"
+}

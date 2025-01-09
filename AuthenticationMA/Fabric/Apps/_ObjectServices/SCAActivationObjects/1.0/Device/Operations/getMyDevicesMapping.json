@@ -1,0 +1,46 @@
+{
+  "operationConfig" : {
+    "name" : "getMyDevices4037",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"userId\" outputpath=\"userId\"/></map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                    <map inputpath=\"response_in\" outputpath=\"response_out\">                                       <map inputpath=\"devices\" outputpath=\"devices\">                        <map inputpath=\"id\" outputpath=\"id\"/>                                             <map inputpath=\"registeredOn\" outputpath=\"registeredOn\"/>                                             <map inputpath=\"friendlyName\" outputpath=\"friendlyName\"/>                   <map inputpath=\"status\" outputpath=\"status\"/>            </map>                    </map></mapper>",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Device\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"SCAUserOrchService (1.0).getMyDevices\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:Device\",\"fromPort\":\"target\",\"toPort\":\"target:Device\",\"visible\":true,\"common\":false},{\"from\":\"target:Device\",\"to\":\"target:Device:t_p_fields\",\"fromPort\":\"target:Device\",\"toPort\":\"target:Device:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:id:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:id:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:userId:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:userId:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:displayName:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:displayName:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:friendlyName:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:friendlyName:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:errorCode:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:errorCode:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:errorMessage:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:errorMessage:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:status:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:status:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:isActive:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:isActive:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:parameters\",\"fromPort\":\"source\",\"toPort\":\"source:parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:parameters\",\"to\":\"source:parameters:access_token:\",\"fromPort\":\"source:parameters\",\"toPort\":\"source:parameters:access_token:\",\"visible\":true,\"common\":false},{\"from\":\"source:parameters\",\"to\":\"source:parameters:expires_in:\",\"fromPort\":\"source:parameters\",\"toPort\":\"source:parameters:expires_in:\",\"visible\":true,\"common\":false},{\"from\":\"source:parameters\",\"to\":\"source:parameters:token_type:\",\"fromPort\":\"source:parameters\",\"toPort\":\"source:parameters:token_type:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:devices\",\"fromPort\":\"source\",\"toPort\":\"source:devices\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "SCAUserOrchService",
+      "serviceVersion" : "1.0",
+      "operationName" : "getMyDevices"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Device",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : true,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"userId\" outputpath=\"userId\"/></map></mapper>",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                    <map inputpath=\"response_in\" outputpath=\"response_out\">                                       <map inputpath=\"devices\" outputpath=\"devices\">                        <map inputpath=\"id\" outputpath=\"id\"/>                                             <map inputpath=\"registeredOn\" outputpath=\"registeredOn\"/>                                             <map inputpath=\"friendlyName\" outputpath=\"friendlyName\"/>                   <map inputpath=\"status\" outputpath=\"status\"/>            </map>                    </map></mapper>",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Device\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"SCAUserOrchService (1.0).getMyDevices\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:Device\",\"fromPort\":\"target\",\"toPort\":\"target:Device\",\"visible\":true,\"common\":false},{\"from\":\"target:Device\",\"to\":\"target:Device:t_p_fields\",\"fromPort\":\"target:Device\",\"toPort\":\"target:Device:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:id:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:id:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:userId:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:userId:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:displayName:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:displayName:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:friendlyName:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:friendlyName:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:errorCode:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:errorCode:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:errorMessage:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:errorMessage:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:status:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:status:\",\"visible\":true,\"common\":false},{\"from\":\"target:Device:t_p_fields\",\"to\":\"target:Device:isActive:\",\"fromPort\":\"target:Device:t_p_fields\",\"toPort\":\"target:Device:isActive:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:parameters\",\"fromPort\":\"source\",\"toPort\":\"source:parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:parameters\",\"to\":\"source:parameters:access_token:\",\"fromPort\":\"source:parameters\",\"toPort\":\"source:parameters:access_token:\",\"visible\":true,\"common\":false},{\"from\":\"source:parameters\",\"to\":\"source:parameters:expires_in:\",\"fromPort\":\"source:parameters\",\"toPort\":\"source:parameters:expires_in:\",\"visible\":true,\"common\":false},{\"from\":\"source:parameters\",\"to\":\"source:parameters:token_type:\",\"fromPort\":\"source:parameters\",\"toPort\":\"source:parameters:token_type:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:devices\",\"fromPort\":\"source\",\"toPort\":\"source:devices\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : true,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

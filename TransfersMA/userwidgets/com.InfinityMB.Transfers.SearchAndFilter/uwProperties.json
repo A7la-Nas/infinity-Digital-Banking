@@ -1,0 +1,406 @@
+{
+    "classname": "SearchAndFilter",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ba72b3caa5d2445e96730540f72bc3f5",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSearchTextChange",
+                    "pw": {
+                        "displayName": "onSearchTextChange",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e77be0cfd17747e1b10689e73b58cf4b",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onFilterSelect",
+                    "pw": {
+                        "displayName": "onFilterSelect",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "je0aef9d86bb4c9ebde132d14e443d19",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Context",
+                "Search",
+                "Skins",
+                "Icons",
+                "Advanced Filter"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "Show All",
+                    "group": "General",
+                    "kuid": "je16b165a14a415e8ceebac16409b8a4",
+                    "originalPropertyKey": "componentVisibility",
+                    "propertyIndex": 1,
+                    "propertyKey": "componentVisibility",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Component Visibility",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "list selector",
+                    "value": [
+                        "Show All",
+                        "Hide All",
+                        "Hide Search",
+                        "Hide Advanced Filter"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.Search.PlaceholderText}",
+                    "group": "Search",
+                    "kuid": "ja0b805740274c758e8e6d4326a6dbb0",
+                    "originalPropertyKey": "placeholderText",
+                    "propertyIndex": 1,
+                    "propertyKey": "placeholderText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTxt333333SSPRegular40Px",
+                    "group": "Skins",
+                    "kuid": "i61cf763a2bb4676bad7b0d38b4ee7ce",
+                    "originalPropertyKey": "sknSearchText",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknSearchText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Search Text Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "search_image.png",
+                    "group": "Icons",
+                    "kuid": "f836e897908f40b7b29aca17bd794f8b",
+                    "originalPropertyKey": "imgSearchIcon",
+                    "propertyIndex": 1,
+                    "propertyKey": "imgSearchIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Search Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[{\"id\":\"default\",\"text\":\"{i.i18n.Search.AllTransfers}\"},{\"id\":\"Pending\",\"text\":\"{i.i18n.Search.Pending}\"},{\"id\":\"Rejected\",\"text\":\"{i.i18n.Search.Rejected}\"},{\"id\":\"Cancelled\",\"text\":\"{i.i18n.Search.Cancelled}\"},{\"id\":\"Completed\",\"text\":\"{i.i18n.Search.Completed}\"}]",
+                    "group": "Advanced Filter",
+                    "kuid": "heb20983df7f4543b29cb2c7f4154496",
+                    "originalPropertyKey": "advancedFilterValues",
+                    "propertyIndex": 1,
+                    "propertyKey": "advancedFilterValues",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Advanced Filter Values",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknSearchTextPlaceHolder99999935PxSSPRegular",
+                    "group": "Skins",
+                    "kuid": "e7f749f1e9ec470db24b09a26c7ae9db",
+                    "originalPropertyKey": "sknSearchTextPlaceholderBox",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknSearchTextPlaceholderBox",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Search Text box Placeholder Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "advance_search.png",
+                    "group": "Icons",
+                    "kuid": "df65574331344035877cc9dda0bb7df8",
+                    "originalPropertyKey": "closeFilterIcon",
+                    "propertyIndex": 2,
+                    "propertyKey": "closeFilterIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Close Filter Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl424242SSPRegular50Px",
+                    "group": "Skins",
+                    "kuid": "ee484b0423f84909a99e9f4dd02f3b79",
+                    "originalPropertyKey": "sknFilterHeading",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknFilterHeading",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter Heading Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "advansecsearch.png",
+                    "group": "Icons",
+                    "kuid": "e17dc9cb840a4881b03786ea194cb821",
+                    "originalPropertyKey": "imgFilterIcon",
+                    "propertyIndex": 3,
+                    "propertyKey": "imgFilterIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[{\"id\":\"default\",\"headerText\":\"{i.i18n.Search.ShowingAllTransfers}\"},{\"id\":\"Pending\",\"headerText\":\"{i.i18n.Search.ShowingPendingTransfers}\"},{\"id\":\"Rejected\",\"headerText\":\"{i.i18n.Search.ShowingRejectedTransfers}\"},{\"id\":\"Cancelled\",\"headerText\":\"{i.i18n.Search.ShowingCancelledTransfers}\"},{\"id\":\"Completed\",\"headerText\":\"{i.i18n.Search.ShowingCompletedTransfers}\"}]",
+                    "group": "Advanced Filter",
+                    "kuid": "b58193bd64694ec5978d5cd9e64a0cbf",
+                    "originalPropertyKey": "filterSelected",
+                    "propertyIndex": 3,
+                    "propertyKey": "filterSelected",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Selected Filter",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTxt333333SSPRegular40Px",
+                    "group": "Skins",
+                    "kuid": "bdb7ab70d3c24a03927543d3e43b21f5",
+                    "originalPropertyKey": "sknSearchTextboxFocus",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknSearchTextboxFocus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Search Text box Focus Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "correct.png",
+                    "group": "Icons",
+                    "kuid": "e8176332c0494894a0e73f0e5aec65b7",
+                    "originalPropertyKey": "AdvancedFilterselectedDataIcon",
+                    "propertyIndex": 4,
+                    "propertyKey": "AdvancedFilterselectedDataIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Advanced Filter Selected Data Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{i.i18n.Search.ShowAllButtonText}\",\"skin\":\"ICSknLbl4176a4SSPRegular50Px\"}",
+                    "group": "Advanced Filter",
+                    "kuid": "g98a76f1233240ddaff7f331fa6d4d8a",
+                    "originalPropertyKey": "showAllButton",
+                    "propertyIndex": 4,
+                    "propertyKey": "showAllButton",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Show All Button",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl4176a4SSPRegular50Px",
+                    "group": "Skins",
+                    "kuid": "hab091d396414f309126a45e157c191d",
+                    "originalPropertyKey": "sknFilterListData",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknFilterListData",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter List Data Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "clear_field.png",
+                    "group": "Icons",
+                    "kuid": "e1bd4c279bb34d89b937ad5f10b10233",
+                    "originalPropertyKey": "cancelSearchIcon",
+                    "propertyIndex": 5,
+                    "propertyKey": "cancelSearchIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Cancel Search Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Advanced Filter",
+                    "kuid": "c9afbf22b4a94e77b00559d4ff467fc4",
+                    "originalPropertyKey": "navigateTo",
+                    "propertyIndex": 5,
+                    "propertyKey": "navigateTo",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Navigate To",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxf9f9f9Plain",
+                    "group": "Skins",
+                    "kuid": "d6357a9e48f24c7d89fb7e5a2aa81857",
+                    "originalPropertyKey": "sknSearchAndFilterBackground",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknSearchAndFilterBackground",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Search and Filter Background Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxf9f9f9Plain",
+                    "group": "Skins",
+                    "kuid": "d876820970db42778aad857dbb0c8de2",
+                    "originalPropertyKey": "sknFilteredDataHeaderBackground",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknFilteredDataHeaderBackground",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filtered Data Header Background Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknListingOptions",
+                    "group": "Skins",
+                    "kuid": "f209c17db2b54e5d98368c62d4566e57",
+                    "originalPropertyKey": "sknFilterListHeaderBackground",
+                    "propertyIndex": 8,
+                    "propertyKey": "sknFilterListHeaderBackground",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter List Header Background Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ja972e6c9493454bbb389df89f0e7553",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Transfers",
+    "version": "1.0.0"
+}

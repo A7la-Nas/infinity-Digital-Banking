@@ -1,0 +1,26 @@
+{
+    "AS_FlexContainer_a6cf2ed00aa043f1a568420c4545e74c": {
+        "id": "AS_FlexContainer_a6cf2ed00aa043f1a568420c4545e74c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segAccountsConsolidatedListItem",
+            "type": "templates",
+            "platform": "",
+            "KUID": "c9366dd78ae44c6bbc1e5efdc9c9e1b1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_fe531bea4fee43eb870a17e1f4cd69f9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.toggleSegRowCheckBox(eventobject,context,true);",
+            "parentId": null
+        }]
+    }
+}

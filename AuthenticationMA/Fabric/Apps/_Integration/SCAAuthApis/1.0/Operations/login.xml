@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="login" passwordencrypted="false" security="public" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.temenos.sca.onboarding.preprocessor.OpenIdClientCredentialsPreProcessor,com.temenos.sca.onboarding.preprocessor.ScaFetchPasswordAuthTypePreprocessor"/>
+        <config-param api-version="" appid="" name="postprocessorname" value="com.temenos.sca.onboarding.postprocessor.UserLoginPostProcessor"/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://__$SCA_IDP_URL__/authn/token"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="urlprovider" value="com.temenos.ciba.util.ServiceURLProvider"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="Basic 4wiXMAAAAXzL2DoELmRR+upoa2uL6J7H9JAh3t6d" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Content-Type" order="" paramOrder="0" parentOrder="0" sms-name="" src="constant" sourcevalue="application/x-www-form-urlencoded" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="userid" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="6864746510" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="password" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Kony@123" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="authType" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="AT_EBSTPWD" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="grant_type=password&amp;username=$userid&amp;password=$password&amp;authType=$authType&amp;scope=openid" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="grant_type=password&amp;username=$userid&amp;password=$password&amp;authType=$authType&amp;scope=openid" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value="{&#10;    &quot;access_token&quot;: &quot;mgB5pgAAAXZSKShBKg5xpbIcsq1ujoaq75SP9rcd&quot;,&#10;    &quot;id_token&quot;: &quot;eyJraWQiOiIxNTY1Mjg5MDc4NTA3IiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJhdF9oYXNoIjoiNk1ha290RmhfUkgtV25mUi1FZ1JSQSIsInN1YiI6IjE1NTUzNzczIiwiYXVkIjoic3BsLWFwaSIsImF1dGhfdGltZSI6MTYwNzY5NjE5NywiaXNzIjoiaHR0cHM6XC9cL2FwcC5oaWRkZW1vLmNvbVwvaWRwXC9URU1FTk9TXC9hdXRobiIsImV4cCI6MTYwNzc4MjU5NywiaWF0IjoxNjA3Njk2MTk3LCJzaWQiOiJlMGhKUkMxSlFTMDBWQzVUUlZOVFNVOU9MakY5TG1Vd2JGZFFWelJtVm5nMWJ6a3ZUbXc1VjJrM2FFRjRTMnhMU1hOUlZWWlVUVzR3ZFVOa1pXbFFabTVJYXpJM2FTOWFNRlZTYzJoak0ycFFSV3ByTlVWalFrb3dLMGxOYm1WMVNWRmxOVWxuTUVwSWMzUkpaMjVPWW1wbFIwaE5kMnhaUW5ZPSJ9.U3l_D8pdA7H5GiTqpBZ7bsJ5nQpSdP_Rf2D5jlGMVQng_rU2oxF-l4OY3ezmTYvf94I845ZYo4ALn6QzhUxYJzzckKMHcaTCcF2dI49ZsFYeOhkXQ6Wtx6us4qHcrweXoAstTJgZuAXt9VvtE-EQCKy1MPZn7pc_0uvdcd2KeUtb73LNuXbwfP10_jVgmW8ZXqMZTG8PyCznSGkKbF2gjqhqdiOJbp97cx6SBbojzY7oxC5aJ0Rhdk6VBMvnPCPmDTYiYUmy2-LwrOpK1NtJo-dXxQ3pVsoDLGcWKhkstWU4nXBJ9b4XrMX59g9e042E0pbNNOCjDU4CiQ8JEpTOpg&quot;,&#10;    &quot;token_type&quot;: &quot;Bearer&quot;,&#10;    &quot;expires_in&quot;: 86400&#10;}"/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id_token" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="$.id_token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="error_code" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="$.hid_error.reason" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="error_code_1" order="" paramOrder="3" parentOrder="0" passnull="false" sms-name="" src="$.hid_error.code" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="error_description" order="" paramOrder="4" parentOrder="0" passnull="false" sms-name="" src="$.error_description" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

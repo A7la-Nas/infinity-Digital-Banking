@@ -1,0 +1,382 @@
+{
+    "classname": "resetPassword",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e8f1a87383c24433beeb5cfe60d975aa",
+                    "paramList": [],
+                    "propertyKey": "resetUI",
+                    "pw": {
+                        "displayName": "resetUI",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d574243f924e496683b28a3c94622740",
+                    "paramList": [],
+                    "propertyKey": "navigateToMFA",
+                    "pw": {
+                        "displayName": "navigateToMFA",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ca1517c5179d480cb591a700b881f205",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSuccessCallback",
+                    "pw": {
+                        "displayName": "onSuccessCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fb8eb241c19342cb9bd7398131c9b17a",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onFailureCallback",
+                    "pw": {
+                        "displayName": "onFailureCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f48e9128b94544f6ae356c5b8fa8cc7c",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "cancelReset",
+                    "pw": {
+                        "displayName": "cancelReset",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Skins",
+                "service",
+                "icons",
+                "Error"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtna0a0a0SSPReg26px",
+                    "group": "Skins",
+                    "kuid": "fce40c95076b451585dffd9e55e33fb6",
+                    "originalPropertyKey": "buttonDisabledSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "buttonDisabledSkin",
+                    "pw": {
+                        "displayName": "Button Disabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getPasswordRulesAndPolicy",
+                    "group": "service",
+                    "kuid": "d6cc344be0d7428cb2d53d08d6ed4331",
+                    "originalPropertyKey": "passwordPolicyService",
+                    "propertyIndex": 1,
+                    "propertyKey": "passwordPolicyService",
+                    "pw": {
+                        "displayName": "password polocy service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "viewicon.png",
+                    "group": "icons",
+                    "kuid": "a4f817c225714641a79438a2eb072da5",
+                    "originalPropertyKey": "textVisiblityOffIcon",
+                    "propertyIndex": 1,
+                    "propertyKey": "textVisiblityOffIcon",
+                    "pw": {
+                        "displayName": "textVisiblityOffIcon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "OTP request limit is excceeded than allowed number.",
+                    "group": "Error",
+                    "kuid": "g9b2e3b78b6f404f8ed37d610f1c97c8",
+                    "originalPropertyKey": "otpRequestLimitError",
+                    "propertyIndex": 1,
+                    "propertyKey": "otpRequestLimitError",
+                    "pw": {
+                        "displayName": "otpRequestLimitError",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtn0095e426pxEnabled",
+                    "group": "Skins",
+                    "kuid": "e185e07b559c483288c1944c6ed58b00",
+                    "originalPropertyKey": "buttonEnabledSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "buttonEnabledSkin",
+                    "pw": {
+                        "displayName": "Button Enabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ExternalUsers_2",
+                    "group": "service",
+                    "kuid": "j4f77ce468dd42c3b254d37b729db7c4",
+                    "originalPropertyKey": "object",
+                    "propertyIndex": 2,
+                    "propertyKey": "object",
+                    "pw": {
+                        "displayName": "object service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "viewactive.png",
+                    "group": "icons",
+                    "kuid": "a2e6237836544b438ecc9f91fda92287",
+                    "originalPropertyKey": "textVisiblityOnIcon",
+                    "propertyIndex": 2,
+                    "propertyKey": "textVisiblityOnIcon",
+                    "pw": {
+                        "displayName": "textVisiblityOnIcon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLble3e3e3SSP60px",
+                    "group": "Skins",
+                    "kuid": "b8ea8e14398f4166a606f15234efceda",
+                    "originalPropertyKey": "sknLblOTPEmpty",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknLblOTPEmpty",
+                    "pw": {
+                        "displayName": "Empty OTP Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "requestResetPasswordOTP",
+                    "group": "service",
+                    "kuid": "b6f96211659f47d58b86596a54a84eb8",
+                    "originalPropertyKey": "requestResetPasswordOTP",
+                    "propertyIndex": 3,
+                    "propertyKey": "requestResetPasswordOTP",
+                    "pw": {
+                        "displayName": "Request Reset Password OTP",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "tickmark.png",
+                    "group": "icons",
+                    "kuid": "e59169394caa405884466b5567ec10c5",
+                    "originalPropertyKey": "tickGrayIcon",
+                    "propertyIndex": 3,
+                    "propertyKey": "tickGrayIcon",
+                    "pw": {
+                        "displayName": "tickGrayIcon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl979797SSP60px",
+                    "group": "Skins",
+                    "kuid": "cabfcaab192746d198e685e20080b8d8",
+                    "originalPropertyKey": "sknLblOTPNotEmpty",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknLblOTPNotEmpty",
+                    "pw": {
+                        "displayName": "Not Empty OTP Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "verifyOTPPreLogin",
+                    "group": "service",
+                    "kuid": "a6f1cab77f274599b84278babc3fb709",
+                    "originalPropertyKey": "verifyMFAOTP",
+                    "propertyIndex": 4,
+                    "propertyKey": "verifyMFAOTP",
+                    "pw": {
+                        "displayName": "Verify MFA OTP",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "greentick.png",
+                    "group": "icons",
+                    "kuid": "fa4d779428f4442abf713fdbf756ec15",
+                    "originalPropertyKey": "tickGreenIcon",
+                    "propertyIndex": 4,
+                    "propertyKey": "tickGreenIcon",
+                    "pw": {
+                        "displayName": "_tickGreenIcon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlx979797",
+                    "group": "Skins",
+                    "kuid": "h16065a3f95f45e3b79df6375b2ae3d7",
+                    "originalPropertyKey": "sknFlxOTPEmpty",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknFlxOTPEmpty",
+                    "pw": {
+                        "displayName": "Empty OTP Flex Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "resetUserPassword",
+                    "group": "service",
+                    "kuid": "e22041e7e67845019f0a839bf1cfbcb1",
+                    "originalPropertyKey": "passwordUpdateService",
+                    "propertyIndex": 5,
+                    "propertyKey": "passwordUpdateService",
+                    "pw": {
+                        "displayName": "passwordUpdateService",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlx003e75Bg",
+                    "group": "Skins",
+                    "kuid": "jdbf8f3dde0e4f008203226cb617e7a3",
+                    "originalPropertyKey": "sknFlxOTPNotEmpty",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknFlxOTPNotEmpty",
+                    "pw": {
+                        "displayName": "Not Empty OTP Flex Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxFFFFFFBorderE9E9E9Radius3px",
+                    "group": "Skins",
+                    "kuid": "b0154e8c162c4f928557addbc5aa469b",
+                    "originalPropertyKey": "sknFlxNormalSkin",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknFlxNormalSkin",
+                    "pw": {
+                        "displayName": "Flex Normal Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b5a805d77b514e6d9fdc1a4698aea0e0",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.AboutUs",
+    "version": "1.0.0"
+}

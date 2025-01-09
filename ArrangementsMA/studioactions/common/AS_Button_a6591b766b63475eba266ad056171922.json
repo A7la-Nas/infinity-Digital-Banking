@@ -1,0 +1,22 @@
+{
+    "AS_Button_a6591b766b63475eba266ad056171922": {
+        "id": "AS_Button_a6591b766b63475eba266ad056171922",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "userwidgetmodel",
+            "type": "userwidgets",
+            "KUID": "u393d9288fd24a15adde4c4dc4ed4e11"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c45e04b55aa94da696b9d9a3474fda82",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(applicationManager.getPresentationFormUtility().getDeviceName() !== \"iPhone\"){\r\nvar ClipData = java.import('android.content.ClipData');\r\n        var ClipboardManager = java.import('android.content.ClipboardManager');\r\n        var Contexts = java.import('android.content.Context');\r\n        var KonyMain = java.import('com.konylabs.android.KonyMain');\r\n        var context = KonyMain.getActivityContext();\r\n        var myClipboard = context.getSystemService(Contexts.CLIPBOARD_SERVICE);\r\n        var text = this.view.lblAccountId.text;\r\n        var myClip = ClipData.newPlainText(\"text\", text);\r\n        myClipboard.setPrimaryClip(myClip);\r\n        alert('تم نسخ الحساب بنجاح ' + text);\r\n}\r\nelse\r\n{\r\n        var UIPasteboard = objc.import(\"UIPasteboard\");\r\n          var pasteBoard = UIPasteboard.generalPasteboard();\r\n          pasteBoard.string = this.view.lblAccountId.text;\r\n        alert(\"تم نسخ الحساب بنجاح\");\r\n}",
+            "parentId": null
+        }]
+    }
+}

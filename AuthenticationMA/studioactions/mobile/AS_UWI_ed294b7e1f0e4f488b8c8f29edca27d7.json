@@ -1,0 +1,30 @@
+{
+    "AS_UWI_ed294b7e1f0e4f488b8c8f29edca27d7": {
+        "id": "AS_UWI_ed294b7e1f0e4f488b8c8f29edca27d7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "errorData",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "name": "frmLoginHID",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d2290ff3858d48938cbd19960c045a3a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_setErrorStatus_cb300d44544b47c9a0b3253c10c3bd15",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setErrorStatus",
+            "display": "setErrorStatus",
+            "inputparams": [{
+                "name": "response",
+                "value": " errorData"
+            }],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

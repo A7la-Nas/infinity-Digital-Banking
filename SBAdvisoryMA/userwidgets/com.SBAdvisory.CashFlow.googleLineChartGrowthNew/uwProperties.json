@@ -1,0 +1,345 @@
+{
+    "classname": "googleLineChartGrowthNew",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "b7108f08d7f543589b866314759722a9",
+                    "originalPropertyKey": "serviceparameters",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "serviceparameters",
+                    "pw": {
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "uc1194e85ba7470985df798a02058b31",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "e52300a52ce24df2aaa725e11c0151f0",
+                    "originalPropertyKey": "dataformatting",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "dataformatting",
+                    "pw": {
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "uc1194e85ba7470985df798a02058b31",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "ie8eadbad824454aaa7e503b0422c762",
+                    "originalPropertyKey": "datamapping",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "datamapping",
+                    "pw": {
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "uc1194e85ba7470985df798a02058b31",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "h33fa55f94d8417bb0b8f38241c5b285",
+                    "originalPropertyKey": "conditionalmappingkey",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "conditionalmappingkey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Conditional Mapping Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uc1194e85ba7470985df798a02058b31",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "e30cda7a56044d799a491de23a77e396",
+                    "originalPropertyKey": "conditionalmapping",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "conditionalmapping",
+                    "pw": {
+                        "displayName": "Conditional Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "uc1194e85ba7470985df798a02058b31",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ce62275883b943b3b2eee65b04c7158b",
+                    "originalPropertyKey": "data",
+                    "propertyIndex": 1,
+                    "propertyKey": "data",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "data",
+                        "isHiddenInTool": false,
+                        "srcWidget": "chartNew",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "u85991efc68045fda083fedcc930bfea"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c108d5387a8e4f8383d46a46d643ec2d",
+                    "originalPropertyKey": "customContainerID",
+                    "propertyIndex": 1,
+                    "propertyKey": "customContainerID",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "customContainerID",
+                        "isHiddenInTool": false,
+                        "srcWidget": "chartNew",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "u85991efc68045fda083fedcc930bfea"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f844558d62fd4672a38f8629014c7744",
+                    "originalPropertyKey": "customBackgroundColor",
+                    "propertyIndex": 2,
+                    "propertyKey": "customBackgroundColor",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "customBackgroundColor",
+                        "isHiddenInTool": false,
+                        "srcWidget": "chartNew",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "u85991efc68045fda083fedcc930bfea"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b0d5f90624cb4cbb89bc061c3fd58514",
+                    "originalPropertyKey": "isHoverable",
+                    "propertyIndex": 3,
+                    "propertyKey": "isHoverable",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "isHoverable",
+                        "isHiddenInTool": false,
+                        "srcWidget": "chartNew",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "u85991efc68045fda083fedcc930bfea"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a94b6bd2cde248adab3def4cb07a8b7e",
+                    "originalPropertyKey": "sourceLegend1",
+                    "propertyIndex": 4,
+                    "propertyKey": "sourceLegend1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "sourceLegend1",
+                        "isHiddenInTool": false,
+                        "srcWidget": "chartNew",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "u85991efc68045fda083fedcc930bfea"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f20f224a6426475185c566192f92a0ee",
+                    "originalPropertyKey": "sourceLegend2",
+                    "propertyIndex": 5,
+                    "propertyKey": "sourceLegend2",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "sourceLegend2",
+                        "isHiddenInTool": false,
+                        "srcWidget": "chartNew",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "u85991efc68045fda083fedcc930bfea"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c4eaf5a4e6e349f184f6f9fd5b604d02",
+                    "originalPropertyKey": "sourceLegend3",
+                    "propertyIndex": 6,
+                    "propertyKey": "sourceLegend3",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "sourceLegend3",
+                        "isHiddenInTool": false,
+                        "srcWidget": "chartNew",
+                        "supportedPlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TPW"
+                    },
+                    "srcWgtKUID": "u85991efc68045fda083fedcc930bfea"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.SBAdvisory.CashFlow",
+    "version": "1.0.0"
+}

@@ -1,0 +1,34 @@
+{
+    "AS_Segment_g44dd2f61f7942af845a80f098666010": {
+        "id": "AS_Segment_g44dd2f61f7942af845a80f098666010",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmLoansFromAccount",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e5d9ba0bd7c64ab8958cbf3939526b16"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__g4ed51185dfd43f1a2bf22d945bfce6a",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onRowClick",
+            "display": "onRowClick",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

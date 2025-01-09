@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_a1b480f4c563400f8db6fb3c3245e5f0": {
+        "id": "AS_FlexContainer_a1b480f4c563400f8db6fb3c3245e5f0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "eventPayload"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segActionsMenu",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b5418c825f1c48e49d14249a4f946e01"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_da1d44e6ae144371bcaad04a53b61248",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onTransfersKeyPressCallback(eventobject, eventPayload, context);",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,167 @@
+{
+    "classname": "marketIndexDashComp",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c3fbae6176494a84b255b7be54eb1e3c",
+                    "paramList": [],
+                    "propertyKey": "getCriteria",
+                    "pw": {
+                        "displayName": "getCriteria",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ea58b4394f4f446f9472e0b74e3ed4df",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c79b67f8c1be4dafa38534ae0a8965d6",
+                    "originalPropertyKey": "postShow",
+                    "propertyIndex": 1,
+                    "propertyKey": "marketIndexPostShow",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "marketIndexPostShow",
+                        "srcWidget": "marketIndexDashComp",
+                        "toolTip": "marketIndexPostShow",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ea58b4394f4f446f9472e0b74e3ed4df",
+                    "translateAtInstance": false
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthObjects",
+                    "group": "General",
+                    "kuid": "d027c8027bd0470bb82f5e76d29e15a7",
+                    "originalPropertyKey": "objService",
+                    "propertyIndex": 1,
+                    "propertyKey": "objService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ea58b4394f4f446f9472e0b74e3ed4df",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "MarketData",
+                    "group": "General",
+                    "kuid": "j602d798980a4cd1887c58765b52eeab",
+                    "originalPropertyKey": "objName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ea58b4394f4f446f9472e0b74e3ed4df",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getDailyMarket",
+                    "group": "General",
+                    "kuid": "i55ad6c39cf44fa4bba0ac3c8bb960c4",
+                    "originalPropertyKey": "operation",
+                    "propertyIndex": 3,
+                    "propertyKey": "operation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ea58b4394f4f446f9472e0b74e3ed4df",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "visible",
+                    "group": "General",
+                    "kuid": "h94f735873214d109856efe3235430bd",
+                    "originalPropertyKey": "viewAllBtnStatus",
+                    "propertyIndex": 4,
+                    "propertyKey": "viewAllBtnStatus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Status of View All button (visible/hidden)",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "ea58b4394f4f446f9472e0b74e3ed4df",
+                    "type": "list selector",
+                    "value": [
+                        "visible",
+                        "hidden"
+                    ]
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 5,
+                    "propertyKey": "skin1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "displayName": "Normal",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "fe9e04bbb4854ba2be81a4851522558b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "originalPropertyKey": "hoverSkin",
+                    "propertyIndex": 6,
+                    "propertyKey": "hoverSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "applicablePSPplatform": "desktopweb",
+                        "category": "skin",
+                        "displayName": "Hover Skin",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "fe9e04bbb4854ba2be81a4851522558b"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.HomepageMA",
+    "version": "1.0.0"
+}

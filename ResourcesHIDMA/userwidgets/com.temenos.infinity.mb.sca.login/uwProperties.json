@@ -1,0 +1,411 @@
+{
+    "classname": "login",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b3f89c4f1f3443a991ac4c05c05f4956",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onFocusStart",
+                    "pw": {
+                        "displayName": "onFocusStart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c276c73be6f147f88ce362777f45984c",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onFocusEnd",
+                    "pw": {
+                        "displayName": "onFocusEnd",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f22f24248045409fb3bd29b77a1fc337",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "hideDashboardIcon",
+                    "pw": {
+                        "displayName": "hideDashboardIcon",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a4ca45e4636b409bbc61d30e81c20e01",
+                    "paramList": [
+                        {
+                            "name": "loginSuccessObj"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onLoginSuccess",
+                    "pw": {
+                        "displayName": "onLoginSuccess",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i6fe7f93ee3c4ad291a01033c1ce6913",
+                    "paramList": [
+                        {
+                            "name": "errorData"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "setErrorStatus",
+                    "pw": {
+                        "displayName": "setErrorStatus",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d28bf142422a41dbb5d63e1ae03388f9",
+                    "paramList": [
+                        {
+                            "name": "enteredUsername"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "forgotNavigation",
+                    "pw": {
+                        "displayName": "forgotNavigation",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a714f7648493465680be48c677bb8e28",
+                    "paramList": [
+                        {
+                            "name": "loginType"
+                        }
+                    ],
+                    "propertyIndex": 2,
+                    "propertyKey": "setUIAtFormLevelEvent",
+                    "pw": {
+                        "displayName": "setUIAtFormLevelEvent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a8b8f641634f44bf80d5abbdfb589698",
+                    "paramList": [
+                        {
+                            "name": "loginType"
+                        }
+                    ],
+                    "propertyIndex": 3,
+                    "propertyKey": "initiateLoginFlow",
+                    "pw": {
+                        "displayName": "initiateLoginFlow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d64000b9023d473da63b71556262517f",
+                    "paramList": [
+                        {
+                            "name": "loginFailureObj"
+                        }
+                    ],
+                    "propertyIndex": 4,
+                    "propertyKey": "onLoginFailure",
+                    "pw": {
+                        "displayName": "onLoginFailure",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Login Service",
+                "Skins",
+                "Images",
+                "Text Properties"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "CIBACustomIdentity",
+                    "group": "Login Service",
+                    "kuid": "j258f3b0532d4577b989e02ffdeeabf5",
+                    "originalPropertyKey": "identityServiceName",
+                    "propertyIndex": 1,
+                    "propertyKey": "identityServiceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Identity Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknTbx424242SSPRegular28px",
+                    "group": "Skins",
+                    "kuid": "b7dcd3d47af44b238a2f2c5e1490b2f7",
+                    "originalPropertyKey": "textBoxNormalSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "textBoxNormalSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "TextBox Normal Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "view.png",
+                    "group": "Images",
+                    "kuid": "c493442a3c2d49189a2d3956e532eb8f",
+                    "originalPropertyKey": "textVisiblityOffIcon",
+                    "propertyIndex": 1,
+                    "propertyKey": "textVisiblityOffIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Visiblity Off Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.login.username",
+                    "group": "Text Properties",
+                    "kuid": "f10906b586bc4c82bf20ed1130dbb629",
+                    "originalPropertyKey": "tbx1PlaceholderText",
+                    "propertyIndex": 1,
+                    "propertyKey": "tbx1PlaceholderText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "TextBox 1 Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPRegular26px",
+                    "group": "Skins",
+                    "kuid": "h406f047f9914b51b8b583acfab3bdfb",
+                    "originalPropertyKey": "rememberMeLabelSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "rememberMeLabelSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Remember Me Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "viewactive.png",
+                    "group": "Images",
+                    "kuid": "e9e8dfdc03ad4cde935d482b8719ac64",
+                    "originalPropertyKey": "textVisiblityOnIcon",
+                    "propertyIndex": 2,
+                    "propertyKey": "textVisiblityOnIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Visiblity On Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.login.password",
+                    "group": "Text Properties",
+                    "kuid": "gd69fd719b29463aae1f31c8705e41bb",
+                    "originalPropertyKey": "tbx2PlaceholderText",
+                    "propertyIndex": 2,
+                    "propertyKey": "tbx2PlaceholderText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "TextBox 2 Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknSwitch0095e4Op100pr000000Op10pr",
+                    "group": "Skins",
+                    "kuid": "a99ccbf38b63480e8c7f7671731ba55b",
+                    "originalPropertyKey": "rememberMeSwitchSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "rememberMeSwitchSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Remember Me Switch Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.login.rememberMe",
+                    "group": "Text Properties",
+                    "kuid": "dcd65a03947f46cd95d01ed2b3b800fe",
+                    "originalPropertyKey": "lblRememberMeText",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblRememberMeText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Remember Me Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtn0095e426pxEnabled",
+                    "group": "Skins",
+                    "kuid": "d2b95bb8b2234b8b93224e49a5a9d7d4",
+                    "originalPropertyKey": "btnLoginSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "btnLoginSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Login Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.login.cannotLogin",
+                    "group": "Text Properties",
+                    "kuid": "h119b012a210436bac4f7ec9f5b629c2",
+                    "originalPropertyKey": "lblForgotPasswordText",
+                    "propertyIndex": 4,
+                    "propertyKey": "lblForgotPasswordText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Forgot Password Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.login.logIn",
+                    "group": "Text Properties",
+                    "kuid": "c140ed9171744c6489251da339529f55",
+                    "originalPropertyKey": "submitButtonText",
+                    "propertyIndex": 5,
+                    "propertyKey": "submitButtonText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Submit Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtna0a0a0SSPReg26px",
+                    "group": "Skins",
+                    "kuid": "f8b80e2a06a94eab8c1ef4c72ccc8342",
+                    "originalPropertyKey": "btnLoginDisabledSkin",
+                    "propertyIndex": 12,
+                    "propertyKey": "btnLoginDisabledSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Submit Button Disabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u64aa60b534840bab866268495901ada",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "a10c3c1116084ab1ada6f614db10602f",
+                    "propertyKey": "flxSingleUserID",
+                    "srcWgtKUID": "udc5ca5d07cd4ceb82c5d71ad775310e"
+                },
+                {
+                    "kuid": "edaea7f03825490c9cabe38df1cea319",
+                    "propertyKey": "lblUserId",
+                    "srcWgtKUID": "u2c99653743548fdab2da8c704b4a322"
+                }
+            ],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.mb.sca",
+    "version": "1.0.0"
+}

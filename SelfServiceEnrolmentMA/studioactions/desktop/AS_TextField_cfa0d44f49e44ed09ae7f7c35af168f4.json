@@ -1,0 +1,23 @@
+{
+    "AS_TextField_cfa0d44f49e44ed09ae7f7c35af168f4": {
+        "id": "AS_TextField_cfa0d44f49e44ed09ae7f7c35af168f4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "j0329c6c64654440bf366abc8de81b74"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e83b926c9e334c42a14fb4ca32350a61",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.checkifUserNameContainsMaskCharacter();\nthis.capsLockIndicatorForUserName();\n/*var orientationHandler = new OrientationHandler();\nif (kony.application.getCurrentBreakpoint() > 1024 && orientationHandler.isDesktop) {\n  if (event.getModifierState(\"CapsLock\")) {\n    this.view.main.lblUsernameCapsLocIndicator.setVisibility(true);\n  } else {\n    this.view.main.lblUsernameCapsLocIndicator.setVisibility(false);\n  }\n  this.view.forceLayout();\n}*/\n         ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

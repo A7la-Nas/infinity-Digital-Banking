@@ -1,0 +1,197 @@
+{
+    "classname": "P2PActivationTile",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ia6f318a995e43d6bafe13801ca13f6e",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2ba0c06d1df4919ac4b5fb07532fef2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b4036b5fbe8f4ca19a638e645c208389",
+                    "paramList": [],
+                    "propertyKey": "closeDescription",
+                    "pw": {
+                        "displayName": "closeDescription",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2ba0c06d1df4919ac4b5fb07532fef2",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bcd429b00c854bf591fd787ebed3de17",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onBack",
+                    "pw": {
+                        "displayName": "onBack",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2ba0c06d1df4919ac4b5fb07532fef2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "aa094f799dce4cceafe993b43e20d4c6",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2ba0c06d1df4919ac4b5fb07532fef2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "cf792f817ca7480a8511be3a61b9b1a7",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "enableHideDescription",
+                    "pw": {
+                        "displayName": "enableHideDescription",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2ba0c06d1df4919ac4b5fb07532fef2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f171f1fbcd454b2a827fd9a8cf149013",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "buttonActionHandling",
+                    "pw": {
+                        "displayName": "buttonActionHandling",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2ba0c06d1df4919ac4b5fb07532fef2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "aa0c658b793d4235aaac59c1f4c32b8e",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "hideTile",
+                    "pw": {
+                        "displayName": "hideTile",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2ba0c06d1df4919ac4b5fb07532fef2",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "f968d128e68a41db871c87f1e01d25ce",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "d2ba0c06d1df4919ac4b5fb07532fef2",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"transferType\":\"${i18n{i18n.P2PActivation.PayaPerson}}\",\n  \"flxTransferTypes\": {\n    \"lblTransactionType\": \"${i18n{i18n.P2PActivation.PayaPerson}}\",\n    \"lblDescription\": \"${i18n{i18n.activateP2P.p2pDescription}}\",\n    \"MoreLink\": \"Learn More\",\n    \"imgTransDescriptionIcon\":\"p2ptransfer.png\",\n\t\"imgTransactionIcon\":\"p2ptransfer.png\",\n    \"btnAction1Label\" : \"${i18n{kony.mb.MM.ActivateP2P}}\"\n  },\n  \"entitlements\":{\n    \"btnAction1\":[\n       \"P2P_CREATE\"\n    ]\n  }\n}\n",
+                    "group": "General",
+                    "kuid": "b454fc1067274bdc8c4fdf2e948d9666",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "d2ba0c06d1df4919ac4b5fb07532fef2",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "ef43b8defa08472380f0b914696203cd",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "d2ba0c06d1df4919ac4b5fb07532fef2",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Transfers",
+    "version": "1.0.0"
+}

@@ -1,0 +1,49 @@
+{
+  "operationConfig" : {
+    "name" : "regenerateActivationCode8772",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"activationCode\" outputpath=\"activationCode\"/>\n        <set-param inputpath=\"id\" outputpath=\"id\"/>\n        <set-param inputpath=\"serviceKey\" outputpath=\"serviceKey\"/>\n        <set-param inputpath=\"userId\" outputpath=\"userId\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"\" outputpath=\"\"/>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"ExternalUsers_2\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"authDBX (1.0).regenerateActivationCode\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:ExternalUsers_2:id:\",\"to\":\"target:id:\",\"fromPort\":\"source:ExternalUsers_2:id:\",\"toPort\":\"target:id:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ExternalUsers_2:serviceKey:\",\"to\":\"target:serviceKey:\",\"fromPort\":\"source:ExternalUsers_2:serviceKey:\",\"toPort\":\"target:serviceKey:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ExternalUsers_2:userId:\",\"to\":\"target:userId:\",\"fromPort\":\"source:ExternalUsers_2:userId:\",\"toPort\":\"target:userId:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ExternalUsers_2:activationCode:\",\"to\":\"target:activationCode:\",\"fromPort\":\"source:ExternalUsers_2:activationCode:\",\"toPort\":\"target:activationCode:\",\"visible\":true,\"common\":true}]}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"ExternalUsers_2\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"authDBX (1.0).regenerateActivationCode\",\"xy\":\"150 100\"}],\"linkDataArray\":[]}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "authDBX",
+      "serviceVersion" : "1.0",
+      "operationName" : "regenerateActivationCode"
+    },
+    "relationshipHierarchyMapping" : {
+      "name" : "Users_2",
+      "children" : [ ],
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"activationCode\" outputpath=\"activationCode\"/>\n        <set-param inputpath=\"id\" outputpath=\"id\"/>\n        <set-param inputpath=\"serviceKey\" outputpath=\"serviceKey\"/>\n        <set-param inputpath=\"userId\" outputpath=\"userId\"/>\n    </map>\n</mapper>\n",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"\" outputpath=\"\"/>\n    </map>\n</mapper>\n",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"ExternalUsers_2\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"authDBX (1.0).regenerateActivationCode\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:ExternalUsers_2:id:\",\"to\":\"target:id:\",\"fromPort\":\"source:ExternalUsers_2:id:\",\"toPort\":\"target:id:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ExternalUsers_2:serviceKey:\",\"to\":\"target:serviceKey:\",\"fromPort\":\"source:ExternalUsers_2:serviceKey:\",\"toPort\":\"target:serviceKey:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ExternalUsers_2:userId:\",\"to\":\"target:userId:\",\"fromPort\":\"source:ExternalUsers_2:userId:\",\"toPort\":\"target:userId:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:ExternalUsers_2:activationCode:\",\"to\":\"target:activationCode:\",\"fromPort\":\"source:ExternalUsers_2:activationCode:\",\"toPort\":\"target:activationCode:\",\"visible\":true,\"common\":true}]}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"ExternalUsers_2\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"authDBX (1.0).regenerateActivationCode\",\"xy\":\"150 100\"}],\"linkDataArray\":[]}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "etag" : "0091e442-ca10-4085-8f2e-2446f41554b3",
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

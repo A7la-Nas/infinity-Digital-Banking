@@ -1,0 +1,31 @@
+{
+    "AS_Form_d912bbbdcdb54a9b9ebe2a0225b9f06c": {
+        "id": "AS_Form_d912bbbdcdb54a9b9ebe2a0225b9f06c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "contextObj": {
+            "name": "frmSameBankAddBeneficiary",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f7b5510c90c34e2b9c44addcd751bfeb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__d39cc73270a3478bad507a77a1965d37",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBreakPointChange",
+            "display": "onBreakPointChange",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

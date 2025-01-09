@@ -1,0 +1,41 @@
+{
+    "Forms": {
+        "desktop": {
+            "frmPreTermsandCondition": {
+                "Controller": "TermsAndConditionsUIModule/frmPreTermsandConditionController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "TermsAndConditionsUIModule/frmPreTermsandCondition",
+                "friendlyName": "frmPreTermsandCondition"
+            }
+        },
+        "mobile": {
+            "frmSelectEntityTermsAndConditions": {
+                "Controller": "TermsAndConditionsUIModule/frmSelectEntityTermsAndConditionsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "TermsAndConditionsUIModule/frmSelectEntityTermsAndConditions",
+                "friendlyName": "frmSelectEntityTermsAndConditions"
+            },
+            "frmTermsAndCondition": {
+                "Controller": "TermsAndConditionsUIModule/frmTermsAndCondition",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "TermsAndConditionsUIModule/frmTermsAndCondition",
+                "friendlyName": "frmTermsAndCondition"
+            }
+        }
+    },
+    "ModuleName": "TermsAndConditionsUIModule",
+    "ModuleType": "UIModule",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "TermsAndConditionsUIModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": []
+        },
+        "Mobile": {
+            "PresentationControllerClass": "TermsAndConditionsUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": []
+        }
+    }
+}

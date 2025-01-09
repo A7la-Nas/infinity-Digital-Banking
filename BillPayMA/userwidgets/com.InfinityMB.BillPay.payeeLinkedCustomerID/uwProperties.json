@@ -1,0 +1,742 @@
+{
+    "classname": "payeeLinkedCustomerID",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "g019983931914fae96993ce49f8168fc",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Skins",
+                "Services",
+                "Images",
+                "Search",
+                "DataGrid - Contract Layer",
+                "DataGrid  - Customer Layer",
+                "Buttons"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "ie87b495899444f890dabfaf02c84ed7",
+                    "originalPropertyKey": "isSearchEnabled",
+                    "propertyIndex": 1,
+                    "propertyKey": "isSearchEnabled",
+                    "pw": {
+                        "displayName": "Search enabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTbxSSPffffffNew",
+                    "group": "Skins",
+                    "kuid": "af66a613e50a4818b0d09c56e5406dc6",
+                    "originalPropertyKey": "searchTextBoxSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "searchTextBoxSkin",
+                    "pw": {
+                        "displayName": "Search Textbox Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "RBObjects",
+                    "group": "Services",
+                    "kuid": "j3983501f2b245a88fafe5648148709a",
+                    "originalPropertyKey": "objectService",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectService",
+                    "pw": {
+                        "displayName": "Get Service Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "downarrow_blue.png",
+                    "group": "Images",
+                    "kuid": "i3c5650f1212483d8daa7ea3a1167c8c",
+                    "originalPropertyKey": "rowExpandIcon",
+                    "propertyIndex": 1,
+                    "propertyKey": "rowExpandIcon",
+                    "pw": {
+                        "displayName": "Row expand icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.payments.searchByCustomerNameOrId",
+                    "group": "Search",
+                    "kuid": "i9da0e89651740e098b505d509fb1844",
+                    "originalPropertyKey": "searchPlaceholderText",
+                    "propertyIndex": 1,
+                    "propertyKey": "searchPlaceholderText",
+                    "pw": {
+                        "displayName": "Search Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "contracts",
+                    "group": "DataGrid - Contract Layer",
+                    "kuid": "jc503d9d229546f68ca95057555d23c6",
+                    "originalPropertyKey": "dataGridContractLayerResponseRootPath",
+                    "propertyIndex": 1,
+                    "propertyKey": "dataGridContractLayerResponseRootPath",
+                    "pw": {
+                        "displayName": "DataGrid Contract Layer Response RootPath",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "contractCustomers",
+                    "group": "DataGrid  - Customer Layer",
+                    "kuid": "a65fb86350bd49cbba0461e901b23036",
+                    "originalPropertyKey": "dataGridCustomerLayerResponseRootPath",
+                    "propertyIndex": 1,
+                    "propertyKey": "dataGridCustomerLayerResponseRootPath",
+                    "pw": {
+                        "displayName": "DataGrid Customer Layer Response RootPath",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": \"i18n.unifiedBeneficiary.Continue\",   \"action\": {     \"level\": \"Component\",     \"method\": \"createCIFData\",     \"callbackAction\": {       \"level\": \"form\",       \"method\": \"continueAction\"     }   } }",
+                    "group": "Buttons",
+                    "kuid": "ic89f80b4a284c8bbe0c4989c11d2b45",
+                    "originalPropertyKey": "button1",
+                    "propertyIndex": 1,
+                    "propertyKey": "button1",
+                    "pw": {
+                        "displayName": "Action Button1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "InfinityUser",
+                    "group": "Services",
+                    "kuid": "dc45aa398e9740ef91965b743706c00f",
+                    "originalPropertyKey": "objectName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName",
+                    "pw": {
+                        "displayName": "Get Service Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "uparrow_blue.png",
+                    "group": "Images",
+                    "kuid": "gb4af3d457a84d8e9237400af429c94c",
+                    "originalPropertyKey": "rowCollpaseIcon",
+                    "propertyIndex": 2,
+                    "propertyKey": "rowCollpaseIcon",
+                    "pw": {
+                        "displayName": "Row collapse icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "search_10.png",
+                    "group": "Search",
+                    "kuid": "e3faa3f038334cdcbcdd65814ac7efab",
+                    "originalPropertyKey": "searchTextBoxIcon",
+                    "propertyIndex": 2,
+                    "propertyKey": "searchTextBoxIcon",
+                    "pw": {
+                        "displayName": "Search icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "contractName",
+                    "group": "DataGrid - Contract Layer",
+                    "kuid": "f5f4980b1a6440729429a86474c9331f",
+                    "originalPropertyKey": "dataGridContractLayerLabel1",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataGridContractLayerLabel1",
+                    "pw": {
+                        "displayName": "DataGrid Contract Layer Label 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "coreCustomerName",
+                    "group": "DataGrid  - Customer Layer",
+                    "kuid": "ead5147bc3a84a59ba52c9325d3edac3",
+                    "originalPropertyKey": "dataGridCustomerLayerLabel1",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataGridCustomerLayerLabel1",
+                    "pw": {
+                        "displayName": "DataGrid Customer Layer Label 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"separator\": \"i18n.konybb.Common.of\",   \"suffix\": \"i18n.payments.customersID\" }",
+                    "group": "General",
+                    "kuid": "e0b2fb2d54be4d56994a99a5ed1a45be",
+                    "originalPropertyKey": "separatorSuffixLinkedCustomers",
+                    "propertyIndex": 2,
+                    "propertyKey": "separatorSuffixLinkedCustomers",
+                    "pw": {
+                        "displayName": "Separator, Suffix of linked Customers",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": \"kony.tab.BillPay.EditPayee\",   \"action\": {     \"level\": \"form\",     \"method\": \"continueActionEdit\"   } }",
+                    "group": "Buttons",
+                    "kuid": "dedd5cdd266646fb848fffee1ca49d4d",
+                    "originalPropertyKey": "button1Edit",
+                    "propertyIndex": 2,
+                    "propertyKey": "button1Edit",
+                    "pw": {
+                        "displayName": "Action button1 Edit",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getInfinityUserContractCustomers",
+                    "group": "Services",
+                    "kuid": "i9421a7381e740afb13637e744b94ed0",
+                    "originalPropertyKey": "getOperation",
+                    "propertyIndex": 3,
+                    "propertyKey": "getOperation",
+                    "pw": {
+                        "displayName": "GetContractCustomers Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "checkbox.png",
+                    "group": "Images",
+                    "kuid": "aca8f29d90844dd2a4f5b87ca1dd9de9",
+                    "originalPropertyKey": "checkboxSelectedIcon",
+                    "propertyIndex": 3,
+                    "propertyKey": "checkboxSelectedIcon",
+                    "pw": {
+                        "displayName": "Checkbox Selected Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "contractId",
+                    "group": "DataGrid - Contract Layer",
+                    "kuid": "f23758a1fb574ba3b3cd768f02a0c68f",
+                    "originalPropertyKey": "dataGridContractLayerLabel2",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataGridContractLayerLabel2",
+                    "pw": {
+                        "displayName": "DataGrid Contract Layer Label 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "coreCustomerId",
+                    "group": "DataGrid  - Customer Layer",
+                    "kuid": "a2806dde6c48488fa4a471c20e2203b5",
+                    "originalPropertyKey": "dataGridCustomerLayerLabel2",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataGridCustomerLayerLabel2",
+                    "pw": {
+                        "displayName": "DataGrid Customer Layer Label 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.billPay.linkRecipientDetail",
+                    "group": "General",
+                    "kuid": "c4f5160784ea47a0a8d46573f386f69f",
+                    "originalPropertyKey": "lblHeading",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblHeading",
+                    "pw": {
+                        "displayName": "Segement Heading Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl424242SSP26px",
+                    "group": "Skins",
+                    "kuid": "bc101116606a4998aa0f337d837a4941",
+                    "originalPropertyKey": "datagridHeadingLabelSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "datagridHeadingLabelSkin",
+                    "pw": {
+                        "displayName": " Heading label skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "Services",
+                    "kuid": "i2aa367fb4f3446f84570f51f9647989",
+                    "originalPropertyKey": "getOperationCriteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "getOperationCriteria",
+                    "pw": {
+                        "displayName": "GetContractCustomers Operation Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "checkbox_normal_1.png",
+                    "group": "Images",
+                    "kuid": "b678dcf556d9476b9fa6e341c5b76eec",
+                    "originalPropertyKey": "checkboxUnSelectedIcon",
+                    "propertyIndex": 4,
+                    "propertyKey": "checkboxUnSelectedIcon",
+                    "pw": {
+                        "displayName": "Checkbox UnSelected Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "DataGrid - Contract Layer",
+                    "kuid": "bc477f651caf49f38d494c88acfcf160",
+                    "originalPropertyKey": "dataGridContractLayerLabel3",
+                    "propertyIndex": 4,
+                    "propertyKey": "dataGridContractLayerLabel3",
+                    "pw": {
+                        "displayName": "DataGrid Contract Layer Label 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PayeeObjects",
+                    "group": "General",
+                    "kuid": "a1fd6bb0acbe4223b0fd9dab736cd24c",
+                    "originalPropertyKey": "editobjectService",
+                    "propertyIndex": 4,
+                    "propertyKey": "editobjectService",
+                    "pw": {
+                        "displayName": "Edit Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "cfb9d304641f4695aafab1468c7c11ab",
+                    "originalPropertyKey": "datagridContractRowSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "datagridContractRowSkin",
+                    "pw": {
+                        "displayName": "Parent Row skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "isPrimary",
+                    "group": "DataGrid  - Customer Layer",
+                    "kuid": "e78da9065c2a42bca586851cd24a69ca",
+                    "originalPropertyKey": "dataGridIcon1",
+                    "propertyIndex": 4,
+                    "propertyKey": "dataGridIcon1",
+                    "pw": {
+                        "displayName": "Data Grid Icon 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"mapping\":\"{$.c.imgIconLink}\"}",
+                    "group": "Images",
+                    "kuid": "c333ea9c6c674c7498ed539de5ff2c88",
+                    "originalPropertyKey": "businessPayeeIcon",
+                    "propertyIndex": 5,
+                    "propertyKey": "businessPayeeIcon",
+                    "pw": {
+                        "displayName": "Business Payee Icon ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ContractCustomersGet",
+                    "group": "Services",
+                    "kuid": "a0377a83e548427382eafaa2a9e6dd7d",
+                    "originalPropertyKey": "getOperationIdentifier",
+                    "propertyIndex": 5,
+                    "propertyKey": "getOperationIdentifier",
+                    "pw": {
+                        "displayName": "GetContractCustomers Operation Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Recipients",
+                    "group": "General",
+                    "kuid": "ce1bbb5c7a504c2884702941dd21ebdc",
+                    "originalPropertyKey": "editobjectName",
+                    "propertyIndex": 5,
+                    "propertyKey": "editobjectName",
+                    "pw": {
+                        "displayName": "Edit Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "ddbed547c2644be8a6aecd001733f533",
+                    "originalPropertyKey": "datagridCustomerRowSkin",
+                    "propertyIndex": 5,
+                    "propertyKey": "datagridCustomerRowSkin",
+                    "pw": {
+                        "displayName": "Child Row skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "isBusiness",
+                    "group": "DataGrid  - Customer Layer",
+                    "kuid": "f8a8b3cbd75e4e3bb8da1c9a38e70b72",
+                    "originalPropertyKey": "dataGridIcon2",
+                    "propertyIndex": 5,
+                    "propertyKey": "dataGridIcon2",
+                    "pw": {
+                        "displayName": "Data Grid Icon 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"mapping\":\"{$.c.imgIconLinkPersonal}\"}",
+                    "group": "Images",
+                    "kuid": "gc06beb620bb44109caac96713259120",
+                    "originalPropertyKey": "personalPayeeIcon",
+                    "propertyIndex": 6,
+                    "propertyKey": "personalPayeeIcon",
+                    "pw": {
+                        "displayName": "Personal Payee Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "editBillPayPayee",
+                    "group": "Services",
+                    "kuid": "fbddc4336b6f4104b32899082a62b1de",
+                    "originalPropertyKey": "editOperation",
+                    "propertyIndex": 6,
+                    "propertyKey": "editOperation",
+                    "pw": {
+                        "displayName": "Edit Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSP26px",
+                    "group": "Skins",
+                    "kuid": "b8c8b368f7f94a04928d1cdb2f9d886a",
+                    "originalPropertyKey": "datagridContractLayerLabel1skin",
+                    "propertyIndex": 6,
+                    "propertyKey": "datagridContractLayerLabel1skin",
+                    "pw": {
+                        "displayName": "Parent layer label 1 skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"payeeId\": \"{$.c.payeeId}\",   \"cif\": \"{$.c.cif}\" }",
+                    "group": "Services",
+                    "kuid": "ea38442807ba48a883c018e633de4b44",
+                    "originalPropertyKey": "editOperationCriteria",
+                    "propertyIndex": 7,
+                    "propertyKey": "editOperationCriteria",
+                    "pw": {
+                        "displayName": "Edit Operation Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl727272SSPR15px",
+                    "group": "Skins",
+                    "kuid": "caacd52f04e6467687924e2c9d112ba5",
+                    "originalPropertyKey": "datagridContractLayerLabel2skin",
+                    "propertyIndex": 7,
+                    "propertyKey": "datagridContractLayerLabel2skin",
+                    "pw": {
+                        "displayName": "Parent layer label 2 skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "billPayeeEdit",
+                    "group": "Services",
+                    "kuid": "h22a5f3f0019404cafed795691dea5ac",
+                    "originalPropertyKey": "editOperationIdentifier",
+                    "propertyIndex": 8,
+                    "propertyKey": "editOperationIdentifier",
+                    "pw": {
+                        "displayName": "Edit Operation Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSP26px",
+                    "group": "Skins",
+                    "kuid": "be4b9d108bf54d6cbfebaeee7aabea37",
+                    "originalPropertyKey": "datagridCustomerLayerLabel1skin",
+                    "propertyIndex": 9,
+                    "propertyKey": "datagridCustomerLayerLabel1skin",
+                    "pw": {
+                        "displayName": " Child layer label 1 skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl727272SSPR15px",
+                    "group": "Skins",
+                    "kuid": "b9dbdf2fa6dd4ff39ad52078836f290d",
+                    "originalPropertyKey": "datagridCustomerLayerLabel2skin",
+                    "propertyIndex": 10,
+                    "propertyKey": "datagridCustomerLayerLabel2skin",
+                    "pw": {
+                        "displayName": " Child layer label 2 skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknbtnfocus003e75New",
+                    "group": "Skins",
+                    "kuid": "e05c254404a84b66bdcd11284f55afa8",
+                    "originalPropertyKey": "sknActionButton",
+                    "propertyIndex": 11,
+                    "propertyKey": "sknActionButton",
+                    "pw": {
+                        "displayName": "Action Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknsknBtnBlockedSSPFFFFFF15Pxmb",
+                    "group": "Skins",
+                    "kuid": "d287e191de3b4513acc5f016a694b8ce",
+                    "originalPropertyKey": "sknActionButtonBlocked",
+                    "propertyIndex": 12,
+                    "propertyKey": "sknActionButtonBlocked",
+                    "pw": {
+                        "displayName": "Action Button Blocked Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknbtnfocus003e75New",
+                    "group": "Skins",
+                    "kuid": "d7f1d6f303424cda9126f01a227c94ea",
+                    "originalPropertyKey": "sknActionButtonFocus",
+                    "propertyIndex": 13,
+                    "propertyKey": "sknActionButtonFocus",
+                    "pw": {
+                        "displayName": "Action Button Focus Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jc59d671b81d43e2a102f22cfb930371",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.BillPay",
+    "version": "1.0.0"
+}

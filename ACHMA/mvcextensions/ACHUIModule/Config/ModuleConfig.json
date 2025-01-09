@@ -1,0 +1,30 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "ACHUIModule/PresentationControllers/PresentationController"
+        },
+        "Mobile": {
+            "PresentationControllerClass": "ACHUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": []
+        }
+    },
+    "Forms": {
+        "desktop": {
+            "frmACHDashboard": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "ACHUIModule/frmACHDashboardController",
+                "FormName": "ACHUIModule/frmACHDashboard"
+            },
+            "frmLogin": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "ACHUIModule/frmLoginController",
+                "FormName": "ACHUIModule/frmLogin"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "ACHUIModule"
+}

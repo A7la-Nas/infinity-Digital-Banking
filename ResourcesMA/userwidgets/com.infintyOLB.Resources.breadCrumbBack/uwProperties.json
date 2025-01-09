@@ -1,0 +1,306 @@
+{
+    "classname": "breadCrumbBack",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "BreadCrumb",
+                    "kuid": "b12a71789d9d402090a7411e77370322",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ddb590b730874321bcad6ace1a5abec5",
+                    "type": "event"
+                },
+                {
+                    "group": "BreadCrumb",
+                    "kuid": "g159c1472e0c4a71b1c349364a08c5b3",
+                    "paramList": [],
+                    "propertyKey": "updateContext",
+                    "pw": {
+                        "displayName": "updateContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ddb590b730874321bcad6ace1a5abec5",
+                    "type": "event"
+                },
+                {
+                    "group": "BreadCrumb",
+                    "kuid": "b9e08fa9ea3a43a496009466d5b6bb6b",
+                    "paramList": [],
+                    "propertyKey": "setDataFromParent",
+                    "pw": {
+                        "displayName": "setDataFromParent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ddb590b730874321bcad6ace1a5abec5",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "BreadCrumb",
+                    "kuid": "f47e15f6e95d43fe836d2491f2901c14",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ddb590b730874321bcad6ace1a5abec5",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General",
+                "BreadCrumb"
+            ],
+            "events": [
+                "Custom Footer",
+                "BreadCrumb"
+            ],
+            "properties": [
+                "General",
+                "Back",
+                "BreadCrumb"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "ec522e93b798481a90efc038e224d405",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "ddb590b730874321bcad6ace1a5abec5",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "d41e1b0be5224ed49fc620ceb8dd2077",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "ddb590b730874321bcad6ace1a5abec5",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "a4e9bf974b824d92861aa5359d8d3e8d",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "ddb590b730874321bcad6ace1a5abec5",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "i3d9ebd0f6b9407d8c530948e7a25876",
+                    "originalPropertyKey": "conditionalMappingKey",
+                    "propertyIndex": 4,
+                    "propertyKey": "conditionalMappingKey",
+                    "pw": {
+                        "dependencyConditions": {
+                            "conditions": [
+                                {
+                                    "hideProps": [
+                                        "ad3b6cf94b1c41399a0905fb2620e17e"
+                                    ],
+                                    "value": ""
+                                }
+                            ],
+                            "properties": [
+                                "ad3b6cf94b1c41399a0905fb2620e17e"
+                            ]
+                        },
+                        "displayName": "Conditional Mapping Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ddb590b730874321bcad6ace1a5abec5",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "ad3b6cf94b1c41399a0905fb2620e17e",
+                    "originalPropertyKey": "conditionalMapping",
+                    "propertyIndex": 5,
+                    "propertyKey": "conditionalMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Conditional Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "ddb590b730874321bcad6ace1a5abec5",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "j5104a9b10e94e24a015b0de41b6b9f2",
+                    "originalPropertyKey": "backFlag",
+                    "propertyIndex": 6,
+                    "propertyKey": "backFlag",
+                    "pw": {
+                        "dependencyConditions": {
+                            "conditions": [
+                                {
+                                    "hideProps": [
+                                        "fc65912551e84f05af91afffa3359d37"
+                                    ],
+                                    "value": true
+                                },
+                                {
+                                    "hideProps": [
+                                        "af75f0f1e4424054a74d3e6f5961f25d"
+                                    ],
+                                    "value": false
+                                }
+                            ],
+                            "properties": [
+                                "af75f0f1e4424054a74d3e6f5961f25d",
+                                "fc65912551e84f05af91afffa3359d37"
+                            ]
+                        },
+                        "displayName": "Back Flag",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ddb590b730874321bcad6ace1a5abec5",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[\n   {\n    \"btnBack\": \"${i18n{i18n.CardManagement.Back}}\",\n    \"btnBacka11yLabel\": \"${i18n{i18n.CardManagement.Back}}\",\n    \"callToAction\": {\n      \"appName\": \"ResourcesMA\",\n      \"form\": \"frmStyleGuide\",\n      \"module\": \"\",\n      \"presentationControllerMethod\": \"\",\n      \"params\": []\n    }\n  }\n]",
+                    "group": "Back",
+                    "kuid": "af75f0f1e4424054a74d3e6f5961f25d",
+                    "originalPropertyKey": "backProperties",
+                    "propertyIndex": 7,
+                    "propertyKey": "backProperties",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Back Properties",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "ddb590b730874321bcad6ace1a5abec5",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[\n    {\n        \"btnFirstLevel\": \"${i18n{i18n.CardManagement.Back}}\",\n        \"btnFirstLevela11yLabel\": \"${i18n{i18n.CardManagement.Back}}\",\n        \"callToAction\": {\n            \"appName\": \"ResourcesMA\",\n            \"form\": \"frmStyleGuide\",\n            \"module\": \"\",\n            \"presentationControllerMethod\": \"\",\n            \"params\": []\n        }\n    },\n    {\n        \"btnSecondLevel\": \"${i18n{i18n.CardManagement.Back}}\",\n        \"btnSecondLevela11yLabel\": \"${i18n{i18n.CardManagement.Back}}\",\n        \"callToAction\": {\n            \"appName\": \"ResourcesMA\",\n            \"form\": \"frmStyleGuide\",\n            \"module\": \"\",\n            \"presentationControllerMethod\": \"\",\n            \"params\": []\n        }\n    },\n    {\n        \"btnThirdLevel\": \"${i18n{i18n.CardManagement.Back}}\",\n        \"btnThirdLevela11yLabel\": \"${i18n{i18n.CardManagement.Back}}\",\n        \"callToAction\": {\n            \"appName\": \"ResourcesMA\",\n            \"form\": \"frmStyleGuide\",\n            \"module\": \"\",\n            \"presentationControllerMethod\": \"\",\n            \"params\": []\n        }\n    }\n]",
+                    "group": "BreadCrumb",
+                    "kuid": "fc65912551e84f05af91afffa3359d37",
+                    "originalPropertyKey": "breadCrumbProperties",
+                    "propertyIndex": 8,
+                    "propertyKey": "breadCrumbProperties",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Bread Crumb Properties",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "ddb590b730874321bcad6ace1a5abec5",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.infintyOLB.Resources",
+    "version": "1.0.0"
+}

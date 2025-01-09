@@ -1,0 +1,1 @@
+{"table":"PSD2Consent","db":"ConsentManagement","verbs":"true"},{"table":"CDPConsent","db":"ConsentManagement","verbs":"true"}

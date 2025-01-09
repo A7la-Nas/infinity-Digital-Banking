@@ -1,0 +1,154 @@
+{
+    "classname": "CancelTransactionPopup",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f8428225f72e47b58374f21694d40d64",
+                    "paramList": [
+                        {
+                            "name": "context"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "db91422742734e55b8aa8449ac449f47",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b4ee31f087f8440c9fdd1b56e741b4f5",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "db91422742734e55b8aa8449ac449f47",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "dc349ea56bae44fdb09088ce83794c06",
+                    "paramList": [
+                        {
+                            "name": "btnId1"
+                        }
+                    ],
+                    "propertyIndex": 2,
+                    "propertyKey": "contextualActionButtonOnClick",
+                    "pw": {
+                        "displayName": "contextualActionButtonOnClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "db91422742734e55b8aa8449ac449f47",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "ga3d0368407d41c7b01a7b775b2b7f16",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "db91422742734e55b8aa8449ac449f47",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"btnSuccessAction1\":\"${i18n{i18n.common.close}}\",\n\"btnSuccessAction2\":\"${i18n{i18n.transfers.Cancel}}\",\n\"lblReferenceID\":\"${CNTX.referenceId}\",\n\"lblFailTitle\":\"${CNTX.formattedFailedText}\",\n\"btnFailTitle\":\"${i18n{i18n.common.close}}\",\n\"lblSuccessTitle\":\"${CNTX.formattedSuccessText}\",\n\"btnSuccessTitle\":\"${i18n{i18n.unifiedBeneficiary.Done}}\",\n\"lblWarnTitle\":\"${CNTX.formattedWarnText}\",\n\"btnWarnTitle\":\"${i18n{i18n.common.Download}}\",\n\"btnCancelTitle\":\"${i18n{i18n.transfers.Cancel}}\",\n\"lblReferenceText\":\"${i18n{kony.mb.transaction.referenceNo}}\",\n\"messageDetails\":\"${CNTX.messageDetails}\",\n\"flagCheck\":\"${CNTX.isSuccess}\",\n\"maxLength\":\"3\"\n}",
+                    "group": "General",
+                    "kuid": "ac507d4e78df4bf1b16bbb7a55370539",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "db91422742734e55b8aa8449ac449f47",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "ae6efe8bedc3457680c75c2d2571452a",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "db91422742734e55b8aa8449ac449f47",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Resources",
+    "version": "1.0.0"
+}

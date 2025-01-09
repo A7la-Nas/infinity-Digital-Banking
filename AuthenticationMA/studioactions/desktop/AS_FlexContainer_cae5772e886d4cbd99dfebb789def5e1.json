@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_cae5772e886d4cbd99dfebb789def5e1": {
+        "id": "AS_FlexContainer_cae5772e886d4cbd99dfebb789def5e1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "eventPayload"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segNewPayees",
+            "type": "templates",
+            "platform": "",
+            "KUID": "ba6b852d949b4c0bbf43b00143b2e83e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_df98f30716c3433ba79dcbc0078573fb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.accountsFocus(eventobject,eventPayload,context);",
+            "parentId": null
+        }]
+    }
+}

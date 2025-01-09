@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_c7742e30e47545e19cbe54a669621d16": {
+        "id": "AS_AppEvents_c7742e30e47545e19cbe54a669621d16",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b79f33d425d949d4af8c76dae7ec7249",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true);\n\nvar ApplicationManager = require('ApplicationManager');\napplicationManager = ApplicationManager.getApplicationManager();\nvar config = applicationManager.getConfigurationManager();\nconfig.setStartupLocaleAndDateFormat();\n//config.setLocaleAndDateFormat();\n",
+            "parentId": null
+        }]
+    }
+}

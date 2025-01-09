@@ -1,0 +1,278 @@
+{
+    "classname": "appFooter",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "Custom Footer",
+                    "kuid": "d87a1437182840a8ae61b73aa3b3c88e",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i0070ae77cf74ea2b80d20a02220ab63",
+                    "type": "event"
+                },
+                {
+                    "group": "Custom Footer",
+                    "kuid": "cdbc102785954a59bde79142ffbe16e1",
+                    "paramList": [],
+                    "propertyKey": "updateContext",
+                    "pw": {
+                        "displayName": "updateContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i0070ae77cf74ea2b80d20a02220ab63",
+                    "type": "event"
+                },
+                {
+                    "group": "Custom Footer",
+                    "kuid": "f7c3a2f09193480db4b52ccec6e2a6f6",
+                    "paramList": [],
+                    "propertyKey": "setDataFromParent",
+                    "pw": {
+                        "displayName": "setDataFromParent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i0070ae77cf74ea2b80d20a02220ab63",
+                    "type": "event"
+                },
+                {
+                    "group": "Custom Footer",
+                    "kuid": "ce65472a95414e80a7a6d8254995bd8a",
+                    "paramList": [],
+                    "propertyKey": "setActiveElement",
+                    "pw": {
+                        "displayName": "setActiveElement",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i0070ae77cf74ea2b80d20a02220ab63",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "Custom Footer",
+                    "kuid": "c0ef8a82bd374b95afd911d6ab1d4368",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i0070ae77cf74ea2b80d20a02220ab63",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General",
+                "Custom Footer"
+            ],
+            "events": [
+                "Custom Footer"
+            ],
+            "properties": [
+                "Footer"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "[\n    {\n        \"title\": \"${i18n{i18n.footer.locateUs}}\",\n        \"a11yLabel\":\"${i18n{i18n.footer.locateUs}}\",\n        \"callToAction\": {\n            \"appName\": \"AboutUsMA\",\n            \"form\": \"\",\n            \"module\": \"LocateUsUIModule\",\n            \"presentationControllerMethod\": \"showLocateUsPage\",\n            \"params\":[]\n        }\n    },\n    {\n        \"title\": \"${i18n{i18n.footer.contactUs}}\",\n        \"a11yLabel\":\"${i18n{i18n.footer.contactUs}}\",\n        \"callToAction\": {\n            \"appName\": \"AboutUsMA\",\n            \"form\": \"\",\n            \"module\": \"InformationContentUIModule\",\n            \"presentationControllerMethod\": \"showContactUsPage\",\n            \"params\": []\n        }\n    },\n    {\n        \"title\": \"${i18n{i18n.footer.privacy}}\",\n        \"a11yLabel\":\"${i18n{i18n.footer.privacy}}\",\n        \"callToAction\": {\n            \"appName\": \"AboutUsMA\",\n            \"form\": \"\",\n            \"module\": \"InformationContentUIModule\",\n            \"presentationControllerMethod\": \"showPrivacyPolicyPage\",\n            \"params\": []\n        }\n    },\n    {\n        \"title\": \"${i18n{i18n.ProfileManagement.TermsAndConditions}}\",\n        \"a11yLabel\":\"${i18n{i18n.ProfileManagement.TermsAndConditions}}\",\n        \"callToAction\": {\n            \"appName\": \"AboutUsMA\",\n            \"form\": \"\",\n            \"module\": \"InformationContentUIModule\",\n            \"presentationControllerMethod\": \"showPrivacyPolicyPage\",\n            \"params\": []\n        }\n    },\n    {\n        \"title\": \"${i18n{i18n.footer.faqs}}\",\n        \"a11yLabel\":\"${i18n{i18n.footer.faqs}}\",\n        \"callToAction\": {\n            \"appName\": \"AboutUsMA\",\n            \"form\": \"\",\n            \"module\": \"InformationContentUIModule\",\n            \"presentationControllerMethod\": \"showFAQs\",\n            \"params\": []\n        }\n    }\n]",
+                    "group": "Footer",
+                    "kuid": "c2d4bafc3a344fe1b8a0f0152e9b6681",
+                    "originalPropertyKey": "footerProperties",
+                    "propertyIndex": 1,
+                    "propertyKey": "footerProperties",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Footer Properties",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "i0070ae77cf74ea2b80d20a02220ab63",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "c38f19ea76934e008b6d6fde45ed62cc",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "i0070ae77cf74ea2b80d20a02220ab63",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"title\": \"${i18n{i18n.footer.copyright}}\"\n}",
+                    "group": "Footer",
+                    "kuid": "d432c8761fa14d3db2405f3b83a57b4b",
+                    "originalPropertyKey": "copyRight",
+                    "propertyIndex": 2,
+                    "propertyKey": "copyRight",
+                    "pw": {
+                        "displayName": "Copy Right",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "i0070ae77cf74ea2b80d20a02220ab63",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "ae075529ed034746aa8aaeaffabe46d4",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "i0070ae77cf74ea2b80d20a02220ab63",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "e20002281d8c457fb6e9d053c97e8a13",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "i0070ae77cf74ea2b80d20a02220ab63",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "cca9678c681341d4ba97842d5bc0bc3d",
+                    "originalPropertyKey": "conditionalMappingKey",
+                    "propertyIndex": 4,
+                    "propertyKey": "conditionalMappingKey",
+                    "pw": {
+                        "dependencyConditions": {
+                            "conditions": [
+                                {
+                                    "hideProps": [
+                                        "i32b068a20fd4c2aa44e675fd74dad47"
+                                    ],
+                                    "value": ""
+                                }
+                            ],
+                            "properties": [
+                                "i32b068a20fd4c2aa44e675fd74dad47"
+                            ]
+                        },
+                        "displayName": "Conditional Mapping Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "i0070ae77cf74ea2b80d20a02220ab63",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "i32b068a20fd4c2aa44e675fd74dad47",
+                    "originalPropertyKey": "conditionalMapping",
+                    "propertyIndex": 5,
+                    "propertyKey": "conditionalMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Conditional Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "i0070ae77cf74ea2b80d20a02220ab63",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Resources",
+    "version": "1.0.0"
+}

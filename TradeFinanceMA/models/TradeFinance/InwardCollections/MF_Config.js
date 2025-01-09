@@ -1,0 +1,142 @@
+/*
+    This is an auto generated file and any modifications to it may result in corrupted data.
+*/
+define([], function() {
+	var mappings = {
+		"collectionSrmsId": "collectionSrmsId",
+		"amendmentSrmsId": "amendmentSrmsId",
+		"searchString": "searchString",
+		"pageSize": "pageSize",
+		"pageOffset": "pageOffset",
+		"sortByParam": "sortByParam",
+		"sortOrder": "sortOrder",
+		"timeParam": "timeParam",
+		"timeValue": "timeValue",
+		"filterByValue": "filterByValue",
+		"filterByParam": "filterByParam",
+		"amendAmount": "amendAmount",
+		"amendDocuments": "amendDocuments",
+		"fileId": "fileId",
+		"amendMaturityDate": "amendMaturityDate",
+		"amendRemittingBank": "amendRemittingBank",
+		"amendTenorType": "amendTenorType",
+		"amendUsanceDetails": "amendUsanceDetails",
+		"amendmentDetails": "amendmentDetails",
+		"amendmentNo": "amendmentNo",
+		"amount": "amount",
+		"billExchangeStatus": "billExchangeStatus",
+		"cancellationStatus": "cancellationStatus",
+		"charges": "charges",
+		"chargesDebitFrom": "chargesDebitFrom",
+		"createdDate": "createdDate",
+		"currency": "currency",
+		"debitAmountFrom": "debitAmountFrom",
+		"documentNo": "documentNo",
+		"documentsUploaded": "documentsUploaded",
+		"draweeAcknowledgement": "draweeAcknowledgement",
+		"draweeAcknowledgementDate": "draweeAcknowledgementDate",
+		"drawer": "drawer",
+		"drawerName": "drawerName",
+		"incoTerms": "incoTerms",
+		"lastUpdatedDate": "lastUpdatedDate",
+		"maturityDate": "maturityDate",
+		"messageFromBank": "messageFromBank",
+		"messageToBank": "messageToBank",
+		"paymentStatus": "paymentStatus",
+		"reasonForCancellation": "reasonForCancellation",
+		"reasonForRejection": "reasonForRejection",
+		"reasonForReturn": "reasonForReturn",
+		"receivedOn": "receivedOn",
+		"remittingBank": "remittingBank",
+		"settledDate": "settledDate",
+		"status": "status",
+		"tenorType": "tenorType",
+		"transactionReference": "transactionReference",
+		"usanceAcceptance": "usanceAcceptance",
+		"usanceAcceptanceDate": "usanceAcceptanceDate",
+		"dbpErrCode": "dbpErrCode",
+		"dbpErrMsg": "dbpErrMsg",
+		"usanceAcceptanceEligibility": "usanceAcceptanceEligibility",
+		"usanceDetails": "usanceDetails",
+	};
+
+	Object.freeze(mappings);
+
+	var typings = {
+		"collectionSrmsId": "string",
+		"amendmentSrmsId": "string",
+		"searchString": "string",
+		"pageSize": "string",
+		"pageOffset": "string",
+		"sortByParam": "string",
+		"sortOrder": "string",
+		"timeParam": "string",
+		"timeValue": "string",
+		"filterByValue": "string",
+		"filterByParam": "string",
+		"amendAmount": "string",
+		"amendDocuments": "string",
+		"fileId": "string",
+		"amendMaturityDate": "string",
+		"amendRemittingBank": "string",
+		"amendTenorType": "string",
+		"amendUsanceDetails": "string",
+		"amendmentDetails": "string",
+		"amendmentNo": "string",
+		"amount": "string",
+		"billExchangeStatus": "string",
+		"cancellationStatus": "string",
+		"charges": "string",
+		"chargesDebitFrom": "string",
+		"createdDate": "string",
+		"currency": "string",
+		"debitAmountFrom": "string",
+		"documentNo": "string",
+		"documentsUploaded": "string",
+		"draweeAcknowledgement": "string",
+		"draweeAcknowledgementDate": "string",
+		"drawer": "string",
+		"drawerName": "string",
+		"incoTerms": "string",
+		"lastUpdatedDate": "string",
+		"maturityDate": "string",
+		"messageFromBank": "string",
+		"messageToBank": "string",
+		"paymentStatus": "string",
+		"reasonForCancellation": "string",
+		"reasonForRejection": "string",
+		"reasonForReturn": "string",
+		"receivedOn": "string",
+		"remittingBank": "string",
+		"settledDate": "string",
+		"status": "string",
+		"tenorType": "string",
+		"transactionReference": "string",
+		"usanceAcceptance": "string",
+		"usanceAcceptanceDate": "string",
+		"dbpErrCode": "string",
+		"dbpErrMsg": "string",
+		"usanceAcceptanceEligibility": "string",
+		"usanceDetails": "string",
+	}
+
+	Object.freeze(typings);
+
+	var primaryKeys = [
+					"collectionSrmsId",
+	];
+
+	Object.freeze(primaryKeys);
+
+	var config = {
+		mappings: mappings,
+		typings: typings,
+		primaryKeys: primaryKeys,
+		serviceName: "TradeFinance",
+		tableName: "InwardCollections"
+	};
+
+	Object.freeze(config);
+
+	return config;
+})

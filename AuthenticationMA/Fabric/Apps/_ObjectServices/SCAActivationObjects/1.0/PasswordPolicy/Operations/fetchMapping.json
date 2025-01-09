@@ -1,0 +1,44 @@
+{
+  "operationConfig" : {
+    "name" : "getPasswordPolicy4599",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">        <map inputpath=\"response_in\" outputpath=\"response_out\">                <map inputpath=\"\" outputpath=\"\">                        <set-param inputpath=\"id\" outputpath=\"id\"/>                        <set-param inputpath=\"PasswordPolicy\" outputpath=\"scapasswordpolicy\"/>      \t                  <set-param inputpath=\"minDiffChars\" outputpath=\"minDiffChars\"/>                              <set-param inputpath=\"minLength\" outputpath=\"minLength\"/>  \t        <set-param inputpath=\"notUserAttribute\" outputpath=\"notUserAttribute\"/> \t              <set-param inputpath=\"maxLength\" outputpath=\"maxLength\"/>    </map>        </map></mapper>",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"PasswordPolicy\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"SCAScimApis (1.0).getPasswordPolicy\",\"xy\":\"482 127\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:id:\",\"to\":\"target:PasswordPolicy:id:\",\"fromPort\":\"source:id:\",\"toPort\":\"target:PasswordPolicy:id:\"},{\"from\":\"target\",\"to\":\"target:PasswordPolicy\",\"fromPort\":\"target\",\"toPort\":\"target:PasswordPolicy\",\"visible\":true,\"common\":false},{\"from\":\"target:PasswordPolicy\",\"to\":\"target:PasswordPolicy:t_p_fields\",\"fromPort\":\"target:PasswordPolicy\",\"toPort\":\"target:PasswordPolicy:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:PasswordPolicy:t_p_fields\",\"to\":\"target:PasswordPolicy:id:\",\"fromPort\":\"target:PasswordPolicy:t_p_fields\",\"toPort\":\"target:PasswordPolicy:id:\",\"visible\":true,\"common\":false},{\"from\":\"target:PasswordPolicy:t_p_fields\",\"to\":\"target:PasswordPolicy:PasswordPolicy:\",\"fromPort\":\"target:PasswordPolicy:t_p_fields\",\"toPort\":\"target:PasswordPolicy:PasswordPolicy:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:t_p_parameters\",\"fromPort\":\"source\",\"toPort\":\"source:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:id:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:id:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:maxLength:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:maxLength:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:minDiffChars:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:minDiffChars:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:minLength:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:minLength:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:notEnglish:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:notEnglish:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:notUserAttribute:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:notUserAttribute:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:numOrAlpha:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:numOrAlpha:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "SCAScimApis",
+      "serviceVersion" : "1.0",
+      "operationName" : "getPasswordPolicy"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "PasswordPolicy",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : true,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">        <map inputpath=\"response_in\" outputpath=\"response_out\">                <map inputpath=\"\" outputpath=\"\">                        <set-param inputpath=\"id\" outputpath=\"id\"/>                        <set-param inputpath=\"PasswordPolicy\" outputpath=\"scapasswordpolicy\"/>      \t                  <set-param inputpath=\"minDiffChars\" outputpath=\"minDiffChars\"/>                              <set-param inputpath=\"minLength\" outputpath=\"minLength\"/>  \t        <set-param inputpath=\"notUserAttribute\" outputpath=\"notUserAttribute\"/> \t              <set-param inputpath=\"maxLength\" outputpath=\"maxLength\"/>    </map>        </map></mapper>",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"PasswordPolicy\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"SCAScimApis (1.0).getPasswordPolicy\",\"xy\":\"482 127\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:id:\",\"to\":\"target:PasswordPolicy:id:\",\"fromPort\":\"source:id:\",\"toPort\":\"target:PasswordPolicy:id:\"},{\"from\":\"target\",\"to\":\"target:PasswordPolicy\",\"fromPort\":\"target\",\"toPort\":\"target:PasswordPolicy\",\"visible\":true,\"common\":false},{\"from\":\"target:PasswordPolicy\",\"to\":\"target:PasswordPolicy:t_p_fields\",\"fromPort\":\"target:PasswordPolicy\",\"toPort\":\"target:PasswordPolicy:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:PasswordPolicy:t_p_fields\",\"to\":\"target:PasswordPolicy:id:\",\"fromPort\":\"target:PasswordPolicy:t_p_fields\",\"toPort\":\"target:PasswordPolicy:id:\",\"visible\":true,\"common\":false},{\"from\":\"target:PasswordPolicy:t_p_fields\",\"to\":\"target:PasswordPolicy:PasswordPolicy:\",\"fromPort\":\"target:PasswordPolicy:t_p_fields\",\"toPort\":\"target:PasswordPolicy:PasswordPolicy:\",\"visible\":true,\"common\":false},{\"from\":\"source\",\"to\":\"source:t_p_parameters\",\"fromPort\":\"source\",\"toPort\":\"source:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:id:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:id:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:maxLength:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:maxLength:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:minDiffChars:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:minDiffChars:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:minLength:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:minLength:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:notEnglish:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:notEnglish:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:notUserAttribute:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:notUserAttribute:\",\"visible\":true,\"common\":false},{\"from\":\"source:t_p_parameters\",\"to\":\"source:numOrAlpha:\",\"fromPort\":\"source:t_p_parameters\",\"toPort\":\"source:numOrAlpha:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : true,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

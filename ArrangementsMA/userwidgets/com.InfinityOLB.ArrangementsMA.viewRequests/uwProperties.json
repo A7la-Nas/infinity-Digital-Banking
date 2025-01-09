@@ -1,0 +1,713 @@
+{
+    "classname": "viewRequests",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a4d58a6dfc4b4aeabbd5f85d743adbfd",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "afd82cbf39024483b977d3a56fe0c6f2",
+                    "paramList": [],
+                    "propertyKey": "hideOpenSegments",
+                    "pw": {
+                        "displayName": "hideOpenSegments",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ee2e9b4e4c704c718c2fffe029957444",
+                    "paramList": [],
+                    "propertyKey": "setLayoutForMobileRTL",
+                    "pw": {
+                        "displayName": "setLayoutForMobileRTL",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c2935c32445747bfa177a066359de2f7",
+                    "paramList": [],
+                    "propertyKey": "setLayoutForMobile",
+                    "pw": {
+                        "displayName": "setLayoutForMobile",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j99021d8a6fe4bc78db3e7da3468a214",
+                    "paramList": [],
+                    "propertyKey": "setLayoutForTabletRTL",
+                    "pw": {
+                        "displayName": "setLayoutForTabletRTL",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ec9344e68af243daa26db977b58c15a4",
+                    "paramList": [],
+                    "propertyKey": "setLayoutForTablet",
+                    "pw": {
+                        "displayName": "setLayoutForTablet",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g09b0aed709646cdaab952994fdb7282",
+                    "paramList": [],
+                    "propertyKey": "setLayoutForDesktopRTL",
+                    "pw": {
+                        "displayName": "setLayoutForDesktopRTL",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h06bdafe2413482d91374f77a4457615",
+                    "paramList": [],
+                    "propertyKey": "setLayoutForDesktop",
+                    "pw": {
+                        "displayName": "setLayoutForDesktop",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "be0e2cdb54e1481a9bc5c2227c79d23d",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onFilterSelect",
+                    "pw": {
+                        "displayName": "onFilterSelect",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "de27b033c02c4cff8e9d11be996c58e5",
+                    "paramList": [
+                        {
+                            "name": "error"
+                        }
+                    ],
+                    "propertyIndex": 2,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "dddebd0ec94d4957bc47a5f1a6250bfb",
+                    "paramList": [
+                        {
+                            "name": "error"
+                        }
+                    ],
+                    "propertyIndex": 3,
+                    "propertyKey": "showErrorMessage",
+                    "pw": {
+                        "displayName": "showErrorMessage",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Filter",
+                "Skins",
+                "Component Config",
+                "Icons"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n   \"ServiceOrder\": {\n    \"Service\": \"ServiceRequestManagement\",\n    \"Object\": \"ServiceRequest\",\n    \"Verb\": \"getDetails\"\n   }\n}",
+                    "group": "General",
+                    "kuid": "ba0788c382fa49719518eb65380087b0",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[{\"id\":\"All Service Requests\",\"text\":\"{i.i18n.serviceRequests.AllServiceRequests}\"},{\"id\":\"Add New Address\",\"text\":\"{i.i18n.ProfileManagement.AddNewAddress}\"},{\"id\":\"Order Cheque Book\",\"text\":\"{i.i18n.serviceRequests.OrderChequeBook}\"},{\"id\":\"Cancel Direct Debit\",\"text\":\"{i.i18n.serviceRequests.CancelDirectDebit}\"},{\"id\":\"Activate Credit Card\",\"text\":\"{i.i18n.serviceRequests.ActivateCreditCard}\"},{\"id\":\"Activate Debit Card\",\"text\":\"{i.i18n.serviceRequests.ActivateDebitCard}\"},{\"id\":\"Add New Phone Number\",\"text\":\"{i.i18n.ProfileManagement.AddNewPhoneNumber}\"},{\"id\":\"Add New Email\",\"text\":\"{i.i18n.ProfileManagement.AddNewEmail}\"}]",
+                    "group": "Filter",
+                    "kuid": "d9398b89954b42d895789fa830ebd6e5",
+                    "originalPropertyKey": "filterValues",
+                    "propertyIndex": 1,
+                    "propertyKey": "filterValues",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter Values",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknLblSSP42424213px\",\"default\":\"ICSknLblSSP42424215px\"}",
+                    "group": "Skins",
+                    "kuid": "ec692e559589446d95769a8d99f8c2ce",
+                    "originalPropertyKey": "sknFilterValueText",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknFilterValueText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter Value Text Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"vizIcon\": \"P\",\"skin\":\"ICSknLblDropdownFontIcon003e7518px\"}",
+                    "group": "Icons",
+                    "kuid": "dee3ee5c85c34700921d09bf5f8a457e",
+                    "originalPropertyKey": "iconFilterRowExpanded",
+                    "propertyIndex": 1,
+                    "propertyKey": "iconFilterRowExpanded",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter Row Expanded Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"segments\": {\n    \"segServiceRequest\": {\n      \"segmentMasterData\": \"${Collection.ServiceRequest}\",\n      \"segmentUI\": {\n        \"lblColumn1\": \"${segmentMasterData.requestDate}\",\n        \"valueField1\": \"${segmentMasterData.serviceReqProcessedTime}\",\n        \"lblColumn2\": \"${segmentMasterData.subType_description}\",\n        \"valueField2\": \"${segmentMasterData.type_description}\",\n        \"lblColumn3\": \"${segmentMasterData.accountName}\",\n        \"valueField3\": \"${segmentMasterData.serviceReqId}\",\n        \"lblColumn4\" : \"${segmentMasterData.serviceReqStatus}\",\n        \"valueField4\" : \"${segmentMasterData.signatoryApprovalRequired}\",\n        \"lblField1\":\"Last Update Date\", \n        \"lblField2\":\"Request Category\",\n        \"lblField3\":\"Reference No\",\n        \"lblField4\":\"Signatory Approval:\"\n      }\n    }\n  },\n  \"columnProps\" : {\n    \"default\": {\n      \"column1\": {\n        \"text\": \"Requested Date\",\n        \"isSortable\": true,\n        \"sortField\": \"requestDate\"\n      },\n      \"column2\": {\n        \"text\": \"Service Request\",\n        \"isSortable\": true,\n        \"sortField\": \"subType_description\"\n      },\n      \"column3\": {\n        \"text\": \"Account\",\n        \"isSortable\": true,\n        \"sortField\": \"accountName\"\n      },\n      \"column4\": {\n        \"text\": \"Status\",\n        \"isSortable\": true,\n        \"sortField\": \"serviceReqStatus\"\n      }\n    }\n  },\n  \"filterFields\":{\n    \"field1\":\"serviceReqStatus\", \n    \"field2\":\"subtype\"\n  }, \n  \"advancedSearch\":{\n    \"default\":{\n      \"advance1\":{\n        \"fieldKey\":\"type\",\n        \"fieldValue\":\"type_description\",\n        \"defaultValue\":\"All Request Categories\",\n        \"defaultKey\":\"all\"\n      },\n      \"advance4\":{\n        \"fieldKey\":\"subType\",\n        \"fieldValue\":\"subType_description\",\n        \"defaultValue\":\"All Service Requests\",\n        \"defaultKey\":\"all\"\n      },\n      \"advance2\":{\n        \"fieldKey\":\"serviceReqStatus\",\n        \"fieldValue\":\"serviceReqStatus\",\n        \"defaultValue\":\"All Status\",\n        \"defaultKey\":\"all\"\n      }\n    }\n  },\n  \"simpleSearch\":{\n    \"fieldKey\":\"subType\",\n    \"fieldValue\":\"subType_description\",\n    \"defaultValue\":\"All Service Requests\",\n    \"defaultKey\":\"all\"\n  },\n  \"keywordSearch\":[\n      {\n      \"field\": \"serviceReqStatus\"\n      },\n      {\n        \"field\": \"subType_description\"\n      },\n      {\n        \"field\": \"serviceReqId\"\n      },\n      {\n        \"field\": \"accountId\"\n      }\n  ]   \n}",
+                    "group": "General",
+                    "kuid": "bebe4c33fce948eca159134916dfeb30",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "All Subtype",
+                    "group": "Filter",
+                    "kuid": "ed9e5b9669084b40b8df9a806b54d2d4",
+                    "originalPropertyKey": "filterHeading",
+                    "propertyIndex": 2,
+                    "propertyKey": "filterHeading",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter Heading",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxf7f7f7",
+                    "group": "Skins",
+                    "kuid": "i57d9ef960f146b19ce166b008fa0003",
+                    "originalPropertyKey": "sknFilterRowSelected",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknFilterRowSelected",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter Row Selected Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"vizIcon\": \"O\",\"skin\":\"sknLblFontTypeIcon1a98ff14pxOther\"}",
+                    "group": "Icons",
+                    "kuid": "gd7d4a3478c24c4ca463e1810adeb2da",
+                    "originalPropertyKey": "iconFilterRowCollapsed",
+                    "propertyIndex": 2,
+                    "propertyKey": "iconFilterRowCollapsed",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter Row Collapsed Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "e98442caf5f34b48bb55ad1529098586",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"id\":\"all\",\"text\":\"All Subtype\"}",
+                    "group": "Filter",
+                    "kuid": "cec5b53800314168b3eb94108071d32e",
+                    "originalPropertyKey": "selectedFilter",
+                    "propertyIndex": 3,
+                    "propertyKey": "selectedFilter",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Selected Filter",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxffffff",
+                    "group": "Skins",
+                    "kuid": "b20343ce4ab542d0aafa8c038fe649aa",
+                    "originalPropertyKey": "sknFilterRowUnselected",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknFilterRowUnselected",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter Row Unselected Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"vizIcon\": \"M\",\"skin\":\"ICSknLblRadioBtnSelectedFontIcon003e7520px\"}",
+                    "group": "Icons",
+                    "kuid": "f1af61f11f2046a3ab9ac647a4989ce9",
+                    "originalPropertyKey": "iconRadioButtonSelected",
+                    "propertyIndex": 3,
+                    "propertyKey": "iconRadioButtonSelected",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Radio Button Selected Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "${Collection.ServiceRequest.signatoryApprovalRequired}",
+                    "group": "General",
+                    "kuid": "e1c46df6bf8c433b9d4de22fa31d651a",
+                    "originalPropertyKey": "conditionalMappingKey",
+                    "propertyIndex": 4,
+                    "propertyKey": "conditionalMappingKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Conditional Mapping Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxffffffBordere3e3e31pxRadius3pxShadowBottom",
+                    "group": "Skins",
+                    "kuid": "d249ab571d6c40fc9ed9146db9fc766b",
+                    "originalPropertyKey": "sknFilterList",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknFilterList",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter List Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"vizIcon\": \"L\",\"skin\":\"ICSknLblRadioBtnUnelectedFontIcona0a0a020px\"}",
+                    "group": "Icons",
+                    "kuid": "c7bc772c2f5644d1b58e6eb0207136c6",
+                    "originalPropertyKey": "iconRadioButtonUnselected",
+                    "propertyIndex": 4,
+                    "propertyKey": "iconRadioButtonUnselected",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Radio Button Unselected Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"segServiceRequest\":\n {\n   \"Yes\": {\n     \"valueField4\" : \"${segmentMasterData.signatoryApprovalRequired}\",\n     \"lblField4\":\"Signatory Approval:\"\n   },\n   \"No\": { \n     \"valueField4\" : \"\",\n     \"lblField4\":\"\"    \n   }\n }\n}",
+                    "group": "General",
+                    "kuid": "h08082e0b40b4e46a44390e0e9baa855",
+                    "originalPropertyKey": "conditionalMapping",
+                    "propertyIndex": 5,
+                    "propertyKey": "conditionalMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Conditional Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknFlxf7f7f7\",\"default\":\"ICSknFlxffffff\"}",
+                    "group": "Skins",
+                    "kuid": "gfffa23955d342c68d3b512fa0bfa3f4",
+                    "originalPropertyKey": "sknSearchAndFilterBackground",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknSearchAndFilterBackground",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Search And Filter Background Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknLblSSP72727213px\",\"default\":\"ICSknLblSSP72727215px\"}",
+                    "group": "Skins",
+                    "kuid": "g24c90e7620b4b1cb4386b80d74de196",
+                    "originalPropertyKey": "sknFilterHeading",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknFilterHeading",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter Heading Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "iccfe1dc78c44a6f826fa87ff9cf5a91",
+                    "originalPropertyKey": "isFilterEnabled",
+                    "propertyIndex": 6,
+                    "propertyKey": "isFilterEnabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter Enabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"BP1\" : \"640\",\n \"BP2\" : \"1024\",\n \"BP3\" : \"1366\",\n \"BP4\" : \"1380\"\n}",
+                    "group": "General",
+                    "kuid": "a9ccbbf6abbc4689972c4ddd57514258",
+                    "originalPropertyKey": "BREAKPTS",
+                    "propertyIndex": 7,
+                    "propertyKey": "BREAKPTS",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Breakpoints",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxf7f7f7Hover",
+                    "group": "Skins",
+                    "kuid": "gbb79b2529804686a6bc4d84edb826bd",
+                    "originalPropertyKey": "sknFilterRowHover",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknFilterRowHover",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter Row Hover Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "jda0df0146f84abfbef89051219ec2a3",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e620ca026a724fa0b73ddde46d4d9c92",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 7,
+                    "propertyKey": "skin1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxAdvancedSearchContainer",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ge6e9b828e014efd94b43e888a7f19a5"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e6aca0bbb3a44b5687c90b177b1a6ea3",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 8,
+                    "propertyKey": "skin2",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxSearchContainerWrapper",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "i662914b2bab4c29b1470c09ae7fc59a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "cdfdb3d9e4c54104bbcd6ff5f1ba817f",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 9,
+                    "propertyKey": "skin3",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxLeftSearch",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "a6140db60c0846c4b159a01e211b8eaa"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "acb3323d81694f7ca89c9f1663395762",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 10,
+                    "propertyKey": "skin4",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxRightSearchWrapper",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "g6e12f6d184647238ef755ab61555ac1"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "eb3a04005b184168b4d2bf8beed399e0",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 11,
+                    "propertyKey": "skin5",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblByKeyword",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "c5a2632d7a5747a1a070d3f9d3458a81"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ef10a7be18f044b0ad88ce6245b1234f",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 12,
+                    "propertyKey": "skin3910270090",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxMain",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "d40d8084fac449f19b3d7cc58e590881"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "gdb76d411d8f4ca1983805346645c49a",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 13,
+                    "propertyKey": "skin2399441081",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxServiceRequestContainer",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "a1501beece1c417e97859b4a53965cf4"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.ArrangementsMA",
+    "version": "1.0.0"
+}

@@ -1,0 +1,326 @@
+{
+    "classname": "ImportLC",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "Dashboard",
+                    "kuid": "c561c32ce5bf4ac59dc5b38524612959",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "icb8cb7efb3649ee83cbcad004ad5232",
+                    "paramList": [],
+                    "propertyKey": "applyFilterOnclick",
+                    "pw": {
+                        "displayName": "applyFilterOnclick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "Dashboard",
+                    "kuid": "ab459bb9ffc34d5a8c94fceb645a98bf",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "sendImportLCData",
+                    "pw": {
+                        "displayName": "sendImportLCData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c935e3962111458bbbc7140333a0bbb5",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "sendExportLCMockData",
+                    "pw": {
+                        "displayName": "sendExportLCMockData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ff7dae1c670b47c386c012b0d7c0bf5c",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "flxIOSFooterVisibility",
+                    "pw": {
+                        "displayName": "flxIOSFooterVisibility",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "hbe3ba4271474de2b73f0caacc6d8b54",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyIndex": 3,
+                    "propertyKey": "visibilityHamburger",
+                    "pw": {
+                        "displayName": "visibilityHamburger",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b92dcd8c718e44bd8a4dcac20726acf8",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "flxFilterBottomVisibility",
+                    "pw": {
+                        "displayName": "flxFilterBottomVisibility",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "db8306a266b34f6980e8337e15a6b092",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "filterButtonEnable",
+                    "pw": {
+                        "displayName": "filterButtonEnable",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General",
+                "Dashboard"
+            ],
+            "events": [
+                "Dashboard"
+            ],
+            "properties": [
+                "Dashboard",
+                "View Details",
+                "SearchFilter"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"Transactions\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LetterOfCredit\",\n    \"Verb\": \"getImportLCs\",\n    \"Criteria\": \n    {\n      \"searchString\": \"\",\n      \"pageSize\": \"100\",\n      \"pageOffset\": \"0\",\n      \"sortByParam\": \"lcCreatedOn\",\n      \"sortOrder\": \"DESC\",\n      \"timeParam\": \"\",\n      \"timeValue\": \"\",\n      \"filterByValue\": \"\",\n      \"filterByParam\": \"\",\n      \"fromDateFilter\": \"\",\n      \"toDateFilter\": \"\"\n    }\n  }\n}\n",
+                    "group": "Dashboard",
+                    "kuid": "h46c3d6fb62c4f908bd145c7db7263ec",
+                    "originalPropertyKey": "serviceParametersDashboard",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParametersDashboard",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"Transactions\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LetterOfCredit\",\n    \"Verb\": \"getImportLCs\",\n    \"Criteria\": \n    {\n      \"searchString\": \"\",\n      \"pageSize\": \"100\",\n      \"pageOffset\": \"0\",\n      \"sortByParam\": \"lcCreatedOn\",\n      \"sortOrder\": \"DESC\",\n      \"timeParam\": \"lcCreatedOn\",\n      \"timeValue\": \"6,MONTH\",\n      \"filterByValue\": \"\",\n      \"filterByParam\": \"\",\n      \"fromDateFilter\": \"\",\n      \"toDateFilter\": \"\"\n    }\n  }\n}\n",
+                    "group": "View Details",
+                    "kuid": "db45d764a95e46b0b3dc046c2d7beb32",
+                    "originalPropertyKey": "ServiceParametersViewDetails",
+                    "propertyIndex": 1,
+                    "propertyKey": "ServiceParametersViewDetails",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"lblImportLCSearchFilters\" : {\n    \"lblSearchFilters\" :  \"${i18n{i18n.ImportLC.SearchFilters}}\",\n    \"lblSubHeader\" :  \"${i18n{i18n.ImportLC.ApplyFiltersToViewSpecificImportLC}}\",\n    \"lblLcType\" : \"${i18n{i18n.ImportLC.LCType}}\",\n    \"lblFilterByStatus\" :  \"${i18n{i18n.ImportLC.FilterbyStatus}}\",\n    \"lblCurrency\" :  \"${i18n{i18n.TradeFinance.TimePeriod}}\",\n    \"lblCustomStartDate\": \"${i18n{kony.mb.Transfers.StartDate}}\",\n    \"lblCustomEndDate\" :\"${i18n{kony.mb.payments.endDate}}\",\n    \"BtnFilter\" : \"${i18n{kony.mb.FilterAccounts.ApplyFilter}}\",\n    \"Select All\" : \"${i18n{i18n.unifiedBeneficiary.SelectAll}}\",\n    \"Sight\" : \"${i18n{i18n.ImportLC.Sight}}\",\n    \"Acceptance\" : \"${i18n{i18n.ImportLC.Acceptance}}\",\n    \"Deferred\" : \"${i18n{i18n.ImportLC.Deferred}}\",\n    \"Negotiation Sight\" : \"${i18n{i18n.TradeFinance.NegotiationSight}}\",\n    \"Negotiation Acceptance\" : \"${i18n{i18n.TradeFinance.NegotiationAcceptance}}\",\n    \"Pending with Manager\" : \"${i18n{i18n.ImportLC.PendingWithManager}}\",\n    \"Pending with Bank\" : \"${i18n{i18n.ImportLC.PendingWithBank}}\",\n    \"Last Six Months\" : \"${i18n{i18n.ImportLC.LastSixMonths}}\",\n    \"Today\" : \"${i18n{i18n.ImportLC.Today}}\",\n    \"Last One Month\" : \"${i18n{i18n.ImportLC.LastOneMonth}}\",\n    \"Last One Year\" :  \"${i18n{i18n.ImportLC.LastOneYear}}\",\n    \"Custom Period\" : \"${i18n{kony.mb.AdvanceSearch.CustomRange}}\",\n    \"Mixed\" : \"${i18n{i18n.ImportLC.Mixed}}\",\n    \"All\" : \"${i18n{kony.mb.approvalsAndRequest.filter.All}}\",\n    \"Custom Date Range\" : \"${i18n{i18n.accounts.customDateRange}}\",\n    \"New\" :  \"${i18n{i18n.userManagement.new}}\",\n    \"Currency\" : \"${i18n{i18n.common.Currency}}\",\n    \"Approved by Bank\" : \"${i18n{i18n.ImportDrawings.ApprovedByBank}}\",\n    \"Rejected by Bank\" : \"${i18n{i18n.ImportDrawings.RejectedByBank}}\",\n    \"Rejected by Manager\" : \"${i18n{i18n.ImportDrawings.RejectedByManager}}\",\n    \"Drawing SubHeader\" : \"${i18n{i18n.TradeFinance.ApplyFiltersToViewSpecificImportDrawing}}\",\n    \"lblRequired\" : \"${i18n{i18n.TradeFinance.Required}}\"\n  }\n}",
+                    "group": "SearchFilter",
+                    "kuid": "g699265659074472b3e74bdd1a4a4c39",
+                    "originalPropertyKey": "dataMappingSearchFilter",
+                    "propertyIndex": 1,
+                    "propertyKey": "dataMappingSearchFilter",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "Dashboard",
+                    "kuid": "fbc18e3f09814b7dbd7265f3b1137e89",
+                    "originalPropertyKey": "dataFormattingDashboard",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataFormattingDashboard",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"lblImportLCViewDetails\":{\n    \"lblHeading\":\"${i18n{i18n.ImportLC.ImportLC}}\",\n    \"lblPending\":\"${i18n{kony.mb.Messages.Delete}}\",\n    \"lblDrafts\":\"${i18n{i18n.ImportLC.Drafts}}\",\n    \"lblClosed\":\"${i18n{i18n.konybb.Common.Approved}}\",\n    \"txtSearchBox\":\"${i18n{i18n.ImportLC.SearchByLCReferenceBeneficiaryEtc}}\",\n    \"lblExportLCHeading\":\"${i18n{i18n.ImportLC.ExportLC}}\",\n    \"lblAll\":\"${i18n{i18n.konybb.Common.All}}\",\n    \"tbxSearchBoxExportLC\":\"${i18n{i18n.ExportLC.SearchApplicantLCReferenceEtc}}\",\n    \"drawingsHeading\":\"${i18n{i18n.ImportLC.ImportDrawings}}\",\n    \"lblNewPending\":\"${i18n{i18n.ImportDrawings.NewPending}}\",\n    \"lblPosted\":\"${i18n{i18n.Search.Completed}}\",\n    \"drawingsTxtboxPlaceholder\":\"${i18n{i18n.ImportDrawings.SearchForBeneficiary}}\"\n  }\n}",
+                    "group": "View Details",
+                    "kuid": "j212590fca604686a79919bd2da1cd3f",
+                    "originalPropertyKey": "DataMappingViewDetails",
+                    "propertyIndex": 2,
+                    "propertyKey": "DataMappingViewDetails",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "View Details",
+                    "kuid": "eb6515c8bebc4f248d708143cd1a4728",
+                    "originalPropertyKey": "DataFormattingViewDetails",
+                    "propertyIndex": 3,
+                    "propertyKey": "DataFormattingViewDetails",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"lblImportLCDashboard\":{\n    \"lblHeader\":\"${i18n{i18n.ImportLC.TradeFinance}}\",\n    \"tbxSearch\":\"${i18n{i18n.ImportLC.SearchImportLC}}\",\n    \"lblImportLC\":\"${i18n{i18n.ImportLC.ImportLC}}\",\n    \"lblImportDrawings\":\"${i18n{i18n.ImportLC.ImportDrawings}}\",\n    \"lblExportLC\":\"${i18n{i18n.ImportLC.ExportLC}}\",\n    \"lblMore\":\"${i18n{kony.mb.common.more}}\",\n    \"lblImportLCOverView\":\"${i18n{i18n.ImportLC.ImportLCOverview}}\",\n    \"lblAmoutHeader\":\"${i18n{i18n.ImportLC.TotalLCAmount}}\",\n    \"lblPendingLCHeader\":\"${i18n{i18n.ImportLC.DeletedLC}}\",\n    \"lblDraftLCHeader\":\"${i18n{i18n.ImportLC.DraftLC}}\",\n    \"lblCompletedLCHeader\":\"${i18n{i18n.ImportLC.SelfApprovedLC}}\",\n    \"lblRecentLC\":\"${i18n{i18n.ImportLC.RecentLC}}\",\n    \"lblAccounts\":\"${i18n{kony.mb.common.accounts}}\",\n    \"lblTransfer\":\"${i18n{kony.mb.common.transfer}}\",\n    \"lblBillPay\":\"${i18n{i18n.Pay.MyBills}}\",\n    \"lblMenu\":\"${i18n{kony.mb.common.menu}}\"\n  },\n  \"flxBarGraph\": {\n    \"lblPending\": \"${i18n{i18n.Search.Pending}}\",\n    \"lblDrafts\": \"${i18n{kony.mb.Messages.draft}}\",\n    \"lblApprovedReject\": \"${i18n{i18n.ImportLC.AllImports}}\",\n    \"lblTotal\": \"${i18n{i18n.wealth.sortTotal}}\",\n    \"barColorPending\": \"rgba(228.0, 0.0, 51.0, 1.0)\",\n    \"barColorDraft\": \"rgba(255.0, 134.0, 0.0, 1.0)\",\n    \"barColorApproveReject\": \"rgba(0, 132, 149, 1)\",\n    \"barColorTotal\": \"rgba(189, 189, 189, 1)\"\n  }\n}",
+                    "group": "Dashboard",
+                    "kuid": "e6b29f8cfce24b9aa5090a16337cdb9e",
+                    "originalPropertyKey": "dataMappingDashboard",
+                    "propertyIndex": 4,
+                    "propertyKey": "dataMappingDashboard",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "e0d06588da164fd9a71bc9be48c317b2",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.TradeFinanceMA",
+    "version": "1.0.0"
+}

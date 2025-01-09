@@ -1,0 +1,421 @@
+{
+    "classname": "appHeader",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ief7d5bf687a4470b126f937779eed19",
+                    "paramList": [],
+                    "propertyKey": "closeHamburgerMenu",
+                    "pw": {
+                        "displayName": "closeHamburgerMenu",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f8610661fc634be58ae0774307b8098f",
+                    "paramList": [],
+                    "propertyKey": "onKeyPressCallBack",
+                    "pw": {
+                        "displayName": "onKeyPressCallBack",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e93f1c8efc5141a39b51e4af44676419",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "onLogout",
+                    "pw": {
+                        "displayName": "onLogout",
+                        "toolTip": "onLogout",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "cdd6294e2c0d4288a7b49882b27db5bd",
+                    "paramList": [
+                        {
+                            "name": "errorObject"
+                        }
+                    ],
+                    "propertyIndex": 5,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "toolTip": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b3c1b4f7dfd14df4b0b29b9199ae273a",
+                    "paramList": [],
+                    "propertyIndex": 6,
+                    "propertyKey": "onSkipToMainContent",
+                    "pw": {
+                        "displayName": "onSkipToMainContent",
+                        "toolTip": "onSkipToMainContent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "event"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a1ee8f7eb9674f96afef64f1a5c9968f",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 7,
+                    "propertyKey": "btnSkipHeaderClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "btnSkipHeaderClick",
+                        "srcWidget": "btnSkipHeader",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "e892fc1616034a828f5954cc74f294aa",
+                    "translateAtInstance": false
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "General"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "[\n  {\n    \"title\": \"${i18n{i18n.topmenu.accounts}}\",\n    \"toolTip\": \"${i18n{i18n.topmenu.accounts}}\",\n    \"accessibilityConfig\": {\n      \"a11yLabel\": \"${i18n{i18n.topmenu.accounts}}\"\n    },\n    \"callToAction\": {\n      \"microApp\": \"HomepageMA\",\n      \"presentationControllerMethod\": \"showAccountsDashboard\",\n      \"moduleName\": \"AccountsUIModule\"\n    }\n  }, {\n    \"id\": \"TRANSFERS\",\n    \"fontIcon\": \"t\",\n    \"title\": \"${i18n{i18n.hamburger.transfers}}\",\n    \"toolTip\": \"${i18n{i18n.hamburger.transfers}}\",\n    \"accessibilityConfig\": {\n      \"a11yLabel\": \"${i18n{i18n.hamburger.transfers}}\"\n    },\n    \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n    \"featureAndPermissions\": [{\n      \"atLeastOneFeature\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER\", \"INTRA_BANK_FUND_TRANSFER\", \"TRANSFER_BETWEEN_OWN_ACCOUNT\"]\n    }],\n    \"subMenu\": [{\n      \"id\": \"Transfer Money\",\n      \"title\": \"${i18n{i18n.billPay.BillPayMakeTransfer}}\",\n      \"tooltip\": \"${i18n{i18n.billPay.BillPayMakeTransfer}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.billPay.BillPayMakeTransfer}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTRA_BANK_FUND_TRANSFER_CREATE\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\"\n      }\n    }, {\n      \"id\": \"Transfer history\",\n      \"title\": \"${i18n{i18n.hamburger.transferHistory}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.transferHistory}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.transferHistory}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTRA_BANK_FUND_TRANSFER_VIEW\", \"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"initialView\": \"recent\"\n        }\n      }\n    }, {\n      \"id\": \"External Accounts\",\n      \"title\": \"${i18n{i18n.hamburger.externalAccounts}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.externalAccounts}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.externalAccounts}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW_RECEPIENT\", \"INTRA_BANK_FUND_TRANSFER_VIEW_RECEPIENT\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"initialView\": \"externalAccounts\"\n        }\n      }\n    }, {\n      \"id\": \"Add Infinity Accounts\",\n      \"title\": \"${i18n{i18n.hamburger.addKonyAccount}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.addKonyAccount}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.addKonyAccount}}\"\n      },\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTRA_BANK_FUND_TRANSFER_CREATE_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"initialView\": \"addInternalAccounts\"\n        }\n      }\n    }, {\n      \"id\": \"Add Non Kony Accounts\",\n      \"title\": \"${i18n{i18n.hamburger.addNonKonyAccount}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.addNonKonyAccount}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.addNonKonyAccount}}\"\n      },\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"initialView\": \"addExternalAccounts\"\n        }\n      }\n    }]\n  }, {\n    \"id\": \"FASTTRANSFERS\",\n    \"fontIcon\": \"t\",\n    \"title\": \"${i18n{i18n.hamburger.transfers}}\",\n    \"toolTip\": \"${i18n{i18n.hamburger.transfers}}\",\n    \"accessibilityConfig\": {\n      \"a11yLabel\": \"${i18n{i18n.hamburger.transfers}}\"\n    },\n    \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n    \"featureAndPermissions\": [{\n      \"atLeastOneFeature\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER\", \"INTRA_BANK_FUND_TRANSFER\", \"P2P\", \"TRANSFER_BETWEEN_OWN_ACCOUNT\"]\n    }],\n    \"subMenu\": [{\n      \"id\": \"Transfer Money\",\n      \"title\": \"${i18n{i18n.hamburger.transfer}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.transfer}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.transfer}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTRA_BANK_FUND_TRANSFER_CREATE\", \"P2P_CREATE\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferFastUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\"\n      }\n    }, {\n      \"id\": \"Transfer history\",\n      \"title\": \"${i18n{i18n.Transfers.TRANSFERACTIVITIES}}\",\n      \"tooltip\": \"${i18n{i18n.Transfers.TRANSFERACTIVITIES}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.Transfers.TRANSFERACTIVITIES}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\", \"INTRA_BANK_FUND_TRANSFER_VIEW\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\", \"P2P_VIEW\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferFastUIModule\",\n        \"presentationControllerMethod\": \"getPastPayments\"\n      }\n    }, {\n      \"id\": \"External Accounts\",\n      \"title\": \"${i18n{i18n.PayAPerson.ManageRecipient}}\",\n      \"tooltip\": \"${i18n{i18n.PayAPerson.ManageRecipient}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.PayAPerson.ManageRecipient}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\", \"INTRA_BANK_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\", \"P2P_VIEW_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferFastUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"showManageRecipients\": true\n        }\n      }\n    }, {\n      \"id\": \"Add Infinity Accounts\",\n      \"title\": \"${i18n{i18n.PayAPerson.AddRecipient}}\",\n      \"tooltip\": \"${i18n{i18n.PayAPerson.AddRecipient}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.PayAPerson.AddRecipient}}\"\n      },\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\", \"INTRA_BANK_FUND_TRANSFER_CREATE_RECEPIENT\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\", \"P2P_CREATE_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferFastUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"showRecipientGateway\": true\n        }\n      }\n    }]\n  }, {\n    \"id\": \"EUROTRANSFERS\",\n    \"fontIcon\": \"t\",\n    \"title\": \"${i18n{i18n.TransfersEur.PaymentsAndTransfers}}\",\n    \"toolTip\": \"${i18n{i18n.TransfersEur.PaymentsAndTransfers}}\",\n    \"accessibilityConfig\": {\n      \"a11yHidden\": true,\n      \"a11yARIA\": {\n        \"tabindex\": -1\n      }\n    },\n    \"visibleInMAs\": [\"REGIONALTRANSFER\", \"UNIFIEDTRANSFER\"],\n    \"featureAndPermissions\": [{\n      \"atLeastOneFeature\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER\", \"INTRA_BANK_FUND_TRANSFER\", \"TRANSFER_BETWEEN_OWN_ACCOUNT\"]\n    }],\n    \"subMenu\": [{\n      \"id\": \"Make a Payment\",\n      \"title\": \"${i18n{i18n.TransfersEur.MakePayment}}\",\n      \"tooltip\": \"${i18n{i18n.TransfersEur.MakePayment}}\",\n      \"accessibilityConfig\": {\n        \"a11yARIA\": {\n          \"tabindex\": -1\n        }\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTRA_BANK_FUND_TRANSFER_CREATE\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferEurUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"context\": \"MakePayment\"\n        }\n      }\n    }, {\n      \"id\": \"Transfer Between Accounts\",\n      \"title\": \"${i18n{i18n.TransfersEur.TransferBetweenAccounts}}\",\n      \"tooltip\": \"${i18n{i18n.TransfersEur.TransferBetweenAccounts}}\",\n      \"accessibilityConfig\": {\n        \"a11yARIA\": {\n          \"tabindex\": -1\n        }\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferEurUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"context\": \"MakePaymentOwnAccounts\"\n        }\n      }\n    }, {\n      \"id\": \"Manage Beneficiaries\",\n      \"title\": \"${i18n{i18n.TransfersEur.ManageBeneficiaries}}\",\n      \"tooltip\": \"${i18n{i18n.TransfersEur.ManageBeneficiaries}}\",\n      \"accessibilityConfig\": {\n        \"a11yARIA\": {\n          \"tabindex\": -1\n        }\n      },\n      \"visibleInMAs\": [\"UNIFIEDTRANSFER\"],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"ManageActivitiesUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"context\": \"ManageBeneficiaries\"\n        }\n      }\n    }, {\n      \"id\": \"Manage Payments\",\n      \"title\": \"${i18n{i18n.TransfersEur.ManageTransactions}}\",\n      \"tooltip\": \"${i18n{i18n.TransfersEur.ManageTransactions}}\",\n      \"accessibilityConfig\": {\n        \"a11yARIA\": {\n          \"tabindex\": -1\n        }\n      },\n      \"visibleInMAs\": [\"UNIFIEDTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTRA_BANK_FUND_TRANSFER_VIEW\", \"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"ManageActivitiesUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"context\": \"PastPayments\"\n        }\n      }\n    },\n                {\n                  \"id\": \"Pay Multiple Beneficiaries\",\n                  \"title\": \"${i18n{i18n.Transfers.PayMultipleBeneficiaries}}\",\n                  \"tooltip\": \"${i18n{i18n.Transfers.PayMultipleBeneficiaries}}\",\n                  \"accessibilityConfig\": {\n                    \"a11yARIA\": {\n                      \"tabindex\": -1\n                    }\n                  },\n                  \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n                  \"callToAction\": {\n                    \"microApp\": \"TransfersMA\",\n                    \"moduleName\": \"PayMultipleBeneficiariesUIModule\",\n                    \"presentationControllerMethod\": \"showPayMultipleBeneficiaries\",\n                    \"params\": {\n                      \"showManageBeneficiaries\": true\n                    }\n                  }\n                }\n               ]\n  }\n]",
+                    "group": "General",
+                    "kuid": "a3bc92d4a2704a549b3d27857167b65e",
+                    "originalPropertyKey": "primaryLinks",
+                    "propertyIndex": 1,
+                    "propertyKey": "primaryLinks",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Links",
+                        "toolTip": "Primary Links",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[\n    {\n      \"fontIcon\" : \")\",\n      \"title\": \"${i18n{i18n.Alerts.Notifications}}\",\n      \"toolTip\": \"${i18n{i18n.Alerts.Notifications}}\",\n      \"notificationCount\": 1,\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.Alerts.Notifications}}\",\n        \"a11yHidden\":true,\n        \"a11yARIA\":{\n          \"tabindex\":-1\n        }\n      },\n      \"callToAction\": {\n        \"microApp\": \"SecureMessageMA\",\n        \"presentationControllerMethod\" : \"showAlertsPage\",\n        \"moduleName\" : \"AlertsMsgsUIModule\",\n        \"param\" : {\n          \"show\" : \"Messages\"\n        }\n      }\n    },\n    {\n      \"fontIcon\" : \"m\",\n      \"title\": \"${i18n{i18n.AlertsAndMessages.Message}}\",\n      \"toolTip\": \"${i18n{i18n.AlertsAndMessages.Message}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\":\"${i18n{i18n.AlertsAndMessages.Message}}\",\n        \"a11yHidden\":true,\n        \"a11yARIA\":{\n          \"tabindex\":-1\n        }\n      },\n      \"callToAction\": {\n        \"microApp\": \"SecureMessageMA\",\n        \"presentationControllerMethod\" : \"showAlertsPage\",\n        \"moduleName\" : \"AlertsMsgsUIModule\"\n      }\n    }\n  ]",
+                    "group": "General",
+                    "kuid": "d52b28b9a3d24646ac19b4c7712a8d83",
+                    "originalPropertyKey": "secondaryLinks",
+                    "propertyIndex": 2,
+                    "propertyKey": "secondaryLinks",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Secondary Links",
+                        "toolTip": "Secondary Links",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "h6e371bcf9724f4f863c7c6b34d6b189",
+                    "originalPropertyKey": "supplementaryLinks",
+                    "propertyIndex": 3,
+                    "propertyKey": "supplementaryLinks",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Supplementary Links",
+                        "toolTip": "Supplementary Links",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n        \"loggedIn\": {\n            \"toolTip\": \"${i18n{kony.mb.MM.Dashboard}}\",\n            \"accessibilityConfig\": {\n               \"a11yLabel\": \"${i18n{kony.mb.MM.Dashboard}}\"\n            },\n            \"callToAction\": {\n                \"microApp\": \"HomepageMA\",\n                \"presentationControllerMethod\": \"showAccountsDashboard\",\n                \"moduleName\": \"AccountsUIModule\"\n            }\n        },\n        \"loggedOut\": {\n            \"toolTip\": \"${i18n{i18n.common.login}}\",\n            \"accessibilityConfig\": {\n                \"a11yLabel\" : \"${i18n{i18n.common.login}}\"\n            },\n            \"callToAction\": {\n                \"microApp\": \"AuthenticationMA\",\n                \"presentationControllerMethod\": \"showLoginScreen\",\n                \"moduleName\": \"AuthUIModule\"\n            }\n        }\n    }",
+                    "group": "General",
+                    "kuid": "fcdffc15dcc64648996a9a3a12578432",
+                    "originalPropertyKey": "logoConfig",
+                    "propertyIndex": 4,
+                    "propertyKey": "logoConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Logo Config",
+                        "toolTip": "Logo Configuration",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "HamburgerConfigWCAG.js",
+                    "group": "General",
+                    "kuid": "f1ef3b76c944446daa9b3688c1bb58e9",
+                    "originalPropertyKey": "hamburgerConfig",
+                    "propertyIndex": 5,
+                    "propertyKey": "hamburgerConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Hamburger Config",
+                        "toolTip": "Hamburger Config",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n    \"title\": \"l\",\n    \"toolTip\": \"${i18n{i18n.common.logout}}\",\n    \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.common.logout}}\"\n    },\n  \"callToAction\": {\n        \"microApp\": \"AuthenticationMA\",\n        \"presentationControllerMethod\" : \"doLogout\",\n      \t\"moduleName\" : \"AuthUIModule\",\n        \"param\" : {\n             \"action\": \"Logout\"\n    }\n    }\n}",
+                    "group": "General",
+                    "kuid": "d6c53faaa3824e6bb761a97389987af7",
+                    "originalPropertyKey": "logoutConfig",
+                    "propertyIndex": 6,
+                    "propertyKey": "logoutConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Logout Config",
+                        "toolTip": "Logout Configuration",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n   \"image\": \"profile_header.png\",\n  \t\"profileImage\":\"\",\n  \t\"profileUsername\":\"\",\n  \t\"profileEmail\":\"\",\n    \"toolTip\": \"profilePic\",\n    \"accessibilityConfig\": {\n        \"a11yLabel\": \"profile\",\n        \"a11yARIA\": {\n            \"aria-expanded\":false,\n            \"tabindex\" : 0,\n            \"role\" : \"button\"\n        }\n    },\n    \"subMenu\": [\n        {\n            \"id\": \"Profile Settings\",\n            \"title\": \"${i18n{i18n.ProfileManagement.profilesettings}}\",\n            \"tooltip\": \"${i18n{i18n.ProfileManagement.profilesettings}}\",\n            \"visibleInMAs\": [\"MANAGEPROFILE\"],\n            \"featureAndPermissions\": [{\n                \"atLeastOneReqPermissions\": [\"PROFILE_SETTINGS_VIEW\"]\n            }],\n            \"callToAction\": {\n                \"microApp\": \"ManageProfileMA\",\n                \"moduleName\": \"SettingsNewUIModule\",\n                \"presentationControllerMethod\": \"enterProfileSettings\",\n                \"params\": \"profileSettings\"\n            }\n        }, \n        {\n            \"id\": \"Security Settings\",\n            \"title\": \"${i18n{i18n.ProfileManagement.SecuritySettings}}\",\n            \"tooltip\": \"${i18n{i18n.ProfileManagement.SecuritySettings}}\",\n            \"visibleInMAs\": [\"MANAGEPROFILE\"],\n            \"callToAction\": {\n                \"microApp\": \"ManageProfileMA\",\n                \"moduleName\": \"SettingsNewUIModule\",\n                \"presentationControllerMethod\": \"enterProfileSettings\",\n                \"params\": \"securityQuestions\"\n            }\n        }, \n        {\n            \"id\": \"Account Settings\",\n            \"title\": \"${i18n{i18n.Accounts.ContextualActions.updateSettingAndPreferences}}\",\n            \"tooltip\": \"${i18n{i18n.Accounts.ContextualActions.updateSettingAndPreferences}}\",\n            \"featureAndPermissions\": [{\n                \"atLeastOneReqPermissions\": [\"ACCOUNT_SETTINGS_VIEW\"]\n            }],\n            \"callToAction\": {\n                \"microApp\": \"ManageArrangementsMA\",\n                \"moduleName\": \"ManageArrangementsUIModule\",\n                \"presentationControllerMethod\": \"enterProfileSettings\",\n                \"params\": \"accountSettings\"\n            }\n        },\n        {\n            \"id\": \"Approval Matrix\",\n            \"title\": \"${i18n{i18n.Settings.ApprovalMatrix.approvalMatrix}}\",\n            \"tooltip\": \"${i18n{i18n.Settings.ApprovalMatrix.approvalMatrix}}\",\n            \"breakpoints\": [\n                1024,\n                1366,\n                1380\n            ],\n            \"visibleInMAs\": [\"APPROVALMATRIX\"],\n            \"featureAndPermissions\": [{\n                \"atLeastOneReqPermissions\": [\"APPROVAL_MATRIX_VIEW\"]\n            }],\n            \"callToAction\": {\n                \"microApp\": \"ApprovalMatrixMA\",\n                \"moduleName\": \"SettingsNewApprovalUIModule\",\n                \"presentationControllerMethod\": \"enterProfileSettings\",\n                \"params\": \"approvalMatrix\"\n            }\n        },\n        {\n            \"id\": \"Alert Settings\",\n            \"title\": \"${i18n{i18n.ProfileManagement.Alerts}}\",\n            \"tooltip\": \"${i18n{i18n.ProfileManagement.Alerts}}\",\n            \"breakpoints\": [\n                1024,\n                1366,\n                1380\n            ],\n            \"visibleInMAs\": [\"ALERTSETTINGS\"],\n            \"featureAndPermissions\": [{\n                \"atLeastOneReqPermissions\": [\"ALERT_MANAGEMENT\"]\n            }],\n            \"callToAction\": {\n                \"microApp\": \"AlertSettingsMA\",\n                \"moduleName\": \"SettingsNewAlertsUIModule\",\n                \"presentationControllerMethod\": \"enterProfileSettings\",\n                \"params\": \"alertSettings\"\n            }\n        },\n        {\n            \"id\": \"Consent Management\",\n            \"title\": \"${i18n{i18n.ProfileManagement.Consent}}\",\n            \"tooltip\": \"${i18n{i18n.ProfileManagement.Consent}}\",\n            \"breakpoints\": [\n                1024,\n                1366,\n                1380\n            ],\n            \"visibleInMAs\": [\"CONSENTMANAGEMENT\"],\n            \"featureAndPermissions\": [{\n                \"atLeastOneReqPermissions\": [\"CDP_CONSENT_VIEW\"]\n            }],\n            \"callToAction\": {\n                \"microApp\": \"ConsentMgmtMA\",\n                \"moduleName\": \"CDPConsentUIModule\",\n                \"presentationControllerMethod\": \"showConsentManagement\"\n            }\n        },\n        {\n            \"id\": \"Manage Account Access\",\n            \"title\": \"${i18n{i18n.ProfileManagement.ManageAccountAccess}}\",\n            \"tooltip\": \"${i18n{i18n.ProfileManagement.ManageAccountAccess}}\",\n            \"breakpoints\": [\n                1024,\n                1366,\n                1380\n            ],\n            \"visibleInMAs\": [\"CONSENTMANAGEMENT\"],\n            \"featureAndPermissions\": [{\n                \"atLeastOneReqPermissions\": [\"PSD2_TPP_CONSENT_VIEW\"]\n            }],\n            \"callToAction\": {\n                \"microApp\": \"ConsentMgmtMA\",\n                \"moduleName\": \"PSD2ConsentUIModule\",\n                \"presentationControllerMethod\": \"showManageAccountAccess\"\n            }\n        }\n    ]\n}",
+                    "group": "General",
+                    "kuid": "a108db715ad74a53bf1937dfb976e36c",
+                    "originalPropertyKey": "profileConfig",
+                    "propertyIndex": 7,
+                    "propertyKey": "profileConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Profile Config",
+                        "toolTip": "Profile Configuration",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "da1cf7535eae4183b9700d048fb15ebe",
+                    "originalPropertyKey": "activeMenuID",
+                    "propertyIndex": 8,
+                    "propertyKey": "activeMenuID",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Active Menu ID",
+                        "toolTip": "Active Menu ID",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "a99f90767cba44be8b3c1af51a4aff85",
+                    "originalPropertyKey": "activeSubMenuID",
+                    "propertyIndex": 9,
+                    "propertyKey": "activeSubMenuID",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Active Sub-Menu ID",
+                        "toolTip": "Active Sub-Menu ID",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "df93e3f192a54a72a761f9c411cb2d03",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e9d34199966a4b8f8bef3d9974263ca5",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 10,
+                    "propertyKey": "flxHamburgerVisibility",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Visibility",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxHamburger",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ac30297bc32245c499836ffdcc9e6a88"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e225a549407441deb4db40e5dd742332",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 11,
+                    "propertyKey": "flxHamburgerBackVisibility",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Visibility",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxHamburgerBack",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "b903bae1be9e446f8d50c17ca4e281e8"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "j85ab9bf36ce4afda9c5bd560e4f53ed",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 12,
+                    "propertyKey": "lblHeaderMobileText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblHeaderMobile",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "f22aa86ec97540a1be650a08f731cbcd"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a37674eeec374e85811c5ce96f098999",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 13,
+                    "propertyKey": "primaryLink1Text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "PrimaryLink1 Text",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblPrimaryLink1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e68677ceb6534ce6aa4be65c3f4703af"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Resources",
+    "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_ea8f096f7d514705b3efa9ca369b15a9": {
+        "id": "AS_FlexContainer_ea8f096f7d514705b3efa9ca369b15a9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "contextObj": {
+            "name": "userwidgetmodel",
+            "type": "userwidgets",
+            "KUID": "u63cf11f7a394282b58089b4042c055e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_d4b9e1dabf9f4f5abacee894122c66c7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onBreakpointChangeComponent(eventobject, breakpoint);",
+            "parentId": null
+        }]
+    }
+}

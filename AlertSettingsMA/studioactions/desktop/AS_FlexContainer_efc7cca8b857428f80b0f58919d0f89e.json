@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_efc7cca8b857428f80b0f58919d0f89e": {
+        "id": "AS_FlexContainer_efc7cca8b857428f80b0f58919d0f89e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "eventPayload"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segAccountTypes",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b4ebc11f7e75423ab5eb10bbc49cfffd"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c549630f487c40bab9bd1e5e33688825",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.shiftTabFocus(eventobject, eventPayload, context);",
+            "parentId": null
+        }]
+    }
+}

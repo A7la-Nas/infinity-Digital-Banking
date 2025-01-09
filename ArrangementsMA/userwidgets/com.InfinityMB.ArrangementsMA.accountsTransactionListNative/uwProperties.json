@@ -1,0 +1,1036 @@
+{
+    "classname": "accountsTransactionListNative",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f6eebc12552b4c31861308201e007132",
+                    "paramList": [],
+                    "propertyKey": "startSearch",
+                    "pw": {
+                        "displayName": "startSearch",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f8814e71bc9d428398ae66807b67c5d3",
+                    "paramList": [],
+                    "propertyKey": "onCancelSearch",
+                    "pw": {
+                        "displayName": "onCancelSearch",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d1c477f2d577410ba5731c155d2b0130",
+                    "paramList": [],
+                    "propertyKey": "startBothSearch",
+                    "pw": {
+                        "displayName": "startBothSearch",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "cf62a24d9fd24eb7a70d82258dfe8ed9",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e4bd016e5202474aa4cdd17da21a1ca7",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "getTransactionDetails",
+                    "pw": {
+                        "displayName": "getTransactionDetails",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g131b8b0a77c4178af6a915c34e96a52",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "onRequestStart",
+                    "pw": {
+                        "displayName": "onRequestStart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e348593df624459a817b836789c824bb",
+                    "paramList": [],
+                    "propertyIndex": 6,
+                    "propertyKey": "onRequestEnd",
+                    "pw": {
+                        "displayName": "onRequestEnd",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f4e3a8d855854b1ea56819f83f0733e3",
+                    "paramList": [],
+                    "propertyIndex": 7,
+                    "propertyKey": "swipeActionBtn",
+                    "pw": {
+                        "displayName": "swipeActionBtn",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Transaction List Service",
+                "Blocked Funds Service",
+                "Context Setting",
+                "Skins",
+                "Data Grid \t",
+                "Data Format",
+                "Transactions list Values",
+                "Dispute Transactions",
+                "Icons",
+                "Swipeable Button Properties"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "Holdings",
+                    "group": "Transaction List Service",
+                    "kuid": "fe4c826cadc64b55bb9fcb42257f74dd",
+                    "originalPropertyKey": "objectServiceName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPRegular26px",
+                    "group": "Skins",
+                    "kuid": "ic1837553aca4175b1cae8bea9187ae7",
+                    "originalPropertyKey": "sknGroupHeaderLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknGroupHeaderLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Group header label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S1.Transactions}",
+                    "group": "Data Grid \t",
+                    "kuid": "b6d516666f9748f4b80a727569bb8001",
+                    "originalPropertyKey": "ListArray",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "ListArray",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "List Array",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"locale\":\"\", \"positiveFormat\" : \"{CS}{D}\", \"negativeFormat\" : \"-{CS}{D}\", \"fractionDigits\":\"2\"}",
+                    "group": "Data Format",
+                    "kuid": "dc3553585fa5421495789df8822696da",
+                    "originalPropertyKey": "amountFormat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "amountFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Amount Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":{\"default\":{\"text\":\"{$.L1.description}\",\"fieldType\":\"label\"},\"ST1\":{\"text\":\"{$.L1.lockReason}\",\"fieldType\":\"label\"}},\"Checking\":{\"default\":{\"text\":\"{$.L1.description}\",\"fieldType\":\"label\"},\"ST1\":{\"text\":\"{$.L1.lockReason}\",\"fieldType\":\"label\"}},\"CreditCard\":{\"default\":{\"text\":\"{$.L1.description}\",\"fieldType\":\"label\"}},\"Loan\":{\"default\":{\"text\":\"{$.L1.description}\",\"fieldType\":\"label\"},\"ST3\":{\"text\":\"{$.L1.paymentDate}\",\"fieldType\":\"date\"},\"ST4\":{\"text\":\"{$.L1.paymentDate}\",\"fieldType\":\"date\"}},\"Deposit\":{\"default\":{\"text\":\"{$.L1.description}\",\"fieldType\":\"label\"}}}",
+                    "group": "Transactions list Values",
+                    "kuid": "b8b529cbadee408586719048777ced56",
+                    "originalPropertyKey": "field1Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "field1Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "Dispute Transactions",
+                    "kuid": "e482353f7cc944b59512b1d55baeec6c",
+                    "originalPropertyKey": "displayDisputeIcon",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "displayDisputeIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Show Dispute Icon",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "disputedtransactionicon1.png",
+                    "group": "Icons",
+                    "kuid": "a5f5887e4d6f49fcb4d125e082717c9f",
+                    "originalPropertyKey": "iconDisputedTransaction",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "iconDisputedTransaction",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Disputed Transaction Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":{\"id\":{\"ST1\":\"Dispute\",\"ST2\":\"Dispute\"},\"text\":{\"ST2\":\"Dispute\",\"ST1\":\"Dispute\"},\"btnImage\":{\"ST1\":\"dispute.png\",\"ST2\":\"dispute.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlx003E75\",\"ST1\":\"ICSknFlx003E75\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":true,\"ST2\":true}},\"Checking\":{\"id\":{\"ST1\":\"Dispute\",\"ST2\":\"Dispute\"},\"text\":{\"ST2\":\"Dispute\",\"ST1\":\"Dispute\"},\"btnImage\":{\"ST1\":\"dispute.png\",\"ST2\":\"dispute.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlx003E75\",\"ST1\":\"ICSknFlx003E75\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":false,\"ST2\":true}},\"CreditCard\":{\"id\":{\"ST1\":\"Dispute\",\"ST2\":\"Dispute\"},\"text\":{\"ST2\":\"Dispute\",\"ST1\":\"Dispute\"},\"btnImage\":{\"ST1\":\"dispute.png\",\"ST2\":\"dispute.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlx003E75\",\"ST1\":\"ICSknFlx003E75\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":false,\"ST2\":true}},\"Loan\":{\"id\":{\"ST1\":\"Dispute\",\"ST2\":\"Dispute\"},\"text\":{\"ST2\":\"Dispute\",\"ST1\":\"Dispute\"},\"btnImage\":{\"ST1\":\"dispute.png\",\"ST2\":\"dispute.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlx003E75\",\"ST1\":\"ICSknFlx003E75\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":false,\"ST2\":true}},\"Deposit\":{\"id\":{\"ST1\":\"Dispute\",\"ST2\":\"Dispute\"},\"text\":{\"ST2\":\"Dispute\",\"ST1\":\"Dispute\"},\"btnImage\":{\"ST1\":\"dispute.png\",\"ST2\":\"dispute.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlx003E75\",\"ST1\":\"ICSknFlx003E75\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":false,\"ST2\":true}}}",
+                    "group": "Swipeable Button Properties",
+                    "kuid": "ff25cf949f22415abcee4d39edb06ae5",
+                    "originalPropertyKey": "btnSwipeableAction1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnSwipeableAction1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Swipeable Action Button 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Holdings",
+                    "group": "Blocked Funds Service",
+                    "kuid": "bccb5fcf353f43609402ff8ab5b7fc59",
+                    "originalPropertyKey": "blockedObjServiceName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "blockedObjServiceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Blocked Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "gf3d1d130d56409c993c436a56a02bed",
+                    "originalPropertyKey": "serviceType",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "serviceType",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":{\"id\":{\"ST1\":\"Repeat\",\"ST2\":\"Repeat\"},\"text\":{\"ST2\":\"Repeat\",\"ST1\":\"Repeat\"},\"btnImage\":{\"ST1\":\"repeat.png\",\"ST2\":\"repeat.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlx003E75\",\"ST1\":\"ICSknFlx003E75\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":true,\"ST2\":true}},\"Checking\":{\"id\":{\"ST1\":\"Repeat\",\"ST2\":\"Repeat\"},\"text\":{\"ST2\":\"Repeat\",\"ST1\":\"Repeat\"},\"btnImage\":{\"ST1\":\"repeat.png\",\"ST2\":\"repeat.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlx003E75\",\"ST1\":\"ICSknFlx003E75\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":false,\"ST2\":true}},\"CreditCard\":{\"id\":{\"ST1\":\"Repeat\",\"ST2\":\"Repeat\"},\"text\":{\"ST2\":\"Repeat\",\"ST1\":\"Repeat\"},\"btnImage\":{\"ST1\":\"repeat.png\",\"ST2\":\"repeat.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlx003E75\",\"ST1\":\"ICSknFlx003E75\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":false,\"ST2\":true}},\"Loan\":{\"id\":{\"ST1\":\"Repeat\",\"ST2\":\"Repeat\"},\"text\":{\"ST2\":\"Repeat\",\"ST1\":\"Repeat\"},\"btnImage\":{\"ST1\":\"repeat.png\",\"ST2\":\"repeat.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlx003E75\",\"ST1\":\"ICSknFlx003E75\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":false,\"ST2\":true}},\"Deposit\":{\"id\":{\"ST1\":\"Repeat\",\"ST2\":\"Repeat\"},\"text\":{\"ST2\":\"Repeat\",\"ST1\":\"Repeat\"},\"btnImage\":{\"ST1\":\"repeat.png\",\"ST2\":\"repeat.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlx003E75\",\"ST1\":\"ICSknFlx003E75\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":false,\"ST2\":true}}}",
+                    "group": "Swipeable Button Properties",
+                    "kuid": "b24131bb24ed462d8c7b5f52be75081a",
+                    "originalPropertyKey": "btnSwipeableAction2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "btnSwipeableAction2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Swipeable Action Button 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "TransactionsList",
+                    "group": "Transaction List Service",
+                    "kuid": "c594300d6dd14204b475f4b0fddd92b6",
+                    "originalPropertyKey": "objectName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "L1",
+                    "group": "Data Grid \t",
+                    "kuid": "j4e436d0d2d740d19719e6bd572f31b2",
+                    "originalPropertyKey": "ListIdentifier",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "ListIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "List Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "d/m/Y",
+                    "group": "Data Format",
+                    "kuid": "ceef990bc98c458cb53edab6ac3f8ac5",
+                    "originalPropertyKey": "dateFormat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "dateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":{\"default\":{\"text\":\"{$.L1.amount}\",\"fieldType\":\"amount\"},\"ST1\":{\"text\":\"{$.L1.lockedAmount}\",\"fieldType\":\"amount\"}},\"Checking\":{\"default\":{\"text\":\"{$.L1.amount}\",\"fieldType\":\"amount\"},\"ST1\":{\"text\":\"{$.L1.lockedAmount}\",\"fieldType\":\"amount\"}},\"CreditCard\":{\"default\":{\"text\":\"{$.L1.amount}\",\"fieldType\":\"amount\"}},\"Loan\":{\"default\":{\"text\":\"{$.L1.amount}\",\"fieldType\":\"amount\"},\"ST3\":{\"text\":\"{$.L1.installmentAmount}\",\"fieldType\":\"amount\"},\"ST4\":{\"text\":\"{$.L1.installmentAmount}\",\"fieldType\":\"amount\"}},\"Deposit\":{\"default\":{\"text\":\"{$.L1.amount}\",\"fieldType\":\"amount\"}}}",
+                    "group": "Transactions list Values",
+                    "kuid": "bc138a81210b4402abd6d685ad0eb8e7",
+                    "originalPropertyKey": "field2Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "field2Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "isDisputed",
+                    "group": "Dispute Transactions",
+                    "kuid": "b72f2927d26e419f82db48536dadeb11",
+                    "originalPropertyKey": "disputeProperty",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "disputeProperty",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Dispute Field",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "norecordsavailableicon.png",
+                    "group": "Icons",
+                    "kuid": "b5058b9f8f9b49c1aa7e984a47912322",
+                    "originalPropertyKey": "iconNoRecordsAvailable",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "iconNoRecordsAvailable",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "No Records Available Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxF6F6F6",
+                    "group": "Skins",
+                    "kuid": "i2ffadd0cf1c4b62a83cdbbd8b24800c",
+                    "originalPropertyKey": "sknGroupHeaderBackground",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknGroupHeaderBackground",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Group header background",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "BlockFunds",
+                    "group": "Blocked Funds Service",
+                    "kuid": "afe5a34ca40144368385566b3f35ede3",
+                    "originalPropertyKey": "blockedObjName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "blockedObjName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Blocked Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPRegular26px",
+                    "group": "Skins",
+                    "kuid": "c9daa29ef48f4607827a84b139a57560",
+                    "originalPropertyKey": "sknPrimaryField1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknPrimaryField1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary field 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getRecent",
+                    "group": "Transaction List Service",
+                    "kuid": "b1366b67c2234b08b57047231844f89b",
+                    "originalPropertyKey": "operationName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"All\":\"statusDescription\",\"LoanSchedule\":\"installmentType\"}",
+                    "group": "Data Grid \t",
+                    "kuid": "h93c35560c094753898124f4fb4cec29",
+                    "originalPropertyKey": "segregationDecider",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "segregationDecider",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Segreagation Field",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Y-m-d",
+                    "group": "Data Format",
+                    "kuid": "i471b271f4bc4e588875974f0c517e2e",
+                    "originalPropertyKey": "backendDateFormat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "backendDateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Backend Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":{\"default\":{\"text\":\"{$.L1.scheduledDate}\",\"fieldType\":\"date\"},\"ST1\":{\"text\":\"{$.L1.transactionReference}\",\"fieldType\":\"label\"}},\"Checking\":{\"default\":{\"text\":\"{$.L1.scheduledDate}\",\"fieldType\":\"date\"},\"ST1\":{\"text\":\"{$.L1.transactionReference}\",\"fieldType\":\"label\"}},\"CreditCard\":{\"default\":{\"text\":\"{$.L1.scheduledDate}\",\"fieldType\":\"date\"}},\"Loan\":{\"default\":{\"text\":\"{$.L1.scheduledDate}\",\"fieldType\":\"date\"}},\"Deposit\":{\"default\":{\"text\":\"{$.L1.scheduledDate}\",\"fieldType\":\"date\"}}}",
+                    "group": "Transactions list Values",
+                    "kuid": "c3490b1dbeb34889a1aa2f8ab2750b90",
+                    "originalPropertyKey": "field3Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "field3Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "arrowup_1.png",
+                    "group": "Icons",
+                    "kuid": "b8b75db7a09f45db8f7a42eb803ea750",
+                    "originalPropertyKey": "iconGroupExpand",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "iconGroupExpand",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Group Expand",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Savings\":{\"id\":{\"ST1\":\"Cancel\",\"ST2\":\"Cancel\"},\"text\":{\"ST2\":\"Cancel\",\"ST1\":\"Cancel\"},\"btnImage\":{\"ST1\":\"cancel.png\",\"ST2\":\"cancel.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlxEE0005\",\"ST1\":\"ICSknFlxEE0005\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":true,\"ST2\":true}},\"Checking\":{\"id\":{\"ST1\":\"Cancel\",\"ST2\":\"Cancel\"},\"text\":{\"ST2\":\"Cancel\",\"ST1\":\"Cancel\"},\"btnImage\":{\"ST1\":\"cancel.png\",\"ST2\":\"cancel.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlxEE0005\",\"ST1\":\"ICSknFlxEE0005\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":false,\"ST2\":true}},\"CreditCard\":{\"id\":{\"ST1\":\"Cancel\",\"ST2\":\"Cancel\"},\"text\":{\"ST2\":\"Cancel\",\"ST1\":\"Cancel\"},\"btnImage\":{\"ST1\":\"cancel.png\",\"ST2\":\"cancel.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlxEE0005\",\"ST1\":\"ICSknFlxEE0005\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":false,\"ST2\":true}},\"Loan\":{\"id\":{\"ST1\":\"Cancel\",\"ST2\":\"Cancel\"},\"text\":{\"ST2\":\"Cancel\",\"ST1\":\"Cancel\"},\"btnImage\":{\"ST1\":\"cancel.png\",\"ST2\":\"cancel.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlxEE0005\",\"ST1\":\"ICSknFlxEE0005\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":false,\"ST2\":true}},\"Deposit\":{\"id\":{\"ST1\":\"Cancel\",\"ST2\":\"Cancel\"},\"text\":{\"ST2\":\"Cancel\",\"ST1\":\"Cancel\"},\"btnImage\":{\"ST1\":\"cancel.png\",\"ST2\":\"cancel.png\"},\"width\":{\"ST2\":\"70DP\",\"ST1\":\"70DP\"},\"txtSkin\":{\"ST2\":\"ICSknLblFFFFFF13PX\",\"ST1\":\"ICSknLblFFFFFF13PX\"},\"skin\":{\"ST2\":\"ICSknFlxEE0005\",\"ST1\":\"ICSknFlxEE0005\"},\"entitlement_keys\":[],\"entitlement_action\":{\"ST1\":false,\"ST2\":true}}}",
+                    "group": "Swipeable Button Properties",
+                    "kuid": "b800a540826e4b67bab5a3b2ca7b3633",
+                    "originalPropertyKey": "btnSwipeableAction3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "btnSwipeableAction3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Swipeable Action Button 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getList",
+                    "group": "Blocked Funds Service",
+                    "kuid": "b346190679774c46b31c250d11513641",
+                    "originalPropertyKey": "blockedOperationName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "blockedOperationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Blocked Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPRegular26px",
+                    "group": "Skins",
+                    "kuid": "cac8abe3e9fe44819e6082e438d5b030",
+                    "originalPropertyKey": "sknPrimaryField2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknPrimaryField2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary field 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"accountID\":\"{$.c.accountID}\",\"transactionType\":\"{$.c.transactionType}\",\"offset\":0,\"limit\":300,\"isScheduled\":\"false\",\"order\":\"desc\"}",
+                    "group": "Transaction List Service",
+                    "kuid": "j7ce06a175e545ccbf1e641cf3df838b",
+                    "originalPropertyKey": "criteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "criteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"ST1\":{\"value\":\"Blocked\",\"displayText\":\"Blocked Funds\",\"weight\":\"1\"},\"ST2\":{\"value\":\"Pending\",\"displayText\":\"Pending Transaction\",\"weight\":\"2\"},\"ST3\":{\"value\":\"DUE\",\"displayText\":\"Overdue Installments\",\"weight\":\"1\"},\"ST4\":{\"value\":\"PAID\",\"displayText\":\"Paid Installments\",\"weight\":\"2\"},\"ST5\":{\"value\":\"Successful\",\"displayText\":\"Posted Transaction\",\"weight\":\"3\"}}",
+                    "group": "Data Grid \t",
+                    "kuid": "b08ea98c18f449b8817e43992324e9c2",
+                    "originalPropertyKey": "segregationTypes",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "segregationTypes",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Segregation Types",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.currencyCode}",
+                    "group": "Data Format",
+                    "kuid": "f1f42590f46f433894ee7a8055bd78ea",
+                    "originalPropertyKey": "currencyCode",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "currencyCode",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Currency code",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Transactions list Values",
+                    "kuid": "hc392c1494d8408888f58b4f054b1180",
+                    "originalPropertyKey": "field4Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "field4Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "arrowdown.png",
+                    "group": "Icons",
+                    "kuid": "a19ec1f55da24f07b60945cc85fdf1b7",
+                    "originalPropertyKey": "iconGroupCollapse",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "iconGroupCollapse",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Group Collapse",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"accountID\":\"{$.c.accountID}\",\"transactionType\":\"{$.c.transactionType}\",\"offset\":0,\"limit\":300,\"isScheduled\":\"false\",\"order\":\"desc\"}",
+                    "group": "Blocked Funds Service",
+                    "kuid": "e7c92347d9834a23a90e53ccce0d4bb3",
+                    "originalPropertyKey": "blockedCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "blockedCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Blocked Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S1",
+                    "group": "Transaction List Service",
+                    "kuid": "f31e2ffd62624d0fb32d2e0161023e17",
+                    "originalPropertyKey": "serviceResponseIdentifier",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "serviceResponseIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Response Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.OB.NoRecordsAvailable",
+                    "group": "Transactions list Values",
+                    "kuid": "c77269c436414b00922b6f065e49a17e",
+                    "originalPropertyKey": "noRecordsAvailable",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "noRecordsAvailable",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "No Records Available",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl727272SSP26pxTab",
+                    "group": "Skins",
+                    "kuid": "c8f19b2eabd64ec8822e06237e9d8cc8",
+                    "originalPropertyKey": "sknSecondaryFields",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknSecondaryFields",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Secondary fields",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 20,
+                    "group": "Data Grid \t",
+                    "kuid": "b978f8e17d6d4b74b515bdf969d51cd1",
+                    "originalPropertyKey": "recordsPerPage",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "recordsPerPage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Records per page",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S2",
+                    "group": "Blocked Funds Service",
+                    "kuid": "jd8fb39db816413da5cb22c0351a86d4",
+                    "originalPropertyKey": "blockedServiceIdentifier",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "blockedServiceIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Blocked Service Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxe3e3e3",
+                    "group": "Skins",
+                    "kuid": "g11ee86658c24bc7952c914f28cad215",
+                    "originalPropertyKey": "sknRowSeparator",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknRowSeparator",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row separator skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Service calls by component",
+                    "group": "Transaction List Service",
+                    "kuid": "i07e61a3775249529813cd044fc20147",
+                    "originalPropertyKey": "dataAvailability",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "dataAvailability",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Availability",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "list selector",
+                    "value": [
+                        "Service calls by component",
+                        "Context provided by form"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Service calls by component",
+                    "group": "Blocked Funds Service",
+                    "kuid": "g03bb4e5db0542ca9b4733615894072e",
+                    "originalPropertyKey": "blockedDataAvailability",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "blockedDataAvailability",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Blocked Data Availability",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "list selector",
+                    "value": [
+                        "Service calls by component",
+                        "Context provided by form"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "f9f9",
+                    "group": "Skins",
+                    "kuid": "e406bf09762448bdb64088ec4141c46d",
+                    "originalPropertyKey": "sknRow",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknRow",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "Blocked Funds Service",
+                    "kuid": "ff731a8282c74e8ea0636a7f4e8558a2",
+                    "originalPropertyKey": "backendBlockedLimit",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "backendBlockedLimit",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Backend Limit Enabled Blocked Funds",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "Transaction List Service",
+                    "kuid": "c672c18970a64c818b7528e17a016a3b",
+                    "originalPropertyKey": "backendTransLimit",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "backendTransLimit",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Backend Limit Enabled Transactions",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.transactionsCount}",
+                    "group": "Transaction List Service",
+                    "kuid": "f9c1d9965cd2413b8233bce4164c6337",
+                    "originalPropertyKey": "transactionCount",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "transactionCount",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction Count",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxShadow000fff",
+                    "group": "Skins",
+                    "kuid": "j260b3015dcf4048adc1c106612f3afa",
+                    "originalPropertyKey": "sknSegmentShadow",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "sknSegmentShadow",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Segment shadow",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.transactionsCount}",
+                    "group": "Blocked Funds Service",
+                    "kuid": "dd5aed12593a4163b32fe8a5fe0b21ef",
+                    "originalPropertyKey": "blockedCount",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "blockedCount",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Blocked Count",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"amountField\":\"\",\"skin\":[{\"max\":0,\"skin\":\"sknLbl424242SSPRegular26px\"},{\"min\":0,\"max\":10,\"skin\":\"sknLbl424242SSPRegular26px\"},{\"min\":11,\"max\":999,\"skin\":\"sknLbl424242SSPRegular26px\"},{\"min\":1000,\"skin\":\"sknLbl424242SSPRegular26px\"}]}",
+                    "group": "Skins",
+                    "kuid": "dd52f13f934349948d9b80e4929e5d0f",
+                    "originalPropertyKey": "sknAmount",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "sknAmount",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Amount",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ff81c0fde4534d78af4b9a1d569372d3",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.ArrangementsMA",
+    "version": "1.0.0"
+}

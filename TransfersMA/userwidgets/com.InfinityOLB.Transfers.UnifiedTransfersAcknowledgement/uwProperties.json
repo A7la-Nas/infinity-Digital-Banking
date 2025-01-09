@@ -1,0 +1,196 @@
+{
+    "classname": "UnifiedTransfersAcknowledgement",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f9decc8d018d4279ab144e86d4751699",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j2ba4c31d72e4932b8e59ff0b3c89fba",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ge6194f561354da9a5d0c1464ae82592",
+                    "paramList": [],
+                    "propertyKey": "unsubscribeStore",
+                    "pw": {
+                        "displayName": "unsubscribeStore",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j2ba4c31d72e4932b8e59ff0b3c89fba",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c77bd9282afd496ab5320295aa02ba05",
+                    "paramList": [],
+                    "propertyKey": "setbtnFocus",
+                    "pw": {
+                        "displayName": "setbtnFocus",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j2ba4c31d72e4932b8e59ff0b3c89fba",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ac2872dbd7874c249050a874c24b0e9d",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j2ba4c31d72e4932b8e59ff0b3c89fba",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ea6fc7769eb9429f8ca759f50e7ff25d",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "button3Click",
+                    "pw": {
+                        "displayName": "button3Click",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j2ba4c31d72e4932b8e59ff0b3c89fba",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b14e1d63dd4c409cb270e6c9f8e72a62",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "button2Click",
+                    "pw": {
+                        "displayName": "button2Click",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j2ba4c31d72e4932b8e59ff0b3c89fba",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i4e892d964504586a89cf0e56a1aef55",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "button1Click",
+                    "pw": {
+                        "displayName": "button1Click",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j2ba4c31d72e4932b8e59ff0b3c89fba",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "hd4c2f8ff8654fa390e171a8d22d6ef4",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "j2ba4c31d72e4932b8e59ff0b3c89fba",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"lblSection1Header\": \"${i18n{i18n.transfers.Acknowledgement}}\",\n  \"lblSection1Message\": \"${Collection.Transaction.message}\",\n  \"lblReferenceNumber\": \"${i18n{i18n.ChequeManagement.ReferenceNumber}}\",\n  \"lblSection2Header\": \"${i18n{i18n.billPay.TransactionDetails}}\",\n  \"lblField1Key\": \"${i18n{i18n.StopCheckPayments.from}}\",\n  \"lblField2Key\": \"${i18n{i18n.StopCheckPayments.To}}\",\n  \"lblField3Key\": \"${i18n{i18n.WireTransfer.TransferCurrency}}\",\n  \"lblField4Key\": \"${i18n{i18n.ChequeManagement.Amount}}\",\n  \"lblField5Key\": \"${i18n{i18n.UnifiedTransfer.FxRateReference}}\",\n  \"lblField6Key\": \"${i18n{i18n.PayPerson.frequency}}\",\n  \"lblField26Key\": \"${i18n{i18n.transfers.lblNumberOfRecurrences}}\",\n  \"lblField7Key\": \"${i18n{i18n.transfers.send_on}}\",\n  \"lblField8Key\": \"${i18n{i18n.savingsPot.startDate}}\",\n  \"lblField9Key\": \"${i18n{i18n.transfers.end_date}}\",\n  \"lblField10Key\": \"${i18n{i18n.ProfileManagement.AccountNumber}}\",\n  \"lblField11Key\": \"${i18n{i18n.kony.BulkPayments.FeesPaidBy}}\",\n  \"lblField12Key\": \"${i18n{i18n.UnifiedTransfer.IntermediaryBIC}}\",\n  \"lblField13Key\": \"${i18n{i18n.UnifiedTransfer.E2EReference}}\",\n  \"lblField14Key\": \"${i18n{i18n.unifiedTransfers.bankClearingCode}}\",\n  \"lblField15Key\": \"${i18n{i18n.payments.clearingIdentifierCode}}\",\n  \"lblField16Key\": \"${i18n{i18n.TransfersEur.SWIFTBIC}}\",\n  \"lblField17Key\": \"${i18n{i18n.TransfersEur.ExchangeRate}}\",\n  \"lblField18Key\": \"${i18n{i18n.TransfersEur.PaymentMethod}}\",\n  \"lblField19Key\": \"${i18n{i18n.ChequeBookReq.Notes}}\",\n  \"lblField20Key\": \"${i18n{i18n.ProfileManagement.PhoneNumber}}\",\n  \"lblField21Key\": \"${i18n{i18n.login.CantSignIn.EmailAddress}}\",\n  \"lblField22Key\": \"${i18n{i18n.AddPayee.BillerAddress}}\",\n  \"lblField23Key\": \"${i18n{i18n.transfers.bankName}}\",\n  \"lblField24Key\": \"${i18n{i18n.Transfers.CreditValueDate}}\",\n  \"lblField25Key\": \"${i18n{i18n.Transfers.TotalAmount}}\",\n  \"lblField27Key\": \"${i18n{i18n.UnifiedTransfers.PurposeCode}}\",\n  \"lblField28Key\": \"${i18n{i18n.UnifiedTransfers.StreetName}}\",\n  \"lblField29Key\": \"${i18n{i18n.UnifiedTransfers.CountryName}}\",\n  \"lblField30Key\": \"${i18n{i18n.UnifiedTransfers.TownName}}\",\n  \"lblChargesBreakdownKey\": \"${i18n{i18n.TransfersEur.FeeBreakdown}}\",\n  \"lblSupportingDocuments\": \"${i18n{i18n.TransfersEur.SupportingDocuments}}\",\n  \"button1\": \"${i18n{i18n.FastTransfers.NewTransfer}}\",\n  \"button2\": \"${i18n{i18n.billpay.savePayee}}\",\n  \"button3\": \"${i18n{i18n.FastTransfer.TransferActivities}}\",\n  \"lblField1Value\": \"${Collection.Transaction.formattedFromAccount}\",\n  \"lblField2Value\": \"${Collection.Transaction.formattedToAccount}\",\n  \"lblField3Value\": \"${Collection.Transaction.transactionCurrencyWithSymbol}\",\n  \"lblField4Value\": \"${Collection.Transaction.amountWithCurrencySymbol}\",\n  \"lblField5Value\": \"${Collection.Transaction.fxRateReference}\",\n  \"lblField6Value\": \"${Collection.Transaction.frequencyType}\",\n  \"lblField26Value\": \"${Collection.Transaction.numberOfRecurrences}\",\n  \"lblField7Value\": \"${Collection.Transaction.formattedSendOnDate}\",\n  \"lblField8Value\": \"${Collection.Transaction.formattedSendOnDate}\",\n  \"lblField9Value\": \"${Collection.Transaction.formattedEndOnDate}\",\n  \"lblField10Value\": \"${Collection.Transaction.accountNumber}\",\n  \"lblField11Value\": \"${Collection.Transaction.feesPaidBy}\",\n  \"lblField12Value\": \"${Collection.BankDetails.intermediaryBicCode}\",\n  \"lblField13Value\": \"${Collection.Transaction.e2eReference}\",\n  \"lblField14Value\": \"${Collection.Transaction.clearingCode1}\",\n  \"lblField15Value\": \"${Collection.Transaction.clearingIdentifierCode}\",\n  \"lblField16Value\": \"${Collection.BankDetails.swiftCode}\",\n  \"lblField17Value\": \"${Collection.Transaction.exchangeRate}\",\n  \"lblField18Value\": \"${Collection.Transaction.paymentMethod}\",\n  \"lblField19Value\": \"${Collection.Transaction.transactionsNotes}\",\n  \"lblField20Value\": \"${Collection.Recipients.phone}\",\n  \"lblField21Value\": \"${Collection.Recipients.email}\",\n  \"lblField22Value\": \"${Collection.Transaction.formattedFromAccount}\",\n  \"lblField23Value\": \"${Collection.BankDetails.bankNameWithCountryCode}\",\n  \"lblField24Value\": \"${Collection.Transaction.formattedCreditValueDate}\",\n  \"lblField25Value\": \"${Collection.Transaction.formattedTotalAmount}\",\n  \"lblField27Value\": \"${Collection.Transaction.purposeCode}\",\n  \"lblField28Value\": \"${Collection.Transaction.streetName}\",\n  \"lblField29Value\": \"${Collection.Transaction.countryName}\",\n  \"lblField30Value\": \"${Collection.Transaction.townName}\",\n  \"lblChargesBreakdownValue\": \"${Collection.Transaction.formattedCharges}\",\n  \"lblReferenceNumberValue\": \"${Collection.Transaction.referenceId}\",\n  \"payeeTypeContext\": \"${Collection.Transaction.payeeType}\",\n  \"attachedFileList\": \"${Collection.Transaction.attachedFileList}\",\n  \"transactionType\": \"${Collection.Transaction.transactionType}\",\n  \"addressLine1\": \"${Collection.Recipients.addressLine1}\",\n  \"addressLine2\": \"${Collection.Recipients.addressLine2}\",\n  \"city\": \"${Collection.Recipients.city}\",\n  \"state\": \"${Collection.Recipients.state}\",\n  \"country\": \"${Collection.Recipients.country}\",\n  \"zipCode\": \"${Collection.Recipients.zipCode}\"\n}",
+                    "group": "General",
+                    "kuid": "e812052ef17a4554b22044bed7134687",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "j2ba4c31d72e4932b8e59ff0b3c89fba",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "d7ffa285c3aa48c0966f4dcd5fecd655",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "j2ba4c31d72e4932b8e59ff0b3c89fba",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Transfers",
+    "version": "1.0.0"
+}

@@ -1,0 +1,137 @@
+{
+    "classname": "serviceReqCalendar",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "jc50495399ab45388153c5d75324ed28",
+                    "paramList": [],
+                    "propertyKey": "preShow",
+                    "pw": {
+                        "displayName": "preShow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2e2b002e22a4005ac3ac78421432264",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ja06c53a651b41048dd7c13d5c9f51cc",
+                    "paramList": [],
+                    "propertyKey": "updateDateBullets",
+                    "pw": {
+                        "displayName": "updateDateBullets",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2e2b002e22a4005ac3ac78421432264",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h047caeea4294f1e885f81bcc241fefc",
+                    "paramList": [],
+                    "propertyKey": "setFirstEnabledDate",
+                    "pw": {
+                        "displayName": "setFirstEnabledDate",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2e2b002e22a4005ac3ac78421432264",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g9daa57554ad44869652f6e549b04b1a",
+                    "paramList": [],
+                    "propertyKey": "setLastEnabledDate",
+                    "pw": {
+                        "displayName": "setLastEnabledDate",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2e2b002e22a4005ac3ac78421432264",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a4743393ba0c4977877ac3361a4df19e",
+                    "paramList": [],
+                    "propertyKey": "setSelectedDate",
+                    "pw": {
+                        "displayName": "setSelectedDate",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2e2b002e22a4005ac3ac78421432264",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b535495e51a643d4b05748e215579e97",
+                    "paramList": [],
+                    "propertyKey": "resetCal",
+                    "pw": {
+                        "displayName": "resetCal",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2e2b002e22a4005ac3ac78421432264",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "cde62b93c5b540b4aa9b54febb2b3117",
+                    "paramList": [],
+                    "propertyKey": "setMonthLabelText",
+                    "pw": {
+                        "displayName": "setMonthLabelText",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2e2b002e22a4005ac3ac78421432264",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d7caa0e0910b444a88ccde1575a8d0c4",
+                    "paramList": [
+                        {
+                            "name": "fromDateValue"
+                        },
+                        {
+                            "name": "toDateValue"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "sendSelectedData",
+                    "pw": {
+                        "displayName": "sendSelectedData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2e2b002e22a4005ac3ac78421432264",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.ArrangementsMA",
+    "version": "1.0.0"
+}

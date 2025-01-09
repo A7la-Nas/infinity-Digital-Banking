@@ -1,0 +1,62 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "dataMapping": "{\n  \"lblTransactionType\": \"${i18n{i18n.payments.withinSameBank}}\",\n  \"entitlements\": {\n    \"MakeTransfer\": [\n      \"INTRA_BANK_FUND_TRANSFER_CREATE\",\n      \"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE\"\n    ],\n    \"AddNewAccount\": [\n      \"INTRA_BANK_FUND_TRANSFER_CREATE_RECEPIENT\",\n      \"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE_RECEPIENT\"\n    ]\n  },\n  \"lblDescription\": \"${i18n{i18n.unified.sameBankDescription}}\",\n  \"MoreLink\": \"${i18n{kony.mb.login.learnMore}}\",\n  \"imgTransDescriptionIcon\": \"samebank.png\",\n  \"transferType\": \"Within Same Bank\"\n}"
+    },
+    "id": "transferType1",
+    "info": null,
+    "iphone": {
+        "render": true
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e89661bf844f4268a3b463ee22427b92",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxTransferType1",
+    "pf": "frmSelectTransferTypeNew",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "gab2ed113def44b5be58607438fad213",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

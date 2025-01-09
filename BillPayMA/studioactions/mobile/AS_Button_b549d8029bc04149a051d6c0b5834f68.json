@@ -1,0 +1,24 @@
+{
+    "AS_Button_b549d8029bc04149a051d6c0b5834f68": {
+        "id": "AS_Button_b549d8029bc04149a051d6c0b5834f68",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmBillPayEndDate",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ce3f8f7bf85b4cc4b31fdfefa62d3e9a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ab8fa5aa19e644769753a8b58d808bde",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var billPayMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"BillPayModule\");\nbillPayMod.presentationController.commonFunctionForNavigation(\"frmBillPayConfirmation\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

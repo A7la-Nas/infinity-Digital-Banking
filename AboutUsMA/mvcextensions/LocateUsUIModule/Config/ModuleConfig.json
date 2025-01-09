@@ -1,0 +1,56 @@
+{
+    
+    "Forms": {
+	    "mobile": {
+            "frmLocationDetails": {
+                "Controller": "LocateUsUIModule/frmLocationDetailsController",
+                "ControllerExtensions": [
+                ],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "LocateUsUIModule/frmLocationDetails",
+                "friendlyName": "frmLocationDetails"
+            },
+            "frmLocationDirections": {
+                "Controller": "LocateUsUIModule/frmLocationDirectionsController",
+                "ControllerExtensions": [
+                ],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "LocateUsUIModule/frmLocationDirections",
+                "friendlyName": "frmLocationDirections"
+            },
+			"frmLocationMap" :{
+                "Controller": "LocateUsUIModule/frmLocationMapController",
+                "ControllerExtensions": [
+                ],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "LocateUsUIModule/frmLocationMap",
+                "friendlyName": "frmLocationMap"
+            },
+        },
+        "desktop": {
+            "frmLocateUs": {
+                "Controller": "LocateUsUIModule/frmLocateUsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "LocateUsUIModule/frmLocateUs",
+                "friendlyName": "frmLocateUs"
+            },
+            
+        },
+    },
+	"ModuleType": "UIModule",
+    "ModuleName": "LocateUsUIModule",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "LocateUsUIModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": [
+                "LocateUsUIModule/PresentationControllers/PresentationController_Extn",
+            ]
+        },
+		 "Mobile": {
+            "PresentationControllerClass": "LocateUsUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": [
+            ]
+        },
+    }
+}

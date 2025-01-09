@@ -1,0 +1,236 @@
+{
+    "classname": "ViewDetails",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e74be1cca0164b47930cb52a78a9f239",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab3268141594de7b1fe70fc0b5f8ac9",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "gaacb9770cbd4402acdfabf49a997a4c",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onBackClick",
+                    "pw": {
+                        "displayName": "onBackClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab3268141594de7b1fe70fc0b5f8ac9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a0d8feadbb554813be52f9dc63f565cb",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyIndex": 3,
+                    "propertyKey": "navigateToPrintScreen",
+                    "pw": {
+                        "displayName": "navigateToPrintScreen",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab3268141594de7b1fe70fc0b5f8ac9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "aa7a1a39c5b547d6aa16c66b41271363",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "onDrawingsClick",
+                    "pw": {
+                        "displayName": "onDrawingsClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab3268141594de7b1fe70fc0b5f8ac9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d0fe56fe54ad43e0a425423c05c2e0b0",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "contextualActionButtonOnClick",
+                    "pw": {
+                        "displayName": "contextualActionButtonOnClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab3268141594de7b1fe70fc0b5f8ac9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f2afe0c252c747c992721407e24a96c6",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyIndex": 6,
+                    "propertyKey": "FooterVisibility",
+                    "pw": {
+                        "displayName": "FooterVisibility",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab3268141594de7b1fe70fc0b5f8ac9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "cdc714991e4d468f81c2848850ff77dc",
+                    "paramList": [],
+                    "propertyIndex": 7,
+                    "propertyKey": "navAmend",
+                    "pw": {
+                        "displayName": "navAmend",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aab3268141594de7b1fe70fc0b5f8ac9",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n   \"Download\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"LCSummary\",\n    \"Verb\": \"generate\",\n    \"Criteria\": {\n      \"srmsReqOrderID\": \"\"\n    }\n  },\n  \"SwiftAndAdvices\": {\n    \"Service\": \"TradeFinance\",\n    \"Object\": \"SwiftsAndAdvices\",\n    \"Verb\": \"fetchSwiftsAdvices\",\n    \"Criteria\": {\n      \"orderId\": \"\",\n      \"product\": \"LETTEROFCREDIT\"\n    }\n  }\n}",
+                    "group": "General",
+                    "kuid": "bde832355041437ca02a521b17b17eb6",
+                    "originalPropertyKey": "serviceParameter",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameter",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameter",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "aab3268141594de7b1fe70fc0b5f8ac9",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"flxCreditDetails\": {\n    \"lblReferenceNumber\": {\n      \"BP1\": \"${i18n{i18n.ChequeManagement.ReferenceNumber}}\",\n      \"default\": \"${i18n{i18n.ChequeManagement.ReferenceNumber}}\"\n    },\n    \"lblCreditAmount\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.CreditAmount}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.CreditAmount}}\"\n    },\n    \"lblTolerencePercentage\": {\n      \"BP1\": \"${i18n{i18n.ImportLC.TolerencePercentage}}\",\n      \"default\": \"${i18n{i18n.ImportLC.TolerencePercentage}}\"\n    },\n    \"lblMaximumCreditAmount\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.MaxCreditAmount}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.MaxCreditAmount}}\"\n    },\n    \"lblAdditionalPaymentAmount\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.AdditionalPaymentAmount}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.AdditionalPaymentAmount}}\"\n    },\n    \"lblPaymentTerms\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.PaymentTerms}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.PaymentTerms}}\"\n    },\n    \"lblAvailableWith\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.AvailableWith}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.AvailableWith}}\"\n    },\n    \"lblIssueDate\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.IssueDate}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.IssueDate}}\"\n    },\n    \"lblExpiryDate\": {\n      \"BP1\": \"${i18n{i18n.Wealth.expiryDate}}\",\n      \"default\": \"${i18n{i18n.Wealth.expiryDate}}\"\n    },\n    \"lblChargesAccount\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ChargesAccount}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ChargesAccount}}\"\n    },\n    \"lblMarginAccount\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.MarginAccount}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.MarginAccount}}\"\n    },\n    \"lblCommissionAccount\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.CommissionAccount}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.CommissionAccount}}\"\n    },\n    \"lblMessageToBank\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.MessageToBank}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.MessageToBank}}\"\n    },    \t\n\t\"tbxReferenceNumber\": \"${Collection.Object.lcReferenceNo}\",\n    \"tbxCurrencySymbol\": \"${Collection.Object.lcCurrency}\",\n    \"tbxCreditAmount\": \"${Collection.Object.lcAmount}\",\n    \"tbxTolerencePercentage\": \"${Collection.Object.tolerancePercentage}\",\n    \"tbxMaximumCreditAmount\": \"${Collection.Object.maximumCreditAmount}\",\t\n    \"tbxAdditionalPaymentAmount\": \"${Collection.Object.additionalAmountPayable}\",\n    \"tbxPaymentTerms\": \"${Collection.Object.paymentTerms}\",\n    \"tbxAvailableWith1\": \"${Collection.Object.availableWith1}\",\n    \"tbxAvailableWith2\": \"${Collection.Object.availableWith2}\",\n    \"tbxAvailableWith3\": \"${Collection.Object.availableWith3}\",\n    \"tbxAvailableWith4\": \"${Collection.Object.availableWith4}\",\n    \"tbxIssueDate\": \"${Collection.Object.issueDate}\",\n    \"tbxExpiryDate\": \"${Collection.Object.expiryDate}\",\n    \"tbxChargesAccount\": \"${Collection.Object.chargesAccount}\",\n    \"tbxMarginAccount\": \"${Collection.Object.marginAccount}\",\n\t\"tbxCommissionAccount\": \"${Collection.Object.commisionAccount}\",\n    \"tbxMessageToBank\": \"${Collection.Object.messageToBank}\"\n  },\n   \"flxBeneficiaryDetails\": {\n    \"lblBeneficiaryName\": {\n      \"BP1\": \"${i18n{kony.i18n.common.beneficiary}}\",\n      \"default\": \"${i18n{kony.i18n.common.beneficiary}}\"\n    },\n    \"lblBeneficiaryAddress\": {\n      \"BP1\": \"${i18n{kony.i18n.verifyDetails.beneficiaryAddressOptional}}\",\n      \"default\": \"${i18n{kony.i18n.verifyDetails.beneficiaryAddressOptional}}\"\n    },\n    \"lblBeneficiaryBank\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.BeneficiaryBank}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.BeneficiaryBank}}\"\n    },\n    \"lblBeneficiaryBankAddress\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.BeneficiaryBankAddress}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.BeneficiaryBankAddress}}\"\n    },\n\t\n\t\"tbxBeneficiaryName\": \"${Collection.Object.beneficiaryName}\",\n    \"tbxBeneficiaryAddress\": \"${Collection.Object.beneficiaryAddressLine1}\",\n    \"tbxBeneficiaryBank\": \"${Collection.Object.beneficiaryBank}\",\n    \"tbxBeneficiaryBankAddress\": \"${Collection.Object.beneficiaryBankAdressLine1}\"\n  },\n  \"flxShipmentDetails\": {\n    \"lblPlaceOfCharge\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ChargeTakingPlace}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ChargeTakingPlace}}\"\n    },\n    \"lblPortLoading\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.PortOfLoading}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.PortOfLoading}}\"\n    },\n    \"lblPortDisCharge\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.PortOfDischarge}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.PortOfDischarge}}\"\n    },\n    \"lblFinalDeliveryPlace\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.PlaceOfFinalDelivery}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.PlaceOfFinalDelivery}}\"\n    },\n    \"lblLatestShipmentDate\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.LatestShipmentDate}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.LatestShipmentDate}}\"\n    },\n    \"lblTranshipment\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.Transhipment}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.Transhipment}}\"\n    },\n    \"lblPartialShipment\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.PartialShipment}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.PartialShipment}}\"\n    },\n    \"lblIncoTerms\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.IncoTerms}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.IncoTerms}}\"\n    },\n    \"lblShipmentMode\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ModeOfShipment}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ModeOfShipment}}\"\n    },   \n    \"tbxPlaceOfCharge\": \"${Collection.Object.placeOfTakingIncharge}\",\n    \"tbxPortLoading\": \"${Collection.Object.portOfLoading}\",\n    \"tbxPortCharge\": \"${Collection.Object.portOfDischarge}\",\n    \"tbxFinalDeliveryPlace\": \"${Collection.Object.placeOfFinalDelivery}\",\n    \"tbxLatestShipmentDate\": \"${Collection.Object.latestShippingDate}\",\n\t\"tbxTranshipment\": \"${Collection.Object.transshipment}\",\n\t\"tbxPartialShipment\": \"${Collection.Object.partialShipments}\",\n\t\"tbxIncoTerms\": \"${Collection.Object.incoTerms}\",\n\t\"tbxShipmentMode\": \"${Collection.Object.modeOfShipment}\"\n  },\n  \"flxDocuments\": {\n    \"lblDescriptionGoods\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.DescriptionOfGoods}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.DescriptionOfGoods}}\"\n    },\n    \"lblDocumentsRequired\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.DocumentsRequired}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.DocumentsRequired}}\"\n    },\n    \"lblAdditionalCondition\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.AdditionalConditionsCode}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.AdditionalConditionsCode}}\"\n    },\n    \"lblOtherCondition\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.OtherAdditionalConditions}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.OtherAdditionalConditions}}\"\n    },\n    \"lblCharges\": {\n      \"BP1\": \"${i18n{i18n.accounts.charges}}\",\n      \"default\": \"${i18n{i18n.accounts.charges}}\"\n    },\n    \"lblConfirmationInstruction\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ConfirmationInstructions}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ConfirmationInstructions}}\"\n    },\n    \"lblTransferable\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.Transferable}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.Transferable}}\"\n    },\n    \"lblStandByLC\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.StandByLC}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.StandByLC}}\"\n    },\n    \"lblUploadFiles\": {\n      \"BP1\": \"${i18n{i18n.ImportLC.UploadedFiles}}\",\n      \"default\": \"${i18n{i18n.ImportLC.UploadedFiles}}\"\n    },   \n    \"tbxDescription\": \"${Collection.Object.descriptionOfGoods}\",\n    \"tbxDocumentsRequired\": \"${Collection.Object.documentsRequired}\",\n    \"tbxAdditionalCondition\": \"${Collection.Object.additionalConditionsCode}\",\n    \"tbxOtherCondition\": \"${Collection.Object.otherAdditionalConditions}\",\n    \"tbxCharges\": \"${Collection.Object.documentCharges}\",\n\t\"tbxConfirmationInstruction\": \"${Collection.Object.confirmationInstruction}\",\n\t\"tbxTransferable\": \"${Collection.Object.transferable}\",\n\t\"tbxStandByLC\": \"${Collection.Object.standByLC}\",\n\t\"tbxUploadFiles1\": \"${Collection.Object.fileToUpload}\",\n\t\"tbxUploadFiles2\": \"${Collection.Object.fileToUpload}\",\n    \"tbxUploadFiles3\": \"${Collection.Object.fileToUpload}\",\n    \"docNames\" : \"${Collection.objName.docNames}\",\n    \"docID\" : \"${Collection.objName.docID}\"\n  },\n  \"headerData\": {\n    \"lblImportLCHeader\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.ImportLCHeading}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.ImportLCHeading}}\"\n    },\n    \"lblImportLC\": {\n      \"BP1\": \"${i18n{i18n.ImportLC.ImportLCDetails}}\",\n      \"default\": \"${i18n{i18n.ImportLC.ImportLCDetails}}\"\n    }   \n  },\n  \"pageText\": {\n  \"btnBack\": {\n      \"BP1\": \"${i18n{i18n.CardManagement.Back}}\",\n      \"default\": \"${i18n{i18n.CardManagement.Back}}\"\n    },\n\t\"creditDetails\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.CreditDetails}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.CreditDetails}}\"\n    },\n\t\"beneficiaryDetails\": {\n      \"BP1\": \"${i18n{kony.mb.TranfersEurope.BeneficiaryDetails}}\",\n      \"default\": \"${i18n{kony.mb.TranfersEurope.BeneficiaryDetails}}\"\n    },\n\t\"shipmentDetails\": {\n      \"BP1\": \"${i18n{i18n.ImportLC.ShipmentDetails}}\",\n      \"default\": \"${i18n{i18n.ImportLC.ShipmentDetails}}\"\n    },\n\t\"documentTerms\": {\n      \"BP1\": \"${i18n{i18n.TradeFinance.DocumentTerms}}\",\n      \"default\": \"${i18n{i18n.TradeFinance.DocumentTerms}}\"\n    }\t\n  }\n}\n",
+                    "group": "General",
+                    "kuid": "j45273a8dd43422a93a64c18e66b2873",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "aab3268141594de7b1fe70fc0b5f8ac9",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "cc98dee8ca7f4d8781e4795ebd077890",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "aab3268141594de7b1fe70fc0b5f8ac9",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"BP1\": \"640\",\n  \"BP2\": \"1024\",\n  \"BP3\": \"1366\",\n  \"BP4\": \"1380\"\n}",
+                    "group": "General",
+                    "kuid": "aba5cdc49ebc4318be6025058db4316d",
+                    "originalPropertyKey": "breakpoints",
+                    "propertyIndex": 4,
+                    "propertyKey": "breakpoints",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Breakpoints",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "aab3268141594de7b1fe70fc0b5f8ac9",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.ImportLC",
+    "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+    "AS_Form_gba1754866d84d9ab4ac5d1125cc648c": {
+        "id": "AS_Form_gba1754866d84d9ab4ac5d1125cc648c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmFeedbackEntry",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cffc668cd8294cdeae62b8f01f5e6484"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_gdb554c5bedb43f4bfffc9663db86924",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\nvar authParams = {\n \"UserName\": \"9791697578SB\",\n  \"Password\": \"Kony@1234\",\n  \"loginOptions\": {\n    \"isOfflineEnabled\": false\n  }\n};\nauthClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\nauthClient.login(authParams,successCallback,errorCallback);\nfunction successCallback(resSuccess){\n  kony.application.dismissLoadingScreen();\n  kony.print(resSuccess);\n     var feedbackModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"FeedbackUIModule\");\n          feedbackModule.presentationController.showFeedBack();\n}\nfunction errorCallback(resError){\n  kony.application.dismissLoadingScreen();\n  kony.print(resError);\n  alert(\"login is not working...\")\n}",
+            "parentId": null
+        }]
+    }
+}

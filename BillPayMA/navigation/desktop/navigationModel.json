@@ -1,0 +1,238 @@
+{
+  "Application": {},
+  "Forms": {
+    "frmPayABill": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleBillPayNavigation",
+        "targetForms": [
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBulkPayees"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBillPaymentDue"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBillPayScheduled"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBillPayHistory"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmManagePayees"
+          }
+        ]
+      }
+    },
+    "frmVerifyPayee": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "appName": "BillPayMA",
+        "friendlyName": "frmPayeeDetails"
+      }
+    },
+    "frmMakeOneTimePayee": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleBillPayNavigation",
+        "targetForms": [
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBulkPayees"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBillPaymentDue"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBillPayScheduled"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBillPayHistory"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmManagePayees"
+          }
+        ]
+      }
+    },
+    "frmMakeOneTimePayment": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "appName": "BillPayMA",
+        "friendlyName": "frmMakeOneTimePayee"
+      }
+    },
+    "frmPaymentActivity": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleBillPayNavigation",
+        "targetForms": [
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmManagePayees"
+          }
+        ]
+      }
+    },
+    "frmManagePayees": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleBillPayNavigation",
+        "targetForms": [
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmAddPayee1"
+          }
+        ]
+      }
+    },
+    "frmPayBillConfirm": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleBillPayNavigation",
+        "targetForms": [
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmPayABill"
+          }
+        ]
+      }
+    },
+    "frmOneTimePaymentConfirm": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleBillPayNavigation",
+        "targetForms": [
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmMakeOneTimePayment"
+          }
+        ]
+      }
+    }
+  },
+  "UIModules": {
+    "BillPaymentUIModule": {
+      "destinationConfig": {
+        "callback": "handleBillPayNavigation",
+        "targetForms": [
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBillPayActivationNotEligible"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBillPayActivation"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBillPayActivationAcknowledgement"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBulkPayees"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBulkBillPayConfirm"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBulkBillPayAcknowledgement"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBillPaymentDue"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmPaymentDueConfirm"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmPaymentDueAcknowledgement"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBillPayScheduled"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmBillPayHistory"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmManagePayees"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmPayABill"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmPayBillConfirm"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmPayBillAcknowledgement"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmAddPayee1"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmPayeeDetails"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmVerifyPayee"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmPayeeAcknowledgement"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmMakeOneTimePayee"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmMakeOneTimePayment"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmOneTimePaymentConfirm"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmOneTimePaymentAcknowledgement"
+          },
+          {
+            "appName": "BillPayMA",
+            "friendlyName": "frmPaymentActivity"
+          },
+          {
+            "appName": "CommonsMA",
+            "friendlyName": "frmPrintTransfer"
+          }
+        ]
+      }
+    },
+    "LoanPayUIModule": {
+      "destinationConfig": {
+        "appName": "BillPayMA",
+        "friendlyName": "frmPayDueAmount"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_af08ad13aadf45fe88e03af544bdda7a": {
+        "id": "AS_FlexContainer_af08ad13aadf45fe88e03af544bdda7a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmForgotEnterCVV",
+            "type": "forms",
+            "platform": "",
+            "KUID": "eb884581c9154390af4af6572938d7c4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d9918779b5ea4c989e4d70ec7975bcc3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var authMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthUIModule\"); \nauthMod.presentationController.commonFunctionForNavigation(\"frmForgot\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

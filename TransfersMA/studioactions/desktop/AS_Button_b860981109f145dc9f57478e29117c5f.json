@@ -1,0 +1,22 @@
+{
+    "AS_Button_b860981109f145dc9f57478e29117c5f": {
+        "id": "AS_Button_b860981109f145dc9f57478e29117c5f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": null,
+            "KUID": "cc993fdf9f0f4cf38a011f6b6b20498a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a890bea7088d42f7af3184aa4e619261",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " var self = this;\n        var config = applicationManager.getConfigurationManager();\n        config.configurations.setItem('DEPLOYMENTGEOGRAPHY', 'US');\n        config.isFastTransferEnabled = \"true\";\n        config.fastTransfersFlowEnabled = \"true\";\n        applicationManager.getModulesPresentationController(\"TransferFastUIModule\").showTransferScreen();",
+            "parentId": null
+        }]
+    }
+}

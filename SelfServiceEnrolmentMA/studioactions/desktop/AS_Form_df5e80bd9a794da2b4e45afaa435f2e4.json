@@ -1,0 +1,23 @@
+{
+    "AS_Form_df5e80bd9a794da2b4e45afaa435f2e4": {
+        "id": "AS_Form_df5e80bd9a794da2b4e45afaa435f2e4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "j0329c6c64654440bf366abc8de81b74"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__hf41c8ea221d4eaa98b178c5ccab81b6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onPostShow();\napplicationManager.getTypeManager().initialiseAccountTypeManager();\napplicationManager.getTypeManager().initialiseTransactionTypeManager();\napplicationManager.getTypeManager().initialisePfmTypeManager();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

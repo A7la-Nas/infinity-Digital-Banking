@@ -1,0 +1,86 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s120a55346c946c2b4561ab8f86fe692",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "beneficiaryTypes": "PayAPerson",
+        "cccsNoRecords": "{i.kony.mb.OB.NoRecordsAvailable}",
+        "ccsCountryListService": "Utility",
+        "cfcsNoRecords": "{i.kony.mb.OB.NoRecordsAvailable}",
+        "ctsValues": "{\n  \"optionValues\": \"i18n.payments.P2pPhoneNumber,i18n.login.CantSignIn.EmailAddress,i18n.payments.nationalID\",\n  \"inputPoolKey\": \"contactType\",\n  \"selectedValue\": \"$.inputPool.contactType\"\n}",
+        "dvfConfig": "{\n  \"Recipients\": {\n    \"txtBoxPayeeName\": \"NAME\",\n    \"txtBoxNewAccountNumber\": \"ACCOUNT_NUMBER\",\n    \"txtBoxReenterAccountNumber\": \"ACCOUNT_NUMBER\",\n\t\"txtRequiredBICSwift\":\"ID_ALPHANUMERIC\",\n\t\"txtRequiredClearingCode1\":\"ID_ALPHANUMERIC\",\n\t\"txtRequiredClearingCode2\":\"ID_ALPHANUMERIC\",\n\t\"txtSwiftBICSearchValue1\":\"NAME\",\n\t\"txtSwiftBICSearchValue2\":\"NAME\",\n\t\"txtSwiftBICSearchValue3\":\"NAME\",\n\t\"txtSwiftBICSearchValue4\":\"NAME\",\n    \"txtEmailAddress\":\"EMAIL\",\n    \"txtBoxNationalID\":\"NUMBER\",\n    \"txtNickName\":\"ID_ALPHANUMERIC\"\n  }\n}",
+        "easSubHeader": "{i.i18n.unifiedBeneficiary.payeeEmailAddressSubHeader2}",
+        "maxFillMapping": "{\n  \"Recipients\": {\n    \"txtBoxPayeeName\": \"20\",\n    \"txtBoxNewAccountNumber\": \"40\",\n    \"txtBoxReenterAccountNumber\": \"40\",\n    \"txtRequiredBICSwift\":\"40\",\n    \"txtRequiredClearingCode1\":\"40\",\n    \"txtRequiredClearingCode2\":\"40\",\n    \"txtSwiftBICSearchValue1\":\"30\",\n\t\"txtSwiftBICSearchValue2\":\"30\",\n\t\"txtSwiftBICSearchValue3\":\"30\",\n\t\"txtSwiftBICSearchValue4\":\"30\",\n    \"txtEmailAddress\":\"64\",\n    \"lblMobileNumber\":\"9\",\n    \"txtBoxNationalID\":\"20\",\n    \"txtNickName\":\"35\"\n  }\n}",
+        "minFillMapping": "{\n  \"Recipients\": {\n    \"txtBoxPayeeName\": \"1\",\n    \"txtBoxNewAccountNumber\": \"3\",\n    \"txtBoxReenterAccountNumber\": \"3\",\n    \"txtSwiftBICSearchValue1\":\"0\",\n\t\"txtSwiftBICSearchValue2\":\"0\",\n\t\"txtSwiftBICSearchValue3\":\"0\",\n\t\"txtSwiftBICSearchValue4\":\"0\",\n    \"txtEmailAddress\":\"6\",\n    \"lblMobileNumber\":\"9\",\n    \"txtBoxNationalID\":\"12\",\n    \"txtNickName\":\"3\"\n  }\n}",
+        "pynsSubHeader": "{i.i18n.unified.EnterPayeeName}",
+        "rcsTextbox1": "{\n  \"inputPoolKey\": \"bic\",\n  \"value\": \"{$.inputPool.bic}\",\n  \"placeHolder\": \"{i.i18n.UnifiedAddBeneficiary.SwiftCode}\",\n  \"inputMode\": \"ANY\",\n  \"defaultBankName\":\"Temenos\"\n}",
+        "vfsCriteria": "{\n  \"name\": \"{$.inputPool.payeeName}\",\n  \"nickName\": \"{$.inputPool.payeeNickname}\",\n  \"primaryContactForSending\": \"{$.inputPool.primaryContact}\",\n  \"phone\": \"{$.inputPool.primaryValue}\",\n  \"email\": \"{$.inputPool.emailAddress}\",\n  \"cif\": \"{$.inputPool.cifId}\"\n}",
+        "vfsField11Lbl": "{i.i18n.unifiedBeneficiary.nationalID}:",
+        "vfsField11Value": "{\n  \"inputPoolKey\": \"nationalID\",\n  \"value\": \"{$.inputPool.nationalID}\",\n  \"fieldType\": \"Label\",\n  \"optional\": false,\n  \"readOnly\": {\n    \"AddPayeeFlow\": false,\n    \"SavePayeeFlow\": true\n  }\n}",
+        "vfsField1Address": "",
+        "vfsField2Address": "",
+        "vfsField2Lbl": "",
+        "vfsField3Address": "",
+        "vfsField3Lbl": "",
+        "vfsField4Address": "",
+        "vfsField4Lbl": "",
+        "vfsField5Address": "",
+        "vfsField5Lbl": "",
+        "vfsField6Address": "",
+        "vfsField6Lbl": "",
+        "vfsField7Lbl": "{i.i18n.UnifiedTransfer.NickName}",
+        "vfsField8Value": "{\n  \"inputPoolKey\": \"phoneNumber\",\n  \"value\": \"{$.inputPool.formattedPhoneNumber}\",\n  \"fieldType\": \"Label\",\n  \"optional\": false,\n  \"readOnly\": {\n    \"AddPayeeFlow\": false,\n    \"SavePayeeFlow\": true\n  }\n}",
+        "vfsField9Value": "{\n  \"inputPoolKey\": \"emailAddress\",\n  \"value\": \"{$.inputPool.emailAddress}\",\n  \"fieldType\": \"Label\",\n  \"optional\": false,\n  \"readOnly\": {\n    \"AddPayeeFlow\": false,\n    \"SavePayeeFlow\": true\n  }\n}",
+        "vfsObject": "Payee_P2P",
+        "vfsObjectService": "DigitalTransfer",
+        "vfsOperation": "createP2PPayee",
+        "vfsPayeeAddLbl": "{}"
+    },
+    "id": "AddNewAccount",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e454c937ee5a49df9f397590dd994bac",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxContents",
+    "pf": "frmP2PAddAccountNew",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "a740e5e0670743d48ddc17a9ea7f426c",
+    "wType": "UserWidgetInstance"
+}

@@ -1,0 +1,27 @@
+{
+    "AS_TextField_ba5381fb58bc4e69a7e5366199a2aecb": {
+        "id": "AS_TextField_ba5381fb58bc4e69a7e5366199a2aecb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j0329c6c64654440bf366abc8de81b74"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f1578a9cefae4bc9b091174b35ea4318",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.hideUserNames();\nthis.setNormalSkin(this.view.main.flxUserName);\n this.view.main.lblUsernameCapsLocIndicator.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

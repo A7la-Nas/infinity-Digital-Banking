@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="generateActivationQRCode" passwordencrypted="false" security="authorized_app" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.temenos.preprocessor.generateActivationQRCodePreProcessor"/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value="function Uniken_GenerateQRField_PostProcessor(){&#10;  var qrCodeFields = result.getParamValueByName(&quot;qrCodeFields&quot;);&#10;  var attribute = response.getAttribute(&quot;qrCodeFields&quot;);&#10;  var userId = (/(\d+)\./).exec(qrCodeFields);&#10;  var value = (/\s+(.+)\s+\(/).exec(qrCodeFields);&#10;  var key = (/\((.+)\)/).exec(qrCodeFields);&#10;  var final_object =  {&#10;    &quot;userId&quot;: userId &amp;&amp; userId[1],&#10;    &quot;value&quot;: value &amp;&amp; value[1],&#10;    &quot;key&quot;: key &amp;&amp; key[1]&#10;  };&#10;  //var json_object = JSON.parse(qrCodeFields);&#10;  //var json_String = JSON.stringify(qrCodeFields);&#10;  logger.debug(&quot;qrcodeFieldsValue : &quot;+userId);&#10;  result.addParam(&quot;qrcodeFieldsValue&quot;,qrCodeFields );&#10;}&#10;&#10;Uniken_GenerateQRField_PostProcessor();"/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://__$SCA_SCIM_HOST__:9080/rest/generateActivationQRCode.htm"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="urlprovider" value="com.temenos.sca.util.ServiceURLProvider"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjVlOTczNjM4LTFlZTAtNDUyMy1hMmQ2LTJjMmUwYTc4ZGMxOCJ9.eyJhdWQiOlsicmVsaWQtdmVyaWZ5LXNlcnZlciIsImNpYmEtc2VydmVyIiwiZ20tYXBpLXNlcnZlciIsInVzZXItYXBpLXNlcnZlciIsIk9JREMiXSwic2NvcGUiOlsiYWxsIl0sImV4cCI6MTY2OTIzNjcyMiwianRpIjoiNzVkZmQ2ZDUtZGMzMC00MmQ2LTkyZDQtMjhjZjMxYmZiYzQ5IiwiY2xpZW50X2lkIjoiWVRReFpXTmhZVGt0TlRFMVlTMDBPVFk1TFRsbFkyRXRZVGsxTVRWaFpqazJPV1JrIn0.orjLEVYTM_PREY0_o4vPRFnnxie_6lr5M3JpqVMeDISlDhiWkgoQyvsga_xtXafrQRvuFj2pw2Zs9F8qvLmUDSkiQTOc5mIDmlPRouxOuJMSMfF6J80M1pe8q9XRpSEiMQOV4_pOHkU-WXN_3vd7RxLXt5TZgKqNamaSEu9Z4NLXSCYNxvPf9t4wR9NpUgpMgmd1qtA8jP7dXCSXRSJvnHp323OOI--DD1q4XbJC-rOfBx5vaB87D1KrTY3hTTkm9FR7cAqHTTwF9MJ8g7R9XryEJKmXdyCg8bw1Rnqh12SmvWD6JrQeYeBZkIic790TOgrXnLHlfGb3Bf1woCV3NA" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="v3" description="" encode="false" format="None" formatvalue="" name="apiversion" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="v3" value="v3" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Content-Type" order="" paramOrder="0" parentOrder="0" sms-name="" src="constant" sourcevalue="application/json" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="userName" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="0276638277" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="requesterId" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="xyz1234" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="generationType" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="fields" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10;    &quot;userId&quot;: &quot;$userName&quot;,&#10;    &quot;requesterId&quot;: &quot;$requesterId&quot;,&#10;    &quot;generationType&quot;: &quot;$generationType&quot;&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;    &quot;userId&quot;: &quot;$userName&quot;,&#10;    &quot;requesterId&quot;: &quot;$requesterId&quot;,&#10;    &quot;generationType&quot;: &quot;$generationType&quot;&#10;}" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="error_message" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="$.error_message" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="response_code" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="$.response_code" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="error_code" order="" paramOrder="3" parentOrder="0" passnull="false" sms-name="" src="$.error_code" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="success_code" order="" paramOrder="4" parentOrder="0" passnull="false" sms-name="" src="$.success_code" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="success_message" order="" paramOrder="5" parentOrder="0" passnull="false" sms-name="" src="$.success_message" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="collection" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="qrCodeFields" order="" paramOrder="6" parentOrder="0" passnull="false" sms-name="" src="$.qrCodeFields" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book" rel="stylesheet"
+        type="text/css" />
+    <style>
+        @font-face {
+            font-family: 'CircularStd-Book';
+            src: url('CircularStd-Book.ttf') format('truetype');
+        }
+    </style>
+    <link rel="stylesheet" href="../../../resources/fonts/Desktop_web/CircularStd-Book.ttf">
+</head>
+
+<body>
+    <script src="https://github.com/chartjs/Chart.js/releases/download/v2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://github.com/chartjs/Chart.js/releases/download/v2.9.3/Chart.min.css">
+    <div class="bhsGraphContainer" style="width: 120px; height: 120px;">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+
+        var chartFill = 75;
+        var chartRemainder = 100 - chartFill;
+
+
+        Chart.pluginService.register({
+            afterUpdate: function (chart) {
+                if (chart.config.options.elements.arc.roundedCornersFor !== undefined) {
+                    var arc = chart.getDatasetMeta(0).data[
+                        chart.config.options.elements.arc.roundedCornersFor
+                    ];
+                    arc.round = {
+                        x: (chart.chartArea.left + chart.chartArea.right) / 2,
+                        y: (chart.chartArea.top + chart.chartArea.bottom) / 2,
+                        radius: (chart.outerRadius + chart.innerRadius) / 2,
+                        thickness: (chart.outerRadius - chart.innerRadius) / 2 - 1,
+                        backgroundColor: arc._model.backgroundColor
+                    };
+                }
+            },
+
+            afterDraw: function (chart) {
+                if (chart.config.options.elements.arc.roundedCornersFor !== undefined) {
+                    var ctx = chart.chart.ctx;
+                    var arc = chart.getDatasetMeta(0).data[
+                        chart.config.options.elements.arc.roundedCornersFor
+                    ];
+                    var startAngle = Math.PI / 2 - arc._view.startAngle;
+                    var endAngle = Math.PI / 2 - arc._view.endAngle;
+
+                    ctx.save();
+                    ctx.translate(arc.round.x, arc.round.y);
+                    ctx.fillStyle = arc.round.backgroundColor;
+                    ctx.beginPath();
+                    ctx.arc(
+                        arc.round.radius * Math.sin(startAngle),
+                        arc.round.radius * Math.cos(startAngle),
+                        arc.round.thickness,
+                        0,
+                        2 * Math.PI
+                    );
+                    ctx.arc(
+                        arc.round.radius * Math.sin(endAngle),
+                        arc.round.radius * Math.cos(endAngle),
+                        arc.round.thickness,
+                        0,
+                        2 * Math.PI
+                    );
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.restore();
+                }
+            }
+        });
+
+        Chart.pluginService.register({
+            afterUpdate: function (chart) {
+                if (chart.config.options.elements.center) {
+                    var helpers = Chart.helpers;
+                    var centerConfig = chart.config.options.elements.center;
+                    var globalConfig = Chart.defaults.global;
+                    var ctx = chart.chart.ctx;
+
+                    var fontStyle = helpers.getValueOrDefault(
+                        centerConfig.fontStyle,
+                        globalConfig.defaultFontStyle
+                    );
+                    var fontFamily = helpers.getValueOrDefault(
+                        centerConfig.fontFamily,
+                        globalConfig.defaultFontFamily
+                    );
+
+                    if (centerConfig.fontSize) var fontSize = centerConfig.fontSize;
+
+                    chart.center = {
+                        font: helpers.fontString(fontSize, fontStyle, fontFamily),
+                        fillStyle: helpers.getValueOrDefault(
+                            centerConfig.fontColor,
+                            globalConfig.defaultFontColor
+                        )
+                    };
+                }
+                if (chart.config.options.elements.bhsText) {
+                    var helpers = Chart.helpers;
+                    var centerConfig = chart.config.options.elements.bhsText;
+                    var globalConfig = Chart.defaults.global;
+                    var ctx = chart.chart.ctx;
+
+                    var fontStyle = helpers.getValueOrDefault(
+                        centerConfig.fontStyle,
+                        globalConfig.defaultFontStyle
+                    );
+                    var fontFamily = helpers.getValueOrDefault(
+                        centerConfig.fontFamily,
+                        globalConfig.defaultFontFamily
+                    );
+
+                    if (centerConfig.fontSize) var fontSize = centerConfig.fontSize;
+
+                    chart.bhsText = {
+                        font: helpers.fontString(fontSize, fontStyle, fontFamily),
+                        fillStyle: helpers.getValueOrDefault(
+                            centerConfig.fontColor,
+                            globalConfig.defaultFontColor
+                        )
+                    };
+                }
+            },
+            afterDraw: function (chart) {
+                if (chart.center) {
+                    var centerConfig = chart.config.options.elements.center;
+                    var ctx = chart.chart.ctx;
+
+                    ctx.save();
+                    ctx.font = chart.center.font;
+                    ctx.fillStyle = chart.center.fillStyle;
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
+                    var centerX = (chart.chartArea.left + chart.chartArea.right) / 2;
+                    var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2)-10;
+                    ctx.fillText(centerConfig.text, centerX, centerY);
+                    ctx.restore();
+                }
+                if (chart.bhsText) {
+                    var centerConfig = chart.config.options.elements.bhsText;
+                    var ctx = chart.chart.ctx;
+
+                    ctx.save();
+                    ctx.font = chart.bhsText.font;
+                    ctx.fillStyle = chart.bhsText.fillStyle;
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
+                    var centerX = (chart.chartArea.left + chart.chartArea.right) / 2;
+                    var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2)+20;
+                    ctx.fillText(centerConfig.text, centerX, centerY);
+                    ctx.restore();
+                }
+            }
+        });
+
+        var config = {
+            type: "doughnut",
+            data: {
+                datasets: [
+                    {
+                        data: [chartFill, chartRemainder],
+                        backgroundColor: ["#008392", "rgba(220,226,233,0.6)"],
+                        hoverBackgroundColor: ["#008392", "rgba(220,226,233,0.6)"],
+                        borderWidth: [0, 0]
+                    }
+                ]
+            },
+            options: {
+                elements: {
+                    arc: {
+                        roundedCornersFor: 0
+                    },
+                    center: {
+                        maxText: "100",
+                        text: chartFill,
+                        fontColor: "#707070",
+                        fontFamily: "CircularStd-Book",
+                        fontStyle: "normal",
+                        fontSize: 40,
+                    },
+                    bhsText: {
+                        text: "Health Score",
+                        fontColor: "#707070",
+                        fontFamily: "CircularStd-Book",
+                        fontStyle: "normal",
+                        fontSize: 12,
+                    }
+                },
+                cutoutPercentage: 80,
+                rotation: Math.PI * 0.5,
+                legend: {
+                    display: false
+                },
+                tooltips: {
+                    enabled: false
+                },
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        };
+
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var myChart = new Chart(ctx, config);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="getAuthenticator" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.temenos.datamigration.getAuthenticatorPreProcessor"/>
+        <config-param api-version="" appid="" name="postprocessorname" value="com.temenos.datamigration.getAuthenticatorPostProcessor"/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://__$SCA_SCIM_URL__/Authenticator/$userId.$AuthTypeCode"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="GET"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="urlprovider" value="com.temenos.ciba.util.ServiceURLProvider"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="Byz32wAAAXxgwSzWpsZo+Dj1im1275jcOINCwWsd" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Content-Type" order="" paramOrder="0" parentOrder="0" sms-name="" src="constant" sourcevalue="application/scim+json" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Accept" order="" paramOrder="0" parentOrder="0" sms-name="" src="constant" sourcevalue="application/scim+json" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="userId" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="101052" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="AuthTypeCode" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="AT_EBHAPWD" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="userName" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <stub-param value="{&#10;    &quot;schemas&quot;: [&#10;        &quot;urn:hid:scim:api:idp:2.0:Authenticator&quot;,&#10;        &quot;urn:hid:scim:api:idp:2.0:Password&quot;&#10;    ],&#10;    &quot;id&quot;: &quot;15604.AT_EBHAPWD&quot;,&#10;    &quot;externalId&quot;: &quot;8371235674&quot;,&#10;    &quot;meta&quot;: {&#10;        &quot;resourceType&quot;: &quot;Authenticator&quot;,&#10;        &quot;created&quot;: &quot;2017-11-15T23:00:01Z&quot;,&#10;        &quot;location&quot;: &quot;https://auth-eu.api.hidglobal.com/scim/t43c6f7237308747447090/v2/Authenticator/15604.AT_EBHAPWD&quot;,&#10;        &quot;version&quot;: &quot;1&quot;&#10;    },&#10;    &quot;status&quot;: {&#10;        &quot;status&quot;: &quot;ENABLED&quot;,&#10;        &quot;active&quot;: true,&#10;        &quot;expiryDate&quot;: &quot;2022-07-01T22:59:59Z&quot;,&#10;        &quot;startDate&quot;: &quot;2017-11-15T23:00:01Z&quot;&#10;    },&#10;    &quot;owner&quot;: {&#10;        &quot;type&quot;: &quot;User&quot;,&#10;        &quot;display&quot;: &quot;8371235674&quot;,&#10;        &quot;value&quot;: &quot;15604&quot;,&#10;        &quot;$ref&quot;: &quot;https://auth-eu.api.hidglobal.com/scim/t43c6f7237308747447090/v2/Users/15604&quot;&#10;    },&#10;    &quot;statistics&quot;: {&#10;        &quot;consecutiveFailed&quot;: &quot;0&quot;,&#10;        &quot;consecutiveSuccess&quot;: &quot;0&quot;,&#10;        &quot;maximumNumberOfUsages&quot;: &quot;0&quot;,&#10;        &quot;totalFailed&quot;: &quot;0&quot;,&#10;        &quot;totalSuccess&quot;: &quot;0&quot;&#10;    },&#10;    &quot;policy&quot;: {&#10;        &quot;display&quot;: &quot;AT_EBHAPWD&quot;,&#10;        &quot;value&quot;: &quot;AT_EBHAPWD&quot;,&#10;        &quot;$ref&quot;: &quot;https://auth-eu.api.hidglobal.com/scim/t43c6f7237308747447090/v2/Policy/Authenticator/AT_EBHAPWD&quot;&#10;    },&#10;    &quot;urn:hid:scim:api:idp:2.0:Password&quot;: {&#10;        &quot;username&quot;: &quot;8371235674&quot;&#10;    }&#10;}"/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <record id="statusRecord" order="" paramOrder="1" parentOrder="0" src="status" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="status" order="" paramOrder="2" parentOrder="1" passnull="false" sms-name="" src="status" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="active" order="" paramOrder="3" parentOrder="1" passnull="false" sms-name="" src="active" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="expiryDate" order="" paramOrder="4" parentOrder="1" passnull="false" sms-name="" src="expiryDate" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="startDate" order="" paramOrder="5" parentOrder="1" passnull="false" sms-name="" src="startDate" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </record>
+    </service-output>
+</service>

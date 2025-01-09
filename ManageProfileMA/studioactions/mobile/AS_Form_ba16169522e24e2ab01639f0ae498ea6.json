@@ -1,0 +1,32 @@
+{
+    "AS_Form_ba16169522e24e2ab01639f0ae498ea6": {
+        "id": "AS_Form_ba16169522e24e2ab01639f0ae498ea6",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmProfileSecurityCode",
+            "type": "forms",
+            "platform": null,
+            "KUID": "bfa7c6c156b24178972a3e804b34dd97"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_preShow_a22e70ac71994bc1916e8252b71755ca",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showSecurityCode",
+            "display": "showSecurityCode",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true,
+            "source": "controller"
+        }, {
+            "id": "ADD_SNIPPET_ide_preShow_fc8190228f5d4ab6864f3174c2e19733",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.showSecurityCode();",
+            "callbackType": null
+        }]
+    }
+}

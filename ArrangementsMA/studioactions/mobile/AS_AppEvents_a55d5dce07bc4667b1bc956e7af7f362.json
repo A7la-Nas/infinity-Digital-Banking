@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_a55d5dce07bc4667b1bc956e7af7f362": {
+        "id": "AS_AppEvents_a55d5dce07bc4667b1bc956e7af7f362",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_e48fb5f1a211418bac2db0249a1f75b8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " var ApplicationManager = require('ApplicationManager');\n    applicationManager = ApplicationManager.getApplicationManager();\n    applicationManager.fetchAppProperties();\n    var config = applicationManager.getConfigurationManager();\n    config.setStartupLocaleAndDateFormat();\n  applicationManager.getDataforLogin();",
+            "parentId": null
+        }]
+    }
+}

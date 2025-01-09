@@ -1,0 +1,26 @@
+{
+    "AS_FlexContainer_c73fb08523a744edb59d1e4016937ca7": {
+        "id": "AS_FlexContainer_c73fb08523a744edb59d1e4016937ca7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segAccountsRowTemplateMobile",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b3231cedd0fa4966935344ab5986fa77"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_aa51b046c1914e539e00fde56f7b0801",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "event.stopPropagation();\nthis.imgPressed(context);",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="sessionCreateLogin" passwordencrypted="false" security="private" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://c121.threatmark.com:8053/v3/session/action-login-step/create-and-login"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="server.auth.mode" value="basic"/>
+        <config-param api-version="" appid="" name="userid" value="api_PYmW3P8"/>
+        <config-param api-version="" appid="" name="pwd" value="Qa5NjqU4AMA!"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Content-Type" order="" paramOrder="0" parentOrder="0" sms-name="" src="constant" sourcevalue="application/json" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="application_id" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="INFINITY" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="channel_id" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="internet_banking" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="tm_device_tag" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="tm_session_sid" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="app_user_id" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="manish1" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="hid_action_17" description="" encode="true" format="None" formatvalue="" name="app_action_id" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="hid_action_17" value="hid_action_17" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10;    &quot;app_action_id&quot;: &quot;hid-action_1246&quot;,&#10;    &quot;app_context&quot;: {&#10;        &quot;application_id&quot;: &quot;INFINITY&quot;,&#10;        &quot;channel_id&quot;: &quot;internet-banking&quot;,&#10;        &quot;service_id&quot;: &quot;INFINITY&quot;&#10;    },&#10;    &quot;app_user_id&quot;: &quot;rohit1&quot;,&#10;    &quot;caller_context&quot;: {&#10;        &quot;caller_id&quot;: &quot;coreB_node2_prod&quot;,&#10;        &quot;environment_id&quot;: &quot;prod&quot;&#10;    },&#10;    &quot;gdpr_data_consent&quot;: true,&#10;    &quot;login_step&quot;: {&#10;        &quot;app_user_alias&quot;: &quot;rohit1&quot;,&#10;        &quot;login_factor_index&quot;: 1,&#10;        &quot;security_item_id&quot;: &quot;6325745&quot;,&#10;        &quot;security_item_type&quot;: &quot;sms&quot;&#10;    },&#10;    &quot;login_step_result&quot;: &quot;step_accepted&quot;,&#10;    &quot;session_context&quot;: {&#10;        &quot;app_device_id&quot;: &quot;string&quot;,&#10;        &quot;app_session_id&quot;: &quot;5586&quot;,&#10;        &quot;app_session_sid&quot;: &quot;015239505454545286967788d1228d4873184881&quot;,&#10;        &quot;client_ip&quot;: &quot;116.74.21.72&quot;,&#10;        &quot;tm_device_tag&quot;: &quot;h41c0XT6IeiRPeU5gQQFE98g6DIA0Hga&quot;,&#10;        &quot;tm_session_sid&quot;: &quot;EXQ8at3eZ4A9HTvMKjitqPFgqr1mAtSE&quot;&#10;    }&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;    &quot;app_action_id&quot;: &quot;hid-action_1246&quot;,&#10;    &quot;app_context&quot;: {&#10;        &quot;application_id&quot;: &quot;INFINITY&quot;,&#10;        &quot;channel_id&quot;: &quot;internet-banking&quot;,&#10;        &quot;service_id&quot;: &quot;INFINITY&quot;&#10;    },&#10;    &quot;app_user_id&quot;: &quot;rohit1&quot;,&#10;    &quot;caller_context&quot;: {&#10;        &quot;caller_id&quot;: &quot;coreB_node2_prod&quot;,&#10;        &quot;environment_id&quot;: &quot;prod&quot;&#10;    },&#10;    &quot;gdpr_data_consent&quot;: true,&#10;    &quot;login_step&quot;: {&#10;        &quot;app_user_alias&quot;: &quot;rohit1&quot;,&#10;        &quot;login_factor_index&quot;: 1,&#10;        &quot;security_item_id&quot;: &quot;6325745&quot;,&#10;        &quot;security_item_type&quot;: &quot;sms&quot;&#10;    },&#10;    &quot;login_step_result&quot;: &quot;step_accepted&quot;,&#10;    &quot;session_context&quot;: {&#10;        &quot;app_device_id&quot;: &quot;string&quot;,&#10;        &quot;app_session_id&quot;: &quot;5586&quot;,&#10;        &quot;app_session_sid&quot;: &quot;015239505454545286967788d1228d4873184881&quot;,&#10;        &quot;client_ip&quot;: &quot;116.74.21.72&quot;,&#10;        &quot;tm_device_tag&quot;: &quot;h41c0XT6IeiRPeU5gQQFE98g6DIA0Hga&quot;,&#10;        &quot;tm_session_sid&quot;: &quot;EXQ8at3eZ4A9HTvMKjitqPFgqr1mAtSE&quot;&#10;    }&#10;}" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="error_code" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="$.error_code" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="message" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="$.message" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="tm_action_id" order="" paramOrder="3" parentOrder="0" passnull="false" sms-name="" src="$.tm_action_id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

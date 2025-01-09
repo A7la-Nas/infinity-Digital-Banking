@@ -1,0 +1,23 @@
+{
+    "AS_TextField_d95ee59d841c471cb206a8bf70db7295": {
+        "id": "AS_TextField_d95ee59d841c471cb206a8bf70db7295",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "j0329c6c64654440bf366abc8de81b74"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b4c4381b50e04e339057bbfad5af9115",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.enableLogin(this.view.main.tbxUserName.text.trim(),this.view.main.tbxPassword.text);\nthis.capsLockIndicatorForPassword();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

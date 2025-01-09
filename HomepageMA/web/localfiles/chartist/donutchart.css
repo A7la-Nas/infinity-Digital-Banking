@@ -1,0 +1,137 @@
+#doughnut-chart{
+  background-color: #ffffff;
+  position:relative;
+  height:90%;
+  width:90%;
+  font-family: 'Source Sans Pro', sans-serif;
+  	border-radius: 15px;
+}
+.ct-series-a .ct-slice-donut {
+  stroke: #3E75A6;
+  	border-radius: 15px;
+}
+.ct-series-b .ct-slice-donut {
+  stroke: #2C82BE;
+}
+.ct-series-c .ct-slice-donut {
+  stroke: #24BFEC;
+}
+.ct-series-d .ct-slice-donut {
+  stroke: #76DDFB;
+}
+.ct-series-e .ct-slice-donut {
+  stroke: #C7CCD5;
+}
+.ct-series-f .ct-slice-donut {
+  stroke: #3E75A6;
+}
+.ct-series-g .ct-slice-donut {
+  stroke: #2C82BE;
+}
+.ct-series-h .ct-slice-donut {
+  stroke:  #24BFEC;
+}
+
+.ct-label{
+  fill: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  	border-radius: 15px;
+}
+/*
+.ct-slice-donut:hover
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto; 
+  stroke-width: 50px !important;
+  border-radius: 50%;
+ -webkit-transform: translate3d(1%,0,0);
+          transform: translate3d(1%,0,0);
+		   border-radius: 0 100% 100% 0 / 50%;
+  background-color: inherit;
+  transform-origin: left;
+  animation: spin 3s linear infinite,
+             bg 6s step-end infinite;
+}
+ transition: all 0.5s ease;
+  z-index: 1;
+}
+.cover-fill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+          transform: translate3d(-50%,-50%,0);
+  z-index: 1;
+}
+*/
+.ct-slice-donut:hover{
+  stroke-width: 50px !important;
+  transition: all 0.5s ease;
+}
+
+.chartist-tooltip {
+    position: absolute;
+	width: auto;
+	height: 30px;
+	top: 100;
+    left: 0;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0.5;
+    background: rgba(0, 0, 0, 0.7);
+    transition: transform 0.2s ease-in-out;
+	color: #fff;
+	text-align: center;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	border-radius: 15px;
+	}
+.chartist-tooltip:not([hidden]) {
+        visibility: visible;
+        transform: none;
+        opacity: 1;
+    }
+
+    /* Tooltip arrow */
+    .chartist-tooltip::before {
+	content: attr(tooltip);
+	position: absolute;
+	opacity: 0;
+	transition: all 0.2s ease;
+          z-index: -1;
+         font-family: 'Source Sans Pro', sans-serif;
+		 font-size: 15px;
+		 font-style: bold;
+        transform: scaleY(0.7);
+        text-shadow: 0 0.25em 0.35em rgba(255, 255, 255, 0.9);	
+			border-radius: 15px;
+    }
+        .chartist-tooltip--left::before {
+            left: 0.75em;
+        }
+        .chartist-tooltip--right::before {
+            left: auto;
+            right: 0.75em;
+        }
+
+/* Adds a small point transition (line charts) when the point is active */
+.ct-point {
+    transition: all 0.2s ease-in-out;
+		border-radius: 15px;
+}
+
+/* Increased specificity intended to overwrite the default chartist style */
+    .ct-chart-line.ct-chart-line .ct-point--hover {
+        stroke-width: 1.50em;
+			border-radius: 15px;
+    }

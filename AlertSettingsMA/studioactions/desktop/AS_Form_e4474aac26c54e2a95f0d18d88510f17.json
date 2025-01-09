@@ -1,0 +1,22 @@
+{
+    "AS_Form_e4474aac26c54e2a95f0d18d88510f17": {
+        "id": "AS_Form_e4474aac26c54e2a95f0d18d88510f17",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "a0d36a6fc0d14ac2aade0d1ae82adbed"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_gdb4cf8c38c74c3ab2e02d0334f98bad",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\nvar authParams = {\n \"UserName\": \"9791697578SB\",\n  \"Password\": \"Kony@1234\",\n  \"loginOptions\": {\n    \"isOfflineEnabled\": false\n  }\n};\nauthClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\nauthClient.login(authParams,successCallback,errorCallback);\nfunction successCallback(resSuccess){\n  kony.application.dismissLoadingScreen();\n  kony.print(resSuccess);\n  var tokenParams = kony.sdk.getCurrentInstance().tokens.DbxUserLogin.provider_token.params.security_attributes;\nvar permissions = JSON.parse(tokenParams.permissions);\nvar features = JSON.parse(tokenParams.features);\nvar accounts = tokenParams.accounts;\napplicationManager.getConfigurationManager().setUserPermissions(permissions);\napplicationManager.getConfigurationManager().setFeatures(features);\n  var ntf = new kony.mvc.Navigation(\"frmAccountAlertsEdit\");\n  ntf.navigate();\n}\nfunction errorCallback(resError){\n  kony.application.dismissLoadingScreen();\n  kony.print(resError);\n  alert(\"login is not working...\")\n}",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,54 @@
+/*Type your css here*/
+body{
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#293276), to(#1e588b));}
+
+.bgContainer{
+  position:absolute;
+  left:0px;
+  top:0px;
+  height:100%;
+  width:100%;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#293276), to(#1e588b));
+}
+
+.spendingContainer{
+  position:absolute;
+  left:0px;
+  right:0px;
+  height:160px;
+  top:35px;
+  background-color:rgba(0,0,0,0);
+  
+}
+
+.ct-series-a .ct-bar {
+  /* Set the colour of this series line */
+  stroke: white;
+  /* Control the thikness of your lines */
+  stroke-width: 8px;
+  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  stroke-linecap:round;
+  
+}
+.ct-series-a .ct-point {
+  /* Colour of your points */
+  stroke: #05D5B4;
+  /* Size of your points */
+  stroke-width: 10px;
+  /* Make your points appear as squares */
+  stroke-linecap: round;
+  
+}
+
+
+.ct-label.ct-horizontal.ct-end{
+  color: white !important;
+  transform:rotate(-45deg) translate(-5px, 5px);
+  font-size:8px;
+}
+.ct-label{
+  color: white;
+  font-size:8px;
+}
+

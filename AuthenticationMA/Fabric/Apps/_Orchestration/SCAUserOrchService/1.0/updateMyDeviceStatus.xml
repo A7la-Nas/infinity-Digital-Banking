@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="To update the device status from SUSPENDED to ACTIVE (or) ACTIVE to SUSPENDED. Will be called from OLB/MB" endpoint="" groupType="" id="updateMyDeviceStatus" passwordencrypted="" security="private" type="CompositeConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.temenos.sca.onboarding.preprocessor.ScaDeviceManagementOrchPreProcessor"/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="exec_type" value="Sequential"/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="1.0" appid="ClientCredentials" name="service" value="fetchAccessToken"/>
+        <config-param api-version="1.0" appid="SCAScimApis" name="service" value="updateMyDeviceStatus"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false"/>
+    <service-output passthrough="false" isExtended="false"/>
+</service>

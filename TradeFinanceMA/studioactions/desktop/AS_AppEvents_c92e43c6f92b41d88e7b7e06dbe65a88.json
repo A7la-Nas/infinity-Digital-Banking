@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_c92e43c6f92b41d88e7b7e06dbe65a88": {
+        "id": "AS_AppEvents_c92e43c6f92b41d88e7b7e06dbe65a88",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_d20857edaa364f67818f9bc52dbd264b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true)\nkony.print(\"Testing JS Load\");\nvar isIOS13 = (/(iPad|iPhone);.*CPU.*OS 13_\\d/i).test(navigator.userAgent);\nif (isIOS13) {\nkony.application.setApplicationBehaviors({\ndisableForceRepaint: true\n});\n}\nrequire([\"TradeFinanceMA/frmExportLCDashboard\", \"TradeFinanceMA/frmExportLCDashboardController\"], function() {});\n//require([\"BBAccountsModule/frmBBAccountsLanding\", \"BBAccountsModule/frmBBAccountsLandingController\"], function (){});\n//var authModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthModule\");\n//var ApplicationManager = require('ApplicationManager');\nvar moduleName = 'ApplicationManager';\nrequire([moduleName], function(ApplicationManager) {\napplicationManager = ApplicationManager.getApplicationManager();\nvar config = applicationManager.getConfigurationManager();\nif (performance.navigation.type === 1) {\nconfig.setBrowserRefreshProperty(\"true\");\n}\nvar sm = applicationManager.getStorageManager();\nvar langObjFromStorage = sm.getStoredItem(\"langObj\");\nif (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\nconfig.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\nconfig.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n} else {\nconfig.configurations.setItem(\"LOCALE\", \"en_US\");\nconfig.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n}\nkony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function() {}, function() {});\ndocument.body.addEventListener('contextmenu', function(e) {\ne.preventDefault();\nalert(kony.i18n.getLocalizedString(\"i18n.general.rightclickdisabled\")); // do something with fooModule\n})\n});",
+            "parentId": null
+        }]
+    }
+}

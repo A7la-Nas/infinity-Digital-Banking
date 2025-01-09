@@ -1,0 +1,23 @@
+{
+    "AS_Button_d3deab736c2a44fc88ecc20e1f148139": {
+        "id": "AS_Button_d3deab736c2a44fc88ecc20e1f148139",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginHID",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d2290ff3858d48938cbd19960c045a3a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_j27ae31f58a44386a5a43101b83251e1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "const authModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthUIModule\");\nauthModule.presentationController.checkAppinit = true;\nauthModule.presentationController.navigateToMicroApp({ \n  appName: \"SelfServiceEnrolmentMA\", \n  friendlyName: \"EnrollHIDUIModule/frmEnrollActivateProfileHID\",\n  enrollActivate: this.view.btnEnroll.info\n});",
+            "callbackType": null
+        }]
+    }
+}

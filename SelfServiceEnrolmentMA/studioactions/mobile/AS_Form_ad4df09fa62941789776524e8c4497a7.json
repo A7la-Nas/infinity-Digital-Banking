@@ -1,0 +1,22 @@
+{
+    "AS_Form_ad4df09fa62941789776524e8c4497a7": {
+        "id": "AS_Form_ad4df09fa62941789776524e8c4497a7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollActivateProfileHID",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f51da21927b94192ad86f2a885bd73c1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onNavigate_dac224f25d4142979ea2be92ba1289d4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.customHeader.btnRight.info = eventobject;"
+        }]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s8b208c25b8d4da0aaa8517245da2b6e",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "alertMessageText": "{i.kony.mb.directDebits.alertCancel}",
+        "btnSwipableAction1": "{\"entitlement_keys\":[\"DIRECT_DEBIT_CANCEL\"],\"backgroundSkin\":\"ICSknFlxEE0005\",\"icon\":\"cancel.png\",\"text\":\"{i.kony.mb.nuo.Cancel}\",\"id\":\"delete\",\"txtSkin\":\"ICSknLblFFFFFF13PX\"}",
+        "btnSwipableAction2": "",
+        "combinedUserIcon": "",
+        "currencyCode": "{$.rootPath.transactionCurrency}",
+        "dateFormat": "m/d/Y",
+        "field1Label": "{$.rootPath.beneficiaryName}",
+        "field1Type": "Label",
+        "field2Label": "",
+        "field2Type": "",
+        "field3Label": "{\"accountNumber\":\"{$.rootPath.accountID}\",\"nickName\":\"{$.rootPath.fromNickName}\",\"name\":\"{$.rootPath.fromAccountName}\"}",
+        "field3Type": "AccountNumberWithNickname",
+        "field4Label": "{$.rootPath.lastPaymentDate}",
+        "getCriteria": "{\"firstRecordNumber\":0}",
+        "getCriteriaDel": "{\"directDebitId\":\"{$.rootPath.directDebitId}\"}",
+        "maxRecords": "{\"mapping\": \"lastRecordNumber\", \"lastRecordNumber\": 1000}",
+        "months": "",
+        "noLabelText": "{i.kony.mb.common.AlertNo}",
+        "noRecordsFoundSkin": "ICSknTLSSP42424215px",
+        "noRecordsText": "{i.kony.mb.transfers.noRecordFound}",
+        "noSearchResultsFoundText": " {i.kony.mb.transfers.noSearchResultFound}",
+        "objectName": "DirectDebits",
+        "objectNameDel": "DirectDebits",
+        "operationName": "getDirectDebits",
+        "operationNameDel": "cancelDirectDebit",
+        "paginatedRecords": "12",
+        "primaryFieldSkin": "sknlbl424242SSPSB18px",
+        "retailIcon": "",
+        "searchFields": "[\"beneficiaryName\",\"accountID\", \"lastPaymentDate\",\"mandateReference\", \"signingDate\"]",
+        "secondaryFieldSkin": "sknLbl727272S112",
+        "separatorSkin": "ICSknflxE3E3E3mb",
+        "serviceName": "Transfers",
+        "serviceNameDel": "Transfers",
+        "statusImage": "",
+        "yesLabelText": "{i.kony.mb.common.AlertYes}"
+    },
+    "id": "TransfersListMobileNative",
+    "info": null,
+    "iscustomlayout": false,
+    "issegmentchild": false,
+    "isvisible": true,
+    "kuid": "a31949672f8e4fdbacf860937050c918",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxTransfersList",
+    "pf": "frmTransferActivitiesDirectDebits",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "e5c10c6ee8be4b4086d8de788e749682",
+    "wType": "UserWidgetInstance"
+}

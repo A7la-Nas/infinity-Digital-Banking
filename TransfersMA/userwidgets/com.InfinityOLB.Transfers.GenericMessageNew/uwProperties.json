@@ -1,0 +1,84 @@
+{
+    "classname": "GenericMessageNew",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "cd4e253bd5d940dfa0e25db6f27db940",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "dd7f3a003782487e87b7f0d19c8b909e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e3eb8bd22a1e4fbe903b00973d2238bc",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "closepopup",
+                    "pw": {
+                        "displayName": "closepopup",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "dd7f3a003782487e87b7f0d19c8b909e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": " {\t\n\t\"genMsg\": \"{$.collectionObj.genericMessage}\",\n\t\"messageDetails\": \"{$.collectionObj.message}\",\t\n\t\"successMsg\": \"{$.collectionObj.genericSuccessMessage}\",\n   \t\"maxLength\":\"3\",\n   \t\"messageType\": \"{$.collectionObj.messageType}\",\n    \"lblSuccess\" : \"${i18n{i18n.transfers.lblTo}}\"\n}",
+                    "group": "General",
+                    "kuid": "de8dd2c492034b1f82df9e9ab79d8c99",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 1,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "DataMapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "dd7f3a003782487e87b7f0d19c8b909e",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Transfers",
+    "version": "1.0.0"
+}

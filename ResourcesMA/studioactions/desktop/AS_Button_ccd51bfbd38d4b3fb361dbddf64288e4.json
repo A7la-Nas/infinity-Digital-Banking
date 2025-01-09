@@ -1,0 +1,29 @@
+{
+    "AS_Button_ccd51bfbd38d4b3fb361dbddf64288e4": {
+        "id": "AS_Button_ccd51bfbd38d4b3fb361dbddf64288e4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "eventPayload"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segUserActions",
+            "type": "templates",
+            "platform": "",
+            "KUID": "ffe213cd13424260af6ac20db3c6d8ac"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c85ad421be66439fa30c28d7286869f3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.setFocusToLogout(eventobject, eventPayload, context);",
+            "parentId": null
+        }]
+    }
+}

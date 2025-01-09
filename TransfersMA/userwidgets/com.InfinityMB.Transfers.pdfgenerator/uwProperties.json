@@ -1,0 +1,278 @@
+{
+    "classname": "pdfgenerator",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a251d9e9be714c0eb3449c4a66cd6f9c",
+                    "paramList": [
+                        {
+                            "name": "formFlexName"
+                        }
+                    ],
+                    "propertyKey": "generatePdfUsingDom",
+                    "pw": {
+                        "displayName": "generatePdfUsingDom",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ee7b21dfcf4648ca8add9bed41d7b379",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e922b7fe419b4a5d8f4d15466e47eace",
+                    "paramList": [
+                        {
+                            "name": "htmlString"
+                        }
+                    ],
+                    "propertyKey": "generatePdfUsingHtmlString",
+                    "pw": {
+                        "displayName": "generatePdfUsingHtmlString",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ee7b21dfcf4648ca8add9bed41d7b379",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Page Margins",
+                "Optional "
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "test",
+                    "group": "General",
+                    "kuid": "d6d7feaf1e39486785fdbca10d934cbf",
+                    "originalPropertyKey": "fileName",
+                    "propertyIndex": 1,
+                    "propertyKey": "fileName",
+                    "pw": {
+                        "displayName": "PDF File Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ee7b21dfcf4648ca8add9bed41d7b379",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "pt",
+                    "group": "Page Margins",
+                    "kuid": "ecb2acc9dc2a4bc58fbebbce5085fed2",
+                    "originalPropertyKey": "unit",
+                    "propertyIndex": 1,
+                    "propertyKey": "unit",
+                    "pw": {
+                        "displayName": "unit",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "ee7b21dfcf4648ca8add9bed41d7b379",
+                    "type": "list selector",
+                    "value": [
+                        "pt",
+                        "mm",
+                        "cm",
+                        "m",
+                        "in",
+                        "px"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "portrait",
+                    "group": "General",
+                    "kuid": "b2134073c46d447887a950131e174cb5",
+                    "originalPropertyKey": "orientation",
+                    "propertyIndex": 2,
+                    "propertyKey": "orientation",
+                    "pw": {
+                        "displayName": "orientation",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "ee7b21dfcf4648ca8add9bed41d7b379",
+                    "type": "list selector",
+                    "value": [
+                        "portrait",
+                        "landscape"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 0,
+                    "group": "Page Margins",
+                    "kuid": "j89f44810c4f4c9bbb33c2f99a78c663",
+                    "originalPropertyKey": "leftprop",
+                    "propertyIndex": 2,
+                    "propertyKey": "leftprop",
+                    "pw": {
+                        "displayName": "left",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "ee7b21dfcf4648ca8add9bed41d7b379",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 0,
+                    "group": "Page Margins",
+                    "kuid": "be8456d547bd4495bdac436a38fa09a4",
+                    "originalPropertyKey": "topprop",
+                    "propertyIndex": 3,
+                    "propertyKey": "topprop",
+                    "pw": {
+                        "displayName": "top",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "ee7b21dfcf4648ca8add9bed41d7b379",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "a4",
+                    "group": "General",
+                    "kuid": "f5a974a1e3894434944124755ef99202",
+                    "originalPropertyKey": "format",
+                    "propertyIndex": 3,
+                    "propertyKey": "format",
+                    "pw": {
+                        "displayName": "format",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "ee7b21dfcf4648ca8add9bed41d7b379",
+                    "type": "list selector",
+                    "value": [
+                        "a0",
+                        "a1",
+                        "a2",
+                        "a3",
+                        "a4",
+                        "a5",
+                        "a6",
+                        "a7",
+                        "a8",
+                        "a9",
+                        "a10",
+                        "b0",
+                        "b1",
+                        "b2",
+                        "b3",
+                        "b4",
+                        "b5",
+                        "b6",
+                        "b7",
+                        "b8",
+                        "b9",
+                        "b10",
+                        "c0",
+                        "c1",
+                        "c2",
+                        "c3",
+                        "c4",
+                        "c5",
+                        "c6",
+                        "c7",
+                        "c8",
+                        "c9",
+                        "c10",
+                        "dl",
+                        "letter",
+                        "government-letter",
+                        "legal",
+                        "junior-legal",
+                        "ledger",
+                        "tabloid",
+                        "credit-card"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 400,
+                    "group": "Page Margins",
+                    "kuid": "f344ee34599a4c68950c6f4ac4af859c",
+                    "originalPropertyKey": "widthprop",
+                    "propertyIndex": 4,
+                    "propertyKey": "widthprop",
+                    "pw": {
+                        "displayName": "width",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "ee7b21dfcf4648ca8add9bed41d7b379",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": false,
+                    "group": "General",
+                    "kuid": "e5b1b846d84b44168b386bba3a70c995",
+                    "originalPropertyKey": "compress",
+                    "propertyIndex": 4,
+                    "propertyKey": "compress",
+                    "pw": {
+                        "displayName": "compress",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ee7b21dfcf4648ca8add9bed41d7b379",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 0,
+                    "group": "Page Margins",
+                    "kuid": "b9171e8e102c47a7b9cd0f078524da17",
+                    "originalPropertyKey": "bottomprop",
+                    "propertyIndex": 5,
+                    "propertyKey": "bottomprop",
+                    "pw": {
+                        "displayName": "bottom",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "ee7b21dfcf4648ca8add9bed41d7b379",
+                    "type": "integer",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "j4116d42bccb4ccaa0a5aee67e08bb62",
+                    "propertyKey": "pdfGenBrowser",
+                    "srcWgtKUID": "e5222d6713314b3c91695d02034314ac"
+                }
+            ],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Transfers",
+    "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_c4b25eb5d2f9417198a943f3da548521": {
+        "id": "AS_FlexContainer_c4b25eb5d2f9417198a943f3da548521",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTransfersToAccountEurope",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ae1a926984ff4cd48905f7e0a0102adb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_da16a864aab9465e83e109578b3cf9be",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var transModPresentationController = applicationManager.getModulesPresentationController(\"TransferModule\");\ntransModPresentationController.commonFunctionForNavigation(\"frmTransactionMode\");",
+            "callbackType": null
+        }]
+    }
+}

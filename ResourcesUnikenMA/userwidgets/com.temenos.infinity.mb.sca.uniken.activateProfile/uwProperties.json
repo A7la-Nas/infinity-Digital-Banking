@@ -1,0 +1,1175 @@
+{
+    "classname": "activateProfile",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e0e47ac4aba34779ab33f19774849224",
+                    "paramList": [
+                        {
+                            "name": "screenId"
+                        }
+                    ],
+                    "propertyKey": "navigateToScreen",
+                    "pw": {
+                        "displayName": "navigateToScreen",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b1e7c2aa3552415495a68b5eeeb8eb3d",
+                    "paramList": [
+                        {
+                            "name": "pushId"
+                        }
+                    ],
+                    "propertyKey": "registerPushId",
+                    "pw": {
+                        "displayName": "registerPushId",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "i647ae2f4db94ab8b9e2db78baab4d41",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "navigateToLogin",
+                    "pw": {
+                        "displayName": "navigateToLogin",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b1fdb39e38e14f00a679e6f3792abbfd",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "closeActivateProfileFlow",
+                    "pw": {
+                        "displayName": "closeActivateProfileFlow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Skins",
+                "Images",
+                "Activation Code Validation Screen",
+                "Screen 2",
+                "Screen 3",
+                "Activation Success Screen",
+                "ServiceDetails",
+                "Create PIN Screen",
+                "ErrorMessages",
+                "Create Password Screen",
+                "Password Success Screen"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlx1a98ff",
+                    "group": "Skins",
+                    "kuid": "e68b6afdd1d24584843fafd2f1728da4",
+                    "originalPropertyKey": "headerSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "headerSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "viewicon.png",
+                    "group": "Images",
+                    "kuid": "ff3618a856cb4adba7f87d9ceeb91d08",
+                    "originalPropertyKey": "textVisiblityOffIcon",
+                    "propertyIndex": 1,
+                    "propertyKey": "textVisiblityOffIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Visiblity Off Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Create Password",
+                    "group": "Create Password Screen",
+                    "kuid": "f828837c63e84701a38a3316d4b03d1c",
+                    "originalPropertyKey": "screen2HeaderMessageText",
+                    "propertyIndex": 1,
+                    "propertyKey": "screen2HeaderMessageText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Profile Activation",
+                    "group": "Activation Success Screen",
+                    "kuid": "a36b85acb90243cbbf8d2774a0ba1b64",
+                    "originalPropertyKey": "screen3HeaderMessageText",
+                    "propertyIndex": 1,
+                    "propertyKey": "screen3HeaderMessageText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ActivationCodeAuthenticator",
+                    "group": "ServiceDetails",
+                    "kuid": "f3b20f16280046b3a3c93ed968550517",
+                    "originalPropertyKey": "objectName",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "objectName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Your activation code has been expired.",
+                    "group": "ErrorMessages",
+                    "kuid": "bb8c912b8a90411c9d39836a8ff56f3b",
+                    "originalPropertyKey": "activationExpire",
+                    "propertyIndex": 1,
+                    "propertyKey": "activationExpire",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "activationExpire",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Profile Activation",
+                    "group": "Activation Code Validation Screen",
+                    "kuid": "e8cb4b3b0d344b91853a22e333e85cbe",
+                    "originalPropertyKey": "screen1HeaderMessageText",
+                    "propertyIndex": 1,
+                    "propertyKey": "screen1HeaderMessageText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Create PIN",
+                    "group": "Create PIN Screen",
+                    "kuid": "c39f1d24a02d46d2a877f33268710ae4",
+                    "originalPropertyKey": "screen4HeaderMessageText",
+                    "propertyIndex": 1,
+                    "propertyKey": "screen4HeaderMessageText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Create Password",
+                    "group": "Password Success Screen",
+                    "kuid": "ab8a12d5a3b3499d96a8c780f3f75c48",
+                    "originalPropertyKey": "screen5HeaderMessageText",
+                    "propertyIndex": 1,
+                    "propertyKey": "screen5HeaderMessageText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblffffffSSP30px",
+                    "group": "Skins",
+                    "kuid": "h21a8e4018824e928a68530792fe638d",
+                    "originalPropertyKey": "headerTextSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "headerTextSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Text Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "viewactive.png",
+                    "group": "Images",
+                    "kuid": "d3eba2e9147c4fe384e28d644745f0b5",
+                    "originalPropertyKey": "textVisiblityOnIcon",
+                    "propertyIndex": 2,
+                    "propertyKey": "textVisiblityOnIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Text Visiblity On Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.Cancel",
+                    "group": "Create Password Screen",
+                    "kuid": "c5e5ecc7dad94e1c80712c876be46c8b",
+                    "originalPropertyKey": "screen2HeaderCancelText",
+                    "propertyIndex": 2,
+                    "propertyKey": "screen2HeaderCancelText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Cancel Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Activated Successfully",
+                    "group": "Activation Success Screen",
+                    "kuid": "ba6e7419717a45d89e01420837e3fd5f",
+                    "originalPropertyKey": "screen3MessageText",
+                    "propertyIndex": 2,
+                    "propertyKey": "screen3MessageText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "login",
+                    "group": "ServiceDetails",
+                    "kuid": "a72be6ffc4fe4709884e443d10919131",
+                    "originalPropertyKey": "validateService",
+                    "propertyIndex": 2,
+                    "propertyKey": "validateService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "validateService",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Unable to verify Activation code",
+                    "group": "ErrorMessages",
+                    "kuid": "a529bb42be7d495b956168c77aee49b3",
+                    "originalPropertyKey": "unableToVerify",
+                    "propertyIndex": 2,
+                    "propertyKey": "unableToVerify",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "unableToVerify",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.Cancel",
+                    "group": "Activation Code Validation Screen",
+                    "kuid": "g065f3611c6141d0b39e4a62e37d5a9a",
+                    "originalPropertyKey": "screen1HeaderCancelText",
+                    "propertyIndex": 2,
+                    "propertyKey": "screen1HeaderCancelText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Cancel Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.Cancel",
+                    "group": "Create PIN Screen",
+                    "kuid": "d1e2295961d144798c4906e085879623",
+                    "originalPropertyKey": "screen4HeaderCancelText",
+                    "propertyIndex": 2,
+                    "propertyKey": "screen4HeaderCancelText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Cancel Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Password Created",
+                    "group": "Password Success Screen",
+                    "kuid": "a9da38a0ddf64a57a3eaeca85145c897",
+                    "originalPropertyKey": "screen5MessageText",
+                    "propertyIndex": 2,
+                    "propertyKey": "screen5MessageText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnffffffSSP28px",
+                    "group": "Skins",
+                    "kuid": "e5a855e3f09e4fbb98ef29847796947a",
+                    "originalPropertyKey": "headerCancelButtonSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "headerCancelButtonSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Cancel Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "tickmark.png",
+                    "group": "Images",
+                    "kuid": "g5868df4f0c2445aaba2001aef5ef90b",
+                    "originalPropertyKey": "tickGrayIcon",
+                    "propertyIndex": 3,
+                    "propertyKey": "tickGrayIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Tick Gray Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Create a password to sign onto online banking using password",
+                    "group": "Create Password Screen",
+                    "kuid": "iae3c5415ece4297b67d4ddc7bc27cb6",
+                    "originalPropertyKey": "screen2MessageText",
+                    "propertyIndex": 3,
+                    "propertyKey": "screen2MessageText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "We have activated your profile successfully.  \nPlease continue to Face ID  or Fingerprint & Create password",
+                    "group": "Activation Success Screen",
+                    "kuid": "g113a8e0cc824cdd90fcbff9724852ce",
+                    "originalPropertyKey": "screen3DescriptionText",
+                    "propertyIndex": 3,
+                    "propertyKey": "screen3DescriptionText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Description Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "createPassword",
+                    "group": "ServiceDetails",
+                    "kuid": "ia5e4e05d7ae47988d47a6dbce2b88b1",
+                    "originalPropertyKey": "passwordUpdateService",
+                    "propertyIndex": 3,
+                    "propertyKey": "passwordUpdateService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "passwordUpdateService",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Unable to update Password",
+                    "group": "ErrorMessages",
+                    "kuid": "i9e8eda2f5b04a6bb0038cf233090e5d",
+                    "originalPropertyKey": "unableToUpdate",
+                    "propertyIndex": 3,
+                    "propertyKey": "unableToUpdate",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "unableToUpdate",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Please enter user ID and Activation code that was sent to your email and phone",
+                    "group": "Activation Code Validation Screen",
+                    "kuid": "e19c500f0cc84c1cbca58a98765a28dc",
+                    "originalPropertyKey": "screen1DescriptionText",
+                    "propertyIndex": 3,
+                    "propertyKey": "screen1DescriptionText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Description Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PIN:",
+                    "group": "Create PIN Screen",
+                    "kuid": "h392ae52676b4c49bdd8139eedcbba21",
+                    "originalPropertyKey": "screen4Label1Text",
+                    "propertyIndex": 3,
+                    "propertyKey": "screen4Label1Text",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Enter PIN Lable Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "New Password has been created successfully. Please continue to sign in.",
+                    "group": "Password Success Screen",
+                    "kuid": "c2c3f537655a4c6d9a573ca8679d1932",
+                    "originalPropertyKey": "screen5DescriptionText",
+                    "propertyIndex": 3,
+                    "propertyKey": "screen5DescriptionText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Description Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "greentick.png",
+                    "group": "Images",
+                    "kuid": "e0665f750ea74cedbf602a0b908a53ca",
+                    "originalPropertyKey": "tickGreenIcon",
+                    "propertyIndex": 4,
+                    "propertyKey": "tickGreenIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Tick Green Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.Forgot.NewPassword",
+                    "group": "Create Password Screen",
+                    "kuid": "d22788855e7142ca9868a1a634bf1a7e",
+                    "originalPropertyKey": "screen2Label1Text",
+                    "propertyIndex": 4,
+                    "propertyKey": "screen2Label1Text",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label 1 Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Continue",
+                    "group": "Activation Success Screen",
+                    "kuid": "e57148a7cdfc4b079fcbd40f4bf41de8",
+                    "originalPropertyKey": "screen3SubmitBtnText",
+                    "propertyIndex": 4,
+                    "propertyKey": "screen3SubmitBtnText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Submit Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "fetch",
+                    "group": "ServiceDetails",
+                    "kuid": "b40e2006e40f43f3b849cf2ef3ceaf42",
+                    "originalPropertyKey": "passwordPolicyService",
+                    "propertyIndex": 4,
+                    "propertyKey": "passwordPolicyService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "passwordPolicyService",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Incorrect username or activation code!",
+                    "group": "Activation Code Validation Screen",
+                    "kuid": "bcbeb62dd98a4e1b86c15221a1387be3",
+                    "originalPropertyKey": "screen1ErrorMessageText",
+                    "propertyIndex": 4,
+                    "propertyKey": "screen1ErrorMessageText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Error Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Enter PIN",
+                    "group": "Create PIN Screen",
+                    "kuid": "fcc22c31891341c7be543d0d11d8ec84",
+                    "originalPropertyKey": "screen4Textbox1PlaceholderText",
+                    "propertyIndex": 4,
+                    "propertyKey": "screen4Textbox1PlaceholderText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Enter PIN Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Sign In",
+                    "group": "Password Success Screen",
+                    "kuid": "j4c6ce53818b4ccb9dc2eed2066369c5",
+                    "originalPropertyKey": "screen5SubmitBtnText",
+                    "propertyIndex": 4,
+                    "propertyKey": "screen5SubmitBtnText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Submit Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PasswordPolicy",
+                    "group": "ServiceDetails",
+                    "kuid": "ge643cd2c725416494173db87e541055",
+                    "originalPropertyKey": "passwordObjModelName",
+                    "propertyIndex": 5,
+                    "propertyKey": "passwordObjModelName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Password Policy Data Model",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblEE0005SSPR114pct",
+                    "group": "Skins",
+                    "kuid": "ffcce706c3df45a3a132d7c4e68fd910",
+                    "originalPropertyKey": "errorMessageSkin",
+                    "propertyIndex": 5,
+                    "propertyKey": "errorMessageSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Error Message Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "confirmation_tick.png",
+                    "group": "Images",
+                    "kuid": "f500241e07954ff2b1e74be9da66ad6d",
+                    "originalPropertyKey": "successTickIcon",
+                    "propertyIndex": 5,
+                    "propertyKey": "successTickIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Tick Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.common.EnterNewPassword",
+                    "group": "Create Password Screen",
+                    "kuid": "f758d59dd03b45aab1cb527863fb998c",
+                    "originalPropertyKey": "screen2Textbox1PlaceholderText",
+                    "propertyIndex": 5,
+                    "propertyKey": "screen2Textbox1PlaceholderText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Textbox 1 Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Username",
+                    "group": "Activation Code Validation Screen",
+                    "kuid": "b21ae7f5b8c14d32a27c242c395f6397",
+                    "originalPropertyKey": "screen1TextBox1PlaceholderText",
+                    "propertyIndex": 5,
+                    "propertyKey": "screen1TextBox1PlaceholderText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Textbox 1 Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Re-enter PIN:",
+                    "group": "Create PIN Screen",
+                    "kuid": "c42fa67b582540e1b2c6bb66b292630d",
+                    "originalPropertyKey": "screen4Label2Text",
+                    "propertyIndex": 5,
+                    "propertyKey": "screen4Label2Text",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Re-Enter PIN Label Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "createDevice",
+                    "group": "ServiceDetails",
+                    "kuid": "d785a76c059841d3be4be7e173212241",
+                    "originalPropertyKey": "deviceProvisioningService",
+                    "propertyIndex": 6,
+                    "propertyKey": "deviceProvisioningService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "SCA Device Provisioning Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknTbxFontSSPR727272BdrE9E9E9",
+                    "group": "Skins",
+                    "kuid": "c17f20047b8e4866a789f62fb240b877",
+                    "originalPropertyKey": "textBoxNormalSkin",
+                    "propertyIndex": 6,
+                    "propertyKey": "textBoxNormalSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "TextBox Normal Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.Forgot.ReEnterNewPassword",
+                    "group": "Create Password Screen",
+                    "kuid": "fc62a295346d4474979d98b04d5e541d",
+                    "originalPropertyKey": "screen2Label2Text",
+                    "propertyIndex": 6,
+                    "propertyKey": "screen2Label2Text",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label 2 Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Activation Code",
+                    "group": "Activation Code Validation Screen",
+                    "kuid": "ddd4648dad8e4ebea0537b8ddaad3187",
+                    "originalPropertyKey": "screen1TextBox2PlaceholderText",
+                    "propertyIndex": 6,
+                    "propertyKey": "screen1TextBox2PlaceholderText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Textbox 2 Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Re-enter PIN",
+                    "group": "Create PIN Screen",
+                    "kuid": "b9504f68de1b41858de8642b3edcfd66",
+                    "originalPropertyKey": "screen4Textbox2PlaceholderText",
+                    "propertyIndex": 6,
+                    "propertyKey": "screen4Textbox2PlaceholderText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Re-enter  PIN Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Security Requirements:",
+                    "group": "Create PIN Screen",
+                    "kuid": "j348787330bb4e618131d2cae6f9822c",
+                    "originalPropertyKey": "screen4LabelPasswordRulesText",
+                    "propertyIndex": 7,
+                    "propertyKey": "screen4LabelPasswordRulesText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "PIN Password Rules Label Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknTbxBorderF54B5ESSPR114pct",
+                    "group": "Skins",
+                    "kuid": "h7668c97a2f34139a1317df92421680f",
+                    "originalPropertyKey": "textBoxErrorSkin",
+                    "propertyIndex": 7,
+                    "propertyKey": "textBoxErrorSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "TextBox Error Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.Forgot.ReEnterNewPassword",
+                    "group": "Create Password Screen",
+                    "kuid": "e3db1ac486534e79ac6e48639de5dc9d",
+                    "originalPropertyKey": "screen2Textbox2PlaceholderText",
+                    "propertyIndex": 7,
+                    "propertyKey": "screen2Textbox2PlaceholderText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Textbox 2 Placeholder Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.ProfileManagement.Verify",
+                    "group": "Activation Code Validation Screen",
+                    "kuid": "i9eef620c81b41de8652da0fc40982a6",
+                    "originalPropertyKey": "screen1SubmitBtnText",
+                    "propertyIndex": 7,
+                    "propertyKey": "screen1SubmitBtnText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Submit Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtn0095e426pxEnabled",
+                    "group": "Skins",
+                    "kuid": "g054beb48ac146c9b309bc0f1a63fc03",
+                    "originalPropertyKey": "buttonEnabledSkin",
+                    "propertyIndex": 8,
+                    "propertyKey": "buttonEnabledSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button Enabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Security Requirements:",
+                    "group": "Create Password Screen",
+                    "kuid": "bd73b596f673408e8e6e00538bc7741d",
+                    "originalPropertyKey": "screen2LabelPasswordRulesText",
+                    "propertyIndex": 8,
+                    "propertyKey": "screen2LabelPasswordRulesText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label Password Rules Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.login.cannotLogin",
+                    "group": "Activation Code Validation Screen",
+                    "kuid": "fda3331ae9334e4ab1d45d3743fdef0b",
+                    "originalPropertyKey": "screen1ForgetPasswordBtnText",
+                    "propertyIndex": 8,
+                    "propertyKey": "screen1ForgetPasswordBtnText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Forget Password Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Continue",
+                    "group": "Create PIN Screen",
+                    "kuid": "db68eca66cf3478cac02493c39f26ca1",
+                    "originalPropertyKey": "screen4SubmitBtnText",
+                    "propertyIndex": 8,
+                    "propertyKey": "screen4SubmitBtnText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Submit Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtna0a0a0SSPReg26px",
+                    "group": "Skins",
+                    "kuid": "e1ea5e5175ac4ade9a5678acc4b672ec",
+                    "originalPropertyKey": "buttonDisabledSkin",
+                    "propertyIndex": 9,
+                    "propertyKey": "buttonDisabledSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button Disabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Create Password",
+                    "group": "Create Password Screen",
+                    "kuid": "ddbf7dc884ef45a9bcb30c9cf5928ca6",
+                    "originalPropertyKey": "screen2SubmitBtnText",
+                    "propertyIndex": 9,
+                    "propertyKey": "screen2SubmitBtnText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Submit Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Please create a PIN to use to login Infinity",
+                    "group": "Create PIN Screen",
+                    "kuid": "fdcfa4ee6acb42378b0d35f4443370a6",
+                    "originalPropertyKey": "screen4MessageText",
+                    "propertyIndex": 9,
+                    "propertyKey": "screen4MessageText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl004B95SSPRegular26px",
+                    "group": "Skins",
+                    "kuid": "fe7931debb764536b7fa6d8303b3cacd",
+                    "originalPropertyKey": "forgetPasswordSkin",
+                    "propertyIndex": 10,
+                    "propertyKey": "forgetPasswordSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Forget Password Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPL200pct",
+                    "group": "Skins",
+                    "kuid": "a32bc5f02cc94f0bab8e94b9085af113",
+                    "originalPropertyKey": "screen2MessageSkin",
+                    "propertyIndex": 11,
+                    "propertyKey": "screen2MessageSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Screen 2 Message Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl727272SSPR114pct",
+                    "group": "Skins",
+                    "kuid": "a1bf0d109fb0470abbc0b46d7e1fc12d",
+                    "originalPropertyKey": "labelSkin",
+                    "propertyIndex": 12,
+                    "propertyKey": "labelSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSPRegFD3F2F28px",
+                    "group": "Skins",
+                    "kuid": "e2d8b1161f9e4af1bb31d63b06545274",
+                    "originalPropertyKey": "passwordRulesLabelSkin",
+                    "propertyIndex": 13,
+                    "propertyKey": "passwordRulesLabelSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Password Rules Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknrtxfd3f2fSSp95pr",
+                    "group": "Skins",
+                    "kuid": "ie31eca4b31a47fb8a565276f016f274",
+                    "originalPropertyKey": "passwordRulesSkin",
+                    "propertyIndex": 14,
+                    "propertyKey": "passwordRulesSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Password Rules Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlbl000000SSPSemiBold72px",
+                    "group": "Skins",
+                    "kuid": "hbf64b1c5f234a79b9877564a511b6a0",
+                    "originalPropertyKey": "screen3MessageSkin",
+                    "propertyIndex": 15,
+                    "propertyKey": "screen3MessageSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Screen 3 Message Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "tbxBlueFocus",
+                    "group": "Skins",
+                    "kuid": "d13f9be88294480b9bf669da12621150",
+                    "originalPropertyKey": "textBoxNormalFocusSkin",
+                    "propertyIndex": 16,
+                    "propertyKey": "textBoxNormalFocusSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "TextBox Normal Focus Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u593746b7b4b4ebd9619858c9f0beb42",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.mb.sca.uniken",
+    "version": "1.0.0"
+}

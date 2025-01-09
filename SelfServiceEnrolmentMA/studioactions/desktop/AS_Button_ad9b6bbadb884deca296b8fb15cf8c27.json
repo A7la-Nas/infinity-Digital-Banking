@@ -1,0 +1,24 @@
+{
+    "AS_Button_ad9b6bbadb884deca296b8fb15cf8c27": {
+        "id": "AS_Button_ad9b6bbadb884deca296b8fb15cf8c27",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollNow",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bd78051f2239477699cd5b3d036cf72a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ceb849b7f2024f27b495600a71f05b1d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var authModule=kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthModule\");\nauthModule.presentationController.showLoginScreen();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

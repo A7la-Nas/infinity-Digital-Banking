@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s966eaf1ea1441148b4828270a782f8b",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "dataMapping": "{\n  \"segments\": {\n    \"segRequestsList\": {\n      \"segmentMasterData\": \"${Collection.ServiceRequest}\",\n      \"segmentUI\": {\n        \"lblRequest\": \"${segmentMasterData.subType_description}\",\n        \"lblRequestStatus\": \"${segmentMasterData.serviceReqStatus}\",\n        \"lblDate\": \"${segmentMasterData.serviceReqProcessedTime}\",\n        \"requestId\": \"${segmentMasterData.serviceReqId}\",\n        \"accountId\": \"${segmentMasterData.accountId}\",\n        \"accountName\": \"${segmentMasterData.accountName}\",\n        \"requestDate\": \"${segmentMasterData.requestDate}\",\n        \"signatoryApprovalRequired\": \"${segmentMasterData.signatoryApprovalRequired}\",\n        \"lblRequestType\": \"${segmentMasterData.type_description}\",\n        \"currentBalance\":\"${segmentMasterData.serviceReqRequestIn.currentBalance}\",\n        \"closingReason\":\"${segmentMasterData.serviceReqRequestIn.closingReason}\",\n        \"supportingsDocuments\" : \"${segmentMasterData.serviceReqRequestIn.supportingDocumentData}\"\n      }\n    }\n  },\n  \"details\" : {\n    \"lblDetailsValue1\" : \"lblRequest\",\n    \"lblDetailsValue2\": \"lblRequestStatus\",\n    \"lblDetailsValue3\" : \"accountName\",\n    \"lblDetailsValue4\": \"requestDate\",\n    \"lblDetailsValue5\" : \"lblDate\",\n    \"lblDetailsValue6\": \"requestId\",\n    \"lblDetailsValue7\": \"signatoryApprovalRequired\",\n    \"lblDetailsValue\": \"lblRequestType\",\n    \"lblDetailsValue8\" : \"currentBalance\",\n    \"lblDetailsValue9\": \"closingReason\",\n    \"lblDetailsValue10\" : \"supportingsDocuments\"\n  },\n  \"serviceRequestTitle\":{\n    \"lblHeaderName\": \"${i18n{kony.mb.Hamburger.serviceRequests}}\"\n  },\n  \"requestDetailsTitle\":{\n    \"lblHeaderName\": \"${i18n{i18n.serviceRequest.requestDetails}}\"\n  },\n  \"advancedSearchTitle\":{\n    \"lblHeaderName\": \"${i18n{kony.mb.AdvanceSearch.Title}}\"\n  },\n  \"searchMenu\" : [\n    {\n      \"name\": \"${i18n{i18n.serviceRequests.RequestCategory}}\",\n      \"values\": \"${i18n{i18n.serviceRequests.AllRequestCategories}}\",\n      \"criteria\":\"type_description\",\n      \"flxName\":\"flxRequestCategory\"\n    },\n    {\n      \"name\": \"${i18n{i18n.serviceRequests.ServRequest}}\",\n      \"values\": \"${i18n{i18n.serviceRequests.AllServiceRequests}}\",\n      \"criteria\":\"subType_description\",\n      \"flxName\":\"flxServiceRequest\"\n    },\n    {\n      \"name\": \"${i18n{i18n.ChequeSearch.statusType}}\",\n      \"values\": \"${i18n{i18n.serviceRequests.AllStatus}}\",\n      \"criteria\":\"serviceReqStatus\",\n      \"flxName\":\"flxStatusType\"\n    },{\n      \"name\": \"${i18n{i18n.serviceRequests.Account:}}\",\n      \"values\": \"${i18n{i18n.serviceRequests.AllAccounts}}\",\n      \"criteria\":\"accountName\",\n      \"flxName\":\"flxAccounts\"\n    },\n    {\n      \"name\": \"${i18n{i18n.serviceRequests.DateRange}}\",\n      \"values\": \"${i18n{i18n.ProfileManagement.ADD}}\",\n      \"criteria\":\"requestDate\",\n      \"flxName\":\"flxDateRange\"\n    }]\n}",
+        "ide_onClickBack": "AS_UWI_c303f8ba8df04fa7a2161e2e7dbf8262",
+        "ide_onRowClick": "AS_UWI_e49a0ec16ba240c39fcdd58ef25b140e",
+        "serviceParameters": "{\n  \"ServiceOrder\": {\n    \"Service\": \"ServiceRequestManagement\",\n    \"Object\": \"ServiceRequest\",\n    \"Criteria\":\"\",\n    \"Verb\": \"getDetails\"\n  }\n}"
+    },
+    "id": "viewRequests",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e6e8a450c98245748983d7246c7703d1",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxRequestsList",
+    "pf": "frmViewRequests",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "b7237877976b4e0c82c21e2af91f10f6",
+    "wType": "UserWidgetInstance",
+    "zindex": 26
+}

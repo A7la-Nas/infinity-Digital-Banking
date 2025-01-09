@@ -1,0 +1,129 @@
+{
+    "classname": "SCAComponent",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a0514e09584847728da130d022d792ff",
+                    "paramList": [
+                        {
+                            "name": "mfaJSON"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ec30b7f2a38447b294918ac78e1f3c30",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "fbdd19210fe44e349ef0fb69bd504d99",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSuccessCallback",
+                    "pw": {
+                        "displayName": "onSuccessCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ec30b7f2a38447b294918ac78e1f3c30",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c3278a981129431c92386eafa1b3404a",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onFailureCallback",
+                    "pw": {
+                        "displayName": "onFailureCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ec30b7f2a38447b294918ac78e1f3c30",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f0a82ac46ab44f9fb79b5d315fb5239c",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onCancel",
+                    "pw": {
+                        "displayName": "onCancel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ec30b7f2a38447b294918ac78e1f3c30",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "h2b23e2a75f143198357255a1d47516e",
+                    "originalPropertyKey": "flowType",
+                    "propertyIndex": 1,
+                    "propertyKey": "flowType",
+                    "pw": {
+                        "displayName": "Flow Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ec30b7f2a38447b294918ac78e1f3c30",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "hbd51b9a22bd420f95c9f921ee4a18e3",
+                    "originalPropertyKey": "servicekey",
+                    "propertyIndex": 2,
+                    "propertyKey": "servicekey",
+                    "pw": {
+                        "displayName": "Service Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ec30b7f2a38447b294918ac78e1f3c30",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Resources.mfa",
+    "version": "1.0.0"
+}

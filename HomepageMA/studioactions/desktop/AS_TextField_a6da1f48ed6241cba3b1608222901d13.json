@@ -1,0 +1,22 @@
+{
+    "AS_TextField_a6da1f48ed6241cba3b1608222901d13": {
+        "id": "AS_TextField_a6da1f48ed6241cba3b1608222901d13",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "f54ec893cfde403d9fab05953caa8311"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_d218c01aaa3a4ef3bf32208da4d55030",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.enableOrDisableExternalLogin(this.view.AddExternalAccounts.LoginUsingSelectedBank.tbxNewUsername.text, this.view.AddExternalAccounts.LoginUsingSelectedBank.tbxEnterpassword.text);",
+            "parentId": null
+        }]
+    }
+}

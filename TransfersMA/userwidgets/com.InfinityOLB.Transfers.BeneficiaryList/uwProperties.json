@@ -1,0 +1,2678 @@
+{
+    "classname": "BeneficiaryList",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "df85ca75205b4017833c6956525925b5",
+                    "paramList": [
+                        {
+                            "name": "scope"
+                        }
+                    ],
+                    "propertyKey": "setParentScope",
+                    "pw": {
+                        "displayName": "setParentScope",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "acf66422a01c432e83e76e6e43b8b1e0",
+                    "paramList": [
+                        {
+                            "name": "context"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "jffe3214fce5461d9103b461ea60792a",
+                    "paramList": [],
+                    "propertyKey": "onPagination",
+                    "pw": {
+                        "displayName": "onPagination",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "fcd4e5dc3da74756bc9f438baeb2b349",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "gd4df08a784a418d8809cd42b0438fd5",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "hidePagination",
+                    "pw": {
+                        "displayName": "hidePagination",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "gcb1d3334e3e4f37b43b53ed5eb90c33",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "showPagination",
+                    "pw": {
+                        "displayName": "showPagination",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d2e34d018a994803a19a641a1754276f",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "updatePaginationBar",
+                    "pw": {
+                        "displayName": "updatePaginationBar",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bcac6666c574487dae9c50dc557d5c38",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "onResetPagination",
+                    "pw": {
+                        "displayName": "onResetPagination",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Beneficiary Management Service",
+                "Context",
+                "Component Configs",
+                "Skins",
+                "Filter tabs",
+                "Search",
+                "Date",
+                "Images/Icons",
+                "Mobile BreakPoint Specification",
+                "Data Grid-Tab1",
+                "Additional Details-Tab1",
+                "Data Grid-Tab2",
+                "Additional Details-Tab2",
+                "Cache Params"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "PayeeObjects",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "ce00f7d38f1d4e559cf5240ccb28f29e",
+                    "originalPropertyKey": "accountsObjectService",
+                    "propertyIndex": 1,
+                    "propertyKey": "accountsObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": " Accounts Object Service ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.PayAPerson.ManageRecipient}",
+                    "group": "General",
+                    "kuid": "e4bc702b33c84651962240c418e57b9c",
+                    "originalPropertyKey": "blockTitle",
+                    "propertyIndex": 1,
+                    "propertyKey": "blockTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Block title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"ICSknBtnAccountSummarySelected2\",\"$.BREAKPTS.bp1\":\"ICSknBtnAccountSummarySelected2\"}",
+                    "group": "Skins",
+                    "kuid": "a7f38527028c4c6ab29577a7e3a1ef4b",
+                    "originalPropertyKey": "sknFilterActiveTab",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknFilterActiveTab",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter active tab skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\" : \"d-m-Y\"}",
+                    "group": "Date",
+                    "kuid": "a2967acf5c91449bb92d042f0fe2c091",
+                    "originalPropertyKey": "dateFormat",
+                    "propertyIndex": 1,
+                    "propertyKey": "dateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Context",
+                    "kuid": "e5dbe3526b704da4a60cb3295f70d913",
+                    "originalPropertyKey": "isP2PActive",
+                    "propertyIndex": 1,
+                    "propertyKey": "isP2PActive",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Activation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"bt1\":\"SameBank\",\"bt2\":\"External\",\"bt3\":\"International\"}",
+                    "group": "Component Configs",
+                    "kuid": "ebb464203c24483ca371e66864fccdee",
+                    "originalPropertyKey": "BNFTYPES",
+                    "propertyIndex": 1,
+                    "propertyKey": "BNFTYPES",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary types",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"default\":\"{i.i18n.topmenu.accounts}\",\"$.BREAKPTS.bp1\":\"{i.i18n.topmenu.accounts}\"},\"action\":{\"level\":\"Form\",\"method\":\"hideQuicklinks2\"},\"entitlement\":[\"INTRA_BANK_FUND_TRANSFER_VIEW_RECEPIENT\",\"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\",\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\"]}",
+                    "group": "Filter tabs",
+                    "kuid": "h93d662b07344f67863af1d00f38f009",
+                    "originalPropertyKey": "filterTab1",
+                    "propertyIndex": 1,
+                    "propertyKey": "filterTab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter tab 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.bp1\":\"{i.i18n.billpay.SearchMessageMobile}\",\"default\":\"{i.i18n.payments.searchByName}\"}",
+                    "group": "Search",
+                    "kuid": "c733280b039f412cb229e4ab2e38a3f3",
+                    "originalPropertyKey": "placeHolderSearch",
+                    "propertyIndex": 1,
+                    "propertyKey": "placeHolderSearch",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Placeholder",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"arrow_down.png\"}",
+                    "group": "Images/Icons",
+                    "kuid": "e08ceb9ed55448c6bb6a586fc819ad23",
+                    "originalPropertyKey": "iconRowExpand",
+                    "propertyIndex": 1,
+                    "propertyKey": "iconRowExpand",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row expand icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.common.accountNumWithColon}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "ia1535f59822441e87a77e71b036950f",
+                    "originalPropertyKey": "additionalDetailsLabel1Tab1",
+                    "propertyIndex": 1,
+                    "propertyKey": "additionalDetailsLabel1Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.P2P.RegisteredEmailAddress}",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "dd2bf5798ae148ccac1bb2f516e49a6a",
+                    "originalPropertyKey": "additionalDetailsLabel1Tab2",
+                    "propertyIndex": 1,
+                    "propertyKey": "additionalDetailsLabel1Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S1.ExternalAccounts}",
+                    "group": "Data Grid-Tab1",
+                    "kuid": "ffcdec02a0ca4967a77ce66ce8a18b2a",
+                    "originalPropertyKey": "responseRoutePathTab1",
+                    "propertyIndex": 1,
+                    "propertyKey": "responseRoutePathTab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Response Path",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S3.PayPerson}",
+                    "group": "Data Grid-Tab2",
+                    "kuid": "dd9dcad5b2c8412580b232efb432eb9d",
+                    "originalPropertyKey": "responseRoutePathTab2",
+                    "propertyIndex": 1,
+                    "propertyKey": "responseRoutePathTab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Response Path",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"fields\":[\"beneficiaryName\",\"bankName\",\"accountNumber\",\"swiftCode\",\"routingNumber\",\"nickName\",\"accountType\"]}",
+                    "group": "Cache Params",
+                    "kuid": "c2564240621846caac6c05365c110c44",
+                    "originalPropertyKey": "accountSearchFields",
+                    "propertyIndex": 1,
+                    "propertyKey": "accountSearchFields",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Account Search Fields",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.PayPerson.recipientName}\",\"default\":\"{i.i18n.PayPerson.recipientName}\"},\"mapping\":\"{$.rootPath.name}\",\"fieldType\":\"Label\",\"sortBy\":\"name\"}",
+                    "group": "Data Grid-Tab2",
+                    "kuid": "gabacab5e45443698c04dfbcd39fa188",
+                    "originalPropertyKey": "dataGridColumn1Tab2",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataGridColumn1Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":\"{i.i18n.PayPerson.recipientName}\",\"mapping\":\"{$.rootPath.beneficiaryName}\",\"fieldType\":\"Label\",\"sortBy\":\"beneficiaryName\"}",
+                    "group": "Data Grid-Tab1",
+                    "kuid": "ie1a1ead9ae545aeaf9f4a7893fb5464",
+                    "originalPropertyKey": "dataGridColumn1Tab1",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataGridColumn1Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Recipients",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "e762193108554ff29059d1f62aad4729",
+                    "originalPropertyKey": "accountsObject",
+                    "propertyIndex": 2,
+                    "propertyKey": "accountsObject",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": " Accounts Object",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "b61e843558de4d21959311a8843f8cc3",
+                    "originalPropertyKey": "sknFilterActiveTabHover",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknFilterActiveTabHover",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter active tab hover skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\" : \"Y-m-d\"}",
+                    "group": "Date",
+                    "kuid": "j195b3dac779458ca5247d3dce72c590",
+                    "originalPropertyKey": "backendDateFormat",
+                    "propertyIndex": 2,
+                    "propertyKey": "backendDateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Backend Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Context",
+                    "kuid": "b3194442952e4ce4a46b190e510c9d43",
+                    "originalPropertyKey": "isP2PEntitled",
+                    "propertyIndex": 2,
+                    "propertyKey": "isP2PEntitled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Entitlement",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"bp1\":\"640\",\"bp2\":\"1024\",\"bp3\":\"1366\"}",
+                    "group": "Component Configs",
+                    "kuid": "ja4315bc67ee423abd5685425577ab18",
+                    "originalPropertyKey": "BREAKPTS",
+                    "propertyIndex": 2,
+                    "propertyKey": "BREAKPTS",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "breakpoints",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"default\":\"{i.i18n.payments.personToPerson}\",\"$.BREAKPTS.bp1\":\"{i.i18n.Transactions.displayP2P}\"},\"action\":{\"level\":\"Form\",\"method\":\"showQuicklinks2\"},\"entitlement\":[\"P2P_VIEW_RECEPIENT\"]}",
+                    "group": "Filter tabs",
+                    "kuid": "a7a625063f844149ba2eb837cc1e1876",
+                    "originalPropertyKey": "filterTab2",
+                    "propertyIndex": 2,
+                    "propertyKey": "filterTab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter tab 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"vizIcon\": \"i\", \"skin\": \"sknBBLabelSSP42424215px\",\"img\": \"src\"}",
+                    "group": "Search",
+                    "kuid": "bd5b62e64e8f43aa84ea713ecd4cf8e8",
+                    "originalPropertyKey": "iconSearch",
+                    "propertyIndex": 2,
+                    "propertyKey": "iconSearch",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Search icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"chevron_up.png\"}",
+                    "group": "Images/Icons",
+                    "kuid": "g9635b1fcd06474cb30615b76e93a1d0",
+                    "originalPropertyKey": "iconRowCollapse",
+                    "propertyIndex": 2,
+                    "propertyKey": "iconRowCollapse",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row collapse icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.rootPath.accountNumber}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "f2707d1e73524dce909af8b2da35639b",
+                    "originalPropertyKey": "additionalDetailsValue1Tab1",
+                    "propertyIndex": 2,
+                    "propertyKey": "additionalDetailsValue1Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.rootPath.email}",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "ced431a815ed41b5b2e3ec92f6d4eb82",
+                    "originalPropertyKey": "additionalDetailsValue1Tab2",
+                    "propertyIndex": 2,
+                    "propertyKey": "additionalDetailsValue1Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "All",
+                    "group": "Cache Params",
+                    "kuid": "c99284680ed8474d93a58d57e99dab03",
+                    "originalPropertyKey": "accountfilterParam",
+                    "propertyIndex": 2,
+                    "propertyKey": "accountfilterParam",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Account Filter Param",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.PayAPerson.PrimaryContact}\",\"default\":\"{i.i18n.PayAPerson.PrimaryContact}\"},\"mapping\":\"{$.rootPath.primaryContactForSending}\",\"fieldType\":\"Label\",\"sortBy\":\"primaryContactForSending\"}",
+                    "group": "Data Grid-Tab2",
+                    "kuid": "bcd31a68b5bc4b3880be1cdacc6fed02",
+                    "originalPropertyKey": "dataGridColumn2Tab2",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataGridColumn2Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.payments.bankNameOne}\",\"default\":\"{i.i18n.transfers.bankName}\"},\"mapping\":\"{$.rootPath.bankName}\",\"fieldType\":\"Label\",\"sortBy\":\"bankName\"}",
+                    "group": "Data Grid-Tab1",
+                    "kuid": "f933e72bff0045fd869f1045bfad10dc",
+                    "originalPropertyKey": "dataGridColumn2Tab1",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataGridColumn2Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getExternalPayees",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "h84bb9c727834fceb8ffc7ce9fcf3f90",
+                    "originalPropertyKey": "accountsGETOperation",
+                    "propertyIndex": 3,
+                    "propertyKey": "accountsGETOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Accounts GET Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"ICSknBtnAccountSummaryUnselected2\",\"$.BREAKPTS.bp1\":\"ICSknBtnAccountSummaryUnselected2\"}",
+                    "group": "Skins",
+                    "kuid": "f1923f960d0c47e5b46d78a9483357b1",
+                    "originalPropertyKey": "sknFilterInactiveTab",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknFilterInactiveTab",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter inactive tab skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "b428a9a4e42446a7862d878db5c55ce7",
+                    "originalPropertyKey": "isP2PVisible",
+                    "propertyIndex": 3,
+                    "propertyKey": "isP2PVisible",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P tab visibility",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"pagination_back_inactive.png\"}",
+                    "group": "Images/Icons",
+                    "kuid": "b30cc37063174e3582ad8397375daaf2",
+                    "originalPropertyKey": "iconPaginationPrevious",
+                    "propertyIndex": 3,
+                    "propertyKey": "iconPaginationPrevious",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pagination previous icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Label",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "i948aebf33594ca3adfc32a9d15eaceb",
+                    "originalPropertyKey": "additionalDetailsType1Tab1",
+                    "propertyIndex": 3,
+                    "propertyKey": "additionalDetailsType1Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Label",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "bffeb53774c54c0895f6ebfa288ad0e1",
+                    "originalPropertyKey": "additionalDetailsType1Tab2",
+                    "propertyIndex": 3,
+                    "propertyKey": "additionalDetailsType1Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"sortBy\":\"createdOn\",\"sortOrder\":\"asc\"}",
+                    "group": "Cache Params",
+                    "kuid": "i8badccd88484e17b74c5917443ef5e6",
+                    "originalPropertyKey": "accountsortParams",
+                    "propertyIndex": 3,
+                    "propertyKey": "accountsortParams",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Account Sort Params",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Data Grid-Tab2",
+                    "kuid": "f4a47ba05d8a4d3da5dfe63948207e55",
+                    "originalPropertyKey": "dataGridColumn3Tab2",
+                    "propertyIndex": 4,
+                    "propertyKey": "dataGridColumn3Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.billPay.Status}\",\"default\":\"{i.i18n.billPay.Status}\"},\"mapping\":\"{$.rootPath.isVerified}\",\"fieldType\":\"Label\",\"sortBy\":\"isVerified\"}",
+                    "group": "Data Grid-Tab1",
+                    "kuid": "h2f4c7d3362546099ba815c95ba75405",
+                    "originalPropertyKey": "dataGridColumn3Tab1",
+                    "propertyIndex": 4,
+                    "propertyKey": "dataGridColumn3Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"offset\":0,\"limit\":2000,\"resetSorting\":true,\"dataSource\":\"fabric\"}",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "b3a6f3ed0fa74839ac4404d2bff64e69",
+                    "originalPropertyKey": "accountsGETCriteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "accountsGETCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Accounts  GET Criteria ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "e780742a98534c8e977d02de9db77115",
+                    "originalPropertyKey": "sknFilterInactiveTabHover",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknFilterInactiveTabHover",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Filter inactive tab hover skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "a10edf246c1245ed922228c9598c5fcc",
+                    "originalPropertyKey": "isSearchEnabled",
+                    "propertyIndex": 4,
+                    "propertyKey": "isSearchEnabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Search enabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"pagination_next_inactive.png\"}",
+                    "group": "Images/Icons",
+                    "kuid": "ccb3e1c9bba046b78addb33005d0cc46",
+                    "originalPropertyKey": "iconPaginationNext",
+                    "propertyIndex": 4,
+                    "propertyKey": "iconPaginationNext",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pagination next icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.bt1\":{\"$.BREAKPTS.bp1\":\"{i.i18n.payments.routingNoWithColon}\",\"default\":\"{i.i18n.transfers.routingNumber}\"},\"$.BNFTYPES.bt3\":{\"$.BREAKPTS.bp2\":\"{i.i18n.transfers.swiftcode}\",\"default\":\"{i.i18n.transfers.swiftcode}\"},\"default\":{\"$.BREAKPTS.bp1\":\"{i.i18n.payments.routingNoWithColon}\",\"default\":\"{i.i18n.transfers.routingNumber}\"}}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "bb9f4b998ea943129eb1de7d55e99be8",
+                    "originalPropertyKey": "additionalDetailsLabel2Tab1",
+                    "propertyIndex": 4,
+                    "propertyKey": "additionalDetailsLabel2Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.CardManagement.RegisteredPhoneNo}",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "e24871dff37a435aa56dd42a5d1f1192",
+                    "originalPropertyKey": "additionalDetailsLabel2Tab2",
+                    "propertyIndex": 4,
+                    "propertyKey": "additionalDetailsLabel2Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 2,
+                    "group": "Cache Params",
+                    "kuid": "e1a14910030c4f3983078807e63f60c4",
+                    "originalPropertyKey": "accountRecordsPerPage",
+                    "propertyIndex": 4,
+                    "propertyKey": "accountRecordsPerPage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Account Records per page",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"fields\":[\"name\",\"nickName\",\"email\",\"phone\",\"primaryContactForSending\"]}",
+                    "group": "Cache Params",
+                    "kuid": "b31f8d77377544898199df46387a71d3",
+                    "originalPropertyKey": "p2pSearchFields",
+                    "propertyIndex": 5,
+                    "propertyKey": "p2pSearchFields",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Search Fields",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Data Grid-Tab2",
+                    "kuid": "h57f93ac24cf499b847329fb1835f221",
+                    "originalPropertyKey": "dataGridColumn4Tab2",
+                    "propertyIndex": 5,
+                    "propertyKey": "dataGridColumn4Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Data Grid-Tab1",
+                    "kuid": "e47d68f229f34e7a975b7fd2601d68c3",
+                    "originalPropertyKey": "dataGridColumn4Tab1",
+                    "propertyIndex": 5,
+                    "propertyKey": "dataGridColumn4Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S1",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "b4c385649057457ba68a8c4e30f007cd",
+                    "originalPropertyKey": "accountsGETIdentifier",
+                    "propertyIndex": 5,
+                    "propertyKey": "accountsGETIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Accounts  GET Service Response Identifier ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknbgFBFBFBtopbottombte3e3e3",
+                    "group": "Skins",
+                    "kuid": "e7d684fdd1b643ae88d362212defcef1",
+                    "originalPropertyKey": "sknTableHeader",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknTableHeader",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Table header skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"sorting.png\"}",
+                    "group": "Images/Icons",
+                    "kuid": "ia3e022891e344d686516a8aee89d85d",
+                    "originalPropertyKey": "iconColumnSort",
+                    "propertyIndex": 5,
+                    "propertyKey": "iconColumnSort",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column sort default",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.bt1\":\"{$.rootPath.routingNumber}\",\"$.BNFTYPES.bt2\":\"{$.rootPath.routingNumber}\",\"$.BNFTYPES.bt3\":\"{$.rootPath.swiftCode}\"}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "c4481cc389ef40d3a1362a807b6818cc",
+                    "originalPropertyKey": "additionalDetailsValue2Tab1",
+                    "propertyIndex": 5,
+                    "propertyKey": "additionalDetailsValue2Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.rootPath.phone}",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "bd54348af5574217af997d8852da9c95",
+                    "originalPropertyKey": "additionalDetailsValue2Tab2",
+                    "propertyIndex": 5,
+                    "propertyKey": "additionalDetailsValue2Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "All",
+                    "group": "Cache Params",
+                    "kuid": "b740de052e7b4abb88188a70eb8f3b04",
+                    "originalPropertyKey": "p2pfilterParam",
+                    "propertyIndex": 6,
+                    "propertyKey": "p2pfilterParam",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Filter Param",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.TradeFinance.Actions}\",\"default\":\"{i.i18n.TradeFinance.Actions}\"},\"text\":{\"$.BREAKPTS.bp1\":\"{i.i18n.Pay.SendMoney}\",\"default\":\"{i.i18n.Pay.SendMoney}\"},\"action\":{\"level\":\"Form\",\"method\":\"p2pSendMoney\",\"context\":\"\"},\"entitlement\":[\"P2P_CREATE\"]}",
+                    "group": "Data Grid-Tab2",
+                    "kuid": "ba69607da56f4a5fabb5c1396dd80b77",
+                    "originalPropertyKey": "dataGridColumn5Tab2",
+                    "propertyIndex": 6,
+                    "propertyKey": "dataGridColumn5Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column5",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.TradeFinance.Actions}\",\"default\":\"{i.i18n.TradeFinance.Actions}\"},\"text\":{\"$.BREAKPTS.bp1\":\"{i.i18n.Pay.SendMoney}\",\"default\":\"{i.i18n.Pay.SendMoney}\"},\"action\":{\"level\":\"Form\",\"method\":\"onAccountsSendMoney\",\"context\":\"\"},\"entitlement\":[\"INTRA_BANK_FUND_TRANSFER_CREATE\",\"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE\",\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE\"]}",
+                    "group": "Data Grid-Tab1",
+                    "kuid": "dc98149c4f4f417e94205d4dcb3dbb48",
+                    "originalPropertyKey": "dataGridColumn5Tab1",
+                    "propertyIndex": 6,
+                    "propertyKey": "dataGridColumn5Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column5",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"ICSknLblSSP42424215px\",\"$.BREAKPTS.bp1\":\"ICSknBBLabelSSP42424213px\"}",
+                    "group": "Skins",
+                    "kuid": "df800e80a443481d9d1f6f8732fd11d6",
+                    "originalPropertyKey": "sknTableHeaderText",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknTableHeaderText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Table header text skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "deleteExternalPayee",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "b3122148756f44428430091e1b9621e9",
+                    "originalPropertyKey": "accountsDELETEOperation",
+                    "propertyIndex": 6,
+                    "propertyKey": "accountsDELETEOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Accounts DELETE Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"sorting_previous.png\"}",
+                    "group": "Images/Icons",
+                    "kuid": "f60bb0014ac0416caa07846d25bccea4",
+                    "originalPropertyKey": "iconColumnSortAsc",
+                    "propertyIndex": 6,
+                    "propertyKey": "iconColumnSortAsc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column Sort asc",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.bt1\":\"Label\",\"$.BNFTYPES.bt2\":\"Label\",\"$.BNFTYPES.bt3\":\"Label\"}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "i1a8cf5693e74ae7806f9462519849b0",
+                    "originalPropertyKey": "additionalDetailsType2Tab1",
+                    "propertyIndex": 6,
+                    "propertyKey": "additionalDetailsType2Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Label",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "f2500f8a741849e2bf83976e7ec888eb",
+                    "originalPropertyKey": "additionalDetailsType2Tab2",
+                    "propertyIndex": 6,
+                    "propertyKey": "additionalDetailsType2Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "c0f6e6836c37460eafc9fe831b63cc2c",
+                    "originalPropertyKey": "isBeneficiaryTypeIconVisible",
+                    "propertyIndex": 6,
+                    "propertyKey": "isBeneficiaryTypeIconVisible",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Beneficiary Type Icon",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"sortBy\":\"nickName\",\"order\":\"asc\"}",
+                    "group": "Cache Params",
+                    "kuid": "h82f1f962bf6467e8a2716c98e175f5c",
+                    "originalPropertyKey": "p2psortParams",
+                    "propertyIndex": 7,
+                    "propertyKey": "p2psortParams",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Sort Params",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.payments.linkedCustomer}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "bd46ef806fed4bb9805948b2b0d27670",
+                    "originalPropertyKey": "additionalDetailsLabel3Tab1",
+                    "propertyIndex": 7,
+                    "propertyKey": "additionalDetailsLabel3Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxf7f7f7",
+                    "group": "Skins",
+                    "kuid": "jdee010b0b0e4748ae002094b270bdd9",
+                    "originalPropertyKey": "sknRowExpanded",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknRowExpanded",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row expanded skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"accountNumber\":\"\",\"Id\":\"\",\"isSameBankAccount\":\"\",\"isInternationalAccount\":\"\",\"dataSource\":\"fabric\"}",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "c3f09ac094cc4fe6ba7e38bf06a1b8c2",
+                    "originalPropertyKey": "accountsDELETECriteria",
+                    "propertyIndex": 7,
+                    "propertyKey": "accountsDELETECriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Accounts  DELETE Criteria ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"sorting_next.png\"}",
+                    "group": "Images/Icons",
+                    "kuid": "a9d3251a84cc4dd2ac189bfc2488b357",
+                    "originalPropertyKey": "iconColumnSortDsc",
+                    "propertyIndex": 7,
+                    "propertyKey": "iconColumnSortDsc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column Sort Dsc",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "g1b265d1b2114802b2ed7ffddec5a6cc",
+                    "originalPropertyKey": "additionalDetailsLabel3Tab2",
+                    "propertyIndex": 7,
+                    "propertyKey": "additionalDetailsLabel3Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":{\"$.BREAKPTS.bp1\":\"{i.i18n.Pay.SendMoney}\",\"default\":\"{i.i18n.Pay.SendMoney}\"},\"action\":{\"level\":\"Form\",\"method\":\"onAddRecipient\",\"context\":\"\"},\"entitlement\":[]}",
+                    "group": "General",
+                    "kuid": "b968bb39c3b24ef1b6ef4eb0994260e4",
+                    "originalPropertyKey": "emptyListAction",
+                    "propertyIndex": 7,
+                    "propertyKey": "emptyListAction",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Empty List Action",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.rootPath.noOfCustomersLinked}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "b5047f89152c4d859bb05c0b594f8fbe",
+                    "originalPropertyKey": "additionalDetailsValue3Tab1",
+                    "propertyIndex": 8,
+                    "propertyKey": "additionalDetailsValue3Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknsegf7f7f7hover",
+                    "group": "Skins",
+                    "kuid": "j949453a581b4df985d2d5dff06a1157",
+                    "originalPropertyKey": "sknRowHover",
+                    "propertyIndex": 8,
+                    "propertyKey": "sknRowHover",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row hover skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S2",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "fc8486dab0d5406ebb2b3bec0f638575",
+                    "originalPropertyKey": "accountsDELETEIdentifier",
+                    "propertyIndex": 8,
+                    "propertyKey": "accountsDELETEIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Accounts  DELETE Service Response Identifier ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "d4a2c4d95929494ea3fde5396511c03b",
+                    "originalPropertyKey": "additionalDetailsValue3Tab2",
+                    "propertyIndex": 8,
+                    "propertyKey": "additionalDetailsValue3Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":{\"$.BREAKPTS.bp1\":\"{i.i18n.FastTransfers.NoAccounts}\",\"default\":\"{i.i18n.FastTransfers.NoAccounts}\"},\"entitlement\":[]}",
+                    "group": "General",
+                    "kuid": "i4fd4ef7b7084b16a0a477875cc9da61",
+                    "originalPropertyKey": "emptyListLabel",
+                    "propertyIndex": 8,
+                    "propertyKey": "emptyListLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Empty List Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 2,
+                    "group": "Cache Params",
+                    "kuid": "i27349d2edf34caca6404c8bd5e7c4e2",
+                    "originalPropertyKey": "p2pRecordsPerPage",
+                    "propertyIndex": 8,
+                    "propertyKey": "p2pRecordsPerPage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Records Per Page",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Label",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "a48352fb922b45f98b5ea7455e122b0c",
+                    "originalPropertyKey": "additionalDetailsType3Tab1",
+                    "propertyIndex": 9,
+                    "propertyKey": "additionalDetailsType3Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLabelBgDBDBDB",
+                    "group": "Skins",
+                    "kuid": "f18e9f69d2ac4e87b91b7353338cdb01",
+                    "originalPropertyKey": "sknRowSeperator",
+                    "propertyIndex": 9,
+                    "propertyKey": "sknRowSeperator",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row seperator skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PayeeObjects",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "fca1579ecbb44914ac1b4834974afe1b",
+                    "originalPropertyKey": "p2pObjectService",
+                    "propertyIndex": 9,
+                    "propertyKey": "p2pObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": " P2P Object Service ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "e521dafaed744d2f97abae6906a17129",
+                    "originalPropertyKey": "additionalDetailsType3Tab2",
+                    "propertyIndex": 9,
+                    "propertyKey": "additionalDetailsType3Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"ICSknBBLabelSSP42424215px\",\"$.BREAKPTS.bp1\":\"ICSknBBLabelSSP42424213px\"}",
+                    "group": "Skins",
+                    "kuid": "i24305788aec4b989ddc38f45089dfb2",
+                    "originalPropertyKey": "sknValueField",
+                    "propertyIndex": 10,
+                    "propertyKey": "sknValueField",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Value field skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Recipients",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "ae19bdf017624a6c82e38391e7fd740e",
+                    "originalPropertyKey": "p2pObject",
+                    "propertyIndex": 10,
+                    "propertyKey": "p2pObject",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": " P2P Object",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.bt1\":{\"$.BREAKPTS.bp1\":\"{i.i18n.payments.nickNameWithColon}\",\"default\":\"{i.i18n.payments.nickNameWithColon}\"},\"$.BNFTYPES.bt3\":{\"$.BREAKPTS.bp2\":\"{i.i18n.payments.nickNameWithColon}\",\"default\":\"{i.i18n.payments.nickNameWithColon}\"},\"default\":{\"$.BREAKPTS.bp1\":\"{i.i18n.payments.nickNameWithColon}\",\"default\":\"{i.i18n.payments.nickNameWithColon}\"}}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "c198558a53f8444b82bdf5f2ca14ee16",
+                    "originalPropertyKey": "additionalDetailsLabel4Tab1",
+                    "propertyIndex": 10,
+                    "propertyKey": "additionalDetailsLabel4Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.PayPerson.nickName}",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "c387927af0dd411cad50c8c24d778c6b",
+                    "originalPropertyKey": "additionalDetailsLabel4Tab2",
+                    "propertyIndex": 10,
+                    "propertyKey": "additionalDetailsLabel4Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"ICSknBtnSSP0273e315px\",\"$.BREAKPTS.bp1\":\"ICSknBtnSSP0273e313Px\"}",
+                    "group": "Skins",
+                    "kuid": "hb7949513c9346e8bfff9b2f963cd208",
+                    "originalPropertyKey": "sknActionButtons",
+                    "propertyIndex": 11,
+                    "propertyKey": "sknActionButtons",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Action buttons skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getP2PPayee",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "d9f936ebaa3541489789349d6f9040b7",
+                    "originalPropertyKey": "p2pGETOperation",
+                    "propertyIndex": 11,
+                    "propertyKey": "p2pGETOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P GET Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.bt1\":\"{$.rootPath.nickName}\",\"$.BNFTYPES.bt2\":\"{$.rootPath.nickName}\",\"$.BNFTYPES.bt3\":\"{$.rootPath.nickName}\"}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "ge090234bd9c4ec1928c99a9550841a5",
+                    "originalPropertyKey": "additionalDetailsValue4Tab1",
+                    "propertyIndex": 11,
+                    "propertyKey": "additionalDetailsValue4Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.rootPath.nickName}",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "ice863a701f94952804fc4f6a327d324",
+                    "originalPropertyKey": "additionalDetailsValue4Tab2",
+                    "propertyIndex": 11,
+                    "propertyKey": "additionalDetailsValue4Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"ICSknSSP72727215Px\",\"$.BREAKPTS.bp1\":\"ICSknSSP72727213Px\"}",
+                    "group": "Skins",
+                    "kuid": "dfeb53805b224321bcf6dfead7716003",
+                    "originalPropertyKey": "sknAdditionalDetailsLabel",
+                    "propertyIndex": 12,
+                    "propertyKey": "sknAdditionalDetailsLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Additional details label skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"offset\":0,\"limit\":2000,\"resetSorting\":true,\"sortBy\":\"nickName\",\"order\":\"asc\",\"dataSource\":\"fabric\"}",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "df5124bca117489ea0103ca3b6c5f59f",
+                    "originalPropertyKey": "p2pGETCriteria",
+                    "propertyIndex": 12,
+                    "propertyKey": "p2pGETCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P  GET Criteria ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.bt1\":\"Label\",\"$.BNFTYPES.bt2\":\"Label\",\"$.BNFTYPES.bt3\":\"Label\"}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "g3bffe1a0c8e472e8205e9f8cfb1ddfe",
+                    "originalPropertyKey": "additionalDetailsType4Tab1",
+                    "propertyIndex": 12,
+                    "propertyKey": "additionalDetailsType4Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Label",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "h97cf3000f624c0dabe3c731bcb30f5e",
+                    "originalPropertyKey": "additionalDetailsType4Tab2",
+                    "propertyIndex": 12,
+                    "propertyKey": "additionalDetailsType4Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.bt1\":{\"$.BREAKPTS.bp1\":\"{i.i18n.ProfileManagement.AccountType}\",\"default\":\"{i.i18n.ProfileManagement.AccountType}\"},\"$.BNFTYPES.bt3\":{\"$.BREAKPTS.bp2\":\"{i.i18n.ProfileManagement.AccountType}\",\"default\":\"{i.i18n.ProfileManagement.AccountType}\"},\"default\":{\"$.BREAKPTS.bp1\":\"{i.i18n.ProfileManagement.AccountType}\",\"default\":\"{i.i18n.ProfileManagement.AccountType}\"}}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "fa62b26cbf1949dabb3aaec48f0b631e",
+                    "originalPropertyKey": "additionalDetailsLabel5Tab1",
+                    "propertyIndex": 13,
+                    "propertyKey": "additionalDetailsLabel5Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"ICSknSSP42424215Px\",\"$.BREAKPTS.bp1\":\"ICSknSSP42424213Px\"}",
+                    "group": "Skins",
+                    "kuid": "a743fa6ad7204e91bd97cfd3af1eff3f",
+                    "originalPropertyKey": "sknAdditionalDetailsValue",
+                    "propertyIndex": 13,
+                    "propertyKey": "sknAdditionalDetailsValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Additional details value skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S3",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "b007433378d940bba470b3492b3f1cb9",
+                    "originalPropertyKey": "p2pGETIdentifier",
+                    "propertyIndex": 13,
+                    "propertyKey": "p2pGETIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P  GET Service Response Identifier ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.verifyDetails.linkedWith}",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "cfd0fed0ed4544bf8ae0c3c13a8625d3",
+                    "originalPropertyKey": "additionalDetailsLabel5Tab2",
+                    "propertyIndex": 13,
+                    "propertyKey": "additionalDetailsLabel5Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.bt1\":\"{$.rootPath.accountType}\",\"$.BNFTYPES.bt2\":\"{$.rootPath.accountType}\",\"$.BNFTYPES.bt3\":\"{$.rootPath.accountType}\"}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "b9d06b65c8b442ecbcef4283c1e8f1c5",
+                    "originalPropertyKey": "additionalDetailsValue5Tab1",
+                    "propertyIndex": 14,
+                    "propertyKey": "additionalDetailsValue5Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"sknBtnSSP0273e315px\",\"$.BREAKPTS.bp1\":\"ICSknBtnSSP0273e313Px\"}",
+                    "group": "Skins",
+                    "kuid": "d7dc9bd81efd4e3c9c798855f75c93ab",
+                    "originalPropertyKey": "sknAdditionalDetailsButton",
+                    "propertyIndex": 14,
+                    "propertyKey": "sknAdditionalDetailsButton",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Additional details Action buttons skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "deleteP2PPayee",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "be6c53c91cec4d09bb193a2e5433f163",
+                    "originalPropertyKey": "p2pDELETEOperation",
+                    "propertyIndex": 14,
+                    "propertyKey": "p2pDELETEOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P DELETE Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.rootPath.noOfCustomersLinked}",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "c45651c059b64ca7b27f2b7d7eda205b",
+                    "originalPropertyKey": "additionalDetailsValue5Tab2",
+                    "propertyIndex": 14,
+                    "propertyKey": "additionalDetailsValue5Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BNFTYPES.bt1\":\"Label\",\"$.BNFTYPES.bt2\":\"Label\",\"$.BNFTYPES.bt3\":\"Label\"}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "adc5f4c0e7504088a1d3d5dec82606ab",
+                    "originalPropertyKey": "additionalDetailsType5Tab1",
+                    "propertyIndex": 15,
+                    "propertyKey": "additionalDetailsType5Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"PayPersonId\":\"\",\"dataSource\":\"fabric\"}",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "b4374844d7c14d34903aee40f6f48262",
+                    "originalPropertyKey": "p2pDELETECriteria",
+                    "propertyIndex": 15,
+                    "propertyKey": "p2pDELETECriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P  DELETE Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknBBLabelSSP20Px",
+                    "group": "Skins",
+                    "kuid": "cb9a669672934d56bef68a84b47beef4",
+                    "originalPropertyKey": "sknBlockTitle",
+                    "propertyIndex": 15,
+                    "propertyKey": "sknBlockTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Block Title Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Label",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "bbd3fe9b0ad841ed8e7e4bf910e17b30",
+                    "originalPropertyKey": "additionalDetailsType5Tab2",
+                    "propertyIndex": 15,
+                    "propertyKey": "additionalDetailsType5Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S4",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "h05b9406696c4055b6cc4138b1d29daa",
+                    "originalPropertyKey": "p2pDELETEIdentifier",
+                    "propertyIndex": 16,
+                    "propertyKey": "p2pDELETEIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P  DELETE Service Response Identifier ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxffffffBorder1",
+                    "group": "Skins",
+                    "kuid": "bf7f98d631b94d7a83c72de7330bfc66",
+                    "originalPropertyKey": "sknSearchTextBox",
+                    "propertyIndex": 16,
+                    "propertyKey": "sknSearchTextBox",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Search TextBox Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "j89467927b45494e950b10a7bafce196",
+                    "originalPropertyKey": "additionalDetailsLabel6Tab1",
+                    "propertyIndex": 16,
+                    "propertyKey": "additionalDetailsLabel6Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "d16ca0c0f2b545b8a762ac6b01920f9e",
+                    "originalPropertyKey": "additionalDetailsLabel6Tab2",
+                    "propertyIndex": 16,
+                    "propertyKey": "additionalDetailsLabel6Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknPlaceHolder94949415px",
+                    "group": "Skins",
+                    "kuid": "ad07fbf0a97149c29ce37022dfe13718",
+                    "originalPropertyKey": "sknSearchPlaceHolderTextBox",
+                    "propertyIndex": 17,
+                    "propertyKey": "sknSearchPlaceHolderTextBox",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Search TextBox Placeholder Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "b87bcf849892465284035139b8bb0c0f",
+                    "originalPropertyKey": "additionalDetailsValue6Tab1",
+                    "propertyIndex": 17,
+                    "propertyKey": "additionalDetailsValue6Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "aa18da2cd9444b24a4514d91f94d4225",
+                    "originalPropertyKey": "additionalDetailsValue6Tab2",
+                    "propertyIndex": 17,
+                    "propertyKey": "additionalDetailsValue6Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"searchString\":\"\",\"dataSource\":\"fabric\"}",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "e37e86fb12634868a35529bedf0d2d23",
+                    "originalPropertyKey": "p2pSearchCriteria",
+                    "propertyIndex": 17,
+                    "propertyKey": "p2pSearchCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "P2P Search Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "RBObjects",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "ff60cef95ccd49c895d38f76416e4196",
+                    "originalPropertyKey": "accountsSearchObjectService",
+                    "propertyIndex": 18,
+                    "propertyKey": "accountsSearchObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Accounts Search Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknBBLabelSSP42424215px",
+                    "group": "Skins",
+                    "kuid": "f3c469f4d78041008a737b156f5a94f4",
+                    "originalPropertyKey": "sknSearchTextBoxFocus",
+                    "propertyIndex": 18,
+                    "propertyKey": "sknSearchTextBoxFocus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Search TextBox Focus Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "j1d8c2acc0a747a8a63678cd93595450",
+                    "originalPropertyKey": "additionalDetailsType6Tab1",
+                    "propertyIndex": 18,
+                    "propertyKey": "additionalDetailsType6Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "e70437102b4e4f0ba759aff121e4ce85",
+                    "originalPropertyKey": "additionalDetailsType6Tab2",
+                    "propertyIndex": 18,
+                    "propertyKey": "additionalDetailsType6Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ExternalAccounts",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "ea712fcc0e4f4d15bfead8979432a323",
+                    "originalPropertyKey": "accountsSearchObject",
+                    "propertyIndex": 19,
+                    "propertyKey": "accountsSearchObject",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Accounts Search Object",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknbbSknLblFontIcon",
+                    "group": "Skins",
+                    "kuid": "f1f0f65661ae43dfbd6408c47dc5c8ea",
+                    "originalPropertyKey": "sknBusinessPayee",
+                    "propertyIndex": 19,
+                    "propertyKey": "sknBusinessPayee",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Business Payee Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "i421af9429a24a7485db727d8330f13d",
+                    "originalPropertyKey": "additionalDetailsLabel7Tab1",
+                    "propertyIndex": 19,
+                    "propertyKey": "additionalDetailsLabel7Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "a0e1210f6fe4432aa4309e74763d7563",
+                    "originalPropertyKey": "additionalDetailsLabel7Tab2",
+                    "propertyIndex": 19,
+                    "propertyKey": "additionalDetailsLabel7Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "GET",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "fb02c11b48ef4743b720ed889576537b",
+                    "originalPropertyKey": "accountsSearchOperation",
+                    "propertyIndex": 20,
+                    "propertyKey": "accountsSearchOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Accounts Search Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknPersonalPayeeIcon",
+                    "group": "Skins",
+                    "kuid": "a282cf4a631a4019a28a3d0e97beb2a9",
+                    "originalPropertyKey": "sknPersonalPayee",
+                    "propertyIndex": 20,
+                    "propertyKey": "sknPersonalPayee",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Personal Payee Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "ec699fa1e8754de7b9b6e6f6971554fb",
+                    "originalPropertyKey": "additionalDetailsValue7Tab1",
+                    "propertyIndex": 20,
+                    "propertyKey": "additionalDetailsValue7Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "c07a269a01474682ae7cc77315bcb104",
+                    "originalPropertyKey": "additionalDetailsValue7Tab2",
+                    "propertyIndex": 20,
+                    "propertyKey": "additionalDetailsValue7Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"searchString\":\"\",\"dataSource\":\"fabric\"}",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "h37ec9fd736b4a3490aa3ca8a24bd6e3",
+                    "originalPropertyKey": "accountsSearchCriteria",
+                    "propertyIndex": 21,
+                    "propertyKey": "accountsSearchCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Accounts Search Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "a4566e5092064260a71ef01c1c729ea0",
+                    "originalPropertyKey": "additionalDetailsType7Tab1",
+                    "propertyIndex": 21,
+                    "propertyKey": "additionalDetailsType7Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "fcc06beb6b424adeade8c721628fb9ae",
+                    "originalPropertyKey": "additionalDetailsType7Tab2",
+                    "propertyIndex": 21,
+                    "propertyKey": "additionalDetailsType7Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\":\"ICSknlblSearchfonticon17px0273e3\",\"$.BREAKPTS.bp1\":\"ICSknlblSearchfonticon17px0273e3\"}",
+                    "group": "Skins",
+                    "kuid": "hd1d0041be04441e9d7d6d5a657fc938",
+                    "originalPropertyKey": "sknSearchIcon",
+                    "propertyIndex": 21,
+                    "propertyKey": "sknSearchIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Search Icon Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S5",
+                    "group": "Beneficiary Management Service",
+                    "kuid": "b7cacb68ba0b46b3a54d132ef30f5fcc",
+                    "originalPropertyKey": "accountsSearchIdentifier",
+                    "propertyIndex": 22,
+                    "propertyKey": "accountsSearchIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Account Search Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "jfab9ae644d74c52849e716e478074af",
+                    "originalPropertyKey": "additionalDetailsLabel8Tab1",
+                    "propertyIndex": 22,
+                    "propertyKey": "additionalDetailsLabel8Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "f1aa173f1a964feba318d0b1ee81fabc",
+                    "originalPropertyKey": "additionalDetailsLabel8Tab2",
+                    "propertyIndex": 22,
+                    "propertyKey": "additionalDetailsLabel8Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknBBLabelSSP42424213px",
+                    "group": "Skins",
+                    "kuid": "b382145d20094c59ab8c90b22c4f46c5",
+                    "originalPropertyKey": "sknValueField1Mobile",
+                    "propertyIndex": 22,
+                    "propertyKey": "sknValueField1Mobile",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Value Row 1 Skin Mobile",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "c8f8dbcf402f4677a3d4edbfb81e0e2e",
+                    "originalPropertyKey": "additionalDetailsValue8Tab1",
+                    "propertyIndex": 23,
+                    "propertyKey": "additionalDetailsValue8Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "j582614af1574ef5abb03d04f93776cb",
+                    "originalPropertyKey": "additionalDetailsValue8Tab2",
+                    "propertyIndex": 23,
+                    "propertyKey": "additionalDetailsValue8Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLblSSP72727213px",
+                    "group": "Skins",
+                    "kuid": "id55c550e6184be793645706114984ea",
+                    "originalPropertyKey": "sknValueField2Mobile",
+                    "propertyIndex": 23,
+                    "propertyKey": "sknValueField2Mobile",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Value Row 2 Skin Mobile",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "ed9670cf84e84649b278763c3e67a228",
+                    "originalPropertyKey": "additionalDetailsType8Tab1",
+                    "propertyIndex": 24,
+                    "propertyKey": "additionalDetailsType8Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "e37c4b8a083d400db61a80f1ea1261fa",
+                    "originalPropertyKey": "additionalDetailsType8Tab2",
+                    "propertyIndex": 24,
+                    "propertyKey": "additionalDetailsType8Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "de40eef31fd443d7be3a79e27db928b4",
+                    "originalPropertyKey": "additionalDetailsLabel9Tab1",
+                    "propertyIndex": 25,
+                    "propertyKey": "additionalDetailsLabel9Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "g8c17eae93d24be9b5fb9c47e84cfd00",
+                    "originalPropertyKey": "additionalDetailsLabel9Tab2",
+                    "propertyIndex": 25,
+                    "propertyKey": "additionalDetailsLabel9Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "jc880315b7b24678b24d4a177dcde6dc",
+                    "originalPropertyKey": "additionalDetailsValue9Tab1",
+                    "propertyIndex": 26,
+                    "propertyKey": "additionalDetailsValue9Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "b0cc222724674d8d9e9710bc1f4c1611",
+                    "originalPropertyKey": "additionalDetailsValue9Tab2",
+                    "propertyIndex": 26,
+                    "propertyKey": "additionalDetailsValue9Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "ca97a3a9f8484a12b526f53d3e323649",
+                    "originalPropertyKey": "additionalDetailsType9Tab1",
+                    "propertyIndex": 27,
+                    "propertyKey": "additionalDetailsType9Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "ca9c52fc0a4846d6a6ae3d74bcbaa779",
+                    "originalPropertyKey": "additionalDetailsType9Tab2",
+                    "propertyIndex": 27,
+                    "propertyKey": "additionalDetailsType9Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.transfers.viewActivity}\",\"default\":\"{i.i18n.transfers.viewActivity}\"},\"action\":{\"level\":\"Form\",\"method\":\"onAccountsViewActivity\"},\"entitlement\":[\"INTRA_BANK_FUND_TRANSFER_VIEW\",\"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\",\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\"]}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "aae972e7927048eb96c3f8979e9fbc0c",
+                    "originalPropertyKey": "additionalDetailsAction1Tab1",
+                    "propertyIndex": 28,
+                    "propertyKey": "additionalDetailsAction1Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Additional Details Action 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.accounts.edit}\",\"default\":\"{i.i18n.accounts.edit}\"},\"action\":{\"level\":\"Form\",\"method\":\"editP2PRecipient\"},\"entitlement\":[\"P2P_CREATE_RECEPIENT\"]}",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "c6c2fccdaf3f4fb9a5185ef8a721802b",
+                    "originalPropertyKey": "additionalDetailsAction1Tab2",
+                    "propertyIndex": 28,
+                    "propertyKey": "additionalDetailsAction1Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Additional Details Action 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.accounts.edit}\",\"default\":\"{i.i18n.accounts.edit}\"},\"action\":{\"level\":\"Form\",\"method\":\"externalAccountsSegmentRowClickEdit\"},\"entitlement\":[\"INTRA_BANK_FUND_TRANSFER_CREATE_RECEPIENT\",\"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\",\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\"]}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "db149f36082f4bd08293aa4a32851345",
+                    "originalPropertyKey": "additionalDetailsAction2Tab1",
+                    "propertyIndex": 29,
+                    "propertyKey": "additionalDetailsAction2Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Additional Details Action 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.transfers.viewActivity}\",\"default\":\"{i.i18n.transfers.viewActivity}\"},\"action\":{\"level\":\"Form\",\"method\":\"onP2PViewActiviy\"},\"entitlement\":[\"P2P_VIEW\"]}",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "cb08329e43fa40f39d672a856b9d031f",
+                    "originalPropertyKey": "additionalDetailsAction2Tab2",
+                    "propertyIndex": 29,
+                    "propertyKey": "additionalDetailsAction2Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Additional Details Action 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.FastTransfers.RemoveRecipient}\",\"default\":\"{i.i18n.FastTransfers.RemoveRecipient}\"},\"action\":{\"level\":\"Component\",\"method\":\"\"},\"entitlement\":[\"INTRA_BANK_FUND_TRANSFER_DELETE_RECEPIENT\",\"INTER_BANK_ACCOUNT_FUND_TRANSFER_DELETE_RECEPIENT\",\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_DELETE_RECEPIENT\"]}",
+                    "group": "Additional Details-Tab1",
+                    "kuid": "d3d4ea399aa54ddf851c22d05f9feaa5",
+                    "originalPropertyKey": "additionalDetailsAction3Tab1",
+                    "propertyIndex": 30,
+                    "propertyKey": "additionalDetailsAction3Tab1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Additional Details Action 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"title\":{\"$.BREAKPTS.bp1\":\"{i.i18n.FastTransfers.RemoveRecipient}\",\"default\":\"{i.i18n.FastTransfers.RemoveRecipient}\"},\"action\":{\"level\":\"Component\",\"method\":\"\"},\"entitlement\":[\"P2P_DELETE_RECEPIENT\"]}",
+                    "group": "Additional Details-Tab2",
+                    "kuid": "d5d67271f0e342a18f2bb99b65034a35",
+                    "originalPropertyKey": "additionalDetailsAction3Tab2",
+                    "propertyIndex": 30,
+                    "propertyKey": "additionalDetailsAction3Tab2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Additional Details Action 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "caaeea92d95a4c0b84281f4bb938a7de",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Transfers",
+    "version": "1.0.0"
+}

@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_ie223bdad5594bb69c25c1e4179f69d1": {
+        "id": "AS_AppEvents_ie223bdad5594bb69c25c1e4179f69d1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c3b92b802b6a44c9bd925550189d5de7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var self = this;   \n  kony.print(\"Testing JS Load\");    \n _kony.mvc.initCompositeApp(true);\n     var isIOS13 = (/(iPad|iPhone);.*CPU.*OS 13_\\d/i).test(navigator.userAgent);   \n   if (isIOS13) {\n        kony.application.setApplicationBehaviors({\n          disableForceRepaint: true  \n        });  \n    }\n    var moduleName = 'ApplicationManager';  \n    require([moduleName], function(ApplicationManager) {\n      applicationManager = ApplicationManager.getApplicationManager(); \n         var config = applicationManager.getConfigurationManager();  \n        if (performance.navigation.type === 1)\n {         \n    config.setBrowserRefreshProperty(\"true\");    \n      } \n        var sm = applicationManager.getStorageManager();\n         var langObjFromStorage = sm.getStoredItem(\"langObj\");     \n     if (!kony.sdk.isNullOrUndefined(langObjFromStorage)) { \n            config.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);     \n       config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);   \n       } else {\n             config.configurations.setItem(\"LOCALE\", \"en_US\");   \n         config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);   \n       }      \n    kony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function() {}, function() {});   \n      document.body.addEventListener('contextmenu', function(e) { \n           e.preventDefault();       \n       alert(kony.i18n.getLocalizedString(\"i18n.general.rightclickdisabled\"));   \n       });   \n   });  ",
+            "parentId": null
+        }]
+    }
+}

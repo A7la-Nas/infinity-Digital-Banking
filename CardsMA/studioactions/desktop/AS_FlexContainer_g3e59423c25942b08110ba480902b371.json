@@ -1,0 +1,26 @@
+{
+    "AS_FlexContainer_g3e59423c25942b08110ba480902b371": {
+        "id": "AS_FlexContainer_g3e59423c25942b08110ba480902b371",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segSelectDestination",
+            "type": "templates",
+            "platform": "",
+            "KUID": "jd201ff9f72148ee8b114275124136b7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a119ae160f3941f0a493c902bbd1a445",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.executeOnParent(\"removeAddressFromList\");",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_hba89cc08eae4a7c9eafbfdd56edf7b9": {
+        "id": "AS_AppEvents_hba89cc08eae4a7c9eafbfdd56edf7b9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a8a3a592d9c24837af9bc51bdd61fbef",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true);\nvar ApplicationManager = require('ApplicationManager');\napplicationManager = ApplicationManager.getApplicationManager();\ntry {\n  kony.lang.setUncaughtExceptionHandler(GlobalExceptionHandler.exceptionHandler);\n  applicationManager.preappInitCalls();\n  registerWatchCallback();\n  var config = applicationManager.getConfigurationManager();\n  var sm = applicationManager.getStorageManager();\n  var langObjFromStorage = sm.getStoredItem(\"langObj\");\n  if (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\n    config.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\n    config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n  } else {\n    config.configurations.setItem(\"LOCALE\", \"en_US\");\n    config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n  }\n  kony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function() {}, function() {});\n} catch (err) {\n  throw GlobalExceptionHandler.addMessageAndActionForException(err, \"kony.error.App_Initialisation_Failed\", GlobalExceptionHandler.ActionConstants.BLOCK, arguments.callee.name);\n}  ",
+            "parentId": null
+        }]
+    }
+}

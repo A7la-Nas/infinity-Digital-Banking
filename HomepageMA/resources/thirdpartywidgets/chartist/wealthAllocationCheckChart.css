@@ -1,0 +1,47 @@
+#WealthAllocationCheckChart .ct-series .ct-bar {
+			stroke-width:15px;
+		}
+
+		#WealthAllocationCheckChart .ct-chart-bar {
+			overflow: visible;
+			margin : 0 0 0 0;
+		}
+
+		#WealthAllocationCheckChart .ct-grid{ 
+			stroke: #E3E3E3;
+		}
+		
+		#WealthAllocationCheckChart svg {
+	width: 90% !important;
+}
+
+#WealthAllocationCheckChart .ct-vertical {
+    stroke-dasharray: 2px !important;
+	stroke-width: 1px;
+    stroke: #E3E3E3 ;		  
+}
+        
+		#WealthAllocationCheckChart .ct-vertical~.ct-vertical{
+			display: none;
+		}
+		
+		#WealthAllocationCheckChart .ct-horizontal {
+			stroke-dasharray : 2px;
+			stroke-width: 1px;
+			stroke: #E3E3E3 ;
+		}
+		
+		#WealthAllocationCheckChart .ct-chart {
+			position: fixed;
+			overflow-x : hidden !important;
+			overflow-y : hidden !important;
+		}
+		
+		#WealthAllocationCheckChart .ct-label, #WealthAllocationCheckChart .ct-barlabel {
+	font-family:  SourceSansPro-Regular, sans-serif;
+    color: #424242;
+    font-size: 13px;
+    justify-content: center;
+	padding-top: 10px;
+
+}

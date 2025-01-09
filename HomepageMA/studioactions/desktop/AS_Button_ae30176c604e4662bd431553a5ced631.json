@@ -1,0 +1,23 @@
+{
+    "AS_Button_ae30176c604e4662bd431553a5ced631": {
+        "id": "AS_Button_ae30176c604e4662bd431553a5ced631",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ac582ee202194b57a4063f432d70884f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a9c1718a59e34806851d72ad4783ede1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\n        var authParams = {\n            \"UserName\": \"4786202531\",\n            \"Password\": \"Kony@1234\",\n            \"loginOptions\": {\n                \"isOfflineEnabled\": false\n            }\n        };\n        authClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\n        authClient.login(authParams, onLoginSuccess, errorCallback);\n\n        function successCallback(resSuccess) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resSuccess);\n            kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AccountsUIModule\").presentationController.showAccountsDashboard();\n        }\n\n        function onLoginSuccess(response) {\n            let self = this;\n            let params = kony.sdk.getCurrentInstance().tokens['DbxUserLogin'].provider_token.params;\n            if (params && params.is_mfa_enabled) {\n                //self.MFANavigation(params.mfa_meta);\n            } else {\n                response = {\n                    \"username\": self.username,\n                    \"rememberMe\": kony.mvc.MDAApplication.getSharedInstance().appContext.rememberMeStatus\n                };\n                //self.onSuccessCallback(response);\n                kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthModule\").presentationController.onLoginSuccess(response);\n            }\n        }\n\n        function errorCallback(resError) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resError);\n            alert(\"login is not working...\");\n        }",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_bc416b80db9b4ae0b618ffd51066952e": {
+        "id": "AS_AppEvents_bc416b80db9b4ae0b618ffd51066952e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_e289578816454ad79fb445231cd8bb4c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true);\nkony.print(\"Testing JS Load\");\nvar isIOS13 = (/(iPad|iPhone);.*CPU.*OS 13_\\d/i).test(navigator.userAgent);\nif (isIOS13) {\nkony.application.setApplicationBehaviors({\ndisableForceRepaint: true\n});\n}\nrequire([\"AboutUsMA/LocateUsModule/frmLocateUs\", \"AboutUsMA/LocateUsModule/frmLocateUsController\"], function() {});\nrequire([\"AboutUsMA/FeedbackModule/frmCustomerFeedback\", \"AboutUsMA/FeedbackModule/frmCustomerFeedbackController\"], function() {});\nrequire([\"AboutUsMA/InformationContentModule/frmContactUsPrivacyTandC\", \"AboutUsMA/InformationContentModule/frmContactUsPrivacyTandCController\"], function() {});\nrequire([\"AboutUsMA/InformationContentModule/frmOnlineHelp\", \"AboutUsMA/InformationContentModule/frmOnlineHelpController\"], function() {});\n\n \n\n      \n//require([\"BBAccountsModule/frmBBAccountsLanding\", \"BBAccountsModule/frmBBAccountsLandingController\"], function (){});\n//var authModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthModule\");\n//var ApplicationManager = require('ApplicationManager');\nvar moduleName = 'ApplicationManager';\nrequire([moduleName], function(ApplicationManager) {\napplicationManager = ApplicationManager.getApplicationManager();\nvar config = applicationManager.getConfigurationManager();\nif (performance.navigation.type === 1) {\nconfig.setBrowserRefreshProperty(\"true\");\n}\nvar sm = applicationManager.getStorageManager();\nvar langObjFromStorage = sm.getStoredItem(\"langObj\");\nif (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\nconfig.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\nconfig.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n} else {\nconfig.configurations.setItem(\"LOCALE\", \"en_US\");\nconfig.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n}\nkony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function() {}, function() {});\ndocument.body.addEventListener('contextmenu', function(e) {\ne.preventDefault();\nalert(kony.i18n.getLocalizedString(\"i18n.general.rightclickdisabled\")); // do something with fooModule\n});\n});",
+            "parentId": null
+        }]
+    }
+}

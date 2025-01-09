@@ -1,0 +1,23 @@
+{
+    "AS_Button_c7378b16e0b342c5b7fadadb22c17949": {
+        "id": "AS_Button_c7378b16e0b342c5b7fadadb22c17949",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmULTUNSendMoney",
+            "type": "forms",
+            "platform": "",
+            "KUID": "af91da0f656a4a588c8bf5257b7101d7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c1cc682163214b0d913ce14993ba7136",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(applicationManager.getPresentationFormUtility().getDeviceName() !== \"iPhone\"){\r\n        try {\r\n    var ClipData = java.import('android.content.ClipData');\r\n            var ClipboardManager = java.import('android.content.ClipboardManager');\r\n            var Contexts = java.import('android.content.Context');\r\n            var KonyMain = java.import('com.konylabs.android.KonyMain');\r\n            var context = KonyMain.getActivityContext();\r\n            var myClipboard = context.getSystemService(Contexts.CLIPBOARD_SERVICE);\r\n            var text = this.view.lblAcknowledgementIDValue.text;\r\n            var myClip = ClipData.newPlainText(\"text\", text);\r\n            myClipboard.setPrimaryClip(myClip);\r\n            alert('  :تم نسخ رقم الحوالة  ' + text);\r\n            } catch (err) {\r\n            alert(\"Error while copying to clipboard: \" + err.message);\r\n        }\r\n    }\r\n    else\r\n    {\r\n            var UIPasteboard = objc.import(\"UIPasteboard\");\r\n              var pasteBoard = UIPasteboard.generalPasteboard();\r\n              pasteBoard.string = this.view.lblAcknowledgementIDValue.text;\r\n            alert(\"  :تم نسخ رقم الحوالة  \");\r\n    }",
+            "parentId": null
+        }]
+    }
+}

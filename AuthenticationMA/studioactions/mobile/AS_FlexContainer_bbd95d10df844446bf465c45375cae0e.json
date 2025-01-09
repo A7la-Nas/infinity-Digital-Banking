@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_bbd95d10df844446bf465c45375cae0e": {
+        "id": "AS_FlexContainer_bbd95d10df844446bf465c45375cae0e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginHID",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d2290ff3858d48938cbd19960c045a3a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f4fcf7104ddd447b8e9036763c9b5838",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "applicationManager.getPresentationUtility().showLoadingScreen();\nconst NUOMod = kony.mvc.MDAApplication.getSharedInstance().moduleManager.getModule({\n  appName: \"AccountsMA\", \n  moduleName: \"NewUserModule\" \n});\nNUOMod.presentationController.resetNewUserPresentationController();\nNUOMod.presentationController.getUsernameAndPasswordRules();\n//  NUOMod.presentationController.commonFunctionForNavigation(\"frmOBSignInWithPhoneNumber\");",
+            "callbackType": null
+        }]
+    }
+}

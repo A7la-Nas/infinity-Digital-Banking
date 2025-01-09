@@ -1,0 +1,1 @@
+{"table":"CompletedCampaign","db":"CampaignEngine"},{"table":"Campaigns","db":"CampaignEngine","verbs":"true"}

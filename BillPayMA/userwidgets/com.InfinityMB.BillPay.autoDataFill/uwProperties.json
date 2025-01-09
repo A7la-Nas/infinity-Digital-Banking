@@ -1,0 +1,494 @@
+{
+    "classname": "autoDataFill",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "be277c4115e64039bb4082e97e53c05f",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "da9eacec82134229bbed2825913d64bb",
+                    "paramList": [],
+                    "propertyKey": "clearContext",
+                    "pw": {
+                        "displayName": "clearContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Search",
+                "Search Service",
+                "Manual Addition",
+                "Skins"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "search_4.png",
+                    "group": "Search",
+                    "kuid": "e6a58c5abeeb426c90c20f7337f50b86",
+                    "originalPropertyKey": "imgSearchIcon",
+                    "propertyIndex": 1,
+                    "propertyKey": "imgSearchIcon",
+                    "pw": {
+                        "displayName": "Search Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "BillPay",
+                    "group": "Search Service",
+                    "kuid": "d45202ef20cc4d7ba6b9adc33662ae5b",
+                    "originalPropertyKey": "billerSearchObjectService",
+                    "propertyIndex": 1,
+                    "propertyKey": "billerSearchObjectService",
+                    "pw": {
+                        "displayName": "BillerSearch Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "b961145187dd44898192bb55ce5bdf13",
+                    "originalPropertyKey": "isSearchEnabled",
+                    "propertyIndex": 1,
+                    "propertyKey": "isSearchEnabled",
+                    "pw": {
+                        "displayName": "Search Enabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.BillPay.UnableToFindPayee",
+                    "group": "Manual Addition",
+                    "kuid": "ba0faf34fa1044a693a426e4b8e70734",
+                    "originalPropertyKey": "lblField2",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblField2",
+                    "pw": {
+                        "displayName": "Label Field 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "jf3ffa5647304cf6b300c420a5215ada",
+                    "originalPropertyKey": "sknLblField1",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknLblField1",
+                    "pw": {
+                        "displayName": "Label Field Skin 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"rootPath\": \"Biller\",   \"text\": \"{$.billerSearch.rootPath.billerName}\",   \"selectedCategoryID\": \"{$.billerSearch.rootPath.billerCategoryId}\",   \"placeHolder\": \"Search by payee name\" }",
+                    "group": "Search",
+                    "kuid": "gf9d549bdadd430c903ae86d1ac56b3a",
+                    "originalPropertyKey": "tbxSearch",
+                    "propertyIndex": 2,
+                    "propertyKey": "tbxSearch",
+                    "pw": {
+                        "displayName": "Search Input Textbox ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Biller",
+                    "group": "Search Service",
+                    "kuid": "ab33ec0cf7864242915982a09de16998",
+                    "originalPropertyKey": "billerSearchObject",
+                    "propertyIndex": 2,
+                    "propertyKey": "billerSearchObject",
+                    "pw": {
+                        "displayName": "BillerSearch Object",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "id3d74ff9ade4a03a2ca2f28a3bfbaf5",
+                    "originalPropertyKey": "isManualAdditionEnabled",
+                    "propertyIndex": 2,
+                    "propertyKey": "isManualAdditionEnabled",
+                    "pw": {
+                        "displayName": "Manual Addition Enabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.BillPay.AddPayeeManually",
+                    "group": "Manual Addition",
+                    "kuid": "g52a08af2a754743840f9d6931957f0a",
+                    "originalPropertyKey": "lblField3",
+                    "propertyIndex": 2,
+                    "propertyKey": "lblField3",
+                    "pw": {
+                        "displayName": "Label Field 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "e0d895d174184abb861017c587588ba8",
+                    "originalPropertyKey": "sknLblFocusSkin1",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknLblFocusSkin1",
+                    "pw": {
+                        "displayName": "Label Field Focus Skin 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "searchBillerByName",
+                    "group": "Search Service",
+                    "kuid": "g083bfbaa79e43e09dee2e2ad63b7a78",
+                    "originalPropertyKey": "billerSearchOperation",
+                    "propertyIndex": 3,
+                    "propertyKey": "billerSearchOperation",
+                    "pw": {
+                        "displayName": "BillerSearch Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLabel72727215PxNew",
+                    "group": "Skins",
+                    "kuid": "b1a4831a5ebb40ddab5e4659119d6485",
+                    "originalPropertyKey": "sknLblField2",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknLblField2",
+                    "pw": {
+                        "displayName": "Label Field Skin 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"action\":{\"level\":\"form\",\"method\":\"navigateToZipCode\"}}",
+                    "group": "General",
+                    "kuid": "c38a87fddf134dadbf8f8dabb7d0dc5d",
+                    "originalPropertyKey": "navigateToForm",
+                    "propertyIndex": 3,
+                    "propertyKey": "navigateToForm",
+                    "pw": {
+                        "displayName": "Navigate From Payee Search",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Please use the search box to find a payee",
+                    "group": "Search",
+                    "kuid": "ica241a52fff461d9529a997a83d0b91",
+                    "originalPropertyKey": "lblField1",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblField1",
+                    "pw": {
+                        "displayName": "Label Field1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"searchString\": \"{$.c.companyName}\",\"limit\": 5}",
+                    "group": "Search Service",
+                    "kuid": "e05a6e0b06ec4452a5c9dd1b1176476c",
+                    "originalPropertyKey": "billerSearchCriteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "billerSearchCriteria",
+                    "pw": {
+                        "displayName": "BillerSearch Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLabel72727215PxNew",
+                    "group": "Skins",
+                    "kuid": "g6efeaee9e2f4f7c8b2da31da538cbb7",
+                    "originalPropertyKey": "sknLblFocusSkin2",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknLblFocusSkin2",
+                    "pw": {
+                        "displayName": "Label Field Focus Skin 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{    \"action\":{       \"level\":\"form\",       \"method\":\"navigateTofrmPhone\"    } }",
+                    "group": "General",
+                    "kuid": "gdf550a21abc456ea1ed29dd565c4849",
+                    "originalPropertyKey": "navigateFromCountryCode",
+                    "propertyIndex": 4,
+                    "propertyKey": "navigateFromCountryCode",
+                    "pw": {
+                        "displayName": "Navigate From Country Code",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"i18n.TransfersEur.btnCancel\",\"action\":{\"level\":\"component\",\"method\":\"onSearchClear\"}}",
+                    "group": "Search",
+                    "kuid": "fe9b08319d324eb38b17308c58fac638",
+                    "originalPropertyKey": "btnSearchClear",
+                    "propertyIndex": 4,
+                    "propertyKey": "btnSearchClear",
+                    "pw": {
+                        "displayName": "Search Action Button",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "billerSearch",
+                    "group": "Search Service",
+                    "kuid": "g34b83c0e5924ebd9a81a335c7e50438",
+                    "originalPropertyKey": "billerSearchIdentifier",
+                    "propertyIndex": 5,
+                    "propertyKey": "billerSearchIdentifier",
+                    "pw": {
+                        "displayName": "BillerSearch Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLblFont4176A4100ONew",
+                    "group": "Skins",
+                    "kuid": "c8a5f9ea1abb484e969baeeab8cad563",
+                    "originalPropertyKey": "sknLblField3",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknLblField3",
+                    "pw": {
+                        "displayName": "Label Field Skin 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"action\": {     \"level\": \"form\",     \"method\": \"navigateTofrmPayeeName\"   } }",
+                    "group": "General",
+                    "kuid": "e35a26b3db1049399b3e91d3ddffbf60",
+                    "originalPropertyKey": "navigateToManualFlow",
+                    "propertyIndex": 5,
+                    "propertyKey": "navigateToManualFlow",
+                    "pw": {
+                        "displayName": "Navigate To Manual Flow",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "infoiconmedium.png",
+                    "group": "Search",
+                    "kuid": "a7d5d15606f343da85ce62aea02af863",
+                    "originalPropertyKey": "imgLabelFieldIcon",
+                    "propertyIndex": 5,
+                    "propertyKey": "imgLabelFieldIcon",
+                    "pw": {
+                        "displayName": "Label Field Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLblFont4176A4100ONew",
+                    "group": "Skins",
+                    "kuid": "j7588a2f1ea14ef29a5a666563a1ac6f",
+                    "originalPropertyKey": "sknLblFocusSkin3",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknLblFocusSkin3",
+                    "pw": {
+                        "displayName": "Label Field Focus Skin 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"street\":\"{$.billerSearch.rootPath.address}\",\"accountNumber\":\"{$.billerSearch.rootPath.accountNumber}\",\"billerId\":\"{$.billerSearch.rootPath.id}\",\"cityName\":\"{$.billerSearch.rootPath.city}\",\"state\":\"{$.billerSearch.rootPath.state}\",\"billerName\":\"{$.billerSearch.rootPath.billerName}\",\"zipCode\":\"{$.billerSearch.rootPath.zipCode}\",\"billerCategoryId\":\"{$.billerSearch.rootPath.billerCategoryId}\"}",
+                    "group": "Search Service",
+                    "kuid": "f37e057785c14055830988528325f89c",
+                    "originalPropertyKey": "searchResultIntoContext",
+                    "propertyIndex": 6,
+                    "propertyKey": "searchResultIntoContext",
+                    "pw": {
+                        "displayName": "Search Result Into Context",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTbxSSPffffffNew",
+                    "group": "Skins",
+                    "kuid": "ee1fe158dd984a9dbe3edc0d033e226a",
+                    "originalPropertyKey": "skntbxSearchInput",
+                    "propertyIndex": 7,
+                    "propertyKey": "skntbxSearchInput",
+                    "pw": {
+                        "displayName": "Search Input Textbox Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxSearchNew",
+                    "group": "Skins",
+                    "kuid": "d7552167b31a4007891a013599853c78",
+                    "originalPropertyKey": "skntbxSearch",
+                    "propertyIndex": 8,
+                    "propertyKey": "skntbxSearch",
+                    "pw": {
+                        "displayName": "Search Conatiner Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknbtnfocus003e75New",
+                    "group": "Skins",
+                    "kuid": "dbbfa6659e244ad2b571f106972fa233",
+                    "originalPropertyKey": "sknBtnSearchClear",
+                    "propertyIndex": 9,
+                    "propertyKey": "sknBtnSearchClear",
+                    "pw": {
+                        "displayName": "Button Search Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ecabb086b2454a9ca03c9dd909da5180",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.BillPay",
+    "version": "1.0.0"
+}

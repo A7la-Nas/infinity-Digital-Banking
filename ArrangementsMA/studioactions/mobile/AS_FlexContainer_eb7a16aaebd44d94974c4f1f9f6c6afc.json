@@ -1,0 +1,34 @@
+{
+    "AS_FlexContainer_eb7a16aaebd44d94974c4f1f9f6c6afc": {
+        "id": "AS_FlexContainer_eb7a16aaebd44d94974c4f1f9f6c6afc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "SegCombinedStatementsHeader",
+            "type": "templates",
+            "platform": "",
+            "KUID": "j93540708bf445ae8671953061ac41c2"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ef0524c9805643df9608931b23f58a53",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "toggleCheckBox",
+            "display": "toggleCheckBox",
+            "inputparams": [{
+                "name": "context",
+                "value": " context"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

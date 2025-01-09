@@ -1,0 +1,26 @@
+{
+    "AS_FlexContainer_h7b0009fa39a4330bbf266f8311358f2": {
+        "id": "AS_FlexContainer_h7b0009fa39a4330bbf266f8311358f2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segExportLCTransactionListExpand",
+            "type": "templates",
+            "platform": "",
+            "KUID": "bf054798ac7c4ba5a8081783187f343a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_edc959652e204c3d8276ab30aba445a1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try {\n            kony.print(\"Entered view actionss clic\");\n            var secIndex = context[\"sectionIndex\"];\n            var rowIndex = context[\"rowIndex\"];\n            this.executeOnParent(\"onActionCLick\", {\n                section: secIndex,\n                row: rowIndex\n            });\n        } catch (exc) {\n            kony.print(\"exception in viewactionsclick!!!\" + exc);\n        }",
+            "parentId": null
+        }]
+    }
+}

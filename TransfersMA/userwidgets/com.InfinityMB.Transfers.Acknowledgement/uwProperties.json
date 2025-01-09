@@ -1,0 +1,2011 @@
+{
+    "classname": "Acknowledgement",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "j384076247f24ba589a6939b52fed720",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f5185ddc74274f99981daea59bbe53a7",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g7c03b191f2f40bf87ebd65cea7765fb",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "getBtnEntitlement",
+                    "pw": {
+                        "displayName": "getBtnEntitlement",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "addc0b63956c43ac80ff17fb556bfcbf",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "contextualActionButtonOnClick",
+                    "pw": {
+                        "displayName": "contextualActionButtonOnClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ja1f6ddb0a0a4abfb58ae35984058722",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "onBack",
+                    "pw": {
+                        "displayName": "onBack",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "Skins",
+                "Data Format",
+                "Success acknowledgement fields",
+                "Failure acknowledgement fields",
+                "Optional fields",
+                "Icons"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknHeaderFFF",
+                    "group": "Skins",
+                    "kuid": "b7c4b5960943491eb93d9749330b5bb3",
+                    "originalPropertyKey": "sknHeaderLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknHeaderLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "success.png",
+                    "group": "Icons",
+                    "kuid": "de96be37809245ab9e2e62ec5e7416ca",
+                    "originalPropertyKey": "successTransactionIcon",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "successTransactionIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Transaction",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.konybb.common.referenceId}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "fdce652faf9c4c3296ad6e642d021b6b",
+                    "originalPropertyKey": "field1Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "field1Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.i18n.verifyDetails.note}",
+                    "group": "Optional fields",
+                    "kuid": "c6f8c582d5144c339bdb79315471160c",
+                    "originalPropertyKey": "notesLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "notesLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Notes Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.kony.transfers.transferFailed}",
+                    "group": "Failure acknowledgement fields",
+                    "kuid": "e6d77f7ec9654a50816ce826424e76e7",
+                    "originalPropertyKey": "failureTransactionTitle",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "failureTransactionTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Failure Transaction Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"locale\":\"\",\"positiveFormat\":\"{CS}{D}\",\"negativeFormat\":\"-{CS}{D}\",\"fractionDigits\":\"2\"}",
+                    "group": "Data Format",
+                    "kuid": "c48861dd375b414c8139bf83013c2d6b",
+                    "originalPropertyKey": "amountFormat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "amountFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Amount Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.mb.MM.Acknowledgement}",
+                    "group": "General",
+                    "kuid": "d2936ead896e455187eb248e868d18eb",
+                    "originalPropertyKey": "headerLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "headerLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxBg003e7515px",
+                    "group": "Skins",
+                    "kuid": "a35b969c64f4497cb2e0e002d5e2ebc5",
+                    "originalPropertyKey": "sknHeaderBackground",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknHeaderBackground",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Background",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "failed.png",
+                    "group": "Icons",
+                    "kuid": "jfdaff523df4416a9a0fba65d1a7ae41",
+                    "originalPropertyKey": "failureTransactionIcon",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "failureTransactionIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Failure Transaction",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.referenceId}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "fac1b3406fb944fb9898d78d57848fa6",
+                    "originalPropertyKey": "field1Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "field1Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.transactionsNotes}\", \"fieldType\": \"label\" }",
+                    "group": "Optional fields",
+                    "kuid": "g7f7966a39ac4428a91f353a54718b9c",
+                    "originalPropertyKey": "notesValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "notesValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Notes Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.dbpErrMsg}",
+                    "group": "Failure acknowledgement fields",
+                    "kuid": "bacecc3b8b63450a98c94e1cc71a955c",
+                    "originalPropertyKey": "failureTransactionDescription",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "failureTransactionDescription",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Failure Transaction Description",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "d-m-Y",
+                    "group": "Data Format",
+                    "kuid": "i45a12bcdefe439a9082fc9b3313024e",
+                    "originalPropertyKey": "dateFormat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "dateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.referenceId}",
+                    "group": "General",
+                    "kuid": "edf7907011214c109af5a15933d79a72",
+                    "originalPropertyKey": "transactionStatus",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "transactionStatus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction Status",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxf1f1f1",
+                    "group": "Skins",
+                    "kuid": "be286fb1f7544c12831ea0f2a4b508d5",
+                    "originalPropertyKey": "sknRowSeparator",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknRowSeparator",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row Separator",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.mb.common.from}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "f6354da801ce48ffa0053147fe669ba6",
+                    "originalPropertyKey": "field2Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "field2Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.TransfersEur.SupportingDocuments}:",
+                    "group": "Optional fields",
+                    "kuid": "c46ac176eaf74cc1b7127f57e379d9f2",
+                    "originalPropertyKey": "supportingDocumentsLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "supportingDocumentsLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Supporting Documents Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"id\":\"btnTryAgain\",\"text\":\"Try Again\",\"skin\":\"ICSknBtn003E75RoundedffffffSSP26px\",\"entitlement_keys\":[],\"entitlement_action\":false}",
+                    "group": "Failure acknowledgement fields",
+                    "kuid": "abfaf0c9a7ec4c3896dac483b6e335f5",
+                    "originalPropertyKey": "failureButtonAction1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "failureButtonAction1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Failure Action Button 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Y-m-d",
+                    "group": "Data Format",
+                    "kuid": "a08faeb55ffd4fdf90ba9126a7695fb9",
+                    "originalPropertyKey": "backendDateFormat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "backendDateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Backend Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "backbutton_1.png",
+                    "group": "Icons",
+                    "kuid": "id18da6b7f3849128d95c3bc63cfd2d2",
+                    "originalPropertyKey": "backButtonIcon",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "backButtonIcon",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Back Button Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.payeeFlow}",
+                    "group": "General",
+                    "kuid": "fb49f0777e8843fc8d170449b28ac6d2",
+                    "originalPropertyKey": "payeeStatus",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "payeeStatus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Payee Status",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl727272ssp40px",
+                    "group": "Skins",
+                    "kuid": "jba576c35b9a4be8b546fd9c0755185f",
+                    "originalPropertyKey": "sknFieldLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknFieldLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.formattedAccountName}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "icf522ee2d8a42f59f6b7b4ee2cf65bc",
+                    "originalPropertyKey": "field2Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "field2Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.successfulUploads}",
+                    "group": "Optional fields",
+                    "kuid": "i042b74d91194ab9b6a99de1ddddb774",
+                    "originalPropertyKey": "supportingDocumentsValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "supportingDocumentsValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Supporting Documents Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.c.transactionCurrency}",
+                    "group": "Data Format",
+                    "kuid": "afb0ccf1a3f445efb6e74ae000efe58e",
+                    "originalPropertyKey": "currencyCode",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "currencyCode",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Currency code",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "pdf.png",
+                    "group": "Icons",
+                    "kuid": "febe22e088f443aea1b8119cbe59e5f7",
+                    "originalPropertyKey": "pngImage",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "pngImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "PNG Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPLight30px",
+                    "group": "Skins",
+                    "kuid": "d2167cc4ce724d2bbb33ca62bd7b2cb6",
+                    "originalPropertyKey": "sknFieldValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknFieldValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.mb.common.To}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "e82c199181664f84800c76f6c761b3c6",
+                    "originalPropertyKey": "field3Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "field3Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.mb.TransfersEurope.BenAddress}:",
+                    "group": "Optional fields",
+                    "kuid": "a4930bec81854f138442172e4005c190",
+                    "originalPropertyKey": "addressLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "addressLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Address Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "pdf.png",
+                    "group": "Icons",
+                    "kuid": "c9a72411a7bf44e68da2320b5eacc567",
+                    "originalPropertyKey": "jpegImage",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "jpegImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "JPEG Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlbl000000SSPSemiBold24px",
+                    "group": "Skins",
+                    "kuid": "i3fb527986d441479ef3e8706b9b5688",
+                    "originalPropertyKey": "sknTransactionSuccessLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknTransactionSuccessLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction success label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.toAccountName}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "b53de00a0a1a463b9836894780bb3819",
+                    "originalPropertyKey": "field3Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "field3Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.addressLine1}\", \"fieldType\": \"label\" }",
+                    "group": "Optional fields",
+                    "kuid": "f80adab9965a4582a44216197ecad156",
+                    "originalPropertyKey": "addressLine1Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "addressLine1Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Address Line 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlbl000000SSPSemiBold24px",
+                    "group": "Skins",
+                    "kuid": "d7ecdbe682a64d41bcc0175e894f6902",
+                    "originalPropertyKey": "sknTransactionFailureTitle",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknTransactionFailureTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction Failure Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.WireTransfer.TransferCurrency}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "acdadc3163d045cab7b726304b5c9ad8",
+                    "originalPropertyKey": "field4Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "field4Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.addressLine2}\", \"fieldType\": \"label\" }",
+                    "group": "Optional fields",
+                    "kuid": "d5d106f03022495db4c9dccabb2932ef",
+                    "originalPropertyKey": "addressLine2Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "addressLine2Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Address Line 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICsknlbl727272SSP24px",
+                    "group": "Skins",
+                    "kuid": "gafc5ddeb4104bf081fd201de21cc353",
+                    "originalPropertyKey": "sknTransactionFailureDescription",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "sknTransactionFailureDescription",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Transaction Failure Description",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.currency}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "b729caecb75c447d97ae8058ab0e3aea",
+                    "originalPropertyKey": "field4Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "field4Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.mb.ProfilePersonalDetails.Mobile}:",
+                    "group": "Optional fields",
+                    "kuid": "eaca5fe5ac2244f5857b3b3d7c4d42d1",
+                    "originalPropertyKey": "mobileLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "mobileLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Mobile Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.phone}\", \"fieldType\": \"label\" }",
+                    "group": "Optional fields",
+                    "kuid": "a8e719e6459747fda66adfbedbe48997",
+                    "originalPropertyKey": "mobileValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "mobileValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Mobile Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.mb.common.Amount}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "c942ef2a102c46eebaa7d5b09ca9e29b",
+                    "originalPropertyKey": "field5Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "field5Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.formattedTransferAmount}\", \"fieldType\": \"amount\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "h9521724ec44488dafe36cb04559a938",
+                    "originalPropertyKey": "field5Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "field5Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.ProfileManagement.EmailId}:",
+                    "group": "Optional fields",
+                    "kuid": "fbe077938ad24fd8a2a7a73bd74fa251",
+                    "originalPropertyKey": "emailLabel",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "emailLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Email Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.email}\", \"fieldType\": \"label\" }",
+                    "group": "Optional fields",
+                    "kuid": "if08873429084a9fbd75b4e2ef617161",
+                    "originalPropertyKey": "emailValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "emailValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Email Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.i18n.verifyDetails.fxRateReference}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "c09b8cdd33dc4c6485cdb2fa5eda1b4c",
+                    "originalPropertyKey": "field6Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "field6Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.fxRateReference}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "ff4fab92ab47455d9ea7ffe4da5970ed",
+                    "originalPropertyKey": "field6Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 12,
+                    "propertyKey": "field6Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.city}\", \"fieldType\": \"label\" }",
+                    "group": "Optional fields",
+                    "kuid": "d41ca34d94984d8089d56d60f68aa722",
+                    "originalPropertyKey": "cityValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 13,
+                    "propertyKey": "cityValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "City Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.TransfersEur.ExchangeRate}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "j9210c366e7c42b0b76d25563f3b27b5",
+                    "originalPropertyKey": "field7Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 13,
+                    "propertyKey": "field7Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.exchangeRate}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "fa2a7cd17d5a4d1e8e1ffae7e45854af",
+                    "originalPropertyKey": "field7Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 14,
+                    "propertyKey": "field7Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.state}\", \"fieldType\": \"label\" }",
+                    "group": "Optional fields",
+                    "kuid": "j68d45d6a87b4232a31206a22ef4294a",
+                    "originalPropertyKey": "stateValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 15,
+                    "propertyKey": "stateValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "State Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.mb.transaction.frequency}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "eb40f5f29d724a759eecfee5bdaa2b41",
+                    "originalPropertyKey": "field8Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 15,
+                    "propertyKey": "field8Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.frequencyType}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "h926b1f772e4413eb98602a13b7fee6b",
+                    "originalPropertyKey": "field8Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 16,
+                    "propertyKey": "field8Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.country}\", \"fieldType\": \"label\" }",
+                    "group": "Optional fields",
+                    "kuid": "g39ba0383f744f77ba092c036dde3b95",
+                    "originalPropertyKey": "countryValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 17,
+                    "propertyKey": "countryValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Country Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.i18n.verifyDetails.sendOn}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "c2f83ac0555f448d8acc43307769f6c7",
+                    "originalPropertyKey": "field9Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 17,
+                    "propertyKey": "field9Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.sendOnUI}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "e2f20f21147d4b5fbe9d6c707ffdbced",
+                    "originalPropertyKey": "field9Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 18,
+                    "propertyKey": "field9Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.zipcode}\", \"fieldType\": \"label\" }",
+                    "group": "Optional fields",
+                    "kuid": "a40506f329cc4a369478b51d35ab7097",
+                    "originalPropertyKey": "postalCodeValue",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 19,
+                    "propertyKey": "postalCodeValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Postal Code Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.mb.common.StartDate}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "ee32460100fb423fafbd7e6773cc726e",
+                    "originalPropertyKey": "field10Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 19,
+                    "propertyKey": "field10Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 10 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.startDateUI}\", \"fieldType\": \"date\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "d3a7b5634e96471bb63597e3b9233f1e",
+                    "originalPropertyKey": "field10Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 20,
+                    "propertyKey": "field10Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 10 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.mb.Transfers.EndDate}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "eacd3f535a274e1fb4bfebc4eaf52a83",
+                    "originalPropertyKey": "field11Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 21,
+                    "propertyKey": "field11Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 11 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.endDateUI}\", \"fieldType\": \"date\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "b7b43f2451c34b44932ed83940dca7f7",
+                    "originalPropertyKey": "field11Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 22,
+                    "propertyKey": "field11Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 11 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.i18n.verifyDetails.accountNumber}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "c7501433723f4b939bc409ee7792e097",
+                    "originalPropertyKey": "field12Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 23,
+                    "propertyKey": "field12Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 12 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.accountNumber}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "jd5b6cda67c44bdf87b0e2c868f9fea8",
+                    "originalPropertyKey": "field12Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 24,
+                    "propertyKey": "field12Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 12 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.TransfersEur.FeesPaidBy}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "b081f981798d45f0b9e18451d1a44175",
+                    "originalPropertyKey": "field13Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 25,
+                    "propertyKey": "field13Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 13 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.selectedFeesPaidBy}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "bd99976ef6d54d2baea72c0d0a24ed69",
+                    "originalPropertyKey": "field13Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 26,
+                    "propertyKey": "field13Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 13 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.i18n.verifyDetails.intermediatoryBIC}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "ja0166bb4b4f431d81ea36065c24bd10",
+                    "originalPropertyKey": "field14Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 27,
+                    "propertyKey": "field14Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 14 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.intermediaryBIC}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "cb2719f683584548b62be2c3996ae4f2",
+                    "originalPropertyKey": "field14Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 28,
+                    "propertyKey": "field14Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 14 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.i18n.verifyDetails.e2eReference}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "j4654cfd580d44feaa524450c05e11f2",
+                    "originalPropertyKey": "field15Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 29,
+                    "propertyKey": "field15Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 15 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.e2eReference}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "c82e29353c38434391cc301071a83463",
+                    "originalPropertyKey": "field15Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 30,
+                    "propertyKey": "field15Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 15 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.i18n.verifyDetails.paymentMethod}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "d7a31601419b49d4b5ec087980c753b2",
+                    "originalPropertyKey": "field16Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 31,
+                    "propertyKey": "field16Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 16 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.selectedPaymentMethod}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "d094b45417174aaca58fd6d4809ac886",
+                    "originalPropertyKey": "field16Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 32,
+                    "propertyKey": "field16Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 16 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.TransfersEur.BICSWIFT}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "ge61c883330a4488a3c2f5c0b508be52",
+                    "originalPropertyKey": "field17Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 33,
+                    "propertyKey": "field17Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 17 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.swiftCode}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "a0b17ee1161347d3a7ad9c5ed8e3403c",
+                    "originalPropertyKey": "field17Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 34,
+                    "propertyKey": "field17Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 17 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.unifiedTransfers.bankClearingCode}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "b7c7e1d99b6e484ca1dd5260340d0d23",
+                    "originalPropertyKey": "field18Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 35,
+                    "propertyKey": "field18Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 18 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.clearingCode1}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "a10dcd9bc33f4600bd84f01d115955ea",
+                    "originalPropertyKey": "field18Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 36,
+                    "propertyKey": "field18Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 18 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.i18n.verifyDetails.clearingCode2}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "f2171274ae6a43979b3acf7513821e4c",
+                    "originalPropertyKey": "field19Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 37,
+                    "propertyKey": "field19Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 19 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.clearingCode2}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "ab67f49b27e64593b0656d92ef445b9e",
+                    "originalPropertyKey": "field19Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 38,
+                    "propertyKey": "field19Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 19 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.i18n.verifyDetails.transactionFee}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "c171776b63f4426ea3093fe9ff37163c",
+                    "originalPropertyKey": "field20Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 39,
+                    "propertyKey": "field20Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 20 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.TXNFEE}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "e9896b849ce3473c854e895d5848063b",
+                    "originalPropertyKey": "field20Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 40,
+                    "propertyKey": "field20Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 20 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.i18n.verifyDetails.brokerFee}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "e0163dd5933748438b42cf8614b764b7",
+                    "originalPropertyKey": "field21Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 41,
+                    "propertyKey": "field21Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 21 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.BROKERFEE}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "jfbd92b03295468882e3c5024e5abd78",
+                    "originalPropertyKey": "field21Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 42,
+                    "propertyKey": "field21Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 21 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.i18n.verifyDetails.transferCharges}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "cab13f1f22db4dfdb5fd87e4f88e3402",
+                    "originalPropertyKey": "field22Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 43,
+                    "propertyKey": "field22Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 22 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.AUDITFEE}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "a24075cd410446f8908fabd71567034f",
+                    "originalPropertyKey": "field22Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 44,
+                    "propertyKey": "field22Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 22 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Service charge:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "c302cd7c1d2d44f79bd50717a61759f4",
+                    "originalPropertyKey": "field23Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 45,
+                    "propertyKey": "field23Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 23 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.serviceCharge}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "f48d948089504d4caa4bdf5b43919c6f",
+                    "originalPropertyKey": "field23Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 46,
+                    "propertyKey": "field23Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 23 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.i18n.verifyDetails.dueDate}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "fb3050fff5e74e20ab9fb69bdb732bd4",
+                    "originalPropertyKey": "field24Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 47,
+                    "propertyKey": "field24Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 24 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.dueDate}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "cb9aeb5d28b545ababac638383f51b07",
+                    "originalPropertyKey": "field24Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 48,
+                    "propertyKey": "field24Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 24 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"id\":\"NewTransfer\",\"text\":\"{i.kony.mb.MM.NewTransfer}\",\"skin\":\"ICSknBtn003E75RoundedffffffSSP26px\",\"entitlement_keys\":[],\"entitlement_action\":false}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "ieb72725673d4151a8e8e4627b252232",
+                    "originalPropertyKey": "successButtonAction1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 49,
+                    "propertyKey": "successButtonAction1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Action Button 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"id\": \"SaveNewPayee\",   \"text\": \"{i.i18n.payments.saveNewPayee}\",   \"skin\": \"ICSknBtnffffffRounded003e75SSP26px\",   \"entitlement_keys\": [],   \"entitlement_action\": false }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "ec3b6732a79c428dbb1dfdc6de65f2f3",
+                    "originalPropertyKey": "successButtonAction2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 50,
+                    "propertyKey": "successButtonAction2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Action Button 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"id\":\"TransferActivities\",\"text\":\"{i.kony.mb.MM.transferActivity}\",\"skin\":\"ICSknBtnffffffRounded003e75SSP26px\",\"entitlement_keys\":[],\"entitlement_action\":false}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "e3cec75c44fd4cf5b0dd16310d852649",
+                    "originalPropertyKey": "successButtonAction3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 51,
+                    "propertyKey": "successButtonAction3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Action Button 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "a5df0c279ae742bd8b2ba2fdfd3fa9ec",
+                    "originalPropertyKey": "successButtonAction4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 52,
+                    "propertyKey": "successButtonAction4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Action Button 4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Your transaction has been completed successfully",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "b1b407cc6d544e94a95d62f350b471b9",
+                    "originalPropertyKey": "successTransactionTitle",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 53,
+                    "propertyKey": "successTransactionTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Transaction Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.kony.mb.payments.creditValueDate}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "h15dafbe605040ff94534b7696450d08",
+                    "originalPropertyKey": "field25Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 54,
+                    "propertyKey": "field25Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 25 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.creditValueDate}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "a4bce9c0b5ff4a3b8f5c4aaebc0bb171",
+                    "originalPropertyKey": "field25Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 55,
+                    "propertyKey": "field25Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 25 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.verifyDetails.bankName}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "c8bb987aa8b544608c3612c23f2ee3a5",
+                    "originalPropertyKey": "field26Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 56,
+                    "propertyKey": "field26Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 26 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{$.c.ibanBankName}\",\"fieldType\":\"label\"}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "j7a54260b9f549368d13b473fa0a4c6d",
+                    "originalPropertyKey": "field26Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 57,
+                    "propertyKey": "field26Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 26 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.transfers.addNewAccountApprovalTitle}",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "g65faa3729504541a89b113eb5528e6e",
+                    "originalPropertyKey": "successApprovalTitle",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 58,
+                    "propertyKey": "successApprovalTitle",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Success Approval Title",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.UnifiedTransfers.StreetName}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "f6b04e69e9d04fe883d38f9f75c27cb5",
+                    "originalPropertyKey": "field27Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 59,
+                    "propertyKey": "field27Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 27 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.payeeBankStreet}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "fed3849ca50c49b8b186c754ea24c2e1",
+                    "originalPropertyKey": "field27Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 60,
+                    "propertyKey": "field27Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 27 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.UnifiedTransfers.TownName}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "d471a0c4f0a5462e9c2788ab9dc620ce",
+                    "originalPropertyKey": "field28Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 61,
+                    "propertyKey": "field28Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 28 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.payeeBankTown}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "bea1fbb3be1648d887b6557da7afadbd",
+                    "originalPropertyKey": "field28Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 62,
+                    "propertyKey": "field28Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 28 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.UnifiedTransfers.CountryName}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "e006e5e4224748699e1d9017bd84f953",
+                    "originalPropertyKey": "field29Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 63,
+                    "propertyKey": "field29Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 29 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.payeeBankCountry}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "fcff8700384749918dfcf89a58edca8c",
+                    "originalPropertyKey": "field29Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 64,
+                    "propertyKey": "field29Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 29 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.UnifiedTransfer.ClearingIdentifierCode}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "f768dcc84f8f455eb46801d173fc25e7",
+                    "originalPropertyKey": "field30Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 65,
+                    "propertyKey": "field30Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 30 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.clearingIdentifierCode}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "abe342edff8a4c50b0a5e68b4a493419",
+                    "originalPropertyKey": "field30Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 66,
+                    "propertyKey": "field30Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 30 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.UnifiedTransfer.IntermediaryBIC}:",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "jee4f69d3786436baf4bdddc4000d375",
+                    "originalPropertyKey": "field31Label",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 67,
+                    "propertyKey": "field31Label",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 31 Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"text\": \"{$.c.intermediaryBIC}\", \"fieldType\": \"label\" }",
+                    "group": "Success acknowledgement fields",
+                    "kuid": "a377e24afada47719f0ed36c5ee1db98",
+                    "originalPropertyKey": "field31Value",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 68,
+                    "propertyKey": "field31Value",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 31 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3cf767ff93543c7aff4e892026c174c",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Transfers",
+    "version": "1.0.0"
+}

@@ -1,0 +1,28 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "PaymentAllocationUIModule/PresentationControllers/PresentationController"
+        }
+    },
+    "Forms": {
+        "desktop": {
+            "frmPendingPaymentAllocation": {
+                "Controller": "PaymentAllocationUIModule/frmPendingPaymentAllocationController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "PaymentAllocationUIModule/frmPendingPaymentAllocation",
+                "friendlyName": "frmPendingPaymentAllocation"
+            },
+            "frmAllocationDocuments": {
+                "Controller": "PaymentAllocationUIModule/frmAllocationDocumentsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "PaymentAllocationUIModule/frmAllocationDocuments",
+                "friendlyName": "frmAllocationDocuments"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "PaymentAllocationUIModule"
+}

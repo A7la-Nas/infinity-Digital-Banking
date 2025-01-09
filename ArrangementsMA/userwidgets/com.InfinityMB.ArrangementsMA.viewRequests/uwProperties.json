@@ -1,0 +1,330 @@
+{
+    "classname": "viewRequests",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "g66ba716700a435d8d1cb986174fa47c",
+                    "paramList": [
+                        {
+                            "name": "context"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a91341ea54774fdfb98b18a47c367fcd",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e5c22af6076a4914b6d43b0baee3501a",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onClickBack",
+                    "pw": {
+                        "displayName": "onClickBack",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Categories"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"ServiceOrder\": {\n    \"Service\": \"ServiceRequestManagement\",\n    \"Object\": \"ServiceRequest\",\n    \"Criteria\":\"\",\n    \"Verb\": \"getDetails\"\n  }\n}",
+                    "group": "General",
+                    "kuid": "d940c5329ec44323ae5f010141021a18",
+                    "originalPropertyKey": "serviceParameters",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"segments\": {\n    \"segRequestsList\": {\n      \"segmentMasterData\": \"${Collection.ServiceRequest}\",\n      \"segmentUI\": {\n        \"lblRequest\": \"${segmentMasterData.subType_description}\",\n        \"lblRequestStatus\": \"${segmentMasterData.serviceReqStatus}\",\n        \"lblDate\": \"${segmentMasterData.serviceReqProcessedTime}\",\n        \"requestId\": \"${segmentMasterData.serviceReqId}\",\n        \"accountId\": \"${segmentMasterData.accountId}\",\n        \"accountName\": \"${segmentMasterData.accountName}\",\n        \"requestDate\": \"${segmentMasterData.requestDate}\",\n        \"signatoryApprovalRequired\": \"${segmentMasterData.signatoryApprovalRequired}\"\n      }\n    }\n  },\n    \"details\" : {\n    \"lblDetailsValue1\" : \"lblRequest\",\n    \"lblDetailsValue2\": \"lblRequestStatus\",\n    \"lblDetailsValue3\" : \"accountName\",\n    \"lblDetailsValue4\": \"requestDate\",\n    \"lblDetailsValue5\" : \"lblDate\",\n    \"lblDetailsValue6\": \"requestId\",\n    \"lblDetailsValue7\": \"signatoryApprovalRequired\"\n  },\n  \"serviceRequestTitle\":{\n    \"lblHeaderName\": \"${i18n{kony.mb.Hamburger.serviceRequests}}\"\n  },\n    \"requestDetailsTitle\":{\n    \"lblHeaderName\": \"${i18n{kony.mb.serviceRequests.requestDetails}}\"\n  },\n    \"advancedSearchTitle\":{\n    \"lblHeaderName\": \"${i18n{kony.mb.AdvanceSearch.Title}}\"\n  },\n  \"searchMenu\" : [\n    {\n      \"name\": \"${i18n{i18n.serviceRequests.RequestCategory}}\",\n      \"values\": \"${i18n{i18n.serviceRequests.AllRequestCategories}}\",\n      \"criteria\":\"type_description\",\n      \"flxName\":\"flxRequestCategory\"\n    },\n    {\n      \"name\": \"${i18n{i18n.serviceRequests.ServRequest}}\",\n      \"values\": \"${i18n{i18n.serviceRequests.AllServiceRequests}}\",\n      \"criteria\":\"subType_description\",\n      \"flxName\":\"flxServiceRequest\"\n    },\n    {\n      \"name\": \"${i18n{i18n.ChequeSearch.statusType}}\",\n      \"values\": \"${i18n{i18n.serviceRequests.AllStatus}}\",\n      \"criteria\":\"serviceReqStatus\",\n      \"flxName\":\"flxStatusType\"\n    },{\n      \"name\": \"${i18n{i18n.serviceRequests.Account}}\",\n      \"values\": \"${i18n{i18n.serviceRequests.AllAccounts}}\",\n      \"criteria\":\"accountName\",\n      \"flxName\":\"flxAccounts\"\n    },\n    {\n      \"name\": \"${i18n{i18n.serviceRequests.DateRange}}\",\n      \"values\": \"${i18n{i18n.ProfileManagement.ADD}}\",\n      \"criteria\":\"requestDate\",\n      \"flxName\":\"flxDateRange\"\n    }]\n}",
+                    "group": "General",
+                    "kuid": "e0dc5e85db884f1c8be4580c3bd88abb",
+                    "originalPropertyKey": "dataMapping",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "a1a1fe8285c24972ba4c3d78114e9961",
+                    "originalPropertyKey": "dataFormatting",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"segRequestsList\":\n {\n   \"Cancel Dispute Transaction\": {\n     \"lblRequestStatus\" : \"REQUESTED\"\n   }\n }\n}",
+                    "group": "General",
+                    "kuid": "jc5d366b24db4912932483d227134f89",
+                    "originalPropertyKey": "conditionalMapping",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "conditionalMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Conditional Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "${Collection.ServiceRequest.subType_description}",
+                    "group": "General",
+                    "kuid": "gd9b35ecc22345118a6e44b2cbf2d73d",
+                    "originalPropertyKey": "conditionalMappingKey",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "conditionalMappingKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Conditional Mapping Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[]",
+                    "group": "Categories",
+                    "kuid": "abeaba5534f34c9a8b5e69d42ee2089b",
+                    "originalPropertyKey": "field0",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "field0",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 0",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[]",
+                    "group": "Categories",
+                    "kuid": "f5d405a3fff54642bd8dadb13ba04c70",
+                    "originalPropertyKey": "field1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "field1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[]",
+                    "group": "Categories",
+                    "kuid": "f9719550dde343b182088996c9494153",
+                    "originalPropertyKey": "field2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "field2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "Categories",
+                    "kuid": "h0fe4e69638f4397999d80e91125618b",
+                    "originalPropertyKey": "field3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "field3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "Categories",
+                    "kuid": "i215d8bea6ff4f81bdd482ec29f8475e",
+                    "originalPropertyKey": "field4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "field4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b7237877976b4e0c82c21e2af91f10f6",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.ArrangementsMA",
+    "version": "1.0.0"
+}

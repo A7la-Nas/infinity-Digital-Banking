@@ -1,0 +1,40 @@
+{
+    "AS_TextField_dec272330c084d3f94a083556b2ed80e": {
+        "id": "AS_TextField_dec272330c084d3f94a083556b2ed80e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segEditApprovalLimit",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b75ef7ab43364c63bed0dcb6a093274b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ea1d443c9a7e4d30beb7721d4ac7d45c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onLimitChanged",
+            "display": "onLimitChanged",
+            "inputparams": [{
+                "name": "eventobject",
+                "value": " eventobject"
+            }, {
+                "name": "context",
+                "value": " context"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

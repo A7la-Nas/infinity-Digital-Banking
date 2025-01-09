@@ -1,0 +1,33 @@
+{
+    "AS_Form_ed377e97c2b447baba80462f1f1cf2fe": {
+        "id": "AS_Form_ed377e97c2b447baba80462f1f1cf2fe",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "contextObj": {
+            "name": "frmUpdatePermissionsInBulk",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ac04ef695fc74737aafabbdf351cb269"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onBreakpointChange_j5e46b0969944b1183de5bc60e53ebf9",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBreakpointChange",
+            "display": "onBreakpointChange",
+            "inputparams": [{
+                "name": "width",
+                "value": " breakpoint"
+            }],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "AS_Button_a544655d16624daca656f8c33713e51c": {
+        "id": "AS_Button_a544655d16624daca656f8c33713e51c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": null,
+            "KUID": "cd4cf6c1cfc44c5981e3db56cc125841"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_hf7eb0b82e424f79b21270536a01cf27",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\nvar authParams = {\n\t\"UserName\": this.view.tbxUName.text,\n\t\"Password\": this.view.tbxPassword.text,\n\t\"loginOptions\": {\n\t\t\"isOfflineEnabled\": false\n\t}\n};\nauthClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\nauthClient.login(authParams, onLoginSuccess, errorCallback);\n\nfunction onLoginSuccess(response) {\n\tlet self = this;\n  \n     \n// \tvar appLinked = applicationManager.getModulesPresentationController({\n//             'appName': \"HomepageMA\",\n//             'moduleName': \"AuthModule\"\n//     })?true:false;\n//  var config= applicationManager.getConfigurationManager();\n // var isMicroAppPresent=config.isMicroAppPresent(\"HomepageMA\");\n  \n\tlet params = kony.sdk.getCurrentInstance().tokens['DbxUserLogin'].provider_token.params;\n\tif (params && params.is_mfa_enabled) {\n\t\t//self.MFANavigation(params.mfa_meta);\n\t} else {\n     // if(appLinked===\"true\"||isMicroAppPresent!=\"\"){\n          let authMode = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\"moduleName\" : \"AuthModule\", \"appName\" : \"HomepageMA\"});\n      authMode.presentationController.currentAuthMode = \"password\";\n      authMode.presentationController.rememberdeviceregflag = 0;\n      authMode.presentationController.setUsernamePasswordJSON(authParams);\n      authMode.presentationController.presentationLoginSuccess(response);\n  let dashboard = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\"moduleName\" : \"AccountsUIModule\", \"appName\" : \"HomepageMA\"});\n    dashboard.presentationController.showDashboard();\n\n    //  }\n    \t }\n}\n\nfunction errorCallback(resError) {\n\tkony.application.dismissLoadingScreen();\n\tkony.print(resError);\n\talert(\"login is not working...\");\n}",
+            "parentId": null
+        }]
+    }
+}

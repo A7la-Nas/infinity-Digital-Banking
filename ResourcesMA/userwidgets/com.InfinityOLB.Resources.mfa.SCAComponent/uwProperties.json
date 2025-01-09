@@ -1,0 +1,110 @@
+{
+    "classname": "SCAComponent",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d30554e7efdb487eacc4e43d9ff4bfc3",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSuccessCallback",
+                    "pw": {
+                        "displayName": "onSuccessCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h6c7d99c8cc34e0c97db01159fbfc035",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h95036aef88940719d6d9789f6b0995d",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onFailureCallback",
+                    "pw": {
+                        "displayName": "onFailureCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h6c7d99c8cc34e0c97db01159fbfc035",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "aa01f8667f2041d78bf0da6063115b25",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onCancel",
+                    "pw": {
+                        "displayName": "onCancel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h6c7d99c8cc34e0c97db01159fbfc035",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "d4b7604d2574435a960a9e55d120ccc3",
+                    "originalPropertyKey": "serviceKey",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceKey",
+                    "pw": {
+                        "displayName": "Service Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h6c7d99c8cc34e0c97db01159fbfc035",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "ibdf06b38a014b1bb02451a263a37663",
+                    "originalPropertyKey": "flowType",
+                    "propertyIndex": 2,
+                    "propertyKey": "flowType",
+                    "pw": {
+                        "displayName": "Flow Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h6c7d99c8cc34e0c97db01159fbfc035",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Resources.mfa",
+    "version": "1.0.0"
+}

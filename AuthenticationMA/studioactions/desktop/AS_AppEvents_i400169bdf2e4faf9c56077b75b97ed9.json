@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_i400169bdf2e4faf9c56077b75b97ed9": {
+        "id": "AS_AppEvents_i400169bdf2e4faf9c56077b75b97ed9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c689dddd516b4fba95a58f06619a5d25",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"Testing JS Load\");\n_kony.mvc.initCompositeApp(true);\nvar isIOS13 = (/(iPad|iPhone);.*CPU.*OS 13_\\d/i).test(navigator.userAgent);\nif (isIOS13) {\n  kony.application.setApplicationBehaviors({\n    disableForceRepaint: true\n  });\n}\nvar moduleName = 'ApplicationManager';\nrequire([moduleName], function(ApplicationManager) {\n  applicationManager = ApplicationManager.getApplicationManager();\n  var config = applicationManager.getConfigurationManager();\n  if (performance.navigation.type === 1) {\n    config.setBrowserRefreshProperty(\"true\");\n  }\n  var sm = applicationManager.getStorageManager();\n  var langObjFromStorage = sm.getStoredItem(\"langObj\");\n  if (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\n    config.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\n    config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n  } else {\n    config.configurations.setItem(\"LOCALE\", \"en_US\");\n    config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n  }\n  kony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function() {}, function() {});\n  applicationManager.getConfigurationManager().fetchApplicationProperties(function(res) {\n  if(config.isAppPropertiesLoaded === \"false\"){\n  config.setAppProperties(\"true\");\n  kony.application.dismissLoadingScreen();\n  }\n  //config.fetchClientSideConfigurations();\n  }, function() {\n  kony.application.dismissLoadingScreen();\n  });\n  document.body.addEventListener('contextmenu', function(e) {\n    e.preventDefault();\n    alert(kony.i18n.getLocalizedString(\"i18n.general.rightclickdisabled\"));\n  });\n});",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "classname": "quickLinksNew",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e4ab177cfe8c446bbcc61a56600e7e45",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "toolTip": "To set the links and other properties",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d80953cf6c71482a951e394c72ded1f4",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": false,
+                    "group": "General",
+                    "kuid": "de59ca8a3c794517a633c06b3b9744f0",
+                    "originalPropertyKey": "showMore",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "showMore",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Show More",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "d80953cf6c71482a951e394c72ded1f4",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "3",
+                    "group": "General",
+                    "kuid": "a20dba12932b48b09bcef08106686076",
+                    "originalPropertyKey": "numberOfLinks",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "numberOfLinks",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Number of Links",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "d80953cf6c71482a951e394c72ded1f4",
+                    "type": "list selector",
+                    "value": [
+                        "3",
+                        "6"
+                    ]
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "i6f756a3c33743afab16467a7f30d656",
+                    "propertyKey": "flxSegContainer",
+                    "srcWgtKUID": "d97678096a324a94963fb7e1d9971db5"
+                }
+            ],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Resources",
+    "version": "1.0.0"
+}

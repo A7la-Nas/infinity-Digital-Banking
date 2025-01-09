@@ -1,0 +1,544 @@
+{
+    "classname": "liteActivationNative",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ad6ab690affb40468de4453af515c142",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f27f592c96124dbdae4192d1086f8c96",
+                    "paramList": [],
+                    "propertyKey": "setParentScope",
+                    "pw": {
+                        "displayName": "setParentScope",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bbf219be84fb486cb6b0628656b59695",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Activation Service",
+                "Activation Info",
+                "Terms & Conditions",
+                "Skins",
+                "Images",
+                "Format",
+                "Data Grid",
+                "Pop Up"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"skin\":\"sknLbla0a0a022px\"}",
+                    "group": "Skins",
+                    "kuid": "ea0ff51ef33749faa162396f34acc1e6",
+                    "originalPropertyKey": "keySkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "keySkin",
+                    "pw": {
+                        "displayName": "Key Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "2",
+                    "group": "Data Grid",
+                    "kuid": "gcd8d684a4904889a79c2df22fd665e9",
+                    "originalPropertyKey": "fieldCount",
+                    "propertyIndex": 1,
+                    "propertyKey": "fieldCount",
+                    "pw": {
+                        "displayName": "Total Fields",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\" : \"d-m-Y\"}",
+                    "group": "Format",
+                    "kuid": "b2f910a998f947c2a3cfd58ad737742b",
+                    "originalPropertyKey": "dateFormat",
+                    "propertyIndex": 1,
+                    "propertyKey": "dateFormat",
+                    "pw": {
+                        "displayName": "Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\":\"info_icon.png\"}",
+                    "group": "Activation Info",
+                    "kuid": "jabd70d50cd24557be7644e550347e13",
+                    "originalPropertyKey": "infoImage",
+                    "propertyIndex": 1,
+                    "propertyKey": "infoImage",
+                    "pw": {
+                        "displayName": "Info Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "BillPay",
+                    "group": "Activation Service",
+                    "kuid": "a5cf43c6878c4990b232f8a3bc74ba77",
+                    "originalPropertyKey": "objectService",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectService",
+                    "pw": {
+                        "displayName": "Payee Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\":\"checkboxtick.png\"}",
+                    "group": "Images",
+                    "kuid": "eaea62d4fa064aad8551318f2bd420af",
+                    "originalPropertyKey": "tncCheckedImg",
+                    "propertyIndex": 1,
+                    "propertyKey": "tncCheckedImg",
+                    "pw": {
+                        "displayName": "T & C Checked Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"i18n.payments.billpaytnctext\"}",
+                    "group": "Terms & Conditions",
+                    "kuid": "iccc5ef99dcd4c7bb66a7949369d5394",
+                    "originalPropertyKey": "tncText",
+                    "propertyIndex": 1,
+                    "propertyKey": "tncText",
+                    "pw": {
+                        "displayName": "T & C Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"message1\":\"i18n.payments.ebillactivationmsg\",\"message2\":\"\",\"btn1Text\":\"i18n.ProfileManagement.Done\",\"btn2Text\":\"\",\"callback\":\"navigateToPayeeList\",\"image\":\"confirmation_tick.png\"}",
+                    "group": "Pop Up",
+                    "kuid": "e539d5c7ea8e4006b5ed33e3d1a9d1ba",
+                    "originalPropertyKey": "successPopUp",
+                    "propertyIndex": 1,
+                    "propertyKey": "successPopUp",
+                    "pw": {
+                        "displayName": "Success Pop Up",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": false,
+                    "group": "General",
+                    "kuid": "fb73b4e08b9f4fb485ea0e2c8e07fbe1",
+                    "originalPropertyKey": "tncCheck",
+                    "propertyIndex": 1,
+                    "propertyKey": "tncCheck",
+                    "pw": {
+                        "displayName": "T & C Check for ActionButton",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"skin\":\"ICSknLbl\"}",
+                    "group": "Skins",
+                    "kuid": "hc737e8e6c8745b2b3c43dc88c38100a",
+                    "originalPropertyKey": "valueSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "valueSkin",
+                    "pw": {
+                        "displayName": "ValueSkin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"i18n.payments.payeeFullNameWithColon\"}",
+                    "group": "Data Grid",
+                    "kuid": "eeae4a4f8e2f46aaa4e257b86991fc39",
+                    "originalPropertyKey": "field1Key",
+                    "propertyIndex": 2,
+                    "propertyKey": "field1Key",
+                    "pw": {
+                        "displayName": "Field 1 Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\" : \"Y-m-d\"}",
+                    "group": "Format",
+                    "kuid": "f114377722e54a04bdc7429f7fb5ad98",
+                    "originalPropertyKey": "backendDateFormat",
+                    "propertyIndex": 2,
+                    "propertyKey": "backendDateFormat",
+                    "pw": {
+                        "displayName": "Backend Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"i18n.payments.billpayinfotext\"}",
+                    "group": "Activation Info",
+                    "kuid": "e1899076177646be9a87cbf1e7cd4fa7",
+                    "originalPropertyKey": "infoText",
+                    "propertyIndex": 2,
+                    "propertyKey": "infoText",
+                    "pw": {
+                        "displayName": "Info Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Payee_BillPay",
+                    "group": "Activation Service",
+                    "kuid": "jc7a27933bd040f29d32c2846330a78b",
+                    "originalPropertyKey": "object",
+                    "propertyIndex": 2,
+                    "propertyKey": "object",
+                    "pw": {
+                        "displayName": "Payee Object ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\":\"checkboxempty.png\"}",
+                    "group": "Images",
+                    "kuid": "b2530da1041a4abf8b9ff770f8f5d142",
+                    "originalPropertyKey": "tncUncheckedImg",
+                    "propertyIndex": 2,
+                    "propertyKey": "tncUncheckedImg",
+                    "pw": {
+                        "displayName": "T & C Unchecked Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"action\":{\"level\":\"Form\",\"method\":\"navigateToTandC\"},\"text\":\"i18n.ProfileManagement.TermsAndConditions\",\"entitlement\":[]}",
+                    "group": "Terms & Conditions",
+                    "kuid": "ce4685e5af754cd3bac4bb3daf2dab47",
+                    "originalPropertyKey": "tncButton",
+                    "propertyIndex": 2,
+                    "propertyKey": "tncButton",
+                    "pw": {
+                        "displayName": "T & C Button",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"message1\":\"i18n.paments.ebillfailedactivationmsg\",\"message2\":\"i18n.payments.billPayErrorMsg\",\"btn1Text\":\"kony.mb.common.TryAgain\",\"btn2Text\":\"kony.mb.common.close\",\"callback\":\"\",\"image\":\"error.png\"}",
+                    "group": "Pop Up",
+                    "kuid": "caf0a9cfedea43a59f2cd8f26e662464",
+                    "originalPropertyKey": "errPopUp",
+                    "propertyIndex": 2,
+                    "propertyKey": "errPopUp",
+                    "pw": {
+                        "displayName": "Error Pop Up",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"skin\":\"sknBtn0095e426pxEnabled\"}",
+                    "group": "Skins",
+                    "kuid": "fa423bfe85674aa69735062426a60d39",
+                    "originalPropertyKey": "actionButtonActiveSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "actionButtonActiveSkin",
+                    "pw": {
+                        "displayName": "Action Button Active Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"mapping\":\"{$.c.payeeName}\",\"type\":\"Label\",\"widgetProps\":{\"height\":\"19dp\",\"width\":\"100%\"},\"widgetPropLabel\":{\"width\":\"100%\"}}",
+                    "group": "Data Grid",
+                    "kuid": "bb04e8b1f1e24d8284a0762ee63d5752",
+                    "originalPropertyKey": "field1Value",
+                    "propertyIndex": 3,
+                    "propertyKey": "field1Value",
+                    "pw": {
+                        "displayName": "Field 1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"locale\":\"\", \"positiveFormat\" : \"{CS}{D}\", \"negativeFormat\" : \"-({CS}{D})\", \"fractionDigits\":\"2\"}",
+                    "group": "Format",
+                    "kuid": "fecdfce3f8a345468a043d59cec16d2d",
+                    "originalPropertyKey": "amountFormat",
+                    "propertyIndex": 3,
+                    "propertyKey": "amountFormat",
+                    "pw": {
+                        "displayName": "Amount Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "updateBillPayPayee",
+                    "group": "Activation Service",
+                    "kuid": "i59d50e2d813439cb4bf555eba9848df",
+                    "originalPropertyKey": "activateOperation",
+                    "propertyIndex": 3,
+                    "propertyKey": "activateOperation",
+                    "pw": {
+                        "displayName": "Activate eBill Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"i18n.ProfileManagement.AccountNumber\"}",
+                    "group": "Data Grid",
+                    "kuid": "ef55716e7a4a42609eccc14563af9f6e",
+                    "originalPropertyKey": "field2Key",
+                    "propertyIndex": 4,
+                    "propertyKey": "field2Key",
+                    "pw": {
+                        "displayName": "Field 2 Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\":\"\\\\d(?=\\\\d{4})\",\"replaceCharacter\":\"X\",\"modifiers\":\"g\"}",
+                    "group": "Format",
+                    "kuid": "j0ff58661f0f493bb80027e0ecb5e3df",
+                    "originalPropertyKey": "accountNumberFormat",
+                    "propertyIndex": 4,
+                    "propertyKey": "accountNumberFormat",
+                    "pw": {
+                        "displayName": "Account Number Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"payeeId\":\"\",\"EBillEnable\":1}",
+                    "group": "Activation Service",
+                    "kuid": "e8253d98fd4848e094a18c995251cb38",
+                    "originalPropertyKey": "activateCriteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "activateCriteria",
+                    "pw": {
+                        "displayName": "Activate eBill Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"skin\":\"ICSknsknBtnBlockedSSPFFFFFF15Pxmb\"}",
+                    "group": "Skins",
+                    "kuid": "h0cf9133e83d41d5b66ec1db2906377b",
+                    "originalPropertyKey": "actionButtonInactiveSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "actionButtonInactiveSkin",
+                    "pw": {
+                        "displayName": "Action Button Inactive Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"mapping\":\"{$.c.accountNumber}\",\"type\":\"AccountNumber\",\"widgetProps\":{\"height\":\"19dp\",\"width\":\"100%\"},\"widgetPropLabel\":{\"width\":\"100%\"}}",
+                    "group": "Data Grid",
+                    "kuid": "fc4cae44b62546398787d96722e3d428",
+                    "originalPropertyKey": "field2Value",
+                    "propertyIndex": 5,
+                    "propertyKey": "field2Value",
+                    "pw": {
+                        "displayName": "Field 2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"masking\":false}",
+                    "group": "Format",
+                    "kuid": "b7078885c4ca41e5a7f3df69246de881",
+                    "originalPropertyKey": "accountNumberMasking",
+                    "propertyIndex": 5,
+                    "propertyKey": "accountNumberMasking",
+                    "pw": {
+                        "displayName": "Account Number masking",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S1",
+                    "group": "Activation Service",
+                    "kuid": "ab93a2b516714e0fa9f9329e309008d0",
+                    "originalPropertyKey": "activateIdentifier",
+                    "propertyIndex": 5,
+                    "propertyKey": "activateIdentifier",
+                    "pw": {
+                        "displayName": "Activate eBill Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"action\":{\"level\":\"Comp\",\"method\":\"\"},\"text\":\"i18n.CustomerFeedback.Submit\",\"entitlement\":[]}",
+                    "group": "Data Grid",
+                    "kuid": "fad979f6e635428faea1960cf525db43",
+                    "originalPropertyKey": "actionButton",
+                    "propertyIndex": 6,
+                    "propertyKey": "actionButton",
+                    "pw": {
+                        "displayName": "Action Button",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "eb10d9fe1bfd43009016bd998b90d93c",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.BillPay",
+    "version": "1.0.0"
+}

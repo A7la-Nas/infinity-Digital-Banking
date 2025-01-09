@@ -1,0 +1,1 @@
+{"table":"PFMBarGraph","db":"PFM"},{"table":"PFMBudgetGraph","db":"PFM"},{"table":"PFMPieChart","db":"PFM"},{"table":"PFMAccounts","db":"PFM","verbs":"true"},{"table":"PFMTransactions","db":"PFM","verbs":"true"},{"table":"PFMCategory","db":"PFM"}

@@ -1,0 +1,1 @@
+{"table":"PaymentOrder","db":"BulkPaymentObjects","verbs":"true"},{"table":"BulkPaymentFile","db":"BulkPaymentObjects","verbs":"true"},{"table":"BulkPaymentTemplate","db":"BulkPaymentObjects","verbs":"true"},{"table":"TemplatePaymentOrder","db":"BulkPaymentObjects","verbs":"true"},{"table":"BulkPaymentRecord","db":"BulkPaymentObjects","verbs":"true"}

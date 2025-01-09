@@ -1,0 +1,423 @@
+{
+    "classname": "sdk",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "hc38d0eab77b473b84fda4e4750b0d07",
+                    "paramList": [
+                        {
+                            "name": "activationObj"
+                        },
+                        {
+                            "name": "provisioinCallBack"
+                        }
+                    ],
+                    "propertyKey": "doDeviceProvisioning",
+                    "pw": {
+                        "displayName": "doDeviceProvisioning",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ge3b0290d7ac49fab15a540d54da901d",
+                    "paramList": [],
+                    "propertyKey": "showApprovalScreen",
+                    "pw": {
+                        "displayName": "showApprovalScreen",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ee8d24e87704455dabcd9f0f7d19aeeb",
+                    "paramList": [],
+                    "propertyKey": "hideApprovalScreen",
+                    "pw": {
+                        "displayName": "hideApprovalScreen",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a99cbc03ce4c4a988ed4b1ce24cd8488",
+                    "paramList": [],
+                    "propertyKey": "getAllContainers",
+                    "pw": {
+                        "displayName": "getAllContainers",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ed31c2426d6a43deb6d7a6b712626af0",
+                    "paramList": [
+                        {
+                            "name": "pin"
+                        },
+                        {
+                            "name": "callback"
+                        }
+                    ],
+                    "propertyKey": "setContainerPin",
+                    "pw": {
+                        "displayName": "setContainerPin",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e0fff74ae004466a81ffe5c721193d04",
+                    "paramList": [
+                        {
+                            "name": "userId"
+                        }
+                    ],
+                    "propertyKey": "generateSynchronousOTP",
+                    "pw": {
+                        "displayName": "generateSynchronousOTP",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a3f72fda5eed43729ea23e4312834ec9",
+                    "paramList": [],
+                    "propertyKey": "showPinDialog",
+                    "pw": {
+                        "displayName": "showPinDialog",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j9de24e8aede4112af9c9062735d5c1c",
+                    "paramList": [],
+                    "propertyKey": "showOrHideTxStatus",
+                    "pw": {
+                        "displayName": "showOrHideTxStatus",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a83fa18316a34d11ad072e9c94d9f2bf",
+                    "paramList": [],
+                    "propertyKey": "hidePinDialog",
+                    "pw": {
+                        "displayName": "hidePinDialog",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fc5d7ea4e0df40bfb050cfe9f617cedb",
+                    "paramList": [
+                        {
+                            "name": "token"
+                        }
+                    ],
+                    "propertyKey": "updatePushRegistrationToken",
+                    "pw": {
+                        "displayName": "updatePushRegistrationToken",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ca04c2a74f594c278bb28311c30fe2ed",
+                    "paramList": [],
+                    "propertyKey": "preshow",
+                    "pw": {
+                        "displayName": "preshow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fcb820f3546342629bc99b9c9c328900",
+                    "paramList": [],
+                    "propertyKey": "generateOCRAOTP",
+                    "pw": {
+                        "displayName": "generateOCRAOTP",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f9751bfbeecc4741893a484f0caa0d57",
+                    "paramList": [],
+                    "propertyKey": "setFlowActions",
+                    "pw": {
+                        "displayName": "setFlowActions",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "gdaa87f235cd4e5b8c45c1ac53157d6e",
+                    "paramList": [
+                        {
+                            "name": "userId"
+                        }
+                    ],
+                    "propertyKey": "getUserPendingTransactions",
+                    "pw": {
+                        "displayName": "getUserPendingTransactions",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "da30205a56f34458bc2445e272653cbf",
+                    "paramList": [
+                        {
+                            "name": "userId"
+                        },
+                        {
+                            "name": "oldPin"
+                        },
+                        {
+                            "name": "newPin"
+                        },
+                        {
+                            "name": "jsCallBack"
+                        }
+                    ],
+                    "propertyKey": "updatePin",
+                    "pw": {
+                        "displayName": "updatePin",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "cab6ac42d5e14e04a5ca8f6b233a22d6",
+                    "paramList": [],
+                    "propertyKey": "enableBiometricAuthentication",
+                    "pw": {
+                        "displayName": "enableBiometricAuthentication",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a93c512460f64abb8bb180f2971ab20a",
+                    "paramList": [],
+                    "propertyKey": "isDeviceBiometricAvailable",
+                    "pw": {
+                        "displayName": "isDeviceBiometricAvailable",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d03cf90cc1c04fa49523c7920137ec34",
+                    "paramList": [],
+                    "propertyKey": "setBiometricPrompt",
+                    "pw": {
+                        "displayName": "setBiometricPrompt",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "de416e8b5c6e411db4ba6b79bd9662cb",
+                    "paramList": [],
+                    "propertyKey": "resetBiometricPrompt",
+                    "pw": {
+                        "displayName": "resetBiometricPrompt",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c8b4070eed504248bf40933fee9df778",
+                    "paramList": [],
+                    "propertyKey": "renewContainer",
+                    "pw": {
+                        "displayName": "renewContainer",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ied8fe3f6a6545478fb97b30ea33791d",
+                    "paramList": [],
+                    "propertyKey": "isBiometricEnabled",
+                    "pw": {
+                        "displayName": "isBiometricEnabled",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ebce2b13e41d4064ae6c0a1f2337a6fb",
+                    "paramList": [],
+                    "propertyKey": "isFaceIDSupport",
+                    "pw": {
+                        "displayName": "isFaceIDSupport",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "acab01f79cc04e24acbd4b3682b961ba",
+                    "paramList": [],
+                    "propertyKey": "checkBiometricsEnabledForUsers",
+                    "pw": {
+                        "displayName": "checkBiometricsEnabledForUsers",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ab961676dfd245789b984d411441c713",
+                    "paramList": [],
+                    "propertyKey": "resetPinDialog",
+                    "pw": {
+                        "displayName": "resetPinDialog",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "ae9c0c45b9594baaa7b571e3803a7187",
+                    "originalPropertyKey": "pushId",
+                    "propertyIndex": 1,
+                    "propertyKey": "pushId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Push ID",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ufe11f6a04504259a40ada5af624c2f9",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [
+                {
+                    "kuid": "b22db2b7bb0c4b9c80d8e78c40009385",
+                    "propertyKey": "flxApprovePopup",
+                    "srcWgtKUID": "u29ee2eafd9a4e288e2bee30e1d5fdba"
+                },
+                {
+                    "kuid": "c5a2fad506574da2b7ac00cc66b73015",
+                    "propertyKey": "lblHeader",
+                    "srcWgtKUID": "ucf7d527c118436d8b523881f4b1c409"
+                },
+                {
+                    "kuid": "e20d064ffb0c41a096c2fd2142d5ae23",
+                    "propertyKey": "lblNotification",
+                    "srcWgtKUID": "u7c88fd901084dffbb47e4d804951af6"
+                },
+                {
+                    "kuid": "f9e7c7730c5e44ae8f9a9a531b88e8ca",
+                    "propertyKey": "flxLineBottomSeparator",
+                    "srcWgtKUID": "u7ca89d36fda40cbb25387d8d141e663"
+                },
+                {
+                    "kuid": "d4cd9cc34668437384c3956f23619ea6",
+                    "propertyKey": "flxDecision",
+                    "srcWgtKUID": "u624325d6f124ae08a291622afda8195"
+                },
+                {
+                    "kuid": "d2480d9b84df46789ec8a57872870122",
+                    "propertyKey": "btnDecisionNo",
+                    "srcWgtKUID": "ube71b2db6134c9f8f4dadf612f39cdb"
+                },
+                {
+                    "kuid": "cf8c7c3b27844248a9a3fd571af346f3",
+                    "propertyKey": "flxMiddleFLine",
+                    "srcWgtKUID": "u5861de675ed463d92cadc74611f7653"
+                },
+                {
+                    "kuid": "ea0c47fa8aaa4f01be7f400ae79640a3",
+                    "propertyKey": "btnDecisionYes",
+                    "srcWgtKUID": "u26a6ec8858645698908e11f7ceb20ad"
+                },
+                {
+                    "kuid": "ee624142ca3c4059bfb180261d3eb187",
+                    "propertyKey": "flxApprove",
+                    "srcWgtKUID": "u00dc4290b6e481daad78b0a891c891f"
+                }
+            ],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.hidapprove",
+    "version": "1.0.0"
+}

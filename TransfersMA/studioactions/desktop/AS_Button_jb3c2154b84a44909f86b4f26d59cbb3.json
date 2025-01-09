@@ -1,0 +1,23 @@
+{
+    "AS_Button_jb3c2154b84a44909f86b4f26d59cbb3": {
+        "id": "AS_Button_jb3c2154b84a44909f86b4f26d59cbb3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmUTFLogin",
+            "type": "forms",
+            "platform": null,
+            "KUID": "g24dd910cf7c420d9037a327ff7fe1d2"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b9a3a4eb99c148c98bbb9de470efaa44",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " \tvar self = this;\n        kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\n        var authParams = {\n            \"UserName\": \"testuser2\",\n            \"Password\": \"Kony@1234\",\n            \"loginOptions\": {\n                \"isOfflineEnabled\": false\n            }\n        };\n        authClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\n        authClient.login(authParams, successCallback, errorCallback);\n\n        function successCallback(resSuccess) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resSuccess);\n            var tokenParams = kony.sdk.getCurrentInstance().tokens.DbxUserLogin.provider_token.params.security_attributes;\n            var permissions = JSON.parse(tokenParams.permissions);\n            var features = JSON.parse(tokenParams.features);\n          \tapplicationManager.getConfigurationManager().setUserPermissions(permissions);\n            applicationManager.getConfigurationManager().setFeatures(features);\n          \tapplicationManager.getUserPreferencesManager().fetchUser(function () { kony.application.dismissLoadingScreen(); }, function () { });\n         \tkony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\"appName\" : \"TransfersMA\", \"moduleName\" : \"AccountsUIModule\"}).presentationController.fetchAccounts(\"\");  \n          \tnew kony.mvc.Navigation({\n                \"appName\": \"TransfersMA\",\n                \"friendlyName\": \"UnifiedTransferFlowUIModule/frmUTFLanding\"\n            }).navigate();\n        }\n\n        function errorCallback(resError) {\n            kony.application.dismissLoadingScreen();\n            kony.print(resError);\n            alert(\"login is not working...\");\n        }",
+            "parentId": null
+        }]
+    }
+}

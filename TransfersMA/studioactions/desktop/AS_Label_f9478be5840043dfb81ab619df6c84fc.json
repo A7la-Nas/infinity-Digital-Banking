@@ -1,0 +1,33 @@
+{
+    "AS_Label_f9478be5840043dfb81ab619df6c84fc": {
+        "id": "AS_Label_f9478be5840043dfb81ab619df6c84fc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segFastTransfersActivate",
+            "type": "templates",
+            "platform": "",
+            "KUID": "a386f3cd14f84b7babc913580209f2a3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d124a2f761b84793a1f46f88ee3748d8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "applicationManager.getModulesPresentationController({\"appName\" : \"TransfersMA\", \"moduleName\" : \"TransferFastUIModule\"}).showTransferScreen({activateRecipient:true});",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

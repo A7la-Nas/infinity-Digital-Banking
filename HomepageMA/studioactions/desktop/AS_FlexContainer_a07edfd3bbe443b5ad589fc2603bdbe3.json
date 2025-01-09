@@ -1,0 +1,32 @@
+{
+    "AS_FlexContainer_a07edfd3bbe443b5ad589fc2603bdbe3": {
+        "id": "AS_FlexContainer_a07edfd3bbe443b5ad589fc2603bdbe3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segAccountsRowTemplateMobile",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b3231cedd0fa4966935344ab5986fa77"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_df8a9874b133473a835e11c0771a0153",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.setClickOrigin();",
+            "parentId": null
+        }]
+    }
+}

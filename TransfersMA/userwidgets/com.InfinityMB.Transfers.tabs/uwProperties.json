@@ -1,0 +1,237 @@
+{
+    "classname": "tabs",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d7c92429b8934100982f4be07e4014c6",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f897af0a3385460c9fa4f8c11e62d5f5",
+                    "paramList": [],
+                    "propertyKey": "setSelectedTab",
+                    "pw": {
+                        "displayName": "setSelectedTab",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ed866e041d724919ba254148a0c1e1ca",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onTabClick",
+                    "pw": {
+                        "displayName": "onTabClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d058c0bc6089465b8f33bdbca8876ff6",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Tabs",
+                "Skins",
+                "Component Config"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{i.kony.mb.components.Recurring}\",\"id\":\"tab2\",\"entitlement\":[\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\",\"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\",\"INTRA_BANK_FUND_TRANSFER_VIEW\",\"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\"]}",
+                    "group": "Tabs",
+                    "kuid": "e8c51bd6af4f47e0a96a17487c7944f8",
+                    "originalPropertyKey": "btnTab2",
+                    "propertyIndex": 1,
+                    "propertyKey": "btnTab2",
+                    "pw": {
+                        "displayName": "Tab2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlxffffffShadow",
+                    "group": "Skins",
+                    "kuid": "bde83a3e3a694ac3a9a5fcdaae8a865b",
+                    "originalPropertyKey": "separtorSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "separtorSkin",
+                    "pw": {
+                        "displayName": "sknSepartor",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Tab1",
+                    "group": "Component Config",
+                    "kuid": "fcd97d0bc3ee4c5a9fb92b80ecbae349",
+                    "originalPropertyKey": "defaultTab",
+                    "propertyIndex": 1,
+                    "propertyKey": "defaultTab",
+                    "pw": {
+                        "displayName": "defaultTab",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "list selector",
+                    "value": [
+                        "Tab1",
+                        "Tab2",
+                        "Tab3",
+                        "Tab4"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{i.kony.mb.components.DirectDebits}\",\"id\":\"tab3\",\"entitlement\":[\"DIRECT_DEBITS_VIEW\"]}",
+                    "group": "Tabs",
+                    "kuid": "gc5fd77e7945413dac10187615c3ace1",
+                    "originalPropertyKey": "btnTab3",
+                    "propertyIndex": 2,
+                    "propertyKey": "btnTab3",
+                    "pw": {
+                        "displayName": "Tab3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknBtn003E75RoundedFFFFFF28PX",
+                    "group": "Skins",
+                    "kuid": "d0a876371d684cd0abc97bd5c1a830e1",
+                    "originalPropertyKey": "uselectedTabSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "uselectedTabSkin",
+                    "pw": {
+                        "displayName": "sknUnSelectedTab",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{i.kony.mb.components.Sweep}\",\"id\":\"tab4\",\"entitlement\":[]}",
+                    "group": "Tabs",
+                    "kuid": "de0c75bd4c51489287d8b3b4c11bf9d6",
+                    "originalPropertyKey": "btnTab4",
+                    "propertyIndex": 3,
+                    "propertyKey": "btnTab4",
+                    "pw": {
+                        "displayName": "Tab4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknBtnFFFFFFRounded003E7528PxMb",
+                    "group": "Skins",
+                    "kuid": "c2cb2a6354074822a5c17d8eef796753",
+                    "originalPropertyKey": "selectedTabSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "selectedTabSkin",
+                    "pw": {
+                        "displayName": "sknSelectedTab",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"{i.kony.mb.components.Transfers}\",\"id\":\"tab1\",\"entitlement\":[\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\",\"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\",\"INTRA_BANK_FUND_TRANSFER_VIEW\",\"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\"]}",
+                    "group": "Tabs",
+                    "kuid": "d33d284594e547a88655d31127e74a1a",
+                    "originalPropertyKey": "btnTab1",
+                    "propertyIndex": 4,
+                    "propertyKey": "btnTab1",
+                    "pw": {
+                        "displayName": "Tab1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknFlx003E75BlueMb",
+                    "group": "Skins",
+                    "kuid": "a7ad07a3764244eaa86bece77493a5a1",
+                    "originalPropertyKey": "backgroundSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "backgroundSkin",
+                    "pw": {
+                        "displayName": "sknBackGround",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "c684aace68964b538ce43643c3e87084",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Transfers",
+    "version": "1.0.0"
+}

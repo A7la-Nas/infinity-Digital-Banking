@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_d9cbf2f9a28e4c87bd90cbb29a9db950": {
+        "id": "AS_FlexContainer_d9cbf2f9a28e4c87bd90cbb29a9db950",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "eventPayload"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segRowDefaultAccounts",
+            "type": "templates",
+            "platform": "",
+            "KUID": "g3f4c5e2a9f54862adcae9163f5dea9d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_g826c774c03945de9bc8b07d34385675",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.accountsFocus(eventobject, eventPayload, context);",
+            "parentId": null
+        }]
+    }
+}

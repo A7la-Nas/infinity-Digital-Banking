@@ -1,0 +1,30 @@
+{
+    "AS_Segment_g5b7665cf60347a9b410d7cbb7c923c6": {
+        "id": "AS_Segment_g5b7665cf60347a9b410d7cbb7c923c6",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmCardMngReasons",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e2b0689f93734d90be88ba6530758f40"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a935724e807d4550b10eea7f4aa7bcf1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.segReasonsPinChangeOnRowClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

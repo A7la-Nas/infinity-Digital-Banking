@@ -1,0 +1,138 @@
+{
+    "classname": "investmentLineChart",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "jea5dd01dbb34a34b5ef845dc72c4f95",
+                    "paramList": [],
+                    "propertyKey": "setChartData",
+                    "pw": {
+                        "displayName": "setChartData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h069f3ba1e7145de8c79fb443a22d20c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c60a2db1725943f2bb41e78e89c89809",
+                    "paramList": [],
+                    "propertyKey": "setChartFilters",
+                    "pw": {
+                        "displayName": "setChartFilters",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h069f3ba1e7145de8c79fb443a22d20c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g088daad739c4109a0bcf93773a34644",
+                    "paramList": [],
+                    "propertyKey": "setFilterLabels",
+                    "pw": {
+                        "displayName": "setFilterLabels",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h069f3ba1e7145de8c79fb443a22d20c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "j780bd44ce8a446fa3ddddf6902cf52c",
+                    "paramList": [
+                        {
+                            "name": "filter"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onFilterChanged",
+                    "pw": {
+                        "displayName": "onFilterChanged",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h069f3ba1e7145de8c79fb443a22d20c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "$",
+                    "group": "General",
+                    "kuid": "a923306c0a1b410b95c1c5ee9931c51d",
+                    "originalPropertyKey": "currencySymbol",
+                    "propertyIndex": 2,
+                    "propertyKey": "currencySymbol",
+                    "pw": {
+                        "displayName": "Currency Symbol",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h069f3ba1e7145de8c79fb443a22d20c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Read",
+                    "defaultValue": "1Y",
+                    "group": "General",
+                    "kuid": "c5441b2f3c4f46558befde48a30a9ca3",
+                    "originalPropertyKey": "currentFilter",
+                    "propertyIndex": 3,
+                    "propertyKey": "currentFilter",
+                    "pw": {
+                        "displayName": "Current Filter",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h069f3ba1e7145de8c79fb443a22d20c",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f998f0e558874e05a57d18b6d8129a5f",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "skin1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblOneYear",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "h35ac34b6bfb4f23b5bfd68a933e7e9b"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.HomepageMA",
+    "version": "1.0.0"
+}

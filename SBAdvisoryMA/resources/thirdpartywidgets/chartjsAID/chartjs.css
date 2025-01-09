@@ -1,0 +1,178 @@
+.probableMainContent {
+    border:solid 1px #bdbdbd;
+    border-radius: 2px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0px 2px 2px 0px rgba(204, 204, 204, 0.6);
+    padding: 0px;
+    -moz-box-shadow: 0px 2px 2px 0px rgba(204, 204, 204, 0.6);
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(204, 204, 204, 0.6);
+}
+
+.probableMainContent::before {
+    content: '';
+    position: absolute;
+    top: 100%; /* Position a second, bordered arrow behind the white arrow */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent; /* Gray border for the arrow */
+}
+
+.probableMainContent::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Position the arrow at the bottom of the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.probableContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #424242;
+}
+
+.probableContent p {
+  font-family: 'Source Sans Pro' !important;
+  color: #424242;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.probableRowContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 13px !important;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  color: #070505;
+}
+
+.probableRow {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+  /* Adjust the space between rows */
+}
+
+.probableLabel {
+  /* Adjust the space between label and value */
+  width: 130px;
+  font-family: SourceSansPro-Regular;
+}
+
+.probabeLeftLabel {
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.probabeLeftLabel::after {
+  content: ":";
+}
+
+.probabeLeftContent {
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-right: 3px;
+}
+
+.probableValue {
+  width: 90px;
+  margin-left: 15px;
+  font-family: Source Sans Pro;
+}
+
+.probableHeader {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 20px;
+  justify-content: left;
+  font-size: 15px !important;
+}
+
+#probableHeading {
+  display: flex;
+  justify-content: center;			
+  color: #424242;
+  font-size: 15px;
+  font-weight: 600;
+}
+#probableSubHeading {
+  margin-left: 20px;
+  margin-bottom: 2px;
+  font-family: 'SourceSansPro-Regular';
+  color: #727272;
+  font-size: 13px;
+}
+#probableMainSubHeading {
+margin-left: 20px;
+margin-bottom: 2px;
+margin-top: 15px;
+color: #424242;
+font-size: 15px;
+font-weight: 600;
+}
+#probableSubHeadingBold {
+margin-left: 20px;
+margin-top: 10px;
+color: #424242;
+font-size: 15px;
+font-weight: 600;
+}
+#probableHeaderSubHeadCls {
+display: flex;
+margin-top: 10px;
+margin-left: 0px;
+justify-content: left;
+font-size: 15px !important;
+}
+.probableContentCls {
+display: flex;
+align-items: center;
+margin-left: 0px;
+color: #424242;
+}
+.row {
+display: flex;
+margin-bottom: 10px;
+}
+.row1 {
+display: flex;
+margin-bottom: 5px;
+}
+.row2 {
+display: flex;
+margin-bottom: 1px;
+}
+/* Style for columns */
+.col {
+flex: 1;
+border: 1px #ccc;
+}
+.probableRowContentCls {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+font-size: 13px !important;
+margin-left: 20px;
+color: #070505;
+}
+.probableRowCls {
+display: flex;
+justify-content: flex-end;
+/* Adjust the space between rows */
+}
+.probableLabelCls {
+/* Adjust the space between label and value */
+width: 85px;
+font-family: SourceSansPro-Regular;
+}

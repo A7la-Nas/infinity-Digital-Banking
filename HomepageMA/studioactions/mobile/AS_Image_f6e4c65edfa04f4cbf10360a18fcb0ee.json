@@ -1,0 +1,29 @@
+{
+    "AS_Image_f6e4c65edfa04f4cbf10360a18fcb0ee": {
+        "id": "AS_Image_f6e4c65edfa04f4cbf10360a18fcb0ee",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "imagesrc"
+        }, {
+            "datatype": "boolean",
+            "name": "issuccess"
+        }],
+        "contextObj": {
+            "name": "frmUnifiedDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f9e614cc940c46799370cb0f77cf2c88"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_cdaac6d39c314e969bddc0fd652974e0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onAdDownloadComplete(issuccess,3);",
+            "parentId": null
+        }]
+    }
+}

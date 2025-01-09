@@ -1,0 +1,24 @@
+{
+    "AS_Button_gf3ed60b012241e891cfa9369d7cc22c": {
+        "id": "AS_Button_gf3ed60b012241e891cfa9369d7cc22c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollSecurityCheck",
+            "type": "forms",
+            "platform": null,
+            "KUID": "af18f8fca016406cbd81bf3635ce0226"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__i1ffb29922d64745908975f3c63dce10",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var enrollMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"EnrollModule\");\nenrollMod.presentationController.commonFunctionForNavigation(\"frmLogin\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

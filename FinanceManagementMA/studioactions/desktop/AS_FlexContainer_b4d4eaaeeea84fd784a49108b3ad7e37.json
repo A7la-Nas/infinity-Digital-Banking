@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_b4d4eaaeeea84fd784a49108b3ad7e37": {
+        "id": "AS_FlexContainer_b4d4eaaeeea84fd784a49108b3ad7e37",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segBulkUpdatePFMTransactionsSelectedMobile",
+            "type": "templates",
+            "platform": "",
+            "KUID": "d15384ebc87b4e8386e6f736865d1a0b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__c7199eaa4dbe475dac53f1b32d9cc1eb",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showSelectedRow",
+            "display": "showSelectedRow",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

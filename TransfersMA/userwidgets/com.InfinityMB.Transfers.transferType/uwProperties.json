@@ -1,0 +1,197 @@
+{
+    "classname": "transferType",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d93d3ca6d67540e38c034602bb375f9b",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "gab2ed113def44b5be58607438fad213",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b73d89cf266542dbb5839574d6e3d59d",
+                    "paramList": [],
+                    "propertyKey": "closeDescription",
+                    "pw": {
+                        "displayName": "closeDescription",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "gab2ed113def44b5be58607438fad213",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e94b9e19a7404ba5b54c9106ee4c81f1",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onBack",
+                    "pw": {
+                        "displayName": "onBack",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "gab2ed113def44b5be58607438fad213",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "eeb3b276f86a451f9cd6deaaaef51a28",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "gab2ed113def44b5be58607438fad213",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a5da598073f844088c20fbe9e324f45b",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "enableHideDescription",
+                    "pw": {
+                        "displayName": "enableHideDescription",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "gab2ed113def44b5be58607438fad213",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i97081332e03428681b23de199a942e0",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "buttonActionHandling",
+                    "pw": {
+                        "displayName": "buttonActionHandling",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "gab2ed113def44b5be58607438fad213",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h0a99577818b4766930cb98fdbffd30a",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "hideTile",
+                    "pw": {
+                        "displayName": "hideTile",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "gab2ed113def44b5be58607438fad213",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "j7cef6d098054ab7adc3fefafbaf0c45",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "gab2ed113def44b5be58607438fad213",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"lblTransactionType\": \"Within Same Bank\",\n  \"entitlements\": {\n    \"MakeTransfer\": [\n      \"INTRA_BANK_FUND_TRANSFER_CREATE\",\n      \"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE\"\n    ],\n    \"AddNewAccount\": [\n      \"INTRA_BANK_FUND_TRANSFER_CREATE_RECEPIENT\",\n      \"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE_RECEPIENT\"\n    ]\n  },\n  \"lblDescription\": \"${i18n{i18n.unified.sameBankDescription}}\",\n  \"MoreLink\": \"${i18n{kony.mb.login.learnMore}}\",\n  \"imgTransDescriptionIcon\": \"domestic.png\",\n  \"transferType\": \"Within Same Bank\"\n}",
+                    "group": "General",
+                    "kuid": "d22c8e7efd30458eb1775516d9407f2f",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "gab2ed113def44b5be58607438fad213",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "General",
+                    "kuid": "c09bf2cd0cb7469b801a25a66401b657",
+                    "originalPropertyKey": "dataFormatting",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "gab2ed113def44b5be58607438fad213",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Transfers",
+    "version": "1.0.0"
+}

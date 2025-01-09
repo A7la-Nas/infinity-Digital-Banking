@@ -1,0 +1,31 @@
+{
+    "AS_UWI_a5e6e86715694f53980d99d1d774cc76": {
+        "id": "AS_UWI_a5e6e86715694f53980d99d1d774cc76",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "loginSuccessObj",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h65c10a2cabc493c8ac9ef9c703d1486"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__aed1e97a5acb42108f752b6facf181c8",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "loginSuccessNavigate",
+            "display": "loginSuccessNavigate",
+            "inputparams": [{
+                "name": "data",
+                "value": " loginSuccessObj"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

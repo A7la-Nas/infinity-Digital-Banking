@@ -1,0 +1,28 @@
+{
+    "Forms": {
+        "desktop": {
+            "frmMultiFactorAuthentication": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "MultiFactorAuthenticationModule/frmMultiFactorAuthenticationController",
+                "FormName": "MultiFactorAuthenticationModule/frmMultiFactorAuthentication",
+                "friendlyName": "frmMultiFactorAuthentication"
+            },
+            "frmMFATransactions": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "MultiFactorAuthenticationModule/frmMFATransactionsController",
+                "FormName": "MultiFactorAuthenticationModule/frmMFATransactions",
+                "friendlyName": "frmMFATransactions"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "MultiFactorAuthenticationModule",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "MultiFactorAuthenticationModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": []
+        }
+    }
+}

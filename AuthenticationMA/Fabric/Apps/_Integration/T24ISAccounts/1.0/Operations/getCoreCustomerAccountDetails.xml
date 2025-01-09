@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="getCoreCustomerAccountDetails" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://_$_T24_ACCOUNTS_HOST_URL_$_/v3.0.0/holdings/accounts?customerId=$customerId"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="GET"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="urlprovider" value="com.kony.dbx.util.ServiceURLProvider"/>
+        <config-param api-version="" appid="" name="identityProvider" value="DbxUserLogin"/>
+        <config-param api-version="" appid="" name="identityProviderType" value="custom"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJJUklTIiwic3ViIjoidGVzdGV1MDEiLCJyb2xlSWQiOiJJTkZJTklUWS5SRVRBSUwiLCJpc3MiOiJGYWJyaWMiLCJkYnhVc2VySWQiOiIxNDgxNjI2ODIyIiwiZXhwIjoxNjg3MjA0Mzg4LCJpYXQiOjE1ODcxOTI1ODgsInVzZXJJZCI6InRlc3RldTAxIiwiX2lzc21ldGEiOiJodHRwczovL2RieGludDMua29ueWxhYnMubmV0Ojg0NDMvc2VydmljZXMvVDI0SVNFeHRyYS9nZXRwdWJsaWNrZXkiLCJqdGkiOiIyYjc2MzA3ZS03NGUwLTQzZjYtYjZmNC03NzhiYWI0MWE1NjkifQ.fdgIW-2qnzTEOs1Mv4kOZOIIQ6qMYHc5rwwVadS6HQe8007nr3q2JPIx6-ppOnVv99q2q5B_FfZ3YD4hARQIKbNb99ELFj34juLG4BLOJ-NtQyrVj2mYlT-ouGawIA6Yv8Ub8umvkEO99Vg8NgG8u_s6RfwGKgfiMBC7x8XTK3U3WNeLttQ6rdEPWoNnlsmUuKfl1SAFq9yFMjWH6ux1a2_tNLZ55LxwrgurRfIUsV2XrA8hCnvcGZMYimePEAPQwmb8mOp0d7jmcC5-XQDF6moYki4Hdb1Zr7o0Lw7q7C3vO-RGT0RNXQfiI1o5IvjRnOM74RNriJ0Y8yxNynnYPg" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="companyId" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="customerId" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="190173" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <dataset defaultvalue="" id="records" order="" paramOrder="1" parentOrder="0" src="//body" testvalue="" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="accountId" order="" paramOrder="2" parentOrder="1" passnull="false" sms-name="" src="//accountId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="acccountName" order="" paramOrder="3" parentOrder="1" passnull="false" sms-name="" src="//productName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="productId" order="" paramOrder="4" parentOrder="1" passnull="false" sms-name="" src="//productId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="collection" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="customerDetails" order="" paramOrder="5" parentOrder="1" passnull="false" sms-name="" src="//customerDetails" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="customerName" order="" paramOrder="6" parentOrder="1" passnull="false" sms-name="" src="//customerName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="arrangementId" order="" paramOrder="7" parentOrder="1" passnull="false" sms-name="" src="//arrangementId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="accountStatus" order="" paramOrder="8" parentOrder="1" passnull="false" sms-name="" src="//accountStatus" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </dataset>
+    </service-output>
+</service>

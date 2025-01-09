@@ -1,0 +1,172 @@
+{
+    "classname": "idleTimeoutPopup",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "abd82e20fb664fe1a770cd23f04ccff5",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "extendSessionClick",
+                    "pw": {
+                        "displayName": "extendSessionClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "eb2807b00f2747b9950a2217a422e4d6",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "baacee532d5b4aa8b2b16ab5829e19ca",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "signOutClick",
+                    "pw": {
+                        "displayName": "signOutClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "eb2807b00f2747b9950a2217a422e4d6",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d5bc3440ada1463ab7cd078f170cd5f2",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "updateTimeLabel",
+                    "pw": {
+                        "displayName": "updateTimeLabel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "eb2807b00f2747b9950a2217a422e4d6",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e924c2426ef3428186682c047d5f2aff",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "updateTimeProgressBar",
+                    "pw": {
+                        "displayName": "updateTimeProgressBar",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "eb2807b00f2747b9950a2217a422e4d6",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f06734ed551f4730a77df405447e9e3a",
+                    "originalPropertyKey": "width",
+                    "propertyIndex": 2,
+                    "propertyKey": "flxProgressWidth",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Width",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android"
+                            ]
+                        },
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxProgress",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ],
+                                    [
+                                        "Preferred",
+                                        "preferred"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "j35e6ed284534f5c9422bdfc21174f56"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d68a70b3dbd94371b7a04f4e5dd5a78f",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 4,
+                    "propertyKey": "lblTimeText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "text",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblTime",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ccd91b581bc7462b804ef129d51501c6"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.AuthenticationMA",
+    "version": "1.0.0"
+}

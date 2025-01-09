@@ -1,0 +1,18 @@
+{
+    "AS_AppEvents_ie1013a300d34c739f73aaa6b1aaecae": {
+        "id": "AS_AppEvents_ie1013a300d34c739f73aaa6b1aaecae",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_d101893e34c24334985337e1f376b4e9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "_kony.mvc.initCompositeApp(true);\nkony.print(\"Testing JS Load\");\nvar isIOS13 =  (/(iPad|iPhone);.*CPU.*OS 13_\\d/i).test(navigator.userAgent);\nif(isIOS13){\n  kony.application.setApplicationBehaviors({disableForceRepaint: true});\n}\n//require([\"ConsentMgmtMA/DummyLogin/frmDummyLogin\", \"ConsentMgmtMA/DummyLogin/frmDummyLoginController\"], function (){});\n//require([\"BBAccountsModule/frmBBAccountsLanding\", \"BBAccountsModule/frmBBAccountsLandingController\"], function (){});\n//var authModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"AuthModule\");\n//var ApplicationManager = require('ApplicationManager');\nvar moduleName = 'ApplicationManager';\nrequire([moduleName], function(ApplicationManager){\n  applicationManager =  ApplicationManager.getApplicationManager();\nvar config = applicationManager.getConfigurationManager();\n  if(performance.navigation.type===1){\n    config.setBrowserRefreshProperty(\"true\");\n  }\n  var sm = applicationManager.getStorageManager();\n  var langObjFromStorage = sm.getStoredItem(\"langObj\");\n  if (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\n    config.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\n    config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n  } else {\n    config.configurations.setItem(\"LOCALE\", \"en_US\");\n    config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n  }\n  kony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function(){}, function(){});\n  document.body.addEventListener('contextmenu', function(e) {\n    e.preventDefault();        \n    alert(kony.i18n.getLocalizedString(\"i18n.general.rightclickdisabled\"));  // do something with fooModule\n  });\n});\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

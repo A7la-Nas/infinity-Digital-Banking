@@ -1,0 +1,30 @@
+{
+    "AS_UWI_f31cc8a772c44a8a9ec2369c0fa5b002": {
+        "id": "AS_UWI_f31cc8a772c44a8a9ec2369c0fa5b002",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "enteredUsername",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "name": "frmLoginHID",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d2290ff3858d48938cbd19960c045a3a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_forgotNavigation_b2eec31627ea4ed5ba878310893bf17c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "forgotNavigation",
+            "display": "forgotNavigation",
+            "inputparams": [{
+                "name": "enteredUserName",
+                "value": " enteredUsername"
+            }],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

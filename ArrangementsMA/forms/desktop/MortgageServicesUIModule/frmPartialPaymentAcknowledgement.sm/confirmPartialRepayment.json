@@ -1,0 +1,88 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "flxContentTCCenter": {
+            "children": [
+                "flxContentMain"
+            ],
+            "targetContainerInfo": true
+        },
+        "flxTCButtons": {
+            "children": [
+                "flxDownloadOptions"
+            ],
+            "targetContainerInfo": true
+        },
+        "pageTitle": "Partial Repayment - Acknowledgement",
+        "pageTitlei18n": "i18n.accounts.PartialRepaymentAck",
+        "primaryLinks": "[\n  {\n    \"title\": \"${i18n{i18n.topmenu.accounts}}\",\n    \"toolTip\": \"${i18n{i18n.topmenu.accounts}}\",\n    \"accessibilityConfig\": {\n      \"a11yLabel\": \"${i18n{i18n.topmenu.accounts}}\"\n    },\n    \"callToAction\": {\n      \"microApp\": \"HomepageMA\",\n      \"presentationControllerMethod\": \"showAccountsDashboard\",\n      \"moduleName\": \"AccountsUIModule\"\n    }\n  }, {\n    \"id\": \"TRANSFERS\",\n    \"fontIcon\": \"t\",\n    \"title\": \"${i18n{i18n.hamburger.transfers}}\",\n    \"toolTip\": \"${i18n{i18n.hamburger.transfers}}\",\n    \"accessibilityConfig\": {\n      \"a11yLabel\": \"${i18n{i18n.hamburger.transfers}}\"\n    },\n    \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n    \"featureAndPermissions\": [{\n      \"atLeastOneFeature\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER\", \"INTRA_BANK_FUND_TRANSFER\", \"TRANSFER_BETWEEN_OWN_ACCOUNT\"]\n    }],\n    \"subMenu\": [{\n      \"id\": \"Transfer Money\",\n      \"title\": \"${i18n{i18n.billPay.BillPayMakeTransfer}}\",\n      \"tooltip\": \"${i18n{i18n.billPay.BillPayMakeTransfer}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.billPay.BillPayMakeTransfer}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTRA_BANK_FUND_TRANSFER_CREATE\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\"\n      }\n    }, {\n      \"id\": \"Transfer history\",\n      \"title\": \"${i18n{i18n.hamburger.transferHistory}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.transferHistory}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.transferHistory}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTRA_BANK_FUND_TRANSFER_VIEW\", \"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"initialView\": \"recent\"\n        }\n      }\n    }, {\n      \"id\": \"External Accounts\",\n      \"title\": \"${i18n{i18n.hamburger.externalAccounts}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.externalAccounts}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.externalAccounts}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW_RECEPIENT\", \"INTRA_BANK_FUND_TRANSFER_VIEW_RECEPIENT\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"initialView\": \"externalAccounts\"\n        }\n      }\n    }, {\n      \"id\": \"Add Infinity Accounts\",\n      \"title\": \"${i18n{i18n.hamburger.addKonyAccount}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.addKonyAccount}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.addKonyAccount}}\"\n      },\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTRA_BANK_FUND_TRANSFER_CREATE_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"initialView\": \"addInternalAccounts\"\n        }\n      }\n    }, {\n      \"id\": \"Add Non Kony Accounts\",\n      \"title\": \"${i18n{i18n.hamburger.addNonKonyAccount}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.addNonKonyAccount}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.addNonKonyAccount}}\"\n      },\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"initialView\": \"addExternalAccounts\"\n        }\n      }\n    }]\n  }, {\n    \"id\": \"FASTTRANSFERS\",\n    \"fontIcon\": \"t\",\n    \"title\": \"${i18n{i18n.hamburger.transfers}}\",\n    \"toolTip\": \"${i18n{i18n.hamburger.transfers}}\",\n    \"accessibilityConfig\": {\n      \"a11yLabel\": \"${i18n{i18n.hamburger.transfers}}\"\n    },\n    \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n    \"featureAndPermissions\": [{\n      \"atLeastOneFeature\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER\", \"INTRA_BANK_FUND_TRANSFER\", \"P2P\", \"TRANSFER_BETWEEN_OWN_ACCOUNT\"]\n    }],\n    \"subMenu\": [{\n      \"id\": \"Transfer Money\",\n      \"title\": \"${i18n{i18n.hamburger.transfer}}\",\n      \"tooltip\": \"${i18n{i18n.hamburger.transfer}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.hamburger.transfer}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTRA_BANK_FUND_TRANSFER_CREATE\", \"P2P_CREATE\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferFastUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\"\n      }\n    }, {\n      \"id\": \"Transfer history\",\n      \"title\": \"${i18n{i18n.Transfers.TRANSFERACTIVITIES}}\",\n      \"tooltip\": \"${i18n{i18n.Transfers.TRANSFERACTIVITIES}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.Transfers.TRANSFERACTIVITIES}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\", \"INTRA_BANK_FUND_TRANSFER_VIEW\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\", \"P2P_VIEW\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferFastUIModule\",\n        \"presentationControllerMethod\": \"getPastPayments\"\n      }\n    }, {\n      \"id\": \"External Accounts\",\n      \"title\": \"${i18n{i18n.PayAPerson.ManageRecipient}}\",\n      \"tooltip\": \"${i18n{i18n.PayAPerson.ManageRecipient}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.PayAPerson.ManageRecipient}}\"\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\", \"INTRA_BANK_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW_RECEPIENT\", \"P2P_VIEW_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferFastUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"showManageRecipients\": true\n        }\n      }\n    }, {\n      \"id\": \"Add Infinity Accounts\",\n      \"title\": \"${i18n{i18n.PayAPerson.AddRecipient}}\",\n      \"tooltip\": \"${i18n{i18n.PayAPerson.AddRecipient}}\",\n      \"accessibilityConfig\": {\n        \"a11yLabel\": \"${i18n{i18n.PayAPerson.AddRecipient}}\"\n      },\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\", \"INTRA_BANK_FUND_TRANSFER_CREATE_RECEPIENT\", \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE_RECEPIENT\", \"P2P_CREATE_RECEPIENT\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferFastUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"showRecipientGateway\": true\n        }\n      }\n    }]\n  }, {\n    \"id\": \"EUROTRANSFERS\",\n    \"fontIcon\": \"t\",\n    \"title\": \"${i18n{i18n.TransfersEur.PaymentsAndTransfers}}\",\n    \"toolTip\": \"${i18n{i18n.TransfersEur.PaymentsAndTransfers}}\",\n    \"accessibilityConfig\": {\n      \"a11yHidden\": true,\n      \"a11yARIA\": {\n        \"tabindex\": -1\n      }\n    },\n    \"visibleInMAs\": [\"REGIONALTRANSFER\", \"UNIFIEDTRANSFER\"],\n    \"featureAndPermissions\": [{\n      \"atLeastOneFeature\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER\", \"INTRA_BANK_FUND_TRANSFER\", \"TRANSFER_BETWEEN_OWN_ACCOUNT\"]\n    }],\n    \"subMenu\": [{\n      \"id\": \"Make a Payment\",\n      \"title\": \"${i18n{i18n.TransfersEur.MakePayment}}\",\n      \"tooltip\": \"${i18n{i18n.TransfersEur.MakePayment}}\",\n      \"accessibilityConfig\": {\n        \"a11yARIA\": {\n          \"tabindex\": -1\n        }\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE\", \"INTRA_BANK_FUND_TRANSFER_CREATE\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferEurUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"context\": \"MakePayment\"\n        }\n      }\n    }, {\n      \"id\": \"Transfer Between Accounts\",\n      \"title\": \"${i18n{i18n.TransfersEur.TransferBetweenAccounts}}\",\n      \"tooltip\": \"${i18n{i18n.TransfersEur.TransferBetweenAccounts}}\",\n      \"accessibilityConfig\": {\n        \"a11yARIA\": {\n          \"tabindex\": -1\n        }\n      },\n      \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"TransferEurUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"context\": \"MakePaymentOwnAccounts\"\n        }\n      }\n    }, {\n      \"id\": \"Manage Beneficiaries\",\n      \"title\": \"${i18n{i18n.TransfersEur.ManageBeneficiaries}}\",\n      \"tooltip\": \"${i18n{i18n.TransfersEur.ManageBeneficiaries}}\",\n      \"accessibilityConfig\": {\n        \"a11yARIA\": {\n          \"tabindex\": -1\n        }\n      },\n      \"visibleInMAs\": [\"UNIFIEDTRANSFER\"],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"ManageActivitiesUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"context\": \"ManageBeneficiaries\"\n        }\n      }\n    }, {\n      \"id\": \"Manage Payments\",\n      \"title\": \"${i18n{i18n.TransfersEur.ManageTransactions}}\",\n      \"tooltip\": \"${i18n{i18n.TransfersEur.ManageTransactions}}\",\n      \"accessibilityConfig\": {\n        \"a11yARIA\": {\n          \"tabindex\": -1\n        }\n      },\n      \"visibleInMAs\": [\"UNIFIEDTRANSFER\"],\n      \"featureAndPermissions\": [{\n        \"atLeastOneReqPermissions\": [\"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTER_BANK_ACCOUNT_FUND_TRANSFER_VIEW\", \"INTRA_BANK_FUND_TRANSFER_VIEW\", \"TRANSFER_BETWEEN_OWN_ACCOUNT_VIEW\"]\n      }],\n      \"callToAction\": {\n        \"microApp\": \"TransfersMA\",\n        \"moduleName\": \"ManageActivitiesUIModule\",\n        \"presentationControllerMethod\": \"showTransferScreen\",\n        \"params\": {\n          \"context\": \"PastPayments\"\n        }\n      }\n    },\n                {\n                  \"id\": \"Pay Multiple Beneficiaries\",\n                  \"title\": \"${i18n{i18n.Transfers.PayMultipleBeneficiaries}}\",\n                  \"tooltip\": \"${i18n{i18n.Transfers.PayMultipleBeneficiaries}}\",\n                  \"accessibilityConfig\": {\n                    \"a11yARIA\": {\n                      \"tabindex\": -1\n                    }\n                  },\n                  \"visibleInMAs\": [\"REGIONALTRANSFER\"],\n                  \"callToAction\": {\n                    \"microApp\": \"TransfersMA\",\n                    \"moduleName\": \"PayMultipleBeneficiariesUIModule\",\n                    \"presentationControllerMethod\": \"showPayMultipleBeneficiaries\",\n                    \"params\": {\n                      \"showManageBeneficiaries\": true\n                    }\n                  }\n                }\n               ]\n  }\n]",
+        "supplementaryLinks": "[]"
+    },
+    "id": "confirmPartialRepayment",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "de1bbf813f9d494ea3153a1889539e89",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "frmPartialPaymentAcknowledgement",
+    "pf": "frmPartialPaymentAcknowledgement",
+    "responsiveData": {
+        "b1": {
+            "backProperties": "{}"
+        },
+        "b3": {
+            "breadCrumbBackFlag": false,
+            "flag": false,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "d50fa0f8c62546ff9bb50359585bbd5b",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

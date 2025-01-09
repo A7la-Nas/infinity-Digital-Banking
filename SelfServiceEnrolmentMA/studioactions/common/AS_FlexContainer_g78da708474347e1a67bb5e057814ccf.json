@@ -1,0 +1,22 @@
+{
+    "AS_FlexContainer_g78da708474347e1a67bb5e057814ccf": {
+        "id": "AS_FlexContainer_g78da708474347e1a67bb5e057814ccf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "KUID": "udecbe023e584238951c12800722a2c3",
+            "type": "userwidgets"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b6ac114b35bc422cb3b227de581d881f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (kony.os.deviceInfo().screenWidth > 1024) {\n  this.fetchSupportedBrowsersList();\n  this.checkBrowser();\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

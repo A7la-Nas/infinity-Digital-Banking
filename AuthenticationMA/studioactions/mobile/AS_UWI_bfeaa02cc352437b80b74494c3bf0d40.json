@@ -1,0 +1,30 @@
+{
+    "AS_UWI_bfeaa02cc352437b80b74494c3bf0d40": {
+        "id": "AS_UWI_bfeaa02cc352437b80b74494c3bf0d40",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "errorData",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "name": "frmLoginUniken",
+            "type": "forms",
+            "platform": null,
+            "KUID": "h1bb693875af42ba9d4edc2bae28fae9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_setErrorStatus_j9b2c7c08cde4641b516ea67169438c5",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setErrorStatus",
+            "display": "setErrorStatus",
+            "inputparams": [{
+                "name": "response",
+                "value": " errorData"
+            }],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

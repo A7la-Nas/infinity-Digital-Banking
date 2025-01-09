@@ -1,0 +1,22 @@
+{
+    "AS_Form_ib2c7270983345e9bd9ee39a89b71007": {
+        "id": "AS_Form_ib2c7270983345e9bd9ee39a89b71007",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": null,
+            "KUID": "d6328cf267c248a6b559c500d837ea14"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_postShow_f68c4ae2cbb84fc3b65df55394c0fb74",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var config = applicationManager.getConfigurationManager();\nkony.i18n.setCurrentLocaleAsync(config.configurations.getItem(\"LOCALE\"), function() {\n  var previousForm = kony.application.getPreviousForm();\n  var currentForm = kony.application.getCurrentForm();\n  var OLBLogoutStatus = kony.store.getItem('OLBLogoutStatus');\n  //var isUserLoggedin = kony.store.getItem('UserLoginStatus');\n  if(previousForm && previousForm.id == \"frmProfileManagement\")\n\tapplicationManager.getNavigationManager().navigateTo(\"frmProfileManagement\");\n  else if(OLBLogoutStatus && OLBLogoutStatus.isUserLoggedoutSuccessfully || (currentForm && currentForm.id == \"frmLogout\" ))\n   {\n     if(OLBLogoutStatus){\n    // kony.store.setItem('UserLoginStatus',false);\n     OLBLogoutStatus.isUserLoggedoutSuccessfully=false;\n     applicationManager.getStorageManager().setStoredItem('OLBLogoutStatus', OLBLogoutStatus);\n     }\n     applicationManager.getNavigationManager().navigateTo(\"frmLogout\"); \n    }\n  else{\n\tapplicationManager.getNavigationManager().navigateTo(\"frmLogin\");   \n  }\n}, function() {});",
+            "callbackType": null
+        }]
+    }
+}

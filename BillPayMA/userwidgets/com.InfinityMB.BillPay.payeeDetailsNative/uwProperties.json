@@ -1,0 +1,504 @@
+{
+    "classname": "payeeDetailsNative",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e067876609d44bcc89220285565dcea6",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f63fede73d6a41709721869b55ada248",
+                    "paramList": [],
+                    "propertyKey": "setParentScope",
+                    "pw": {
+                        "displayName": "setParentScope",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fc5b7d915e3342bc96b364abce819c0b",
+                    "paramList": [],
+                    "propertyKey": "setEntitlements",
+                    "pw": {
+                        "displayName": "setEntitlements",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "h4089d89465342eb9807d3a6ef323f92",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Skins",
+                "Data Grid",
+                "Format",
+                "Images"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"skin\":\"sknLbla0a0a022px\"}",
+                    "group": "Skins",
+                    "kuid": "i3a15e9ff52b41c69a1619f5e264f352",
+                    "originalPropertyKey": "keySkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "keySkin",
+                    "pw": {
+                        "displayName": "Key Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\" : \"d-m-Y\"}",
+                    "group": "Format",
+                    "kuid": "bfb935c21a42402cb24a03df407183d1",
+                    "originalPropertyKey": "dateFormat",
+                    "propertyIndex": 1,
+                    "propertyKey": "dateFormat",
+                    "pw": {
+                        "displayName": "Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "8",
+                    "group": "Data Grid",
+                    "kuid": "b448115cd8854edea8fa78b0a0831be4",
+                    "originalPropertyKey": "fieldCount",
+                    "propertyIndex": 1,
+                    "propertyKey": "fieldCount",
+                    "pw": {
+                        "displayName": "Total Fields",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"skin\":\"sknLbl424242SSP26px\"}",
+                    "group": "Skins",
+                    "kuid": "b7a39ded3c484dc7abfe4db7b68ed30c",
+                    "originalPropertyKey": "valueSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "valueSkin",
+                    "pw": {
+                        "displayName": "Value Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"locale\":\"\", \"positiveFormat\" : \"{CS}{D}\", \"negativeFormat\" : \"-({CS}{D})\", \"fractionDigits\":\"2\"}",
+                    "group": "Format",
+                    "kuid": "ifdb942fe5024c0b9ad5ddd93928db65",
+                    "originalPropertyKey": "amountFormat",
+                    "propertyIndex": 2,
+                    "propertyKey": "amountFormat",
+                    "pw": {
+                        "displayName": "Amount Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"i18n.payments.payeeFullNameWithColon\"}",
+                    "group": "Data Grid",
+                    "kuid": "bf58ac8cbefe405fa8348eabb5ffbb3b",
+                    "originalPropertyKey": "field1Key",
+                    "propertyIndex": 2,
+                    "propertyKey": "field1Key",
+                    "pw": {
+                        "displayName": "Field 1 Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\" : \"Y-m-d\"}",
+                    "group": "Format",
+                    "kuid": "h6a47a6a3585423ab2b2ef36b56a8e8b",
+                    "originalPropertyKey": "backendDateFormat",
+                    "propertyIndex": 3,
+                    "propertyKey": "backendDateFormat",
+                    "pw": {
+                        "displayName": "Backend Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"mapping\":\"{$.c.payeeName}\",\"type\":\"Label\",\"widgetProps\":{\"height\":\"19dp\",\"width\":\"100%\"},\"widgetPropLabel\":{\"width\":\"100%\"}}",
+                    "group": "Data Grid",
+                    "kuid": "d4639f0af82e437ca983c12e3d4df70c",
+                    "originalPropertyKey": "field1Value",
+                    "propertyIndex": 3,
+                    "propertyKey": "field1Value",
+                    "pw": {
+                        "displayName": "Field 1 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"skin\":\"sknBtn0095e426pxEnabled\"}",
+                    "group": "Skins",
+                    "kuid": "f2a0ff1a341d476182c8caa50bdcdc66",
+                    "originalPropertyKey": "actionButtonSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "actionButtonSkin",
+                    "pw": {
+                        "displayName": "Action Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"i18n.payments.ebillStatusWithColon\"}",
+                    "group": "Data Grid",
+                    "kuid": "ic8d4953d2a14484811e752441231eef",
+                    "originalPropertyKey": "field2Key",
+                    "propertyIndex": 4,
+                    "propertyKey": "field2Key",
+                    "pw": {
+                        "displayName": "Field 2 Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"format\":\"\\\\d(?=\\\\d{4})\",\"replaceCharacter\":\"X\",\"modifiers\":\"g\"}",
+                    "group": "Format",
+                    "kuid": "d48c64d5c60d41f4ad6005adccae8ff4",
+                    "originalPropertyKey": "accountNumberFormat",
+                    "propertyIndex": 4,
+                    "propertyKey": "accountNumberFormat",
+                    "pw": {
+                        "displayName": "Account Number Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Condition1\":{\"condition\":{\"{$.c.eBillStatus}\":\"1\"},\"mapping\":\"{$.c.eBillStatus}\",\"text\":\"Active\",\"type\":\"eBill\",\"image\":\"activeebill.png\",\"widgetProps\":{\"height\":\"19dp\",\"width\":\"100%\"},\"widgetPropLabel\":{\"width\":\"100%\"}},\"Condition2\":{\"condition\":{\"{$.c.eBillStatus}\":\"0\"},\"mapping\":\"{$.c.eBillStatus}\",\"text\":\"Inactive\",\"type\":\"eBill\",\"image\":\"inactiveebill.png\",\"widgetProps\":{\"height\":\"19dp\",\"width\":\"100%\"},\"widgetPropLabel\":{\"width\":\"100%\"}}}",
+                    "group": "Data Grid",
+                    "kuid": "b428ced443544b09a1b555b3cbb4560b",
+                    "originalPropertyKey": "field2Value",
+                    "propertyIndex": 5,
+                    "propertyKey": "field2Value",
+                    "pw": {
+                        "displayName": "Field 2 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"masking\":false}",
+                    "group": "Format",
+                    "kuid": "g28a54e1cdb64af9a92e27a2b3420fc0",
+                    "originalPropertyKey": "accountNumberMasking",
+                    "propertyIndex": 5,
+                    "propertyKey": "accountNumberMasking",
+                    "pw": {
+                        "displayName": "Account Number Masking",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"i18n.ProfileManagement.AccountNumber\"}",
+                    "group": "Data Grid",
+                    "kuid": "beb81db9abef48258ecb8037fa0700ed",
+                    "originalPropertyKey": "field3Key",
+                    "propertyIndex": 6,
+                    "propertyKey": "field3Key",
+                    "pw": {
+                        "displayName": "Field 3 Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"mapping\":\"{$.c.accountNumber}\",\"type\":\"AccountNumber\",\"widgetProps\":{\"height\":\"19dp\",\"width\":\"100%\"},\"widgetPropLabel\":{\"width\":\"100%\"}}",
+                    "group": "Data Grid",
+                    "kuid": "b170387f22774d0b9882330c11e604b8",
+                    "originalPropertyKey": "field3Value",
+                    "propertyIndex": 7,
+                    "propertyKey": "field3Value",
+                    "pw": {
+                        "displayName": "Field 3 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"i18n.payments.payeeAddressWithColon\"}",
+                    "group": "Data Grid",
+                    "kuid": "g5224aed23c24ead95b44106be51af72",
+                    "originalPropertyKey": "field4Key",
+                    "propertyIndex": 8,
+                    "propertyKey": "field4Key",
+                    "pw": {
+                        "displayName": "Field 4 Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"mapping\":\"{$.c.addressLine1},{$.c.addressLine2} {$.c.cityName},{$.c.state},{$.c.zipCode}\",\"type\":\"Label\",\"widgetProps\":{\"height\":\"38dp\",\"width\":\"100%\"},\"widgetPropLabel\":{\"width\":\"100%\"}}",
+                    "group": "Data Grid",
+                    "kuid": "dcf84c52e34743c48eda0c92520655fb",
+                    "originalPropertyKey": "field4Value",
+                    "propertyIndex": 9,
+                    "propertyKey": "field4Value",
+                    "pw": {
+                        "displayName": "Field 4 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"i18n.payments.nameOnBillWithColon\"}",
+                    "group": "Data Grid",
+                    "kuid": "b1df9155b03d44cca9f24ac083d24c98",
+                    "originalPropertyKey": "field5Key",
+                    "propertyIndex": 10,
+                    "propertyKey": "field5Key",
+                    "pw": {
+                        "displayName": "Field 5 Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"mapping\":\"{$.c.nameOnBill}\",\"type\":\"Label\",\"widgetProps\":{\"height\":\"19dp\",\"width\":\"100%\"},\"widgetPropLabel\":{\"width\":\"100%\"}}",
+                    "group": "Data Grid",
+                    "kuid": "g4e51ac642ed44a09ffad9dd4ddba814",
+                    "originalPropertyKey": "field5Value",
+                    "propertyIndex": 11,
+                    "propertyKey": "field5Value",
+                    "pw": {
+                        "displayName": "Field 5 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"i18n.PayPerson.nickName\"}",
+                    "group": "Data Grid",
+                    "kuid": "e1712d91ef7b4cafbd21e70b698d76c3",
+                    "originalPropertyKey": "field6Key",
+                    "propertyIndex": 12,
+                    "propertyKey": "field6Key",
+                    "pw": {
+                        "displayName": "Field 6 Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"mapping\":\"{$.c.payeeNickName}\",\"type\":\"Label\",\"widgetProps\":{\"height\":\"19dp\",\"width\":\"100%\"},\"widgetPropLabel\":{\"width\":\"100%\"}}",
+                    "group": "Data Grid",
+                    "kuid": "gc00d9b36ab446a0aa0898be1fac3118",
+                    "originalPropertyKey": "field6Value",
+                    "propertyIndex": 13,
+                    "propertyKey": "field6Value",
+                    "pw": {
+                        "displayName": "Field 6 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Data Grid",
+                    "kuid": "f34c9283006b4aa38b3699cadfb72aa1",
+                    "originalPropertyKey": "field7Key",
+                    "propertyIndex": 14,
+                    "propertyKey": "field7Key",
+                    "pw": {
+                        "displayName": "Field 7 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Data Grid",
+                    "kuid": "ee0d9c3e889b4c8793a66d34569ac6d1",
+                    "originalPropertyKey": "field7Value",
+                    "propertyIndex": 15,
+                    "propertyKey": "field7Value",
+                    "pw": {
+                        "displayName": "Field 7 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Data Grid",
+                    "kuid": "fd92b6c59de84144b5a3a9fdb22f06ed",
+                    "originalPropertyKey": "field8Key",
+                    "propertyIndex": 16,
+                    "propertyKey": "field8Key",
+                    "pw": {
+                        "displayName": "Field 8 Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Data Grid",
+                    "kuid": "e5ac57c397a64e0c9265d6983f814cb0",
+                    "originalPropertyKey": "field8Value",
+                    "propertyIndex": 17,
+                    "propertyKey": "field8Value",
+                    "pw": {
+                        "displayName": "Field 8 Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"Condition1\":{\"condition\":{\"{$.c.eBillStatus}\":\"1\"},\"action\":{\"level\":\"Form\",\"method\":\"payBill\"},\"text\":\"Pay Bill\",\"entitlement\":[\"BILL_PAY_CREATE\"]},\"Condition2\":{\"condition\":{\"{$.c.eBillStatus}\":\"0\"},\"action\":{\"level\":\"Form\",\"method\":\"activateEBill\"},\"text\":\"Activate eBill\",\"entitlement\":[\"BILL_PAY_ACTIVATE_OR_DEACTIVATE_EBILL\"]}}",
+                    "group": "Data Grid",
+                    "kuid": "bafe0c1ca39e435a88c193c184ecb6e5",
+                    "originalPropertyKey": "actionButton",
+                    "propertyIndex": 18,
+                    "propertyKey": "actionButton",
+                    "pw": {
+                        "displayName": "Action Button",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "be4a2ca5a87a4203a3a3d659cc4a15a3",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.BillPay",
+    "version": "1.0.0"
+}

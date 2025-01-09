@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book" rel="stylesheet"
+        type="text/css" />
+    <style>
+        @font-face {
+            font-family: 'CircularStd-Book';
+            src: url('CircularStd-Book.ttf') format('truetype');
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            background-color: #F6F6F6;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        #visualization {
+            height: 215px;
+            width: 100%;
+        }
+
+        .closeBtn {
+            width: 13px;
+            height: 13px;
+            color: #008392;
+            background-color: transparent;
+            border: none;
+            align-self: center;
+            padding: 0;
+        }
+
+        .closeBtn:focus {
+            outline: none;
+        }
+
+        .google-visualization-tooltip {
+            border: none !important;
+            font-family: CircularStd-Book;
+        }
+
+        .divider {
+            border-bottom: 1px solid #E3E3E3;
+        }
+
+        .tooltipContainer {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #E3E3E3;
+            border-radius: 5px;
+            min-width: 280px;
+            font-size: 13px;
+            line-height: 16px;
+            background-color: #fff;
+        }
+
+        .tooltipContainer p {
+            margin: 0;
+        }
+
+        .tooltipTitle {
+            padding: 0 10px;
+            font-size: 15px;
+            line-height: 34px;
+            font-weight: 700;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .tooltipInfoContainer {
+            padding: 0 10px;
+        }
+
+        .tooltipMoneyFlowList {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 14px 0;
+        }
+
+        .tooltipBalances {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .tooltipMoneyFlowListItemRight {
+            font-weight: bold;
+        }
+
+        .colorCircle::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            background-color: #003B5C;
+            margin-right: 8px;
+        }
+
+        .orange::before {
+            background-color: #F68D2E;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .teal::before {
+            background-color: #008392;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .btn {
+            font-family: CircularStd-Book;
+        }
+
+        .plusChange {
+            color: green
+        }
+
+        .minusChange {
+            color: red
+        }
+
+        #legend_div {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 10px;
+        }
+
+        .legend-marker {
+            display: inline-block;
+            padding: 16px 4px 8px 4px;
+            font-family: 'CircularStd-Book' !important;
+        }
+
+        .legend-marker-color {
+            display: inline-block;
+            height: 14px;
+            width: 14px;
+            background-size: cover;
+            margin-right: 2px;
+            margin-top: 3px;            
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .legend-marker-color--teal{
+            background-color: #008392;
+        }
+        .legend-marker-color--orange{
+            background-color: #F68D2E;
+        }
+        .legend-marker-color--navyblue{
+            background-color: #003B5C;
+        }
+    </style>
+    <link rel="stylesheet" href="../../../resources/fonts/Desktop_web/CircularStd-Book.ttf">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="visualization"></div>
+        <div id="legend_div"></div>
+
+    </div>
+    </div>
+    <script id="template-legend-marker" type="text/html">
+      <div class="legend-marker" data-columnIndex="{{index}}">
+         <div class="legend-marker-color legend-marker-color{{classColor}}"></div>
+          <span>{{label}}</span>
+      </div>
+    </script>
+
+    <script>
+        var json = {
+            "response": {
+                "opstatus_GetCashflowPast12": 0,
+                "total": {
+                    "cashOnHand": "14701.42",
+                    "moneyIn": "5568.67",
+                    "moneyOut": "12319.72"
+                },
+                "recordsPast": [
+                    {
+                        "date": "2020-06-10",
+                        "closingBalance": "1500",
+                        "growthPlan": "2000",
+                    },
+                    {
+                        "date": "2020-07-10",
+                        "closingBalance": "1000",
+                        "growthPlan": "2150",
+                    },
+                    {
+                        "date": "2020-08-15",
+                        "closingBalance": "1050",
+                        "growthPlan": "2874",
+                    },
+                    {
+                        "date": "2020-09-23",
+                        "closingBalance": "888",
+                        "growthPlan": "1500",
+                    },
+                    {
+                        "date": "2020-10-30",
+                        "closingBalance": "444",
+                        "growthPlan": "587",
+                    },
+                    {
+                        "date": "2020-11-16",
+                        "closingBalance": "785",
+                        "growthPlan": "897",
+                    },
+                    {
+                        "date": "2020-12-26",
+                        "closingBalance": "658",
+                        "growthPlan": "785",
+                    },
+                    {
+                        "date": "2021-01-19",
+                        "closingBalance": "1258",
+                        "growthPlan": "487",
+                    },
+                    {
+                        "date": "2021-02-19",
+                        "closingBalance": "789",
+                        "growthPlan": "987",
+                    }
+                ],
+                "opstatus": 0,
+                "recordsPredictive": [
+                    {
+                        "date": "2021-03-05",
+                        "closingBalance": "154",
+                        "growthPlan": "456",
+                    },
+                    {
+                        "date": "2021-04-12",
+                        "closingBalance": "987",
+                        "growthPlan": "456",
+                    },
+                    {
+                        "date": "2021-05-14",
+                        "closingBalance": "325",
+                        "growthPlan": "785",
+                    }
+                ],
+                "opstatus_GetCashFlowPredictive": 0,
+                "httpStatusCode": 200
+            },
+            "StatusCode": 200,
+            "Status": "Success"
+        }
+        var response = getRawData();
+
+        google.charts.load("visualization", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawVisualization);
+
+        function drawVisualization() {
+            var data = new google.visualization.DataTable();
+
+            data.addColumn("string", "x");
+            data.addColumn({ type: "string", role: "annotation" });
+            data.addColumn({ type: "string", role: "annotationText" });
+            data.addColumn({ type: 'string', role: 'tooltip', p: { 'html': true } });
+            data.addColumn("number", "Prediction");
+            data.addColumn({ type: "boolean", role: "certainty" });
+            data.addColumn("number", "Closing Balance");
+            data.addColumn({ type: "boolean", role: "certainty" });
+            data.addColumn("number", "Your Growth Plan");
+            data.addColumn({ type: "boolean", role: "certainty" });
+
+            addRowsToGraph(data);
+
+            // Create and draw the visualization.
+            var container = document.getElementById("visualization");
+            var chart = new google.visualization.LineChart(container);
+
+            var observer = new MutationObserver(function () {
+                Array.prototype.forEach.call(
+                    container.getElementsByTagName("text"),
+                    function (annotation) {
+                        if (
+                            annotation.getAttribute("text-anchor") === "middle" &&
+                            annotation.getAttribute("fill") === "#646464") {
+
+                            var chartLayout = chart.getChartLayoutInterface();
+                            annotation.setAttribute("transform", "rotate(0)");
+                            annotation.setAttribute("pointer-events", "none");
+                            annotation.setAttribute(
+                                "y",
+                                chartLayout.getChartAreaBoundingBox().top -
+                                parseInt(annotation.getAttribute("font-size")) / 2
+                            );
+
+                            //set sibling					
+                            var pathSibling = annotation.parentElement;
+                            pathSibling = pathSibling.nextSibling;
+                            pathSibling.setAttribute("transform", "rotate(0)");
+                            pathSibling.setAttribute("pointer-events", "none");
+                            pathSibling.setAttribute(
+                                "y",
+                                chartLayout.getChartAreaBoundingBox().top -
+                                parseInt(pathSibling.getAttribute("font-size")) / 2
+                            );
+                        }
+                    }
+                )
+                var tooltip = container.querySelector('.google-visualization-tooltip');
+                if (tooltip != 'undefined' || tooltip != null) {
+                    var chartLayout = chart.getChartLayoutInterface();
+                    tooltip.style.top = 0;
+
+                    //tooltip.style.left = chartLayout.getChartAreaBoundingBox().width + 'px';
+                }
+            });
+            observer.observe(container, {
+                childList: true,
+                subtree: true
+            });
+
+            var options = {
+                curveType: "function",
+                width: '100%',
+                height: '100%',
+                chartArea: {
+                    width: "100%",
+                    left: 90,
+                    right: 20,
+                    top: 20,
+                    bottom: 25,
+                    height: "100%"
+                },
+                backgroundColor: '#F6F6F6',
+                legend: 'none',
+                series: {
+                    0: {
+                        lineWidth: 4,
+                        color: '#447794',
+                        //labelInLegend :'Prediction'
+                    },
+                    1: {
+                        lineWidth: 4,
+                        color: '#447794'
+                    },
+                    2: {
+                        lineWidth: 4,
+                        color: '#B049D4'
+                    },
+                },
+                hAxis: {
+                    baseline: 0,
+                    minValue: 0,
+                    viewWindow: { min: 0 },
+                    maxValue: 12,
+                    minorGridlines: {
+                        count: 0
+                    },
+                    format: "MMM",
+                    textStyle: {
+                        fontName: 'CircularStd-Book',
+                        fontSize: 12,
+                        color: '#2b2b2b'
+                    },
+                  	showTextEvery: 1,
+                    allowContainerBoundaryTextCutoff: true,                    
+                    slantedText: false
+                },
+                vAxis: {
+                    maxValue: 10,
+                    format: "currency",
+                    minValue: 0,
+                    viewWindow: {
+                        min: 0
+                    },
+                    textStyle: {
+                        fontName: 'CircularStd-Book',
+                        fontSize: 12,
+                        color: '#2b2b2b'
+                    }
+                },
+                annotations: {
+                    style: "line",
+                    textStyle: {
+                        color: "#646464",
+                        fontSize: 11,
+                        fontName: 'CircularStd-Book'
+                    }
+                },
+                crosshair: {
+                    trigger: "none",
+                    orientation: "vertical",
+                    focused: { color: '#008392' }
+                },
+                focusTarget: "category",
+                tooltip: {
+                    trigger: 'none',
+                    isHtml: true
+                }
+            };
+
+            google.visualization.events.addListener(chart, 'click', clearSelection);
+            google.visualization.events.addListener(chart, 'ready', function () {
+                var legend = document.getElementById('legend_div');
+
+                // colors from chart
+                var classColor = ['--teal', '--orange', '--navyblue']
+                var dataLabel = ['Prediction', 'Closing Balance', 'Your Growth Plan']
+
+                // clear previous legend
+                legend.innerHTML = '';
+
+
+
+
+                // add legend marker for each Y axis column - skip X axis --> i = 1
+                for (var i = 1; i <= 3; i++) {
+                    var markerProps = {};
+                    markerProps.index = i;
+                    markerProps.classColor = classColor[i - 1];
+                    markerProps.label = dataLabel[i - 1];
+                    addLegendMarker(markerProps);
+                }
+
+                // add click event to each legend marker
+                var markers = legend.getElementsByTagName('DIV');
+                Array.prototype.forEach.call(markers, function (marker) {
+                    marker.addEventListener('click', function (e) {
+                        var marker = e.target || e.srcElement;
+                        if (marker.tagName.toUpperCase() !== 'DIV') {
+                            marker = marker.parentNode;
+                        }
+                        var columnIndex = parseInt(marker.getAttribute('data-columnIndex'));
+                        document.getElementById('message_div').innerHTML = 'legend marker clicked = ' + chart.getDataTable().getColumnLabel(columnIndex);
+                    }, false);
+                });
+            });
+            document.body.addEventListener('click', clearSelection, false);
+            chart.draw(data, options);
+
+            function clearSelection(e) {
+                if (!container.contains(e.srcElement)) {
+                    chart.setSelection();
+                }
+            }
+        }
+
+
+
+        function setTooltipContent(dataTable) {
+            var classChange;
+            var sign
+            if (dataTable.monthlyChangeStatus == "positive") {
+                classChange = 'plusChange';
+                sign = "+"
+            }
+            else if (dataTable.monthlyChangeStatus == "negative") {
+                classChange = 'minusChange';
+                sign = "-"
+            }
+            else {
+                classChange = "";
+                sign = "";
+            }
+
+            var content =
+                '<div class="tooltipContainer">' +
+                '<div class="tooltipTitle divider">' +
+                '<p>' + getDateMonthLongFormat(dataTable.date) + '</p>' +
+                '<div class="closeBtnContainer">' +
+                '<button class="closeBtn" onClick="closeTooltip()">X</button>' +
+                '</div>' +
+                '</div>' +
+                '<div class="tooltipInfoContainer">' +
+                '<div class="tooltipMoneyFlow divider">' +
+                '<div class="tooltipMoneyFlowList">' +
+                '<p class="tooltipMoneyFlowListItemLeft colorCircle">Cash Inflow</p>' +
+                '<p class="tooltipMoneyFlowListItemRight ' + classChange + '">' + sign + formatter.format(dataTable.moneyIn) + '</p>' +
+                '</div>' +
+                '<div class="tooltipMoneyFlowList">' +
+                '<p class="tooltipMoneyFlowListItemLeft colorCircle orange">Cash Outflow</p>' +
+                '<p class="tooltipMoneyFlowListItemRight">' + formatter.format(dataTable.moneyOut) + '</p>' +
+                '</div>' +
+                '<div class="tooltipMoneyFlowList">' +
+                '<p class="tooltipMoneyFlowListItemLeft colorCircle teal">Cash on Hand</p>' +
+                '<p class="tooltipMoneyFlowListItemRight">' + formatter.format(dataTable.cashOnHand) + '</p>' +
+                '</div>' +
+                '</div>' +
+                '<div class="tooltipMoneyFlow">' +
+                '<div class="tooltipMoneyFlowList">' +
+                '<p class="tooltipMoneyFlowListItemLeft">Closing Balance</p>' +
+                '<p class="tooltipMoneyFlowListItemRight">' + formatter.format(dataTable.closingBalance) + '</p>' +
+                '</div>' +
+                '<div class="tooltipMoneyFlowList">' +
+                '<p class="tooltipMoneyFlowListItemLeft">Monthly Total</p>' +
+                '<p class="tooltipMoneyFlowListItemRight">' + formatter.format(dataTable.monthlyTotal) + '</p>' +
+                '</div>' +
+                '<div class="tooltipMoneyFlowList">' +
+                '<p class="tooltipMoneyFlowListItemLeft">Monthly Change</p>' +
+                '<p class="tooltipMoneyFlowListItemRight">' + formatter.format(dataTable.monthlyChange) + '</p>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>';
+            return content;
+        }
+
+        const formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            minimumFractionDigits: 2
+        })
+        function getRawData() {
+            // TODO: HTTP CALL IMPLEMENTATION
+            return json.response;
+        }
+
+        function addRowsToGraph(data) {
+            response.recordsPast?.forEach((historicalData, index) => {
+                var shortMonth = getDateMonthShortFormat(historicalData.date);
+
+                if (getDateMonthShortFormat(historicalData.date) === "JAN") {
+                    data.addRow([shortMonth, getDateYear(historicalData.date), "", setTooltipContent(historicalData), parseFloatTwoDecimals(historicalData.closingBalancePrediction), true, parseFloatTwoDecimals(historicalData.closingBalance), true, parseFloatTwoDecimals(historicalData.growthPlan), true]);
+                } else if (index === response.recordsPast.length - 1) {
+                    data.addRow([shortMonth, "Today", "", setTooltipContent(historicalData), parseFloatTwoDecimals(historicalData.closingBalancePrediction), true, parseFloatTwoDecimals(historicalData.closingBalance), true, parseFloatTwoDecimals(historicalData.growthPlan), true]);
+                } else {
+                    data.addRow([shortMonth, null, null, setTooltipContent(historicalData), parseFloatTwoDecimals(historicalData.closingBalancePrediction), true, parseFloatTwoDecimals(historicalData.closingBalance), true, parseFloatTwoDecimals(historicalData.growthPlan), true]);
+                }
+            });
+
+            response.recordsPredictive?.forEach((predictiveData) => {
+                var shortMonth = getDateMonthShortFormat(predictiveData.date);
+
+                if (getDateMonthShortFormat(predictiveData.date) === "JAN") {
+                    data.addRow([shortMonth, getDateYear(predictiveData.date), "", setTooltipContent(predictiveData), parseFloatTwoDecimals(predictiveData.closingBalancePrediction), false, parseFloatTwoDecimals(predictiveData.closingBalance), false, parseFloatTwoDecimals(predictiveData.growthPlan), true]);
+                } else {
+                    data.addRow([shortMonth, null, null, setTooltipContent(predictiveData), parseFloatTwoDecimals(predictiveData.closingBalancePrediction), false, parseFloatTwoDecimals(predictiveData.closingBalance), false, parseFloatTwoDecimals(predictiveData.growthPlan), true]);
+                }
+            });
+        }
+
+        function getDateMonthLongFormat(date) {
+            return new Date(date).toLocaleString('en', { month: 'long' });
+        }
+
+        function getDateMonthShortFormat(date) {
+            return new Date(date).toLocaleString('en', { month: 'short' }).toLocaleUpperCase();
+        }
+
+        function getDateYear(date) {
+            return new Date(date).toLocaleString('en', { year: 'numeric' });
+        }
+
+        function parseFloatTwoDecimals(strAmount) {
+            return parseFloat(parseFloat(strAmount).toFixed(2));
+        }
+
+        function closeTooltip() {
+            var tooltip = document.querySelector('.google-visualization-tooltip');
+            tooltip.style.display = 'none'
+        }
+
+        window.addEventListener('resize', () => {
+
+            drawVisualization()
+
+        });
+
+
+        function addLegendMarker(markerProps) {
+            var legendMarker = document.getElementById('template-legend-marker').innerHTML;
+            for (var handle in markerProps) {
+                if (markerProps.hasOwnProperty(handle)) {
+                    legendMarker = legendMarker.replace('{{' + handle + '}}', markerProps[handle]);
+                }
+            }
+            document.getElementById('legend_div').insertAdjacentHTML('beforeEnd', legendMarker);
+        }
+    </script>
+</body>
+
+</html>

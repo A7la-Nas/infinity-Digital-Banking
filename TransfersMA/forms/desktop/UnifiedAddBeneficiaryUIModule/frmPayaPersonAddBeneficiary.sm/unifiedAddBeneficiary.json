@@ -1,0 +1,199 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "85dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sfa77fa8edbe48c0b2a353776df1cb24",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "addressObjectService": "Utility",
+        "adfTextBox1": "{}",
+        "adfTextBox2": "{}",
+        "adfTextBox2Label": "{}",
+        "adfTextBox3": "{}",
+        "adfTextBox3Label": "{}",
+        "adfTextBox4": "{}",
+        "adfTextBox4Label": "{}",
+        "adfTextBox5": "{}",
+        "adfTextBox5Label": "{}",
+        "adfTextBox6": "{}",
+        "adfTextBox6Label": "{}",
+        "adfTextBox7": "{}",
+        "adfTextBox7Label": "{}",
+        "contractObject": "ExternalUsers_1",
+        "contractObjectService": "ExternalUserManagement",
+        "countryLabel": "{}",
+        "countryValue": "{}",
+        "ctLabel1": "{\n  \"text\":\n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.ProfileManagement.PhoneNumbers}\",\n    \"default\": \"{i.i18n.ProfileManagement.PhoneNumbers}\"\n  },\n  \"helpTooltip\" : \"{i.i18n.ProfileManagement.PhoneNumbers}\"\n}",
+        "ctLabel2": "{\n  \"text\":\n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.ProfileManagement.EmailId}:\",\n    \"default\": \"{i.i18n.ProfileManagement.EmailId}:\"\n  },\n  \"helpTooltip\" : \"{i.i18n.ProfileManagement.EmailId}\"\n}",
+        "ctLabel3": "{\n  \"text\":\n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.NationalId}:\",\n    \"default\": \"{i.i18n.UnifiedAddBeneficiary.NationalId}:\"\n  },\n  \"helpTooltip\" : \"{i.i18n.UnifiedAddBeneficiary.NationalId}\"\n}",
+        "ctOption1": "{\n  \"optionValue\": \n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.konybb.manageUser.PhoneNo}\",\n    \"default\": \"{i.i18n.konybb.manageUser.PhoneNo}\"\n  },\n  \"optionSelected\": false,\n  \"optionBackendValue\" : \"PhoneNumber\"\n}",
+        "ctOption2": "{\n  \"optionValue\": \n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.ProfileManagement.EmailId}\",\n    \"default\": \"{i.i18n.ProfileManagement.EmailId}\"\n  },\n  \"optionSelected\": false,\n  \"optionBackendValue\" : \"EmailId\"\n}",
+        "ctOption3": "{\n  \"optionValue\": \n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.NationalId}\",\n    \"default\": \"{i.i18n.UnifiedAddBeneficiary.NationalId}\"\n  },\n  \"optionSelected\": false,\n  \"optionBackendValue\" : \"NationalId\"\n}",
+        "ctTextBox1": "{\n  \"mapping\": \"{$.c.countryCode}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.ChooseCountryCode}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.ChooseCountryCode}\"\n  },\n  \"inputMode\":\"ALPHANUMERIC\"\n}",
+        "ctTextBox2": "{\n  \"mapping\": \"{$.c.displayPhoneNumber}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterPhoneNumber}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterPhoneNumber}\"\n  },\n  \"inputMode\":\"NUMERIC\",\n  \"formatType\":\"PHONE\"\n}",
+        "ctTextBox3": "{\n  \"mapping\": \"{$.c.emailID}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedTransfer.EnterEmailId}\",\n    \"default\": \"{i.i18n.UnifiedTransfer.EnterEmailId}\"\n  },\n  \"inputMode\":\"EMAIL\",\n  \"formatType\":\"EMAIL\"\n}",
+        "ctTextBox4": "{\n  \"mapping\": \"{$.c.displayNationalId}\",\n  \"placeHolder\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.EnterNationalId}\",\n    \"default\": \"{i.i18n.UnifiedAddBeneficiary.EnterNationalId}\"\n  },\n  \"inputMode\":\"NUMERIC\",\n  \"formatType\":\"NATIONALID\"\n}",
+        "ctlblContactType": "{\n  \"text\":\n  {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.UnifiedAddBeneficiary.ContactType}\",\n    \"default\": \"{i.i18n.UnifiedAddBeneficiary.ContactType}\"\n  },\n  \"helpTooltip\" : \"{i.i18n.UnifiedAddBeneficiary.ContactType}\"\n}",
+        "dvfConfig": "{\n  \"Recipients\": {\n    \"if_txtValue1\": \"MANDATORY\"\n  }\n}",
+        "getCountriesOperation": "getAllCountries",
+        "getStatesOperation": "getAllRegions",
+        "ifReenterTextBox2": "{}",
+        "ifReenterTextBox2Label": "{}",
+        "ifTextBox1": "{\n  \"mapping\":\"{$.c.payeeName}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.EnterPayeeName}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.EnterPayeeName}\"\n  },\n  \"inputMode\":\"ALPHACHAR\"\n}",
+        "ifTextBox1Label": "{\n\"text\" :\n{\n  \"$.BREAKPTS.BP1\":\"{i.i18n.ChequeManagement.PayeeName}:\",\n  \"default\":\"{i.i18n.ChequeManagement.PayeeName}:\"\n},\n\"helpTooltip\" : \"{i.i18n.ChequeManagement.PayeeName}\"\n}",
+        "ifTextBox2": "{}",
+        "ifTextBox2Label": "{}",
+        "ifTextBox3": "{\n  \"mapping\":\"{$.c.nickName}\",\n  \"placeHolder\":\n  {\n    \"$.BREAKPTS.BP1\":\"{i.i18n.UnifiedAddBeneficiary.NickName}\",\n    \"default\":\"{i.i18n.UnifiedAddBeneficiary.NickName}\"\n  },\n  \"inputMode\":\"ALPHACHAR\"\n}",
+        "ifTextBox4": "{}",
+        "ifTextBox4Label": "{}",
+        "ifTextBox5": "{}",
+        "ifTextBox5Label": "{}",
+        "ifTextBox6": "{}",
+        "ifTextBox6Label": "{}",
+        "ifTextBox7": "{}",
+        "ifTextBox7Label": "{}",
+        "iflblLookup": "{}",
+        "ifsubHeaderTxt": "{}",
+        "maxFillMapping": "{\n  \"Recipients\": {\n    \"if_txtValue1\": \"20\",\n    \"ct_txtValue2\": \"20\",\n    \"ct_txtValue3\": \"20\",\n    \"ct_txtValue4\": \"16\"\n  }\n}",
+        "minFillMapping": "{\n  \"Recipients\": {\n    \"if_txtValue1\": \"1\",\n    \"ct_txtValue2\": \"1\",\n    \"ct_txtValue3\": \"1\",\n    \"ct_txtValue4\": \"1\"\n  }\n}",
+        "recipientFlow": "PayAPerson",
+        "sknPrimaryBtn": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnEnabed003e7513px\",\n  \"default\": \"ICSknbtnEnabed003e7536px\"\n}",
+        "sknPrimaryBtnDisabled": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnDisablede2e9f036px\",\n  \"default\": \"ICSknbtnDisablede2e9f036px\"\n}",
+        "sknPrimaryBtnFocus": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnEnabed003e7513px\",\n  \"default\": \"ICSknbtnEnabed003e7536px\"\n}",
+        "sknPrimaryBtnHover": "{\n  \"$.BREAKPTS.BP1\": \"ICSknbtnEnabed003e7513px\",\n  \"default\": \"ICSknbtnEnabed003e7536px\"\n}",
+        "sknRadioUnselected": "{\n  \"skin\": {\n    \"$.BREAKPTS.BP1\": \"sknA0A0A020pxolbfonticons\",\n    \"default\": \"sknA0A0A020pxolbfonticons\"\n  },\n  \"text\": \"L\"\n}",
+        "sknSecondaryBtn": "{\n  \"$.BREAKPTS.BP1\": \"ICSknBtnSSPRegular003E7515Px\",\n  \"default\": \"ICSknBtnSSPRegular003E7515Px\"\n}",
+        "sknSecondaryBtnFocus": "{\n  \"$.BREAKPTS.BP1\": \"ICSknBtnSSPRegular003E7515Px\",\n  \"default\": \"ICSknBtnSSPRegular003E7515Px\"\n}",
+        "sknSecondaryBtnHover": "{\n  \"$.BREAKPTS.BP1\": \"ICSknBtnSSPRegular003E7515Px\",\n  \"default\": \"ICSknBtnSSPRegular003E7515Px\"\n}",
+        "sluCTAButton": "{\n  \"text\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.billPay.Search}\",\n    \"default\": \"{i.i18n.billPay.Search}\"\n  }\n}",
+        "sluDescription": "{}",
+        "sluEmptySearchResult": "{\n  \"$.BREAKPTS.BP1\": \"{i.i18n.Transfers.NoSearchResultFound}\",\n  \"default\": \"{i.i18n.Transfers.NoSearchResultFound}\"\n}",
+        "sluHeader": "{}",
+        "sluResultItem1": "{\n  \"$.BREAKPTS.BP1\": \"{$.S1.bic}\",\n  \"default\": \"{$.S1.bic}\"\n}",
+        "sluResultItem2": "{\n  \"$.BREAKPTS.BP1\": \"{$.S1.bankAddress}\",\n  \"default\": \"{$.S1.bankAddress}\"\n}",
+        "sluResultItem3": "{\n    \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.selectSwift}\",\n    \"default\": \"{i.i18n.TransfersEur.selectSwift}\"\n}",
+        "sluResultItemLabel1": "{}",
+        "sluResultItemLabel2": "{}",
+        "sluTextBox1": "{}",
+        "sluTextBox1Label": "{}",
+        "sluTextBox2": "{}",
+        "sluTextBox2Label": "{}",
+        "sluTextBox3": "{}",
+        "sluTextBox3Label": "{}\n",
+        "sluTextBox4": "{}",
+        "sluTextBox4Label": "{}",
+        "stateLabel": "{}",
+        "stateObjectService": "Utility",
+        "stateValue": "{}",
+        "utfCTAbutton1": "{\n  \"text\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.btnCancel}\",\n    \"default\": \"{i.i18n.TransfersEur.btnCancel}\"\n  },\n  \"action\": {\n    \"callBack\": \"showCancelPopup\",\n    \"level\": \"component\"   \n  }\n}\n",
+        "utfCTAbutton2": "{\n  \"text\": {\n    \"$.BREAKPTS.BP1\": \"{i.i18n.TransfersEur.btnContinue}\",\n    \"default\": \"{i.i18n.TransfersEur.btnContinue}\"\n  },\n  \"action\": {\n    \"callBack\": \"continueAddBeneficiary\",\n    \"level\": \"form\"   \n  }\n}"
+    },
+    "id": "unifiedAddBeneficiary",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "aac207d14d6e48debe4ade25afd3a530",
+    "layouttype": 4,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxLeft",
+    "pf": "frmPayaPersonAddBeneficiary",
+    "responsiveData": {
+        "b1": {
+            "layoutType": 2,
+            "left": {
+                "type": "string",
+                "value": "5dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "97%"
+            }
+        },
+        "b2": {
+            "layoutType": 2,
+            "left": {
+                "type": "string",
+                "value": "3%"
+            },
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "94%"
+            }
+        },
+        "b3": {
+            "layoutType": 2,
+            "left": {
+                "type": "string",
+                "value": "3%"
+            },
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "94%"
+            }
+        },
+        "b4": {
+            "layoutType": 2,
+            "left": {
+                "type": "string",
+                "value": "10dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "97%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "b8816461498444aaa7083b874b4ed0af",
+    "wType": "UserWidgetInstance"
+}

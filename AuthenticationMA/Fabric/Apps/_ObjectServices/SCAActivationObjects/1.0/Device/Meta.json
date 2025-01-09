@@ -1,0 +1,21 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "registerNewDevice" : "registerNewDeviceMapping",
+    "updateUserDeviceStatus" : "updateUserDeviceStatusMapping",
+    "fetch" : "fetchMapping",
+    "updateMyDeviceStatus" : "updateMyDeviceStatusMapping",
+    "revokeMyDevice" : "revokeMyDeviceMapping",
+    "getMyDevices" : "getMyDevicesMapping",
+    "getUserDevices" : "getUserDevicesMapping",
+    "revokeUserDevice" : "revokeUserDeviceMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

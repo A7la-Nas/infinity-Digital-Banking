@@ -1,0 +1,360 @@
+{ 
+  "Application": {},
+  "Forms" : {
+    "frmBulkTemplateAddRecipients": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmCreateTempAddDomestic",
+          "appName" : "WireTransferMA"
+        }, {
+          "friendlyName": "frmCreateTempAddInternational",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },
+    "frmBulkTemplateEditRecipients": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmEditTempAddDomestic",
+          "appName" : "WireTransferMA"
+        }, {
+          "friendlyName": "frmEditTempAddInternational",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },
+    "frmBulkTransferFiles": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmAddBulkTransferFile",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },
+    "frmConfirmDetails": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmWireTransferMakeTransfer",
+          "appName" : "WireTransferMA"
+        }, {
+          "friendlyName": "frmWireTransferOneTimePaymentStep3",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },
+    "frmCreateTempAddDomestic": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmCreateTempAddInternational",
+          "appName" : "WireTransferMA"
+        }, {
+          "friendlyName": "frmBulkTemplateAddRecipients",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },    
+    "frmCreateTempAddInternational": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmCreateTempAddDomestic",
+          "appName" : "WireTransferMA"
+        }, {
+          "friendlyName": "frmBulkTemplateAddRecipients",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },    
+    "frmEditTempAddDomestic": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmEditTempAddInternational",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },
+    "frmEditTempAddInternational": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmEditTempAddDomestic",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },
+    "frmMakeBulkTransfer": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmAddBulkTransferFile",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },
+    "frmWireTransferAddInternationalAccountAck": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmWireTransferAddInternationalAccountStep1",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },
+    "frmWireTransferAddInternationalAccountConfirm": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmWireTransferAddInternationalAccountStep1",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },
+    "frmWireTransferAddInternationalAccountStep2": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmWireTransferAddInternationalAccountStep1",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },    
+    "frmWireTransferAddKonyAccountAck": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmWireTransferAddKonyAccountStep1",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },    
+    "frmWireTransferAddKonyAccountConfirm": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmWireTransferAddKonyAccountStep1",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },    
+    "frmWireTransferAddKonyAccountStep2": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmWireTransferAddKonyAccountStep1",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },    
+    "frmWireTransferOneTimePaymentStep2": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmWireTransferOneTimePaymentStep1",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    },    
+    "frmWireTransferOneTimePaymentStep3": {
+      "preConditionConfig": [],
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmWireTransferOneTimePaymentStep2",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    }
+  },
+  "UIModules" : {
+    "WireTransferNewUIModule": {
+      "destinationConfig": {
+        "callback": "handleWireTransferNavigation",
+        "targetForms": [{
+          "friendlyName": "frmActivateWireTransfer",
+          "appName": "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransfersWindow",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmAccountInfoForInboundTransfer",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmAddBulkTemplateFile",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmAddBulkTransferFile",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkTemplateEditRecipients",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkTransferFiles",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkTemplateAddRecipients",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireActivityAll",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireActivityFailed",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireActivityPending",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireActivitySuccess",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireConfirmTransfer",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireCreateTemplateAck",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkwireCreateTemplateConfirm",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireEditRecipient",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireEditTemplateRecipient",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireFileTransactionsActivity",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireTemplateRemovedRecipients",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireTransferRemovedRecipients",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireViewFileDetails",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBulkWireViewTemplate",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBWTCreateRecipientFile",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBWTEditRecipientFile",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmBWTemplateConfirmTransfer",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmConfirmDetails",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmCreateTempAddDomestic",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmCreateTempAddInternational",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmCreateTemplatePrimaryDetails",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmCreateTempSelectRecipients",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmEditBulkTemplateFile",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmEditTempAddDomestic",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmEditTempAddInternational",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmEditTemplatePrimaryDetails",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmEditTempSelectRecipients",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmMakeBulkTransfer",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmMakeBulkTransferTemplate",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmNotEligibleToTransfer",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferAddInternationalAccountAck",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferAddInternationalAccountConfirm",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferAddInternationalAccountStep1",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferAddInternationalAccountStep2",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferAddKonyAccountAck",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferAddKonyAccountConfirm",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferAddKonyAccountStep1",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferAddKonyAccountStep2",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferMakeTransfer",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferOneTimePaymentConfirm",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferOneTimePaymentStep1",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferOneTimePaymentStep2",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferOneTimePaymentStep3",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransfersManageRecipients",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransfersRecent",
+          "appName" : "WireTransferMA"
+        },{
+          "friendlyName": "frmWireTransferViewActivity",
+          "appName" : "WireTransferMA"
+        }]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_a0bd5d23186047cd9eade38d68296e73": {
+        "id": "AS_AppEvents_a0bd5d23186047cd9eade38d68296e73",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a6517531db544b4189d0f05468e528b4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\n//App Service\n// try {\n//   var MenuHandler =  applicationManager.getMenuHandler();\n//   return MenuHandler.appForceTouchCallBack(eventobject);\n// }\n// catch(err) {\n//   throw GlobalExceptionHandler.addMessageAndActionForException(err, \"kony.error.App_Initialisation_Failed\", GlobalExceptionHandler.ActionConstants.BLOCK, arguments.callee.name);\n// }",
+            "parentId": null
+        }]
+    }
+}

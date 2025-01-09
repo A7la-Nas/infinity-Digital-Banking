@@ -1,0 +1,88 @@
+{
+    "Forms": {
+        "desktop": {
+            "frmDashboard": {
+                "Controller": "AccountsUIModule/frmDashboardController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmDashboard",
+                "friendlyName": "frmDashboard"
+            },
+            "frmLogin": {
+                "Controller": "AccountsUIModule/frmLoginController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmLogin"
+            },
+            "frmCustomViews": {
+                "Controller": "AccountsUIModule/frmCustomViewsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmCustomViews"
+            },
+            "frmCustomerDashboard": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "AccountsUIModule/frmCustomerDashboardController",
+                "FormName": "AccountsUIModule/frmCustomerDashboard",
+                "friendlyName": "frmCustomerDashboard"
+            }
+        },
+        "mobile": {
+            "frmUnifiedDashboard": {
+                "Controller": "AccountsUIModule/frmUnifiedDashboardController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmUnifiedDashboard",
+                "friendlyName": "frmUnifiedDashboard"
+            },
+            "frmLogin": {
+                "Controller": "AccountsUIModule/frmLoginController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmLogin",
+                "friendlyName": "frmLogin"
+            },
+            "frmFilterAccounts": {
+                "Controller": "AccountsUIModule/frmFilterAccountsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmFilterAccounts",
+                "friendlyName": "frmFilterAccounts"
+            },
+            "frmLegalEntitySwitch": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "AccountsUIModule/frmLegalEntitySwitchController",
+                "FormName": "AccountsUIModule/frmLegalEntitySwitch",
+                "friendlyName": "frmLegalEntitySwitch"
+            },
+            "frmLegalEntityTermsAndConditions": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "AccountsUIModule/frmLegalEntityTermsAndConditionsController",
+                "FormName": "AccountsUIModule/frmLegalEntityTermsAndConditions",
+                "friendlyName": "frmLegalEntityTermsAndConditions"
+            },
+            "frmUnifiedCustomerDashboard": {
+                "Controller": "AccountsUIModule/frmUnifiedCustomerDashboardController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmUnifiedCustomerDashboard",
+                "friendlyName": "frmUnifiedCustomerDashboard"
+            }
+        }
+    },
+    "ModuleName": "AccountsUIModule",
+    "ModuleType": "UIModule",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "AccountsUIModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": []
+        },
+        "Mobile": {
+            "PresentationControllerClass": "AccountsUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": []
+        }
+    }
+}

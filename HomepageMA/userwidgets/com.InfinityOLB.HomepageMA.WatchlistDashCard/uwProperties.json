@@ -1,0 +1,117 @@
+{
+    "classname": "WatchlistDashCard",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "h5c1df4a0a3241b9adffe0ba0efc6f88",
+                    "paramList": [],
+                    "propertyKey": "getCriteria",
+                    "pw": {
+                        "displayName": "getCriteria",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "gd58ec5c1bad45be92df2ee0e9ecab2a",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "g974464f14af42fbb293a2239cb5e0df",
+                    "originalPropertyKey": "postShow",
+                    "propertyIndex": 1,
+                    "propertyKey": "watchlistPostShow",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "watchlistPostShow",
+                        "srcWidget": "WatchlistDashCard",
+                        "toolTip": "watchlistPostShow",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "gd58ec5c1bad45be92df2ee0e9ecab2a",
+                    "translateAtInstance": false
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthOrder",
+                    "group": "General",
+                    "kuid": "d9f672f0aa53409caff0f69023f2c9e2",
+                    "originalPropertyKey": "objService",
+                    "propertyIndex": 1,
+                    "propertyKey": "objService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "gd58ec5c1bad45be92df2ee0e9ecab2a",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "FavouriteInstruments",
+                    "group": "General",
+                    "kuid": "fb5b1732b2834e23bba493fea3a4ad69",
+                    "originalPropertyKey": "objName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "gd58ec5c1bad45be92df2ee0e9ecab2a",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getFavoriteInstruments",
+                    "group": "General",
+                    "kuid": "cf2f9fc5d681402aae79cd3f36e340eb",
+                    "originalPropertyKey": "operation",
+                    "propertyIndex": 3,
+                    "propertyKey": "operation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "gd58ec5c1bad45be92df2ee0e9ecab2a",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.HomepageMA",
+    "version": "1.0.0"
+}

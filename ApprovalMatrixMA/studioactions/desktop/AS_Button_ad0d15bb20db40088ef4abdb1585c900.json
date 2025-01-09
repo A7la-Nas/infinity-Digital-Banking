@@ -1,0 +1,23 @@
+{
+    "AS_Button_ad0d15bb20db40088ef4abdb1585c900": {
+        "id": "AS_Button_ad0d15bb20db40088ef4abdb1585c900",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e910f7b623954ec59eba3f987f96bfe4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ff17747cbbc84c14b0b02860ac884036",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.showLoadingScreen(\"\", \"Authenticating the user\");\nvar authParams = {\n \"UserName\": \"7644257870\",\n  \"Password\": \"Kony@1234\",\n  \"loginOptions\": {\n    \"isOfflineEnabled\": false\n  }\n};\nauthClient = KNYMobileFabric.getIdentityService(\"DbxUserLogin\");\nauthClient.login(authParams,successCallback,errorCallback);\nfunction successCallback(resSuccess){\n  kony.application.dismissLoadingScreen();\n  kony.print(resSuccess);\n  var settingsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(\"SettingsNewUIModule\");\n                        settingsModule.presentationController.enterProfileSettings(\"approvalMatrix\"); \n}\nfunction errorCallback(resError){\n  kony.application.dismissLoadingScreen();\n  kony.print(resError);\n  alert(\"login is not working...\")\n}",
+            "parentId": null
+        }]
+    }
+}

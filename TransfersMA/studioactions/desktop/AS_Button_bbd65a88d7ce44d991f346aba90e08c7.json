@@ -1,0 +1,22 @@
+{
+    "AS_Button_bbd65a88d7ce44d991f346aba90e08c7": {
+        "id": "AS_Button_bbd65a88d7ce44d991f346aba90e08c7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": null,
+            "KUID": "cc993fdf9f0f4cf38a011f6b6b20498a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_cc8e613626734cde91498cab57abfd19",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "                      kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\n                \"moduleName\": \"TransferEurUIModule\",\n                \"appName\": \"TransfersMA\"\n            }).presentationController.showTransferScreen({\n                context: \"MakePayment\"\n            });",
+            "parentId": null
+        }]
+    }
+}

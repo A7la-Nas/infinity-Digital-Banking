@@ -1,0 +1,31 @@
+{
+    "AS_Form_a1a37f2739b54b2994a3251984afe8c9": {
+        "id": "AS_Form_a1a37f2739b54b2994a3251984afe8c9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "contextObj": {
+            "name": "frmInternationalAddBeneficiaryConfirm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "hec934de4a714e4abf9d76776b184a1f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ad00ddc76a3d40799928b4e5b127a57c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBreakPointChange",
+            "display": "onBreakPointChange",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

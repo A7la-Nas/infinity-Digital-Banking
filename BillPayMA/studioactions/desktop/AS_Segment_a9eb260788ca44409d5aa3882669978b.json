@@ -1,0 +1,30 @@
+{
+    "AS_Segment_a9eb260788ca44409d5aa3882669978b": {
+        "id": "AS_Segment_a9eb260788ca44409d5aa3882669978b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmMakeOneTimePayee",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d526156fedb1461bbe5e6bb7da27c9fb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d279ed69f1ae41a4b0f16f7e5d842d06",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.selectPayeeName();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

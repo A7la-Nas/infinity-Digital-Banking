@@ -1,0 +1,731 @@
+{
+    "classname": "dataEntry",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "h4a95a1a230444d6aae6240527c5af38",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [
+                "InputField",
+                "Buttons",
+                "Skins",
+                "DynamicField",
+                "Payee Management Service",
+                "Images"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.BillPay.EnterAccNo",
+                    "group": "General",
+                    "kuid": "f838b3341ca549148a4c59aef992bb1f",
+                    "originalPropertyKey": "lblHeading",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblHeading",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Heading",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Enter Payee Name",
+                    "group": "InputField",
+                    "kuid": "accad536be9644ccb53534e40217cf3c",
+                    "originalPropertyKey": "lblWord",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblWord",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label Field Word",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"text\":\"i18n.TransfersEur.btnContinue\",\"action\":{\"level\":\"Component\",\"method\":\"continuedataEntryAction\"}}",
+                    "group": "Buttons",
+                    "kuid": "a07ff55d33904d51bf29a0a624a80010",
+                    "originalPropertyKey": "btn1",
+                    "propertyIndex": 1,
+                    "propertyKey": "btn1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Action Button 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl424242SSP26px",
+                    "group": "Skins",
+                    "kuid": "g2f21776e1544362bcfc875969384d23",
+                    "originalPropertyKey": "sknLblHeading",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknLblHeading",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Heading Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[   {     \"heading\": \"i18n.paymens.enterPhoneNumber\",     \"text\": \"Kony.mb.userdetail.PhoneNumber\",     \"category\": [       \"2\"     ]   },   {     \"heading\": \"Please enter your policy number.\",     \"category\": [       \"4\"     ]   } ]",
+                    "group": "DynamicField",
+                    "kuid": "a5299eeca99f4882a2f5e5cb9f7d8231",
+                    "originalPropertyKey": "lblDynamicWord",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblDynamicWord",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Dynamic Field Word",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "BillPay",
+                    "group": "Payee Management Service",
+                    "kuid": "d6031a83c8bf4926b63faf247274fb24",
+                    "originalPropertyKey": "payeeObjectService",
+                    "propertyIndex": 1,
+                    "propertyKey": "payeeObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Payee Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images",
+                    "kuid": "c7b50497128f4ae88dea1f2dce9b5da2",
+                    "originalPropertyKey": "imgCheckBoxSelected",
+                    "propertyIndex": 1,
+                    "propertyKey": "imgCheckBoxSelected",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Check Box Selected Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"mapping\":\"{$.c.companyName}\",\"placeHolder\":\"i18n.UnifiedAddBeneficiary.EnterPayeeName\",\"inputMode\":\"Any\"}",
+                    "group": "InputField",
+                    "kuid": "a5a57fd3169f4aa487c657bd0a41c5a0",
+                    "originalPropertyKey": "tbxInputWord",
+                    "propertyIndex": 2,
+                    "propertyKey": "tbxInputWord",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Input Field Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLabel72727215PxNew",
+                    "group": "Skins",
+                    "kuid": "ic2f9af6a97a4c979e163af2bcad364b",
+                    "originalPropertyKey": "sknLblWord",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknLblWord",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label Field Word Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[   {     \"category\": [       \"2\"     ],     \"mapping\": \"{$.c.phone}\",     \"inputMode\": \"Numeric\"   },   {     \"category\": [       \"4\"     ],     \"mapping\": \"{$.c.phone}\",     \"inputMode\": \"Numeric\"   } ]",
+                    "group": "DynamicField",
+                    "kuid": "a5328722bdae43ba9f24029bc995cbed",
+                    "originalPropertyKey": "tbxDynamicInputWord",
+                    "propertyIndex": 2,
+                    "propertyKey": "tbxDynamicInputWord",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Dynamic Input Word",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": false,
+                    "group": "General",
+                    "kuid": "f987a144aa4140c7904ef5f2ae7d33dd",
+                    "originalPropertyKey": "maskingEnabled",
+                    "propertyIndex": 2,
+                    "propertyKey": "maskingEnabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Masking Enabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Payee_BillPay",
+                    "group": "Payee Management Service",
+                    "kuid": "af10d60dca504fee90d241ba836e678a",
+                    "originalPropertyKey": "payeeObject",
+                    "propertyIndex": 2,
+                    "propertyKey": "payeeObject",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Payee Object ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"text\": \"i18n.TransfersEur.btnContinue\",   \"action\": {     \"level\": \"Form\",     \"method\": \"navigateToAckScreen\"   } }",
+                    "group": "Buttons",
+                    "kuid": "b3600c163be8444e8e37d3379eea748f",
+                    "originalPropertyKey": "btn1Edit",
+                    "propertyIndex": 2,
+                    "propertyKey": "btn1Edit",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Action Button 1 Edit",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images",
+                    "kuid": "hf2dbd1ea57f4458af3d07f388fd5d85",
+                    "originalPropertyKey": "imgCheckBoxUnSelected",
+                    "propertyIndex": 2,
+                    "propertyKey": "imgCheckBoxUnSelected",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Check Box UnSelected Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTbx72727215PxNew",
+                    "group": "Skins",
+                    "kuid": "j55c3f85d0644bfaad757611d9c829ad",
+                    "originalPropertyKey": "skntbxInputWord",
+                    "propertyIndex": 3,
+                    "propertyKey": "skntbxInputWord",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Input Field Value Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"Payee_BillPay\": {     \"tbxInputWord\": \"MANDATORY\"   } }",
+                    "group": "General",
+                    "kuid": "f5cd8a8768db4ff08b6806e9e926d7f7",
+                    "originalPropertyKey": "dvfConfig",
+                    "propertyIndex": 3,
+                    "propertyKey": "dvfConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "DVF Config",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.unifiedBeneficiary.code",
+                    "group": "DynamicField",
+                    "kuid": "e94785ede34f49ccb57231d59efc95c4",
+                    "originalPropertyKey": "lblCode",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblCode",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label Code",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "updateBillPayPayee",
+                    "group": "Payee Management Service",
+                    "kuid": "edcc677022534afdaf1da428d97cf5de",
+                    "originalPropertyKey": "payeeEDITOperation",
+                    "propertyIndex": 3,
+                    "propertyKey": "payeeEDITOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Payee Edit Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "InputField",
+                    "kuid": "h3d5bc35bb48438a9829c2fbe949a177",
+                    "originalPropertyKey": "tbxInputNotice",
+                    "propertyIndex": 3,
+                    "propertyKey": "tbxInputNotice",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Input Notice Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{    \"text\":\"i18n.TransfersEur.LookUp\",    \"action\":{       \"level\":\"Form\",       \"method\":\"lookUpAction\"    } }",
+                    "group": "DynamicField",
+                    "kuid": "a85638d500ec4062ba13153fb88572a5",
+                    "originalPropertyKey": "lookUp",
+                    "propertyIndex": 4,
+                    "propertyKey": "lookUp",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Look Up",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSkntbxFocusBlueNew",
+                    "group": "Skins",
+                    "kuid": "b6bc7847c00d4ac6956fd6f6b4aeffe7",
+                    "originalPropertyKey": "skntbxInputWordFocus",
+                    "propertyIndex": 4,
+                    "propertyKey": "skntbxInputWordFocus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Input Field Value Focus  Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"Payee_BillPay\": {     \"tbxInputWord\": \"3\"   } }",
+                    "group": "General",
+                    "kuid": "ea187dd61a434117a830b12f19db8894",
+                    "originalPropertyKey": "minFillMapping",
+                    "propertyIndex": 4,
+                    "propertyKey": "minFillMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "MinFill Mapping",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"payeeId\": \"{$.c.payeeId}\",   \"payeeNickName\": \"{$.c.payeeNickName}\",   \"addressLine1\": \"{$.c.addressLine1}\",   \"addressLine2\": \"{$.c.addressLine2}\",   \"state\": \"{$.c.state}\",   \"zipCode\": \"{$.c.zipCode}\",   \"cityName\": \"{$.c.city}\" }",
+                    "group": "Payee Management Service",
+                    "kuid": "a020cffd3b8a4de8ab94c35d5c8259a1",
+                    "originalPropertyKey": "payeeEDITCriteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "payeeEDITCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Payee Edit Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "InputField",
+                    "kuid": "eeb0b365521c44b2ab1ee06c1ea7eb4e",
+                    "originalPropertyKey": "lblCheckBoxInfo",
+                    "propertyIndex": 4,
+                    "propertyKey": "lblCheckBoxInfo",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label Check Box Info",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknbtne2e9f0New",
+                    "group": "Skins",
+                    "kuid": "a90eb6e99ed14b6a938d058574baeded",
+                    "originalPropertyKey": "sknBtnAction",
+                    "propertyIndex": 5,
+                    "propertyKey": "sknBtnAction",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Action Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "payeeEdit",
+                    "group": "Payee Management Service",
+                    "kuid": "ffaf9a8fd1914e0bb6d7f23aed4aefb3",
+                    "originalPropertyKey": "payeeEDITIdentifier",
+                    "propertyIndex": 5,
+                    "propertyKey": "payeeEDITIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Payee Edit Service Response Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.payments.dvfError",
+                    "group": "General",
+                    "kuid": "f02e4d46f95c4151b67e6077a9da314e",
+                    "originalPropertyKey": "lblErrorPrompt",
+                    "propertyIndex": 5,
+                    "propertyKey": "lblErrorPrompt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label Error Prompt",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "DynamicField",
+                    "kuid": "c53da9bb90464c8f8252ed0dfeb7e030",
+                    "originalPropertyKey": "countryCodeEnabled",
+                    "propertyIndex": 5,
+                    "propertyKey": "countryCodeEnabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Country Code Enabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknbtnfocus003e75New",
+                    "group": "Skins",
+                    "kuid": "f6f971fd0e924e5a93f22a0170c751dd",
+                    "originalPropertyKey": "sknBtnActionFocus",
+                    "propertyIndex": 6,
+                    "propertyKey": "sknBtnActionFocus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Action Button Focus Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getBillPayPayees",
+                    "group": "Payee Management Service",
+                    "kuid": "aa509ca8789847ba96a69bc15b7e3aca",
+                    "originalPropertyKey": "customServiceOperation",
+                    "propertyIndex": 6,
+                    "propertyKey": "customServiceOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Custom Service Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "c2b6bc36766f4737945117f847f9d520",
+                    "originalPropertyKey": "checkBox",
+                    "propertyIndex": 6,
+                    "propertyKey": "checkBox",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Check Box",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknskntxtSSP424242BorderFF0000Op100Radius2pxmb",
+                    "group": "Skins",
+                    "kuid": "h3cd2ae463a44a3ba6991062fedce8b5",
+                    "originalPropertyKey": "sknInputWordError",
+                    "propertyIndex": 7,
+                    "propertyKey": "sknInputWordError",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Input Field Value Error Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"offset\": 0,   \"limit\": 10,   \"sortBy\": \"payeeNickName\",   \"order\": \"asc\",   \"paginationRowLimit\": 10,   \"sortByType\": \"string\" }",
+                    "group": "Payee Management Service",
+                    "kuid": "b4c82eebf5eb4f07b80164b9112c6268",
+                    "originalPropertyKey": "customServiceCriteria",
+                    "propertyIndex": 7,
+                    "propertyKey": "customServiceCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Custom Service Critiera",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknsknBtnBlockedSSPFFFFFF15Pxmb",
+                    "group": "Skins",
+                    "kuid": "bd40792221ec45b4b4630b8a133334af",
+                    "originalPropertyKey": "sknActionButtonBlocked",
+                    "propertyIndex": 8,
+                    "propertyKey": "sknActionButtonBlocked",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Action Button Blocked Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "customService",
+                    "group": "Payee Management Service",
+                    "kuid": "i1375927eccb46b4b8352049aa9a5c90",
+                    "originalPropertyKey": "customServiceIdentifier",
+                    "propertyIndex": 8,
+                    "propertyKey": "customServiceIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Custom Service Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl4176a4Reg35px",
+                    "group": "Skins",
+                    "kuid": "dff030b03a7543a08dcb1ca6c86a4cf1",
+                    "originalPropertyKey": "sknLblLookUp",
+                    "propertyIndex": 9,
+                    "propertyKey": "sknLblLookUp",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label LookUp Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLblErrorNew",
+                    "group": "Skins",
+                    "kuid": "e9eb5d399ecc43e1ab4b9fdb58ee261b",
+                    "originalPropertyKey": "sknLblErrorPrompt",
+                    "propertyIndex": 10,
+                    "propertyKey": "sknLblErrorPrompt",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label Error Prompt Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknTbx72727215PxNew",
+                    "group": "Skins",
+                    "kuid": "b197a6e7873941c19a9e06d2f25fe00f",
+                    "originalPropertyKey": "skntbxInputNotice",
+                    "propertyIndex": 11,
+                    "propertyKey": "skntbxInputNotice",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Input Notice Value Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLbl424242SSP26px",
+                    "group": "Skins",
+                    "kuid": "a15707d0061b4c4fab6ca4de9820f686",
+                    "originalPropertyKey": "sknLblCheckBoxInfo",
+                    "propertyIndex": 12,
+                    "propertyKey": "sknLblCheckBoxInfo",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Label Check Box Info Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSkntbxFocusBlueNew",
+                    "group": "Skins",
+                    "kuid": "cc3d2d3579fd4d8dbb31a6fd953442aa",
+                    "originalPropertyKey": "skntbxInputNoticeFocus",
+                    "propertyIndex": 13,
+                    "propertyKey": "skntbxInputNoticeFocus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Input Notice Focus Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b1a281673c0546329dcc62f1d88cfcdd",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.BillPay",
+    "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "ForeignExchangeUIModule/PresentationControllers/PresentationController"
+        },
+        "Mobile": {
+            "PresentationControllerClass": "ForeignExchangeUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": []
+        }
+    },
+    "Forms":{
+        "desktop": {
+            "frmForexDashboard": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "ForeignExchangeUIModule/frmForexDashboardController",
+                "FormName": "ForeignExchangeUIModule/frmForexDashboard",
+                "friendlyName": "frmForexDashboard"
+            }       
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "ForeignExchangeUIModule"
+}

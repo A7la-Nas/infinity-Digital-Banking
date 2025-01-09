@@ -1,0 +1,26 @@
+{
+    "AS_FlexContainer_d238ed40a9d54f61a1ad69a56bd91e0d": {
+        "id": "AS_FlexContainer_d238ed40a9d54f61a1ad69a56bd91e0d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segUserManagementFeaturePermissionsTablet",
+            "type": "templates",
+            "platform": "",
+            "KUID": "d5da1ba04a1c4e3696de8119289e2ba2"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_cf9b92b5e93c4f1b8574cf5ae6fd4d65",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.selectOrUnselectParentFeature(eventobject, context);",
+            "parentId": null
+        }]
+    }
+}

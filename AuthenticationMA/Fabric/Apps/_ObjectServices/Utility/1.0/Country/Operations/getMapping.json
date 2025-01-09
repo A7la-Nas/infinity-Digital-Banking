@@ -1,0 +1,95 @@
+{
+  "operationConfig" : {
+    "name" : "getCountryList8227",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"response_in\" outputpath=\"response_out\">        <map inputpath=\"country\" outputpath=\"Country\">            <set-param inputpath=\"id\" outputpath=\"CountryId\"/>            <set-param inputpath=\"name\" outputpath=\"Name\"/>        </map>    </map></mapper>",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Country\",\"xy\":\"770 100\",\"__gohashid\":44111},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"dbpProductServices.getCountryList\",\"xy\":\"150 100\",\"__gohashid\":44112}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:Country\",\"fromPort\":\"target\",\"toPort\":\"target:Country\",\"visible\":true,\"common\":false,\"__gohashid\":44124},{\"from\":\"target:Country\",\"to\":\"target:Country:fields\",\"fromPort\":\"target:Country\",\"toPort\":\"target:Country:fields\",\"visible\":true,\"common\":false,\"__gohashid\":44125},{\"from\":\"target:Country:fields\",\"to\":\"target:Country:CountryId:\",\"fromPort\":\"target:Country:fields\",\"toPort\":\"target:Country:CountryId:\",\"visible\":true,\"common\":false,\"__gohashid\":44126},{\"from\":\"target:Country:fields\",\"to\":\"target:Country:Name:\",\"fromPort\":\"target:Country:fields\",\"toPort\":\"target:Country:Name:\",\"visible\":true,\"common\":false,\"__gohashid\":44127},{\"from\":\"source\",\"to\":\"source:Country\",\"fromPort\":\"source\",\"toPort\":\"source:Country\",\"visible\":true,\"common\":false,\"__gohashid\":44128},{\"from\":\"source:Country\",\"to\":\"source:Country:parameters\",\"fromPort\":\"source:Country\",\"toPort\":\"source:Country:parameters\",\"visible\":true,\"common\":false,\"__gohashid\":44129},{\"from\":\"source:Country:parameters\",\"to\":\"source:Country:CountryId:\",\"fromPort\":\"source:Country:parameters\",\"toPort\":\"source:Country:CountryId:\",\"visible\":true,\"common\":false,\"__gohashid\":44130},{\"from\":\"source:Country:parameters\",\"to\":\"source:Country:Name:\",\"fromPort\":\"source:Country:parameters\",\"toPort\":\"source:Country:Name:\",\"visible\":true,\"common\":false,\"__gohashid\":44131},{\"category\":\"Mapping\",\"from\":\"source:Country:CountryId:\",\"to\":\"target:Country:CountryId:\",\"fromPort\":\"source:Country:CountryId:\",\"toPort\":\"target:Country:CountryId:\",\"visible\":true,\"common\":true,\"__gohashid\":46463},{\"category\":\"Mapping\",\"from\":\"source:Country:Name:\",\"to\":\"target:Country:Name:\",\"fromPort\":\"source:Country:Name:\",\"toPort\":\"target:Country:Name:\",\"visible\":true,\"common\":true,\"__gohashid\":46470}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "utilityProductServices",
+      "serviceVersion" : "1.0",
+      "operationName" : "getCountryList"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Country",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : true,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"response_in\" outputpath=\"response_out\">        <map inputpath=\"country\" outputpath=\"Country\">            <set-param inputpath=\"id\" outputpath=\"CountryId\"/>            <set-param inputpath=\"name\" outputpath=\"Name\"/>        </map>    </map></mapper>",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Country\",\"xy\":\"770 100\",\"__gohashid\":44111},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"dbpProductServices.getCountryList\",\"xy\":\"150 100\",\"__gohashid\":44112}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:Country\",\"fromPort\":\"target\",\"toPort\":\"target:Country\",\"visible\":true,\"common\":false,\"__gohashid\":44124},{\"from\":\"target:Country\",\"to\":\"target:Country:fields\",\"fromPort\":\"target:Country\",\"toPort\":\"target:Country:fields\",\"visible\":true,\"common\":false,\"__gohashid\":44125},{\"from\":\"target:Country:fields\",\"to\":\"target:Country:CountryId:\",\"fromPort\":\"target:Country:fields\",\"toPort\":\"target:Country:CountryId:\",\"visible\":true,\"common\":false,\"__gohashid\":44126},{\"from\":\"target:Country:fields\",\"to\":\"target:Country:Name:\",\"fromPort\":\"target:Country:fields\",\"toPort\":\"target:Country:Name:\",\"visible\":true,\"common\":false,\"__gohashid\":44127},{\"from\":\"source\",\"to\":\"source:Country\",\"fromPort\":\"source\",\"toPort\":\"source:Country\",\"visible\":true,\"common\":false,\"__gohashid\":44128},{\"from\":\"source:Country\",\"to\":\"source:Country:parameters\",\"fromPort\":\"source:Country\",\"toPort\":\"source:Country:parameters\",\"visible\":true,\"common\":false,\"__gohashid\":44129},{\"from\":\"source:Country:parameters\",\"to\":\"source:Country:CountryId:\",\"fromPort\":\"source:Country:parameters\",\"toPort\":\"source:Country:CountryId:\",\"visible\":true,\"common\":false,\"__gohashid\":44130},{\"from\":\"source:Country:parameters\",\"to\":\"source:Country:Name:\",\"fromPort\":\"source:Country:parameters\",\"toPort\":\"source:Country:Name:\",\"visible\":true,\"common\":false,\"__gohashid\":44131},{\"category\":\"Mapping\",\"from\":\"source:Country:CountryId:\",\"to\":\"target:Country:CountryId:\",\"fromPort\":\"source:Country:CountryId:\",\"toPort\":\"target:Country:CountryId:\",\"visible\":true,\"common\":true,\"__gohashid\":46463},{\"category\":\"Mapping\",\"from\":\"source:Country:Name:\",\"to\":\"target:Country:Name:\",\"fromPort\":\"source:Country:Name:\",\"toPort\":\"target:Country:Name:\",\"visible\":true,\"common\":true,\"__gohashid\":46470}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : true,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

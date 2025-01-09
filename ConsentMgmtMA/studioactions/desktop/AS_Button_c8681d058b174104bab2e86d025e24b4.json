@@ -1,0 +1,24 @@
+{
+    "AS_Button_c8681d058b174104bab2e86d025e24b4": {
+        "id": "AS_Button_c8681d058b174104bab2e86d025e24b4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDummyLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "i52b5b16cf764e9cb1af923953b99cc7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c7e5254d97434e76ab2741701ea20ab4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//  new kony.mvc.Navigation({\n//                 \"appName\": \"ConsentMgmtMA\",\n//                 \"friendlyName\": \"PSD2ConsentModule/frmManageAccountAccess\"\n//             }).navigate();\n\nkony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\"moduleName\" : \"PSD2ConsentUIModule\", \"appName\" : \"ConsentMgmtMA\"}).presentationController.showManageAccountAccess();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
