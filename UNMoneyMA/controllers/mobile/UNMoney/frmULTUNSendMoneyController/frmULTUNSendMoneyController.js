@@ -35,9 +35,15 @@ define({
     this.view.btnAcknowledgementNew.onClick= this.onAcknowledgementNew;
 
 //to lood accounts data and fill in seg
+    var configManager = applicationManager.getConfigurationManager();
     var navManager = applicationManager.getNavigationManager();
     var custominfoInt = navManager.getCustomInfo("frmDashboard");
-    this.setDataTosegAccounts(custominfoInt);
+    let loginData = navManager.getCustomInfo("frmLogin");
+    var userNameDetails = applicationManager.getStorageManager().getStoredItem("maskUserName");
+    const userPrefManager = applicationManager.getUserPreferencesManager();
+    const userName = userPrefManager.getUserName();
+    this.onCallAccountData(userName);
+    //this.setDataTosegAccounts(custominfoInt);
     this.view.flxUNAccounts.onTouchEnd= this.onUNAccounts;
     
  },
@@ -58,11 +64,14 @@ define({
     },
  openContacts: function() {
     try {
+        applicationManager.getPresentationUtility().showLoadingScreen();
+        this.view.txtContactsSearch.text = '';
        var data = kony.contact.find("*", true);
     this.contactsList = data;
     this.contactsListBackup = data;
     this.setChooseFromContactsActions("phone");
     this.setChooseFromContactsSegmentData(data, "phone");
+    applicationManager.getPresentationUtility().dismissLoadingScreen();
     this.view.flxContactsAccessMain.setVisibility(true);
     } catch (err) {
         kony.print("Exception occurred: " + err.message);
@@ -90,7 +99,7 @@ onUNSendData: function(){
     data["debitAmount"] = this.view.txtAmount.text;
     data["recPhoneNo"] = this.view.txtPhonNumber.text;
     data["recName"] = this.view.txtUNName.text;
-    data["purpose"] = "Transfer";
+    data["purpose"] = this.view.txtNotes;
     headers= {};
     integrationObj.invokeOperation(operationName, headers, data, operationSuccess.bind(this), operationFailure.bind(this));
     
@@ -182,13 +191,20 @@ onUNSendData: function(){
         this.view.lblRecNameValue.text = datarec.body.recName;
         this.view.lblRecPhoneValue.text = datarec.body.recPhoneNo;
         this.view.lblAmountValue.text = datarec.body.debitAmount + " - "+datarec.body.debitCurrency;
-        this.view.lblCommissionAmountValue.text = datarec.body.commissionAmount;
-         var commissionAmount = parseFloat(datarec.body.commissionAmount.replace(/[^\d.-]/g, '')); // Remove currency symbols or text
+        var commissionAmounts = datarec.body.commissionAmounts;
+        var commission1 = parseFloat(commissionAmounts[0].commissionAmount.replace(/[^\d.-]/g, ''));
+        var commission2 = parseFloat(commissionAmounts[1].commissionAmount.replace(/[^\d.-]/g, ''));
+        var totalCommission = commission1 + commission2;
+        var formattedTotalCommission = totalCommission.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        this.view.lblCommissionAmountValue.text = formattedTotalCommission + " - " + datarec.body.debitCurrency;
+         var commissionAmount = parseFloat(totalCommission); // Remove currency symbols or text
         var debitAmount = parseFloat(datarec.body.debitAmount);
-    
+        
          // Calculate total and update lblTotalValue
          var totalAmount = commissionAmount + debitAmount;
-        this.view.lblTotalValue.text = totalAmount;
+         totalAmount = parseFloat(totalAmount.toFixed(2));
+         var formattedTotalAmount = totalAmount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        this.view.lblTotalValue.text = formattedTotalAmount;
         this.view.lblTotalText.text= datarec.body.debitCurrency;
      },
 
@@ -264,11 +280,16 @@ onUNSendData: function(){
         serviceName = "UNMoneyService";
     integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
 
-    operationName =  "UnMonyApprovRemittance";
+    operationName =  "UnMSendRemittanceWithApprov";
     //data= {"debitAccountId": "<place-holder>","debitCurrency": "<place-holder>","debitAmount": "<place-holder>","recPhoneNo": "<place-holder>","recName": "<place-holder>","purpose": "<place-holder>"};
     data = {};
     
-    data["recordId"] = scopeObj.header.id;
+    data["debitAccountId"] = scopeObj.body.debitAccountId;
+    data["debitCurrency"] = scopeObj.body.debitCurrency;
+    data["debitAmount"] = scopeObj.body.debitAmount;
+    data["recPhoneNo"] = scopeObj.body.recPhoneNo;
+    data["recName"] = scopeObj.body.recName;
+    data["purpose"] = scopeObj.body.purpose;
     
     headers= {};
     integrationObj.invokeOperation(operationName, headers, data, operationSuccess.bind(this), operationFailure.bind(this));
@@ -305,7 +326,7 @@ onUNSendData: function(){
     },
 
     UNApprovRemittanceGetID: function(){
-        var scopeObj = dataAfSend;
+        var scopeObj = dataafApprov;
         serviceName = "UNMoneyService";
     integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
 
@@ -368,8 +389,12 @@ onUNSendData: function(){
         this.view.lblAcknowledgementRecNameValue.text = datarec.body.recName;
         this.view.lblAcknowledgementRecPhoneValue.text = datarec.body.recPhoneNo;
         this.view.lblAcknowledgementDateValue.text = datarec.body.debitValueDate;
-        this.view.lblAcknowledgementCommissionAmountValue.text = datarec.body.commissionAmount;
-        var commissionAmount = parseFloat(datarec.body.commissionAmount.replace(/[^\d.-]/g, '')); // Remove currency symbols or text
+        var commissionAmounts = datarec.body.commissionAmounts;
+        var commission1 = parseFloat(commissionAmounts[0].commissionAmount.replace(/[^\d.-]/g, ''));
+        var commission2 = parseFloat(commissionAmounts[1].commissionAmount.replace(/[^\d.-]/g, ''));
+        var totalCommission = commission1 + commission2;
+        this.view.lblAcknowledgementCommissionAmountValue.text = totalCommission + " - " + datarec.body.debitCurrency;
+        var commissionAmount = parseFloat(totalCommission); // Remove currency symbols or text
         var debitAmount = parseFloat(datarec.body.debitAmount);
     
          // Calculate total and update lblTotalValue
@@ -477,21 +502,67 @@ validatePhoneNumber: function(phonenumb) {
 
 //start account data to seg
 
+ onCallAccountData: function(usernamedata){
+       
+        serviceName = "UNMoneyService";
+    integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
+
+    operationName =  "getAccountInfo";
+    //data= {"debitAccountId": "<place-holder>","debitCurrency": "<place-holder>","debitAmount": "<place-holder>","recPhoneNo": "<place-holder>","recName": "<place-holder>","purpose": "<place-holder>"};
+    data = {};
+    
+    data["customerid"] = usernamedata;
+    
+    
+    headers= {};
+    integrationObj.invokeOperation(operationName, headers, data, operationSuccess.bind(this), operationFailure.bind(this));
+    
+    function operationSuccess(res){
+        // code for success call back
+        
+        this.setDataTosegAccounts(res);
+       // this.afterUNApprovRemittance(res);
+         
+       
+    }
+    function operationFailure(res){
+        // code for failure call back
+        this.view.flxMainContainer.setEnabled(true);
+        try {
+        applicationManager.getPresentationUtility().dismissLoadingScreen();
+
+        // Check if the response contains error details and display an appropriate alert
+        if (res && res.error && res.error.errorDetails && res.error.errorDetails.length > 0) {
+            //alert( res.error.errorDetails[0].message);
+            this.UNShowAlertsSendData(res.error.errorDetails[0].message);
+        } else {
+            this.UNShowAlertsSendData("هناك مشكلة في جلب الحسابات");
+           // alert("هناك مشكلة في الشبكة الموحده");
+        }
+    } catch (error) {
+        applicationManager.getPresentationUtility().dismissLoadingScreen();
+        alert("Error on transfer: Unable to process the error details.");
+        console.error("Error in operationFailure function: ", error);
+    }
+    }
+
+    },
+
 setDataTosegAccounts: function(accountdataa){
         var scopeObj = this;
         var segDataRegion = [];
         var storeDataRegion;
-        for (var i = 0; i < accountdataa.accountData.length; i++) {
-            var fullNickName = accountdataa.accountData[i].nickName; // "حساب جاري"
+        for (var i = 0; i < accountdataa.body.length; i++) {
+            var fullNickName = accountdataa.body[i].productName.replace(/[^\u0600-\u06FF\s]/g, '').trim();//.match(/[\u0600-\u06FF\s]+/g)?.join("").trim(); // "حساب جاري"
 
             // Extract the part after the first space
             var nickName = fullNickName.split(" ")[1];
             var accountfillNum = nickName + " \u200F- " + 
-                 accountdataa.accountData[i].currencyCode + " \u200F- " + 
-                 accountdataa.accountData[i].Account_id;
+                 accountdataa.body[i].currency + " \u200F- " + 
+                 accountdataa.body[i].accountId;
             storeDataRegion = {
-              accountNum: accountdataa.accountData[i].Account_id,
-              accountCurrency: accountdataa.accountData[i].currencyCode,
+              accountNum: accountdataa.body[i].accountId,
+              accountCurrency: accountdataa.body[i].currency,
               fillAccountName:accountfillNum,
             };
             segDataRegion.push(storeDataRegion);
@@ -600,14 +671,15 @@ enableSendButton: function(){
           //this.view.segCfcAlphabetsList.widgetDataMap = alphabetsMapping;
           //this.view.segCfcAlphabetsList.setData(alphabetsArray);
           this.contactsList = contactsArray;
-          //this.view.flxCfcContactsSegList.setVisibility(true);
+          this.view.flxContactsList.setVisibility(true);
+          this.view.flxContactsNoResults.setVisibility(false);
         }
         else
         {
-          //this.view.flxCfcContactsSegList.setVisibility(false);
-          //this.view.flxCfcNoResults.setVisibility(true);
+          this.view.flxContactsList.setVisibility(false);
+          this.view.flxContactsNoResults.setVisibility(true);
         }
-
+        this.view.flxMainContainer.setEnabled(false);
        
         //this.view.forceLayout(); 
       }
@@ -629,6 +701,8 @@ enableSendButton: function(){
         this.view.txtPhonNumber.text = selectedContact[0].id.replace(/\s/g, "").slice(-9);
         this.onPhoneNumberchange();
         this.view.flxContactsAccessMain.setVisibility(false);
+        this.view.flxMainContainer.setEnabled(true);
+        this.view.txtPhonNumber.setFocus();
       },
 
      /**

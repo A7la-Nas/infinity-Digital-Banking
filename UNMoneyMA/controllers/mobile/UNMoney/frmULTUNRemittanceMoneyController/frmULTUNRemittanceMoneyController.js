@@ -37,7 +37,10 @@ define({
 //to lood accounts data and fill in seg
     var navManager = applicationManager.getNavigationManager();
     var custominfoInt = navManager.getCustomInfo("frmDashboard");
-    this.setDataTosegAccounts(custominfoInt);
+    const userPrefManager = applicationManager.getUserPreferencesManager();
+    const userName = userPrefManager.getUserName();
+    this.onCallAccountData(userName);
+    //this.setDataTosegAccounts(custominfoInt);
     this.view.flxUNAccounts.onTouchEnd= this.onUNAccounts;
     
  },
@@ -264,21 +267,67 @@ onUNRemittanceData: function(){
 
 //start account data to seg
 
+onCallAccountData: function(usernamedata){
+       
+        serviceName = "UNMoneyService";
+    integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
+
+    operationName =  "getAccountInfo";
+    //data= {"debitAccountId": "<place-holder>","debitCurrency": "<place-holder>","debitAmount": "<place-holder>","recPhoneNo": "<place-holder>","recName": "<place-holder>","purpose": "<place-holder>"};
+    data = {};
+    
+    data["customerid"] = usernamedata;
+    
+    
+    headers= {};
+    integrationObj.invokeOperation(operationName, headers, data, operationSuccess.bind(this), operationFailure.bind(this));
+    
+    function operationSuccess(res){
+        // code for success call back
+        
+        this.setDataTosegAccounts(res);
+       // this.afterUNApprovRemittance(res);
+         
+       
+    }
+    function operationFailure(res){
+        // code for failure call back
+        this.view.flxMainContainer.setEnabled(true);
+        try {
+        applicationManager.getPresentationUtility().dismissLoadingScreen();
+
+        // Check if the response contains error details and display an appropriate alert
+        if (res && res.error && res.error.errorDetails && res.error.errorDetails.length > 0) {
+            //alert( res.error.errorDetails[0].message);
+            this.UNShowAlertsSendData(res.error.errorDetails[0].message);
+        } else {
+            this.UNShowAlertsSendData("هناك مشكلة في جلب الحسابات");
+           // alert("هناك مشكلة في الشبكة الموحده");
+        }
+    } catch (error) {
+        applicationManager.getPresentationUtility().dismissLoadingScreen();
+        alert("Error on transfer: Unable to process the error details.");
+        console.error("Error in operationFailure function: ", error);
+    }
+    }
+
+    },
+
 setDataTosegAccounts: function(accountdataa){
         var scopeObj = this;
         var segDataRegion = [];
         var storeDataRegion;
-        for (var i = 0; i < accountdataa.accountData.length; i++) {
-          var fullNickName = accountdataa.accountData[i].nickName; // "حساب جاري"
+        for (var i = 0; i < accountdataa.body.length; i++) {
+          var fullNickName = accountdataa.body[i].productName.replace(/[^\u0600-\u06FF\s]/g, '').trim();//.match(/[\u0600-\u06FF\s]+/g)?.join("").trim(); // "حساب جاري"
 
             // Extract the part after the first space
             var nickName = fullNickName.split(" ")[1];
             var accountfillNum = nickName + " \u200F- " + 
-                 accountdataa.accountData[i].currencyCode + " \u200F- " + 
-                 accountdataa.accountData[i].Account_id;
+                 accountdataa.body[i].currency + " \u200F- " + 
+                 accountdataa.body[i].accountId;
             storeDataRegion = {
-              accountNum: accountdataa.accountData[i].Account_id,
-              accountCurrency: accountdataa.accountData[i].currencyCode,
+              accountNum: accountdataa.body[i].accountId,
+              accountCurrency: accountdataa.body[i].currency,
               fillAccountName:accountfillNum,
             };
             segDataRegion.push(storeDataRegion);
