@@ -3,56 +3,79 @@ define({
 // Type your controller code here
     frmULTUNSendMoneyPreShow: function () {
         // Bind the onClick events for the buttons
-        this.view.btnSend.onClick = this.UNSendData.bind(this);
+        
+        this.view.btnSend.onClick = this.generateCode;
     },
 
-    UNSendData: function () {
-    try {
-        var filePath;
+    initQRcodeGeneratorComponent: function() {
+    var qrCodeGenerator = new kony.ui.CustomWidget({
+        id: "qrcodegenerator",
+        isVisible: true,
+        clipBounds: true,
+        skin: "slFbox",
+        top: "50dp",
+        width: "300dp",
+        height: "300dp",
+        centerX: "50%",
+        zIndex: 1,
+        layoutType: kony.flex.FREE_FORM
+    }, {}, {
+        widgetName: "qrcodegenerator"
+    });
 
-        // Determine the platform and set the file path accordingly
-        if (kony.os.deviceInfo().name === "android") {
-            filePath =  "/Internal storage/Download/osama.pdf";
-            //filePath = kony.io.FileSystem.internalStorageDirectoryPath + "/osama.pdf";
-        } else if (kony.os.deviceInfo().name === "iPhone" || kony.os.deviceInfo().name === "iPad") {
-            filePath = kony.io.FileSystem.getDataDirectoryPath() + "/osama.pdf"; // Adjust if the path differs
-        } else {
-            alert("Unsupported platform for sharing files.");
-            return;
-        }
+    qrCodeGenerator.dataToEncode = "voltmx";
+    qrCodeGenerator.colorLight = "#ffffff";
+    qrCodeGenerator.colorDark = "#000000";
+    qrCodeGenerator.correctLevel = "Level Q";
 
-        // Get the file reference
-        var file = new kony.io.File(filePath);
-
-        // Check if the file exists
-       // if (file.exists()) {
-            // Share the file
-            var shareConfig = {
-                "mimeType": "application/pdf", // MIME type for PDF
-                "filePath": filePath,
-                "message": "Please check this document."
-            };
-
-            kony.share.send(
-                shareConfig,
-                this.onShareSuccess.bind(this),
-                this.onShareFailure.bind(this)
-            );
-        // } else {
-        //     alert("File not found at path: " + filePath);
-        // }
-    } catch (e) {
-        alert("Error: " + e.message);
-    }
+    this.view.flxContainer.add(qrCodeGenerator);
 },
 
-    // Success callback
-    onShareSuccess: function (response) {
-        alert("File shared successfully!");
-    },
+    generateCode: function() {
+        //this.initQRcodeGeneratorComponent();
+       // this.view.txtContent.text ? (this.view.qrcodegenerator.dataToEncode = this.view.txtContent.text,
+        //this.view.qrcodegenerator.generate()) : alert("Input data to generate code.")
 
-    // Failure callback
-    onShareFailure: function (error) {
-        alert("Failed to share the file: " + JSON.stringify(error));
+        if (this.view.txtContent.text) {
+        // Set the text to the QR code generator's dataToEncode property
+        var qrcodegenerator = new com.voltmxmp.qrcodegenerator({
+            id: "qrcodegenerator",
+            isVisible: true,
+            layoutType: kony.flex.FREE_FORM
+        }, {}, {});
+
+        // Configure properties
+        qrcodegenerator.dataToEncode = "Hello, Kony!";
+        qrcodegenerator.colorDark = "#000000";
+        qrcodegenerator.colorLight = "#ffffff";
+        qrcodegenerator.correctLevel = "Level Q";
+
+        // Add the component to a flex container
+        this.view.flxContainer.add(qrcodegenerator);
+
+        // Generate the QR code
+         this.view.qrcodegenerator.dataToEncode = this.view.txtContent.text;
+        this.view.flxContainer.qrcodegenerator.generate();
+        /*
+                    var qrCodeComponent = new com.voltmxmp.qrcodegenerator({
+                id: "qrcodegenerator",
+                isVisible: true,
+                layoutType: kony.flex.FREE_FORM
+            }, {}, {});
+
+            // Configure properties
+            qrCodeComponent.dataToEncode = "Hello, Kony!";
+            qrCodeComponent.colorDark = "#000000";
+            qrCodeComponent.colorLight = "#ffffff";
+            qrCodeComponent.correctLevel = "Level Q";
+
+            // Add the component to a flex container
+            this.view.flxContainer.add(qrCodeComponent);
+            //this.view.qrCodeComponent.generate();
+            this.view.componentID.generate();*/
+    } else {
+         alert("Input data to generate code.");
+    }
     },
+   
  });

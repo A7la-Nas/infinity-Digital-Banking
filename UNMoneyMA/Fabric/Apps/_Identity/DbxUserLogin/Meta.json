@@ -1,0 +1,16 @@
+{
+  "name" : "DbxUserLogin",
+  "type" : "custom",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"pre_mfa_token_timeout\":10,\"header_params\":[\"x-kony-integrity\"],\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"},\"sub_type\":\"customer360\",\"is_mfa_enabled\":true,\"tracking_attribute\":\"no_tracking\",\"provider_params\":{},\"body_params\":{},\"custom_idp_url\":\"https://ibank.firstaden-bank.com/services/DbxCustomerLogin\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : true
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : true,
+  "empty" : true,
+  "mapType" : "java.util.HashMap"
+}

@@ -1,0 +1,16 @@
+{
+  "name" : "DbxKeyCloakLogin",
+  "type" : "oauth2",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"dependent_providers\":[],\"auth_type\":\"oauth2\",\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"},\"oauthProviderType\":\"default\",\"grant_type\":\"authorization_code\",\"authorization_endpoint\":\"https://keycloak.firstaden-bank.com:8443/auth/realms/spotlight_realm/protocol/openid-connect/auth\",\"token_endpoint\":\"https://ibank.firstaden-bank.com:443/services/KeyCloakOrchService/login\",\"logout_url\":\"https://keycloak.firstaden-bank.com:8443/auth/realms/spotlight_realm/protocol/openid-connect/logout\",\"client_authentication\":{\"client_id\":\"spotlight\",\"client_secret\":\"\",\"authentication_scheme\":\"form\",\"client_pvt_key_jwt\":false},\"authentication_scheme\":\"header\",\"profile\":{\"endpoint\":{\"location\":\"\",\"type\":\"none\",\"value\":\"\"},\"request_method\":\"GET\",\"profile_attribute_selectors\":{\"federation_id\":\"sub\",\"email\":\"\",\"first_name\":\"\",\"last_name\":\"\",\"custom_profile_attribute_selectors\":{}}},\"dollarParamPresence\":{\"authorization_endpoint\":false,\"token_endpoint\":false,\"logout_url\":false,\"revoke_url\":false,\"profile_url\":false},\"enable_refresh_login\":true,\"enable_identity_pkce\":false,\"additional_data\":{\"token_request\":[],\"refresh_request\":[],\"profile_request\":[],\"authorize_request\":[],\"revoke_request\":[]}}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : true
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : true,
+  "empty" : true,
+  "mapType" : "java.util.HashMap"
+}

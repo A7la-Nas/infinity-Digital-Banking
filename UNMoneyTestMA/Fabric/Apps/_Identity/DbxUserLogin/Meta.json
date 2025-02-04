@@ -1,0 +1,16 @@
+{
+  "name" : "DbxUserLogin",
+  "type" : "custom",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"pre_mfa_token_timeout\":10,\"header_params\":[\"x-kony-integrity\"],\"session_restrictions\":{\"session_restriction_type\":\"restrict_sessions_per_app_user\",\"session_clearance_behavior\":\"clear_old_sessions\",\"max_number_of_sessions_allowed\":1},\"sub_type\":\"customer360\",\"is_mfa_enabled\":true,\"tracking_attribute\":\"no_tracking\",\"provider_params\":{},\"body_params\":{},\"custom_idp_url\":\"http://mobiletest.firstaden-bank.com:8080/services/DbxCustomerLogin\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : true
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : true,
+  "empty" : true,
+  "mapType" : "java.util.HashMap"
+}

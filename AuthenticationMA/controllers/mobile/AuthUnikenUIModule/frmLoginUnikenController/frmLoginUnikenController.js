@@ -675,7 +675,7 @@ authModule.presentationController.navigateToMicroApp({
       var gwHNIP = "43.205.181.99"; //temenos-dev1.rel-id.com ... 43.205.181.99
       var gwPort = 4443;
       var cipherSpec = "AES/256/CFB/NoPadding:SHA-256";
-      var cipherSalt = "com.fadbanktestun.OnlineBanking";
+      var cipherSalt = "com.fadbank.OnlineBanking";
       var proxySettings = "";
       var rdnaSSLCertificate = "";
       var dnsServerList = null;

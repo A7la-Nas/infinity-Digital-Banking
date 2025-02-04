@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="getAccountPostedTransactionsTest" passwordencrypted="false" security="public" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://192.168.101.200:9089/infinity-retail-api/api/api/v3.0.0/holdings/accounts/$accountId/transactions?roleId=ADMIN&amp;pageSize=$limit"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="GET"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="eyAidHlwIjogImp3dCIsICJhbGciOiAiUlMyNTYiIH0.eyAiX3ZlciI6ICJ2MS4xIiwgImlzcyI6ICJodHRwOi8vbW9iaWxldGVzdC5maXJzdGFkZW4tYmFuay5jb206ODA4MC9hdXRoU2VydmljZS8xMDAwMDAwMDIiLCAiX3Njb3BlIjogImciLCAiX2lzc21ldGEiOiAiL21ldGFkYXRhL2xScWxick5vUG9VOEJ4RVhDem5FR1E9PSIsICJfYXBwIjogImZiODgwM2ZlLTk2NjktNGI3Yy1hODY1LWMyZTEzYThkYTZlNiIsICJfc2Vzc2lvbl9pZCI6ICJhZjA5OTI2NC02M2Q1LTQ3ZWYtYjQ2My03ZWJjMGY0YTg5ZmYiLCAiX3B1aWQiOiA0LCAiX2F1dGh6IjogImV5SndaWEp0YVhOemFXOXVjeUk2ZTMwc0luSnZiR1Z6SWpwYlhYMCIsICJfaWRwIjogIkRieFVzZXJMb2dpbiIsICJleHAiOiAxNzM0NDcyMTUxLCAiaWF0IjogMTczNDQ3MDk1MSwgIl9zZXNzaW9uX3RpZCI6ICIxMDAwMDAwMDIiLCAiX3Byb3ZfdXNlcmlkIjogIjM5ODc4MzI5MzAiLCAianRpIjogImJhM2ExMWIwLWY4YzEtNDQ4Ny1hYWI5LWQ0OGI2ZjUzZjc3MyIsICJfYWNzIjogIjEwMDAwMDAwMiIsICJfcHJvdmlkZXJzIjogWyAiRGJ4VXNlckxvZ2luIiBdIH0.CuDULjopcT9CEbRypIaXYstH-7yH3EU1t3E6OXfPg09gAI8VtTrunZ1jnAf1qcKr_JruuSILyyOJgELdus70Ihi8eVmPQs66jx5H4k8-b4hYvM07uaV8PU6_Bs9SDXX5YJnDtpyE_Sh-Al0FCJ-OcL5s050qvanESEB7pAliDzQirI9u7DVPp4nMKLikE-lH6zQ2EOw2ZJCBEbns_qM_lBtN8NHLIk0eJKbRVoOFyG3SwVLUFwzxaLPUTeaBAt-QPri1tzvDApWrrY0ADHaJIw7qfDrNKQfWKoZEcrO3GilW3u94BfagFwjZXqtMOo6rQWpV88lp9QQHnBGU9QDHlA" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="companyid" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="YE0011000" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="roleId" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="ADMIN" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="accountId" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="200000008124" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="limit" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="5" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="sortTransactions" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="DESCENDING" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false"/>
+</service>

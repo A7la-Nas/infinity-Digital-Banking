@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<endpoint name="default" type="JSON" url="http://192.168.101.200:9089/infinity-retail-api/api" encryptSecureInfo="false">
+<endpoint name="default" type="JSON" url="https://_$_T24_UNMONEY_URL_$_" encryptSecureInfo="false">
     <config>
         <entry>
             <key>ignorehttpproxy</key>
             <value>true</value>
+        </entry>
+        <entry>
+            <key>identityProviderType</key>
+            <value>oauth2</value>
+        </entry>
+        <entry>
+            <key>urlprovider</key>
+            <value>com.kony.dbx.util.ServiceURLProvider</value>
+        </entry>
+        <entry>
+            <key>identityProvider</key>
+            <value>DbxKeyCloakLogin</value>
         </entry>
     </config>
     <apiThrottling/>
