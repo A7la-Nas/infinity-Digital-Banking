@@ -94,12 +94,23 @@ onUNSendData: function(){
     //data= {"debitAccountId": "<place-holder>","debitCurrency": "<place-holder>","debitAmount": "<place-holder>","recPhoneNo": "<place-holder>","recName": "<place-holder>","purpose": "<place-holder>"};
     data = {};
     
-    data["debitAccountId"] = this.view.lblAccountID.text;
-    data["debitCurrency"] = this.view.lblAccCurrency.text;
-    data["debitAmount"] = this.view.txtAmount.text;
-    data["recPhoneNo"] = this.view.txtPhonNumber.text;
-    data["recName"] = this.view.txtUNName.text;
-    data["purpose"] = this.view.txtNotes;
+    function cleanString(value) {
+            return (value || "").toString().trim();
+        }
+
+        // Helper function to clean numeric values (remove non-numeric characters)
+        function cleanNumber(value) {
+            return (value || "0").toString().replace(/[^0-9.-]/g, '');
+        }
+
+        // Assign cleaned values
+        data["debitAccountId"] = cleanString(this.view.lblAccountID.text);
+        data["debitCurrency"] = cleanString(this.view.lblAccCurrency.text);
+        data["debitAmount"] = cleanNumber(this.view.txtAmount.text);
+        data["recPhoneNo"] = cleanString(this.view.txtPhonNumber.text);
+        data["recName"] = cleanString(this.view.txtUNName.text);
+        data["purpose"] = cleanString(this.view.txtNotes.text);
+        
     headers= {};
     integrationObj.invokeOperation(operationName, headers, data, operationSuccess.bind(this), operationFailure.bind(this));
     
