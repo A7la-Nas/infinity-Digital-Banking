@@ -110,7 +110,7 @@ onUNSendData: function(){
         data["recPhoneNo"] = cleanString(this.view.txtPhonNumber.text);
         data["recName"] = cleanString(this.view.txtUNName.text);
         data["purpose"] = cleanString(this.view.txtNotes.text);
-        
+
     headers= {};
     integrationObj.invokeOperation(operationName, headers, data, operationSuccess.bind(this), operationFailure.bind(this));
     
