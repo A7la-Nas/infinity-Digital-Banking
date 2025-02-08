@@ -1129,6 +1129,7 @@ define(['./AccountDetailsDAO', './ParserUtilsManager', 'FormatValueUtils', 'JSON
                     scope.servicesCalled = 0;
                     this.availableBalance = backendResponse.Accounts[0].availableBalance;
                     this.view.lblAccountId.text=backendResponse.Accounts[0].accountID;
+                    this.view.lblIbanNo.text=backendResponse.Accounts[0].IBAN;
                     scope.bindData();
                 }
                 scope.requestEnd(scope.map);
